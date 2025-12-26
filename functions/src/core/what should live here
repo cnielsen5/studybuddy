@@ -1,0 +1,26 @@
+/src/core
+  scheduler/
+    fsrs.ts
+    normalization.ts
+
+  queue/
+    eligibility.ts
+    queueBuilder.ts
+    explainability.ts
+
+  graph/
+    conceptGraph.ts
+    metrics.ts
+
+
+Rules:
+
+No I/O
+
+No databases
+
+No UI
+
+No AI
+
+Functions in → functions out

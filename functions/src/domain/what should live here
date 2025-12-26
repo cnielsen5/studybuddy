@@ -1,0 +1,31 @@
+/src/domain
+  concept.ts
+  card.ts
+  relationshipCard.ts
+  question.ts
+  misconception.ts
+
+  cardScheduleState.ts
+  cardPerformanceMetrics.ts
+  questionAttempt.ts
+
+  enums.ts
+
+
+What lives here:
+
+JSON schemas / TypeScript types
+
+enums (PrimaryReason, ErrorType, CardState)
+
+validation logic
+
+What does not live here:
+
+scheduling logic
+
+AI
+
+UI
+
+This layer changes very rarely.

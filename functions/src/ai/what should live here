@@ -1,0 +1,3 @@
+/src/ai
+  questionGenerator.ts
+  misconceptionDetector.ts
