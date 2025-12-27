@@ -192,5 +192,14 @@ describe("Concept invariants — immutability", () => {
     expect(c.update).toBeUndefined();
     expect(c.mutate).toBeUndefined();
   });
+  
+  it("contains no functions at all", () => {
+  const c: any = VALID_CONCEPT;
+
+  for (const value of Object.values(c)) {
+    expect(typeof value).not.toBe("function");
+  }
+});
+
 });
 
