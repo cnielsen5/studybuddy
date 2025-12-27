@@ -534,99 +534,174 @@ Socrates Structure and Organizer
 
     5.4 Relationships
             Cross-concept, cross-sub-topic, cross-topic dependencies
-            Represented via relationship cards, tracked separately
+            Represented via cards or questions
             One-hop propagation only
             AI-generated
-            JSON (Master Template)
+            Relationship JSON (Master Template)
                 {
-                    "id": "rel_card_0001",
-                    "type": "relationship_card",
-                    "_comment": "A card that explicitly tests the relationship between two concepts. Not owned by either concept.",
+                "relationship_id": "rel_0001",
+                "type": "relationship",
+                "_comment": "Static, read-only graph edge (Golden Master). Structural claim about how two nodes relate. Not user-specific.",
 
-                    "relations": {
-                        "_comment": "Relationship cards always span two concepts.",
-                        "concept_a_id": "concept_0001_fatty_streak",
-                        "concept_b_id": "concept_0002_fibrous_plaque",
-
-                        "relationship_type": "progression",
-                        "_comment_relationship_type": "progression | contrast | cause_effect | prerequisite | mechanism",
-
-                        "directionality": "A_to_B",
-                        "_comment_directionality": "A_to_B | B_to_A | bidirectional"
-                    },
-
-                    "config": {
-                        "_comment": "Scheduler-facing configuration.",
-                        "card_type": "relationship",
-
-                        "pedagogical_role": "synthesis",
-                        "_comment_role": "recognition | recall | synthesis",
-
-                        "activation_policy": {
-                        "_comment": "Controls when this card becomes eligible.",
-                        "requires_mastery_of": [
-                            "concept_0001_fatty_streak",
-                            "concept_0002_fibrous_plaque"
-                        ],
-                        "min_mastery_threshold": 0.8
-                        }
-                    },
-
-                    "content": {
-                        "front": "How does a fatty streak progress into a fibrous plaque?",
-                        "back": "Fatty streaks progress to fibrous plaques through smooth muscle cell migration, extracellular matrix deposition, and formation of a fibrous cap over a lipid-rich core.",
-
-                        "comparison_table": [
-                        {
-                            "feature": "Cell type",
-                            "concept_a": "Foam cells (macrophages)",
-                            "concept_b": "Smooth muscle cells + macrophages"
-                        },
-                        {
-                            "feature": "Clinical significance",
-                            "concept_a": "Asymptomatic",
-                            "concept_b": "Can obstruct blood flow"
-                        }
-                        ]
-                    },
-
-                    "metadata": {
-                        "created_at": "2025-11-17T00:00:00Z",
-                        "updated_at": "2025-11-17T00:00:00Z",
-                        "created_by": "system_admin",
-                        "status": "published",
-                        "tags": [
-                        "atherosclerosis",
-                        "progression",
-                        "high-yield"
-                        ]
+                "metadata": {
+                    "created_at": "2025-11-17T00:00:00Z",
+                    "updated_at": "2025-11-17T00:00:00Z",
+                    "created_by": "system_admin",
+                    "last_updated_by": "system_admin",
+                    "version": "1.0",
+                    "status": "published",
+                    "tags": ["cardio", "pathology", "atherosclerosis"],
+                    "version_history": [
+                    {
+                        "version": "1.0",
+                        "change_type": "structural",
+                        "changes": "Initial relationship creation",
+                        "date": "2025-11-17T00:00:00Z"
                     }
+                    ]
+                },
+
+                "graph_context": {
+                    "_comment": "Where this relationship lives in the content library. Mirrors concept taxonomy without duplicating semantics.",
+                    "library_id": "step1_usmle",
+                    "domain": "Pathology",
+                    "category": "Cardiovascular",
+                    "subcategory": "Atherosclerosis"
+                },
+
+                "endpoints": {
+                    "_comment": "Endpoints are always concept IDs. This is the source of truth for the edge.",
+                    "from_concept_id": "concept_0000_arterial_anatomy",
+                    "to_concept_id": "concept_0001_fatty_streak_formation"
+                },
+
+                "relation": {
+                    "_comment": "Typed edge. Keep this enum small and stable.",
+                    "relationship_type": "prerequisite",
+                    "_comment_relationship_type": "Enum: prerequisite | unlocks | reinforces | contrasts | causes | associated_with",
+
+                    "directionality": "forward",
+                    "_comment_directionality": "Enum: forward | bidirectional"
+                },
+
+                "editorial": {
+                    "_comment": "Advisory only. Does not affect semantics; used for curation and content QA.",
+                    "importance": "high",
+                    "_comment_importance": "Enum: low | medium | high",
+                    "notes": "Understanding arterial wall layers is required before intimal lesions make sense."
+                },
+
+                "linked_content": {
+                    "_comment": "Direct references to probes that test this edge (not required to exist, but recommended).",
+                    "relationship_card_ids": ["card_rel_0001"],
+                    "question_ids": ["q_rel_0001"]
+                }
+                }
+            RelationshipCard JSON
+                {
+                "id": "card_rel_0001",
+                "type": "relationship_card",
+                "_comment": "Static, read-only drill/probe to test a specific Relationship edge. Not user-specific.",
+
+                "relations": {
+                    "_comment": "Single source of truth: this card tests one relationship edge.",
+                    "relationship_id": "rel_0001",
+
+                    "_comment_endpoints": "Redundant but helpful for fast filtering. Must match the Relationship endpoints.",
+                    "from_concept_id": "concept_0000_arterial_anatomy",
+                    "to_concept_id": "concept_0001_fatty_streak_formation",
+
+                    "related_question_ids": ["q_rel_0001"]
+                },
+
+                "config": {
+                    "card_type": "relationship",
+                    "_comment_card_type": "Enum: basic | cloze | image_occlusion | relationship",
+
+                    "pedagogical_role": "synthesis",
+                    "_comment_role": "Enum: recognition | recall | synthesis",
+
+                    "relationship_probe_type": "directionality",
+                    "_comment_probe_type": "Enum: directionality | causality | contrast | prerequisite_reasoning | scope",
+
+                    "activation_policy": {
+                    "_comment": "Optional gating. Prevents showing relationship probes too early.",
+                    "requires_mastery_of": ["concept_0000_arterial_anatomy", "concept_0001_fatty_streak_formation"],
+                    "min_mastery_threshold": 0.7
                     }
+                },
+
+                "content": {
+                    "front": "Why must you understand arterial wall anatomy before learning fatty streak formation?",
+                    "back": "Because fatty streaks are **intimal** lesions (foam cells in the intima). Without knowing the layers of the arterial wall, learners misplace the lesion and misunderstand progression."
+                },
+
+                "media": [],
+
+                "metadata": {
+                    "created_at": "2025-11-17T00:00:00Z",
+                    "updated_at": "2025-11-17T00:00:00Z",
+                    "created_by": "system_admin",
+                    "status": "published",
+                    "tags": ["relationship", "high-yield", "cardio"],
+                    "difficulty": "medium"
+                }
+                }
             RelationshipGraphMetrics
                 {
-                    "relationship_card_id": "rel_card_0001",
-                    "type": "relationship_card_graph_metrics",
-                    "_comment": "Derived metrics for relationship density and activation safety.",
+                "relationship_id": "rel_0001",
+                "type": "relationship_graph_metrics",
+                "_comment": "Derived, regenerable graph analytics for a relationship edge. Not user-specific. Not a Golden Master.",
 
-                    "semantic_embedding": [
-                        0.134,
-                        -0.288,
-                        0.501,
-                        0.092
-                    ],
+                "graph_context": {
+                    "library_id": "step1_usmle",
+                    "graph_version": "2025-11-18",
+                    "computed_at": "2025-11-18T03:25:00Z",
+                    "_comment": "graph_version changes whenever the concept graph structure or embeddings are recomputed"
+                },
 
-                    "relationship_strength": 0.86,
+                "embedding": {
+                    "_comment": "Edge embedding derived from endpoint embeddings (e.g., concat, diff, mean) for similarity search over relationships.",
+                    "kind": "endpoint_mean",
+                    "_comment_kind": "Enum: endpoint_mean | endpoint_diff | endpoint_concat",
+                    "vector": [0.014, -0.062, 0.391, 0.081, -0.298, 0.095]
+                },
 
-                    "activation_density": {
-                        "concept_a_neighbors": 3,
-                        "concept_b_neighbors": 5
+                "endpoints": {
+                    "_comment": "Copied for convenience; must match the Relationship Golden Master.",
+                    "from_concept_id": "concept_0000_arterial_anatomy",
+                    "to_concept_id": "concept_0001_fatty_streak_formation"
+                },
+
+                "edge_topology": {
+                    "_comment": "Purely descriptive graph properties of the edge within the larger graph.",
+                    "edge_type": "prerequisite",
+                    "directionality": "forward",
+
+                    "from_node_degree": 6,
+                    "to_node_degree": 8,
+
+                    "bridge_score": 0.12,
+                    "_comment_bridge_score": "Optional: how much this edge connects otherwise weakly connected regions"
+                },
+
+                "semantic_neighbors": [
+                    {
+                    "relationship_id": "rel_0042",
+                    "similarity": 0.79
                     },
+                    {
+                    "relationship_id": "rel_0188",
+                    "similarity": 0.74
+                    }
+                ],
 
-                    "status": {
-                        "valid": true,
-                        "deprecated": false
-                    }
-                    }
+                "status": {
+                    "valid": true,
+                    "deprecated": false
+                }
+                }
+            *Use cardScheduleState and cardPerformanceMetrics for relationshipCards
             
     5.5 Questions
             Sources:
@@ -1050,6 +1125,8 @@ Socrates Structure and Organizer
             Trigger
                 Associated concept mastery > threshold
         Micro-batching
+        Card-type Aware Adapter Layer
+            Treating relationshipcards and generic cards differently?
         Cognitive load throttling
             maxAllowedLoad = baseLoad * (1 - AFI)
                         High-load cards get buried automatically.
