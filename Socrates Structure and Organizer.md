@@ -523,14 +523,91 @@ Socrates Structure and Organizer
                     }
             CardPerformanceMetrics
                 {
-                    "user_id": "user_123",
-                    "card_id": "card_0001",
+                "user_id": "user_123",
+                "card_id": "card_0001",
+                "type": "card_performance_metrics",
+                "_comment": "User-specific, aggregated performance metrics for a card. Derived from attempts. Not raw evidence. Not scheduling.",
 
+                "graph_context": {
+                    "_comment": "Optional but useful for analytics segmentation; omit if you want this object library-agnostic.",
+                    "library_id": "step1_usmle"
+                },
+
+                "attempt_counts": {
+                    "_comment": "Aggregated counts derived from raw attempts.",
+                    "total_attempts": 8,
+                    "correct_attempts": 6,
+                    "incorrect_attempts": 2,
+                    "skipped_attempts": 0,
+                    "last_attempt_at": "2025-11-08T09:05:00Z"
+                },
+
+                "accuracy": {
+                    "_comment": "Accuracy aggregates. Rates are bounded [0,1].",
+                    "accuracy_rate": 0.75,
+                    "recent_accuracy_rate": 0.8,
+                    "_comment_recent": "Computed over a recent window (e.g., last N attempts or last X days).",
+                    "window_size_attempts": 5
+                },
+
+                "timing": {
+                    "_comment": "Timing aggregates. avg_seconds may be global baseline; my_avg_seconds is per-user EMA.",
                     "avg_seconds": 12.5,
                     "my_avg_seconds": 14.0,
+                    "ema_alpha": 0.2,
+                    "last_seconds": 11.2,
+                    "p50_seconds": 12.0,
+                    "p90_seconds": 20.0
+                },
 
-                    "updated_at": "2025-11-08T09:00:00Z"
-                    }
+                "streaks": {
+                    "_comment": "Streak-based learning signals derived from correctness sequences.",
+                    "current_correct_streak": 3,
+                    "max_correct_streak": 5,
+                    "current_incorrect_streak": 0,
+                    "max_incorrect_streak": 2
+                },
+
+                "error_profile": {
+                    "_comment": "Aggregated distribution of error types (from attempts). Counts must sum to incorrect_attempts (or total non-correct attempts if you include skipped).",
+                    "misconception": 1,
+                    "retrieval_failure": 0,
+                    "misreading": 1,
+                    "strategy_error": 0,
+                    "time_pressure": 0
+                },
+
+                "confidence": {
+                    "_comment": "Optional aggregates for confidence behavior. Use if you collect confidence per attempt.",
+                    "avg_confidence": 0.62,
+                    "confidence_mismatch_rate": 0.25,
+                    "_comment_mismatch": "Rate where confidence was high but incorrect OR low but correct (define precisely in code).",
+                    "calibration_score": 0.14
+                },
+
+                "flags": {
+                    "_comment": "Lightweight derived flags used by queue shaping. No scheduling decisions live here.",
+                    "is_struggling": false,
+                    "is_consistently_fast": false,
+                    "is_consistently_slow": false,
+                    "high_variance_timing": true
+                },
+
+                "provenance": {
+                    "_comment": "Auditability without storing raw attempts.",
+                    "derived_from": {
+                    "attempt_count": 8,
+                    "last_attempt_id": "attempt_000089"
+                    },
+                    "updated_at": "2025-11-08T09:06:00Z"
+                },
+
+                "status": {
+                    "valid": true,
+                    "deprecated": false
+                }
+                }
+
 
     5.4 Relationships
             Cross-concept, cross-sub-topic, cross-topic dependencies

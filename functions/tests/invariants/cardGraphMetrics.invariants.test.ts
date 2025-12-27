@@ -81,10 +81,6 @@ describe("CardGraphMetrics invariants — semantic embedding", () => {
       expect(typeof v).toBe("number");
     }
   });
-
-  it("must not include embedding comments as logic-bearing fields", () => {
-    const m: any = validCardGraphMetrics;
-  });
 });
 
 describe("CardGraphMetrics invariants — semantic neighbors", () => {
