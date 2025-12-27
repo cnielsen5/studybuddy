@@ -1,5 +1,6 @@
 const validQuestionAttempt = {
   attempt_id: "attempt_0001",
+  type: "question_attempt",
 
   user_id: "user_123",
   question_id: "q_0001",
@@ -24,21 +25,25 @@ describe("QuestionAttempt invariants — required structure", () => {
     const a: any = validQuestionAttempt;
 
     expect(typeof a.attempt_id).toBe("string");
+    expect(a.type).toBe("question_attempt");
+
     expect(typeof a.user_id).toBe("string");
     expect(typeof a.question_id).toBe("string");
   });
 
-  it("must include a timestamp", () => {
+  it("must include a timestamp (ISO-like string)", () => {
     const a: any = validQuestionAttempt;
 
     expect(typeof a.timestamp).toBe("string");
+    // light sanity check (not full ISO validation)
+    expect(a.timestamp.includes("T")).toBe(true);
+    expect(a.timestamp.endsWith("Z")).toBe(true);
   });
 });
 
 describe("QuestionAttempt invariants — response", () => {
-  it("must record exactly one response", () => {
+  it("must record exactly one response for mcq", () => {
     const r: any = validQuestionAttempt.response;
-
     expect(typeof r.selected_option_id).toBe("string");
   });
 
@@ -53,7 +58,6 @@ describe("QuestionAttempt invariants — response", () => {
 describe("QuestionAttempt invariants — result", () => {
   it("must record correctness", () => {
     const res: any = validQuestionAttempt.result;
-
     expect(typeof res.correct).toBe("boolean");
   });
 
@@ -63,14 +67,17 @@ describe("QuestionAttempt invariants — result", () => {
     expect(res.explanation).toBeUndefined();
     expect(res.reason).toBeUndefined();
     expect(res.primary_reason).toBeUndefined();
+    expect(res.ai_reasoning).toBeUndefined();
+    expect(res.narrative).toBeUndefined();
   });
 });
 
 describe("QuestionAttempt invariants — timing", () => {
-  it("may record time spent", () => {
+  it("may record time spent (non-negative number)", () => {
     const t: any = validQuestionAttempt.timing;
 
     expect(typeof t.seconds_spent).toBe("number");
+    expect(t.seconds_spent).toBeGreaterThanOrEqual(0);
   });
 
   it("must not contain derived timing metrics", () => {
@@ -81,7 +88,7 @@ describe("QuestionAttempt invariants — timing", () => {
   });
 });
 
-describe("QuestionAttempt invariants — forbidden fields", () => {
+describe("QuestionAttempt invariants — forbidden cross-domain fields", () => {
   it("must not contain scheduling state", () => {
     const a: any = validQuestionAttempt;
 
@@ -98,11 +105,25 @@ describe("QuestionAttempt invariants — forbidden fields", () => {
     expect(a.total_attempts).toBeUndefined();
   });
 
-  it("must not contain concept or semantic data", () => {
+  it("must not contain concept/graph/semantic analytics", () => {
     const a: any = validQuestionAttempt;
 
     expect(a.concept_id).toBeUndefined();
     expect(a.semantic_vector).toBeUndefined();
+    expect(a.semantic_embedding).toBeUndefined();
+
+    expect(a.graph_context).toBeUndefined();
+    expect(a.centrality).toBeUndefined();
+    expect(a.degrees).toBeUndefined();
+  });
+
+  it("must not embed Question Golden Master content", () => {
+    const a: any = validQuestionAttempt;
+
+    expect(a.stem).toBeUndefined();
+    expect(a.options).toBeUndefined();
+    expect(a.correct_option_id).toBeUndefined();
+    expect(a.explanations).toBeUndefined();
   });
 
   it("must not contain AI inference or misconception labeling", () => {
@@ -123,7 +144,7 @@ describe("QuestionAttempt invariants — immutability by design", () => {
     expect(a.reprocess).toBeUndefined();
   });
 
-  it("must not contain any functions", () => {
+  it("must not contain any functions (top-level)", () => {
     for (const value of Object.values(validQuestionAttempt)) {
       expect(typeof value).not.toBe("function");
     }
