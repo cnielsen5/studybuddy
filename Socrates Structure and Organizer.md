@@ -169,180 +169,158 @@ Socrates Structure and Organizer
                 Remedial Cards
             JSON (Master Template)
                 {
-                    "id": "concept_0001",
-                    "type": "concept",
-                    "_comment": "Static, read-only Golden Master record shared by all users. Contains only semantic, structural, and editorial intent.",
+                "id": "concept_0001",
+                "type": "concept",
+                "_comment": "Static, read-only Golden Master record shared by all users. Contains only semantic, structural, and editorial intent.",
 
-                    "metadata": {
-                        "created_at": "2025-11-03T00:00:00Z",
-                        "updated_at": "2025-11-17T12:00:00Z",
-                        "created_by": "system_admin",
-                        "last_updated_by": "system_admin",
+                "metadata": {
+                    "created_at": "2025-11-03T00:00:00Z",
+                    "updated_at": "2025-11-17T12:00:00Z",
+                    "created_by": "system_admin",
+                    "last_updated_by": "system_admin",
+                    "version": "1.1",
+                    "status": "published",
+
+                    "tags": ["pathology", "cardio", "atherosclerosis", "lipids"],
+                    "search_keywords": ["foam cells", "intimal streak", "ASVD", "hardening of arteries", "early atherosclerosis"],
+
+                    "version_history": [
+                    {
+                        "version": "1.0",
+                        "change_type": "semantic",
+                        "changes": "Initial creation",
+                        "date": "2025-11-03T00:00:00Z"
+                    },
+                    {
                         "version": "1.1",
-                        "status": "published",
-
-                        "tags": [
-                        "pathology",
-                        "cardio",
-                        "atherosclerosis",
-                        "lipids"
-                        ],
-
-                        "search_keywords": [
-                        "foam cells",
-                        "intimal streak",
-                        "ASVD",
-                        "hardening of arteries",
-                        "early atherosclerosis"
-                        ],
-
-                        "version_history": [
-                        {
-                            "version": "1.0",
-                            "change_type": "semantic",
-                            "changes": "Initial creation",
-                            "date": "2025-11-03T00:00:00Z"
-                        },
-                        {
-                            "version": "1.1",
-                            "change_type": "structural",
-                            "changes": "Added prerequisites and mastery configuration",
-                            "date": "2025-11-17T12:00:00Z"
-                        }
-                        ]
-                    },
-
-                    "editorial": {
-                        "_comment": "Advisory metadata. May change without altering semantic meaning.",
-                        "difficulty": "basic",
-                        "high_yield_score": 9
-                    },
-
-                    "hierarchy": {
-                        "_comment": "Fixed location in the library taxonomy.",
-                        "library_id": "step1_usmle",
-                        "domain": "Pathology",
-                        "category": "Cardiovascular",
-                        "subcategory": "Atherosclerosis",
-                        "topic": "Pathogenesis",
-                        "subtopic": "Early Lesions"
-                    },
-
-                    "content": {
-                        "title": "Fatty streak formation",
-                        "definition": "Earliest lesion of atherosclerosis formed by lipid-laden macrophages (foam cells) in the intima.",
-                        "summary": "Fatty streaks are the initial, reversible lesions in atherosclerosis. They consist of intimal collections of foam cells and are not clinically significant on their own but are the direct precursors to more advanced fibrous plaques."
-                    },
-
-                    "dependency_graph": {
-                        "_comment": "Defines learning order and structural relationships only.",
-                        "prerequisites": [
-                        "concept_0000_arterial_anatomy"
-                        ],
-                        "unlocks": [
-                        "concept_0002_fibrous_plaque"
-                        ],
-                        "child_concepts": [],
-                        "semantic_relations": [
-                        "concept_0099_inflammation"
-                        ]
-                    },
-
-                    "mastery_config": {
-                        "This is normative. This is not user state. This is not performance data."
-                        "_comment": "Normative defaults for mastery evaluation. User mastery state is stored elsewhere.",
-                        "threshold": 0.8,
-                        "decay_rate": "standard",
-                        "min_questions_correct": 1
-                    },
-
-                    "media": [
-                        {
-                        "id": "media_uuid_003",
-                        "type": "image",
-                        "url": "gs://bucket/images/fatty_streak_histology.png",
-                        "caption": "Histological slide showing foam cells (lipid-laden macrophages)."
-                        }
-                    ],
-
-                    "references": [
-                        {
-                        "source": "Pathoma",
-                        "chapter": "9",
-                        "page": "25",
-                        "description": "Atherosclerosis pathogenesis."
-                        },
-                        {
-                        "source": "First Aid 2024",
-                        "page": "301"
-                        }
-                    ],
-
-                    "linked_content": {
-                        "_comment": "Direct references to content that tests or reinforces this concept.",
-                        "card_ids": [
-                        "card_uuid_001_fatty_streak_def",
-                        "card_uuid_002_fatty_streak_cloze"
-                        ],
-                        "question_ids": [
-                        "q_uuid_001_fatty_streak_mcq"
-                        ]
+                        "change_type": "structural",
+                        "changes": "Added prerequisites and mastery configuration",
+                        "date": "2025-11-17T12:00:00Z"
                     }
+                    ]
+                },
+
+                "editorial": {
+                    "_comment": "Advisory metadata. May change without altering semantic meaning.",
+                    "difficulty": "basic",
+                    "high_yield_score": 9
+                },
+
+                "hierarchy": {
+                    "_comment": "Fixed location in the library taxonomy.",
+                    "library_id": "step1_usmle",
+                    "domain": "Pathology",
+                    "category": "Cardiovascular",
+                    "subcategory": "Atherosclerosis",
+                    "topic": "Pathogenesis",
+                    "subtopic": "Early Lesions"
+                },
+
+                "content": {
+                    "title": "Fatty streak formation",
+                    "definition": "Earliest lesion of atherosclerosis formed by lipid-laden macrophages (foam cells) in the intima.",
+                    "summary": "Fatty streaks are the initial, reversible lesions in atherosclerosis. They consist of intimal collections of foam cells and are not clinically significant on their own but are the direct precursors to more advanced fibrous plaques."
+                },
+
+                "dependency_graph": {
+                    "_comment": "Defines learning order and structural relationships only.",
+                    "prerequisites": ["concept_0000_arterial_anatomy"],
+                    "unlocks": ["concept_0002_fibrous_plaque"],
+                    "child_concepts": [],
+                    "semantic_relations": ["concept_0099_inflammation"]
+                },
+
+                "mastery_config": {
+                    "_comment": "Normative defaults for mastery evaluation. User mastery state is stored elsewhere.",
+                    "threshold": 0.8,
+                    "decay_rate": "standard",
+                    "min_questions_correct": 1
+                },
+
+                "media": [
+                    {
+                    "id": "media_uuid_003",
+                    "type": "image",
+                    "url": "gs://bucket/images/fatty_streak_histology.png",
+                    "caption": "Histological slide showing foam cells (lipid-laden macrophages)."
                     }
+                ],
+
+                "references": [
+                    {
+                    "source": "Pathoma",
+                    "chapter": "9",
+                    "page": "25",
+                    "description": "Atherosclerosis pathogenesis."
+                    },
+                    {
+                    "source": "First Aid 2024",
+                    "page": "301"
+                    }
+                ],
+
+                "linked_content": {
+                    "_comment": "Direct references to content that tests or reinforces this concept.",
+                    "card_ids": ["card_uuid_001_fatty_streak_def", "card_uuid_002_fatty_streak_cloze"],
+                    "question_ids": ["q_uuid_001_fatty_streak_mcq"]
+                }
+                }
+
             ConceptGraphMetrics
                 This contains information derived from the concept map, thus may change over time and is separate from the key information contained within the concept json
                 JSON:
                 {
-                    "concept_id": "concept_0001",
-                    "type": "concept_graph_metrics",
-                    "_comment": "Derived, regenerable graph analytics for a concept. Not user-specific. Not a Golden Master.",
+                "concept_id": "concept_0001",
+                "type": "concept_graph_metrics",
+                "_comment": "Derived, regenerable graph analytics for a concept. Not user-specific. Not a Golden Master.",
 
-                    "graph_context": {
-                        "library_id": "step1_usmle",
-                        "graph_version": "2025-11-17",
-                        "computed_at": "2025-11-18T02:45:00Z",
-                        "_comment": "graph_version changes whenever the concept graph structure or embeddings are recomputed"
-                    },
+                "graph_context": {
+                    "library_id": "step1_usmle",
+                    "graph_version": "2025-11-17",
+                    "computed_at": "2025-11-18T02:45:00Z",
+                    "_comment": "graph_version changes whenever the concept graph structure or embeddings are recomputed"
+                },
 
-                    "semantic_embedding": [
-                        0.021,
-                        -0.113,
-                        0.487,
-                        0.092,
-                        -0.334,
-                        0.118
-                    ],
-
-                    "_comment_embedding": "High-dimensional vector truncated here for readability",
-
-                    "degrees": {
-                        "structural_degree": 3,
-                        "_comment_structural": "Count of explicit prerequisite, unlock, or hierarchical edges",
-
-                        "semantic_degree": 7,
-                        "_comment_semantic": "Count of concepts with cosine similarity above threshold",
-
-                        "combined_degree": 5.2,
-                        "_comment_combined": "Weighted combination of structural and semantic degree"
-                    },
-
-                    "centrality": {
-                        "betweenness": 0.031,
-                        "pagerank": 0.0047,
-                        "_comment": "Optional global graph centrality measures"
-                    },
-
-                    "similarity_config": {
-                        "semantic_similarity_threshold": 0.75,
-                        "alpha": 0.3,
-                        "_comment": "alpha weights semantic vs structural degree in combined calculation"
-                    },
-
-                    "status": {
-                        "valid": true,
-                        "deprecated": false
+                "semantic_embedding": {
+                    "_comment": "High-dimensional vector represented as a centroid embedding plus provenance.",
+                    "kind": "centroid",
+                    "vector": [0.021, -0.113, 0.487, 0.092, -0.334, 0.118],
+                    "computed_from": {
+                    "_comment": "Provenance describing the inputs used to compute this centroid.",
+                    "card_count": 42,
+                    "card_id_sample": ["card_001", "card_002"]
                     }
-                    }
+                },
+
+                "degrees": {
+                    "structural_degree": 3,
+                    "_comment_structural": "Count of explicit prerequisite, unlock, or hierarchical edges",
+
+                    "semantic_degree": 7,
+                    "_comment_semantic": "Count of concepts with cosine similarity above threshold",
+
+                    "combined_degree": 5.2,
+                    "_comment_combined": "Weighted combination of structural and semantic degree"
+                },
+
+                "centrality": {
+                    "betweenness": 0.031,
+                    "pagerank": 0.0047,
+                    "_comment": "Optional global graph centrality measures"
+                },
+
+                "similarity_config": {
+                    "semantic_similarity_threshold": 0.75,
+                    "alpha": 0.3,
+                    "_comment": "alpha weights semantic vs structural degree in combined calculation"
+                },
+
+                "status": {
+                    "valid": true,
+                    "deprecated": false
+                }
+                }
+
 
     5.3 Cards
             Atomic learning units

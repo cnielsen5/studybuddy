@@ -1,5 +1,9 @@
 import { Concept } from "../../src/domain/concept";
 
+// ------------------------
+// Concept (Golden Master)
+// ------------------------
+
 const VALID_CONCEPT: Concept = {
   id: "concept_0001",
   type: "concept",
@@ -26,7 +30,8 @@ const VALID_CONCEPT: Concept = {
     domain: "Pathology",
     category: "Cardiovascular",
     subcategory: "Atherosclerosis",
-    topic: "Pathogenesis"
+    topic: "Pathogenesis",
+    subtopic: "Early Lesions"
   },
 
   content: {
@@ -56,10 +61,15 @@ const VALID_CONCEPT: Concept = {
   }
 };
 
-//Structural Invariants
+// Structural invariants
 describe("Concept invariants — required structure", () => {
+  it("must declare type === 'concept' and include id", () => {
+    expect(typeof VALID_CONCEPT.id).toBe("string");
+    expect(VALID_CONCEPT.type).toBe("concept");
+  });
+
   it("must contain all top-level sections", () => {
-    const c = VALID_CONCEPT;
+    const c: any = VALID_CONCEPT;
 
     expect(c.metadata).toBeDefined();
     expect(c.editorial).toBeDefined();
@@ -69,41 +79,86 @@ describe("Concept invariants — required structure", () => {
     expect(c.mastery_config).toBeDefined();
     expect(c.linked_content).toBeDefined();
   });
-
-  it("must declare type === 'concept'", () => {
-    expect(VALID_CONCEPT.type).toBe("concept");
-  });
 });
 
-//Metadata Invariants
+// Metadata invariants
 describe("Concept invariants — metadata", () => {
-  it("must include version history", () => {
-    expect(Array.isArray(VALID_CONCEPT.metadata.version_history)).toBe(true);
+  it("must include required metadata fields", () => {
+    const m: any = VALID_CONCEPT.metadata;
+
+    expect(typeof m.created_at).toBe("string");
+    expect(typeof m.updated_at).toBe("string");
+    expect(typeof m.created_by).toBe("string");
+    expect(typeof m.last_updated_by).toBe("string");
+    expect(typeof m.version).toBe("string");
+    expect(typeof m.status).toBe("string");
+
+    expect(Array.isArray(m.tags)).toBe(true);
+    expect(Array.isArray(m.search_keywords)).toBe(true);
+    expect(Array.isArray(m.version_history)).toBe(true);
   });
 
-  it("must not store difficulty or yield in metadata", () => {
-    const meta: any = VALID_CONCEPT.metadata;
+  it("version_history entries must have required shape", () => {
+    const vh: any[] = VALID_CONCEPT.metadata.version_history;
 
+    for (const entry of vh) {
+      expect(typeof entry.version).toBe("string");
+      expect(typeof entry.change_type).toBe("string");
+      expect(typeof entry.changes).toBe("string");
+      expect(typeof entry.date).toBe("string");
+    }
+  });
+
+  it("must not store editorial fields inside metadata", () => {
+    const meta: any = VALID_CONCEPT.metadata;
     expect(meta.difficulty).toBeUndefined();
     expect(meta.high_yield_score).toBeUndefined();
   });
 });
 
-//Editorial Invariants
+// Editorial invariants
 describe("Concept invariants — editorial", () => {
   it("contains only advisory fields", () => {
     const e: any = VALID_CONCEPT.editorial;
 
-    expect(e.difficulty).toBeDefined();
-    expect(e.high_yield_score).toBeDefined();
+    expect(typeof e.difficulty).toBe("string");
+    expect(typeof e.high_yield_score).toBe("number");
 
+    // no structure/mastery/scheduling state
     expect(e.prerequisites).toBeUndefined();
     expect(e.threshold).toBeUndefined();
     expect(e.mastery).toBeUndefined();
+    expect(e.due).toBeUndefined();
+    expect(e.stability).toBeUndefined();
   });
 });
 
-//Dependency Graph Invariants
+// Hierarchy invariants
+describe("Concept invariants — hierarchy", () => {
+  it("must include full taxonomy fields", () => {
+    const h: any = VALID_CONCEPT.hierarchy;
+
+    expect(typeof h.library_id).toBe("string");
+    expect(typeof h.domain).toBe("string");
+    expect(typeof h.category).toBe("string");
+    expect(typeof h.subcategory).toBe("string");
+    expect(typeof h.topic).toBe("string");
+    expect(typeof h.subtopic).toBe("string");
+  });
+});
+
+// Content invariants
+describe("Concept invariants — content", () => {
+  it("must have title, definition, and summary", () => {
+    const c: any = VALID_CONCEPT.content;
+
+    expect(typeof c.title).toBe("string");
+    expect(typeof c.definition).toBe("string");
+    expect(typeof c.summary).toBe("string");
+  });
+});
+
+// Dependency graph invariants
 describe("Concept invariants — dependency graph", () => {
   it("contains only structural relationships", () => {
     const g: any = VALID_CONCEPT.dependency_graph;
@@ -120,17 +175,23 @@ describe("Concept invariants — dependency graph", () => {
     expect(g.mastery).toBeUndefined();
     expect(g.due).toBeUndefined();
     expect(g.stability).toBeUndefined();
+    expect(g.session_id).toBeUndefined();
+    expect(g.user_id).toBeUndefined();
   });
 });
 
-//Mastery Config Invariants
+// Mastery config invariants
 describe("Concept invariants — mastery config", () => {
   it("contains only normative defaults", () => {
     const m: any = VALID_CONCEPT.mastery_config;
 
     expect(typeof m.threshold).toBe("number");
+    expect(m.threshold).toBeGreaterThanOrEqual(0);
+    expect(m.threshold).toBeLessThanOrEqual(1);
+
     expect(["fast", "standard", "slow"]).toContain(m.decay_rate);
     expect(typeof m.min_questions_correct).toBe("number");
+    expect(m.min_questions_correct).toBeGreaterThanOrEqual(0);
   });
 
   it("must not contain user mastery or performance data", () => {
@@ -139,24 +200,14 @@ describe("Concept invariants — mastery config", () => {
     expect(m.current_mastery).toBeUndefined();
     expect(m.confidence).toBeUndefined();
     expect(m.last_review).toBeUndefined();
+    expect(m.user_id).toBeUndefined();
   });
 });
 
-//Content Invariants
-describe("Concept invariants — content", () => {
-  it("must have title, definition, and summary", () => {
-    const c = VALID_CONCEPT.content;
-
-    expect(typeof c.title).toBe("string");
-    expect(typeof c.definition).toBe("string");
-    expect(typeof c.summary).toBe("string");
-  });
-});
-
-//Linked Content Invariants
+// Linked content invariants
 describe("Concept invariants — linked content", () => {
   it("explicitly lists linked cards and questions", () => {
-    const l = VALID_CONCEPT.linked_content;
+    const l: any = VALID_CONCEPT.linked_content;
 
     expect(Array.isArray(l.card_ids)).toBe(true);
     expect(Array.isArray(l.question_ids)).toBe(true);
@@ -170,8 +221,8 @@ describe("Concept invariants — linked content", () => {
   });
 });
 
-//Forbidden Fields
-describe("Concept invariants — forbidden fields", () => {
+// Forbidden fields + immutability
+describe("Concept invariants — forbidden fields & immutability", () => {
   it("must not contain any user-specific or runtime state", () => {
     const c: any = VALID_CONCEPT;
 
@@ -180,26 +231,18 @@ describe("Concept invariants — forbidden fields", () => {
     expect(c.mastery).toBeUndefined();
     expect(c.primary_reason).toBeUndefined();
     expect(c.session_id).toBeUndefined();
+    expect(c.user_id).toBeUndefined();
   });
-});
 
-//Mutability Invariant
-describe("Concept invariants — immutability", () => {
-  it("must not define any mutator methods", () => {
+  it("must not define any mutator methods and contain no functions at all", () => {
     const c: any = VALID_CONCEPT;
 
     expect(c.setTitle).toBeUndefined();
     expect(c.update).toBeUndefined();
     expect(c.mutate).toBeUndefined();
+
+    for (const value of Object.values(c)) {
+      expect(typeof value).not.toBe("function");
+    }
   });
-  
-  it("contains no functions at all", () => {
-  const c: any = VALID_CONCEPT;
-
-  for (const value of Object.values(c)) {
-    expect(typeof value).not.toBe("function");
-  }
 });
-
-});
-

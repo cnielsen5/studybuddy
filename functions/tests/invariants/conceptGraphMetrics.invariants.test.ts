@@ -1,3 +1,8 @@
+
+// ---------------------------------
+// ConceptGraphMetrics (derived)
+// ---------------------------------
+
 /**
  * ConceptGraphMetrics invariants
  * Purpose: Freeze the derived, regenerable graph analytics for a concept.
@@ -17,11 +22,11 @@ const validConceptGraphMetrics = {
   },
 
   semantic_embedding: {
-    "kind": "centroid",
-    "vector": [0.021, -0.113, 0.487, 0.092, -0.334, 0.118],
-    "computed_from": {
-      "card_count": 42,
-      "card_id_sample": ["card_001", "card_002"]
+    kind: "centroid",
+    vector: [0.021, -0.113, 0.487, 0.092, -0.334, 0.118],
+    computed_from: {
+      card_count: 42,
+      card_id_sample: ["card_001", "card_002"]
     }
   },
 
@@ -108,7 +113,6 @@ describe("ConceptGraphMetrics invariants — semantic embedding (centroid)", () 
     expect(emb.session_id).toBeUndefined();
   });
 });
-
 
 describe("ConceptGraphMetrics invariants — degrees", () => {
   it("must include degrees with structural, semantic, and combined values", () => {
