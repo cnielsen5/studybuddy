@@ -242,13 +242,14 @@ Socrates Structure and Organizer
                         "unlocks": [
                         "concept_0002_fibrous_plaque"
                         ],
-                        "hierarchical_children": [],
+                        "child_concepts": [],
                         "semantic_relations": [
                         "concept_0099_inflammation"
                         ]
                     },
 
                     "mastery_config": {
+                        "This is normative. This is not user state. This is not performance data."
                         "_comment": "Normative defaults for mastery evaluation. User mastery state is stored elsewhere.",
                         "threshold": 0.8,
                         "decay_rate": "standard",
@@ -407,7 +408,7 @@ Socrates Structure and Organizer
                         "_comment_card_type": "basic | cloze | image_occlusion",
 
                         "pedagogical_role": "recall",
-                        "_comment_role": "recognition | recall | synthesis. Used for cognitive load estimation."
+                        "_comment_role": "recognition | recall | synthesis | application/analysis | integration . Used for weight of card contribution to mastery."
                     },
 
                     "content": {
