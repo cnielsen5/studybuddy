@@ -459,49 +459,48 @@ Socrates Structure and Organizer
                     }
             CardGraphMetrics
                 {
-                    "card_id": "card_0001",
-                    "type": "card_graph_metrics",
-                    "_comment": "Derived, regenerable metrics computed from embeddings and graph context.",
+                "card_id": "card_0001",
+                "type": "card_graph_metrics",
+                "_comment": "Derived, regenerable metrics computed from embeddings and graph context. Not user-specific.",
 
-                    "graph_context": {
-                        "library_id": "step1_usmle",
-                        "graph_version": "2025-11-18",
-                        "computed_at": "2025-11-18T03:10:00Z"
-                    },
+                "graph_context": {
+                    "library_id": "step1_usmle",
+                    "graph_version": "2025-11-18",
+                    "computed_at": "2025-11-18T03:10:00Z"
+                },
 
-                    "semantic_embedding": [
-                        -0.012,
-                        0.331,
-                        -0.221,
-                        0.045,
-                        0.608,
-                        -0.091
-                    ],
+                "semantic_embedding": [-0.012, 0.331, -0.221, 0.045, 0.608, -0.091],
 
-                    "_comment_embedding": "Vector truncated for readability",
+                "semantic_neighbors": [
+                    { "card_id": "card_0002", "similarity": 0.82 },
+                    { "card_id": "card_0047", "similarity": 0.78 }
+                ],
 
-                    "semantic_neighbors": [
-                        {
-                        "card_id": "card_0002",
-                        "similarity": 0.82
-                        },
-                        {
-                        "card_id": "card_0047",
-                        "similarity": 0.78
-                        }
-                    ],
+                "structure": {
+                    "_comment": "Graph position indicators derived from the library graph.",
+                    "concept_degree": 2,
+                    "hierarchy_depth": 3,
+                    "is_leaf": false
+                },
 
-                    "cognitive_load": {
-                        "pedagogical_weight": 1.5,
-                        "_comment_weight": "Derived from pedagogical_role",
-                        "estimated_seconds": 12
-                    },
+                "similarity": {
+                    "_comment": "Similarity/cluster indicators without prescribing actions.",
+                    "cluster_id": "cluster_athero_early",
+                    "redundancy_risk": "low",
+                    "_comment_redundancy_risk": "low | medium | high"
+                },
 
-                    "status": {
-                        "valid": true,
-                        "deprecated": false
-                    }
-                    }
+                "cognitive_load": {
+                    "pedagogical_weight": 1.5,
+                    "estimated_seconds": 12
+                },
+
+                "status": {
+                    "valid": true,
+                    "deprecated": false
+                }
+                }
+
             CardScheduleState
                 {
                     "user_id": "user_123",
