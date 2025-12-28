@@ -6,12 +6,6 @@
 
 import { validQuestionAttempt } from "../fixtures/questionAttempt.fixture";
 
-describe("QuestionAttempt invariants — required structure", () => {
-  // your existing tests unchanged
-});
-
-import { validQuestionAttempt } from "../fixtures/questionAttempt.fixture";
-
 describe("QuestionAttempt ↔ Question integration invariants", () => {
   it("question_id must follow Question ID naming convention", () => {
     const a: any = validQuestionAttempt;

@@ -1,10 +1,12 @@
 const validPrimaryReason = {
+  type: "primary_reason",
   primary_reason: "due_now"
 };
 
 describe("PrimaryReason invariants — required structure", () => {
-  it("must define a primary_reason field", () => {
+  it("must define a primary_reason field and declare type", () => {
     expect(validPrimaryReason.primary_reason).toBeDefined();
+    expect(validPrimaryReason.type).toBe("primary_reason");
   });
 });
 

@@ -1,6 +1,7 @@
 const validCardScheduleState = {
   card_id: "card_0001",
   user_id: "user_123",
+  type: "card_schedule_state",
 
   state: 2, // 0=New, 1=Learning, 2=Review, 3=Relearning
 
@@ -18,11 +19,12 @@ const validCardScheduleState = {
 };
 
 describe("CardScheduleState invariants — required structure", () => {
-  it("must identify card and user", () => {
+  it("must identify card and user and declare type", () => {
     const s: any = validCardScheduleState;
 
     expect(typeof s.card_id).toBe("string");
     expect(typeof s.user_id).toBe("string");
+    expect(s.type).toBe("card_schedule_state");
   });
 
   it("must declare a valid state enum", () => {

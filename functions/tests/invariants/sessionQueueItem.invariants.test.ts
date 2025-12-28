@@ -2,6 +2,7 @@ const validSessionQueueItem = {
   queue_item_id: "queue_item_0001",
   session_id: "session_0001",
   user_id: "user_123",
+  type: "session_queue_item",
 
   item_type: "card",
   item_id: "card_0001",
@@ -16,12 +17,13 @@ const validSessionQueueItem = {
 };
 
 describe("SessionQueueItem invariants — required structure", () => {
-  it("must identify queue item, session, and user", () => {
+  it("must identify queue item, session, and user and declare type", () => {
     const q: any = validSessionQueueItem;
 
     expect(typeof q.queue_item_id).toBe("string");
     expect(typeof q.session_id).toBe("string");
     expect(typeof q.user_id).toBe("string");
+    expect(q.type).toBe("session_queue_item");
   });
 });
 

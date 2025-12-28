@@ -1,6 +1,7 @@
 const validSessionSummary = {
   session_id: "session_0001",
   user_id: "user_123",
+  type: "session_summary",
 
   started_at: "2025-11-08T09:00:00Z",
   ended_at: "2025-11-08T09:30:00Z",
@@ -28,11 +29,12 @@ const validSessionSummary = {
 };
 
 describe("SessionSummary invariants — required structure", () => {
-  it("must identify session and user", () => {
+  it("must identify session and user and declare type", () => {
     const s: any = validSessionSummary;
 
     expect(typeof s.session_id).toBe("string");
     expect(typeof s.user_id).toBe("string");
+    expect(s.type).toBe("session_summary");
   });
 
   it("must define session time window", () => {
