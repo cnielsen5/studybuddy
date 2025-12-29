@@ -8,37 +8,8 @@
  *  - compatibility constraints between Relationship relation fields and RelationshipCard probe type
  */
 
-const validRelationship = {
-  relationship_id: "rel_0001",
-  type: "relationship",
-
-  endpoints: {
-    from_concept_id: "concept_0000_arterial_anatomy",
-    to_concept_id: "concept_0001_fatty_streak_formation"
-  },
-
-  relation: {
-    relationship_type: "prerequisite",
-    directionality: "forward"
-  }
-};
-
-const validRelationshipCard = {
-  id: "card_rel_0001",
-  type: "relationship_card",
-
-  relations: {
-    relationship_id: "rel_0001",
-    from_concept_id: "concept_0000_arterial_anatomy",
-    to_concept_id: "concept_0001_fatty_streak_formation"
-  },
-
-  config: {
-    card_type: "relationship",
-    pedagogical_role: "synthesis",
-    relationship_probe_type: "directionality"
-  }
-};
+import { validRelationship } from "../../fixtures/relationship.fixture";
+import { validRelationshipCard } from "../../fixtures/relationshipCard.fixture";
 
 describe("RelationshipCard ↔ Relationship consistency invariants", () => {
   it("RelationshipCard must reference an authoritative Relationship", () => {

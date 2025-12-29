@@ -99,6 +99,7 @@ Socrates Structure and Organizer
             Apply caps, throttles, and explainability rules
             Operate fully offline
     3.2 Technology
+            Firestore & Firebase Storage for server content
             TanStack (Start + Query)
             LocalForage
             Capacitor (mobile)

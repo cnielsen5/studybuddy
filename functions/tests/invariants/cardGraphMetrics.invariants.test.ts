@@ -4,6 +4,13 @@
  * Must be: global (not user-specific), numeric/structural, recomputable, and non-decision-making.
  */
 
+import {
+  expectForbiddenFieldsAbsent,
+  expectNoMutatorMethods,
+  expectNoFunctions,
+  GRAPH_METRICS_FORBIDDEN_FIELDS
+} from "../../helpers/invariantHelpers";
+
 const validCardGraphMetrics = {
   card_id: "card_0001",
   type: "card_graph_metrics",
@@ -178,49 +185,28 @@ describe("CardGraphMetrics invariants — status flags", () => {
   });
 });
 
+import {
+  expectForbiddenFieldsAbsent,
+  expectNoMutatorMethods,
+  expectNoFunctions,
+  GRAPH_METRICS_FORBIDDEN_FIELDS
+} from "../../helpers/invariantHelpers";
+
 describe("CardGraphMetrics invariants — forbidden cross-domain fields", () => {
   it("must not contain user, scheduling, performance, evidence, or AI narrative fields", () => {
-    const m: any = validCardGraphMetrics;
-
-    // user/session identifiers
-    expect(m.user_id).toBeUndefined();
-    expect(m.session_id).toBeUndefined();
-
-    // scheduling
-    expect(m.state).toBeUndefined();
-    expect(m.due).toBeUndefined();
-    expect(m.stability).toBeUndefined();
-    expect(m.difficulty).toBeUndefined();
-
-    // performance aggregates
-    expect(m.my_avg_seconds).toBeUndefined();
-    expect(m.avg_seconds).toBeUndefined();
-    expect(m.accuracy_rate).toBeUndefined();
-    expect(m.streak).toBeUndefined();
-
-    // evidence/attempts
-    expect(m.attempt_ids).toBeUndefined();
-    expect(m.attempts).toBeUndefined();
-
-    // AI narratives / explanations
-    expect(m.explanation).toBeUndefined();
-    expect(m.ai_reasoning).toBeUndefined();
-    expect(m.narrative).toBeUndefined();
+    expectForbiddenFieldsAbsent(
+      validCardGraphMetrics,
+      GRAPH_METRICS_FORBIDDEN_FIELDS
+    );
   });
 });
 
 describe("CardGraphMetrics invariants — immutability by design", () => {
   it("must not define mutator methods", () => {
-    const m: any = validCardGraphMetrics;
-
-    expect(m.update).toBeUndefined();
-    expect(m.recompute).toBeUndefined();
-    expect(m.mutate).toBeUndefined();
+    expectNoMutatorMethods(validCardGraphMetrics);
   });
 
   it("must not contain any functions", () => {
-    for (const value of Object.values(validCardGraphMetrics)) {
-      expect(typeof value).not.toBe("function");
-    }
+    expectNoFunctions(validCardGraphMetrics);
   });
 });

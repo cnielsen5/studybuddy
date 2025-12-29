@@ -6,28 +6,8 @@
  * Enforces: edge_type and directionality consistency across Golden Master edge and derived metrics.
  */
 
-const validRelationship = {
-  relationship_id: "rel_0001",
-  type: "relationship",
-
-  relation: {
-    relationship_type: "prerequisite",
-    directionality: "forward"
-  }
-};
-
-const validRelationshipGraphMetrics = {
-  relationship_id: "rel_0001",
-  type: "relationship_graph_metrics",
-
-  edge_topology: {
-    edge_type: "prerequisite",
-    directionality: "forward",
-    from_node_degree: 6,
-    to_node_degree: 8,
-    bridge_score: 0.12
-  }
-};
+import { validRelationship } from "../../fixtures/relationship.fixture";
+import { validRelationshipGraphMetrics } from "../../fixtures/relationshipGraphMetrics.fixture";
 
 describe("RelationshipGraphMetrics ↔ Relationship relation consistency invariants", () => {
   it("edge_topology.edge_type must match relationship.relation.relationship_type", () => {
