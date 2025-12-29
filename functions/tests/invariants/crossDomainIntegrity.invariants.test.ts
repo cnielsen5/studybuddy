@@ -21,6 +21,16 @@ import { validCardReviewedEvent } from "../fixtures/cardReviewed.fixture.ts";
 import { validRelationshipReviewedEvent } from "../fixtures/relationshipReviewed.fixture.ts";
 import { validMisconceptionProbeResultEvent } from "../fixtures/misconceptionProbeResult.fixture.ts";
 import { validLibraryIdMapAppliedEvent } from "../fixtures/libraryIDMapApplied.fixture.ts";
+import { validSessionStartedEvent } from "../fixtures/sessionStarted.fixture.ts";
+import { validSessionEndedEvent } from "../fixtures/sessionEnded.fixture.ts";
+import { validContentFlaggedEvent } from "../fixtures/contentFlagged.fixture.ts";
+import { validCardAnnotationUpdatedEvent } from "../fixtures/cardAnnotationUpdated.fixture.ts";
+import { validMasteryCertificationStartedEvent } from "../fixtures/masteryCertificationStarted.fixture.ts";
+import { validMasteryCertificationCompletedEvent } from "../fixtures/masteryCertificationCompleted.fixture.ts";
+import { validInterventionAcceptedEvent } from "../fixtures/interventionAccepted.fixture.ts";
+import { validInterventionRejectedEvent } from "../fixtures/interventionRejected.fixture.ts";
+import { validAccelerationAppliedEvent } from "../fixtures/accelerationApplied.fixture.ts";
+import { validLapseAppliedEvent } from "../fixtures/lapseApplied.fixture.ts";
 import { expectIdPrefix, expectIdPrefixes, ID_PREFIXES } from "../helpers/ids.ts";
 
 // Define questionAttemptedEvent inline (not in a separate fixture file)
@@ -107,6 +117,7 @@ const ENTITY_KIND_TO_PREFIX: Record<string, string> = {
   relationship: "rel_",
   concept: "concept_",
   misconception_edge: "mis_edge_",
+  session: "session_",
   library_version: "", // Library versions may have different formats
 };
 
@@ -189,6 +200,126 @@ describe("Cross-Domain Integrity: Events → Entity IDs", () => {
     });
   });
 
+  describe("session_started event", () => {
+    it("entity.kind must imply correct ID prefix", () => {
+      const event = validSessionStartedEvent;
+      const expectedPrefix = ENTITY_KIND_TO_PREFIX[event.entity.kind];
+      
+      expect(expectedPrefix).toBeDefined();
+      if (expectedPrefix) {
+        expectIdPrefix(event.entity.id, expectedPrefix, `${event.type} entity.id`);
+      }
+    });
+  });
+
+  describe("session_ended event", () => {
+    it("entity.kind must imply correct ID prefix", () => {
+      const event = validSessionEndedEvent;
+      const expectedPrefix = ENTITY_KIND_TO_PREFIX[event.entity.kind];
+      
+      expect(expectedPrefix).toBeDefined();
+      if (expectedPrefix) {
+        expectIdPrefix(event.entity.id, expectedPrefix, `${event.type} entity.id`);
+      }
+    });
+  });
+
+  describe("content_flagged event", () => {
+    it("entity.kind must imply correct ID prefix", () => {
+      const event = validContentFlaggedEvent;
+      const expectedPrefix = ENTITY_KIND_TO_PREFIX[event.entity.kind];
+      
+      expect(expectedPrefix).toBeDefined();
+      if (expectedPrefix) {
+        expectIdPrefix(event.entity.id, expectedPrefix, `${event.type} entity.id`);
+      }
+    });
+  });
+
+  describe("card_annotation_updated event", () => {
+    it("entity.kind must imply correct ID prefix", () => {
+      const event = validCardAnnotationUpdatedEvent;
+      const expectedPrefix = ENTITY_KIND_TO_PREFIX[event.entity.kind];
+      
+      expect(expectedPrefix).toBeDefined();
+      if (expectedPrefix) {
+        expectIdPrefix(event.entity.id, expectedPrefix, `${event.type} entity.id`);
+      }
+    });
+  });
+
+  describe("mastery_certification_started event", () => {
+    it("entity.kind must imply correct ID prefix", () => {
+      const event = validMasteryCertificationStartedEvent;
+      const expectedPrefix = ENTITY_KIND_TO_PREFIX[event.entity.kind];
+      
+      expect(expectedPrefix).toBeDefined();
+      if (expectedPrefix) {
+        expectIdPrefix(event.entity.id, expectedPrefix, `${event.type} entity.id`);
+      }
+    });
+  });
+
+  describe("mastery_certification_completed event", () => {
+    it("entity.kind must imply correct ID prefix", () => {
+      const event = validMasteryCertificationCompletedEvent;
+      const expectedPrefix = ENTITY_KIND_TO_PREFIX[event.entity.kind];
+      
+      expect(expectedPrefix).toBeDefined();
+      if (expectedPrefix) {
+        expectIdPrefix(event.entity.id, expectedPrefix, `${event.type} entity.id`);
+      }
+    });
+  });
+
+  describe("intervention_accepted event", () => {
+    it("entity.kind must imply correct ID prefix", () => {
+      const event = validInterventionAcceptedEvent;
+      const expectedPrefix = ENTITY_KIND_TO_PREFIX[event.entity.kind];
+      
+      expect(expectedPrefix).toBeDefined();
+      if (expectedPrefix) {
+        expectIdPrefix(event.entity.id, expectedPrefix, `${event.type} entity.id`);
+      }
+    });
+  });
+
+  describe("intervention_rejected event", () => {
+    it("entity.kind must imply correct ID prefix", () => {
+      const event = validInterventionRejectedEvent;
+      const expectedPrefix = ENTITY_KIND_TO_PREFIX[event.entity.kind];
+      
+      expect(expectedPrefix).toBeDefined();
+      if (expectedPrefix) {
+        expectIdPrefix(event.entity.id, expectedPrefix, `${event.type} entity.id`);
+      }
+    });
+  });
+
+  describe("acceleration_applied event", () => {
+    it("entity.kind must imply correct ID prefix", () => {
+      const event = validAccelerationAppliedEvent;
+      const expectedPrefix = ENTITY_KIND_TO_PREFIX[event.entity.kind];
+      
+      expect(expectedPrefix).toBeDefined();
+      if (expectedPrefix) {
+        expectIdPrefix(event.entity.id, expectedPrefix, `${event.type} entity.id`);
+      }
+    });
+  });
+
+  describe("lapse_applied event", () => {
+    it("entity.kind must imply correct ID prefix", () => {
+      const event = validLapseAppliedEvent;
+      const expectedPrefix = ENTITY_KIND_TO_PREFIX[event.entity.kind];
+      
+      expect(expectedPrefix).toBeDefined();
+      if (expectedPrefix) {
+        expectIdPrefix(event.entity.id, expectedPrefix, `${event.type} entity.id`);
+      }
+    });
+  });
+
   describe("base userEvent fixture", () => {
     it("entity.kind must imply correct ID prefix", () => {
       const event = validUserEvent;
@@ -238,6 +369,16 @@ describe("Cross-Domain Integrity: ID Naming Conventions", () => {
     expectIdPrefix(validRelationshipReviewedEvent.event_id, ID_PREFIXES.EVENT, "RelationshipReviewedEvent.event_id");
     expectIdPrefix(validMisconceptionProbeResultEvent.event_id, ID_PREFIXES.EVENT, "MisconceptionProbeResultEvent.event_id");
     expectIdPrefix(validLibraryIdMapAppliedEvent.event_id, ID_PREFIXES.EVENT, "LibraryIdMapAppliedEvent.event_id");
+    expectIdPrefix(validSessionStartedEvent.event_id, ID_PREFIXES.EVENT, "SessionStartedEvent.event_id");
+    expectIdPrefix(validSessionEndedEvent.event_id, ID_PREFIXES.EVENT, "SessionEndedEvent.event_id");
+    expectIdPrefix(validContentFlaggedEvent.event_id, ID_PREFIXES.EVENT, "ContentFlaggedEvent.event_id");
+    expectIdPrefix(validCardAnnotationUpdatedEvent.event_id, ID_PREFIXES.EVENT, "CardAnnotationUpdatedEvent.event_id");
+    expectIdPrefix(validMasteryCertificationStartedEvent.event_id, ID_PREFIXES.EVENT, "MasteryCertificationStartedEvent.event_id");
+    expectIdPrefix(validMasteryCertificationCompletedEvent.event_id, ID_PREFIXES.EVENT, "MasteryCertificationCompletedEvent.event_id");
+    expectIdPrefix(validInterventionAcceptedEvent.event_id, ID_PREFIXES.EVENT, "InterventionAcceptedEvent.event_id");
+    expectIdPrefix(validInterventionRejectedEvent.event_id, ID_PREFIXES.EVENT, "InterventionRejectedEvent.event_id");
+    expectIdPrefix(validAccelerationAppliedEvent.event_id, ID_PREFIXES.EVENT, "AccelerationAppliedEvent.event_id");
+    expectIdPrefix(validLapseAppliedEvent.event_id, ID_PREFIXES.EVENT, "LapseAppliedEvent.event_id");
   });
 });
 

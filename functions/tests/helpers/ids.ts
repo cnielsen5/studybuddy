@@ -69,5 +69,6 @@ export const ID_PREFIXES = {
   USER: "user_",
   LIBRARY: "lib_",
   QUEUE_ITEM: "queue_item_",
+  FLAG: "flag_",
 } as const;
 
