@@ -21,6 +21,7 @@ import { validCardReviewedEvent } from "../fixtures/cardReviewed.fixture.ts";
 import { validRelationshipReviewedEvent } from "../fixtures/relationshipReviewed.fixture.ts";
 import { validMisconceptionProbeResultEvent } from "../fixtures/misconceptionProbeResult.fixture.ts";
 import { validLibraryIdMapAppliedEvent } from "../fixtures/libraryIDMapApplied.fixture.ts";
+import { expectIdPrefix, expectIdPrefixes, ID_PREFIXES } from "../helpers/ids.ts";
 
 // Define questionAttemptedEvent inline (not in a separate fixture file)
 const validQuestionAttemptedEvent = {
@@ -44,8 +45,8 @@ describe("Cross-Domain Integrity: QuestionAttempt → Question", () => {
   });
 
   it("question_id must follow Question ID naming convention (q_ prefix)", () => {
-    expect(validQuestionAttempt.question_id).toMatch(/^q_/);
-    expect(validQuestion.id).toMatch(/^q_/);
+    expectIdPrefix(validQuestionAttempt.question_id, ID_PREFIXES.QUESTION, "QuestionAttempt.question_id");
+    expectIdPrefix(validQuestion.id, ID_PREFIXES.QUESTION, "Question.id");
   });
 
   it("selected_option_id must exist in Question.content.options", () => {
@@ -54,12 +55,14 @@ describe("Cross-Domain Integrity: QuestionAttempt → Question", () => {
   });
 
   it("selected_option_id must be a valid option ID format (opt_ prefix)", () => {
-    expect(validQuestionAttempt.response.selected_option_id).toMatch(/^opt_/);
+    expectIdPrefix(validQuestionAttempt.response.selected_option_id, ID_PREFIXES.OPTION, "QuestionAttempt.selected_option_id");
     
     // Verify all question options also follow the convention
-    for (const option of validQuestion.content.options) {
-      expect(option.id).toMatch(/^opt_/);
-    }
+    expectIdPrefixes(
+      validQuestion.content.options.map(opt => opt.id),
+      ID_PREFIXES.OPTION,
+      "Question.options[].id"
+    );
   });
 });
 
@@ -73,8 +76,8 @@ describe("Cross-Domain Integrity: CardScheduleView → Card", () => {
   });
 
   it("card_id must follow Card ID naming convention (card_ prefix)", () => {
-    expect(validCardScheduleView.card_id).toMatch(/^card_/);
-    expect(validCard.id).toMatch(/^card_/);
+    expectIdPrefix(validCardScheduleView.card_id, ID_PREFIXES.CARD, "CardScheduleView.card_id");
+    expectIdPrefix(validCard.id, ID_PREFIXES.CARD, "Card.id");
   });
 });
 
@@ -84,8 +87,8 @@ describe("Cross-Domain Integrity: CardPerformanceView → Card", () => {
   });
 
   it("card_id must follow Card ID naming convention (card_ prefix)", () => {
-    expect(validCardPerformanceView.card_id).toMatch(/^card_/);
-    expect(validCard.id).toMatch(/^card_/);
+    expectIdPrefix(validCardPerformanceView.card_id, ID_PREFIXES.CARD, "CardPerformanceView.card_id");
+    expectIdPrefix(validCard.id, ID_PREFIXES.CARD, "Card.id");
   });
 });
 
@@ -114,7 +117,9 @@ describe("Cross-Domain Integrity: Events → Entity IDs", () => {
       const expectedPrefix = ENTITY_KIND_TO_PREFIX[event.entity.kind];
       
       expect(expectedPrefix).toBeDefined();
-      expect(event.entity.id).toMatch(new RegExp(`^${expectedPrefix}`));
+      if (expectedPrefix) {
+        expectIdPrefix(event.entity.id, expectedPrefix, `${event.type} entity.id`);
+      }
     });
 
     it("entity.id must match Card.id when kind is 'card'", () => {
@@ -131,7 +136,9 @@ describe("Cross-Domain Integrity: Events → Entity IDs", () => {
       const expectedPrefix = ENTITY_KIND_TO_PREFIX[event.entity.kind];
       
       expect(expectedPrefix).toBeDefined();
-      expect(event.entity.id).toMatch(new RegExp(`^${expectedPrefix}`));
+      if (expectedPrefix) {
+        expectIdPrefix(event.entity.id, expectedPrefix, `${event.type} entity.id`);
+      }
     });
 
     it("entity.id must match Question.id when kind is 'question'", () => {
@@ -148,7 +155,9 @@ describe("Cross-Domain Integrity: Events → Entity IDs", () => {
       const expectedPrefix = ENTITY_KIND_TO_PREFIX[event.entity.kind];
       
       expect(expectedPrefix).toBeDefined();
-      expect(event.entity.id).toMatch(new RegExp(`^${expectedPrefix}`));
+      if (expectedPrefix) {
+        expectIdPrefix(event.entity.id, expectedPrefix, `${event.type} entity.id`);
+      }
     });
 
     it("entity.id must match RelationshipCard.id when kind is 'relationship_card'", () => {
@@ -166,7 +175,7 @@ describe("Cross-Domain Integrity: Events → Entity IDs", () => {
       
       expect(expectedPrefix).toBeDefined();
       if (expectedPrefix) {
-        expect(event.entity.id).toMatch(new RegExp(`^${expectedPrefix}`));
+        expectIdPrefix(event.entity.id, expectedPrefix, `${event.type} entity.id`);
       }
     });
   });
@@ -186,7 +195,9 @@ describe("Cross-Domain Integrity: Events → Entity IDs", () => {
       const expectedPrefix = ENTITY_KIND_TO_PREFIX[event.entity.kind];
       
       expect(expectedPrefix).toBeDefined();
-      expect(event.entity.id).toMatch(new RegExp(`^${expectedPrefix}`));
+      if (expectedPrefix) {
+        expectIdPrefix(event.entity.id, expectedPrefix, `${event.type} entity.id`);
+      }
     });
   });
 });
@@ -197,34 +208,36 @@ describe("Cross-Domain Integrity: Events → Entity IDs", () => {
 
 describe("Cross-Domain Integrity: ID Naming Conventions", () => {
   it("all Card IDs must follow card_ prefix", () => {
-    expect(validCard.id).toMatch(/^card_/);
-    expect(validCardScheduleView.card_id).toMatch(/^card_/);
-    expect(validCardPerformanceView.card_id).toMatch(/^card_/);
+    expectIdPrefix(validCard.id, ID_PREFIXES.CARD, "Card.id");
+    expectIdPrefix(validCardScheduleView.card_id, ID_PREFIXES.CARD, "CardScheduleView.card_id");
+    expectIdPrefix(validCardPerformanceView.card_id, ID_PREFIXES.CARD, "CardPerformanceView.card_id");
   });
 
   it("all Question IDs must follow q_ prefix", () => {
-    expect(validQuestion.id).toMatch(/^q_/);
-    expect(validQuestionAttempt.question_id).toMatch(/^q_/);
+    expectIdPrefix(validQuestion.id, ID_PREFIXES.QUESTION, "Question.id");
+    expectIdPrefix(validQuestionAttempt.question_id, ID_PREFIXES.QUESTION, "QuestionAttempt.question_id");
   });
 
   it("all Option IDs must follow opt_ prefix", () => {
-    expect(validQuestionAttempt.response.selected_option_id).toMatch(/^opt_/);
-    for (const option of validQuestion.content.options) {
-      expect(option.id).toMatch(/^opt_/);
-    }
+    expectIdPrefix(validQuestionAttempt.response.selected_option_id, ID_PREFIXES.OPTION, "QuestionAttempt.selected_option_id");
+    expectIdPrefixes(
+      validQuestion.content.options.map(opt => opt.id),
+      ID_PREFIXES.OPTION,
+      "Question.options[].id"
+    );
   });
 
   it("all Attempt IDs must follow attempt_ prefix", () => {
-    expect(validQuestionAttempt.attempt_id).toMatch(/^attempt_/);
+    expectIdPrefix(validQuestionAttempt.attempt_id, ID_PREFIXES.ATTEMPT, "QuestionAttempt.attempt_id");
   });
 
   it("all Event IDs must follow evt_ prefix", () => {
-    expect(validUserEvent.event_id).toMatch(/^evt_/);
-    expect(validCardReviewedEvent.event_id).toMatch(/^evt_/);
-    expect(validQuestionAttemptedEvent.event_id).toMatch(/^evt_/);
-    expect(validRelationshipReviewedEvent.event_id).toMatch(/^evt_/);
-    expect(validMisconceptionProbeResultEvent.event_id).toMatch(/^evt_/);
-    expect(validLibraryIdMapAppliedEvent.event_id).toMatch(/^evt_/);
+    expectIdPrefix(validUserEvent.event_id, ID_PREFIXES.EVENT, "UserEvent.event_id");
+    expectIdPrefix(validCardReviewedEvent.event_id, ID_PREFIXES.EVENT, "CardReviewedEvent.event_id");
+    expectIdPrefix(validQuestionAttemptedEvent.event_id, ID_PREFIXES.EVENT, "QuestionAttemptedEvent.event_id");
+    expectIdPrefix(validRelationshipReviewedEvent.event_id, ID_PREFIXES.EVENT, "RelationshipReviewedEvent.event_id");
+    expectIdPrefix(validMisconceptionProbeResultEvent.event_id, ID_PREFIXES.EVENT, "MisconceptionProbeResultEvent.event_id");
+    expectIdPrefix(validLibraryIdMapAppliedEvent.event_id, ID_PREFIXES.EVENT, "LibraryIdMapAppliedEvent.event_id");
   });
 });
 

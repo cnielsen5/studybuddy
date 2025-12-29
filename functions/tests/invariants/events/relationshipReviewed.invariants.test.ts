@@ -1,4 +1,5 @@
 import { validUserEvent } from "../../fixtures/userEvent.fixture.ts";
+import { expectIdPrefix, ID_PREFIXES } from "../../helpers/ids.ts";
 
 const validRelationshipReviewedEvent = {
   ...validUserEvent,
@@ -17,7 +18,7 @@ const validRelationshipReviewedEvent = {
 describe("Event payload invariants — relationship_reviewed", () => {
   it("must have entity.kind === 'relationship_card'", () => {
     expect(validRelationshipReviewedEvent.entity.kind).toBe("relationship_card");
-    expect(validRelationshipReviewedEvent.entity.id.startsWith("card_rel_")).toBe(true);
+    expectIdPrefix(validRelationshipReviewedEvent.entity.id, ID_PREFIXES.RELATIONSHIP_CARD, "RelationshipReviewedEvent.entity.id");
   });
 
   it("must include concept endpoints and direction between them", () => {

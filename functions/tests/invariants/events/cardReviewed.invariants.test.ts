@@ -1,4 +1,5 @@
 import { validUserEvent } from "../../fixtures/userEvent.fixture.ts";
+import { expectIdPrefix, ID_PREFIXES } from "../../helpers/ids.ts";
 
 const validCardReviewedEvent = {
   ...validUserEvent,
@@ -14,7 +15,7 @@ const validCardReviewedEvent = {
 describe("Event payload invariants — card_reviewed", () => {
   it("must have entity.kind === 'card'", () => {
     expect(validCardReviewedEvent.entity.kind).toBe("card");
-    expect(validCardReviewedEvent.entity.id.startsWith("card_")).toBe(true);
+    expectIdPrefix(validCardReviewedEvent.entity.id, ID_PREFIXES.CARD, "CardReviewedEvent.entity.id");
   });
 
   it("must include grade and seconds_spent", () => {

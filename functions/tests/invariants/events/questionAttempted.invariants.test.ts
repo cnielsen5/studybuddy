@@ -1,4 +1,5 @@
 import { validUserEvent } from "../../fixtures/userEvent.fixture.ts";
+import { expectIdPrefix, ID_PREFIXES } from "../../helpers/ids.ts";
 
 const validQuestionAttemptedEvent = {
   ...validUserEvent,
@@ -14,14 +15,14 @@ const validQuestionAttemptedEvent = {
 describe("Event payload invariants — question_attempted", () => {
   it("must have entity.kind === 'question'", () => {
     expect(validQuestionAttemptedEvent.entity.kind).toBe("question");
-    expect(validQuestionAttemptedEvent.entity.id.startsWith("q_")).toBe(true);
+    expectIdPrefix(validQuestionAttemptedEvent.entity.id, ID_PREFIXES.QUESTION, "QuestionAttemptedEvent.entity.id");
   });
 
   it("must include selected_option_id, correct, seconds_spent", () => {
     const p: any = validQuestionAttemptedEvent.payload;
 
     expect(typeof p.selected_option_id).toBe("string");
-    expect(p.selected_option_id.startsWith("opt_")).toBe(true);
+    expectIdPrefix(p.selected_option_id, ID_PREFIXES.OPTION, "QuestionAttemptedEvent.payload.selected_option_id");
 
     expect(typeof p.correct).toBe("boolean");
 

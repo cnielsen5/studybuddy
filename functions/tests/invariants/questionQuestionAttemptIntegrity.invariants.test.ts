@@ -5,24 +5,25 @@
  */
 
 import { validQuestionAttempt } from "../fixtures/questionAttempt.fixture.ts";
+import { expectIdPrefix, ID_PREFIXES } from "../helpers/ids.ts";
 
 describe("QuestionAttempt ↔ Question integration invariants", () => {
   it("question_id must follow Question ID naming convention", () => {
     const a: any = validQuestionAttempt;
     expect(typeof a.question_id).toBe("string");
-    expect(a.question_id.startsWith("q_")).toBe(true);
+    expectIdPrefix(a.question_id, ID_PREFIXES.QUESTION, "QuestionAttempt.question_id");
   });
 
   it("attempt_id must follow attempt ID naming convention", () => {
     const a: any = validQuestionAttempt;
     expect(typeof a.attempt_id).toBe("string");
-    expect(a.attempt_id.startsWith("attempt_")).toBe(true);
+    expectIdPrefix(a.attempt_id, ID_PREFIXES.ATTEMPT, "QuestionAttempt.attempt_id");
   });
 
   it("selected_option_id must follow Question option ID naming convention", () => {
     const r: any = validQuestionAttempt.response;
     expect(typeof r.selected_option_id).toBe("string");
-    expect(r.selected_option_id.startsWith("opt_")).toBe(true);
+    expectIdPrefix(r.selected_option_id, ID_PREFIXES.OPTION, "QuestionAttempt.response.selected_option_id");
   });
 
   it("must not redundantly store question correctness key", () => {
