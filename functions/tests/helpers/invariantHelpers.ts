@@ -213,3 +213,100 @@ export function expectNoEmbeddedObjects(
   }
 }
 
+/**
+ * Forbidden fields for View objects (projected read models)
+ * Views must not embed Golden Master content, event lists, embeddings, or narratives
+ */
+export const VIEW_FORBIDDEN_FIELDS = {
+  golden_master_content: [
+    "front",
+    "back",
+    "content",
+    "stem",
+    "options",
+    "explanations",
+    "definition",
+    "title",
+    "summary"
+  ],
+  event_attempt_lists: [
+    "events",
+    "event_ids",
+    "attempts",
+    "attempt_ids",
+    "question_attempt_ids",
+    "history",
+    "event_log"
+  ],
+  embeddings_graph_metrics: [
+    "semantic_embedding",
+    "graph_context",
+    "centrality",
+    "degrees",
+    "complexity",
+    "concept_alignment"
+  ],
+  narratives: [
+    "explanation",
+    "ai_reasoning",
+    "narrative",
+    "ai_notes",
+    "reasoning"
+  ]
+};
+
+/**
+ * Helper to validate last_applied cursor structure
+ * Required for all views to track projector position
+ * 
+ * @param lastApplied - The last_applied cursor object
+ * @param context - Optional context for error messages
+ */
+export function expectLastAppliedCursor(
+  lastApplied: any,
+  context?: string
+): void {
+  expect(lastApplied).toBeDefined();
+  expect(typeof lastApplied).toBe("object");
+  
+  // Must have received_at (timestamp when event was received)
+  expect(typeof lastApplied.received_at).toBe("string");
+  expect(lastApplied.received_at.length).toBeGreaterThan(0);
+  
+  // Must have event_id (reference to the last applied event)
+  expect(typeof lastApplied.event_id).toBe("string");
+  expect(lastApplied.event_id.length).toBeGreaterThan(0);
+  
+  // Must not have mutation fields
+  expect(lastApplied.updated_at).toBeUndefined();
+  expect(lastApplied.edited_at).toBeUndefined();
+}
+
+/**
+ * Helper to validate updated_at field
+ * Required for all views to track when the view was last updated
+ * 
+ * @param view - The view object
+ * @param context - Optional context for error messages
+ */
+export function expectUpdatedAt(view: any, context?: string): void {
+  expect(view.updated_at).toBeDefined();
+  expect(typeof view.updated_at).toBe("string");
+  expect(view.updated_at.length).toBeGreaterThan(0);
+}
+
+/**
+ * Helper to test view forbidden fields
+ * Ensures views don't embed Golden Master content, event lists, embeddings, or narratives
+ */
+export function expectViewForbiddenFieldsAbsent(
+  view: any,
+  context?: string
+): void {
+  for (const [groupName, fields] of Object.entries(VIEW_FORBIDDEN_FIELDS)) {
+    for (const field of fields) {
+      expect(view[field]).toBeUndefined();
+    }
+  }
+}
+

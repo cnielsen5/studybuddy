@@ -1,5 +1,10 @@
 import { expectTimestampLike } from "../../helpers/timestamp";
 import { validMisconceptionEdgeView } from "../../fixtures/views/misconceptionEdgeView.fixture.ts";
+import {
+  expectLastAppliedCursor,
+  expectUpdatedAt,
+  expectViewForbiddenFieldsAbsent
+} from "../../helpers/invariantHelpers.ts";
 
 describe("Projected view invariants — MisconceptionEdgeView", () => {
   it("must declare type === 'misconception_edge_view'", () => {
@@ -38,33 +43,22 @@ describe("Projected view invariants — MisconceptionEdgeView", () => {
     expect(["active", "weakening", "resolved"]).toContain(v.status);
   });
 
-  it("must include observed timestamps and last_applied cursor", () => {
+  it("must include observed timestamps", () => {
     const v: any = validMisconceptionEdgeView;
 
     expectTimestampLike(v.first_observed_at);
     expectTimestampLike(v.last_observed_at);
-
-    expectTimestampLike(v.last_applied.received_at);
-    expect(typeof v.last_applied.event_id).toBe("string");
   });
 
-  it("must not embed raw event lists, attempts, or narratives", () => {
-    const v: any = validMisconceptionEdgeView;
-
-    expect(v.events).toBeUndefined();
-    expect(v.event_ids).toBeUndefined();
-    expect(v.question_attempt_ids).toBeUndefined(); // refs belong in events/logs, not views
-
-    expect(v.explanation).toBeUndefined();
-    expect(v.ai_reasoning).toBeUndefined();
-    expect(v.narrative).toBeUndefined();
+  it("must include required last_applied cursor { received_at, event_id }", () => {
+    expectLastAppliedCursor(validMisconceptionEdgeView.last_applied, "MisconceptionEdgeView.last_applied");
   });
 
-  it("must not embed Golden Master content or graph metrics", () => {
-    const v: any = validMisconceptionEdgeView;
+  it("must include required updated_at field", () => {
+    expectUpdatedAt(validMisconceptionEdgeView, "MisconceptionEdgeView");
+  });
 
-    expect(v.content).toBeUndefined();
-    expect(v.semantic_embedding).toBeUndefined();
-    expect(v.graph_context).toBeUndefined();
+  it("must not embed Golden Master content, event lists, embeddings, or narratives", () => {
+    expectViewForbiddenFieldsAbsent(validMisconceptionEdgeView, "MisconceptionEdgeView");
   });
 });

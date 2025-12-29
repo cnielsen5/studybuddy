@@ -1,5 +1,10 @@
 import { expectTimestampLike } from "../../helpers/timestamp";
 import { validCardPerformanceView } from "../../fixtures/views/cardPerformanceView.fixture.ts";
+import {
+  expectLastAppliedCursor,
+  expectUpdatedAt,
+  expectViewForbiddenFieldsAbsent
+} from "../../helpers/invariantHelpers.ts";
 
 describe("Projected view invariants — CardPerformanceView", () => {
   it("must declare type === 'card_performance_view'", () => {
@@ -35,23 +40,15 @@ describe("Projected view invariants — CardPerformanceView", () => {
     expectTimestampLike(v.last_reviewed_at);
   });
 
-  it("must include last_applied cursor", () => {
-    const c: any = validCardPerformanceView.last_applied;
-    expectTimestampLike(c.received_at);
-    expect(typeof c.event_id).toBe("string");
+  it("must include required last_applied cursor { received_at, event_id }", () => {
+    expectLastAppliedCursor(validCardPerformanceView.last_applied, "CardPerformanceView.last_applied");
   });
 
-  it("must not embed attempts or event logs", () => {
-    const v: any = validCardPerformanceView;
-    expect(v.attempts).toBeUndefined();
-    expect(v.attempt_ids).toBeUndefined();
-    expect(v.events).toBeUndefined();
+  it("must include required updated_at field", () => {
+    expectUpdatedAt(validCardPerformanceView, "CardPerformanceView");
   });
 
-  it("must not embed Golden Master content", () => {
-    const v: any = validCardPerformanceView;
-    expect(v.front).toBeUndefined();
-    expect(v.back).toBeUndefined();
-    expect(v.content).toBeUndefined();
+  it("must not embed Golden Master content, event lists, embeddings, or narratives", () => {
+    expectViewForbiddenFieldsAbsent(validCardPerformanceView, "CardPerformanceView");
   });
 });
