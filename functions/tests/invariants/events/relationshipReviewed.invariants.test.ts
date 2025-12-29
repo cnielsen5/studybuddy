@@ -1,5 +1,9 @@
 import { validUserEvent } from "../../fixtures/userEvent.fixture.ts";
 import { expectIdPrefix, ID_PREFIXES } from "../../helpers/ids.ts";
+import {
+  expectEventImmutability,
+  expectNoPayloadAggregates
+} from "../../helpers/invariantHelpers.ts";
 
 const validRelationshipReviewedEvent = {
   ...validUserEvent,
@@ -53,5 +57,13 @@ describe("Event payload invariants — relationship_reviewed", () => {
     expect(p.misconception_id).toBeUndefined();
     expect(p.strength).toBeUndefined();
     expect(p.status).toBeUndefined();
+  });
+
+  it("must not contain mutation-indicating fields", () => {
+    expectEventImmutability(validRelationshipReviewedEvent, "RelationshipReviewedEvent");
+  });
+
+  it("must not contain aggregate fields in payload", () => {
+    expectNoPayloadAggregates(validRelationshipReviewedEvent.payload, "RelationshipReviewedEvent.payload");
   });
 });

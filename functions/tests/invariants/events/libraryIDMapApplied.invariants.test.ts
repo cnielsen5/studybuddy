@@ -1,4 +1,8 @@
 import { validUserEvent } from "../../fixtures/userEvent.fixture.ts";
+import {
+  expectEventImmutability,
+  expectNoPayloadAggregates
+} from "../../helpers/invariantHelpers.ts";
 
 const validLibraryIdMapAppliedEvent = {
   ...validUserEvent,
@@ -45,5 +49,13 @@ describe("Event payload invariants — library_id_map_applied", () => {
 
     expect(p.migrate_schedule_state).toBeUndefined();
     expect(p.migrate_perf_metrics).toBeUndefined();
+  });
+
+  it("must not contain mutation-indicating fields", () => {
+    expectEventImmutability(validLibraryIdMapAppliedEvent, "LibraryIdMapAppliedEvent");
+  });
+
+  it("must not contain aggregate fields in payload", () => {
+    expectNoPayloadAggregates(validLibraryIdMapAppliedEvent.payload, "LibraryIdMapAppliedEvent.payload");
   });
 });

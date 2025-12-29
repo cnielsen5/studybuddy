@@ -1,5 +1,9 @@
 import { validUserEvent } from "../../fixtures/userEvent.fixture.ts";
 import { expectIdPrefix, ID_PREFIXES } from "../../helpers/ids.ts";
+import {
+  expectEventImmutability,
+  expectNoPayloadAggregates
+} from "../../helpers/invariantHelpers.ts";
 
 const validQuestionAttemptedEvent = {
   ...validUserEvent,
@@ -37,5 +41,13 @@ describe("Event payload invariants — question_attempted", () => {
     expect(p.options).toBeUndefined();
     expect(p.explanations).toBeUndefined();
     expect(p.correct_option_id).toBeUndefined();
+  });
+
+  it("must not contain mutation-indicating fields", () => {
+    expectEventImmutability(validQuestionAttemptedEvent, "QuestionAttemptedEvent");
+  });
+
+  it("must not contain aggregate fields in payload", () => {
+    expectNoPayloadAggregates(validQuestionAttemptedEvent.payload, "QuestionAttemptedEvent.payload");
   });
 });

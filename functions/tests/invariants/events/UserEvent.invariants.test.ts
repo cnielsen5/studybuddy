@@ -5,6 +5,11 @@
  * - No aggregates, no scheduler state, no embedded content
  */
 
+import {
+  expectEventImmutability,
+  expectNoPayloadAggregates
+} from "../../helpers/invariantHelpers.ts";
+
 const validUserEvent = {
   event_id: "evt_01JHXYZABCDEF1234567890", // ULID/UUIDv7 as string
   type: "card_reviewed",
@@ -122,5 +127,31 @@ describe("UserEvent invariants — immutability by design", () => {
     for (const value of Object.values(validUserEvent)) {
       expect(typeof value).not.toBe("function");
     }
+  });
+});
+
+describe("UserEvent invariants — production-critical immutability", () => {
+  it("must not contain mutation-indicating fields (updated_at, edited_at, revision, etc.)", () => {
+    expectEventImmutability(validUserEvent, "UserEvent");
+  });
+
+  it("must carry a globally unique event_id (string)", () => {
+    const e: any = validUserEvent;
+
+    expect(typeof e.event_id).toBe("string");
+    expect(e.event_id.length).toBeGreaterThan(0);
+    // event_id should be unique (ULID/UUIDv7 format typically)
+    expect(e.event_id).toMatch(/^evt_/);
+  });
+
+  it("must include schema_version (string)", () => {
+    const e: any = validUserEvent;
+
+    expect(typeof e.schema_version).toBe("string");
+    expect(e.schema_version.length).toBeGreaterThan(0);
+  });
+
+  it("must not contain aggregate fields in payload", () => {
+    expectNoPayloadAggregates(validUserEvent.payload, "UserEvent.payload");
   });
 });

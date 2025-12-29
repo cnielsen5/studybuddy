@@ -1,4 +1,8 @@
 import { validUserEvent } from "../../fixtures/userEvent.fixture.ts";
+import {
+  expectEventImmutability,
+  expectNoPayloadAggregates
+} from "../../helpers/invariantHelpers.ts";
 
 const validMisconceptionProbeEvent = {
   ...validUserEvent,
@@ -32,5 +36,13 @@ describe("Event payload invariants — misconception_probe_result", () => {
     expect(p.explanation).toBeUndefined();
     expect(p.ai_reasoning).toBeUndefined();
     expect(p.narrative).toBeUndefined();
+  });
+
+  it("must not contain mutation-indicating fields", () => {
+    expectEventImmutability(validMisconceptionProbeEvent, "MisconceptionProbeResultEvent");
+  });
+
+  it("must not contain aggregate fields in payload", () => {
+    expectNoPayloadAggregates(validMisconceptionProbeEvent.payload, "MisconceptionProbeResultEvent.payload");
   });
 });

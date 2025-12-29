@@ -39,6 +39,45 @@ export const GOLDEN_MASTER_FORBIDDEN_FIELDS = {
 };
 
 /**
+ * Forbidden mutation fields for Events (production-critical immutability)
+ * Events are append-only and must never indicate they were modified
+ */
+export const EVENT_MUTATION_FORBIDDEN_FIELDS = [
+  "updated_at",
+  "edited_at",
+  "revision",
+  "modified_at",
+  "changed_at",
+  "version", // schema_version is allowed, but version alone is not
+  "edit_count",
+  "revision_number",
+  "last_modified",
+  "last_edited"
+];
+
+/**
+ * Forbidden aggregate fields for Event payloads
+ * Events should contain only the raw action data, not accumulated metrics
+ */
+export const EVENT_PAYLOAD_AGGREGATE_FIELDS = [
+  "total_attempts",
+  "total_reviews",
+  "accuracy_rate",
+  "avg_seconds",
+  "avg_time",
+  "streak",
+  "max_streak",
+  "correct_count",
+  "incorrect_count",
+  "success_rate",
+  "failure_rate",
+  "cumulative_score",
+  "running_total",
+  "aggregate_accuracy",
+  "historical_average"
+];
+
+/**
  * Common mutator method names to check for
  */
 export const COMMON_MUTATOR_METHODS = [
@@ -91,6 +130,47 @@ export function expectNoMutatorMethods(obj: any, additionalMethods: string[] = [
 export function expectNoFunctions(obj: any): void {
   for (const value of Object.values(obj)) {
     expect(typeof value).not.toBe("function");
+  }
+}
+
+/**
+ * Helper to test event immutability - ensures no mutation fields exist
+ * Production-critical: Events are append-only and must never indicate modification
+ */
+/**
+ * Helper to test event immutability - ensures no mutation fields exist
+ * Production-critical: Events are append-only and must never indicate modification
+ * 
+ * Checks:
+ * - No mutation-indicating fields (updated_at, edited_at, revision, etc.)
+ * - event_id exists and is a string (globally unique identifier)
+ * - schema_version exists and is a string
+ */
+export function expectEventImmutability(event: any, context?: string): void {
+  // Check for forbidden mutation fields
+  for (const field of EVENT_MUTATION_FORBIDDEN_FIELDS) {
+    expect(event[field]).toBeUndefined();
+  }
+  
+  // Verify event_id exists and is a string (globally unique identifier)
+  expect(typeof event.event_id).toBe("string");
+  expect(event.event_id.length).toBeGreaterThan(0);
+  
+  // Verify schema_version exists and is a string
+  expect(typeof event.schema_version).toBe("string");
+  expect(event.schema_version.length).toBeGreaterThan(0);
+}
+
+/**
+ * Helper to test that event payload does not contain aggregate fields
+ * Events should contain only raw action data, not accumulated metrics
+ * 
+ * This prevents accidental accumulation of metrics in event payloads,
+ * which would violate the append-only event-sourcing principle.
+ */
+export function expectNoPayloadAggregates(payload: any, context?: string): void {
+  for (const field of EVENT_PAYLOAD_AGGREGATE_FIELDS) {
+    expect(payload[field]).toBeUndefined();
   }
 }
 

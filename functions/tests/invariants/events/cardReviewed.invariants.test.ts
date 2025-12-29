@@ -1,5 +1,9 @@
 import { validUserEvent } from "../../fixtures/userEvent.fixture.ts";
 import { expectIdPrefix, ID_PREFIXES } from "../../helpers/ids.ts";
+import {
+  expectEventImmutability,
+  expectNoPayloadAggregates
+} from "../../helpers/invariantHelpers.ts";
 
 const validCardReviewedEvent = {
   ...validUserEvent,
@@ -40,5 +44,13 @@ describe("Event payload invariants — card_reviewed", () => {
     expect(p.interval_days).toBeUndefined();
     expect(p.stability).toBeUndefined();
     expect(p.accuracy_rate).toBeUndefined();
+  });
+
+  it("must not contain mutation-indicating fields", () => {
+    expectEventImmutability(validCardReviewedEvent, "CardReviewedEvent");
+  });
+
+  it("must not contain aggregate fields in payload", () => {
+    expectNoPayloadAggregates(validCardReviewedEvent.payload, "CardReviewedEvent.payload");
   });
 });
