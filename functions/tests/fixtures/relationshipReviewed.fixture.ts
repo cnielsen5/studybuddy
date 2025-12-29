@@ -3,7 +3,7 @@ import { validUserEvent } from "./userEvent.fixture";
 export const validRelationshipReviewedEvent = {
   ...validUserEvent,
   type: "relationship_reviewed",
-  entity: { kind: "relationship_card", id: "relcard_001" },
+  entity: { kind: "relationship_card", id: "card_rel_0001" },
   payload: {
     concept_a_id: "concept_attention",
     concept_b_id: "concept_working_memory",

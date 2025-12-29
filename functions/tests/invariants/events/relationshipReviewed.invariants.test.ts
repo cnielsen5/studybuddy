@@ -3,7 +3,7 @@ import { validUserEvent } from "../../fixtures/userEvent.fixture.ts";
 const validRelationshipReviewedEvent = {
   ...validUserEvent,
   type: "relationship_reviewed",
-  entity: { kind: "relationship_card", id: "relcard_001" },
+  entity: { kind: "relationship_card", id: "card_rel_0001" },
   payload: {
     concept_a_id: "concept_attention",
     concept_b_id: "concept_working_memory",
@@ -17,6 +17,7 @@ const validRelationshipReviewedEvent = {
 describe("Event payload invariants — relationship_reviewed", () => {
   it("must have entity.kind === 'relationship_card'", () => {
     expect(validRelationshipReviewedEvent.entity.kind).toBe("relationship_card");
+    expect(validRelationshipReviewedEvent.entity.id.startsWith("card_rel_")).toBe(true);
   });
 
   it("must include concept endpoints and direction between them", () => {
