@@ -1,4 +1,5 @@
 export const validCardScheduleView = {
+  type: "card_schedule_view",
   card_id: "card_0001",
   library_id: "lib_abc",
   user_id: "user_123",

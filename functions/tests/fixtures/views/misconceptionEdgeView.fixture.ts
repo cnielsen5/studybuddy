@@ -1,4 +1,5 @@
 export const validMisconceptionEdgeView = {
+  type: "misconception_edge_view",
   misconception_id: "mis_edge_001",
   library_id: "lib_abc",
   user_id: "user_123",

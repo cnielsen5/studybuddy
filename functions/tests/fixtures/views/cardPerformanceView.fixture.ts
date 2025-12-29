@@ -1,4 +1,5 @@
 export const validCardPerformanceView = {
+  type: "card_performance_view",
   card_id: "card_0001",
   library_id: "lib_abc",
   user_id: "user_123",

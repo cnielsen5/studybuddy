@@ -1,25 +1,12 @@
 import { expectTimestampLike } from "../../helpers/timestamp";
-
-const validCardPerformanceView = {
-  card_id: "card_0001",
-  library_id: "lib_abc",
-  user_id: "user_123",
-
-  total_reviews: 8,
-  correct_reviews: 6,
-  accuracy_rate: 0.75,
-  avg_seconds: 12.5,
-
-  streak: 3,
-  max_streak: 5,
-
-  last_reviewed_at: "2025-12-29T12:34:56.000Z",
-
-  last_applied: { received_at: "2025-12-29T12:34:57.000Z", event_id: "evt_01JHXYZ..." },
-  updated_at: "2025-12-29T12:34:57.000Z"
-};
+import { validCardPerformanceView } from "../../fixtures/views/cardPerformanceView.fixture.ts";
 
 describe("Projected view invariants — CardPerformanceView", () => {
+  it("must declare type === 'card_performance_view'", () => {
+    const v: any = validCardPerformanceView;
+    expect(v.type).toBe("card_performance_view");
+  });
+
   it("must identify user/library/card", () => {
     const v: any = validCardPerformanceView;
     expect(typeof v.user_id).toBe("string");
