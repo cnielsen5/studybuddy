@@ -8,8 +8,8 @@
  *  - compatibility constraints between Relationship relation fields and RelationshipCard probe type
  */
 
-import { validRelationship } from "../../fixtures/relationship.fixture";
-import { validRelationshipCard } from "../../fixtures/relationshipCard.fixture";
+import { validRelationship } from "../fixtures/relationship.fixture.ts";
+import { validRelationshipCard } from "../fixtures/relationshipCard.fixture.ts";
 
 describe("RelationshipCard ↔ Relationship consistency invariants", () => {
   it("RelationshipCard must reference an authoritative Relationship", () => {

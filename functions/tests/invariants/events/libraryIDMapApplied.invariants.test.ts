@@ -1,3 +1,5 @@
+import { validUserEvent } from "../../fixtures/userEvent.fixture.ts";
+
 const validLibraryIdMapAppliedEvent = {
   ...validUserEvent,
   type: "library_id_map_applied",

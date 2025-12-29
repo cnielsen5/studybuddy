@@ -6,8 +6,8 @@
  * This prevents semantic drift between graph edges and probes.
  */
 
-import { validRelationship } from "../../fixtures/relationship.fixture";
-import { validRelationshipCard } from "../../fixtures/relationshipCard.fixture";
+import { validRelationship } from "../fixtures/relationship.fixture.ts";
+import { validRelationshipCard } from "../fixtures/relationshipCard.fixture.ts";
 
 describe("RelationshipCard ↔ Relationship endpoint consistency invariants", () => {
   it("RelationshipCard endpoints must match Relationship endpoints", () => {

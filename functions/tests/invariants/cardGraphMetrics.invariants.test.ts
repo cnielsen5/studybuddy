@@ -9,7 +9,7 @@ import {
   expectNoMutatorMethods,
   expectNoFunctions,
   GRAPH_METRICS_FORBIDDEN_FIELDS
-} from "../../helpers/invariantHelpers";
+} from "../helpers/invariantHelpers.ts";
 
 const validCardGraphMetrics = {
   card_id: "card_0001",
@@ -190,7 +190,7 @@ import {
   expectNoMutatorMethods,
   expectNoFunctions,
   GRAPH_METRICS_FORBIDDEN_FIELDS
-} from "../../helpers/invariantHelpers";
+} from "../helpers/invariantHelpers.ts";
 
 describe("CardGraphMetrics invariants — forbidden cross-domain fields", () => {
   it("must not contain user, scheduling, performance, evidence, or AI narrative fields", () => {

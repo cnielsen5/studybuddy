@@ -6,8 +6,8 @@
  * This prevents semantic drift between Golden Master edges and derived metrics.
  */
 
-import { validRelationship } from "../../fixtures/relationship.fixture";
-import { validRelationshipGraphMetrics } from "../../fixtures/relationshipGraphMetrics.fixture";
+import { validRelationship } from "../fixtures/relationship.fixture.ts";
+import { validRelationshipGraphMetrics } from "../fixtures/relationshipGraphMetrics.fixture.ts";
 
 describe("RelationshipGraphMetrics ↔ Relationship endpoint consistency invariants", () => {
   it("RelationshipGraphMetrics endpoints must match Relationship endpoints", () => {

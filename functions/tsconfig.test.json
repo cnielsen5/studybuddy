@@ -5,7 +5,9 @@
     "moduleResolution": "node",
     "outDir": "./.test-dist",
     "types": ["jest", "node"],
-    "isolatedModules": true
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
   },
   "include": [
     "src",

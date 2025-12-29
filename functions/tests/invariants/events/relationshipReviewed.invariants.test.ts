@@ -1,3 +1,5 @@
+import { validUserEvent } from "../../fixtures/userEvent.fixture.ts";
+
 const validRelationshipReviewedEvent = {
   ...validUserEvent,
   type: "relationship_reviewed",

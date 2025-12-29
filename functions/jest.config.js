@@ -9,8 +9,7 @@ module.exports = {
   // This is the fix: we move the ts-jest config inside the transform array
   transform: {
     '^.+\\.tsx?$': ['ts-jest', {
-      tsconfig: 'tsconfig.json', 
-      isolatedModules: true, // Optional: speeds up tests by not type-checking during test run
+      tsconfig: 'tsconfig.test.json', 
     }],
   },
   // Setup standard ignores so it doesn't try to test build artifacts

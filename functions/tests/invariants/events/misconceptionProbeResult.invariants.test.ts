@@ -1,3 +1,5 @@
+import { validUserEvent } from "../../fixtures/userEvent.fixture.ts";
+
 const validMisconceptionProbeEvent = {
   ...validUserEvent,
   type: "misconception_probe_result",

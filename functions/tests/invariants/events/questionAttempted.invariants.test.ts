@@ -1,3 +1,5 @@
+import { validUserEvent } from "../../fixtures/userEvent.fixture.ts";
+
 const validQuestionAttemptedEvent = {
   ...validUserEvent,
   type: "question_attempted",

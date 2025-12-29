@@ -1,3 +1,5 @@
+import { expectTimestampLike } from "../../helpers/timestamp";
+
 const validCardScheduleView = {
   card_id: "card_0001",
   library_id: "lib_abc",

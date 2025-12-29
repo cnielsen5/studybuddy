@@ -1,3 +1,5 @@
+import { validUserEvent } from "../../fixtures/userEvent.fixture.ts";
+
 const validCardReviewedEvent = {
   ...validUserEvent,
   type: "card_reviewed",

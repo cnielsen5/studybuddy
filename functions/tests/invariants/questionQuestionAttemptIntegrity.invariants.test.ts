@@ -4,7 +4,7 @@
  * without importing or embedding Question objects.
  */
 
-import { validQuestionAttempt } from "../fixtures/questionAttempt.fixture";
+import { validQuestionAttempt } from "../fixtures/questionAttempt.fixture.ts";
 
 describe("QuestionAttempt ↔ Question integration invariants", () => {
   it("question_id must follow Question ID naming convention", () => {
