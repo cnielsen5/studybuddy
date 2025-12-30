@@ -14,10 +14,16 @@ import {
 } from "../../src/projector/eventProjector";
 import { Firestore } from "@google-cloud/firestore";
 import { validUserEvent } from "../fixtures/userEvent.fixture.ts";
+import { validCardReviewedEvent } from "../fixtures/cardReviewed.fixture.ts";
 import { z } from "zod";
 
 // Mock Firestore
 jest.mock("@google-cloud/firestore");
+
+// Mock card projector to avoid needing full Firestore transaction setup
+jest.mock("../../src/projector/cardProjector", () => ({
+  projectCardReviewedEvent: jest.fn(),
+}));
 
 describe("Event Projector", () => {
   let mockFirestore: jest.Mocked<Firestore>;
@@ -121,29 +127,41 @@ describe("Event Projector", () => {
   });
 
   describe("projectEvent", () => {
-    it("should successfully project a valid event", async () => {
-      const result = await projectEvent(mockFirestore, validUserEvent);
+    it("should successfully project a valid card_reviewed event", async () => {
+      // Mock the card projector to return success
+      const { projectCardReviewedEvent } = require("../../src/projector/cardProjector");
+      projectCardReviewedEvent.mockResolvedValue({
+        success: true,
+        eventId: validCardReviewedEvent.event_id,
+        cardId: validCardReviewedEvent.entity.id,
+        scheduleViewUpdated: true,
+        performanceViewUpdated: true,
+        idempotent: false,
+      });
+
+      // validCardReviewedEvent has type "card_reviewed" which is handled by the router
+      const result = await projectEvent(mockFirestore, validCardReviewedEvent);
 
       expect(result.success).toBe(true);
-      expect(result.eventId).toBe(validUserEvent.event_id);
+      expect(result.eventId).toBe(validCardReviewedEvent.event_id);
+      expect(projectCardReviewedEvent).toHaveBeenCalledWith(mockFirestore, validCardReviewedEvent);
     });
 
-    it("should handle projection errors gracefully", async () => {
-      // Since projectEvent is a placeholder that doesn't use Firestore yet,
-      // we test that it handles errors in the try-catch block
-      // For now, projectEvent always succeeds (it's a placeholder)
-      // This test verifies the error handling structure is in place
-      const result = await projectEvent(mockFirestore, validUserEvent);
+    it("should handle unknown event types gracefully", async () => {
+      // Create an event with an unknown type
+      const unknownEvent = {
+        ...validUserEvent,
+        type: "unknown_event_type",
+      };
 
-      // Currently projectEvent is a placeholder that always succeeds
-      // When actual projection logic is added, this test should verify error handling
+      // Unknown event types return success with an error message
+      const result = await projectEvent(mockFirestore, unknownEvent);
+
       expect(result.success).toBe(true);
-      expect(result.eventId).toBe(validUserEvent.event_id);
-      
-      // TODO: When projection logic is implemented, test actual error scenarios:
-      // - Firestore write failures
-      // - View validation failures
-      // - Concurrent write conflicts
+      expect(result.eventId).toBe(unknownEvent.event_id);
+      // Router returns success but with error message for unknown types
+      expect(result.error).toBeDefined();
+      expect(result.error).toContain("No projector for event type");
     });
   });
 });
