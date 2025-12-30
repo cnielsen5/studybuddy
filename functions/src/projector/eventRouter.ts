@@ -12,6 +12,8 @@
  * - session_ended → SessionProjector
  * - acceleration_applied → ScheduleUpdateProjector
  * - lapse_applied → ScheduleUpdateProjector
+ * - mastery_certification_completed → CertificationProjector
+ * - card_annotation_updated → AnnotationProjector
  */
 
 import { Firestore } from "@google-cloud/firestore";
@@ -22,6 +24,8 @@ import { projectRelationshipReviewedEvent } from "./relationshipProjector";
 import { projectMisconceptionProbeResultEvent } from "./misconceptionProjector";
 import { projectSessionStartedEvent, projectSessionEndedEvent } from "./sessionProjector";
 import { projectAccelerationAppliedEvent, projectLapseAppliedEvent } from "./scheduleUpdateProjector";
+import { projectMasteryCertificationCompletedEvent } from "./certificationProjector";
+import { projectCardAnnotationUpdatedEvent } from "./annotationProjector";
 
 /**
  * Routes an event to the appropriate projector based on event.type
@@ -103,11 +107,28 @@ export async function routeEvent(
       };
     }
 
+    case "mastery_certification_completed": {
+      const certificationResult = await projectMasteryCertificationCompletedEvent(firestore, event);
+      return {
+        success: certificationResult.success,
+        eventId: certificationResult.eventId,
+        error: certificationResult.error,
+      };
+    }
+
+    case "card_annotation_updated": {
+      const annotationResult = await projectCardAnnotationUpdatedEvent(firestore, event);
+      return {
+        success: annotationResult.success,
+        eventId: annotationResult.eventId,
+        error: annotationResult.error,
+      };
+    }
+
     // Events that don't need projection (or are handled elsewhere):
     // - library_id_map_applied: System event, no view needed
     // - content_flagged: Moderation event, may have separate workflow
-    // - card_annotation_updated: User preference, may be handled separately
-    // - mastery_certification_started/completed: May need separate projector
+    // - mastery_certification_started: Tracking only, completion is what matters
     // - intervention_accepted/rejected: Analytics events, may not need views
 
     default:
