@@ -31,7 +31,11 @@ export function validateEventBeforeEnqueue(rawEvent: unknown): UserEvent {
 export function safeValidateEventBeforeEnqueue(
   rawEvent: unknown
 ): { success: true; event: UserEvent } | { success: false; error: z.ZodError } {
-  return safeValidateEvent(rawEvent);
+  const result = safeValidateEvent(rawEvent);
+  if (result.success) {
+    return { success: true, event: result.data };
+  }
+  return { success: false, error: result.error };
 }
 
 /**
