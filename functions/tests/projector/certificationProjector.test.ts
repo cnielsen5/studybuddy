@@ -24,7 +24,7 @@ describe("Certification Projector", () => {
     jest.clearAllMocks();
 
     mockGet = jest.fn();
-    mockSet = jest.fn();
+    mockSet = jest.fn().mockResolvedValue(undefined);
     mockDoc = jest.fn(() => ({
       get: mockGet,
       set: mockSet,
@@ -140,20 +140,31 @@ describe("Certification Projector", () => {
             correct_count: 1,
           },
         ],
+        last_applied: {
+          received_at: "2025-01-01T00:00:00.000Z",
+          event_id: "evt_old",
+        },
       };
 
-      mockGet.mockResolvedValue({
-        exists: true,
-        data: () => existingView,
-      });
-
       let capturedUpdate: any = null;
-      mockSet.mockImplementation((data: any) => {
-        capturedUpdate = data;
+      mockDoc.mockImplementation((path: string) => {
+        return {
+          path,
+          get: async () => ({
+            exists: true,
+            data: () => existingView,
+          }),
+          set: async (data: any) => {
+            capturedUpdate = data;
+            await mockSet(data);
+          },
+        };
       });
 
       await projectMasteryCertificationCompletedEvent(mockFirestore, validMasteryCertificationCompletedEvent);
 
+      expect(capturedUpdate).toBeDefined();
+      expect(capturedUpdate).not.toBeNull();
       expect(capturedUpdate.certification_history).toHaveLength(2);
       expect(capturedUpdate.certification_history[1].certification_result).toBe("partial");
     });

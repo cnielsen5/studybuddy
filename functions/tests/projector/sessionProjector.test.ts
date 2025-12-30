@@ -29,7 +29,7 @@ describe("Session Projector", () => {
     jest.clearAllMocks();
 
     mockGet = jest.fn();
-    mockSet = jest.fn();
+    mockSet = jest.fn().mockResolvedValue(undefined);
     mockDoc = jest.fn(() => ({
       get: mockGet,
       set: mockSet,
@@ -114,6 +114,17 @@ describe("Session Projector", () => {
 
   describe("projectSessionEndedEvent", () => {
     it("should successfully project session_ended event", async () => {
+      const existingView = {
+        type: "session_view",
+        session_id: "session_0001",
+        started_at: "2025-12-29T12:00:00.000Z",
+        status: "active",
+        last_applied: {
+          received_at: "2025-01-01T00:00:00.000Z",
+          event_id: "evt_old",
+        },
+      };
+
       mockDoc.mockImplementation((path: string) => {
         return {
           path,
@@ -124,14 +135,12 @@ describe("Session Projector", () => {
             // Session view
             return {
               exists: true,
-              data: () => ({
-                type: "session_view",
-                session_id: "session_0001",
-                started_at: "2025-12-29T12:00:00.000Z",
-              }),
+              data: () => existingView,
             };
           },
-          set: mockSet,
+          set: async (data: any) => {
+            await mockSet(data);
+          },
         };
       });
 
@@ -150,6 +159,10 @@ describe("Session Projector", () => {
         session_id: "session_0001",
         started_at: "2025-12-29T12:00:00.000Z",
         status: "active",
+        last_applied: {
+          received_at: "2025-01-01T00:00:00.000Z",
+          event_id: "evt_old",
+        },
       };
 
       let capturedViewUpdate: any = null;
@@ -163,11 +176,11 @@ describe("Session Projector", () => {
             }
             return { exists: true, data: () => existingView };
           },
-          set: (data: any) => {
+          set: async (data: any) => {
             if (data.type === "session_view") {
               capturedViewUpdate = data;
             }
-            mockSet(data);
+            await mockSet(data);
           },
         };
       });
@@ -181,7 +194,19 @@ describe("Session Projector", () => {
     });
 
     it("should create session summary", async () => {
+      const existingView = {
+        type: "session_view",
+        session_id: "session_0001",
+        started_at: "2025-12-29T12:00:00.000Z",
+        status: "active",
+        last_applied: {
+          received_at: "2025-01-01T00:00:00.000Z",
+          event_id: "evt_old",
+        },
+      };
+
       let capturedSummary: any = null;
+      let capturedViewUpdate: any = null;
 
       mockDoc.mockImplementation((path: string) => {
         return {
@@ -192,18 +217,16 @@ describe("Session Projector", () => {
             }
             return {
               exists: true,
-              data: () => ({
-                type: "session_view",
-                session_id: "session_0001",
-                started_at: "2025-12-29T12:00:00.000Z",
-              }),
+              data: () => existingView,
             };
           },
-          set: (data: any) => {
+          set: async (data: any) => {
             if (data.type === "session_summary") {
               capturedSummary = data;
+            } else if (data.type === "session_view") {
+              capturedViewUpdate = data;
             }
-            mockSet(data);
+            await mockSet(data);
           },
         };
       });

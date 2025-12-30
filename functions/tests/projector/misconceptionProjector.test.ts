@@ -24,7 +24,7 @@ describe("Misconception Projector", () => {
     jest.clearAllMocks();
 
     mockGet = jest.fn();
-    mockSet = jest.fn();
+    mockSet = jest.fn().mockResolvedValue(undefined);
     mockDoc = jest.fn(() => ({
       get: mockGet,
       set: mockSet,
@@ -114,21 +114,31 @@ describe("Misconception Projector", () => {
           high_confidence_errors: 0,
           probe_confirmations: 0,
         },
+        last_applied: {
+          received_at: "2025-01-01T00:00:00.000Z",
+          event_id: "evt_old",
+        },
       };
 
-      mockGet.mockResolvedValue({
-        exists: true,
-        data: () => existingView,
-      });
-
       let capturedUpdate: any = null;
-      mockSet.mockImplementation((data: any) => {
-        capturedUpdate = data;
+      mockDoc.mockImplementation((path: string) => {
+        return {
+          path,
+          get: async () => ({
+            exists: true,
+            data: () => existingView,
+          }),
+          set: async (data: any) => {
+            capturedUpdate = data;
+            await mockSet(data);
+          },
+        };
       });
 
       await projectMisconceptionProbeResultEvent(mockFirestore, validMisconceptionProbeResultEvent);
 
       expect(capturedUpdate).toBeDefined();
+      expect(capturedUpdate).not.toBeNull();
       expect(capturedUpdate.strength).toBeGreaterThan(0.5); // Increased
       expect(capturedUpdate.evidence.probe_confirmations).toBe(1);
     });
@@ -148,6 +158,10 @@ describe("Misconception Projector", () => {
           high_confidence_errors: 0,
           probe_confirmations: 0,
         },
+        last_applied: {
+          received_at: "2025-01-01T00:00:00.000Z",
+          event_id: "evt_old",
+        },
       };
 
       const notConfirmedEvent = {
@@ -159,19 +173,25 @@ describe("Misconception Projector", () => {
         },
       };
 
-      mockGet.mockResolvedValue({
-        exists: true,
-        data: () => existingView,
-      });
-
       let capturedUpdate: any = null;
-      mockSet.mockImplementation((data: any) => {
-        capturedUpdate = data;
+      mockDoc.mockImplementation((path: string) => {
+        return {
+          path,
+          get: async () => ({
+            exists: true,
+            data: () => existingView,
+          }),
+          set: async (data: any) => {
+            capturedUpdate = data;
+            await mockSet(data);
+          },
+        };
       });
 
       await projectMisconceptionProbeResultEvent(mockFirestore, notConfirmedEvent);
 
       expect(capturedUpdate).toBeDefined();
+      expect(capturedUpdate).not.toBeNull();
       expect(capturedUpdate.strength).toBeLessThan(0.5); // Decreased
     });
   });

@@ -9,10 +9,14 @@
 import { Firestore } from "@google-cloud/firestore";
 import { UserEvent } from "./eventProjector";
 import { SessionStartedPayloadSchema, SessionEndedPayloadSchema } from "../validation/schemas";
-import { z } from "zod";
-
-type SessionStartedPayload = z.infer<typeof SessionStartedPayloadSchema>;
-type SessionEndedPayload = z.infer<typeof SessionEndedPayloadSchema>;
+import {
+  reduceSessionStarted,
+  reduceSessionEnded,
+  reduceSessionSummary,
+  shouldApplySessionEvent,
+  SessionView,
+  SessionSummary,
+} from "./reducers/sessionReducers";
 
 export interface SessionProjectionResult {
   success: boolean;
@@ -31,18 +35,6 @@ function getSessionSummaryPath(userId: string, libraryId: string, sessionId: str
   return `users/${userId}/libraries/${libraryId}/session_summaries/${sessionId}`;
 }
 
-function shouldApplyEvent(
-  viewLastApplied: { received_at: string; event_id: string } | undefined,
-  event: UserEvent
-): boolean {
-  if (!viewLastApplied) return true;
-  const viewTimestamp = new Date(viewLastApplied.received_at).getTime();
-  const eventTimestamp = new Date(event.received_at).getTime();
-  if (eventTimestamp > viewTimestamp) return true;
-  if (eventTimestamp === viewTimestamp && event.event_id !== viewLastApplied.event_id) return true;
-  if (event.event_id === viewLastApplied.event_id) return false;
-  return false;
-}
 
 export async function projectSessionStartedEvent(
   firestore: Firestore,
@@ -61,27 +53,25 @@ export async function projectSessionStartedEvent(
       };
     }
 
-    const payload = payloadValidation.data;
-    const sessionId = event.entity.id;
-
     if (event.entity.kind !== "session") {
       return {
         success: false,
         eventId: event.event_id,
-        sessionId: sessionId,
+        sessionId: event.entity.id,
         viewUpdated: false,
         idempotent: false,
         error: `Expected entity.kind to be "session", got "${event.entity.kind}"`,
       };
     }
 
+    const sessionId = event.entity.id;
     const viewPath = getSessionViewPath(event.user_id, event.library_id, sessionId);
     const viewRef = firestore.doc(viewPath);
 
     const viewDoc = await viewRef.get();
-    const currentView = viewDoc.exists ? viewDoc.data() : undefined;
+    const currentView = viewDoc.exists ? (viewDoc.data() as SessionView) : undefined;
 
-    const shouldApply = shouldApplyEvent(currentView?.last_applied, event);
+    const shouldApply = shouldApplySessionEvent(currentView, event);
     if (!shouldApply) {
       return {
         success: true,
@@ -92,23 +82,7 @@ export async function projectSessionStartedEvent(
       };
     }
 
-    const updatedView = {
-      type: "session_view",
-      session_id: sessionId,
-      library_id: event.library_id,
-      user_id: event.user_id,
-      started_at: event.occurred_at,
-      planned_load: payload.planned_load,
-      queue_size: payload.queue_size,
-      cram_mode: payload.cram_mode || false,
-      status: "active",
-      last_applied: {
-        received_at: event.received_at,
-        event_id: event.event_id,
-      },
-      updated_at: new Date().toISOString(),
-    };
-
+    const updatedView = reduceSessionStarted(currentView, event);
     await viewRef.set(updatedView, { merge: false });
 
     return {
@@ -147,47 +121,29 @@ export async function projectSessionEndedEvent(
       };
     }
 
-    const payload = payloadValidation.data;
-    const sessionId = event.entity.id;
-
     if (event.entity.kind !== "session") {
       return {
         success: false,
         eventId: event.event_id,
-        sessionId: sessionId,
+        sessionId: event.entity.id,
         viewUpdated: false,
         idempotent: false,
         error: `Expected entity.kind to be "session", got "${event.entity.kind}"`,
       };
     }
 
+    const sessionId = event.entity.id;
+
     // Update session view
     const viewPath = getSessionViewPath(event.user_id, event.library_id, sessionId);
     const viewRef = firestore.doc(viewPath);
 
     const viewDoc = await viewRef.get();
-    const currentView = viewDoc.exists ? viewDoc.data() : undefined;
+    const currentView = viewDoc.exists ? (viewDoc.data() as SessionView) : undefined;
 
-    const shouldApplyView = shouldApplyEvent(currentView?.last_applied, event);
+    const shouldApplyView = shouldApplySessionEvent(currentView, event);
     if (shouldApplyView) {
-      const updatedView = {
-        ...currentView,
-        type: "session_view",
-        session_id: sessionId,
-        library_id: event.library_id,
-        user_id: event.user_id,
-        ended_at: event.occurred_at,
-        actual_load: payload.actual_load,
-        retention_delta: payload.retention_delta,
-        fatigue_hit: payload.fatigue_hit,
-        user_accepted_intervention: payload.user_accepted_intervention,
-        status: "completed",
-        last_applied: {
-          received_at: event.received_at,
-          event_id: event.event_id,
-        },
-        updated_at: new Date().toISOString(),
-      };
+      const updatedView = reduceSessionEnded(currentView, event);
       await viewRef.set(updatedView, { merge: false });
     }
 
@@ -195,29 +151,7 @@ export async function projectSessionEndedEvent(
     const summaryPath = getSessionSummaryPath(event.user_id, event.library_id, sessionId);
     const summaryRef = firestore.doc(summaryPath);
 
-    const summaryDoc = await summaryRef.get();
-    const currentSummary = summaryDoc.exists ? summaryDoc.data() : undefined;
-
-    const summary = {
-      type: "session_summary",
-      session_id: sessionId,
-      user_id: event.user_id,
-      started_at: currentView?.started_at || event.occurred_at,
-      ended_at: event.occurred_at,
-      totals: {
-        cards_reviewed: 0, // Would be calculated from other events
-        questions_answered: 0, // Would be calculated from other events
-        total_time_seconds: 0, // Would be calculated
-      },
-      retention_delta: payload.retention_delta,
-      fatigue_hit: payload.fatigue_hit,
-      last_applied: {
-        received_at: event.received_at,
-        event_id: event.event_id,
-      },
-      updated_at: new Date().toISOString(),
-    };
-
+    const summary = reduceSessionSummary(currentView, event);
     await summaryRef.set(summary, { merge: false });
 
     return {

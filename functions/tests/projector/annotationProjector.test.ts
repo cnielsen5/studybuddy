@@ -26,7 +26,7 @@ describe("Annotation Projector", () => {
     jest.clearAllMocks();
 
     mockGet = jest.fn();
-    mockSet = jest.fn();
+    mockSet = jest.fn().mockResolvedValue(undefined);
     mockDoc = jest.fn(() => ({
       get: mockGet,
       set: mockSet,
@@ -107,21 +107,31 @@ describe("Annotation Projector", () => {
         card_id: "card_0001",
         tags: ["existing_tag"],
         pinned: false,
+        last_applied: {
+          received_at: "2025-01-01T00:00:00.000Z",
+          event_id: "evt_old",
+        },
       };
 
-      mockGet.mockResolvedValue({
-        exists: true,
-        data: () => existingView,
-      });
-
       let capturedUpdate: any = null;
-      mockSet.mockImplementation((data: any) => {
-        capturedUpdate = data;
+      mockDoc.mockImplementation((path: string) => {
+        return {
+          path,
+          get: async () => ({
+            exists: true,
+            data: () => existingView,
+          }),
+          set: async (data: any) => {
+            capturedUpdate = data;
+            await mockSet(data);
+          },
+        };
       });
 
       await projectCardAnnotationUpdatedEvent(mockFirestore, validCardAnnotationUpdatedEvent);
 
       expect(capturedUpdate).toBeDefined();
+      expect(capturedUpdate).not.toBeNull();
       expect(capturedUpdate.tags).toContain("existing_tag");
       expect(capturedUpdate.tags).toContain("cram");
       expect(capturedUpdate.tags).toContain("high-priority");
@@ -134,6 +144,10 @@ describe("Annotation Projector", () => {
         card_id: "card_0001",
         tags: ["cram", "high-priority", "keep_this"],
         pinned: true,
+        last_applied: {
+          received_at: "2025-01-01T00:00:00.000Z",
+          event_id: "evt_old",
+        },
       };
 
       const removeEvent = {
@@ -144,19 +158,25 @@ describe("Annotation Projector", () => {
         },
       };
 
-      mockGet.mockResolvedValue({
-        exists: true,
-        data: () => existingView,
-      });
-
       let capturedUpdate: any = null;
-      mockSet.mockImplementation((data: any) => {
-        capturedUpdate = data;
+      mockDoc.mockImplementation((path: string) => {
+        return {
+          path,
+          get: async () => ({
+            exists: true,
+            data: () => existingView,
+          }),
+          set: async (data: any) => {
+            capturedUpdate = data;
+            await mockSet(data);
+          },
+        };
       });
 
       await projectCardAnnotationUpdatedEvent(mockFirestore, removeEvent);
 
       expect(capturedUpdate).toBeDefined();
+      expect(capturedUpdate).not.toBeNull();
       expect(capturedUpdate.tags).not.toContain("cram");
       expect(capturedUpdate.tags).toContain("high-priority");
       expect(capturedUpdate.tags).toContain("keep_this");
@@ -168,6 +188,10 @@ describe("Annotation Projector", () => {
         card_id: "card_0001",
         tags: ["old_tag1", "old_tag2"],
         pinned: false,
+        last_applied: {
+          received_at: "2025-01-01T00:00:00.000Z",
+          event_id: "evt_old",
+        },
       };
 
       const updateEvent = {
@@ -179,19 +203,25 @@ describe("Annotation Projector", () => {
         },
       };
 
-      mockGet.mockResolvedValue({
-        exists: true,
-        data: () => existingView,
-      });
-
       let capturedUpdate: any = null;
-      mockSet.mockImplementation((data: any) => {
-        capturedUpdate = data;
+      mockDoc.mockImplementation((path: string) => {
+        return {
+          path,
+          get: async () => ({
+            exists: true,
+            data: () => existingView,
+          }),
+          set: async (data: any) => {
+            capturedUpdate = data;
+            await mockSet(data);
+          },
+        };
       });
 
       await projectCardAnnotationUpdatedEvent(mockFirestore, updateEvent);
 
       expect(capturedUpdate).toBeDefined();
+      expect(capturedUpdate).not.toBeNull();
       expect(capturedUpdate.tags).toEqual(["new_tag1", "new_tag2"]);
       expect(capturedUpdate.tags).not.toContain("old_tag1");
       expect(capturedUpdate.pinned).toBe(true);

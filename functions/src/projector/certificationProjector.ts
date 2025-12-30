@@ -10,9 +10,11 @@
 import { Firestore } from "@google-cloud/firestore";
 import { UserEvent } from "./eventProjector";
 import { MasteryCertificationCompletedPayloadSchema } from "../validation/schemas";
-import { z } from "zod";
-
-type MasteryCertificationCompletedPayload = z.infer<typeof MasteryCertificationCompletedPayloadSchema>;
+import {
+  reduceConceptCertification,
+  shouldApplyCertificationEvent,
+  ConceptCertificationView,
+} from "./reducers/certificationReducers";
 
 export interface CertificationProjectionResult {
   success: boolean;
@@ -30,21 +32,6 @@ function getConceptCertificationViewPath(userId: string, libraryId: string, conc
   return `users/${userId}/libraries/${libraryId}/views/concept_certification/${conceptId}`;
 }
 
-/**
- * Checks if event should be applied based on last_applied cursor
- */
-function shouldApplyEvent(
-  viewLastApplied: { received_at: string; event_id: string } | undefined,
-  event: UserEvent
-): boolean {
-  if (!viewLastApplied) return true;
-  const viewTimestamp = new Date(viewLastApplied.received_at).getTime();
-  const eventTimestamp = new Date(event.received_at).getTime();
-  if (eventTimestamp > viewTimestamp) return true;
-  if (eventTimestamp === viewTimestamp && event.event_id !== viewLastApplied.event_id) return true;
-  if (event.event_id === viewLastApplied.event_id) return false;
-  return false;
-}
 
 /**
  * Projects a mastery_certification_completed event to ConceptCertificationView
@@ -66,27 +53,25 @@ export async function projectMasteryCertificationCompletedEvent(
       };
     }
 
-    const payload = payloadValidation.data;
-    const conceptId = event.entity.id;
-
     if (event.entity.kind !== "concept") {
       return {
         success: false,
         eventId: event.event_id,
-        conceptId: conceptId,
+        conceptId: event.entity.id,
         viewUpdated: false,
         idempotent: false,
         error: `Expected entity.kind to be "concept", got "${event.entity.kind}"`,
       };
     }
 
+    const conceptId = event.entity.id;
     const viewPath = getConceptCertificationViewPath(event.user_id, event.library_id, conceptId);
     const viewRef = firestore.doc(viewPath);
 
     const viewDoc = await viewRef.get();
-    const currentView = viewDoc.exists ? viewDoc.data() : undefined;
+    const currentView = viewDoc.exists ? (viewDoc.data() as ConceptCertificationView) : undefined;
 
-    const shouldApply = shouldApplyEvent(currentView?.last_applied, event);
+    const shouldApply = shouldApplyCertificationEvent(currentView, event);
     if (!shouldApply) {
       return {
         success: true,
@@ -97,41 +82,7 @@ export async function projectMasteryCertificationCompletedEvent(
       };
     }
 
-    // Calculate accuracy from certification results
-    const accuracy = payload.questions_answered > 0
-      ? payload.correct_count / payload.questions_answered
-      : 0;
-
-    // Build updated view
-    const updatedView = {
-      type: "concept_certification_view",
-      concept_id: conceptId,
-      library_id: event.library_id,
-      user_id: event.user_id,
-      certification_result: payload.certification_result,
-      certification_date: event.occurred_at,
-      questions_answered: payload.questions_answered,
-      correct_count: payload.correct_count,
-      accuracy: accuracy,
-      reasoning_quality: payload.reasoning_quality,
-      // Track certification history
-      certification_history: [
-        ...(currentView?.certification_history || []),
-        {
-          certification_result: payload.certification_result,
-          date: event.occurred_at,
-          questions_answered: payload.questions_answered,
-          correct_count: payload.correct_count,
-          reasoning_quality: payload.reasoning_quality,
-        },
-      ],
-      last_applied: {
-        received_at: event.received_at,
-        event_id: event.event_id,
-      },
-      updated_at: new Date().toISOString(),
-    };
-
+    const updatedView = reduceConceptCertification(currentView, event);
     await viewRef.set(updatedView, { merge: false });
 
     // TODO: If certification is "full", may need to:
