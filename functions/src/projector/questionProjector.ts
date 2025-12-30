@@ -5,11 +5,16 @@
  * - QuestionPerformanceView: users/{uid}/libraries/{libraryId}/views/question_perf/{questionId}
  * 
  * Implements idempotency via last_applied cursor comparison.
+ * Uses pure reducer functions for business logic.
  */
 
 import { Firestore } from "@google-cloud/firestore";
 import { UserEvent } from "./eventProjector";
 import { QuestionAttemptedPayloadSchema } from "../validation/schemas";
+import {
+  reduceQuestionPerformance,
+  shouldApplyQuestionEvent,
+} from "./reducers/questionReducers";
 import { z } from "zod";
 
 type QuestionAttemptedPayload = z.infer<typeof QuestionAttemptedPayloadSchema>;
@@ -30,80 +35,7 @@ function getQuestionPerformanceViewPath(userId: string, libraryId: string, quest
   return `users/${userId}/libraries/${libraryId}/views/question_perf/${questionId}`;
 }
 
-/**
- * Checks if event should be applied based on last_applied cursor
- */
-function shouldApplyEvent(
-  viewLastApplied: { received_at: string; event_id: string } | undefined,
-  event: UserEvent
-): boolean {
-  if (!viewLastApplied) {
-    return true;
-  }
-
-  const viewTimestamp = new Date(viewLastApplied.received_at).getTime();
-  const eventTimestamp = new Date(event.received_at).getTime();
-
-  if (eventTimestamp > viewTimestamp) {
-    return true;
-  }
-
-  if (eventTimestamp === viewTimestamp && event.event_id !== viewLastApplied.event_id) {
-    return true;
-  }
-
-  if (event.event_id === viewLastApplied.event_id) {
-    return false;
-  }
-
-  return false;
-}
-
-/**
- * Calculates the updated QuestionPerformanceView
- */
-function calculatePerformanceViewUpdate(
-  currentView: any,
-  event: UserEvent,
-  payload: QuestionAttemptedPayload
-): any {
-  const questionId = event.entity.id;
-  const currentTotalAttempts = currentView?.total_attempts || 0;
-  const currentCorrectAttempts = currentView?.correct_attempts || 0;
-  const currentAvgSeconds = currentView?.avg_seconds || 0;
-  const currentStreak = currentView?.streak || 0;
-  const currentMaxStreak = currentView?.max_streak || 0;
-
-  const newTotalAttempts = currentTotalAttempts + 1;
-  const isCorrect = payload.correct;
-  const newCorrectAttempts = isCorrect ? currentCorrectAttempts + 1 : currentCorrectAttempts;
-  const newAccuracyRate = newCorrectAttempts / newTotalAttempts;
-
-  const alpha = 0.2;
-  const newAvgSeconds = currentAvgSeconds * (1 - alpha) + payload.seconds_spent * alpha;
-
-  let newStreak = isCorrect ? currentStreak + 1 : 0;
-  const newMaxStreak = Math.max(currentMaxStreak, newStreak);
-
-  return {
-    type: "question_performance_view",
-    question_id: questionId,
-    library_id: event.library_id,
-    user_id: event.user_id,
-    total_attempts: newTotalAttempts,
-    correct_attempts: newCorrectAttempts,
-    accuracy_rate: newAccuracyRate,
-    avg_seconds: newAvgSeconds,
-    streak: newStreak,
-    max_streak: newMaxStreak,
-    last_attempted_at: event.occurred_at,
-    last_applied: {
-      received_at: event.received_at,
-      event_id: event.event_id,
-    },
-    updated_at: new Date().toISOString(),
-  };
-}
+// Idempotency check and calculation now handled by pure reducers
 
 /**
  * Projects a question_attempted event to QuestionPerformanceView
@@ -145,7 +77,7 @@ export async function projectQuestionAttemptedEvent(
     const viewDoc = await viewRef.get();
     const currentView = viewDoc.exists ? viewDoc.data() : undefined;
 
-    const shouldApply = shouldApplyEvent(currentView?.last_applied, event);
+    const shouldApply = shouldApplyQuestionEvent(currentView, event);
     if (!shouldApply) {
       return {
         success: true,
@@ -156,7 +88,7 @@ export async function projectQuestionAttemptedEvent(
       };
     }
 
-    const updatedView = calculatePerformanceViewUpdate(currentView, event, payload);
+    const updatedView = reduceQuestionPerformance(currentView, event);
     await viewRef.set(updatedView, { merge: false });
 
     return {
