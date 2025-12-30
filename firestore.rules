@@ -2,8 +2,55 @@ rules_version = '2';
 
 service cloud.firestore {
   match /databases/{database}/documents {
+    // Default: deny all access
     match /{document=**} {
       allow read, write: if false;
+    }
+
+    // ============================================================================
+    // Event Write Path: users/{uid}/libraries/{libraryId}/events/{eventId}
+    // ============================================================================
+    // Canonical path for event ingestion
+    // Rules:
+    //   - eventId is globally unique
+    //   - Create-only: allow create if document doesn't exist
+    //   - Deny update/delete: events are immutable
+    //   - Allow read: for projector and user access
+    // ============================================================================
+    
+    match /users/{userId}/libraries/{libraryId}/events/{eventId} {
+      // Allow read: users can read their own events, projector needs read access
+      allow read: if request.auth != null && request.auth.uid == userId;
+      
+      // Allow create: only if document doesn't exist (idempotency)
+      // This enforces create-only semantics
+      allow create: if request.auth != null 
+                    && request.auth.uid == userId
+                    && !exists(/databases/$(database)/documents/users/$(userId)/libraries/$(libraryId)/events/$(eventId))
+                    && request.resource.data.event_id == eventId
+                    && request.resource.data.user_id == userId
+                    && request.resource.data.library_id == libraryId;
+      
+      // Deny update: events are immutable
+      allow update: if false;
+      
+      // Deny delete: events are append-only
+      allow delete: if false;
+    }
+
+    // ============================================================================
+    // Projected Views: users/{uid}/libraries/{libraryId}/views/{viewType}/{viewId}
+    // ============================================================================
+    // Views are server-generated (projector writes, users read)
+    
+    match /users/{userId}/libraries/{libraryId}/views/{viewType}/{viewId} {
+      // Allow read: users can read their own views
+      allow read: if request.auth != null && request.auth.uid == userId;
+      
+      // Allow write: only from server (projector)
+      // In production, use Firebase Admin SDK which bypasses rules
+      // This rule is for client-side access prevention
+      allow write: if false;
     }
   }
 }
