@@ -6,7 +6,7 @@
  * This script tests the core modules without Jest to verify they work correctly.
  */
 
-import { calculateNextSchedule, initializeCardSchedule, DEFAULT_FSRS_PARAMS } from "../../src/core/scheduler/fsrs";
+import { calculateNextSchedule, initializeCardSchedule, DEFAULT_FSRS_V6_PARAMS } from "../../src/core/scheduler/fsrs";
 import { normalizeStability, normalizeDifficulty } from "../../src/core/scheduler/normalization";
 import { checkEligibility, isDue } from "../../src/core/queue/eligibility";
 import { buildQueue, getQueueStats, DEFAULT_QUEUE_OPTIONS } from "../../src/core/queue/queueBuilder";
@@ -63,12 +63,12 @@ test("calculateNextSchedule handles 'again' grade (lapse)", () => {
 console.log("\n🔧 Normalization Tests:");
 test("normalizeStability clamps to valid range", () => {
   const normalized = normalizeStability(1000.0);
-  return normalized <= DEFAULT_FSRS_PARAMS.maxStability;
+  return normalized <= 365.0; // Max stability
 });
 
 test("normalizeDifficulty handles NaN", () => {
   const normalized = normalizeDifficulty(NaN);
-  return normalized === DEFAULT_FSRS_PARAMS.initialDifficulty;
+  return normalized === DEFAULT_FSRS_V6_PARAMS.w1; // Initial difficulty
 });
 
 // Eligibility Tests

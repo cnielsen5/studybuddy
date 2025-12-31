@@ -10,7 +10,7 @@
  * - Functions in → functions out
  */
 
-import { FSRSParameters, DEFAULT_FSRS_PARAMS } from "./fsrs";
+import { FSRSv6Parameters, DEFAULT_FSRS_V6_PARAMS } from "./fsrs";
 
 /**
  * Normalizes stability value to valid range
@@ -21,15 +21,12 @@ import { FSRSParameters, DEFAULT_FSRS_PARAMS } from "./fsrs";
  */
 export function normalizeStability(
   stability: number,
-  params: FSRSParameters = DEFAULT_FSRS_PARAMS
+  params: FSRSv6Parameters = DEFAULT_FSRS_V6_PARAMS
 ): number {
   if (!Number.isFinite(stability) || isNaN(stability)) {
-    return params.initialStability;
+    return params.w0; // Initial stability
   }
-  return Math.max(
-    params.minStability,
-    Math.min(params.maxStability, stability)
-  );
+  return Math.max(0.1, Math.min(365.0, stability)); // Clamp to reasonable range
 }
 
 /**
@@ -41,15 +38,12 @@ export function normalizeStability(
  */
 export function normalizeDifficulty(
   difficulty: number,
-  params: FSRSParameters = DEFAULT_FSRS_PARAMS
+  params: FSRSv6Parameters = DEFAULT_FSRS_V6_PARAMS
 ): number {
   if (!Number.isFinite(difficulty) || isNaN(difficulty)) {
-    return params.initialDifficulty;
+    return params.w1; // Initial difficulty
   }
-  return Math.max(
-    params.minDifficulty,
-    Math.min(params.maxDifficulty, difficulty)
-  );
+  return Math.max(0.1, Math.min(10.0, difficulty)); // Clamp to reasonable range
 }
 
 /**
@@ -79,49 +73,44 @@ export function normalizeRetention(retention: number): number {
 }
 
 /**
- * Validates FSRS parameters
+ * Validates FSRS v6 parameters
  * 
  * @param params - Parameters to validate
  * @returns Validation result with errors if any
  */
-export function validateFSRSParameters(params: FSRSParameters): {
+export function validateFSRSParameters(params: FSRSv6Parameters): {
   valid: boolean;
   errors: string[];
 } {
   const errors: string[] = [];
 
-  if (params.initialStability <= 0) {
-    errors.push("initialStability must be > 0");
+  // Validate key parameters
+  if (params.w0 <= 0) {
+    errors.push("w0 (initial stability) must be > 0");
   }
-  if (params.minStability <= 0) {
-    errors.push("minStability must be > 0");
+  if (params.w1 <= 0) {
+    errors.push("w1 (initial difficulty) must be > 0");
   }
-  if (params.maxStability <= params.minStability) {
-    errors.push("maxStability must be > minStability");
+  if (params.w19 < 0 || params.w19 > 1) {
+    errors.push("w19 (decay parameter) must be between 0 and 1");
   }
-  if (params.initialDifficulty <= 0) {
-    errors.push("initialDifficulty must be > 0");
+  if (params.w20 < 0 || params.w20 > 1) {
+    errors.push("w20 (decay parameter) must be between 0 and 1");
   }
-  if (params.minDifficulty <= 0) {
-    errors.push("minDifficulty must be > 0");
+  if (params.w19 > params.w20) {
+    errors.push("w19 must be <= w20");
   }
-  if (params.maxDifficulty <= params.minDifficulty) {
-    errors.push("maxDifficulty must be > minDifficulty");
-  }
-  if (params.decayFactor <= 0 || params.decayFactor >= 1) {
-    errors.push("decayFactor must be between 0 and 1");
-  }
-  if (params.gradeMultipliers.again <= 0) {
-    errors.push("gradeMultipliers.again must be > 0");
-  }
-  if (params.gradeMultipliers.hard <= 0) {
-    errors.push("gradeMultipliers.hard must be > 0");
-  }
-  if (params.gradeMultipliers.good <= 0) {
-    errors.push("gradeMultipliers.good must be > 0");
-  }
-  if (params.gradeMultipliers.easy <= 0) {
-    errors.push("gradeMultipliers.easy must be > 0");
+
+  // Check that all parameters are finite numbers
+  const paramKeys: (keyof FSRSv6Parameters)[] = [
+    'w0', 'w1', 'w2', 'w3', 'w4', 'w5', 'w6', 'w7', 'w8', 'w9',
+    'w10', 'w11', 'w12', 'w13', 'w14', 'w15', 'w16', 'w17', 'w18', 'w19', 'w20'
+  ];
+  
+  for (const key of paramKeys) {
+    if (!Number.isFinite(params[key])) {
+      errors.push(`${key} must be a finite number`);
+    }
   }
 
   return {

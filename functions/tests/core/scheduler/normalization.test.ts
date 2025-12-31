@@ -10,41 +10,41 @@ import {
   validateFSRSParameters,
   clamp,
   normalizePercentage,
-  DEFAULT_FSRS_PARAMS,
 } from "../../../src/core/scheduler/normalization";
+import { DEFAULT_FSRS_V6_PARAMS } from "../../../src/core/scheduler/fsrs";
 
 describe("Normalization", () => {
   describe("normalizeStability", () => {
     it("should clamp stability to valid range", () => {
       const normalized = normalizeStability(1000.0);
-      expect(normalized).toBeLessThanOrEqual(DEFAULT_FSRS_PARAMS.maxStability);
+      expect(normalized).toBeLessThanOrEqual(365.0); // Max stability
     });
 
     it("should handle negative values", () => {
       const normalized = normalizeStability(-10.0);
-      expect(normalized).toBeGreaterThanOrEqual(DEFAULT_FSRS_PARAMS.minStability);
+      expect(normalized).toBeGreaterThanOrEqual(0.1); // Min stability
     });
 
     it("should handle NaN", () => {
       const normalized = normalizeStability(NaN);
-      expect(normalized).toBe(DEFAULT_FSRS_PARAMS.initialStability);
+      expect(normalized).toBe(DEFAULT_FSRS_V6_PARAMS.w0); // Initial stability
     });
 
     it("should handle Infinity", () => {
       const normalized = normalizeStability(Infinity);
-      expect(normalized).toBeLessThanOrEqual(DEFAULT_FSRS_PARAMS.maxStability);
+      expect(normalized).toBeLessThanOrEqual(365.0); // Max stability
     });
   });
 
   describe("normalizeDifficulty", () => {
     it("should clamp difficulty to valid range", () => {
       const normalized = normalizeDifficulty(100.0);
-      expect(normalized).toBeLessThanOrEqual(DEFAULT_FSRS_PARAMS.maxDifficulty);
+      expect(normalized).toBeLessThanOrEqual(10.0); // Max difficulty
     });
 
     it("should handle negative values", () => {
       const normalized = normalizeDifficulty(-10.0);
-      expect(normalized).toBeGreaterThanOrEqual(DEFAULT_FSRS_PARAMS.minDifficulty);
+      expect(normalized).toBeGreaterThanOrEqual(0.1); // Min difficulty
     });
   });
 
@@ -69,20 +69,20 @@ describe("Normalization", () => {
 
   describe("validateFSRSParameters", () => {
     it("should validate correct parameters", () => {
-      const result = validateFSRSParameters(DEFAULT_FSRS_PARAMS);
+      const result = validateFSRSParameters(DEFAULT_FSRS_V6_PARAMS);
       expect(result.valid).toBe(true);
       expect(result.errors).toHaveLength(0);
     });
 
-    it("should detect invalid initialStability", () => {
-      const params = { ...DEFAULT_FSRS_PARAMS, initialStability: -1 };
+    it("should detect invalid w0 (initial stability)", () => {
+      const params = { ...DEFAULT_FSRS_V6_PARAMS, w0: -1 };
       const result = validateFSRSParameters(params);
       expect(result.valid).toBe(false);
       expect(result.errors.length).toBeGreaterThan(0);
     });
 
-    it("should detect maxStability < minStability", () => {
-      const params = { ...DEFAULT_FSRS_PARAMS, maxStability: 1, minStability: 10 };
+    it("should detect invalid decay parameters", () => {
+      const params = { ...DEFAULT_FSRS_V6_PARAMS, w19: 0.2, w20: 0.1 }; // w19 > w20
       const result = validateFSRSParameters(params);
       expect(result.valid).toBe(false);
     });
