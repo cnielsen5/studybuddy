@@ -5,10 +5,6 @@
  */
 
 import { UserEvent } from "./eventClient";
-import { CardReviewedPayloadSchema } from "../validation/schemas";
-import { z } from "zod";
-
-type CardReviewedPayload = z.infer<typeof CardReviewedPayloadSchema>;
 
 /**
  * Generates a unique event ID

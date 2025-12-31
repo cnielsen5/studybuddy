@@ -15,7 +15,6 @@ import {
   reduceSessionSummary,
   shouldApplySessionEvent,
   SessionView,
-  SessionSummary,
 } from "./reducers/sessionReducers";
 
 export interface SessionProjectionResult {

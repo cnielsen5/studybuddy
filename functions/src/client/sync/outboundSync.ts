@@ -8,8 +8,8 @@
  */
 
 import { Firestore } from "@google-cloud/firestore";
-import { uploadEventsBatch, UploadResult } from "../eventUpload";
-import { LocalEventQueue, QueuedEvent, MemoryEventQueue } from "./localEventQueue";
+import { uploadEventsBatch } from "../eventUpload";
+import { LocalEventQueue, QueuedEvent } from "./localEventQueue";
 
 export interface OutboundSyncResult {
   success: boolean;
@@ -152,7 +152,4 @@ export class OutboundSync {
     };
   }
 }
-
-// Import for type checking
-import { MemoryEventQueue } from "./localEventQueue";
 

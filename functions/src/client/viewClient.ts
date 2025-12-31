@@ -145,7 +145,7 @@ export async function getDueCards(
     .limit(limit)
     .get();
 
-  return snapshot.docs.map((doc) => doc.data() as CardScheduleView);
+  return snapshot.docs.map((doc: any) => doc.data() as CardScheduleView);
 }
 
 /**

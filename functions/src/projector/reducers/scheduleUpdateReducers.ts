@@ -6,14 +6,14 @@
 
 import { UserEvent } from "../eventProjector";
 import { CardScheduleView } from "./cardReducers";
-import { z } from "zod";
 import {
   AccelerationAppliedPayloadSchema,
   LapseAppliedPayloadSchema,
 } from "../../validation/schemas";
 
-type AccelerationAppliedPayload = z.infer<typeof AccelerationAppliedPayloadSchema>;
-type LapseAppliedPayload = z.infer<typeof LapseAppliedPayloadSchema>;
+// Types for payload validation (used implicitly via schema.parse)
+// type AccelerationAppliedPayload = z.infer<typeof AccelerationAppliedPayloadSchema>;
+// type LapseAppliedPayload = z.infer<typeof LapseAppliedPayloadSchema>;
 
 
 export function reduceAccelerationApplied(

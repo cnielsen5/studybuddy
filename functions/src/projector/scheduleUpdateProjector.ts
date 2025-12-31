@@ -10,7 +10,6 @@
 
 import { Firestore } from "@google-cloud/firestore";
 import { UserEvent } from "./eventProjector";
-import { z } from "zod";
 import {
   reduceAccelerationApplied,
   reduceLapseApplied,

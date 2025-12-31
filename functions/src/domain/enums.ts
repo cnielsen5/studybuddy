@@ -20,6 +20,15 @@ export enum CardWeight {
   INTEGRATION = "integration" 
 }
 
+export enum PedagogicalRole {
+  RECOGNITION = "recognition",
+  RECALL = "recall",
+  SYNTHESIS = "synthesis",
+  APPLICATION = "application",
+  ANALYSIS = "analysis",
+  INTEGRATION = "integration"
+}
+
 export enum QuestionType {
   MCQ = "mcq",
   SELECT_ALL = "select_all",

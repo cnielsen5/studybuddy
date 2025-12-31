@@ -6,9 +6,9 @@
 
 import { UserEvent } from "../eventProjector";
 import { QuestionAttemptedPayloadSchema } from "../../validation/schemas";
-import { z } from "zod";
 
-type QuestionAttemptedPayload = z.infer<typeof QuestionAttemptedPayloadSchema>;
+// Type for payload validation (used implicitly via schema.parse)
+// type QuestionAttemptedPayload = z.infer<typeof QuestionAttemptedPayloadSchema>;
 
 export interface QuestionPerformanceView {
   type: "question_performance_view";

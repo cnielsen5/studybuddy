@@ -75,8 +75,8 @@ echo ""
 echo "Setting staging as default project..."
 firebase use staging
 
-# Verify
-CURRENT=$(firebase use 2>&1 | grep -oP '(?<=Using )\S+' || echo "none")
+# Verify (macOS-compatible)
+CURRENT=$(firebase use 2>&1 | grep "Using" | sed -E 's/.*Using ([^ ]+).*/\1/' || echo "none")
 if [ "$CURRENT" = "$STAGING_PROJECT" ]; then
   echo -e "${GREEN}✅ Staging project is now default${NC}"
 else

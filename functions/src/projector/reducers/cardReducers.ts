@@ -11,9 +11,9 @@
 
 import { UserEvent } from "../eventProjector";
 import { CardReviewedPayloadSchema } from "../../validation/schemas";
-import { z } from "zod";
 
-type CardReviewedPayload = z.infer<typeof CardReviewedPayloadSchema>;
+// Type for payload validation (used implicitly via schema.parse)
+// type CardReviewedPayload = z.infer<typeof CardReviewedPayloadSchema>;
 
 export interface CardScheduleView {
   type: "card_schedule_view";

@@ -117,7 +117,7 @@ export class InboundSync {
         break;
       }
 
-      const batchEvents = snapshot.docs.map((doc) => doc.data() as UserEvent);
+      const batchEvents = snapshot.docs.map((doc: any) => doc.data() as UserEvent);
       allEvents.push(...batchEvents);
 
       fetched += batchEvents.length;

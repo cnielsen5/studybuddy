@@ -13,7 +13,8 @@ const MisconceptionProbeResultPayloadSchema = z.object({
   seconds_spent: z.number().nonnegative(),
 });
 
-type MisconceptionProbeResultPayload = z.infer<typeof MisconceptionProbeResultPayloadSchema>;
+// Type for payload validation (used implicitly via schema.parse)
+// type MisconceptionProbeResultPayload = z.infer<typeof MisconceptionProbeResultPayloadSchema>;
 
 export interface MisconceptionEdgeView {
   type: "misconception_edge_view";

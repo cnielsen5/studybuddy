@@ -16,10 +16,9 @@ import {
   reduceCardSchedule,
   reduceCardPerformance,
   shouldApplyCardEvent,
+  CardScheduleView,
+  CardPerformanceView,
 } from "./reducers/cardReducers";
-import { z } from "zod";
-
-type CardReviewedPayload = z.infer<typeof CardReviewedPayloadSchema>;
 
 export interface CardProjectionResult {
   success: boolean;
@@ -74,7 +73,6 @@ export async function projectCardReviewedEvent(
       };
     }
 
-    const payload = payloadValidation.data;
     const cardId = event.entity.id;
 
     if (event.entity.kind !== "card") {
@@ -103,8 +101,12 @@ export async function projectCardReviewedEvent(
         transaction.get(performanceViewRef),
       ]);
 
-      const scheduleView = scheduleViewDoc.exists ? scheduleViewDoc.data() : undefined;
-      const performanceView = performanceViewDoc.exists ? performanceViewDoc.data() : undefined;
+      const scheduleView = scheduleViewDoc.exists 
+        ? (scheduleViewDoc.data() as CardScheduleView)
+        : undefined;
+      const performanceView = performanceViewDoc.exists 
+        ? (performanceViewDoc.data() as CardPerformanceView)
+        : undefined;
 
       // Check idempotency for both views using pure reducer functions
       const shouldApplySchedule = shouldApplyCardEvent(scheduleView, event);

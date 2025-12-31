@@ -6,9 +6,9 @@
 
 import { UserEvent } from "../eventProjector";
 import { MasteryCertificationCompletedPayloadSchema } from "../../validation/schemas";
-import { z } from "zod";
 
-type MasteryCertificationCompletedPayload = z.infer<typeof MasteryCertificationCompletedPayloadSchema>;
+// Type for payload validation (used implicitly via schema.parse)
+// type MasteryCertificationCompletedPayload = z.infer<typeof MasteryCertificationCompletedPayloadSchema>;
 
 export interface ConceptCertificationView {
   type: "concept_certification_view";

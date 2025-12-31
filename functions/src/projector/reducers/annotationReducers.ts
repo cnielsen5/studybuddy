@@ -6,9 +6,9 @@
 
 import { UserEvent } from "../eventProjector";
 import { CardAnnotationUpdatedPayloadSchema } from "../../validation/schemas";
-import { z } from "zod";
 
-type CardAnnotationUpdatedPayload = z.infer<typeof CardAnnotationUpdatedPayloadSchema>;
+// Type for payload validation (used implicitly via schema.parse)
+// type CardAnnotationUpdatedPayload = z.infer<typeof CardAnnotationUpdatedPayloadSchema>;
 
 export interface CardAnnotationView {
   type: "card_annotation_view";

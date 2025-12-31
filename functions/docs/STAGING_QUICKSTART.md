@@ -100,6 +100,12 @@ firebase use staging
 - Make sure you're logged in: `firebase login`
 - Verify you have access to the project
 
+**"Eventarc Service Agent permission denied" (Functions v2)**
+- This is normal on first deployment
+- Wait 5-10 minutes and retry: `firebase deploy --only functions`
+- Rules and indexes deploy successfully even if functions fail
+- See `STAGING_DEPLOYMENT.md` for detailed troubleshooting
+
 ## Next Steps
 
 After staging is deployed:

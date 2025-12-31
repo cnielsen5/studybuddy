@@ -43,14 +43,15 @@ import {
   SyncEngine,
   LocalEventQueue,
   CursorStore,
-  MemoryEventQueue,
-  MemoryCursorStore,
 } from "./sync";
 
-export {
+export type {
   UserEvent,
   CardScheduleView,
   CardPerformanceView,
+};
+
+export {
   generateEventId,
   createCardReviewedEvent,
   createQuestionAttemptedEvent,

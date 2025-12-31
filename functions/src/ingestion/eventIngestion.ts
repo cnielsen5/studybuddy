@@ -14,7 +14,6 @@
 
 import { Firestore } from "@google-cloud/firestore";
 import {
-  validateEventForIngestion,
   prepareEventForWrite,
   getEventPath,
   IdempotencyResult,

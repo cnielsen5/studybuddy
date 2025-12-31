@@ -14,10 +14,8 @@ import { QuestionAttemptedPayloadSchema } from "../validation/schemas";
 import {
   reduceQuestionPerformance,
   shouldApplyQuestionEvent,
+  QuestionPerformanceView,
 } from "./reducers/questionReducers";
-import { z } from "zod";
-
-type QuestionAttemptedPayload = z.infer<typeof QuestionAttemptedPayloadSchema>;
 
 export interface QuestionProjectionResult {
   success: boolean;
@@ -57,7 +55,6 @@ export async function projectQuestionAttemptedEvent(
       };
     }
 
-    const payload = payloadValidation.data;
     const questionId = event.entity.id;
 
     if (event.entity.kind !== "question") {
@@ -75,7 +72,9 @@ export async function projectQuestionAttemptedEvent(
     const viewRef = firestore.doc(viewPath);
 
     const viewDoc = await viewRef.get();
-    const currentView = viewDoc.exists ? viewDoc.data() : undefined;
+    const currentView = viewDoc.exists 
+      ? (viewDoc.data() as QuestionPerformanceView)
+      : undefined;
 
     const shouldApply = shouldApplyQuestionEvent(currentView, event);
     if (!shouldApply) {

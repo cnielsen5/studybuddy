@@ -3,10 +3,16 @@
     "rules": "firestore.rules",
     "indexes": "firestore.indexes.json"
   },
-  "functions": {
-    "source": "lib",
-    "runtime": "nodejs20"
-  },
+  "functions": [
+    {
+      "source": ".",
+      "codebase": "default",
+      "runtime": "nodejs20",
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run build"
+      ]
+    }
+  ],
   "emulators": {
     "firestore": {
       "port": 8080

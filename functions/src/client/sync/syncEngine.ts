@@ -43,19 +43,21 @@ export interface SyncEngineOptions {
  * Main sync engine that coordinates outbound and inbound sync
  */
 export class SyncEngine {
+  private eventQueue: LocalEventQueue;
   private outboundSync: OutboundSync;
   private inboundSync: InboundSync;
   private autoSyncInterval?: NodeJS.Timeout;
   private isOnline: boolean = true;
 
   constructor(
-    private firestore: Firestore,
-    private eventQueue: LocalEventQueue,
-    private cursorStore: CursorStore,
-    private userId: string,
-    private libraryId: string,
+    firestore: Firestore,
+    eventQueue: LocalEventQueue,
+    cursorStore: CursorStore,
+    userId: string,
+    libraryId: string,
     private options: SyncEngineOptions = {}
   ) {
+    this.eventQueue = eventQueue;
     this.outboundSync = new OutboundSync(firestore, eventQueue, {
       batchSize: options.outboundBatchSize,
     });

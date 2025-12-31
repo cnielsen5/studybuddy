@@ -6,10 +6,10 @@
 
 import { UserEvent } from "../eventProjector";
 import { SessionStartedPayloadSchema, SessionEndedPayloadSchema } from "../../validation/schemas";
-import { z } from "zod";
 
-type SessionStartedPayload = z.infer<typeof SessionStartedPayloadSchema>;
-type SessionEndedPayload = z.infer<typeof SessionEndedPayloadSchema>;
+// Types for payload validation (used implicitly via schema.parse)
+// type SessionStartedPayload = z.infer<typeof SessionStartedPayloadSchema>;
+// type SessionEndedPayload = z.infer<typeof SessionEndedPayloadSchema>;
 
 export interface SessionView {
   type: "session_view";

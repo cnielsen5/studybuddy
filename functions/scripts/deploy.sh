@@ -50,8 +50,26 @@ if ! firebase projects:list &> /dev/null; then
   exit 1
 fi
 
-# Check current project
-CURRENT_PROJECT=$(firebase use 2>&1 | grep -oP '(?<=Using )\S+' || echo "none")
+# Check current project (macOS-compatible)
+# firebase use outputs the project ID directly when a project is selected
+# First line is usually the project ID or "Using <alias> (<project-id>)"
+FIREBASE_OUTPUT=$(firebase use 2>&1 | head -1 | xargs)
+CURRENT_PROJECT="none"
+
+# Check if output contains project ID pattern (alphanumeric with hyphens)
+# Direct project ID output (e.g., "socrates-staging-eedc4")
+if [[ "$FIREBASE_OUTPUT" =~ ^[a-zA-Z0-9-]+$ ]]; then
+  CURRENT_PROJECT="$FIREBASE_OUTPUT"
+# Extract from "Using alias (project-id)" format
+elif [[ "$FIREBASE_OUTPUT" == *"Using"* ]] && [[ "$FIREBASE_OUTPUT" == *"("* ]]; then
+  CURRENT_PROJECT=$(echo "$FIREBASE_OUTPUT" | sed -E 's/.*\(([^)]+)\).*/\1/')
+fi
+
+# Validate it looks like a project ID
+if [[ ! "$CURRENT_PROJECT" =~ ^[a-zA-Z0-9-]+$ ]] || [ -z "$CURRENT_PROJECT" ]; then
+  CURRENT_PROJECT="none"
+fi
+
 echo "Current Firebase project: $CURRENT_PROJECT"
 
 if [ "$CURRENT_PROJECT" = "none" ] || [ -z "$CURRENT_PROJECT" ]; then
@@ -145,13 +163,15 @@ else
   exit 1
 fi
 
-# Deploy functions
+# Deploy functions (optional - may fail if not properly configured)
 echo "Deploying Cloud Functions..."
 if firebase deploy --only functions; then
   echo -e "${GREEN}✅ Functions deployed${NC}"
 else
-  echo -e "${RED}❌ Function deployment failed${NC}"
-  exit 1
+  echo -e "${YELLOW}⚠️  Function deployment failed or skipped${NC}"
+  echo -e "${YELLOW}   This is okay if functions are not yet configured.${NC}"
+  echo -e "${YELLOW}   Rules and indexes are deployed successfully.${NC}"
+  # Don't exit - rules and indexes are more critical
 fi
 
 # Step 5: Post-deployment verification

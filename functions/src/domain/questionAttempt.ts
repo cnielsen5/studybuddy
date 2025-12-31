@@ -1,3 +1,5 @@
+import { ErrorType } from "./enums";
+
 export interface QuestionAttempt {
   attempt_id: string;
   user_id: string;

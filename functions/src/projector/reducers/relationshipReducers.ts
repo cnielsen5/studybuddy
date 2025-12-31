@@ -19,7 +19,8 @@ const RelationshipReviewedPayloadSchema = z.object({
   seconds_spent: z.number().nonnegative(),
 });
 
-type RelationshipReviewedPayload = z.infer<typeof RelationshipReviewedPayloadSchema>;
+// Type for payload validation (used implicitly via schema.parse)
+// type RelationshipReviewedPayload = z.infer<typeof RelationshipReviewedPayloadSchema>;
 
 export interface RelationshipScheduleView {
   type: "relationship_schedule_view";

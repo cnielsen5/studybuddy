@@ -24,7 +24,7 @@
     "emulators:exec": "firebase emulators:exec --only firestore"
   },
   "engines": {
-    "node": "24"
+    "node": "20"
   },
   "main": "lib/index.js",
   "dependencies": {

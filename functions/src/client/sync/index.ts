@@ -7,35 +7,49 @@
  * - Sync engine (orchestration)
  */
 
-export {
-  LocalEventQueue,
+export type {
   QueuedEvent,
+} from "./localEventQueue";
+export type {
+  LocalEventQueue,
+} from "./localEventQueue";
+export {
   MemoryEventQueue,
   IndexedDBEventQueue,
 } from "./localEventQueue";
 
-export {
-  CursorStore,
+export type {
   SyncCursor,
+} from "./syncCursor";
+export type {
+  CursorStore,
+} from "./syncCursor";
+export {
   MemoryCursorStore,
   IndexedDBCursorStore,
 } from "./syncCursor";
 
-export {
-  OutboundSync,
+export type {
   OutboundSyncResult,
   OutboundSyncOptions,
 } from "./outboundSync";
-
 export {
-  InboundSync,
+  OutboundSync,
+} from "./outboundSync";
+
+export type {
   InboundSyncResult,
   InboundSyncOptions,
 } from "./inboundSync";
-
 export {
-  SyncEngine,
+  InboundSync,
+} from "./inboundSync";
+
+export type {
   SyncStatus,
   SyncEngineOptions,
+} from "./syncEngine";
+export {
+  SyncEngine,
 } from "./syncEngine";
 

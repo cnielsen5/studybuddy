@@ -352,6 +352,64 @@ firebase use production
 npm run deploy:production
 ```
 
+## Troubleshooting
+
+### Functions Deployment: Eventarc Permission Error
+
+**Error:**
+```
+Permission denied while using the Eventarc Service Agent
+```
+
+**Cause:**
+This is a common issue when first deploying Firebase Functions v2. The Eventarc Service Agent needs time to receive proper permissions after being enabled.
+
+**Solution:**
+
+1. **Wait 5-10 minutes** and retry:
+   ```bash
+   firebase deploy --only functions
+   ```
+
+2. **If still failing**, manually grant permissions:
+   - Go to [Google Cloud Console IAM](https://console.cloud.google.com/iam-admin/iam)
+   - Find the service account: `service-{PROJECT_NUMBER}@gcp-sa-eventarc.iam.gserviceaccount.com`
+   - Ensure it has the "Eventarc Service Agent" role
+   - Wait a few minutes and retry
+
+3. **Alternative**: Deploy functions separately after rules/indexes:
+   ```bash
+   # Deploy rules and indexes first (usually succeeds)
+   npm run deploy:staging
+   
+   # Wait a few minutes, then deploy functions
+   firebase deploy --only functions
+   ```
+
+**Note:** Rules and indexes are deployed successfully even if functions fail. The functions can be deployed later once permissions propagate.
+
+### Outdated firebase-functions Warning
+
+**Warning:**
+```
+package.json indicates an outdated version of firebase-functions
+```
+
+**Solution:**
+Update firebase-functions (optional, not critical):
+```bash
+npm install --save firebase-functions@latest
+```
+
+### Indexes Taking Time to Build
+
+Indexes may take 5-30 minutes to build, especially on first deployment. Check status:
+```bash
+firebase firestore:indexes
+```
+
+Or in Firebase Console: Firestore → Indexes
+
 ## Next Steps
 
 After staging is deployed and tested:
