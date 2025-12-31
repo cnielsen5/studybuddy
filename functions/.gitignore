@@ -8,3 +8,12 @@ typings/
 # Node.js dependency directory
 node_modules/
 *.local
+
+# Firebase configuration (contains project-specific IDs)
+.firebaserc
+
+# Environment variables
+.env
+.env.local
+.env.production
+.env.staging

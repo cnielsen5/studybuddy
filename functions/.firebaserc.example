@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "studybuddy-staging",
+    "staging": "studybuddy-staging",
+    "production": "studybuddy-production"
+  }
+}
+
