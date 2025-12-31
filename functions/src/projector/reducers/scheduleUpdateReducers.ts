@@ -7,20 +7,10 @@
 import { UserEvent } from "../eventProjector";
 import { CardScheduleView } from "./cardReducers";
 import { z } from "zod";
-
-const AccelerationAppliedPayloadSchema = z.object({
-  original_stability: z.number().positive(),
-  new_stability: z.number().positive(),
-  next_due_days: z.number().nonnegative(),
-  trigger: z.string(),
-});
-
-const LapseAppliedPayloadSchema = z.object({
-  original_stability: z.number().positive(),
-  new_stability: z.number().positive(),
-  effective_penalty: z.number().min(0).max(1),
-  trigger: z.string(),
-});
+import {
+  AccelerationAppliedPayloadSchema,
+  LapseAppliedPayloadSchema,
+} from "../../validation/schemas";
 
 type AccelerationAppliedPayload = z.infer<typeof AccelerationAppliedPayloadSchema>;
 type LapseAppliedPayload = z.infer<typeof LapseAppliedPayloadSchema>;
@@ -33,21 +23,30 @@ export function reduceAccelerationApplied(
   const payload = AccelerationAppliedPayloadSchema.parse(event.payload);
   const cardId = event.entity.id;
 
+  if (!prev) {
+    throw new Error("Cannot apply acceleration to non-existent card schedule view");
+  }
+
+  // Calculate new stability from current stability * acceleration factor
+  const newStability = prev.stability * payload.acceleration_factor;
+  
+  // Calculate new interval based on new stability
+  const newIntervalDays = Math.max(1, Math.floor(newStability));
   const nextDueDate = new Date();
-  nextDueDate.setDate(nextDueDate.getDate() + payload.next_due_days);
+  nextDueDate.setDate(nextDueDate.getDate() + newIntervalDays);
 
   return {
     type: "card_schedule_view",
     card_id: cardId,
     library_id: event.library_id,
     user_id: event.user_id,
-    state: prev?.state || 2, // review state
+    state: prev.state, // Keep current state
     due_at: nextDueDate.toISOString(),
-    stability: payload.new_stability,
-    difficulty: prev?.difficulty || 5.0,
-    interval_days: payload.next_due_days,
-    last_reviewed_at: prev?.last_reviewed_at || event.occurred_at,
-    last_grade: prev?.last_grade || "good",
+    stability: newStability,
+    difficulty: prev.difficulty, // Difficulty unchanged by acceleration
+    interval_days: newIntervalDays,
+    last_reviewed_at: prev.last_reviewed_at, // Don't update last_reviewed_at for interventions
+    last_grade: prev.last_grade,
     last_applied: {
       received_at: event.received_at,
       event_id: event.event_id,
@@ -63,12 +62,20 @@ export function reduceLapseApplied(
   const payload = LapseAppliedPayloadSchema.parse(event.payload);
   const cardId = event.entity.id;
 
-  const daysUntilDue = Math.max(1, Math.floor(payload.new_stability));
+  if (!prev) {
+    throw new Error("Cannot apply lapse to non-existent card schedule view");
+  }
+
+  // Calculate new stability from current stability * penalty factor
+  const newStability = Math.max(0.1, prev.stability * payload.penalty_factor);
+  
+  // Calculate new interval based on new stability
+  const daysUntilDue = Math.max(1, Math.floor(newStability));
   const nextDueDate = new Date();
   nextDueDate.setDate(nextDueDate.getDate() + daysUntilDue);
 
-  // Lapse moves card back to learning state
-  const newState = Math.max(1, (prev?.state || 2) - 1);
+  // Lapse moves card back to learning/relearning state
+  const newState = prev.state === 2 ? 3 : Math.max(1, prev.state - 1); // REVIEW -> RELEARNING, or decrement
 
   return {
     type: "card_schedule_view",
@@ -77,10 +84,10 @@ export function reduceLapseApplied(
     user_id: event.user_id,
     state: newState,
     due_at: nextDueDate.toISOString(),
-    stability: payload.new_stability,
-    difficulty: Math.min(10.0, (prev?.difficulty || 5.0) + 0.1), // Increase difficulty on lapse
+    stability: newStability,
+    difficulty: Math.min(10.0, prev.difficulty + 0.1), // Increase difficulty on lapse
     interval_days: daysUntilDue,
-    last_reviewed_at: prev?.last_reviewed_at || event.occurred_at,
+    last_reviewed_at: prev.last_reviewed_at, // Don't update last_reviewed_at for interventions
     last_grade: "again",
     last_applied: {
       received_at: event.received_at,

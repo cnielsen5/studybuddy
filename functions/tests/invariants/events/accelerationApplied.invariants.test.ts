@@ -4,18 +4,7 @@ import {
   expectEventImmutability,
   expectNoPayloadAggregates
 } from "../../helpers/invariantHelpers.ts";
-
-const validAccelerationAppliedEvent = {
-  ...validUserEvent,
-  type: "acceleration_applied",
-  entity: { kind: "card", id: "card_0001" },
-  payload: {
-    original_stability: 45.5,
-    new_stability: 56.875,
-    next_due_days: 5,
-    trigger: "correct_reasoning_in_probing"
-  }
-};
+import { validAccelerationAppliedEvent } from "../../fixtures/accelerationApplied.fixture.ts";
 
 describe("Event payload invariants — acceleration_applied", () => {
   it("must have entity.kind === 'card'", () => {
@@ -23,33 +12,25 @@ describe("Event payload invariants — acceleration_applied", () => {
     expectIdPrefix(validAccelerationAppliedEvent.entity.id, ID_PREFIXES.CARD, "AccelerationAppliedEvent.entity.id");
   });
 
-  it("must include stability changes and next due date", () => {
+  it("must include acceleration_factor and trigger", () => {
     const p: any = validAccelerationAppliedEvent.payload;
 
-    expect(typeof p.original_stability).toBe("number");
-    expect(p.original_stability).toBeGreaterThan(0);
-
-    expect(typeof p.new_stability).toBe("number");
-    expect(p.new_stability).toBeGreaterThan(0);
-    expect(p.new_stability).toBeGreaterThanOrEqual(p.original_stability);
-
-    expect(typeof p.next_due_days).toBe("number");
-    expect(p.next_due_days).toBeGreaterThan(0);
-    expect(p.next_due_days).toBeLessThanOrEqual(8);
-
-    if (p.trigger !== undefined) {
-      expect(typeof p.trigger).toBe("string");
-    }
+    expect(typeof p.acceleration_factor).toBe("number");
+    expect(p.acceleration_factor).toBeGreaterThanOrEqual(1.0);
+    expect(typeof p.trigger).toBe("string");
   });
 
-  it("must not include full schedule state or performance metrics", () => {
+  it("must NOT include algorithm-specific derived fields", () => {
     const p: any = validAccelerationAppliedEvent.payload;
 
-    expect(p.due).toBeUndefined();
+    // Algorithm-agnostic: no stability, difficulty, or interval in events
+    expect(p.original_stability).toBeUndefined();
+    expect(p.new_stability).toBeUndefined();
+    expect(p.stability).toBeUndefined();
     expect(p.difficulty).toBeUndefined();
     expect(p.interval_days).toBeUndefined();
-    expect(p.accuracy_rate).toBeUndefined();
-    expect(p.total_attempts).toBeUndefined();
+    expect(p.next_due_days).toBeUndefined();
+    expect(p.due_at).toBeUndefined();
   });
 
   it("must not contain mutation-indicating fields", () => {
@@ -60,4 +41,3 @@ describe("Event payload invariants — acceleration_applied", () => {
     expectNoPayloadAggregates(validAccelerationAppliedEvent.payload, "AccelerationAppliedEvent.payload");
   });
 });
-

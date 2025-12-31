@@ -41,9 +41,21 @@ describe("Schedule Update Projector", () => {
 
   describe("projectAccelerationAppliedEvent", () => {
     it("should successfully project acceleration_applied event", async () => {
+      const existingView = {
+        type: "card_schedule_view",
+        card_id: "card_0001",
+        state: 2, // review state
+        stability: 10.0,
+        difficulty: 5.0,
+        last_applied: {
+          received_at: "2025-01-01T00:00:00.000Z",
+          event_id: "evt_old",
+        },
+      };
+
       mockGet.mockResolvedValue({
-        exists: false,
-        data: () => undefined,
+        exists: true,
+        data: () => existingView,
       });
 
       const result = await projectAccelerationAppliedEvent(mockFirestore, validAccelerationAppliedEvent);
@@ -78,29 +90,48 @@ describe("Schedule Update Projector", () => {
     });
 
     it("should update stability and due date correctly", async () => {
-      mockGet.mockResolvedValue({
-        exists: false,
-        data: () => undefined,
-      });
+      const existingView = {
+        type: "card_schedule_view",
+        card_id: "card_0001",
+        state: 2, // review state
+        stability: 45.5,
+        difficulty: 5.0,
+        last_applied: {
+          received_at: "2025-01-01T00:00:00.000Z",
+          event_id: "evt_old",
+        },
+      };
 
       let capturedUpdate: any = null;
-      mockSet.mockImplementation((data: any) => {
-        capturedUpdate = data;
+      mockDoc.mockImplementation((path: string) => {
+        return {
+          path,
+          get: async () => ({
+            exists: true,
+            data: () => existingView,
+          }),
+          set: async (data: any) => {
+            capturedUpdate = data;
+            await mockSet(data);
+          },
+        };
       });
 
       await projectAccelerationAppliedEvent(mockFirestore, validAccelerationAppliedEvent);
 
       expect(capturedUpdate).toBeDefined();
       expect(capturedUpdate.type).toBe("card_schedule_view");
-      expect(capturedUpdate.stability).toBe(validAccelerationAppliedEvent.payload.new_stability);
-      expect(capturedUpdate.interval_days).toBe(validAccelerationAppliedEvent.payload.next_due_days);
+      // New stability = old stability * acceleration_factor
+      const expectedStability = existingView.stability * validAccelerationAppliedEvent.payload.acceleration_factor;
+      expect(capturedUpdate.stability).toBe(expectedStability);
+      expect(capturedUpdate.interval_days).toBeGreaterThan(0);
       expect(new Date(capturedUpdate.due_at).getTime()).toBeGreaterThan(new Date().getTime());
     });
 
     it("should return error for invalid payload", async () => {
       const invalidEvent = {
         ...validAccelerationAppliedEvent,
-        payload: { original_stability: -1 }, // Invalid
+        payload: { acceleration_factor: 0.5 }, // Invalid: must be >= 1.0
       };
 
       const result = await projectAccelerationAppliedEvent(mockFirestore, invalidEvent);
@@ -124,9 +155,21 @@ describe("Schedule Update Projector", () => {
 
   describe("projectLapseAppliedEvent", () => {
     it("should successfully project lapse_applied event", async () => {
+      const existingView = {
+        type: "card_schedule_view",
+        card_id: "card_0001",
+        state: 2, // review state
+        stability: 10.0,
+        difficulty: 5.0,
+        last_applied: {
+          received_at: "2025-01-01T00:00:00.000Z",
+          event_id: "evt_old",
+        },
+      };
+
       mockGet.mockResolvedValue({
-        exists: false,
-        data: () => undefined,
+        exists: true,
+        data: () => existingView,
       });
 
       const result = await projectLapseAppliedEvent(mockFirestore, validLapseAppliedEvent);
@@ -143,6 +186,7 @@ describe("Schedule Update Projector", () => {
         type: "card_schedule_view",
         card_id: "card_0001",
         state: 2, // review state
+        stability: 45.5,
         difficulty: 5.0,
         last_applied: {
           received_at: "2025-01-01T00:00:00.000Z",
@@ -169,8 +213,10 @@ describe("Schedule Update Projector", () => {
 
       expect(capturedUpdate).toBeDefined();
       expect(capturedUpdate).not.toBeNull();
-      expect(capturedUpdate.stability).toBe(validLapseAppliedEvent.payload.new_stability);
-      expect(capturedUpdate.state).toBe(1); // Moved back to learning
+      // New stability = old stability * penalty_factor
+      const expectedStability = existingView.stability * validLapseAppliedEvent.payload.penalty_factor;
+      expect(capturedUpdate.stability).toBe(expectedStability);
+      expect(capturedUpdate.state).toBe(3); // Moved to relearning (REVIEW -> RELEARNING)
       expect(capturedUpdate.difficulty).toBeGreaterThan(5.0); // Increased
       expect(capturedUpdate.last_grade).toBe("again");
     });
@@ -178,7 +224,7 @@ describe("Schedule Update Projector", () => {
     it("should return error for invalid payload", async () => {
       const invalidEvent = {
         ...validLapseAppliedEvent,
-        payload: { original_stability: -1 }, // Invalid
+        payload: { penalty_factor: 1.5 }, // Invalid: must be 0.0-1.0
       };
 
       const result = await projectLapseAppliedEvent(mockFirestore, invalidEvent);

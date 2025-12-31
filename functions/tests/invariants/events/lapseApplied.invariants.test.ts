@@ -4,18 +4,7 @@ import {
   expectEventImmutability,
   expectNoPayloadAggregates
 } from "../../helpers/invariantHelpers.ts";
-
-const validLapseAppliedEvent = {
-  ...validUserEvent,
-  type: "lapse_applied",
-  entity: { kind: "card", id: "card_0001" },
-  payload: {
-    original_stability: 45.5,
-    new_stability: 27.3,
-    effective_penalty: 0.4,
-    trigger: "diagnostic_probing_confirmed_gap"
-  }
-};
+import { validLapseAppliedEvent } from "../../fixtures/lapseApplied.fixture.ts";
 
 describe("Event payload invariants — lapse_applied", () => {
   it("must have entity.kind === 'card'", () => {
@@ -23,33 +12,25 @@ describe("Event payload invariants — lapse_applied", () => {
     expectIdPrefix(validLapseAppliedEvent.entity.id, ID_PREFIXES.CARD, "LapseAppliedEvent.entity.id");
   });
 
-  it("must include stability changes and penalty", () => {
+  it("must include penalty_factor and trigger", () => {
     const p: any = validLapseAppliedEvent.payload;
 
-    expect(typeof p.original_stability).toBe("number");
-    expect(p.original_stability).toBeGreaterThan(0);
-
-    expect(typeof p.new_stability).toBe("number");
-    expect(p.new_stability).toBeGreaterThan(0);
-    expect(p.new_stability).toBeLessThanOrEqual(p.original_stability);
-
-    expect(typeof p.effective_penalty).toBe("number");
-    expect(p.effective_penalty).toBeGreaterThanOrEqual(0);
-    expect(p.effective_penalty).toBeLessThanOrEqual(1);
-
-    if (p.trigger !== undefined) {
-      expect(typeof p.trigger).toBe("string");
-    }
+    expect(typeof p.penalty_factor).toBe("number");
+    expect(p.penalty_factor).toBeGreaterThanOrEqual(0);
+    expect(p.penalty_factor).toBeLessThanOrEqual(1);
+    expect(typeof p.trigger).toBe("string");
   });
 
-  it("must not include full schedule state or performance metrics", () => {
+  it("must NOT include algorithm-specific derived fields", () => {
     const p: any = validLapseAppliedEvent.payload;
 
-    expect(p.due).toBeUndefined();
+    // Algorithm-agnostic: no stability, difficulty, or interval in events
+    expect(p.original_stability).toBeUndefined();
+    expect(p.new_stability).toBeUndefined();
+    expect(p.stability).toBeUndefined();
     expect(p.difficulty).toBeUndefined();
     expect(p.interval_days).toBeUndefined();
-    expect(p.accuracy_rate).toBeUndefined();
-    expect(p.total_attempts).toBeUndefined();
+    expect(p.due_at).toBeUndefined();
   });
 
   it("must not contain mutation-indicating fields", () => {
@@ -60,4 +41,3 @@ describe("Event payload invariants — lapse_applied", () => {
     expectNoPayloadAggregates(validLapseAppliedEvent.payload, "LapseAppliedEvent.payload");
   });
 });
-

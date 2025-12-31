@@ -5,10 +5,8 @@ export const validLapseAppliedEvent = {
   type: "lapse_applied",
   entity: { kind: "card", id: "card_0001" },
   payload: {
-    original_stability: 45.5,
-    new_stability: 27.3,
-    effective_penalty: 0.4,
-    trigger: "diagnostic_probing_confirmed_gap"
+    penalty_factor: 0.4, // Multiplier to apply to current stability (0.0 to 1.0)
+    trigger: "diagnostic_probing_confirmed_gap" // Why the lapse was applied
   }
 } as const;
 

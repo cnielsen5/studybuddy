@@ -17,20 +17,10 @@ import {
   shouldApplyScheduleUpdateEvent,
 } from "./reducers/scheduleUpdateReducers";
 import { CardScheduleView } from "./reducers/cardReducers";
-
-const AccelerationAppliedPayloadSchema = z.object({
-  original_stability: z.number().positive(),
-  new_stability: z.number().positive(),
-  next_due_days: z.number().nonnegative(),
-  trigger: z.string(),
-});
-
-const LapseAppliedPayloadSchema = z.object({
-  original_stability: z.number().positive(),
-  new_stability: z.number().positive(),
-  effective_penalty: z.number().min(0).max(1),
-  trigger: z.string(),
-});
+import {
+  AccelerationAppliedPayloadSchema,
+  LapseAppliedPayloadSchema,
+} from "../validation/schemas";
 
 export interface ScheduleUpdateProjectionResult {
   success: boolean;

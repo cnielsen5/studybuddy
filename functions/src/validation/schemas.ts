@@ -281,6 +281,21 @@ export const MasteryCertificationCompletedPayloadSchema = z.object({
   reasoning_quality: z.enum(["good", "weak"]).optional(),
 });
 
+export const AccelerationAppliedPayloadSchema = z.object({
+  acceleration_factor: z.number().positive().min(1.0), // Multiplier > 1.0
+  trigger: z.string(),
+});
+
+export const LapseAppliedPayloadSchema = z.object({
+  penalty_factor: z.number().min(0).max(1), // Multiplier 0.0 to 1.0
+  trigger: z.string(),
+});
+
+export const InterventionAcceptedPayloadSchema = z.object({
+  intervention_type: z.enum(["accelerate", "lapse", "reset"]),
+  factor: z.number().positive(), // The factor that will be applied
+});
+
 // ============================================================================
 // View Schemas
 // ============================================================================
