@@ -16,7 +16,7 @@ export enum CardWeight {
   RECOGNITION = "recognition",
   RECALL = "recall",
   SYNTHESIS = "synthesis",
-  APPLICATION/ANALYSIS = "application/analysis",
+  APPLICATION_ANALYSIS = "application/analysis",
   INTEGRATION = "integration" 
 }
 
