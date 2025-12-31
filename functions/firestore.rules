@@ -1,0 +1,42 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Event documents - create-only, immutable
+    match /users/{userId}/libraries/{libraryId}/events/{eventId} {
+      // Allow read: users can read their own events
+      allow read: if request.auth != null && request.auth.uid == userId;
+      
+      // Allow create: only if document doesn't exist (idempotency)
+      // Must validate: user_id, library_id, event_id match path
+      allow create: if request.auth != null 
+                    && request.auth.uid == userId
+                    && !exists(/databases/$(database)/documents/users/$(userId)/libraries/$(libraryId)/events/$(eventId))
+                    && request.resource.data.event_id == eventId
+                    && request.resource.data.user_id == userId
+                    && request.resource.data.library_id == libraryId;
+      
+      // Deny update: events are immutable
+      allow update: if false;
+      
+      // Deny delete: events are append-only
+      allow delete: if false;
+    }
+
+    // View documents - read/write by projector only (server-side)
+    // Client can read their own views
+    match /users/{userId}/libraries/{libraryId}/views/{viewType}/{viewId} {
+      // Allow read: users can read their own views
+      allow read: if request.auth != null && request.auth.uid == userId;
+      
+      // Deny client writes: views are updated by server-side projector only
+      allow write: if false;
+    }
+
+    // Default: deny all other access
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
+
