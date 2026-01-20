@@ -1,19 +1,19 @@
 # Java Setup for Firestore Emulator
 
-The Firestore emulator requires Java to run. Here's how to install it on macOS.
+The Firestore emulator requires Java 21 or above to run. Here's how to install it on macOS.
 
 ## Quick Install (Recommended)
 
 ### Option 1: Using Homebrew (Easiest)
 
 ```bash
-brew install openjdk@17
+brew install openjdk@21
 ```
 
 Then add to your PATH (add to `~/.zshrc` or `~/.bash_profile`):
 
 ```bash
-export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
+export PATH="/opt/homebrew/opt/openjdk@21/bin:$PATH"
 ```
 
 Reload your shell:
@@ -28,14 +28,14 @@ source ~/.zshrc  # or ~/.bash_profile
 curl -s "https://get.sdkman.io" | bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"
 
-# Install Java
-sdk install java 17.0.9-tem
+# Install Java 21
+sdk install java 21.0.1-tem
 ```
 
 ### Option 3: Download from Oracle/Adoptium
 
 1. Visit: https://adoptium.net/
-2. Download OpenJDK 17 for macOS
+2. Download OpenJDK 21 (LTS) for macOS
 3. Install the `.pkg` file
 4. Verify: `java -version`
 
@@ -49,10 +49,12 @@ java -version
 
 You should see something like:
 ```
-openjdk version "17.0.9" 2023-10-17
-OpenJDK Runtime Environment (build 17.0.9+9)
-OpenJDK 64-Bit Server VM (build 17.0.9+9, mixed mode, sharing)
+openjdk version "21.0.1" 2024-10-15
+OpenJDK Runtime Environment (build 21.0.1+12)
+OpenJDK 64-Bit Server VM (build 21.0.1+12, mixed mode, sharing)
 ```
+
+**Important**: Firebase now requires Java 21 or above. Java 17 and below will not work.
 
 ## Alternative: Skip Emulator Tests
 
@@ -76,6 +78,7 @@ npm run test:rules
 - **Solution**: Make sure Java is in your PATH. Check with `which java`
 - **Solution**: Restart your terminal after installing
 
-**Issue**: "Wrong Java version"
-- **Solution**: Firestore emulator needs Java 8 or higher. Java 17 is recommended.
+**Issue**: "Wrong Java version" or "firebase-tools no longer supports Java version before 21"
+- **Solution**: Firebase now requires Java 21 or above. Install Java 21 using one of the methods above.
+- **Check version**: `java -version` should show version 21 or higher
 

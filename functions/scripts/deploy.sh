@@ -53,7 +53,7 @@ fi
 # Check current project (macOS-compatible)
 # firebase use outputs the project ID directly when a project is selected
 # First line is usually the project ID or "Using <alias> (<project-id>)"
-FIREBASE_OUTPUT=$(firebase use 2>&1 | head -1 | xargs)
+FIREBASE_OUTPUT=$(npx firebase use 2>&1 | head -1 | xargs)
 CURRENT_PROJECT="none"
 
 # Check if output contains project ID pattern (alphanumeric with hyphens)
@@ -113,9 +113,19 @@ else
   echo -e "${YELLOW}⚠️  Skipping tests (--skip-tests flag)${NC}"
 fi
 
-# Step 3: Build
+# Step 3: Verify Node version
 echo ""
-echo -e "${YELLOW}Step 3: Building TypeScript${NC}"
+echo -e "${YELLOW}Step 3: Verifying Node.js version${NC}"
+if ! node -e "const v=process.versions.node.split('.')[0]; if(v!=='20'){console.error('❌ Use Node 20 for functions. Current: Node ' + v + '. Run: nvm use 20'); process.exit(1)}"; then
+  echo -e "${RED}❌ Node version check failed${NC}"
+  echo -e "${YELLOW}   Switch to Node 20: nvm use 20${NC}"
+  exit 1
+fi
+echo -e "${GREEN}✅ Node version check passed (Node $(node -v))${NC}"
+
+# Step 4: Build
+echo ""
+echo -e "${YELLOW}Step 4: Building TypeScript${NC}"
 
 rm -rf lib
 if ! npm run build; then
@@ -130,7 +140,7 @@ fi
 
 echo -e "${GREEN}✅ Build successful${NC}"
 
-# Step 4: Deploy
+# Step 5: Deploy
 if [ "$DRY_RUN" = true ]; then
   echo ""
   echo -e "${YELLOW}🔍 DRY RUN MODE - No actual deployment${NC}"
@@ -142,11 +152,11 @@ if [ "$DRY_RUN" = true ]; then
 fi
 
 echo ""
-echo -e "${YELLOW}Step 4: Deploying to Firebase${NC}"
+echo -e "${YELLOW}Step 5: Deploying to Firebase${NC}"
 
 # Deploy security rules
 echo "Deploying Firestore security rules..."
-if firebase deploy --only firestore:rules; then
+if npx firebase deploy --only firestore:rules; then
   echo -e "${GREEN}✅ Security rules deployed${NC}"
 else
   echo -e "${RED}❌ Security rules deployment failed${NC}"
@@ -155,7 +165,7 @@ fi
 
 # Deploy indexes
 echo "Deploying Firestore indexes..."
-if firebase deploy --only firestore:indexes; then
+if npx firebase deploy --only firestore:indexes; then
   echo -e "${GREEN}✅ Indexes deployed${NC}"
   echo -e "${YELLOW}⚠️  Note: Indexes may take time to build. Check Firebase Console for status.${NC}"
 else
@@ -165,7 +175,7 @@ fi
 
 # Deploy functions (optional - may fail if not properly configured)
 echo "Deploying Cloud Functions..."
-if firebase deploy --only functions; then
+if npx firebase deploy --only functions; then
   echo -e "${GREEN}✅ Functions deployed${NC}"
 else
   echo -e "${YELLOW}⚠️  Function deployment failed or skipped${NC}"
@@ -174,12 +184,12 @@ else
   # Don't exit - rules and indexes are more critical
 fi
 
-# Step 5: Post-deployment verification
+# Step 6: Post-deployment verification
 echo ""
-echo -e "${YELLOW}Step 5: Post-deployment verification${NC}"
+echo -e "${YELLOW}Step 6: Post-deployment verification${NC}"
 
 echo "Checking deployed functions..."
-firebase functions:list
+npx firebase functions:list
 
 echo ""
 echo -e "${GREEN}✅ Deployment complete!${NC}"
