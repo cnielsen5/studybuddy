@@ -39,11 +39,10 @@ service cloud.firestore {
     }
 
     // ============================================================================
-    // Projected Views: users/{uid}/libraries/{libraryId}/views/{viewType}/{viewId}
-    // ============================================================================
-    // Views are server-generated (projector writes, users read)
+    // Projected Views: users/{uid}/libraries/{libraryId}/views/{viewDocId}
+    // viewDocId format: {viewType}__{entityId}
     
-    match /users/{userId}/libraries/{libraryId}/views/{viewType}/{viewId} {
+    match /users/{userId}/libraries/{libraryId}/views/{viewDocId} {
       // Allow read: users can read their own views
       allow read: if request.auth != null && request.auth.uid == userId;
       

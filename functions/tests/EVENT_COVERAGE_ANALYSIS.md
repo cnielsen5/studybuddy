@@ -1,6 +1,6 @@
 # Event Coverage Analysis
 
-Based on the "Socrates Structure and Organizer.md" document, this analysis identifies all events we currently have and potential gaps.
+Based on the `docs/design/socrates-structure-and-organizer.md` document, this analysis identifies all events we currently have and potential gaps.
 
 ## Current Events (✅ Implemented)
 

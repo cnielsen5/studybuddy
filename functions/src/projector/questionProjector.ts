@@ -26,14 +26,7 @@ export interface QuestionProjectionResult {
   error?: string;
 }
 
-/**
- * Gets the view path for QuestionPerformanceView
- */
-function getQuestionPerformanceViewPath(userId: string, libraryId: string, questionId: string): string {
-  return `users/${userId}/libraries/${libraryId}/views/question_perf/${questionId}`;
-}
-
-// Idempotency check and calculation now handled by pure reducers
+import { getQuestionPerformanceViewPath } from "../viewPaths";
 
 /**
  * Projects a question_attempted event to QuestionPerformanceView

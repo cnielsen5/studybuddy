@@ -41,14 +41,10 @@ export interface RelationshipProjectionResult {
   error?: string;
 }
 
-function getRelationshipScheduleViewPath(userId: string, libraryId: string, relationshipCardId: string): string {
-  return `users/${userId}/libraries/${libraryId}/views/relationship_schedule/${relationshipCardId}`;
-}
-
-function getRelationshipPerformanceViewPath(userId: string, libraryId: string, relationshipCardId: string): string {
-  return `users/${userId}/libraries/${libraryId}/views/relationship_perf/${relationshipCardId}`;
-}
-
+import {
+  getRelationshipScheduleViewPath,
+  getRelationshipPerformanceViewPath,
+} from "../viewPaths";
 
 export async function projectRelationshipReviewedEvent(
   firestore: Firestore,

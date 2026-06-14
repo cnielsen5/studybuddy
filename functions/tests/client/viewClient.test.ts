@@ -85,13 +85,14 @@ describe("View Client", () => {
       limit: mockLimit,
     });
 
-    mockWhere = jest.fn().mockReturnValue({
+    const queryBuilder = {
+      where: jest.fn(),
       orderBy: mockOrderBy,
-    });
+    };
+    queryBuilder.where.mockReturnValue(queryBuilder);
+    mockWhere = queryBuilder.where;
 
-    mockCollection = jest.fn().mockReturnValue({
-      where: mockWhere,
-    });
+    mockCollection = jest.fn().mockReturnValue(queryBuilder);
 
     mockDoc = jest.fn((path: string) => ({
       path,
@@ -116,7 +117,7 @@ describe("View Client", () => {
 
       expect(result).toEqual(validCardScheduleView);
       expect(mockDoc).toHaveBeenCalledWith(
-        "users/user_123/libraries/lib_abc/views/card_schedule/card_0001"
+        "users/user_123/libraries/lib_abc/views/card_schedule__card_0001"
       );
     });
 
@@ -143,7 +144,7 @@ describe("View Client", () => {
 
       expect(result).toEqual(validCardPerformanceView);
       expect(mockDoc).toHaveBeenCalledWith(
-        "users/user_123/libraries/lib_abc/views/card_perf/card_0001"
+        "users/user_123/libraries/lib_abc/views/card_perf__card_0001"
       );
     });
 
@@ -178,8 +179,9 @@ describe("View Client", () => {
       expect(result[0].card_id).toBe("card_0001");
       expect(result[1].card_id).toBe("card_0002");
       expect(mockCollection).toHaveBeenCalledWith(
-        "users/user_123/libraries/lib_abc/views/card_schedule"
+        "users/user_123/libraries/lib_abc/views"
       );
+      expect(mockWhere).toHaveBeenCalledWith("type", "==", "card_schedule_view");
       expect(mockWhere).toHaveBeenCalledWith("due_at", "<=", expect.any(String));
       expect(mockOrderBy).toHaveBeenCalledWith("due_at", "asc");
       expect(mockLimit).toHaveBeenCalledWith(50);

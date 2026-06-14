@@ -65,13 +65,14 @@ describe("End-to-End Client Flow", () => {
       limit: mockLimit,
     });
 
-    mockWhere = jest.fn().mockReturnValue({
+    const queryBuilder = {
+      where: jest.fn(),
       orderBy: mockOrderBy,
-    });
+    };
+    queryBuilder.where.mockReturnValue(queryBuilder);
+    mockWhere = queryBuilder.where;
 
-    mockCollection = jest.fn().mockReturnValue({
-      where: mockWhere,
-    });
+    mockCollection = jest.fn().mockReturnValue(queryBuilder);
 
     // Mock doc to return refs that share the same documentData
     mockDoc = jest.fn((path: string) => {

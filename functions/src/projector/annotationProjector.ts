@@ -25,13 +25,7 @@ export interface AnnotationProjectionResult {
   error?: string;
 }
 
-/**
- * Gets the view path for CardAnnotationView
- */
-function getCardAnnotationViewPath(userId: string, libraryId: string, cardId: string): string {
-  return `users/${userId}/libraries/${libraryId}/views/card_annotation/${cardId}`;
-}
-
+import { getCardAnnotationViewPath } from "../viewPaths";
 
 /**
  * Projects a card_annotation_updated event to CardAnnotationView

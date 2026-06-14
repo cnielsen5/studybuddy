@@ -2,8 +2,8 @@
  * Card Event Projector
  * 
  * Projects card_reviewed events to:
- * - CardScheduleView: users/{uid}/libraries/{libraryId}/views/card_schedule/{cardId}
- * - CardPerformanceView: users/{uid}/libraries/{libraryId}/views/card_perf/{cardId}
+ * - CardScheduleView: users/{uid}/libraries/{libraryId}/views/card_schedule__{cardId}
+ * - CardPerformanceView: users/{uid}/libraries/{libraryId}/views/card_perf__{cardId}
  * 
  * Implements idempotency via last_applied cursor comparison.
  * Uses pure reducer functions for business logic.
@@ -29,22 +29,10 @@ export interface CardProjectionResult {
   idempotent: boolean;
   error?: string;
 }
-
-/**
- * Gets the view path for CardScheduleView
- */
-function getCardScheduleViewPath(userId: string, libraryId: string, cardId: string): string {
-  return `users/${userId}/libraries/${libraryId}/views/card_schedule/${cardId}`;
-}
-
-/**
- * Gets the view path for CardPerformanceView
- */
-function getCardPerformanceViewPath(userId: string, libraryId: string, cardId: string): string {
-  return `users/${userId}/libraries/${libraryId}/views/card_perf/${cardId}`;
-}
-
-// Idempotency check is now handled by shouldApplyCardEvent from reducers
+import {
+  getCardScheduleViewPath,
+  getCardPerformanceViewPath,
+} from "../viewPaths";
 
 // Removed - now using reduceCardSchedule from reducers
 

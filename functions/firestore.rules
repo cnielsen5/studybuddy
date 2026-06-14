@@ -25,7 +25,7 @@ service cloud.firestore {
 
     // View documents - read/write by projector only (server-side)
     // Client can read their own views
-    match /users/{userId}/libraries/{libraryId}/views/{viewType}/{viewId} {
+    match /users/{userId}/libraries/{libraryId}/views/{viewDocId} {
       // Allow read: users can read their own views
       allow read: if request.auth != null && request.auth.uid == userId;
       

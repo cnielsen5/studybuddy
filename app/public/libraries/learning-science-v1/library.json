@@ -1,0 +1,2031 @@
+{
+  "manifest": {
+    "id": "lib_learning_science_v1",
+    "name": "Learning Science & Socrates",
+    "version": "1.0.0",
+    "description": "A complete demo library covering spaced repetition, FSRS, concept maps, event sourcing, and mastery certification — designed to exercise every Socrates content type.",
+    "domain": "Learning Science",
+    "created_at": "2026-06-14T00:00:00Z",
+    "updated_at": "2026-06-14T00:00:00Z",
+    "status": "published",
+    "tags": [
+      "spaced-repetition",
+      "fsrs",
+      "learning-science",
+      "socrates"
+    ]
+  },
+  "concepts": [
+    {
+      "id": "concept_active_recall",
+      "type": "concept",
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "last_updated_by": "socrates_admin",
+        "version": "1.0",
+        "status": "published",
+        "tags": [
+          "foundations",
+          "memory"
+        ],
+        "search_keywords": [
+          "testing effect",
+          "retrieval practice",
+          "active recall"
+        ],
+        "version_history": []
+      },
+      "editorial": {
+        "difficulty": "basic",
+        "high_yield_score": 10
+      },
+      "hierarchy": {
+        "library_id": "lib_learning_science_v1",
+        "domain": "Learning Science",
+        "category": "Cognitive Science",
+        "subcategory": "Memory & Retention",
+        "topic": "Active Recall",
+        "subtopic": "Testing Effect"
+      },
+      "content": {
+        "title": "Active Recall",
+        "definition": "The learning strategy of retrieving information from memory rather than passively re-reading.",
+        "summary": "Active recall strengthens memory traces through retrieval practice. It is the foundation of effective spaced repetition systems."
+      },
+      "dependency_graph": {
+        "prerequisites": [],
+        "unlocks": [
+          "concept_spaced_repetition",
+          "concept_forgetting_curve"
+        ],
+        "child_concepts": [],
+        "related_concepts": [
+          "concept_concept_maps"
+        ],
+        "semantic_relations": []
+      },
+      "mastery_config": {
+        "threshold": 0.8,
+        "decay_rate": "standard",
+        "min_questions_correct": 2
+      },
+      "media": [],
+      "references": [],
+      "linked_content": {
+        "card_ids": [
+          "card_active_recall_def",
+          "card_active_recall_testing_effect",
+          "card_active_recall_extension"
+        ],
+        "question_ids": [
+          "q_active_recall_generic_01",
+          "q_active_recall_establish_01"
+        ]
+      }
+    },
+    {
+      "id": "concept_forgetting_curve",
+      "type": "concept",
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "last_updated_by": "socrates_admin",
+        "version": "1.0",
+        "status": "published",
+        "tags": [
+          "foundations",
+          "memory"
+        ],
+        "search_keywords": [
+          "ebbinghaus",
+          "forgetting curve",
+          "retention decay"
+        ],
+        "version_history": []
+      },
+      "editorial": {
+        "difficulty": "basic",
+        "high_yield_score": 8
+      },
+      "hierarchy": {
+        "library_id": "lib_learning_science_v1",
+        "domain": "Learning Science",
+        "category": "Cognitive Science",
+        "subcategory": "Memory & Retention",
+        "topic": "Forgetting Curve",
+        "subtopic": "Retention Decay"
+      },
+      "content": {
+        "title": "The Forgetting Curve",
+        "definition": "Ebbinghaus's model showing memory retention declines exponentially over time without reinforcement.",
+        "summary": "Understanding the forgetting curve motivates spaced repetition: reviews must occur before retention drops below useful thresholds."
+      },
+      "dependency_graph": {
+        "prerequisites": [
+          "concept_active_recall"
+        ],
+        "unlocks": [
+          "concept_spaced_repetition"
+        ],
+        "child_concepts": [],
+        "related_concepts": [],
+        "semantic_relations": []
+      },
+      "mastery_config": {
+        "threshold": 0.75,
+        "decay_rate": "standard",
+        "min_questions_correct": 1
+      },
+      "media": [],
+      "references": [],
+      "linked_content": {
+        "card_ids": [
+          "card_forgetting_curve_def",
+          "card_forgetting_curve_cloze"
+        ],
+        "question_ids": [
+          "q_forgetting_curve_generic_01"
+        ]
+      }
+    },
+    {
+      "id": "concept_spaced_repetition",
+      "type": "concept",
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "last_updated_by": "socrates_admin",
+        "version": "1.0",
+        "status": "published",
+        "tags": [
+          "scheduling",
+          "core"
+        ],
+        "search_keywords": [
+          "spaced repetition",
+          "SRS",
+          "interval scheduling"
+        ],
+        "version_history": []
+      },
+      "editorial": {
+        "difficulty": "intermediate",
+        "high_yield_score": 10
+      },
+      "hierarchy": {
+        "library_id": "lib_learning_science_v1",
+        "domain": "Learning Science",
+        "category": "Cognitive Science",
+        "subcategory": "Memory & Retention",
+        "topic": "Spaced Repetition",
+        "subtopic": "Scheduling"
+      },
+      "content": {
+        "title": "Spaced Repetition",
+        "definition": "A scheduling method that increases intervals between reviews as material becomes better learned.",
+        "summary": "Spaced repetition combats the forgetting curve by timing reviews at optimal intervals. Modern systems use algorithms like FSRS to personalize schedules."
+      },
+      "dependency_graph": {
+        "prerequisites": [
+          "concept_active_recall",
+          "concept_forgetting_curve"
+        ],
+        "unlocks": [
+          "concept_fsrs",
+          "concept_mastery_certification"
+        ],
+        "child_concepts": [],
+        "related_concepts": [
+          "concept_concept_maps"
+        ],
+        "semantic_relations": [
+          "concept_concept_maps"
+        ]
+      },
+      "mastery_config": {
+        "threshold": 0.85,
+        "decay_rate": "standard",
+        "min_questions_correct": 2
+      },
+      "media": [],
+      "references": [],
+      "linked_content": {
+        "card_ids": [
+          "card_spaced_rep_def",
+          "card_spaced_rep_vs_cramming",
+          "card_spaced_rep_cert"
+        ],
+        "question_ids": [
+          "q_spaced_rep_diagnostic_01"
+        ]
+      }
+    },
+    {
+      "id": "concept_fsrs",
+      "type": "concept",
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "last_updated_by": "socrates_admin",
+        "version": "1.0",
+        "status": "published",
+        "tags": [
+          "algorithm",
+          "scheduling"
+        ],
+        "search_keywords": [
+          "FSRS",
+          "stability",
+          "difficulty",
+          "retrievability"
+        ],
+        "version_history": []
+      },
+      "editorial": {
+        "difficulty": "intermediate",
+        "high_yield_score": 9
+      },
+      "hierarchy": {
+        "library_id": "lib_learning_science_v1",
+        "domain": "Learning Science",
+        "category": "Cognitive Science",
+        "subcategory": "Memory & Retention",
+        "topic": "FSRS",
+        "subtopic": "Free Spaced Repetition Scheduler"
+      },
+      "content": {
+        "title": "FSRS (Free Spaced Repetition Scheduler)",
+        "definition": "A modern spaced repetition algorithm that models memory stability and difficulty to predict optimal review intervals.",
+        "summary": "FSRS uses stability (how long memory lasts) and difficulty (how hard the item is) to schedule reviews. Socrates uses FSRS v6 for card scheduling."
+      },
+      "dependency_graph": {
+        "prerequisites": [
+          "concept_spaced_repetition"
+        ],
+        "unlocks": [
+          "concept_mastery_certification"
+        ],
+        "child_concepts": [],
+        "related_concepts": [
+          "concept_event_sourcing"
+        ],
+        "semantic_relations": []
+      },
+      "mastery_config": {
+        "threshold": 0.8,
+        "decay_rate": "slow",
+        "min_questions_correct": 3
+      },
+      "media": [],
+      "references": [],
+      "linked_content": {
+        "card_ids": [
+          "card_fsrs_stability_def",
+          "card_fsrs_difficulty_def",
+          "card_fsrs_grades",
+          "card_fsrs_cloze_interval"
+        ],
+        "question_ids": [
+          "q_fsrs_diagnostic_01",
+          "q_fsrs_targeted_01"
+        ]
+      }
+    },
+    {
+      "id": "concept_concept_maps",
+      "type": "concept",
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "last_updated_by": "socrates_admin",
+        "version": "1.0",
+        "status": "published",
+        "tags": [
+          "structure",
+          "graph"
+        ],
+        "search_keywords": [
+          "concept map",
+          "knowledge graph",
+          "prerequisites"
+        ],
+        "version_history": []
+      },
+      "editorial": {
+        "difficulty": "intermediate",
+        "high_yield_score": 8
+      },
+      "hierarchy": {
+        "library_id": "lib_learning_science_v1",
+        "domain": "Learning Science",
+        "category": "Cognitive Science",
+        "subcategory": "Memory & Retention",
+        "topic": "Concept Maps",
+        "subtopic": "Knowledge Graphs"
+      },
+      "content": {
+        "title": "Concept Maps",
+        "definition": "A structured representation of knowledge as concepts connected by typed relationships and prerequisites.",
+        "summary": "Socrates treats concept maps as first-class: scheduling, certification, and relationship cards all operate over the concept graph."
+      },
+      "dependency_graph": {
+        "prerequisites": [
+          "concept_active_recall"
+        ],
+        "unlocks": [],
+        "child_concepts": [],
+        "related_concepts": [
+          "concept_spaced_repetition",
+          "concept_event_sourcing"
+        ],
+        "semantic_relations": [
+          "concept_spaced_repetition"
+        ]
+      },
+      "mastery_config": {
+        "threshold": 0.75,
+        "decay_rate": "standard",
+        "min_questions_correct": 1
+      },
+      "media": [],
+      "references": [],
+      "linked_content": {
+        "card_ids": [
+          "card_concept_map_def",
+          "card_concept_map_prereq"
+        ],
+        "question_ids": [
+          "q_concept_map_generic_01"
+        ]
+      }
+    },
+    {
+      "id": "concept_event_sourcing",
+      "type": "concept",
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "last_updated_by": "socrates_admin",
+        "version": "1.0",
+        "status": "published",
+        "tags": [
+          "architecture",
+          "socrates"
+        ],
+        "search_keywords": [
+          "event sourcing",
+          "projector",
+          "CQRS",
+          "immutable events"
+        ],
+        "version_history": []
+      },
+      "editorial": {
+        "difficulty": "advanced",
+        "high_yield_score": 7
+      },
+      "hierarchy": {
+        "library_id": "lib_learning_science_v1",
+        "domain": "Learning Science",
+        "category": "Cognitive Science",
+        "subcategory": "Memory & Retention",
+        "topic": "Event Sourcing",
+        "subtopic": "Socrates Architecture"
+      },
+      "content": {
+        "title": "Event Sourcing in Socrates",
+        "definition": "An architecture where all learning actions are recorded as immutable events, and read models (views) are derived by projectors.",
+        "summary": "When you review a card, Socrates appends a card_reviewed event. Cloud Functions project that into schedule and performance views."
+      },
+      "dependency_graph": {
+        "prerequisites": [],
+        "unlocks": [],
+        "child_concepts": [],
+        "related_concepts": [
+          "concept_fsrs",
+          "concept_concept_maps"
+        ],
+        "semantic_relations": []
+      },
+      "mastery_config": {
+        "threshold": 0.7,
+        "decay_rate": "fast",
+        "min_questions_correct": 2
+      },
+      "media": [],
+      "references": [],
+      "linked_content": {
+        "card_ids": [
+          "card_event_sourcing_def",
+          "card_event_sourcing_projector",
+          "card_event_sourcing_idempotent"
+        ],
+        "question_ids": [
+          "q_event_sourcing_diagnostic_01"
+        ]
+      }
+    },
+    {
+      "id": "concept_mastery_certification",
+      "type": "concept",
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "last_updated_by": "socrates_admin",
+        "version": "1.0",
+        "status": "published",
+        "tags": [
+          "certification",
+          "mastery"
+        ],
+        "search_keywords": [
+          "mastery certification",
+          "concept mastery",
+          "suppression"
+        ],
+        "version_history": []
+      },
+      "editorial": {
+        "difficulty": "advanced",
+        "high_yield_score": 8
+      },
+      "hierarchy": {
+        "library_id": "lib_learning_science_v1",
+        "domain": "Learning Science",
+        "category": "Cognitive Science",
+        "subcategory": "Memory & Retention",
+        "topic": "Mastery Certification",
+        "subtopic": "Concept Mastery"
+      },
+      "content": {
+        "title": "Mastery Certification",
+        "definition": "A structured assessment flow that certifies concept-level mastery and may suppress or accelerate related cards.",
+        "summary": "Certification uses targeted questions across a concept's card set. Outcomes (full, partial, none) affect scheduling policy."
+      },
+      "dependency_graph": {
+        "prerequisites": [
+          "concept_spaced_repetition",
+          "concept_fsrs"
+        ],
+        "unlocks": [],
+        "child_concepts": [],
+        "related_concepts": [],
+        "semantic_relations": []
+      },
+      "mastery_config": {
+        "threshold": 0.9,
+        "decay_rate": "slow",
+        "min_questions_correct": 3
+      },
+      "media": [],
+      "references": [],
+      "linked_content": {
+        "card_ids": [
+          "card_certification_def",
+          "card_certification_flow"
+        ],
+        "question_ids": [
+          "q_certification_misconception_01"
+        ]
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "rel_active_recall_to_spaced_rep",
+      "type": "relationship",
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "last_updated_by": "socrates_admin",
+        "version": "1.0",
+        "status": "published",
+        "tags": [
+          "prerequisite"
+        ],
+        "version_history": []
+      },
+      "graph_context": {
+        "library_id": "lib_learning_science_v1",
+        "domain": "Learning Science",
+        "category": "Cognitive Science",
+        "subcategory": "Memory & Retention"
+      },
+      "endpoints": {
+        "from_concept_id": "concept_active_recall",
+        "to_concept_id": "concept_spaced_repetition"
+      },
+      "relation": {
+        "relationship_type": "prerequisite",
+        "directionality": "forward"
+      },
+      "editorial": {
+        "importance": "high",
+        "notes": "You must understand retrieval practice before interval scheduling makes sense."
+      },
+      "linked_content": {
+        "relationship_card_ids": [
+          "card_rel_active_to_spaced"
+        ],
+        "question_ids": [
+          "q_rel_active_spaced_01"
+        ]
+      }
+    },
+    {
+      "relationship_id": "rel_forgetting_to_spaced_rep",
+      "type": "relationship",
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "last_updated_by": "socrates_admin",
+        "version": "1.0",
+        "status": "published",
+        "tags": [
+          "prerequisite"
+        ],
+        "version_history": []
+      },
+      "graph_context": {
+        "library_id": "lib_learning_science_v1",
+        "domain": "Learning Science",
+        "category": "Cognitive Science",
+        "subcategory": "Memory & Retention"
+      },
+      "endpoints": {
+        "from_concept_id": "concept_forgetting_curve",
+        "to_concept_id": "concept_spaced_repetition"
+      },
+      "relation": {
+        "relationship_type": "prerequisite",
+        "directionality": "forward"
+      },
+      "editorial": {
+        "importance": "high",
+        "notes": "The forgetting curve motivates why spacing matters."
+      },
+      "linked_content": {
+        "relationship_card_ids": [
+          "card_rel_forgetting_to_spaced"
+        ],
+        "question_ids": []
+      }
+    },
+    {
+      "relationship_id": "rel_spaced_rep_to_fsrs",
+      "type": "relationship",
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "last_updated_by": "socrates_admin",
+        "version": "1.0",
+        "status": "published",
+        "tags": [
+          "prerequisite"
+        ],
+        "version_history": []
+      },
+      "graph_context": {
+        "library_id": "lib_learning_science_v1",
+        "domain": "Learning Science",
+        "category": "Cognitive Science",
+        "subcategory": "Memory & Retention"
+      },
+      "endpoints": {
+        "from_concept_id": "concept_spaced_repetition",
+        "to_concept_id": "concept_fsrs"
+      },
+      "relation": {
+        "relationship_type": "prerequisite",
+        "directionality": "forward"
+      },
+      "editorial": {
+        "importance": "high",
+        "notes": "FSRS is a specific algorithmic implementation of spaced repetition."
+      },
+      "linked_content": {
+        "relationship_card_ids": [],
+        "question_ids": []
+      }
+    },
+    {
+      "relationship_id": "rel_spaced_rep_semantic_concept_maps",
+      "type": "relationship",
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "last_updated_by": "socrates_admin",
+        "version": "1.0",
+        "status": "published",
+        "tags": [
+          "semantic"
+        ],
+        "version_history": []
+      },
+      "graph_context": {
+        "library_id": "lib_learning_science_v1",
+        "domain": "Learning Science",
+        "category": "Cognitive Science",
+        "subcategory": "Memory & Retention"
+      },
+      "endpoints": {
+        "from_concept_id": "concept_spaced_repetition",
+        "to_concept_id": "concept_concept_maps"
+      },
+      "relation": {
+        "relationship_type": "complements",
+        "directionality": "bidirectional"
+      },
+      "editorial": {
+        "importance": "medium",
+        "notes": "Concept maps organize what spaced repetition schedules."
+      },
+      "linked_content": {
+        "relationship_card_ids": [],
+        "question_ids": []
+      }
+    },
+    {
+      "relationship_id": "rel_fsrs_to_certification",
+      "type": "relationship",
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "last_updated_by": "socrates_admin",
+        "version": "1.0",
+        "status": "published",
+        "tags": [
+          "prerequisite"
+        ],
+        "version_history": []
+      },
+      "graph_context": {
+        "library_id": "lib_learning_science_v1",
+        "domain": "Learning Science",
+        "category": "Cognitive Science",
+        "subcategory": "Memory & Retention"
+      },
+      "endpoints": {
+        "from_concept_id": "concept_fsrs",
+        "to_concept_id": "concept_mastery_certification"
+      },
+      "relation": {
+        "relationship_type": "prerequisite",
+        "directionality": "forward"
+      },
+      "editorial": {
+        "importance": "high",
+        "notes": "Certification outcomes affect FSRS scheduling (suppression, acceleration)."
+      },
+      "linked_content": {
+        "relationship_card_ids": [],
+        "question_ids": []
+      }
+    }
+  ],
+  "cards": [
+    {
+      "id": "card_active_recall_def",
+      "type": "card",
+      "relations": {
+        "concept_id": "concept_active_recall",
+        "related_question_ids": [
+          "q_active_recall_generic_01"
+        ]
+      },
+      "config": {
+        "card_type": "basic",
+        "pedagogical_role": "recall"
+      },
+      "content": {
+        "front": "What is active recall?",
+        "back": "Retrieving information from memory (testing yourself) rather than passively re-reading.",
+        "cloze_data": null
+      },
+      "media": [],
+      "editorial": {
+        "difficulty": "easy",
+        "tags": [
+          "core",
+          "foundations"
+        ]
+      },
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "status": "published",
+        "version": "1.0"
+      }
+    },
+    {
+      "id": "card_active_recall_testing_effect",
+      "type": "card",
+      "relations": {
+        "concept_id": "concept_active_recall"
+      },
+      "config": {
+        "card_type": "basic",
+        "pedagogical_role": "recognition"
+      },
+      "content": {
+        "front": "What is the testing effect?",
+        "back": "The finding that retrieval practice improves long-term retention more than restudying the same material.",
+        "cloze_data": null
+      },
+      "media": [],
+      "editorial": {
+        "difficulty": "easy",
+        "tags": [
+          "core"
+        ]
+      },
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "status": "published",
+        "version": "1.0"
+      }
+    },
+    {
+      "id": "card_active_recall_extension",
+      "type": "card",
+      "relations": {
+        "concept_id": "concept_active_recall"
+      },
+      "config": {
+        "card_type": "basic",
+        "pedagogical_role": "application"
+      },
+      "content": {
+        "front": "Why is highlighting alone a weak study strategy?",
+        "back": "It is passive — it does not require retrieval. Without recall, the testing effect does not apply.",
+        "cloze_data": null
+      },
+      "media": [],
+      "editorial": {
+        "difficulty": "medium",
+        "tags": [
+          "extension"
+        ]
+      },
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "status": "published",
+        "version": "1.0"
+      }
+    },
+    {
+      "id": "card_forgetting_curve_def",
+      "type": "card",
+      "relations": {
+        "concept_id": "concept_forgetting_curve"
+      },
+      "config": {
+        "card_type": "basic",
+        "pedagogical_role": "recall"
+      },
+      "content": {
+        "front": "Who discovered the forgetting curve, and what does it show?",
+        "back": "Hermann Ebbinghaus — memory retention decays exponentially over time without reinforcement.",
+        "cloze_data": null
+      },
+      "media": [],
+      "editorial": {
+        "difficulty": "easy",
+        "tags": [
+          "core"
+        ]
+      },
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "status": "published",
+        "version": "1.0"
+      }
+    },
+    {
+      "id": "card_forgetting_curve_cloze",
+      "type": "card",
+      "relations": {
+        "concept_id": "concept_forgetting_curve"
+      },
+      "config": {
+        "card_type": "cloze",
+        "pedagogical_role": "recall"
+      },
+      "content": {
+        "front": "Fill in the blanks.",
+        "back": "Without review, retention drops sharply within the first [[cloze_1]].",
+        "cloze_data": {
+          "template_text": "Without review, retention drops sharply within the first [[cloze_1]].",
+          "cloze_fields": [
+            {
+              "field_id": "cloze_1",
+              "answer": "24 hours",
+              "hint": "Time period"
+            }
+          ]
+        }
+      },
+      "media": [],
+      "editorial": {
+        "difficulty": "medium",
+        "tags": [
+          "cloze"
+        ]
+      },
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "status": "published",
+        "version": "1.0"
+      }
+    },
+    {
+      "id": "card_spaced_rep_def",
+      "type": "card",
+      "relations": {
+        "concept_id": "concept_spaced_repetition",
+        "related_question_ids": [
+          "q_spaced_rep_diagnostic_01"
+        ]
+      },
+      "config": {
+        "card_type": "basic",
+        "pedagogical_role": "recall"
+      },
+      "content": {
+        "front": "What is spaced repetition?",
+        "back": "Increasing review intervals as material is learned, combating the forgetting curve with minimal total study time.",
+        "cloze_data": null
+      },
+      "media": [],
+      "editorial": {
+        "difficulty": "easy",
+        "tags": [
+          "core"
+        ]
+      },
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "status": "published",
+        "version": "1.0"
+      }
+    },
+    {
+      "id": "card_spaced_rep_vs_cramming",
+      "type": "card",
+      "relations": {
+        "concept_id": "concept_spaced_repetition"
+      },
+      "config": {
+        "card_type": "basic",
+        "pedagogical_role": "synthesis"
+      },
+      "content": {
+        "front": "Spaced repetition vs. cramming: which produces better long-term retention?",
+        "back": "Spaced repetition — cramming may boost short-term performance but fails to build durable memory.",
+        "cloze_data": null
+      },
+      "media": [],
+      "editorial": {
+        "difficulty": "medium",
+        "tags": [
+          "extension"
+        ]
+      },
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "status": "published",
+        "version": "1.0"
+      }
+    },
+    {
+      "id": "card_spaced_rep_cert",
+      "type": "card",
+      "relations": {
+        "concept_id": "concept_spaced_repetition"
+      },
+      "config": {
+        "card_type": "basic",
+        "pedagogical_role": "integration"
+      },
+      "content": {
+        "front": "How does spaced repetition relate to active recall?",
+        "back": "Each spaced review is an active recall event — spacing determines when, recall is what you do.",
+        "cloze_data": null
+      },
+      "media": [],
+      "editorial": {
+        "difficulty": "medium",
+        "tags": [
+          "certification"
+        ]
+      },
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "status": "published",
+        "version": "1.0"
+      }
+    },
+    {
+      "id": "card_fsrs_stability_def",
+      "type": "card",
+      "relations": {
+        "concept_id": "concept_fsrs",
+        "related_question_ids": [
+          "q_fsrs_diagnostic_01"
+        ]
+      },
+      "config": {
+        "card_type": "basic",
+        "pedagogical_role": "recall"
+      },
+      "content": {
+        "front": "In FSRS, what is stability?",
+        "back": "The predicted interval (in days) at which retrievability drops to 90% — how long the memory lasts.",
+        "cloze_data": null
+      },
+      "media": [],
+      "editorial": {
+        "difficulty": "medium",
+        "tags": [
+          "core"
+        ]
+      },
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "status": "published",
+        "version": "1.0"
+      }
+    },
+    {
+      "id": "card_fsrs_difficulty_def",
+      "type": "card",
+      "relations": {
+        "concept_id": "concept_fsrs"
+      },
+      "config": {
+        "card_type": "basic",
+        "pedagogical_role": "recall"
+      },
+      "content": {
+        "front": "In FSRS, what is difficulty?",
+        "back": "An intrinsic property of the card (1–10) representing how hard it is to remember — higher difficulty means shorter intervals.",
+        "cloze_data": null
+      },
+      "media": [],
+      "editorial": {
+        "difficulty": "medium",
+        "tags": [
+          "core"
+        ]
+      },
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "status": "published",
+        "version": "1.0"
+      }
+    },
+    {
+      "id": "card_fsrs_grades",
+      "type": "card",
+      "relations": {
+        "concept_id": "concept_fsrs"
+      },
+      "config": {
+        "card_type": "basic",
+        "pedagogical_role": "recognition"
+      },
+      "content": {
+        "front": "What are the four FSRS review grades?",
+        "back": "Again, Hard, Good, Easy — each updates stability and difficulty differently.",
+        "cloze_data": null
+      },
+      "media": [],
+      "editorial": {
+        "difficulty": "easy",
+        "tags": [
+          "core"
+        ]
+      },
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "status": "published",
+        "version": "1.0"
+      }
+    },
+    {
+      "id": "card_fsrs_cloze_interval",
+      "type": "card",
+      "relations": {
+        "concept_id": "concept_fsrs"
+      },
+      "config": {
+        "card_type": "cloze",
+        "pedagogical_role": "application"
+      },
+      "content": {
+        "front": "Complete the sentence.",
+        "back": "After a 'Good' review, FSRS increases [[cloze_1]] and may slightly adjust [[cloze_2]].",
+        "cloze_data": {
+          "template_text": "After a 'Good' review, FSRS increases [[cloze_1]] and may slightly adjust [[cloze_2]].",
+          "cloze_fields": [
+            {
+              "field_id": "cloze_1",
+              "answer": "stability",
+              "hint": "Memory duration measure"
+            },
+            {
+              "field_id": "cloze_2",
+              "answer": "difficulty",
+              "hint": "Intrinsic hardness measure"
+            }
+          ]
+        }
+      },
+      "media": [],
+      "editorial": {
+        "difficulty": "hard",
+        "tags": [
+          "cloze"
+        ]
+      },
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "status": "published",
+        "version": "1.0"
+      }
+    },
+    {
+      "id": "card_concept_map_def",
+      "type": "card",
+      "relations": {
+        "concept_id": "concept_concept_maps"
+      },
+      "config": {
+        "card_type": "basic",
+        "pedagogical_role": "recall"
+      },
+      "content": {
+        "front": "What is a concept map in Socrates?",
+        "back": "A graph of concepts connected by typed relationships (prerequisites, mechanisms, etc.) with linked cards and questions.",
+        "cloze_data": null
+      },
+      "media": [],
+      "editorial": {
+        "difficulty": "easy",
+        "tags": [
+          "core"
+        ]
+      },
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "status": "published",
+        "version": "1.0"
+      }
+    },
+    {
+      "id": "card_concept_map_prereq",
+      "type": "card",
+      "relations": {
+        "concept_id": "concept_concept_maps"
+      },
+      "config": {
+        "card_type": "basic",
+        "pedagogical_role": "application"
+      },
+      "content": {
+        "front": "Why do prerequisites matter in a concept map?",
+        "back": "They enforce learning order — you should master foundational concepts before dependent ones.",
+        "cloze_data": null
+      },
+      "media": [],
+      "editorial": {
+        "difficulty": "medium",
+        "tags": [
+          "extension"
+        ]
+      },
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "status": "published",
+        "version": "1.0"
+      }
+    },
+    {
+      "id": "card_event_sourcing_def",
+      "type": "card",
+      "relations": {
+        "concept_id": "concept_event_sourcing"
+      },
+      "config": {
+        "card_type": "basic",
+        "pedagogical_role": "recall"
+      },
+      "content": {
+        "front": "What is event sourcing?",
+        "back": "Storing state changes as an immutable log of events; current state is derived by processing those events.",
+        "cloze_data": null
+      },
+      "media": [],
+      "editorial": {
+        "difficulty": "medium",
+        "tags": [
+          "core"
+        ]
+      },
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "status": "published",
+        "version": "1.0"
+      }
+    },
+    {
+      "id": "card_event_sourcing_projector",
+      "type": "card",
+      "relations": {
+        "concept_id": "concept_event_sourcing"
+      },
+      "config": {
+        "card_type": "basic",
+        "pedagogical_role": "recall"
+      },
+      "content": {
+        "front": "What is a projector in Socrates?",
+        "back": "A server function that reads events and updates read-model views (e.g. card_reviewed → card schedule view).",
+        "cloze_data": null
+      },
+      "media": [],
+      "editorial": {
+        "difficulty": "medium",
+        "tags": [
+          "core"
+        ]
+      },
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "status": "published",
+        "version": "1.0"
+      }
+    },
+    {
+      "id": "card_event_sourcing_idempotent",
+      "type": "card",
+      "relations": {
+        "concept_id": "concept_event_sourcing"
+      },
+      "config": {
+        "card_type": "basic",
+        "pedagogical_role": "application"
+      },
+      "content": {
+        "front": "Why must event writes be idempotent?",
+        "back": "Offline sync may retry uploads — duplicate events must not double-apply schedule changes.",
+        "cloze_data": null
+      },
+      "media": [],
+      "editorial": {
+        "difficulty": "hard",
+        "tags": [
+          "extension"
+        ]
+      },
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "status": "published",
+        "version": "1.0"
+      }
+    },
+    {
+      "id": "card_certification_def",
+      "type": "card",
+      "relations": {
+        "concept_id": "concept_mastery_certification"
+      },
+      "config": {
+        "card_type": "basic",
+        "pedagogical_role": "recall"
+      },
+      "content": {
+        "front": "What are the three mastery certification outcomes?",
+        "back": "Full, partial, or none — based on performance across certification questions for a concept.",
+        "cloze_data": null
+      },
+      "media": [],
+      "editorial": {
+        "difficulty": "medium",
+        "tags": [
+          "core"
+        ]
+      },
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "status": "published",
+        "version": "1.0"
+      }
+    },
+    {
+      "id": "card_certification_flow",
+      "type": "card",
+      "relations": {
+        "concept_id": "concept_mastery_certification"
+      },
+      "config": {
+        "card_type": "basic",
+        "pedagogical_role": "integration"
+      },
+      "content": {
+        "front": "What events does mastery certification produce?",
+        "back": "mastery_certification_started and mastery_certification_completed — the latter updates ConceptCertificationView.",
+        "cloze_data": null
+      },
+      "media": [],
+      "editorial": {
+        "difficulty": "hard",
+        "tags": [
+          "certification"
+        ]
+      },
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "status": "published",
+        "version": "1.0"
+      }
+    },
+    {
+      "id": "card_rel_active_to_spaced",
+      "type": "relationship_card",
+      "relations": {
+        "relationship_id": "rel_active_recall_to_spaced_rep",
+        "from_concept_id": "concept_active_recall",
+        "to_concept_id": "concept_spaced_repetition",
+        "related_question_ids": [
+          "q_rel_active_spaced_01"
+        ]
+      },
+      "config": {
+        "card_type": "relationship",
+        "pedagogical_role": "synthesis",
+        "relationship_probe_type": "directionality",
+        "activation_policy": {
+          "requires_mastery_of": [
+            "concept_active_recall",
+            "concept_spaced_repetition"
+          ],
+          "min_mastery_threshold": 0.5
+        }
+      },
+      "content": {
+        "front": "Why must you understand active recall before spaced repetition?",
+        "back": "Because spaced repetition schedules retrieval events — without understanding recall, spacing is just arbitrary timing."
+      },
+      "media": [],
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "status": "published",
+        "version": "1.0",
+        "tags": [
+          "relationship",
+          "high-yield"
+        ],
+        "difficulty": "medium"
+      }
+    },
+    {
+      "id": "card_rel_forgetting_to_spaced",
+      "type": "relationship_card",
+      "relations": {
+        "relationship_id": "rel_forgetting_to_spaced_rep",
+        "from_concept_id": "concept_forgetting_curve",
+        "to_concept_id": "concept_spaced_repetition"
+      },
+      "config": {
+        "card_type": "relationship",
+        "pedagogical_role": "synthesis",
+        "relationship_probe_type": "mechanism",
+        "activation_policy": {
+          "requires_mastery_of": [
+            "concept_forgetting_curve"
+          ],
+          "min_mastery_threshold": 0.5
+        }
+      },
+      "content": {
+        "front": "How does the forgetting curve motivate spaced repetition?",
+        "back": "It shows memory decays over time — spacing reviews before retention drops minimizes total study while preserving knowledge."
+      },
+      "media": [],
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "status": "published",
+        "version": "1.0",
+        "tags": [
+          "relationship"
+        ],
+        "difficulty": "medium"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "q_active_recall_generic_01",
+      "type": "question",
+      "relations": {
+        "concept_ids": [
+          "concept_active_recall"
+        ],
+        "related_card_ids": [
+          "card_active_recall_def"
+        ]
+      },
+      "source": {
+        "origin": "validated",
+        "provider": "Socrates_Internal",
+        "subscription_required": false
+      },
+      "classification": {
+        "question_type": "mcq",
+        "usage_role": "generic",
+        "cognitive_level": "mechanism"
+      },
+      "content": {
+        "stem": "Which study activity best exemplifies active recall?",
+        "options": [
+          {
+            "id": "opt_A",
+            "text": "Re-reading highlighted notes"
+          },
+          {
+            "id": "opt_B",
+            "text": "Closing the book and writing everything you remember"
+          },
+          {
+            "id": "opt_C",
+            "text": "Watching a lecture video again"
+          },
+          {
+            "id": "opt_D",
+            "text": "Copying definitions verbatim"
+          }
+        ],
+        "correct_option_id": "opt_B"
+      },
+      "explanations": {
+        "general": "Active recall requires retrieval from memory without cues.",
+        "distractors": {
+          "opt_A": "Highlighting is passive review.",
+          "opt_C": "Re-watching is recognition, not recall.",
+          "opt_D": "Copying does not test memory."
+        }
+      },
+      "editorial": {
+        "difficulty": "easy",
+        "tags": [
+          "core"
+        ]
+      },
+      "media": [],
+      "references": [],
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "last_updated_by": "socrates_admin",
+        "version": "1.0",
+        "status": "published"
+      }
+    },
+    {
+      "id": "q_active_recall_establish_01",
+      "type": "question",
+      "relations": {
+        "concept_ids": [
+          "concept_active_recall"
+        ],
+        "related_card_ids": []
+      },
+      "source": {
+        "origin": "validated",
+        "provider": "Socrates_Internal",
+        "subscription_required": false
+      },
+      "classification": {
+        "question_type": "mcq",
+        "usage_role": "establishment",
+        "cognitive_level": "mechanism"
+      },
+      "content": {
+        "stem": "The testing effect shows that:",
+        "options": [
+          {
+            "id": "opt_A",
+            "text": "More study time always equals better retention"
+          },
+          {
+            "id": "opt_B",
+            "text": "Retrieval practice improves long-term retention vs. restudy"
+          },
+          {
+            "id": "opt_C",
+            "text": "Cramming is optimal for durable memory"
+          },
+          {
+            "id": "opt_D",
+            "text": "Passive review outperforms quizzing"
+          }
+        ],
+        "correct_option_id": "opt_B"
+      },
+      "explanations": {
+        "general": "Retrieval strengthens memory more than passive restudy of the same material.",
+        "distractors": {}
+      },
+      "editorial": {
+        "difficulty": "easy",
+        "tags": [
+          "establishment"
+        ]
+      },
+      "media": [],
+      "references": [],
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "last_updated_by": "socrates_admin",
+        "version": "1.0",
+        "status": "published"
+      }
+    },
+    {
+      "id": "q_forgetting_curve_generic_01",
+      "type": "question",
+      "relations": {
+        "concept_ids": [
+          "concept_forgetting_curve"
+        ],
+        "related_card_ids": [
+          "card_forgetting_curve_def"
+        ]
+      },
+      "source": {
+        "origin": "validated",
+        "provider": "Socrates_Internal",
+        "subscription_required": false
+      },
+      "classification": {
+        "question_type": "mcq",
+        "usage_role": "generic",
+        "cognitive_level": "mechanism"
+      },
+      "content": {
+        "stem": "According to the forgetting curve, memory retention without review:",
+        "options": [
+          {
+            "id": "opt_A",
+            "text": "Stays flat indefinitely"
+          },
+          {
+            "id": "opt_B",
+            "text": "Decays exponentially over time"
+          },
+          {
+            "id": "opt_C",
+            "text": "Improves with time"
+          },
+          {
+            "id": "opt_D",
+            "text": "Depends only on initial study duration"
+          }
+        ],
+        "correct_option_id": "opt_B"
+      },
+      "explanations": {
+        "general": "Ebbinghaus showed rapid initial decay, then slower decline.",
+        "distractors": {}
+      },
+      "editorial": {
+        "difficulty": "easy",
+        "tags": [
+          "core"
+        ]
+      },
+      "media": [],
+      "references": [],
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "last_updated_by": "socrates_admin",
+        "version": "1.0",
+        "status": "published"
+      }
+    },
+    {
+      "id": "q_spaced_rep_diagnostic_01",
+      "type": "question",
+      "relations": {
+        "concept_ids": [
+          "concept_spaced_repetition"
+        ],
+        "related_card_ids": [
+          "card_spaced_rep_def"
+        ]
+      },
+      "source": {
+        "origin": "validated",
+        "provider": "Socrates_Internal",
+        "subscription_required": false
+      },
+      "classification": {
+        "question_type": "mcq",
+        "usage_role": "diagnostic",
+        "cognitive_level": "mechanism"
+      },
+      "content": {
+        "stem": "A student reviews all cards every day regardless of performance. What misconception does this reflect?",
+        "options": [
+          {
+            "id": "opt_A",
+            "text": "Spacing intervals should adapt as material is learned"
+          },
+          {
+            "id": "opt_B",
+            "text": "Fixed daily review is always optimal"
+          },
+          {
+            "id": "opt_C",
+            "text": "Active recall is unnecessary with enough repetition"
+          },
+          {
+            "id": "opt_D",
+            "text": "The forgetting curve does not apply to flashcards"
+          }
+        ],
+        "correct_option_id": "opt_B"
+      },
+      "explanations": {
+        "general": "Spaced repetition increases intervals — fixed daily review ignores learned stability.",
+        "distractors": {
+          "opt_A": "This is the correct principle, not a misconception."
+        }
+      },
+      "editorial": {
+        "difficulty": "medium",
+        "tags": [
+          "diagnostic"
+        ]
+      },
+      "media": [],
+      "references": [],
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "last_updated_by": "socrates_admin",
+        "version": "1.0",
+        "status": "published"
+      }
+    },
+    {
+      "id": "q_fsrs_diagnostic_01",
+      "type": "question",
+      "relations": {
+        "concept_ids": [
+          "concept_fsrs"
+        ],
+        "related_card_ids": [
+          "card_fsrs_stability_def"
+        ]
+      },
+      "source": {
+        "origin": "validated",
+        "provider": "Socrates_Internal",
+        "subscription_required": false
+      },
+      "classification": {
+        "question_type": "mcq",
+        "usage_role": "diagnostic",
+        "cognitive_level": "mechanism"
+      },
+      "content": {
+        "stem": "In FSRS, a learner marks every card 'Again' even when they knew the answer. What is the likely scheduling impact?",
+        "options": [
+          {
+            "id": "opt_A",
+            "text": "Stability increases rapidly"
+          },
+          {
+            "id": "opt_B",
+            "text": "Intervals stay short; stability does not grow"
+          },
+          {
+            "id": "opt_C",
+            "text": "Difficulty drops to minimum"
+          },
+          {
+            "id": "opt_D",
+            "text": "Cards are permanently suppressed"
+          }
+        ],
+        "correct_option_id": "opt_B"
+      },
+      "explanations": {
+        "general": "'Again' signals failed recall — FSRS will not extend intervals.",
+        "distractors": {}
+      },
+      "editorial": {
+        "difficulty": "medium",
+        "tags": [
+          "diagnostic",
+          "fsrs"
+        ]
+      },
+      "media": [],
+      "references": [],
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "last_updated_by": "socrates_admin",
+        "version": "1.0",
+        "status": "published"
+      }
+    },
+    {
+      "id": "q_fsrs_targeted_01",
+      "type": "question",
+      "relations": {
+        "concept_ids": [
+          "concept_fsrs"
+        ],
+        "related_card_ids": [
+          "card_fsrs_difficulty_def"
+        ]
+      },
+      "source": {
+        "origin": "validated",
+        "provider": "Socrates_Internal",
+        "subscription_required": false
+      },
+      "classification": {
+        "question_type": "mcq",
+        "usage_role": "targeted",
+        "cognitive_level": "mechanism"
+      },
+      "content": {
+        "stem": "A card with high FSRS difficulty will tend to have:",
+        "options": [
+          {
+            "id": "opt_A",
+            "text": "Longer intervals than an easy card"
+          },
+          {
+            "id": "opt_B",
+            "text": "Shorter intervals than an easy card"
+          },
+          {
+            "id": "opt_C",
+            "text": "No scheduled reviews"
+          },
+          {
+            "id": "opt_D",
+            "text": "Identical intervals regardless of grade"
+          }
+        ],
+        "correct_option_id": "opt_B"
+      },
+      "explanations": {
+        "general": "Higher difficulty means the item is harder to retain — FSRS schedules more frequent reviews.",
+        "distractors": {}
+      },
+      "editorial": {
+        "difficulty": "medium",
+        "tags": [
+          "targeted"
+        ]
+      },
+      "media": [],
+      "references": [],
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "last_updated_by": "socrates_admin",
+        "version": "1.0",
+        "status": "published"
+      }
+    },
+    {
+      "id": "q_concept_map_generic_01",
+      "type": "question",
+      "relations": {
+        "concept_ids": [
+          "concept_concept_maps"
+        ],
+        "related_card_ids": [
+          "card_concept_map_def"
+        ]
+      },
+      "source": {
+        "origin": "validated",
+        "provider": "Socrates_Internal",
+        "subscription_required": false
+      },
+      "classification": {
+        "question_type": "mcq",
+        "usage_role": "generic",
+        "cognitive_level": "mechanism"
+      },
+      "content": {
+        "stem": "In a Socrates concept map, a 'prerequisite' relationship means:",
+        "options": [
+          {
+            "id": "opt_A",
+            "text": "Both concepts must be studied simultaneously"
+          },
+          {
+            "id": "opt_B",
+            "text": "The from-concept should be learned before the to-concept"
+          },
+          {
+            "id": "opt_C",
+            "text": "The concepts are unrelated"
+          },
+          {
+            "id": "opt_D",
+            "text": "Only certification questions link the concepts"
+          }
+        ],
+        "correct_option_id": "opt_B"
+      },
+      "explanations": {
+        "general": "Prerequisites enforce learning order in the knowledge graph.",
+        "distractors": {}
+      },
+      "editorial": {
+        "difficulty": "easy",
+        "tags": [
+          "core"
+        ]
+      },
+      "media": [],
+      "references": [],
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "last_updated_by": "socrates_admin",
+        "version": "1.0",
+        "status": "published"
+      }
+    },
+    {
+      "id": "q_event_sourcing_diagnostic_01",
+      "type": "question",
+      "relations": {
+        "concept_ids": [
+          "concept_event_sourcing"
+        ],
+        "related_card_ids": [
+          "card_event_sourcing_def"
+        ]
+      },
+      "source": {
+        "origin": "validated",
+        "provider": "Socrates_Internal",
+        "subscription_required": false
+      },
+      "classification": {
+        "question_type": "mcq",
+        "usage_role": "diagnostic",
+        "cognitive_level": "mechanism"
+      },
+      "content": {
+        "stem": "A developer updates the card schedule document directly in Firestore instead of appending events. What breaks?",
+        "options": [
+          {
+            "id": "opt_A",
+            "text": "Nothing — views are the source of truth"
+          },
+          {
+            "id": "opt_B",
+            "text": "Audit trail and idempotent replay from the event log"
+          },
+          {
+            "id": "opt_C",
+            "text": "Only the UI theme"
+          },
+          {
+            "id": "opt_D",
+            "text": "Concept map layout"
+          }
+        ],
+        "correct_option_id": "opt_B"
+      },
+      "explanations": {
+        "general": "Event sourcing derives state from events — direct view edits bypass the log.",
+        "distractors": {}
+      },
+      "editorial": {
+        "difficulty": "hard",
+        "tags": [
+          "diagnostic"
+        ]
+      },
+      "media": [],
+      "references": [],
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "last_updated_by": "socrates_admin",
+        "version": "1.0",
+        "status": "published"
+      }
+    },
+    {
+      "id": "q_certification_misconception_01",
+      "type": "question",
+      "relations": {
+        "concept_ids": [
+          "concept_mastery_certification"
+        ],
+        "related_card_ids": [
+          "card_certification_def"
+        ]
+      },
+      "source": {
+        "origin": "validated",
+        "provider": "Socrates_Internal",
+        "subscription_required": false
+      },
+      "classification": {
+        "question_type": "mcq",
+        "usage_role": "misconception_directed",
+        "cognitive_level": "mechanism"
+      },
+      "content": {
+        "stem": "After partial certification, Socrates will:",
+        "options": [
+          {
+            "id": "opt_A",
+            "text": "Suppress all cards in the library permanently"
+          },
+          {
+            "id": "opt_B",
+            "text": "Apply policy based on outcome — may adjust scheduling for related cards"
+          },
+          {
+            "id": "opt_C",
+            "text": "Delete the concept from the map"
+          },
+          {
+            "id": "opt_D",
+            "text": "Skip FSRS entirely"
+          }
+        ],
+        "correct_option_id": "opt_B"
+      },
+      "explanations": {
+        "general": "Certification outcomes (full/partial/none) drive scheduling policy, not blanket suppression.",
+        "distractors": {
+          "opt_A": "Partial mastery does not mean permanent suppression of everything."
+        }
+      },
+      "editorial": {
+        "difficulty": "hard",
+        "tags": [
+          "certification"
+        ]
+      },
+      "media": [],
+      "references": [],
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "last_updated_by": "socrates_admin",
+        "version": "1.0",
+        "status": "published"
+      }
+    },
+    {
+      "id": "q_rel_active_spaced_01",
+      "type": "question",
+      "relations": {
+        "concept_ids": [
+          "concept_active_recall",
+          "concept_spaced_repetition"
+        ],
+        "related_card_ids": [
+          "card_rel_active_to_spaced"
+        ]
+      },
+      "source": {
+        "origin": "validated",
+        "provider": "Socrates_Internal",
+        "subscription_required": false
+      },
+      "classification": {
+        "question_type": "mcq",
+        "usage_role": "generic",
+        "cognitive_level": "mechanism"
+      },
+      "content": {
+        "stem": "Why is active recall a prerequisite for understanding spaced repetition?",
+        "options": [
+          {
+            "id": "opt_A",
+            "text": "Spacing only works for visual learners"
+          },
+          {
+            "id": "opt_B",
+            "text": "Spaced reviews are retrieval events — recall is what you do at each review"
+          },
+          {
+            "id": "opt_C",
+            "text": "FSRS requires multiple-choice questions only"
+          },
+          {
+            "id": "opt_D",
+            "text": "Active recall replaces the need for spacing"
+          }
+        ],
+        "correct_option_id": "opt_B"
+      },
+      "explanations": {
+        "general": "Spacing schedules when; active recall is the practice performed at each interval.",
+        "distractors": {}
+      },
+      "editorial": {
+        "difficulty": "medium",
+        "tags": [
+          "relationship"
+        ]
+      },
+      "media": [],
+      "references": [],
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "last_updated_by": "socrates_admin",
+        "version": "1.0",
+        "status": "published"
+      }
+    }
+  ]
+}

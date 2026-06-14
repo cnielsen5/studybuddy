@@ -8,6 +8,7 @@
  */
 
 import { projectCardReviewedEvent } from "../../src/projector/cardProjector";
+import { getCardScheduleViewPath } from "../../src/viewPaths";
 import { Firestore } from "@google-cloud/firestore";
 import { validCardReviewedEvent } from "../fixtures/cardReviewed.fixture.ts";
 
@@ -109,7 +110,7 @@ describe("Out-of-Order Event Delivery", () => {
       expect(olderResult.performanceViewUpdated).toBe(false);
 
       // Verify view reflects newer event, not older
-      const scheduleViewPath = `users/${userId}/libraries/${libraryId}/views/card_schedule/${cardId}`;
+      const scheduleViewPath = getCardScheduleViewPath(userId, libraryId, cardId);
       const scheduleViewRef = mockDoc(scheduleViewPath);
       const scheduleViewDoc = await scheduleViewRef.get();
       
@@ -155,7 +156,7 @@ describe("Out-of-Order Event Delivery", () => {
       expect(newerResult.idempotent).toBe(false); // Should update (newer than existing)
 
       // Verify view reflects newer event
-      const scheduleViewPath = `users/${userId}/libraries/${libraryId}/views/card_schedule/${cardId}`;
+      const scheduleViewPath = getCardScheduleViewPath(userId, libraryId, cardId);
       const scheduleViewRef = mockDoc(scheduleViewPath);
       const scheduleViewDoc = await scheduleViewRef.get();
       
@@ -235,7 +236,7 @@ describe("Out-of-Order Event Delivery", () => {
       expect(result2.idempotent).toBe(true);
 
       // Verify final state reflects event 3 (newest)
-      const scheduleViewPath = `users/${userId}/libraries/${libraryId}/views/card_schedule/${cardId}`;
+      const scheduleViewPath = getCardScheduleViewPath(userId, libraryId, cardId);
       const scheduleViewRef = mockDoc(scheduleViewPath);
       const scheduleViewDoc = await scheduleViewRef.get();
       

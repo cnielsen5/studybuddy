@@ -16,6 +16,10 @@
 
 import * as admin from "firebase-admin";
 import { createCardReviewedEvent } from "../src/client/eventHelpers";
+import {
+  getCardScheduleViewPath,
+  getCardPerformanceViewPath,
+} from "../src/viewPaths";
 
 // Initialize Firebase Admin
 if (admin.apps.length === 0) {
@@ -43,8 +47,8 @@ if (admin.apps.length === 0) {
 const firestore = admin.firestore();
 
 // Test configuration
-const TEST_USER_ID = "test_user_123";
-const TEST_LIBRARY_ID = "test_lib_abc";
+const TEST_USER_ID = "user_test_123";
+const TEST_LIBRARY_ID = "lib_test_abc";
 const TEST_CARD_ID = "card_test_001";
 
 async function testEventProjection() {
@@ -88,52 +92,14 @@ async function testEventProjection() {
     // 4. Check if views were created/updated
     console.log("\nStep 4: Verifying views were updated...");
 
-    // Use same path structure as projector (string path like the projector does)
-    const scheduleViewPath = `users/${TEST_USER_ID}/libraries/${TEST_LIBRARY_ID}/views/card_schedule/${TEST_CARD_ID}`;
-    const perfViewPath = `users/${TEST_USER_ID}/libraries/${TEST_LIBRARY_ID}/views/card_perf/${TEST_CARD_ID}`;
+    const scheduleViewPath = getCardScheduleViewPath(TEST_USER_ID, TEST_LIBRARY_ID, TEST_CARD_ID);
+    const perfViewPath = getCardPerformanceViewPath(TEST_USER_ID, TEST_LIBRARY_ID, TEST_CARD_ID);
 
     console.log(`   Checking: ${scheduleViewPath}`);
     console.log(`   Checking: ${perfViewPath}`);
 
-    // Firestore Admin SDK requires even number of path segments for doc()
-    // The path has 7 segments (odd): users/.../views/card_schedule/cardId
-    // This suggests views/card_schedule might be a nested structure
-    // Let's try using collection/doc chaining to handle the nested subcollection
-    let scheduleViewRef, perfViewRef;
-    
-    try {
-      // First try string path (what projector uses in code)
-      scheduleViewRef = firestore.doc(scheduleViewPath);
-      perfViewRef = firestore.doc(perfViewPath);
-    } catch (pathError: any) {
-      if (pathError?.message?.includes("even number")) {
-        // If string path fails, use collection/doc chaining
-        // Treat "views" as a document (not a collection), then card_schedule as a subcollection
-        // Path structure: users/{userId}/libraries/{libraryId}/views/{viewType}/{cardId}
-        // where "views" is a document and card_schedule is a subcollection under it
-        scheduleViewRef = firestore
-          .collection("users")
-          .doc(TEST_USER_ID)
-          .collection("libraries")
-          .doc(TEST_LIBRARY_ID)
-          .collection("views")
-          .doc("card_schedule")  // "views" collection -> "card_schedule" document
-          .collection("cards")   // -> "cards" subcollection
-          .doc(TEST_CARD_ID);    // -> cardId document
-
-        perfViewRef = firestore
-          .collection("users")
-          .doc(TEST_USER_ID)
-          .collection("libraries")
-          .doc(TEST_LIBRARY_ID)
-          .collection("views")
-          .doc("card_perf")      // "views" collection -> "card_perf" document
-          .collection("cards")   // -> "cards" subcollection
-          .doc(TEST_CARD_ID);    // -> cardId document
-      } else {
-        throw pathError;
-      }
-    }
+    const scheduleViewRef = firestore.doc(scheduleViewPath);
+    const perfViewRef = firestore.doc(perfViewPath);
 
     // Also check the event was actually created
     console.log("\nStep 4b: Verifying event was created...");

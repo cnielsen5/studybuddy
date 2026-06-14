@@ -26,14 +26,7 @@ export interface SessionProjectionResult {
   error?: string;
 }
 
-function getSessionViewPath(userId: string, libraryId: string, sessionId: string): string {
-  return `users/${userId}/libraries/${libraryId}/views/session/${sessionId}`;
-}
-
-function getSessionSummaryPath(userId: string, libraryId: string, sessionId: string): string {
-  return `users/${userId}/libraries/${libraryId}/session_summaries/${sessionId}`;
-}
-
+import { getSessionViewPath, getSessionSummaryPath } from "../viewPaths";
 
 export async function projectSessionStartedEvent(
   firestore: Firestore,

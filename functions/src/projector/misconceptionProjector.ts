@@ -31,10 +31,7 @@ export interface MisconceptionProjectionResult {
   error?: string;
 }
 
-function getMisconceptionEdgeViewPath(userId: string, libraryId: string, misconceptionId: string): string {
-  return `users/${userId}/libraries/${libraryId}/views/misconception_edge/${misconceptionId}`;
-}
-
+import { getMisconceptionEdgeViewPath } from "../viewPaths";
 
 export async function projectMisconceptionProbeResultEvent(
   firestore: Firestore,

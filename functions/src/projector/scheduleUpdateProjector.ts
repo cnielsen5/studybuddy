@@ -30,10 +30,7 @@ export interface ScheduleUpdateProjectionResult {
   error?: string;
 }
 
-function getCardScheduleViewPath(userId: string, libraryId: string, cardId: string): string {
-  return `users/${userId}/libraries/${libraryId}/views/card_schedule/${cardId}`;
-}
-
+import { getCardScheduleViewPath } from "../viewPaths";
 
 export async function projectAccelerationAppliedEvent(
   firestore: Firestore,

@@ -6,6 +6,11 @@
  */
 
 import { Firestore } from "@google-cloud/firestore";
+import {
+  getCardScheduleViewPath,
+  getCardPerformanceViewPath,
+  getViewsCollectionPath,
+} from "../viewPaths";
 
 /**
  * Card Schedule View
@@ -51,20 +56,6 @@ export interface CardPerformanceView {
     event_id: string;
   };
   updated_at: string;
-}
-
-/**
- * Gets the Firestore path for a card schedule view
- */
-function getCardScheduleViewPath(userId: string, libraryId: string, cardId: string): string {
-  return `users/${userId}/libraries/${libraryId}/views/card_schedule/${cardId}`;
-}
-
-/**
- * Gets the Firestore path for a card performance view
- */
-function getCardPerformanceViewPath(userId: string, libraryId: string, cardId: string): string {
-  return `users/${userId}/libraries/${libraryId}/views/card_perf/${cardId}`;
 }
 
 /**
@@ -134,12 +125,11 @@ export async function getDueCards(
   limit: number = 50
 ): Promise<CardScheduleView[]> {
   const now = new Date().toISOString();
-  const viewsPath = `users/${userId}/libraries/${libraryId}/views/card_schedule`;
+  const viewsPath = getViewsCollectionPath(userId, libraryId);
 
-  // Note: In client SDK, use: collection(firestore, viewsPath) instead
-  // This is server SDK syntax for documentation
   const collectionRef = (firestore as any).collection(viewsPath);
   const snapshot = await collectionRef
+    .where("type", "==", "card_schedule_view")
     .where("due_at", "<=", now)
     .orderBy("due_at", "asc")
     .limit(limit)

@@ -25,13 +25,7 @@ export interface CertificationProjectionResult {
   error?: string;
 }
 
-/**
- * Gets the view path for ConceptCertificationView
- */
-function getConceptCertificationViewPath(userId: string, libraryId: string, conceptId: string): string {
-  return `users/${userId}/libraries/${libraryId}/views/concept_certification/${conceptId}`;
-}
-
+import { getConceptCertificationViewPath } from "../viewPaths";
 
 /**
  * Projects a mastery_certification_completed event to ConceptCertificationView
