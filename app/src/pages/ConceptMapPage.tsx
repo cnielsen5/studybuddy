@@ -1,8 +1,11 @@
-import { useMemo, useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { Link, useSearchParams } from "react-router-dom";
 import { ConceptMapGraph, conceptMapStats } from "../components/ConceptMapGraph";
 import { useAuth } from "../lib/auth";
-import { certificationResultLabel } from "../lib/certification";
+import {
+  certificationResultDescription,
+  certificationResultLabel,
+} from "../lib/certification";
 import {
   deriveAggregateMetrics,
   deriveConceptMetrics,
@@ -12,15 +15,18 @@ import {
 import { useLibrary } from "../lib/libraryContext";
 import type { TaxonomyNode } from "../lib/conceptMapHierarchy";
 import { getConceptTitle } from "../lib/libraryTypes";
-import { useConceptCertification } from "../lib/useConceptCertification";
+import { useAllConceptCertifications } from "../lib/useAllConceptCertifications";
 import { useConceptDerivedData } from "../lib/useConceptDerivedData";
+import { buildTaxonomyTree } from "../lib/conceptMapHierarchy";
 
 export function ConceptMapPage() {
   const { bundle, studyCards, loading, error } = useLibrary();
   const { user, client } = useAuth();
   const { schedules, performances, loading: derivedLoading } = useConceptDerivedData(loading);
+  const [searchParams] = useSearchParams();
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [selectedNode, setSelectedNode] = useState<TaxonomyNode | null>(null);
+  const detailRef = useRef<HTMLElement | null>(null);
 
   const stats = useMemo(() => (bundle ? conceptMapStats(bundle) : null), [bundle]);
 
@@ -58,10 +64,41 @@ export function ConceptMapPage() {
   const certifyUrl =
     selectedConcept && user ? `/certify?concept=${selectedConcept.id}` : null;
 
-  const { certification, loading: certLoading } = useConceptCertification(
-    client,
-    selectedConcept?.id ?? null
+  const conceptIds = useMemo(
+    () => bundle?.concepts.map((c) => c.id) ?? [],
+    [bundle]
   );
+  const { certifications, loading: certLoading } = useAllConceptCertifications(
+    client,
+    conceptIds
+  );
+  const selectedCertification = selectedConcept
+    ? certifications.get(selectedConcept.id) ?? null
+    : null;
+
+  const taxonomyTree = useMemo(
+    () => (bundle ? buildTaxonomyTree(bundle) : null),
+    [bundle]
+  );
+
+  useEffect(() => {
+    const conceptParam = searchParams.get("concept");
+    if (!conceptParam || !taxonomyTree || selectedId) return;
+
+    for (const node of taxonomyTree.values()) {
+      if (node.level === "concept" && node.conceptIds[0] === conceptParam) {
+        setSelectedId(node.id);
+        setSelectedNode(node);
+        break;
+      }
+    }
+  }, [searchParams, taxonomyTree, selectedId]);
+
+  useEffect(() => {
+    if (selectedNode && detailRef.current) {
+      detailRef.current.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    }
+  }, [selectedNode]);
 
   if (loading) return <p className="status">Loading concept map…</p>;
   if (error || !bundle) {
@@ -115,6 +152,7 @@ export function ConceptMapPage() {
           studyCards={studyCards}
           schedules={schedules}
           performances={performances}
+          certifications={certifications}
           selectedId={selectedId}
           onSelect={(id, node) => {
             setSelectedId(id);
@@ -124,7 +162,7 @@ export function ConceptMapPage() {
       </div>
 
       {selectedNode && selectedMetrics && (
-        <section className="panel concept-detail">
+        <section ref={detailRef} className="panel concept-detail">
           <div className="concept-detail-header">
             <div>
               <h2>{selectedNode.label}</h2>
@@ -169,17 +207,38 @@ export function ConceptMapPage() {
 
           {selectedConcept ? (
             <>
-              {certification && (
-                <p className="hint certification-badge">
-                  <strong>Certification:</strong>{" "}
-                  {certificationResultLabel(certification.certification_result)} ·{" "}
-                  {Math.round(certification.accuracy * 100)}% (
-                  {certification.correct_count}/{certification.questions_answered})
-                </p>
-              )}
-              {certLoading && user && (
-                <p className="status">Loading certification…</p>
-              )}
+              <div className="certification-panel">
+                <h3>Certification</h3>
+                {certLoading && user ? (
+                  <p className="status">Loading certification…</p>
+                ) : selectedCertification ? (
+                  <>
+                    <p className="certification-badge certification-badge--done">
+                      <strong>{certificationResultLabel(selectedCertification.certification_result)}</strong>
+                      {" · "}
+                      {Math.round(selectedCertification.accuracy * 100)}% (
+                      {selectedCertification.correct_count}/
+                      {selectedCertification.questions_answered} correct)
+                    </p>
+                    <p className="hint">
+                      {certificationResultDescription(selectedCertification.certification_result)}
+                    </p>
+                  </>
+                ) : user ? (
+                  <>
+                    <p className="certification-badge certification-badge--pending">
+                      Not certified yet — run the certification gate to demonstrate mastery.
+                    </p>
+                    {certifyUrl && (
+                      <Link to={certifyUrl} className="btn btn-primary btn-sm">
+                        Start certification
+                      </Link>
+                    )}
+                  </>
+                ) : (
+                  <p className="hint">Sign in to view or earn certification for this concept.</p>
+                )}
+              </div>
               <p className="concept-def">{selectedConcept.content.definition}</p>
               <p className="hint">{selectedConcept.content.summary}</p>
               {selectedConcept.dependency_graph.prerequisites.length > 0 && (

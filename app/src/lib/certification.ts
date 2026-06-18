@@ -74,6 +74,16 @@ export function certificationResultLabel(result: CertificationResult): string {
   return labels[result];
 }
 
+/** Short label for map node subtitles. */
+export function certificationResultShortLabel(result: CertificationResult): string {
+  const labels: Record<CertificationResult, string> = {
+    full: "Full cert",
+    partial: "Partial cert",
+    none: "No cert",
+  };
+  return labels[result];
+}
+
 export function certificationResultDescription(result: CertificationResult): string {
   const descriptions: Record<CertificationResult, string> = {
     full: "Concept marked pre-mastered. Core cards may be suppressed; minimal review scheduled.",
