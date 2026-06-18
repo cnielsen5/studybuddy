@@ -3,28 +3,42 @@ import { Link } from "react-router-dom";
 import { CardReview } from "../components/CardReview";
 import { useAuth } from "../lib/auth";
 import { useLibrary } from "../lib/libraryContext";
+import { formatQueueReason } from "../lib/studyQueue";
+import { useStudyQueue } from "../lib/useStudyQueue";
 import type { ReviewGrade } from "../lib/types";
 
 export function StudyPage() {
   const { client, user } = useAuth();
-  const { studyCards, loading, error } = useLibrary();
-  const [index, setIndex] = useState(0);
+  const { studyCards, loading: libraryLoading, error: libraryError } = useLibrary();
+  const {
+    queue,
+    stats,
+    loading: queueLoading,
+    refreshing,
+    error: queueError,
+    currentCard,
+    position,
+    refresh,
+    advanceAfterReview,
+  } = useStudyQueue(client, studyCards, libraryLoading);
+
   const [message, setMessage] = useState<string | null>(null);
   const [lastSchedule, setLastSchedule] = useState<string | null>(null);
 
-  const total = studyCards.length;
-  const card = total > 0 ? studyCards[index % total] : null;
-  const progress = total > 0 ? `${(index % total) + 1} / ${total}` : "0 / 0";
+  const progress = queue.length > 0 ? `${position} / ${queue.length}` : "0 / 0";
 
   const handleReview = useCallback(
     async (grade: ReviewGrade, secondsSpent: number) => {
-      if (!client || !card) {
+      if (!client || !currentCard) {
         setMessage("Client not ready — sign in from the home page.");
         return;
       }
 
+      const cardId = currentCard.id;
       setMessage(null);
-      const result = await client.reviewCard(card.id, grade, secondsSpent);
+      setLastSchedule(null);
+
+      const result = await client.reviewCard(cardId, grade, secondsSpent);
 
       if (!result.success) {
         setMessage(`Upload failed: ${result.error ?? "unknown error"}`);
@@ -37,17 +51,19 @@ export function StudyPage() {
           : `Review uploaded (${result.eventId})`
       );
 
-      await new Promise((r) => setTimeout(r, 3000));
-      const schedule = await client.getCardSchedule(card.id);
+      advanceAfterReview(cardId);
+
+      await new Promise((r) => setTimeout(r, 2500));
+      const schedule = await client.getCardSchedule(cardId);
       if (schedule) {
         setLastSchedule(
           `Next due: ${new Date(schedule.due_at).toLocaleString()} · stability ${schedule.stability.toFixed(2)}`
         );
       }
 
-      setIndex((i) => i + 1);
+      await refresh();
     },
-    [client, card]
+    [client, currentCard, advanceAfterReview, refresh]
   );
 
   if (!user) {
@@ -60,19 +76,49 @@ export function StudyPage() {
     );
   }
 
-  if (loading) {
+  if (libraryLoading || queueLoading) {
     return (
       <div className="page">
-        <p className="status">Loading library cards…</p>
+        <p className="status">Loading study queue…</p>
       </div>
     );
   }
 
-  if (error || !card) {
+  if (libraryError) {
     return (
       <div className="page">
-        <p className="banner banner-error">{error ?? "No cards in library"}</p>
+        <p className="banner banner-error">{libraryError}</p>
         <Link to="/" className="btn">Home</Link>
+      </div>
+    );
+  }
+
+  if (!currentCard) {
+    return (
+      <div className="page">
+        <header className="page-header row">
+          <div>
+            <h1>Study</h1>
+            <p className="subtitle">Nothing due right now</p>
+          </div>
+          <Link to="/" className="btn">Home</Link>
+        </header>
+
+        {queueError && (
+          <div className="banner banner-warn">
+            <p>Could not load schedules: {queueError}</p>
+          </div>
+        )}
+
+        <section className="panel">
+          <p>All caught up — no new or due cards in the queue.</p>
+          <p className="hint">
+            {studyCards.length} cards in library. Schedules appear after your first review.
+          </p>
+          <button type="button" className="btn" onClick={() => refresh()} disabled={refreshing}>
+            {refreshing ? "Refreshing…" : "Refresh queue"}
+          </button>
+        </section>
       </div>
     );
   }
@@ -82,17 +128,43 @@ export function StudyPage() {
       <header className="page-header row">
         <div>
           <h1>Study</h1>
-          <p className="subtitle">Card {progress}</p>
+          <p className="subtitle">
+            Card {progress}
+            {stats.newCount > 0 && <> · {stats.newCount} new</>}
+            {stats.overdueCount > 0 && <> · {stats.overdueCount} overdue</>}
+            {stats.dueCount > 0 && <> · {stats.dueCount} due</>}
+          </p>
         </div>
-        <Link to="/" className="btn">
-          Home
-        </Link>
+        <div className="header-actions">
+          <button
+            type="button"
+            className="btn"
+            onClick={() => refresh()}
+            disabled={refreshing}
+          >
+            {refreshing ? "…" : "Refresh"}
+          </button>
+          <Link to="/" className="btn">Home</Link>
+        </div>
       </header>
+
+      {queueError && (
+        <div className="banner banner-warn">
+          <p>Schedule query issue — showing new cards only. {queueError}</p>
+        </div>
+      )}
 
       {message && <div className="banner banner-ok"><p>{message}</p></div>}
       {lastSchedule && <p className="hint">{lastSchedule}</p>}
 
-      <CardReview card={card} onReview={handleReview} disabled={!client} />
+      <p className="queue-badge">{formatQueueReason(currentCard)}</p>
+
+      <CardReview
+        key={currentCard.id}
+        card={currentCard}
+        onReview={handleReview}
+        disabled={!client || refreshing}
+      />
     </div>
   );
 }

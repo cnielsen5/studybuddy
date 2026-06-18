@@ -1,3 +1,5 @@
+import type { ClozeData } from "./cloze";
+
 export interface LibraryManifest {
   id: string;
   name: string;
@@ -39,7 +41,11 @@ export interface LibraryCard {
     to_concept_id?: string;
   };
   config: { card_type: string; pedagogical_role: string };
-  content: { front: string; back: string };
+  content: {
+    front: string;
+    back: string;
+    cloze_data?: ClozeData | null;
+  };
   editorial?: { difficulty: string; tags: string[] };
   metadata?: { difficulty?: string; tags?: string[] };
 }
@@ -83,6 +89,7 @@ export function toStudyCards(bundle: LibraryBundle): StudyCard[] {
       back: card.content.back,
       cardType: card.config.card_type,
       role: card.config.pedagogical_role,
+      clozeData: card.content.cloze_data ?? null,
     };
   });
 }

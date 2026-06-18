@@ -29,6 +29,8 @@ export interface CardScheduleView {
   updated_at: string;
 }
 
+import type { ClozeData } from "./cloze";
+
 export interface StudyCard {
   id: string;
   conceptId: string;
@@ -36,6 +38,7 @@ export interface StudyCard {
   back: string;
   cardType?: string;
   role?: string;
+  clozeData?: ClozeData | null;
 }
 
 /** @deprecated Use StudyCard from library bundle */

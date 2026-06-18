@@ -113,4 +113,15 @@ export class SocratesClient {
     const snapshot = await getDocs(q);
     return snapshot.docs.map((d) => d.data() as CardScheduleView);
   }
+
+  async getAllCardSchedules(max = 200): Promise<CardScheduleView[]> {
+    const viewsPath = getViewsCollectionPath(this.userId, this.libraryId);
+    const q = query(
+      collection(this.firestore, viewsPath),
+      where("type", "==", "card_schedule_view"),
+      limit(max)
+    );
+    const snapshot = await getDocs(q);
+    return snapshot.docs.map((d) => d.data() as CardScheduleView);
+  }
 }
