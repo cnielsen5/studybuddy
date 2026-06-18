@@ -32,6 +32,11 @@ export interface CardScheduleView {
     event_id: string;
   };
   updated_at: string;
+  suppressed?: boolean;
+  suppression_reason?: "certification_full" | "certification_partial";
+  certification_applied?: boolean;
+  certification_result?: "full" | "partial" | "none";
+  certification_event_id?: string;
 }
 
 export interface CardPerformanceView {

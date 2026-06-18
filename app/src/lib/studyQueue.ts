@@ -15,6 +15,10 @@ export interface StudyQueueStats {
   overdueCount: number;
 }
 
+export function isScheduleSuppressed(schedule: CardScheduleView): boolean {
+  return schedule.suppressed === true;
+}
+
 export function buildStudyQueue(
   studyCards: StudyCard[],
   schedules: CardScheduleView[],
@@ -24,12 +28,14 @@ export function buildStudyQueue(
   const scheduledIds = new Set(schedules.map((s) => s.card_id));
   const nowMs = now.getTime();
 
+  const activeSchedules = schedules.filter((s) => !isScheduleSuppressed(s));
+
   const newCards: QueuedStudyCard[] = studyCards
     .filter((c) => !scheduledIds.has(c.id))
     .map((c) => ({ ...c, queueReason: "new" as const }));
 
   const dueCards: QueuedStudyCard[] = [];
-  for (const schedule of schedules) {
+  for (const schedule of activeSchedules) {
     if (new Date(schedule.due_at).getTime() > nowMs) continue;
 
     const card = cardMap.get(schedule.card_id);
@@ -84,6 +90,7 @@ export function computeDeckStats(
   let dueToReview = 0;
   for (const schedule of schedules) {
     if (!cardIds.has(schedule.card_id)) continue;
+    if (isScheduleSuppressed(schedule)) continue;
     if (new Date(schedule.due_at).getTime() <= nowMs) {
       dueToReview++;
     }

@@ -25,6 +25,8 @@ Socrates Structure and Organizer
             Questions
     2.2 User State (Private)
             Card scheduling state
+            Cross-library transfer state (CLKT — see §15)
+                transfer_state on CardScheduleView when a card is stability-seeded at import
             Misconception edges
             Fatigue and capacity metrics
             Goals and plans
@@ -1694,7 +1696,110 @@ Socrates Structure and Organizer
     12.4 Central Safety Configuration
             Single config for all limits
 
-15. Explainability & Trust
+15. Cross-Library Knowledge Transfer (CLKT)
+    15.1 Purpose
+            Prevent redundant relearning when a new content library shares semantic
+            overlap with previously mastered content. Seeds initial stability of new
+            cards proportionally to their relatedness to already-learned cards,
+            reflecting real cognitive transfer.
+
+    15.2 Trigger
+            User adds a new content library
+            At least one existing library has cards in Review or Mastered stage
+            User explicitly opts in during library import flow
+
+    15.3 Seeding Formula
+            For each new card c_new in the imported library:
+
+            seeded_stability(c_new) =
+                SUM [ sim(c_new, c_i) x stability(c_i) x w_i ] / SUM [ w_i ]
+
+            Where:
+                sim(c_new, c_i)  = cosine similarity of semantic vectors
+                                   (only included if > 0.90)
+                stability(c_i)   = current FSRS stability of existing card c_i
+                w_i              = pedagogical_weight of existing card c_i
+
+            Applied only to existing cards in stage: Review or Mastered
+            Capped at: min(seeded_stability, 30 days)
+
+    15.4 First Review Rule
+            Despite high seeded stability, all transfer-seeded cards are scheduled
+            for a mandatory first review within 3-5 days of library import.
+
+            On that first review:
+                Pass: FSRS takes over using seeded stability as the base value.
+                      Next interval will reflect the full seeded stability.
+                Fail: Seeded stability is fully revoked. Card resets to normal
+                      FSRS scheduling from zero as a New card.
+
+            This ensures the user confirms transfer before benefiting from it.
+
+    15.5 Data Model Fields (User Card State)
+            {
+                "transfer_state": {
+                    "seeded_stability": 28.0,
+                    "seed_sources": ["card_0042", "card_0107"],
+                    "seed_applied_at": "2025-06-01T00:00:00Z",
+                    "seed_library": "cardiovascular_v2",
+                    "earned_stability": 0,
+                    "reviewed_directly": false,
+                    "first_review_due": "2025-06-04T00:00:00Z"
+                }
+            }
+
+            Lives on CardScheduleView (User State layer), not on Golden Master content.
+
+    15.6 Behavioral Rules
+            Seeding is a one-time event at import. It does not update as source
+            cards are later reviewed.
+
+            Seeded stability decays at 1.3x the normal FSRS decay rate until the
+            card has been directly reviewed at least once (reviewed_directly = true),
+            after which normal decay resumes.
+
+            A card with only seeded stability cannot advance past Learning stage.
+            Direct review is required to enter Review or Mastered.
+
+            If any seed source card lapses after seeding, reduce seeded_stability by:
+                sim(c_new, c_lapsed) x lapse_penalty_factor (suggested 0.5x)
+            Floored at 0.
+
+            Seeded cards are flagged visually in the concept map and card queue
+            until directly reviewed at least once.
+
+    15.7 Caps and Safety
+            Minimum similarity to qualify:     0.90 cosine
+            Maximum seeded stability:          30 days
+            Max source cards per new card:     5 (highest similarity only)
+            Stage ceiling before direct review: Learning
+            Decay multiplier before direct review: 1.3x
+            Mandatory first review window:     3-5 days from import
+
+    15.8 User Flow
+            1. User initiates library import.
+            2. System computes CLKT preview:
+               "X cards in this library overlap with things you already know.
+                Seeding their stability could reduce early repetition."
+            3. User can review the list of affected cards and their projected
+               seed values before confirming.
+            4. User accepts, declines, or accepts with modifications
+               (e.g., apply only to cards above a higher similarity threshold).
+            5. On acceptance: seeded stability applied, cards flagged as
+               transfer_seeded in queue, first reviews scheduled within 3-5 days.
+
+    15.9 Concept Map Integration
+            Transfer-seeded cards render with a distinct visual indicator on the
+            concept map (e.g., dashed node border) until directly reviewed.
+
+            Node color (ConceptState) is computed normally from stability, but
+            seeded stability is weighted at 0.5x earned stability in the
+            ConceptState formula until reviewed_directly = true.
+
+            This keeps the concept map honest — seeded knowledge is represented
+            as potential, not confirmed mastery, until the user has verified it.
+
+16. Explainability & Trust
     13.1 Primary Reason Contract
             Each scheduled card has exactly one dominant reason
                 Data Model
@@ -1727,7 +1832,7 @@ Socrates Structure and Organizer
             Accept / reject interventions
             “Move on” always available
 
-16. Analytics & Health Metrics
+17. Analytics & Health Metrics
         Content Metrics
             Adaptive Restructuring
                 Track semantic degree over time to detect drift of content libraries
@@ -1829,13 +1934,13 @@ Socrates Structure and Organizer
             Goal-level
                 Track across large time periods based on goal allocation
 
-17. Offline Support
+18. Offline Support
         Learning & Review Queue
         Pre-bundled diagnostic questions
         Certification cards
         Probing templates
 
-18. System Infrastructure (Internal Only)
+19. System Infrastructure (Internal Only)
         Observability & Internal Diagnostics (Internal Only)
             Scheduler Telemetry
                 - FSRS input/output snapshots
@@ -1855,17 +1960,18 @@ Socrates Structure and Organizer
                 - Schedule drift detection
                 - Unexpected stability inflation
 
-19. Future Work (Explicitly Deferred)
+20. Future Work (Explicitly Deferred)
         AI-assisted library creation
         External deck imports
         Auto-refactoring of concept graphs
+        Cross-Library Knowledge Transfer (CLKT) — specified in §15; not yet implemented
                   
-20. Files
+21. Files
        /Users/colbynielsen/Documents/StudyBuddy
         - TypeScriptDefinitions
             - Contains the definitions to allow cross-talk between firebase and my frontend
 
-21. Tests
+22. Tests
         Invariants
             Primary Reason
                 Test 1: Exactly one reason
@@ -1913,7 +2019,7 @@ Socrates Structure and Organizer
                     expect(reasons.length).toBeLessThanOrEqual(1);
                     });
 
-22. Development Checklist
+23. Development Checklist
         Layers
             1. Domain Models (schemas, types)
             2. Core Engines (scheduler, queue builder)

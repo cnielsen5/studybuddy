@@ -16,16 +16,18 @@ import {
   ConceptCertificationView,
 } from "./reducers/certificationReducers";
 
+import { getConceptCertificationViewPath } from "../viewPaths";
+import { applyCertificationScheduleEffects } from "./applyCertificationScheduleEffects";
+
 export interface CertificationProjectionResult {
   success: boolean;
   eventId: string;
   conceptId: string;
   viewUpdated: boolean;
+  schedulesUpdated: number;
   idempotent: boolean;
   error?: string;
 }
-
-import { getConceptCertificationViewPath } from "../viewPaths";
 
 /**
  * Projects a mastery_certification_completed event to ConceptCertificationView
@@ -42,6 +44,7 @@ export async function projectMasteryCertificationCompletedEvent(
         eventId: event.event_id,
         conceptId: event.entity.id,
         viewUpdated: false,
+        schedulesUpdated: 0,
         idempotent: false,
         error: `Invalid payload: ${payloadValidation.error.errors.map((e) => e.message).join(", ")}`,
       };
@@ -53,6 +56,7 @@ export async function projectMasteryCertificationCompletedEvent(
         eventId: event.event_id,
         conceptId: event.entity.id,
         viewUpdated: false,
+        schedulesUpdated: 0,
         idempotent: false,
         error: `Expected entity.kind to be "concept", got "${event.entity.kind}"`,
       };
@@ -72,6 +76,7 @@ export async function projectMasteryCertificationCompletedEvent(
         eventId: event.event_id,
         conceptId: conceptId,
         viewUpdated: false,
+        schedulesUpdated: 0,
         idempotent: true,
       };
     }
@@ -79,16 +84,19 @@ export async function projectMasteryCertificationCompletedEvent(
     const updatedView = reduceConceptCertification(currentView, event);
     await viewRef.set(updatedView, { merge: false });
 
-    // TODO: If certification is "full", may need to:
-    // 1. Suppress related cards (update CardScheduleView to mark as suppressed)
-    // 2. Accelerate related cards (if partial certification)
-    // This would require additional Firestore operations or separate triggers
+    const schedulesUpdated = await applyCertificationScheduleEffects(
+      firestore,
+      event,
+      conceptId,
+      payloadValidation.data.certification_result
+    );
 
     return {
       success: true,
       eventId: event.event_id,
       conceptId: conceptId,
       viewUpdated: true,
+      schedulesUpdated,
       idempotent: false,
     };
   } catch (error) {
@@ -97,6 +105,7 @@ export async function projectMasteryCertificationCompletedEvent(
       eventId: event.event_id,
       conceptId: event.entity.id,
       viewUpdated: false,
+      schedulesUpdated: 0,
       idempotent: false,
       error: error instanceof Error ? error.message : String(error),
     };

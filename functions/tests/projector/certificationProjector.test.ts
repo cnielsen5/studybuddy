@@ -8,11 +8,14 @@
 
 import { projectMasteryCertificationCompletedEvent } from "../../src/projector/certificationProjector";
 import { Firestore } from "@google-cloud/firestore";
-import { validUserEvent } from "../fixtures/userEvent.fixture.ts";
-import { validMasteryCertificationCompletedEvent } from "../fixtures/masteryCertificationCompleted.fixture.ts";
+import { validMasteryCertificationCompletedEvent } from "../fixtures/masteryCertificationCompleted.fixture";
 
-// Mock Firestore
 jest.mock("@google-cloud/firestore");
+jest.mock("../../src/projector/applyCertificationScheduleEffects", () => ({
+  applyCertificationScheduleEffects: jest.fn().mockResolvedValue(2),
+}));
+
+import { applyCertificationScheduleEffects } from "../../src/projector/applyCertificationScheduleEffects";
 
 describe("Certification Projector", () => {
   let mockFirestore: jest.Mocked<Firestore>;
@@ -49,9 +52,16 @@ describe("Certification Projector", () => {
 
       expect(result.success).toBe(true);
       expect(result.viewUpdated).toBe(true);
+      expect(result.schedulesUpdated).toBe(2);
       expect(result.idempotent).toBe(false);
       expect(result.conceptId).toBe(validMasteryCertificationCompletedEvent.entity.id);
       expect(mockSet).toHaveBeenCalledTimes(1);
+      expect(applyCertificationScheduleEffects).toHaveBeenCalledWith(
+        mockFirestore,
+        validMasteryCertificationCompletedEvent,
+        validMasteryCertificationCompletedEvent.entity.id,
+        "partial"
+      );
     });
 
     it("should handle idempotent event (already processed)", async () => {

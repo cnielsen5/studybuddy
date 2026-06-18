@@ -27,6 +27,11 @@ export interface CardScheduleView {
   last_grade: ReviewGrade;
   last_applied: { received_at: string; event_id: string };
   updated_at: string;
+  suppressed?: boolean;
+  suppression_reason?: "certification_full" | "certification_partial";
+  certification_applied?: boolean;
+  certification_result?: "full" | "partial" | "none";
+  certification_event_id?: string;
 }
 
 import type { ClozeData } from "./cloze";
