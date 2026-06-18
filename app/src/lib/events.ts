@@ -74,6 +74,15 @@ export function createMasteryCertificationCompletedEvent(params: {
 }): UserEvent {
   const now = new Date().toISOString();
 
+  const payload: Record<string, unknown> = {
+    certification_result: params.certificationResult,
+    questions_answered: params.questionsAnswered,
+    correct_count: params.correctCount,
+  };
+  if (params.reasoningQuality !== undefined) {
+    payload.reasoning_quality = params.reasoningQuality;
+  }
+
   return {
     event_id: generateEventId(),
     type: "mastery_certification_completed",
@@ -83,12 +92,7 @@ export function createMasteryCertificationCompletedEvent(params: {
     received_at: now,
     device_id: params.deviceId ?? "unknown",
     entity: { kind: "concept", id: params.conceptId },
-    payload: {
-      certification_result: params.certificationResult,
-      questions_answered: params.questionsAnswered,
-      correct_count: params.correctCount,
-      reasoning_quality: params.reasoningQuality,
-    },
+    payload,
     schema_version: "1.0",
   };
 }
