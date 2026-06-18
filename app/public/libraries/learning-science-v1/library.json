@@ -58,7 +58,8 @@
         "prerequisites": [],
         "unlocks": [
           "concept_spaced_repetition",
-          "concept_forgetting_curve"
+          "concept_forgetting_curve",
+          "concept_concept_maps"
         ],
         "child_concepts": [],
         "related_concepts": [
@@ -195,8 +196,7 @@
           "concept_forgetting_curve"
         ],
         "unlocks": [
-          "concept_fsrs",
-          "concept_mastery_certification"
+          "concept_fsrs"
         ],
         "child_concepts": [],
         "related_concepts": [
@@ -472,7 +472,6 @@
       },
       "dependency_graph": {
         "prerequisites": [
-          "concept_spaced_repetition",
           "concept_fsrs"
         ],
         "unlocks": [],
@@ -499,6 +498,82 @@
     }
   ],
   "relationships": [
+    {
+      "relationship_id": "rel_active_recall_to_forgetting",
+      "type": "relationship",
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "last_updated_by": "socrates_admin",
+        "version": "1.0",
+        "status": "published",
+        "tags": [
+          "prerequisite"
+        ],
+        "version_history": []
+      },
+      "graph_context": {
+        "library_id": "lib_learning_science_v1",
+        "domain": "Learning Science",
+        "category": "Cognitive Science",
+        "subcategory": "Memory & Retention"
+      },
+      "endpoints": {
+        "from_concept_id": "concept_active_recall",
+        "to_concept_id": "concept_forgetting_curve"
+      },
+      "relation": {
+        "relationship_type": "prerequisite",
+        "directionality": "forward"
+      },
+      "editorial": {
+        "importance": "medium",
+        "notes": "Retrieval practice context helps interpret why retention decays between reviews."
+      },
+      "linked_content": {
+        "relationship_card_ids": [],
+        "question_ids": []
+      }
+    },
+    {
+      "relationship_id": "rel_active_recall_to_concept_maps",
+      "type": "relationship",
+      "metadata": {
+        "created_at": "2026-06-14T00:00:00Z",
+        "updated_at": "2026-06-14T00:00:00Z",
+        "created_by": "socrates_admin",
+        "last_updated_by": "socrates_admin",
+        "version": "1.0",
+        "status": "published",
+        "tags": [
+          "prerequisite"
+        ],
+        "version_history": []
+      },
+      "graph_context": {
+        "library_id": "lib_learning_science_v1",
+        "domain": "Learning Science",
+        "category": "Cognitive Science",
+        "subcategory": "Memory & Retention"
+      },
+      "endpoints": {
+        "from_concept_id": "concept_active_recall",
+        "to_concept_id": "concept_concept_maps"
+      },
+      "relation": {
+        "relationship_type": "prerequisite",
+        "directionality": "forward"
+      },
+      "editorial": {
+        "importance": "medium",
+        "notes": "Concept maps organize the knowledge that retrieval practice strengthens."
+      },
+      "linked_content": {
+        "relationship_card_ids": [],
+        "question_ids": []
+      }
+    },
     {
       "relationship_id": "rel_active_recall_to_spaced_rep",
       "type": "relationship",
@@ -645,7 +720,7 @@
         "to_concept_id": "concept_concept_maps"
       },
       "relation": {
-        "relationship_type": "complements",
+        "relationship_type": "reinforces",
         "directionality": "bidirectional"
       },
       "editorial": {
@@ -708,7 +783,8 @@
       },
       "config": {
         "card_type": "basic",
-        "pedagogical_role": "recall"
+        "pedagogical_role": "recall",
+        "card_tier": "core"
       },
       "content": {
         "front": "What is active recall?",
@@ -739,7 +815,8 @@
       },
       "config": {
         "card_type": "basic",
-        "pedagogical_role": "recognition"
+        "pedagogical_role": "recognition",
+        "card_tier": "core"
       },
       "content": {
         "front": "What is the testing effect?",
@@ -769,7 +846,8 @@
       },
       "config": {
         "card_type": "basic",
-        "pedagogical_role": "application"
+        "pedagogical_role": "application",
+        "card_tier": "extension"
       },
       "content": {
         "front": "Why is highlighting alone a weak study strategy?",
@@ -799,7 +877,8 @@
       },
       "config": {
         "card_type": "basic",
-        "pedagogical_role": "recall"
+        "pedagogical_role": "recall",
+        "card_tier": "core"
       },
       "content": {
         "front": "Who discovered the forgetting curve, and what does it show?",
@@ -829,7 +908,8 @@
       },
       "config": {
         "card_type": "cloze",
-        "pedagogical_role": "recall"
+        "pedagogical_role": "recall",
+        "card_tier": "core"
       },
       "content": {
         "front": "Fill in the blanks.",
@@ -871,7 +951,8 @@
       },
       "config": {
         "card_type": "basic",
-        "pedagogical_role": "recall"
+        "pedagogical_role": "recall",
+        "card_tier": "core"
       },
       "content": {
         "front": "What is spaced repetition?",
@@ -901,7 +982,8 @@
       },
       "config": {
         "card_type": "basic",
-        "pedagogical_role": "synthesis"
+        "pedagogical_role": "synthesis",
+        "card_tier": "extension"
       },
       "content": {
         "front": "Spaced repetition vs. cramming: which produces better long-term retention?",
@@ -931,7 +1013,8 @@
       },
       "config": {
         "card_type": "basic",
-        "pedagogical_role": "integration"
+        "pedagogical_role": "integration",
+        "card_tier": "certification"
       },
       "content": {
         "front": "How does spaced repetition relate to active recall?",
@@ -964,7 +1047,8 @@
       },
       "config": {
         "card_type": "basic",
-        "pedagogical_role": "recall"
+        "pedagogical_role": "recall",
+        "card_tier": "core"
       },
       "content": {
         "front": "In FSRS, what is stability?",
@@ -994,7 +1078,8 @@
       },
       "config": {
         "card_type": "basic",
-        "pedagogical_role": "recall"
+        "pedagogical_role": "recall",
+        "card_tier": "core"
       },
       "content": {
         "front": "In FSRS, what is difficulty?",
@@ -1024,7 +1109,8 @@
       },
       "config": {
         "card_type": "basic",
-        "pedagogical_role": "recognition"
+        "pedagogical_role": "recognition",
+        "card_tier": "core"
       },
       "content": {
         "front": "What are the four FSRS review grades?",
@@ -1054,7 +1140,8 @@
       },
       "config": {
         "card_type": "cloze",
-        "pedagogical_role": "application"
+        "pedagogical_role": "application",
+        "card_tier": "core"
       },
       "content": {
         "front": "Complete the sentence.",
@@ -1098,7 +1185,8 @@
       },
       "config": {
         "card_type": "basic",
-        "pedagogical_role": "recall"
+        "pedagogical_role": "recall",
+        "card_tier": "core"
       },
       "content": {
         "front": "What is a concept map in Socrates?",
@@ -1128,7 +1216,8 @@
       },
       "config": {
         "card_type": "basic",
-        "pedagogical_role": "application"
+        "pedagogical_role": "application",
+        "card_tier": "extension"
       },
       "content": {
         "front": "Why do prerequisites matter in a concept map?",
@@ -1158,7 +1247,8 @@
       },
       "config": {
         "card_type": "basic",
-        "pedagogical_role": "recall"
+        "pedagogical_role": "recall",
+        "card_tier": "core"
       },
       "content": {
         "front": "What is event sourcing?",
@@ -1188,7 +1278,8 @@
       },
       "config": {
         "card_type": "basic",
-        "pedagogical_role": "recall"
+        "pedagogical_role": "recall",
+        "card_tier": "core"
       },
       "content": {
         "front": "What is a projector in Socrates?",
@@ -1218,7 +1309,8 @@
       },
       "config": {
         "card_type": "basic",
-        "pedagogical_role": "application"
+        "pedagogical_role": "application",
+        "card_tier": "extension"
       },
       "content": {
         "front": "Why must event writes be idempotent?",
@@ -1248,7 +1340,8 @@
       },
       "config": {
         "card_type": "basic",
-        "pedagogical_role": "recall"
+        "pedagogical_role": "recall",
+        "card_tier": "core"
       },
       "content": {
         "front": "What are the three mastery certification outcomes?",
@@ -1278,7 +1371,8 @@
       },
       "config": {
         "card_type": "basic",
-        "pedagogical_role": "integration"
+        "pedagogical_role": "integration",
+        "card_tier": "certification"
       },
       "content": {
         "front": "What events does mastery certification produce?",
@@ -1314,6 +1408,7 @@
       "config": {
         "card_type": "relationship",
         "pedagogical_role": "synthesis",
+        "card_tier": "core",
         "relationship_probe_type": "directionality",
         "activation_policy": {
           "requires_mastery_of": [
@@ -1352,6 +1447,7 @@
       "config": {
         "card_type": "relationship",
         "pedagogical_role": "synthesis",
+        "card_tier": "core",
         "relationship_probe_type": "mechanism",
         "activation_policy": {
           "requires_mastery_of": [

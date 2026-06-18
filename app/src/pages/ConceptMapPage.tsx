@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useLibrary } from "../lib/libraryContext";
-import { getConceptTitle } from "../lib/libraryTypes";
+import { getConceptMapEdges, getConceptTitle } from "../lib/libraryTypes";
 
 export function ConceptMapPage() {
   const { bundle, loading, error } = useLibrary();
@@ -35,12 +35,7 @@ export function ConceptMapPage() {
     })
   );
 
-  const edges = bundle.relationships.map((r) => ({
-    id: r.relationship_id,
-    from: r.endpoints.from_concept_id,
-    to: r.endpoints.to_concept_id,
-    type: r.relation.relationship_type,
-  }));
+  const edges = getConceptMapEdges(bundle);
 
   return (
     <div className="page">
@@ -81,7 +76,7 @@ export function ConceptMapPage() {
                   textAnchor="middle"
                   className="edge-label"
                 >
-                  {e.type}
+                  {e.label ?? e.type}
                 </text>
               </g>
             );

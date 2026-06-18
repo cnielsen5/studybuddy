@@ -45,7 +45,7 @@ export const concepts = [
     },
     dependency_graph: {
       prerequisites: [],
-      unlocks: ["concept_spaced_repetition", "concept_forgetting_curve"],
+      unlocks: ["concept_spaced_repetition", "concept_forgetting_curve", "concept_concept_maps"],
       child_concepts: [],
       related_concepts: ["concept_concept_maps"],
       semantic_relations: [],
@@ -121,7 +121,7 @@ export const concepts = [
     },
     dependency_graph: {
       prerequisites: ["concept_active_recall", "concept_forgetting_curve"],
-      unlocks: ["concept_fsrs", "concept_mastery_certification"],
+      unlocks: ["concept_fsrs"],
       child_concepts: [],
       related_concepts: ["concept_concept_maps"],
       semantic_relations: ["concept_concept_maps"],
@@ -277,7 +277,7 @@ export const concepts = [
         "Certification uses targeted questions across a concept's card set. Outcomes (full, partial, none) affect scheduling policy.",
     },
     dependency_graph: {
-      prerequisites: ["concept_spaced_repetition", "concept_fsrs"],
+      prerequisites: ["concept_fsrs"],
       unlocks: [],
       child_concepts: [],
       related_concepts: [],

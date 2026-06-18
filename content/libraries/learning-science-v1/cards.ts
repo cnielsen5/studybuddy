@@ -12,7 +12,7 @@ export const cards = [
     id: "card_active_recall_def",
     type: "card" as const,
     relations: { concept_id: "concept_active_recall", related_question_ids: ["q_active_recall_generic_01"] },
-    config: { card_type: "basic" as const, pedagogical_role: "recall" as const },
+    config: { card_type: "basic" as const, pedagogical_role: "recall" as const, card_tier: "core" as const },
     content: {
       front: "What is active recall?",
       back: "Retrieving information from memory (testing yourself) rather than passively re-reading.",
@@ -26,7 +26,7 @@ export const cards = [
     id: "card_active_recall_testing_effect",
     type: "card" as const,
     relations: { concept_id: "concept_active_recall" },
-    config: { card_type: "basic" as const, pedagogical_role: "recognition" as const },
+    config: { card_type: "basic" as const, pedagogical_role: "recognition" as const, card_tier: "core" as const },
     content: {
       front: "What is the testing effect?",
       back: "The finding that retrieval practice improves long-term retention more than restudying the same material.",
@@ -40,7 +40,7 @@ export const cards = [
     id: "card_active_recall_extension",
     type: "card" as const,
     relations: { concept_id: "concept_active_recall" },
-    config: { card_type: "basic" as const, pedagogical_role: "application" as const },
+    config: { card_type: "basic" as const, pedagogical_role: "application" as const, card_tier: "extension" as const },
     content: {
       front: "Why is highlighting alone a weak study strategy?",
       back: "It is passive — it does not require retrieval. Without recall, the testing effect does not apply.",
@@ -55,7 +55,7 @@ export const cards = [
     id: "card_forgetting_curve_def",
     type: "card" as const,
     relations: { concept_id: "concept_forgetting_curve" },
-    config: { card_type: "basic" as const, pedagogical_role: "recall" as const },
+    config: { card_type: "basic" as const, pedagogical_role: "recall" as const, card_tier: "core" as const },
     content: {
       front: "Who discovered the forgetting curve, and what does it show?",
       back: "Hermann Ebbinghaus — memory retention decays exponentially over time without reinforcement.",
@@ -69,7 +69,7 @@ export const cards = [
     id: "card_forgetting_curve_cloze",
     type: "card" as const,
     relations: { concept_id: "concept_forgetting_curve" },
-    config: { card_type: "cloze" as const, pedagogical_role: "recall" as const },
+    config: { card_type: "cloze" as const, pedagogical_role: "recall" as const, card_tier: "core" as const },
     content: {
       front: "Fill in the blanks.",
       back: "Without review, retention drops sharply within the first [[cloze_1]].",
@@ -87,7 +87,7 @@ export const cards = [
     id: "card_spaced_rep_def",
     type: "card" as const,
     relations: { concept_id: "concept_spaced_repetition", related_question_ids: ["q_spaced_rep_diagnostic_01"] },
-    config: { card_type: "basic" as const, pedagogical_role: "recall" as const },
+    config: { card_type: "basic" as const, pedagogical_role: "recall" as const, card_tier: "core" as const },
     content: {
       front: "What is spaced repetition?",
       back: "Increasing review intervals as material is learned, combating the forgetting curve with minimal total study time.",
@@ -101,7 +101,7 @@ export const cards = [
     id: "card_spaced_rep_vs_cramming",
     type: "card" as const,
     relations: { concept_id: "concept_spaced_repetition" },
-    config: { card_type: "basic" as const, pedagogical_role: "synthesis" as const },
+    config: { card_type: "basic" as const, pedagogical_role: "synthesis" as const, card_tier: "extension" as const },
     content: {
       front: "Spaced repetition vs. cramming: which produces better long-term retention?",
       back: "Spaced repetition — cramming may boost short-term performance but fails to build durable memory.",
@@ -115,7 +115,7 @@ export const cards = [
     id: "card_spaced_rep_cert",
     type: "card" as const,
     relations: { concept_id: "concept_spaced_repetition" },
-    config: { card_type: "basic" as const, pedagogical_role: "integration" as const },
+    config: { card_type: "basic" as const, pedagogical_role: "integration" as const, card_tier: "certification" as const },
     content: {
       front: "How does spaced repetition relate to active recall?",
       back: "Each spaced review is an active recall event — spacing determines when, recall is what you do.",
@@ -130,7 +130,7 @@ export const cards = [
     id: "card_fsrs_stability_def",
     type: "card" as const,
     relations: { concept_id: "concept_fsrs", related_question_ids: ["q_fsrs_diagnostic_01"] },
-    config: { card_type: "basic" as const, pedagogical_role: "recall" as const },
+    config: { card_type: "basic" as const, pedagogical_role: "recall" as const, card_tier: "core" as const },
     content: {
       front: "In FSRS, what is stability?",
       back: "The predicted interval (in days) at which retrievability drops to 90% — how long the memory lasts.",
@@ -144,7 +144,7 @@ export const cards = [
     id: "card_fsrs_difficulty_def",
     type: "card" as const,
     relations: { concept_id: "concept_fsrs" },
-    config: { card_type: "basic" as const, pedagogical_role: "recall" as const },
+    config: { card_type: "basic" as const, pedagogical_role: "recall" as const, card_tier: "core" as const },
     content: {
       front: "In FSRS, what is difficulty?",
       back: "An intrinsic property of the card (1–10) representing how hard it is to remember — higher difficulty means shorter intervals.",
@@ -158,7 +158,7 @@ export const cards = [
     id: "card_fsrs_grades",
     type: "card" as const,
     relations: { concept_id: "concept_fsrs" },
-    config: { card_type: "basic" as const, pedagogical_role: "recognition" as const },
+    config: { card_type: "basic" as const, pedagogical_role: "recognition" as const, card_tier: "core" as const },
     content: {
       front: "What are the four FSRS review grades?",
       back: "Again, Hard, Good, Easy — each updates stability and difficulty differently.",
@@ -172,7 +172,7 @@ export const cards = [
     id: "card_fsrs_cloze_interval",
     type: "card" as const,
     relations: { concept_id: "concept_fsrs" },
-    config: { card_type: "cloze" as const, pedagogical_role: "application" as const },
+    config: { card_type: "cloze" as const, pedagogical_role: "application" as const, card_tier: "core" as const },
     content: {
       front: "Complete the sentence.",
       back: "After a 'Good' review, FSRS increases [[cloze_1]] and may slightly adjust [[cloze_2]].",
@@ -193,7 +193,7 @@ export const cards = [
     id: "card_concept_map_def",
     type: "card" as const,
     relations: { concept_id: "concept_concept_maps" },
-    config: { card_type: "basic" as const, pedagogical_role: "recall" as const },
+    config: { card_type: "basic" as const, pedagogical_role: "recall" as const, card_tier: "core" as const },
     content: {
       front: "What is a concept map in Socrates?",
       back: "A graph of concepts connected by typed relationships (prerequisites, mechanisms, etc.) with linked cards and questions.",
@@ -207,7 +207,7 @@ export const cards = [
     id: "card_concept_map_prereq",
     type: "card" as const,
     relations: { concept_id: "concept_concept_maps" },
-    config: { card_type: "basic" as const, pedagogical_role: "application" as const },
+    config: { card_type: "basic" as const, pedagogical_role: "application" as const, card_tier: "extension" as const },
     content: {
       front: "Why do prerequisites matter in a concept map?",
       back: "They enforce learning order — you should master foundational concepts before dependent ones.",
@@ -222,7 +222,7 @@ export const cards = [
     id: "card_event_sourcing_def",
     type: "card" as const,
     relations: { concept_id: "concept_event_sourcing" },
-    config: { card_type: "basic" as const, pedagogical_role: "recall" as const },
+    config: { card_type: "basic" as const, pedagogical_role: "recall" as const, card_tier: "core" as const },
     content: {
       front: "What is event sourcing?",
       back: "Storing state changes as an immutable log of events; current state is derived by processing those events.",
@@ -236,7 +236,7 @@ export const cards = [
     id: "card_event_sourcing_projector",
     type: "card" as const,
     relations: { concept_id: "concept_event_sourcing" },
-    config: { card_type: "basic" as const, pedagogical_role: "recall" as const },
+    config: { card_type: "basic" as const, pedagogical_role: "recall" as const, card_tier: "core" as const },
     content: {
       front: "What is a projector in Socrates?",
       back: "A server function that reads events and updates read-model views (e.g. card_reviewed → card schedule view).",
@@ -250,7 +250,7 @@ export const cards = [
     id: "card_event_sourcing_idempotent",
     type: "card" as const,
     relations: { concept_id: "concept_event_sourcing" },
-    config: { card_type: "basic" as const, pedagogical_role: "application" as const },
+    config: { card_type: "basic" as const, pedagogical_role: "application" as const, card_tier: "extension" as const },
     content: {
       front: "Why must event writes be idempotent?",
       back: "Offline sync may retry uploads — duplicate events must not double-apply schedule changes.",
@@ -265,7 +265,7 @@ export const cards = [
     id: "card_certification_def",
     type: "card" as const,
     relations: { concept_id: "concept_mastery_certification" },
-    config: { card_type: "basic" as const, pedagogical_role: "recall" as const },
+    config: { card_type: "basic" as const, pedagogical_role: "recall" as const, card_tier: "core" as const },
     content: {
       front: "What are the three mastery certification outcomes?",
       back: "Full, partial, or none — based on performance across certification questions for a concept.",
@@ -279,7 +279,7 @@ export const cards = [
     id: "card_certification_flow",
     type: "card" as const,
     relations: { concept_id: "concept_mastery_certification" },
-    config: { card_type: "basic" as const, pedagogical_role: "integration" as const },
+    config: { card_type: "basic" as const, pedagogical_role: "integration" as const, card_tier: "certification" as const },
     content: {
       front: "What events does mastery certification produce?",
       back: "mastery_certification_started and mastery_certification_completed — the latter updates ConceptCertificationView.",
@@ -302,6 +302,7 @@ export const cards = [
     config: {
       card_type: "relationship" as const,
       pedagogical_role: "synthesis" as const,
+      card_tier: "core" as const,
       relationship_probe_type: "directionality",
       activation_policy: {
         requires_mastery_of: ["concept_active_recall", "concept_spaced_repetition"],
@@ -326,6 +327,7 @@ export const cards = [
     config: {
       card_type: "relationship" as const,
       pedagogical_role: "synthesis" as const,
+      card_tier: "core" as const,
       relationship_probe_type: "mechanism",
       activation_policy: {
         requires_mastery_of: ["concept_forgetting_curve"],

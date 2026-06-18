@@ -40,7 +40,7 @@ export interface LibraryCard {
     from_concept_id?: string;
     to_concept_id?: string;
   };
-  config: { card_type: string; pedagogical_role: string };
+  config: { card_type: string; pedagogical_role: string; card_tier?: string };
   content: {
     front: string;
     back: string;
