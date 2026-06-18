@@ -15,6 +15,11 @@ export interface LibraryConcept {
   type: "concept";
   content: { title: string; definition: string; summary: string };
   editorial: { difficulty: string; high_yield_score: number };
+  mastery_config?: {
+    threshold: number;
+    decay_rate?: string;
+    min_questions_correct?: number;
+  };
   hierarchy: {
     library_id?: string;
     domain?: string;
@@ -117,6 +122,7 @@ export interface StudyCard {
   back: string;
   cardType: string;
   role: string;
+  cardTier?: string;
 }
 
 export function toStudyCards(bundle: LibraryBundle): StudyCard[] {
@@ -133,6 +139,7 @@ export function toStudyCards(bundle: LibraryBundle): StudyCard[] {
       back: card.content.back,
       cardType: card.config.card_type,
       role: card.config.pedagogical_role,
+      cardTier: card.config.card_tier,
       clozeData: card.content.cloze_data ?? null,
     };
   });

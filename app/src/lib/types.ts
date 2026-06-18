@@ -53,6 +53,7 @@ export interface StudyCard {
   back: string;
   cardType?: string;
   role?: string;
+  cardTier?: string;
   clozeData?: ClozeData | null;
 }
 

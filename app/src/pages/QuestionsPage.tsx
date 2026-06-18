@@ -1,14 +1,28 @@
-import { useCallback, useState } from "react";
-import { Link } from "react-router-dom";
+import { useCallback, useMemo, useState } from "react";
+import { Link, useSearchParams } from "react-router-dom";
 import { QuestionReview } from "../components/QuestionReview";
 import { useAuth } from "../lib/auth";
 import { useLibrary } from "../lib/libraryContext";
+import { getConceptTitle } from "../lib/libraryTypes";
 import { formatUsageRole } from "../lib/questionQueue";
 import { useQuestionQueue } from "../lib/useQuestionQueue";
 
 export function QuestionsPage() {
   const { client, user } = useAuth();
-  const { studyQuestions, loading: libraryLoading, error: libraryError } = useLibrary();
+  const { bundle, studyQuestions, loading: libraryLoading, error: libraryError } = useLibrary();
+  const [searchParams] = useSearchParams();
+
+  const conceptFilter = useMemo(() => {
+    const raw = searchParams.get("concepts") ?? searchParams.get("concept");
+    if (!raw) return null;
+    return raw.split(",").map((s) => s.trim()).filter(Boolean);
+  }, [searchParams]);
+
+  const filterLabel = useMemo(() => {
+    if (!conceptFilter?.length || !bundle) return null;
+    return conceptFilter.map((id) => getConceptTitle(bundle, id)).join(", ");
+  }, [conceptFilter, bundle]);
+
   const {
     queue,
     stats,
@@ -19,7 +33,7 @@ export function QuestionsPage() {
     position,
     refresh,
     advanceAfterAttempt,
-  } = useQuestionQueue(client, studyQuestions, libraryLoading);
+  } = useQuestionQueue(client, studyQuestions, libraryLoading, conceptFilter);
 
   const [message, setMessage] = useState<string | null>(null);
   const [lastPerf, setLastPerf] = useState<string | null>(null);
@@ -108,13 +122,27 @@ export function QuestionsPage() {
         <header className="page-header row">
           <div>
             <h1>Questions</h1>
-            <p className="subtitle">Queue complete</p>
+            <p className="subtitle">
+              {conceptFilter ? `No questions for: ${filterLabel}` : "Queue complete"}
+            </p>
           </div>
           <Link to="/" className="btn">Home</Link>
         </header>
 
+        {conceptFilter && (
+          <p className="banner banner-warn">
+            Filtered to {conceptFilter.length} concept{conceptFilter.length === 1 ? "" : "s"}.{" "}
+            <Link to="/questions">Clear filter</Link> or{" "}
+            <Link to="/concept-map">return to concept map</Link>.
+          </p>
+        )}
+
         <section className="panel">
-          <p>You've worked through all {studyQuestions.length} questions in the queue.</p>
+          <p>
+            {conceptFilter
+              ? "No questions linked to the selected concepts."
+              : `You've worked through all ${studyQuestions.length} questions in the queue.`}
+          </p>
           <button type="button" className="btn btn-primary" onClick={() => refresh()}>
             Reload queue
           </button>
@@ -133,6 +161,11 @@ export function QuestionsPage() {
             {stats.newCount > 0 && <> · {stats.newCount} new</>}
             {stats.reviewCount > 0 && <> · {stats.reviewCount} review</>}
           </p>
+          {filterLabel && (
+            <p className="hint">
+              Filtered: {filterLabel} · <Link to="/questions">all concepts</Link>
+            </p>
+          )}
         </div>
         <div className="header-actions">
           <button
@@ -143,6 +176,9 @@ export function QuestionsPage() {
           >
             {refreshing ? "…" : "Refresh"}
           </button>
+          <Link to="/concept-map" className="btn btn-secondary">
+            Map
+          </Link>
           <Link to="/" className="btn">Home</Link>
         </div>
       </header>

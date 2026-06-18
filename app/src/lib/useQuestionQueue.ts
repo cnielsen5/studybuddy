@@ -22,7 +22,8 @@ interface UseQuestionQueueResult {
 export function useQuestionQueue(
   client: SocratesClient | null,
   studyQuestions: StudyQuestion[],
-  libraryLoading: boolean
+  libraryLoading: boolean,
+  conceptFilter?: string[] | null
 ): UseQuestionQueueResult {
   const [queue, setQueue] = useState<QueuedQuestion[]>([]);
   const [loading, setLoading] = useState(true);
@@ -40,20 +41,33 @@ export function useQuestionQueue(
 
       try {
         const performances = await client.getAllQuestionPerformances();
-        const built = buildQuestionQueue(studyQuestions, performances);
+        let built = buildQuestionQueue(studyQuestions, performances);
+        if (conceptFilter?.length) {
+          const allowed = new Set(conceptFilter);
+          built = built.filter((q) =>
+            q.conceptIds.some((id) => allowed.has(id))
+          );
+        }
         setQueue(built);
         setIndex((prev) => Math.min(prev, Math.max(0, built.length - 1)));
       } catch (e) {
         const message = e instanceof Error ? e.message : String(e);
         setError(message);
-        setQueue(buildQuestionQueue(studyQuestions, []));
+        let fallback = buildQuestionQueue(studyQuestions, []);
+        if (conceptFilter?.length) {
+          const allowed = new Set(conceptFilter);
+          fallback = fallback.filter((q) =>
+            q.conceptIds.some((id) => allowed.has(id))
+          );
+        }
+        setQueue(fallback);
         setIndex(0);
       } finally {
         setLoading(false);
         setRefreshing(false);
       }
     },
-    [client, libraryLoading, studyQuestions]
+    [client, libraryLoading, studyQuestions, conceptFilter]
   );
 
   useEffect(() => {
@@ -62,7 +76,7 @@ export function useQuestionQueue(
       return;
     }
     void loadQueue(false);
-  }, [client, libraryLoading, studyQuestions, loadQueue]);
+  }, [client, libraryLoading, studyQuestions, conceptFilter, loadQueue]);
 
   const advanceAfterAttempt = useCallback((questionId: string) => {
     setQueue((prev) => {

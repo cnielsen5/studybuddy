@@ -1,12 +1,14 @@
 import { useCallback, useMemo, useRef, useState, type PointerEvent, type WheelEvent } from "react";
-import type { CardScheduleView } from "../lib/types";
-import type { LibraryBundle, StudyCard } from "../lib/libraryTypes";
+import type { CardScheduleView, QuestionPerformanceView, StudyCard } from "../lib/types";
+import type { LibraryBundle } from "../lib/libraryTypes";
 import { buildConceptMapEdges, getStructuralEdges, type ConceptMapEdge } from "../lib/conceptMapGraph";
 import {
-  aggregateMastery,
-  masteryColor,
-  masteryStrokeColor,
-} from "../lib/conceptMapMastery";
+  CONCEPT_STATE_ORDER,
+  conceptStateColor,
+  conceptStateLabel,
+  conceptStateStroke,
+  deriveAggregateMetrics,
+} from "../lib/conceptDerivedMetrics";
 import {
   buildTaxonomyTree,
   levelLabel,
@@ -26,6 +28,7 @@ interface ConceptMapGraphProps {
   bundle: LibraryBundle;
   studyCards: StudyCard[];
   schedules: CardScheduleView[];
+  performances: QuestionPerformanceView[];
   selectedId: string | null;
   onSelect: (id: string | null, node: TaxonomyNode | null) => void;
 }
@@ -38,6 +41,7 @@ export function ConceptMapGraph({
   bundle,
   studyCards,
   schedules,
+  performances,
   selectedId,
   onSelect,
 }: ConceptMapGraphProps) {
@@ -217,7 +221,13 @@ export function ConceptMapGraph({
             const pos = allPositions.get(node.id);
             if (!pos) return null;
             const r = radii.get(node.id) ?? 16;
-            const mastery = aggregateMastery(node.conceptIds, studyCards, schedules);
+            const derived = deriveAggregateMetrics(
+              node.conceptIds,
+              bundle.concepts,
+              studyCards,
+              schedules,
+              performances
+            );
             const isSelected = selectedId === node.id;
             const isHovered = hoveredId === node.id;
             const metric =
@@ -240,19 +250,23 @@ export function ConceptMapGraph({
               >
                 <circle
                   r={r}
-                  fill={masteryColor(mastery)}
-                  stroke={masteryStrokeColor(mastery)}
+                  fill={conceptStateColor(derived.conceptState)}
+                  stroke={conceptStateStroke(derived.conceptState)}
                   strokeWidth={isSelected ? 3 : isHovered ? 2.5 : 1.5}
                   className="map-node-circle"
+                  opacity={0.55 + derived.retentionScore * 0.45}
                 />
                 {scale >= 0.7 && (
                   <text y={4} textAnchor="middle" className="map-node-label">
                     {truncate(node.label, r > 22 ? 16 : 10)}
                   </text>
                 )}
-                {isSelected && metric && (
+                {isSelected && (
                   <text y={r + 14} textAnchor="middle" className="map-node-metrics">
-                    struct {metric.structuralDegree} · sem {metric.semanticDegree}
+                    {conceptStateLabel(derived.conceptState)} · retention{" "}
+                    {Math.round(derived.retentionScore * 100)}%
+                    {metric &&
+                      ` · struct ${metric.structuralDegree} · sem ${metric.semanticDegree}`}
                   </text>
                 )}
               </g>
@@ -262,13 +276,20 @@ export function ConceptMapGraph({
       </svg>
 
       <div className="concept-map-legend-row">
-        <div className="mastery-legend" aria-label="Mastery legend">
-          <span className="legend-title">Mastery</span>
-          <div className="mastery-gradient" />
-          <div className="mastery-labels">
-            <span>Unlearned</span>
-            <span>Mastered</span>
+        <div className="concept-state-legend" aria-label="ConceptState legend">
+          <span className="legend-title">ConceptState</span>
+          <div className="concept-state-swatch-row">
+            {CONCEPT_STATE_ORDER.map((state) => (
+              <span key={state} className="concept-state-swatch-item">
+                <span
+                  className="concept-state-swatch"
+                  style={{ background: conceptStateColor(state) }}
+                />
+                {conceptStateLabel(state)}
+              </span>
+            ))}
           </div>
+          <p className="hint legend-note">Opacity reflects retention (recall likelihood now)</p>
         </div>
         {showDomainBorders && (
           <span className="hint domain-border-hint">Dashed borders = domain regions</span>

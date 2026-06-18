@@ -181,16 +181,27 @@ Socrates Structure and Organizer
                 Betweenness
                 Structural Neighbors
                 Semantic Neighbors
+
+            Derived user metrics (not on Golden Master)
+                These are computed on read from user card schedules and concept mastery_config.
+                They belong in the Evidence / Derived layer — never stored on concept JSON.
+
                 Retention Score
-                    Determined by the weighted average of predicted retention (retrievability) of all cards within concept
-                Mastery Score
-                    % of cards in mastery stage
-                ConceptState =
+                    Weighted average of predicted retrievability across cards in the concept.
+                    Answers: "How likely am I to recall this right now?" (scheduling-relevant).
+
+                ConceptState
                     | "unintroduced"
                     | "fragile"
                     | "forming"
                     | "stable"
                     | "robust"
+                    Derived from card stabilities, stages, and concept mastery_config.threshold.
+                    Answers: "How deeply is this concept learned?"
+
+                Card stage counts (new / learning / review / mastered) may be exposed as
+                debug or detail UI only — not a named product metric.
+
                 Core Cards
                     Central ideas critical for understanding the concept as a whole
                     Tagged on cards via config.card_tier: "core"

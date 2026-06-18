@@ -23,7 +23,8 @@ interface UseStudyQueueResult {
 export function useStudyQueue(
   client: SocratesClient | null,
   studyCards: StudyCard[],
-  libraryLoading: boolean
+  libraryLoading: boolean,
+  conceptFilter?: string[] | null
 ): UseStudyQueueResult {
   const [queue, setQueue] = useState<QueuedStudyCard[]>([]);
   const [loading, setLoading] = useState(true);
@@ -44,20 +45,29 @@ export function useStudyQueue(
 
       try {
         const schedules = await client.getAllCardSchedules();
-        const built = buildStudyQueue(studyCards, schedules);
+        let built = buildStudyQueue(studyCards, schedules);
+        if (conceptFilter?.length) {
+          const allowed = new Set(conceptFilter);
+          built = built.filter((c) => allowed.has(c.conceptId));
+        }
         setQueue(built);
         setIndex((prev) => Math.min(prev, Math.max(0, built.length - 1)));
       } catch (e) {
         const message = e instanceof Error ? e.message : String(e);
         setError(message);
-        setQueue(buildStudyQueue(studyCards, []));
+        let fallback = buildStudyQueue(studyCards, []);
+        if (conceptFilter?.length) {
+          const allowed = new Set(conceptFilter);
+          fallback = fallback.filter((c) => allowed.has(c.conceptId));
+        }
+        setQueue(fallback);
         setIndex(0);
       } finally {
         setLoading(false);
         setRefreshing(false);
       }
     },
-    [client, libraryLoading, studyCards]
+    [client, libraryLoading, studyCards, conceptFilter]
   );
 
   useEffect(() => {
@@ -66,7 +76,7 @@ export function useStudyQueue(
       return;
     }
     void loadQueue(false);
-  }, [client, libraryLoading, studyCards, loadQueue]);
+  }, [client, libraryLoading, studyCards, conceptFilter, loadQueue]);
 
   const advanceAfterReview = useCallback((cardId: string) => {
     setQueue((prev) => {

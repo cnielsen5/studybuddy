@@ -2,16 +2,21 @@ import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { ConceptMapGraph, conceptMapStats } from "../components/ConceptMapGraph";
 import { useAuth } from "../lib/auth";
+import {
+  deriveAggregateMetrics,
+  deriveConceptMetrics,
+  formatStageCounts,
+  conceptStateLabel,
+} from "../lib/conceptDerivedMetrics";
 import { useLibrary } from "../lib/libraryContext";
-import { aggregateMastery } from "../lib/conceptMapMastery";
 import type { TaxonomyNode } from "../lib/conceptMapHierarchy";
 import { getConceptTitle } from "../lib/libraryTypes";
-import { useConceptMapMastery } from "../lib/useConceptMapMastery";
+import { useConceptDerivedData } from "../lib/useConceptDerivedData";
 
 export function ConceptMapPage() {
   const { bundle, studyCards, loading, error } = useLibrary();
   const { user } = useAuth();
-  const { schedules, loading: masteryLoading } = useConceptMapMastery(loading);
+  const { schedules, performances, loading: derivedLoading } = useConceptDerivedData(loading);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [selectedNode, setSelectedNode] = useState<TaxonomyNode | null>(null);
 
@@ -21,6 +26,33 @@ export function ConceptMapPage() {
     selectedNode?.level === "concept" && selectedNode.conceptIds[0]
       ? bundle?.concepts.find((c) => c.id === selectedNode.conceptIds[0]) ?? null
       : null;
+
+  const selectedMetrics = useMemo(() => {
+    if (!bundle || !selectedNode) return null;
+    if (selectedConcept) {
+      return deriveConceptMetrics(
+        selectedConcept,
+        studyCards,
+        schedules,
+        performances
+      );
+    }
+    return deriveAggregateMetrics(
+      selectedNode.conceptIds,
+      bundle.concepts,
+      studyCards,
+      schedules,
+      performances
+    );
+  }, [bundle, selectedNode, selectedConcept, studyCards, schedules, performances]);
+
+  const conceptQuery =
+    selectedNode && selectedNode.conceptIds.length > 0
+      ? selectedNode.conceptIds.join(",")
+      : null;
+
+  const studyUrl = conceptQuery ? `/study?concepts=${conceptQuery}` : null;
+  const questionsUrl = conceptQuery ? `/questions?concepts=${conceptQuery}` : null;
 
   if (loading) return <p className="status">Loading concept map…</p>;
   if (error || !bundle) {
@@ -54,17 +86,18 @@ export function ConceptMapPage() {
 
       {!user && (
         <p className="banner banner-warn">
-          Sign in to color nodes by your card mastery. Unsigned view shows all nodes as unlearned.
+          Sign in to color nodes by ConceptState and retention. Unsigned view shows all nodes as
+          unintroduced.
         </p>
       )}
 
       <section className="panel concept-map-controls">
         <p className="hint">
-          Zoom out to see domains and categories; zoom in to topics and individual concepts. Node
-          size reflects cards and subconcepts. Position uses semantic vectors, structural degree,
-          and semantic connectivity (α = 0.25).
+          Zoom out for domains and categories; zoom in for concepts. Color = ConceptState (depth of
+          learning). Opacity = retention (recall likelihood now). Robust requires core cards mastered
+          plus certification questions at threshold.
         </p>
-        {masteryLoading && user && <p className="status">Loading mastery state…</p>}
+        {derivedLoading && user && <p className="status">Loading schedule state…</p>}
       </section>
 
       <div className="concept-map-wrap">
@@ -72,6 +105,7 @@ export function ConceptMapPage() {
           bundle={bundle}
           studyCards={studyCards}
           schedules={schedules}
+          performances={performances}
           selectedId={selectedId}
           onSelect={(id, node) => {
             setSelectedId(id);
@@ -80,30 +114,43 @@ export function ConceptMapPage() {
         />
       </div>
 
-      {selectedNode && (
+      {selectedNode && selectedMetrics && (
         <section className="panel concept-detail">
           <div className="concept-detail-header">
             <div>
               <h2>{selectedNode.label}</h2>
               <p className="hint">
                 {selectedNode.level} · {selectedNode.cardCount} cards ·{" "}
-                {selectedNode.subconceptCount} concepts · mastery{" "}
-                {Math.round(
-                  aggregateMastery(selectedNode.conceptIds, studyCards, schedules) * 100
-                )}
-                %
+                {selectedNode.subconceptCount} concepts ·{" "}
+                <strong>{conceptStateLabel(selectedMetrics.conceptState)}</strong> · retention{" "}
+                {Math.round(selectedMetrics.retentionScore * 100)}%
+              </p>
+              <p className="hint stage-counts">
+                Cards: {formatStageCounts(selectedMetrics.stageCounts)}
               </p>
             </div>
-            <button
-              type="button"
-              className="btn btn-secondary btn-sm"
-              onClick={() => {
-                setSelectedId(null);
-                setSelectedNode(null);
-              }}
-            >
-              Close
-            </button>
+            <div className="concept-detail-actions">
+              {studyUrl && user && (
+                <Link to={studyUrl} className="btn btn-primary btn-sm">
+                  Study
+                </Link>
+              )}
+              {questionsUrl && user && (
+                <Link to={questionsUrl} className="btn btn-secondary btn-sm">
+                  Questions
+                </Link>
+              )}
+              <button
+                type="button"
+                className="btn btn-secondary btn-sm"
+                onClick={() => {
+                  setSelectedId(null);
+                  setSelectedNode(null);
+                }}
+              >
+                Close
+              </button>
+            </div>
           </div>
 
           {selectedConcept ? (
@@ -129,9 +176,8 @@ export function ConceptMapPage() {
             </>
           ) : (
             <p className="hint">
-              Aggregated view over {selectedNode.subconceptCount} concept
-              {selectedNode.subconceptCount === 1 ? "" : "s"}. Zoom in to inspect individual
-              concepts.
+              Aggregated view over {selectedNode.subconceptCount} concepts. Zoom in to inspect
+              individuals, or study / practice questions for this area.
             </p>
           )}
         </section>
