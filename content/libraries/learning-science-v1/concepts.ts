@@ -15,9 +15,13 @@ export const LIBRARY_META = {
 const H = {
   library_id: LIBRARY_ID,
   domain: "Learning Science",
-  category: "Cognitive Science",
-  subcategory: "Memory & Retention",
 };
+
+const CATEGORIES = {
+  memory: { category: "Memory Foundations", subcategory: "Retention & Recall" },
+  scheduling: { category: "Scheduling Systems", subcategory: "Spaced Practice" },
+  architecture: { category: "Platform Architecture", subcategory: "Socrates Systems" },
+} as const;
 
 export const concepts = [
   {
@@ -35,7 +39,7 @@ export const concepts = [
       version_history: [],
     },
     editorial: { difficulty: "basic" as const, high_yield_score: 10 },
-    hierarchy: { ...H, topic: "Active Recall", subtopic: "Testing Effect" },
+    hierarchy: { ...H, ...CATEGORIES.memory, topic: "Active Recall", subtopic: "Testing Effect" },
     content: {
       title: "Active Recall",
       definition:
@@ -45,7 +49,7 @@ export const concepts = [
     },
     dependency_graph: {
       prerequisites: [],
-      unlocks: ["concept_spaced_repetition", "concept_forgetting_curve"],
+      unlocks: ["concept_spaced_repetition", "concept_forgetting_curve", "concept_concept_maps"],
       child_concepts: [],
       related_concepts: ["concept_concept_maps"],
       semantic_relations: [],
@@ -73,7 +77,7 @@ export const concepts = [
       version_history: [],
     },
     editorial: { difficulty: "basic" as const, high_yield_score: 8 },
-    hierarchy: { ...H, topic: "Forgetting Curve", subtopic: "Retention Decay" },
+    hierarchy: { ...H, ...CATEGORIES.memory, topic: "Forgetting Curve", subtopic: "Retention Decay" },
     content: {
       title: "The Forgetting Curve",
       definition:
@@ -111,7 +115,7 @@ export const concepts = [
       version_history: [],
     },
     editorial: { difficulty: "intermediate" as const, high_yield_score: 10 },
-    hierarchy: { ...H, topic: "Spaced Repetition", subtopic: "Scheduling" },
+    hierarchy: { ...H, ...CATEGORIES.scheduling, topic: "Spaced Repetition", subtopic: "Scheduling" },
     content: {
       title: "Spaced Repetition",
       definition:
@@ -121,7 +125,7 @@ export const concepts = [
     },
     dependency_graph: {
       prerequisites: ["concept_active_recall", "concept_forgetting_curve"],
-      unlocks: ["concept_fsrs", "concept_mastery_certification"],
+      unlocks: ["concept_fsrs"],
       child_concepts: [],
       related_concepts: ["concept_concept_maps"],
       semantic_relations: ["concept_concept_maps"],
@@ -149,7 +153,7 @@ export const concepts = [
       version_history: [],
     },
     editorial: { difficulty: "intermediate" as const, high_yield_score: 9 },
-    hierarchy: { ...H, topic: "FSRS", subtopic: "Free Spaced Repetition Scheduler" },
+    hierarchy: { ...H, ...CATEGORIES.scheduling, topic: "FSRS", subtopic: "Free Spaced Repetition Scheduler" },
     content: {
       title: "FSRS (Free Spaced Repetition Scheduler)",
       definition:
@@ -192,7 +196,7 @@ export const concepts = [
       version_history: [],
     },
     editorial: { difficulty: "intermediate" as const, high_yield_score: 8 },
-    hierarchy: { ...H, topic: "Concept Maps", subtopic: "Knowledge Graphs" },
+    hierarchy: { ...H, ...CATEGORIES.architecture, topic: "Concept Maps", subtopic: "Knowledge Graphs" },
     content: {
       title: "Concept Maps",
       definition:
@@ -230,7 +234,7 @@ export const concepts = [
       version_history: [],
     },
     editorial: { difficulty: "advanced" as const, high_yield_score: 7 },
-    hierarchy: { ...H, topic: "Event Sourcing", subtopic: "Socrates Architecture" },
+    hierarchy: { ...H, ...CATEGORIES.architecture, topic: "Event Sourcing", subtopic: "Socrates Architecture" },
     content: {
       title: "Event Sourcing in Socrates",
       definition:
@@ -268,7 +272,7 @@ export const concepts = [
       version_history: [],
     },
     editorial: { difficulty: "advanced" as const, high_yield_score: 8 },
-    hierarchy: { ...H, topic: "Mastery Certification", subtopic: "Concept Mastery" },
+    hierarchy: { ...H, ...CATEGORIES.scheduling, topic: "Mastery Certification", subtopic: "Concept Mastery" },
     content: {
       title: "Mastery Certification",
       definition:
@@ -277,7 +281,7 @@ export const concepts = [
         "Certification uses targeted questions across a concept's card set. Outcomes (full, partial, none) affect scheduling policy.",
     },
     dependency_graph: {
-      prerequisites: ["concept_spaced_repetition", "concept_fsrs"],
+      prerequisites: ["concept_fsrs"],
       unlocks: [],
       child_concepts: [],
       related_concepts: [],

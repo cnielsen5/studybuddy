@@ -64,6 +64,38 @@ export function getStudyQueueStats(queue: QueuedStudyCard[]): StudyQueueStats {
   };
 }
 
+export interface DeckStats {
+  total: number;
+  toLearn: number;
+  dueToReview: number;
+}
+
+export function computeDeckStats(
+  studyCards: StudyCard[],
+  schedules: CardScheduleView[],
+  now: Date = new Date()
+): DeckStats {
+  const cardIds = new Set(studyCards.map((c) => c.id));
+  const scheduledIds = new Set(schedules.map((s) => s.card_id));
+  const nowMs = now.getTime();
+
+  const toLearn = studyCards.filter((c) => !scheduledIds.has(c.id)).length;
+
+  let dueToReview = 0;
+  for (const schedule of schedules) {
+    if (!cardIds.has(schedule.card_id)) continue;
+    if (new Date(schedule.due_at).getTime() <= nowMs) {
+      dueToReview++;
+    }
+  }
+
+  return {
+    total: studyCards.length,
+    toLearn,
+    dueToReview,
+  };
+}
+
 export function formatQueueReason(card: QueuedStudyCard): string {
   if (card.queueReason === "new") return "New";
   if (card.queueReason === "overdue") {

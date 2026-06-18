@@ -16,7 +16,7 @@ export enum CardWeight {
   RECOGNITION = "recognition",
   RECALL = "recall",
   SYNTHESIS = "synthesis",
-  APPLICATION_ANALYSIS = "application/analysis",
+  APPLICATION = "application",
   INTEGRATION = "integration" 
 }
 
@@ -25,7 +25,6 @@ export enum PedagogicalRole {
   RECALL = "recall",
   SYNTHESIS = "synthesis",
   APPLICATION = "application",
-  ANALYSIS = "analysis",
   INTEGRATION = "integration"
 }
 

@@ -78,7 +78,6 @@ describe("Card invariants — config", () => {
       "recall",
       "synthesis",
       "application",
-      "analysis",
       "integration"
     ]).toContain(role);
   });

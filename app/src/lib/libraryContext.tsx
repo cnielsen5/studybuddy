@@ -2,11 +2,12 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useState, t
 import { useAuth } from "./auth";
 import { loadLibrary } from "./libraryLoader";
 import type { LibraryBundle } from "./libraryTypes";
-import { toStudyCards, type StudyCard } from "./libraryTypes";
+import { toStudyCards, toStudyQuestions, type StudyCard, type StudyQuestion } from "./libraryTypes";
 
 interface LibraryContextValue {
   bundle: LibraryBundle | null;
   studyCards: StudyCard[];
+  studyQuestions: StudyQuestion[];
   loading: boolean;
   error: string | null;
   reload: () => void;
@@ -39,10 +40,11 @@ export function LibraryProvider({ children }: { children: ReactNode }) {
   }, [fetchLibrary]);
 
   const studyCards = useMemo(() => (bundle ? toStudyCards(bundle) : []), [bundle]);
+  const studyQuestions = useMemo(() => (bundle ? toStudyQuestions(bundle) : []), [bundle]);
 
   return (
     <LibraryContext.Provider
-      value={{ bundle, studyCards, loading, error, reload: fetchLibrary }}
+      value={{ bundle, studyCards, studyQuestions, loading, error, reload: fetchLibrary }}
     >
       {children}
     </LibraryContext.Provider>

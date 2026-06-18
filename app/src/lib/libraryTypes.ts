@@ -15,7 +15,19 @@ export interface LibraryConcept {
   type: "concept";
   content: { title: string; definition: string; summary: string };
   editorial: { difficulty: string; high_yield_score: number };
-  hierarchy: { topic: string; subtopic: string };
+  mastery_config?: {
+    threshold: number;
+    decay_rate?: string;
+    min_questions_correct?: number;
+  };
+  hierarchy: {
+    library_id?: string;
+    domain?: string;
+    category?: string;
+    subcategory?: string;
+    topic: string;
+    subtopic?: string;
+  };
   dependency_graph: {
     prerequisites: string[];
     unlocks: string[];
@@ -40,7 +52,7 @@ export interface LibraryCard {
     from_concept_id?: string;
     to_concept_id?: string;
   };
-  config: { card_type: string; pedagogical_role: string };
+  config: { card_type: string; pedagogical_role: string; card_tier?: string };
   content: {
     front: string;
     back: string;
@@ -52,10 +64,47 @@ export interface LibraryCard {
 
 export interface LibraryQuestion {
   id: string;
-  content: { stem: string; options: Array<{ id: string; text: string }>; correct_option_id: string };
+  content: {
+    stem: string;
+    options: Array<{ id: string; text: string }>;
+    correct_option_id: string;
+  };
   classification: { usage_role: string; question_type: string };
   relations: { concept_ids: string[] };
+  explanations: {
+    general: string;
+    distractors?: Record<string, string>;
+  };
   editorial: { difficulty: string };
+}
+
+export interface StudyQuestion {
+  id: string;
+  conceptIds: string[];
+  stem: string;
+  options: Array<{ id: string; text: string }>;
+  correctOptionId: string;
+  usageRole: string;
+  questionType: string;
+  difficulty: string;
+  explanations: {
+    general: string;
+    distractors?: Record<string, string>;
+  };
+}
+
+export function toStudyQuestions(bundle: LibraryBundle): StudyQuestion[] {
+  return bundle.questions.map((q) => ({
+    id: q.id,
+    conceptIds: q.relations.concept_ids,
+    stem: q.content.stem,
+    options: q.content.options,
+    correctOptionId: q.content.correct_option_id,
+    usageRole: q.classification.usage_role,
+    questionType: q.classification.question_type,
+    difficulty: q.editorial.difficulty,
+    explanations: q.explanations,
+  }));
 }
 
 export interface LibraryBundle {
@@ -73,6 +122,7 @@ export interface StudyCard {
   back: string;
   cardType: string;
   role: string;
+  cardTier?: string;
 }
 
 export function toStudyCards(bundle: LibraryBundle): StudyCard[] {
@@ -89,6 +139,7 @@ export function toStudyCards(bundle: LibraryBundle): StudyCard[] {
       back: card.content.back,
       cardType: card.config.card_type,
       role: card.config.pedagogical_role,
+      cardTier: card.config.card_tier,
       clozeData: card.content.cloze_data ?? null,
     };
   });
@@ -98,33 +149,4 @@ export function getConceptTitle(bundle: LibraryBundle, conceptId: string): strin
   return bundle.concepts.find((c) => c.id === conceptId)?.content.title ?? conceptId;
 }
 
-export function getConceptMapEdges(bundle: LibraryBundle) {
-  const edges: Array<{
-    id: string;
-    from: string;
-    to: string;
-    type: string;
-    label: string;
-  }> = [];
-
-  for (const rel of bundle.relationships) {
-    edges.push({
-      id: rel.relationship_id,
-      from: rel.endpoints.from_concept_id,
-      to: rel.endpoints.to_concept_id,
-      type: rel.relation.relationship_type,
-      label: rel.relation.relationship_type,
-    });
-  }
-
-  for (const concept of bundle.concepts) {
-    for (const prereq of concept.dependency_graph.prerequisites) {
-      const id = `dep_${prereq}_to_${concept.id}`;
-      if (!edges.some((e) => e.from === prereq && e.to === concept.id && e.type === "prerequisite")) {
-        edges.push({ id, from: prereq, to: concept.id, type: "prerequisite", label: "prerequisite" });
-      }
-    }
-  }
-
-  return edges;
-}
+export { buildConceptMapEdges, getConceptMapEdges } from "./conceptMapGraph";

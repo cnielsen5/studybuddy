@@ -1,32 +1,31 @@
 import { useCallback, useEffect, useState } from "react";
-import type { SocratesClient } from "./socratesClient";
+import type { StudyQuestion } from "./libraryTypes";
 import {
-  buildStudyQueue,
-  getStudyQueueStats,
-  type QueuedStudyCard,
-  type StudyQueueStats,
-} from "./studyQueue";
-import type { StudyCard } from "./types";
+  buildQuestionQueue,
+  getQuestionQueueStats,
+  type QueuedQuestion,
+} from "./questionQueue";
+import type { SocratesClient } from "./socratesClient";
 
-interface UseStudyQueueResult {
-  queue: QueuedStudyCard[];
-  stats: StudyQueueStats;
+interface UseQuestionQueueResult {
+  queue: QueuedQuestion[];
+  stats: ReturnType<typeof getQuestionQueueStats>;
   loading: boolean;
   refreshing: boolean;
   error: string | null;
-  currentCard: QueuedStudyCard | null;
+  currentQuestion: QueuedQuestion | null;
   position: number;
   refresh: () => Promise<void>;
-  advanceAfterReview: (cardId: string) => void;
+  advanceAfterAttempt: (questionId: string) => void;
 }
 
-export function useStudyQueue(
+export function useQuestionQueue(
   client: SocratesClient | null,
-  studyCards: StudyCard[],
+  studyQuestions: StudyQuestion[],
   libraryLoading: boolean,
   conceptFilter?: string[] | null
-): UseStudyQueueResult {
-  const [queue, setQueue] = useState<QueuedStudyCard[]>([]);
+): UseQuestionQueueResult {
+  const [queue, setQueue] = useState<QueuedQuestion[]>([]);
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -36,29 +35,30 @@ export function useStudyQueue(
     async (isRefresh = false) => {
       if (!client || libraryLoading) return;
 
-      if (isRefresh) {
-        setRefreshing(true);
-      } else {
-        setLoading(true);
-      }
+      if (isRefresh) setRefreshing(true);
+      else setLoading(true);
       setError(null);
 
       try {
-        const schedules = await client.getAllCardSchedules();
-        let built = buildStudyQueue(studyCards, schedules);
+        const performances = await client.getAllQuestionPerformances();
+        let built = buildQuestionQueue(studyQuestions, performances);
         if (conceptFilter?.length) {
           const allowed = new Set(conceptFilter);
-          built = built.filter((c) => allowed.has(c.conceptId));
+          built = built.filter((q) =>
+            q.conceptIds.some((id) => allowed.has(id))
+          );
         }
         setQueue(built);
         setIndex((prev) => Math.min(prev, Math.max(0, built.length - 1)));
       } catch (e) {
         const message = e instanceof Error ? e.message : String(e);
         setError(message);
-        let fallback = buildStudyQueue(studyCards, []);
+        let fallback = buildQuestionQueue(studyQuestions, []);
         if (conceptFilter?.length) {
           const allowed = new Set(conceptFilter);
-          fallback = fallback.filter((c) => allowed.has(c.conceptId));
+          fallback = fallback.filter((q) =>
+            q.conceptIds.some((id) => allowed.has(id))
+          );
         }
         setQueue(fallback);
         setIndex(0);
@@ -67,7 +67,7 @@ export function useStudyQueue(
         setRefreshing(false);
       }
     },
-    [client, libraryLoading, studyCards, conceptFilter]
+    [client, libraryLoading, studyQuestions, conceptFilter]
   );
 
   useEffect(() => {
@@ -76,27 +76,27 @@ export function useStudyQueue(
       return;
     }
     void loadQueue(false);
-  }, [client, libraryLoading, studyCards, conceptFilter, loadQueue]);
+  }, [client, libraryLoading, studyQuestions, conceptFilter, loadQueue]);
 
-  const advanceAfterReview = useCallback((cardId: string) => {
+  const advanceAfterAttempt = useCallback((questionId: string) => {
     setQueue((prev) => {
-      const next = prev.filter((c) => c.id !== cardId);
+      const next = prev.filter((q) => q.id !== questionId);
       setIndex((i) => Math.min(i, Math.max(0, next.length - 1)));
       return next;
     });
   }, []);
 
-  const currentCard = queue.length > 0 ? queue[index] ?? null : null;
+  const currentQuestion = queue.length > 0 ? (queue[index] ?? null) : null;
 
   return {
     queue,
-    stats: getStudyQueueStats(queue),
+    stats: getQuestionQueueStats(queue),
     loading,
     refreshing,
     error,
-    currentCard,
+    currentQuestion,
     position: queue.length > 0 ? index + 1 : 0,
     refresh: () => loadQueue(true),
-    advanceAfterReview,
+    advanceAfterAttempt,
   };
 }

@@ -16,7 +16,7 @@ A **library** is an immutable JSON bundle of shared learning content. It is the 
 
 | Section | Purpose |
 |---------|---------|
-| `manifest` | Library identity, version, taxonomy |
+| `manifest` | Library identity, version, taxonomy (`id`, `name`, `version`, `description`, `domain`, `status`, `tags`) |
 | `concepts` | Nodes in the concept map |
 | `relationships` | Edges between concepts (prerequisite, semantic, etc.) |
 | `cards` | Atomic study units (basic, cloze, relationship_card) |
@@ -35,10 +35,33 @@ A **library** is an immutable JSON bundle of shared learning content. It is the 
 
 ## Concept map
 
-Concepts link via:
+Concepts link via two complementary structures that must stay in sync:
 
-- `dependency_graph.prerequisites` / `unlocks` — learning order
-- `relationships[]` — typed edges (prerequisite, mechanism, contrast, etc.)
+- `dependency_graph.prerequisites` / `unlocks` — learning order on each concept
+- `dependency_graph.related_concepts` — soft associations (not prerequisites)
+- `relationships[]` — typed edges between concepts (first-class entities with cards/questions)
+
+### Relationship types
+
+| `relationship_type` | Typical `directionality` | Meaning |
+|---------------------|--------------------------|---------|
+| `prerequisite` | `forward` | Must learn `from` before `to` |
+| `unlocks` | `forward` | Completing `from` opens `to` |
+| `reinforces` | `bidirectional` | Mutual support |
+| `contrasts` | `bidirectional` | Compare / distinguish |
+| `causes` | `forward` | Causal link |
+| `associated_with` | `bidirectional` | Loose association |
+
+### Graph consistency rules
+
+When exporting or validating a library:
+
+1. Every **forward `prerequisite` relationship** (`from → to`) must appear in `to.dependency_graph.prerequisites`.
+2. Every entry in `dependency_graph.prerequisites` must be backed by a matching forward `prerequisite` relationship.
+3. For each prerequisite edge, `from.dependency_graph.unlocks` must include `to`.
+4. Derived graph metrics (centrality, depth, etc.) are **not** stored in the bundle — they are computed at runtime.
+
+The app merges `relationships[]` and `dependency_graph.prerequisites` when rendering the concept map.
 
 ## Card roles (pedagogical)
 
@@ -49,6 +72,17 @@ Concepts link via:
 | `synthesis` | Connect ideas (relationship cards) |
 | `application` | Apply to scenario |
 | `integration` | Cross-concept integration |
+
+## Card tiers (`config.card_tier`)
+
+| Tier | Purpose |
+|------|---------|
+| `core` | Essential recall / recognition |
+| `extension` | Deeper application or synthesis |
+| `certification` | Mastery / integration probes |
+| `remedial` | Targeted repair for weak areas |
+
+Every card `config` must include `card_tier` alongside `card_type` and `pedagogical_role`.
 
 ## Question roles (usage_role)
 
@@ -65,7 +99,7 @@ Concepts link via:
 **`content/libraries/learning-science-v1/`** — "Learning Science & Socrates"
 
 - 7 concepts forming a concept map
-- 5 structural relationships
+- 7 structural relationships
 - 21 cards (basic, cloze, relationship, core/extension mix)
 - 10 questions (generic, diagnostic, establishment)
 

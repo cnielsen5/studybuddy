@@ -4,6 +4,16 @@
 import { readFileSync } from "fs";
 import { resolve } from "path";
 import { expectIdPrefix, expectIdPrefixes, ID_PREFIXES } from "../helpers/ids";
+import {
+  ALLOWED_CARD_TIERS,
+  ALLOWED_PEDAGOGICAL_ROLES,
+  ALLOWED_RELATIONSHIP_TYPES,
+  ALLOWED_DIRECTIONALITY,
+  ALLOWED_USAGE_ROLES,
+  findOrphanDependencyPrerequisites,
+  findPrerequisiteMismatches,
+  findUnlockMismatches,
+} from "../helpers/libraryConformance";
 
 interface LibraryBundle {
   manifest: { id: string; name: string; version: string };
@@ -20,18 +30,21 @@ interface LibraryBundle {
   relationships: Array<{
     relationship_id: string;
     endpoints: { from_concept_id: string; to_concept_id: string };
+    relation: { relationship_type: string; directionality: string };
     linked_content: { relationship_card_ids: string[]; question_ids: string[] };
   }>;
   cards: Array<{
     id: string;
     type: string;
     relations: Record<string, unknown>;
+    config: { card_type: string; pedagogical_role: string; card_tier?: string };
     content: { front: string; back: string };
   }>;
   questions: Array<{
     id: string;
     relations: { concept_ids: string[]; related_card_ids: string[] };
     content: { options: Array<{ id: string }>; correct_option_id: string };
+    classification: { usage_role: string };
   }>;
 }
 
@@ -55,7 +68,7 @@ describe("Learning Science v1 library bundle", () => {
   it("has expected scale", () => {
     expect(lib.manifest.id).toBe("lib_learning_science_v1");
     expect(lib.concepts).toHaveLength(7);
-    expect(lib.relationships).toHaveLength(5);
+    expect(lib.relationships).toHaveLength(7);
     expect(lib.cards.length).toBeGreaterThanOrEqual(19);
     expect(lib.questions.length).toBeGreaterThanOrEqual(8);
   });
@@ -146,6 +159,46 @@ describe("Learning Science v1 library bundle", () => {
     }
     for (const card of lib.cards) {
       expect(linked.has(card.id)).toBe(true);
+    }
+  });
+
+  it("manifest has required identity fields", () => {
+    expect(lib.manifest.id).toMatch(/^lib_/);
+    expect(lib.manifest.name.length).toBeGreaterThan(0);
+    expect(lib.manifest.version.length).toBeGreaterThan(0);
+    const m = lib.manifest as Record<string, unknown>;
+    expect(typeof m.description).toBe("string");
+    expect(typeof m.domain).toBe("string");
+    expect(typeof m.status).toBe("string");
+  });
+
+  it("relationship types and directionality use allowed enums", () => {
+    for (const r of lib.relationships) {
+      expect(ALLOWED_RELATIONSHIP_TYPES).toContain(r.relation.relationship_type);
+      expect(ALLOWED_DIRECTIONALITY).toContain(r.relation.directionality);
+    }
+  });
+
+  it("dependency_graph stays consistent with prerequisite relationships", () => {
+    const prereqMismatches = findPrerequisiteMismatches(lib.concepts, lib.relationships);
+    const orphanPrereqs = findOrphanDependencyPrerequisites(lib.concepts, lib.relationships);
+    const unlockMismatches = findUnlockMismatches(lib.concepts, lib.relationships);
+    expect(prereqMismatches).toEqual([]);
+    expect(orphanPrereqs).toEqual([]);
+    expect(unlockMismatches).toEqual([]);
+  });
+
+  it("every card has a valid card_tier and pedagogical_role", () => {
+    for (const card of lib.cards) {
+      expect(card.config.card_tier).toBeDefined();
+      expect(ALLOWED_CARD_TIERS).toContain(card.config.card_tier);
+      expect(ALLOWED_PEDAGOGICAL_ROLES).toContain(card.config.pedagogical_role);
+    }
+  });
+
+  it("questions use allowed usage_role values", () => {
+    for (const q of lib.questions) {
+      expect(ALLOWED_USAGE_ROLES).toContain(q.classification.usage_role);
     }
   });
 });

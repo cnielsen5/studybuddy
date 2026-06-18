@@ -1,15 +1,29 @@
-import { useCallback, useState } from "react";
-import { Link } from "react-router-dom";
+import { useCallback, useMemo, useState } from "react";
+import { Link, useSearchParams } from "react-router-dom";
 import { CardReview } from "../components/CardReview";
 import { useAuth } from "../lib/auth";
 import { useLibrary } from "../lib/libraryContext";
+import { getConceptTitle } from "../lib/libraryTypes";
 import { formatQueueReason } from "../lib/studyQueue";
 import { useStudyQueue } from "../lib/useStudyQueue";
 import type { ReviewGrade } from "../lib/types";
 
 export function StudyPage() {
   const { client, user } = useAuth();
-  const { studyCards, loading: libraryLoading, error: libraryError } = useLibrary();
+  const { bundle, studyCards, loading: libraryLoading, error: libraryError } = useLibrary();
+  const [searchParams] = useSearchParams();
+
+  const conceptFilter = useMemo(() => {
+    const raw = searchParams.get("concepts") ?? searchParams.get("concept");
+    if (!raw) return null;
+    return raw.split(",").map((s) => s.trim()).filter(Boolean);
+  }, [searchParams]);
+
+  const filterLabel = useMemo(() => {
+    if (!conceptFilter?.length || !bundle) return null;
+    return conceptFilter.map((id) => getConceptTitle(bundle, id)).join(", ");
+  }, [conceptFilter, bundle]);
+
   const {
     queue,
     stats,
@@ -20,7 +34,7 @@ export function StudyPage() {
     position,
     refresh,
     advanceAfterReview,
-  } = useStudyQueue(client, studyCards, libraryLoading);
+  } = useStudyQueue(client, studyCards, libraryLoading, conceptFilter);
 
   const [message, setMessage] = useState<string | null>(null);
   const [lastSchedule, setLastSchedule] = useState<string | null>(null);
@@ -99,10 +113,20 @@ export function StudyPage() {
         <header className="page-header row">
           <div>
             <h1>Study</h1>
-            <p className="subtitle">Nothing due right now</p>
+            <p className="subtitle">
+              {conceptFilter ? `Nothing due for: ${filterLabel}` : "Nothing due right now"}
+            </p>
           </div>
           <Link to="/" className="btn">Home</Link>
         </header>
+
+        {conceptFilter && (
+          <p className="banner banner-warn">
+            Filtered to {conceptFilter.length} concept{conceptFilter.length === 1 ? "" : "s"}.{" "}
+            <Link to="/study">Clear filter</Link> or{" "}
+            <Link to="/concept-map">return to concept map</Link>.
+          </p>
+        )}
 
         {queueError && (
           <div className="banner banner-warn">
@@ -134,6 +158,11 @@ export function StudyPage() {
             {stats.overdueCount > 0 && <> · {stats.overdueCount} overdue</>}
             {stats.dueCount > 0 && <> · {stats.dueCount} due</>}
           </p>
+          {filterLabel && (
+            <p className="hint">
+              Filtered: {filterLabel} · <Link to="/study">all concepts</Link>
+            </p>
+          )}
         </div>
         <div className="header-actions">
           <button
@@ -144,6 +173,9 @@ export function StudyPage() {
           >
             {refreshing ? "…" : "Refresh"}
           </button>
+          <Link to="/concept-map" className="btn btn-secondary">
+            Map
+          </Link>
           <Link to="/" className="btn">Home</Link>
         </div>
       </header>

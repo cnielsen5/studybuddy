@@ -13,12 +13,19 @@ interface CardReviewProps {
   disabled?: boolean;
 }
 
-const GRADES: { grade: ReviewGrade; label: string; hint: string }[] = [
-  { grade: "again", label: "Again", hint: "< 1 day" },
-  { grade: "hard", label: "Hard", hint: "Struggled" },
-  { grade: "good", label: "Good", hint: "Recalled" },
-  { grade: "easy", label: "Easy", hint: "Effortless" },
+const GRADES: { grade: ReviewGrade; label: string; hint: string; key: string }[] = [
+  { grade: "again", label: "Again", hint: "< 1 day", key: "1" },
+  { grade: "hard", label: "Hard", hint: "Struggled", key: "2" },
+  { grade: "good", label: "Good", hint: "Recalled", key: "3" },
+  { grade: "easy", label: "Easy", hint: "Effortless", key: "4" },
 ];
+
+const GRADE_BY_KEY: Record<string, ReviewGrade> = {
+  "1": "again",
+  "2": "hard",
+  "3": "good",
+  "4": "easy",
+};
 
 function isClozeCard(card: StudyCard): card is StudyCard & { clozeData: ClozeData } {
   return card.cardType === "cloze" && card.clozeData != null;
@@ -77,7 +84,7 @@ function GradeButtons({
 }) {
   return (
     <div className="grade-grid">
-      {GRADES.map(({ grade, label, hint }) => (
+      {GRADES.map(({ grade, label, hint, key }) => (
         <button
           key={grade}
           type="button"
@@ -85,8 +92,12 @@ function GradeButtons({
           onClick={() => onGrade(grade)}
           disabled={disabled}
         >
+          <span className="grade-key">{key}</span>
           <span className="grade-label">{label}</span>
-          <span className="grade-hint">{hint}</span>
+          <span className="grade-hint">
+            {hint}
+            {grade === "good" && " · Space"}
+          </span>
         </button>
       ))}
     </div>
@@ -107,6 +118,7 @@ export function CardReview({ card, onReview, disabled }: CardReviewProps) {
   }, [card.id]);
 
   async function handleGrade(grade: ReviewGrade) {
+    if (submitting || disabled) return;
     setSubmitting(true);
     const secondsSpent = Math.max(1, Math.round((Date.now() - startedAt) / 1000));
     try {
@@ -115,6 +127,38 @@ export function CardReview({ card, onReview, disabled }: CardReviewProps) {
       setSubmitting(false);
     }
   }
+
+  useEffect(() => {
+    function onKeyDown(e: KeyboardEvent) {
+      if (disabled || submitting) return;
+      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) {
+        return;
+      }
+
+      if (!revealed) {
+        if (e.key === " " || e.key === "Enter") {
+          e.preventDefault();
+          setRevealed(true);
+        }
+        return;
+      }
+
+      if (e.key === " ") {
+        e.preventDefault();
+        void handleGrade("good");
+        return;
+      }
+
+      const grade = GRADE_BY_KEY[e.key];
+      if (grade) {
+        e.preventDefault();
+        void handleGrade(grade);
+      }
+    }
+
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [revealed, disabled, submitting, card.id]);
 
   return (
     <div className="card-review">
@@ -140,7 +184,7 @@ export function CardReview({ card, onReview, disabled }: CardReviewProps) {
               onClick={() => setRevealed(true)}
               disabled={disabled || submitting}
             >
-              Reveal answers
+              Reveal answers <span className="kbd-hint">Space</span>
             </button>
           ) : (
             <GradeButtons onGrade={handleGrade} disabled={disabled || submitting} />
@@ -160,7 +204,7 @@ export function CardReview({ card, onReview, disabled }: CardReviewProps) {
               onClick={() => setRevealed(true)}
               disabled={disabled || submitting}
             >
-              Show answer
+              Show answer <span className="kbd-hint">Space</span>
             </button>
           ) : (
             <>

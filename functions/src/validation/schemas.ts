@@ -34,7 +34,8 @@ export const CardSchema = z.object({
 
   config: z.object({
     card_type: z.enum(["basic", "cloze", "image_occlusion"]),
-    pedagogical_role: z.enum(["recognition", "recall", "synthesis", "application/analysis", "integration"]),
+    pedagogical_role: z.enum(["recognition", "recall", "synthesis", "application", "integration"]),
+    card_tier: z.enum(["core", "extension", "certification", "remedial"]).optional(),
   }),
 
   content: z.object({

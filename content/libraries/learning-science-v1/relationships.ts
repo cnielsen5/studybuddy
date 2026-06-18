@@ -9,6 +9,62 @@ const GC = {
 
 export const relationships = [
   {
+    relationship_id: "rel_active_recall_to_forgetting",
+    type: "relationship" as const,
+    metadata: {
+      created_at: "2026-06-14T00:00:00Z",
+      updated_at: "2026-06-14T00:00:00Z",
+      created_by: "socrates_admin",
+      last_updated_by: "socrates_admin",
+      version: "1.0",
+      status: "published" as const,
+      tags: ["prerequisite"],
+      version_history: [],
+    },
+    graph_context: GC,
+    endpoints: {
+      from_concept_id: "concept_active_recall",
+      to_concept_id: "concept_forgetting_curve",
+    },
+    relation: { relationship_type: "prerequisite", directionality: "forward" as const },
+    editorial: {
+      importance: "medium" as const,
+      notes: "Retrieval practice context helps interpret why retention decays between reviews.",
+    },
+    linked_content: {
+      relationship_card_ids: [],
+      question_ids: [],
+    },
+  },
+  {
+    relationship_id: "rel_active_recall_to_concept_maps",
+    type: "relationship" as const,
+    metadata: {
+      created_at: "2026-06-14T00:00:00Z",
+      updated_at: "2026-06-14T00:00:00Z",
+      created_by: "socrates_admin",
+      last_updated_by: "socrates_admin",
+      version: "1.0",
+      status: "published" as const,
+      tags: ["prerequisite"],
+      version_history: [],
+    },
+    graph_context: GC,
+    endpoints: {
+      from_concept_id: "concept_active_recall",
+      to_concept_id: "concept_concept_maps",
+    },
+    relation: { relationship_type: "prerequisite", directionality: "forward" as const },
+    editorial: {
+      importance: "medium" as const,
+      notes: "Concept maps organize the knowledge that retrieval practice strengthens.",
+    },
+    linked_content: {
+      relationship_card_ids: [],
+      question_ids: [],
+    },
+  },
+  {
     relationship_id: "rel_active_recall_to_spaced_rep",
     type: "relationship" as const,
     metadata: {
@@ -110,7 +166,7 @@ export const relationships = [
       from_concept_id: "concept_spaced_repetition",
       to_concept_id: "concept_concept_maps",
     },
-    relation: { relationship_type: "complements", directionality: "bidirectional" as const },
+    relation: { relationship_type: "reinforces", directionality: "bidirectional" as const },
     editorial: {
       importance: "medium" as const,
       notes: "Concept maps organize what spaced repetition schedules.",
