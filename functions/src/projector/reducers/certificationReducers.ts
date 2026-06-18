@@ -47,7 +47,17 @@ export function reduceConceptCertification(
     ? Math.max(0, Math.min(1, payload.correct_count / payload.questions_answered))
     : 0;
 
-  return {
+  const historyEntry: ConceptCertificationView["certification_history"][number] = {
+    certification_result: payload.certification_result,
+    date: event.occurred_at,
+    questions_answered: payload.questions_answered,
+    correct_count: payload.correct_count,
+  };
+  if (payload.reasoning_quality !== undefined) {
+    historyEntry.reasoning_quality = payload.reasoning_quality;
+  }
+
+  const view: ConceptCertificationView = {
     type: "concept_certification_view",
     concept_id: conceptId,
     library_id: event.library_id,
@@ -57,23 +67,18 @@ export function reduceConceptCertification(
     questions_answered: payload.questions_answered,
     correct_count: payload.correct_count,
     accuracy: accuracy,
-    reasoning_quality: payload.reasoning_quality,
-    certification_history: [
-      ...(prev?.certification_history || []),
-      {
-        certification_result: payload.certification_result,
-        date: event.occurred_at,
-        questions_answered: payload.questions_answered,
-        correct_count: payload.correct_count,
-        reasoning_quality: payload.reasoning_quality,
-      },
-    ],
+    certification_history: [...(prev?.certification_history || []), historyEntry],
     last_applied: {
       received_at: event.received_at,
       event_id: event.event_id,
     },
     updated_at: new Date().toISOString(),
   };
+  if (payload.reasoning_quality !== undefined) {
+    view.reasoning_quality = payload.reasoning_quality;
+  }
+
+  return view;
 }
 
 export function shouldApplyCertificationEvent(

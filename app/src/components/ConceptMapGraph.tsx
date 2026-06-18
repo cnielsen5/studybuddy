@@ -1,5 +1,5 @@
 import { useCallback, useMemo, useRef, useState, type PointerEvent, type WheelEvent } from "react";
-import type { CardScheduleView, QuestionPerformanceView, StudyCard } from "../lib/types";
+import type { CardScheduleView, ConceptCertificationView, QuestionPerformanceView, StudyCard } from "../lib/types";
 import type { LibraryBundle } from "../lib/libraryTypes";
 import { buildConceptMapEdges, getStructuralEdges, type ConceptMapEdge } from "../lib/conceptMapGraph";
 import {
@@ -9,6 +9,7 @@ import {
   conceptStateStroke,
   deriveAggregateMetrics,
 } from "../lib/conceptDerivedMetrics";
+import { certificationResultShortLabel } from "../lib/certification";
 import {
   buildTaxonomyTree,
   levelLabel,
@@ -29,6 +30,7 @@ interface ConceptMapGraphProps {
   studyCards: StudyCard[];
   schedules: CardScheduleView[];
   performances: QuestionPerformanceView[];
+  certifications: Map<string, ConceptCertificationView>;
   selectedId: string | null;
   onSelect: (id: string | null, node: TaxonomyNode | null) => void;
 }
@@ -42,6 +44,7 @@ export function ConceptMapGraph({
   studyCards,
   schedules,
   performances,
+  certifications,
   selectedId,
   onSelect,
 }: ConceptMapGraphProps) {
@@ -159,7 +162,7 @@ export function ConceptMapGraph({
             +
           </button>
         </div>
-        <span className="hint">Scroll to zoom · drag background to pan</span>
+        <span className="hint">Scroll to zoom · drag background to pan · click a node for details below</span>
       </div>
 
       <svg
@@ -234,6 +237,10 @@ export function ConceptMapGraph({
               node.level === "concept" && node.conceptIds[0]
                 ? metrics.get(node.conceptIds[0])
                 : undefined;
+            const certification =
+              node.level === "concept" && node.conceptIds[0]
+                ? certifications.get(node.conceptIds[0])
+                : undefined;
 
             return (
               <g
@@ -262,12 +269,21 @@ export function ConceptMapGraph({
                   </text>
                 )}
                 {isSelected && (
-                  <text y={r + 14} textAnchor="middle" className="map-node-metrics">
-                    {conceptStateLabel(derived.conceptState)} · retention{" "}
-                    {Math.round(derived.retentionScore * 100)}%
-                    {metric &&
-                      ` · struct ${metric.structuralDegree} · sem ${metric.semanticDegree}`}
-                  </text>
+                  <>
+                    <text y={r + 14} textAnchor="middle" className="map-node-metrics">
+                      {conceptStateLabel(derived.conceptState)} · retention{" "}
+                      {Math.round(derived.retentionScore * 100)}%
+                      {metric &&
+                        ` · struct ${metric.structuralDegree} · sem ${metric.semanticDegree}`}
+                    </text>
+                    {node.level === "concept" && (
+                      <text y={r + 28} textAnchor="middle" className="map-node-cert">
+                        {certification
+                          ? certificationResultShortLabel(certification.certification_result)
+                          : "Not certified"}
+                      </text>
+                    )}
+                  </>
                 )}
               </g>
             );

@@ -27,6 +27,14 @@ export function getQuestionPerformanceViewPath(
   return getViewPath(userId, libraryId, "question_perf", questionId);
 }
 
+export function getConceptCertificationViewPath(
+  userId: string,
+  libraryId: string,
+  conceptId: string
+): string {
+  return getViewPath(userId, libraryId, "concept_certification", conceptId);
+}
+
 export function getEventPath(
   userId: string,
   libraryId: string,

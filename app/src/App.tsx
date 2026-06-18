@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { AuthProvider } from "./lib/auth";
 import { LibraryProvider } from "./lib/libraryContext";
+import { CertificationPage } from "./pages/CertificationPage";
 import { ConceptMapPage } from "./pages/ConceptMapPage";
 import { HomePage } from "./pages/HomePage";
 import { LibraryPage } from "./pages/LibraryPage";
@@ -20,6 +21,7 @@ function App() {
               <Route path="/questions" element={<QuestionsPage />} />
               <Route path="/library" element={<LibraryPage />} />
               <Route path="/concept-map" element={<ConceptMapPage />} />
+              <Route path="/certify" element={<CertificationPage />} />
             </Routes>
           </main>
         </BrowserRouter>
