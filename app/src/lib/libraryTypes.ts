@@ -15,7 +15,14 @@ export interface LibraryConcept {
   type: "concept";
   content: { title: string; definition: string; summary: string };
   editorial: { difficulty: string; high_yield_score: number };
-  hierarchy: { topic: string; subtopic: string };
+  hierarchy: {
+    library_id?: string;
+    domain?: string;
+    category?: string;
+    subcategory?: string;
+    topic: string;
+    subtopic?: string;
+  };
   dependency_graph: {
     prerequisites: string[];
     unlocks: string[];
@@ -135,33 +142,4 @@ export function getConceptTitle(bundle: LibraryBundle, conceptId: string): strin
   return bundle.concepts.find((c) => c.id === conceptId)?.content.title ?? conceptId;
 }
 
-export function getConceptMapEdges(bundle: LibraryBundle) {
-  const edges: Array<{
-    id: string;
-    from: string;
-    to: string;
-    type: string;
-    label: string;
-  }> = [];
-
-  for (const rel of bundle.relationships) {
-    edges.push({
-      id: rel.relationship_id,
-      from: rel.endpoints.from_concept_id,
-      to: rel.endpoints.to_concept_id,
-      type: rel.relation.relationship_type,
-      label: rel.relation.relationship_type,
-    });
-  }
-
-  for (const concept of bundle.concepts) {
-    for (const prereq of concept.dependency_graph.prerequisites) {
-      const id = `dep_${prereq}_to_${concept.id}`;
-      if (!edges.some((e) => e.from === prereq && e.to === concept.id && e.type === "prerequisite")) {
-        edges.push({ id, from: prereq, to: concept.id, type: "prerequisite", label: "prerequisite" });
-      }
-    }
-  }
-
-  return edges;
-}
+export { buildConceptMapEdges, getConceptMapEdges } from "./conceptMapGraph";

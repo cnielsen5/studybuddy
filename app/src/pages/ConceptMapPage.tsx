@@ -1,9 +1,26 @@
+import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
+import { ConceptMapGraph, conceptMapStats } from "../components/ConceptMapGraph";
+import { useAuth } from "../lib/auth";
 import { useLibrary } from "../lib/libraryContext";
-import { getConceptMapEdges, getConceptTitle } from "../lib/libraryTypes";
+import { aggregateMastery } from "../lib/conceptMapMastery";
+import type { TaxonomyNode } from "../lib/conceptMapHierarchy";
+import { getConceptTitle } from "../lib/libraryTypes";
+import { useConceptMapMastery } from "../lib/useConceptMapMastery";
 
 export function ConceptMapPage() {
-  const { bundle, loading, error } = useLibrary();
+  const { bundle, studyCards, loading, error } = useLibrary();
+  const { user } = useAuth();
+  const { schedules, loading: masteryLoading } = useConceptMapMastery(loading);
+  const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [selectedNode, setSelectedNode] = useState<TaxonomyNode | null>(null);
+
+  const stats = useMemo(() => (bundle ? conceptMapStats(bundle) : null), [bundle]);
+
+  const selectedConcept =
+    selectedNode?.level === "concept" && selectedNode.conceptIds[0]
+      ? bundle?.concepts.find((c) => c.id === selectedNode.conceptIds[0]) ?? null
+      : null;
 
   if (loading) return <p className="status">Loading concept map…</p>;
   if (error || !bundle) {
@@ -15,118 +32,110 @@ export function ConceptMapPage() {
     );
   }
 
-  const concepts = bundle.concepts;
-  const cols = 3;
-  const cellW = 200;
-  const cellH = 90;
-  const padX = 40;
-  const padY = 40;
-  const width = cols * cellW + padX * 2;
-  const height = Math.ceil(concepts.length / cols) * cellH + padY * 2 + 40;
-
-  const positions = new Map(
-    concepts.map((c, i) => {
-      const col = i % cols;
-      const row = Math.floor(i / cols);
-      return [
-        c.id,
-        { x: padX + col * cellW + cellW / 2, y: padY + row * cellH + cellH / 2 },
-      ] as const;
-    })
-  );
-
-  const edges = getConceptMapEdges(bundle);
-
   return (
-    <div className="page">
+    <div className="page concept-map-page">
       <header className="page-header row">
         <div>
           <h1>Concept Map</h1>
-          <p className="subtitle">{bundle.manifest.name}</p>
+          <p className="subtitle">
+            {bundle.manifest.name} · {stats?.domains ?? 0} domains · {stats?.categories ?? 0}{" "}
+            categories · {stats?.concepts ?? 0} concepts
+          </p>
         </div>
-        <Link to="/" className="btn">Home</Link>
+        <div className="header-actions">
+          <Link to="/library" className="btn btn-secondary">
+            Library
+          </Link>
+          <Link to="/" className="btn">
+            Home
+          </Link>
+        </div>
       </header>
 
+      {!user && (
+        <p className="banner banner-warn">
+          Sign in to color nodes by your card mastery. Unsigned view shows all nodes as unlearned.
+        </p>
+      )}
+
+      <section className="panel concept-map-controls">
+        <p className="hint">
+          Zoom out to see domains and categories; zoom in to topics and individual concepts. Node
+          size reflects cards and subconcepts. Position uses semantic vectors, structural degree,
+          and semantic connectivity (α = 0.25).
+        </p>
+        {masteryLoading && user && <p className="status">Loading mastery state…</p>}
+      </section>
+
       <div className="concept-map-wrap">
-        <svg viewBox={`0 0 ${width} ${height}`} className="concept-map-svg" role="img">
-          <defs>
-            <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
-              <path d="M0,0 L6,3 L0,6 Z" fill="#7a8ba8" />
-            </marker>
-          </defs>
-
-          {edges.map((e) => {
-            const from = positions.get(e.from);
-            const to = positions.get(e.to);
-            if (!from || !to) return null;
-            return (
-              <g key={e.id}>
-                <line
-                  x1={from.x}
-                  y1={from.y}
-                  x2={to.x}
-                  y2={to.y}
-                  stroke="#b8c4d9"
-                  strokeWidth={2}
-                  markerEnd="url(#arrow)"
-                />
-                <text
-                  x={(from.x + to.x) / 2}
-                  y={(from.y + to.y) / 2 - 6}
-                  textAnchor="middle"
-                  className="edge-label"
-                >
-                  {e.label ?? e.type}
-                </text>
-              </g>
-            );
-          })}
-
-          {concepts.map((c) => {
-            const pos = positions.get(c.id)!;
-            const cardCount = c.linked_content.card_ids.length;
-            const qCount = c.linked_content.question_ids.length;
-            return (
-              <g key={c.id} transform={`translate(${pos.x - 85}, ${pos.y - 32})`}>
-                <rect width={170} height={64} rx={8} className="concept-node" />
-                <text x={85} y={22} textAnchor="middle" className="concept-node-title">
-                  {c.content.title.length > 22
-                    ? `${c.content.title.slice(0, 20)}…`
-                    : c.content.title}
-                </text>
-                <text x={85} y={42} textAnchor="middle" className="concept-node-meta">
-                  {cardCount} cards · {qCount} questions
-                </text>
-                <text x={85} y={56} textAnchor="middle" className="concept-node-id">
-                  {c.id.replace("concept_", "")}
-                </text>
-              </g>
-            );
-          })}
-        </svg>
+        <ConceptMapGraph
+          bundle={bundle}
+          studyCards={studyCards}
+          schedules={schedules}
+          selectedId={selectedId}
+          onSelect={(id, node) => {
+            setSelectedId(id);
+            setSelectedNode(node);
+          }}
+        />
       </div>
 
-      <section className="panel">
-        <h2>Concepts</h2>
-        <ul className="concept-list">
-          {concepts.map((c) => (
-            <li key={c.id}>
-              <strong>{c.content.title}</strong>
-              <span className="hint">
-                {" "}
-                — {c.editorial.difficulty} · {c.linked_content.card_ids.length} cards
-              </span>
-              <p className="concept-def">{c.content.definition}</p>
-              {c.dependency_graph.prerequisites.length > 0 && (
+      {selectedNode && (
+        <section className="panel concept-detail">
+          <div className="concept-detail-header">
+            <div>
+              <h2>{selectedNode.label}</h2>
+              <p className="hint">
+                {selectedNode.level} · {selectedNode.cardCount} cards ·{" "}
+                {selectedNode.subconceptCount} concepts · mastery{" "}
+                {Math.round(
+                  aggregateMastery(selectedNode.conceptIds, studyCards, schedules) * 100
+                )}
+                %
+              </p>
+            </div>
+            <button
+              type="button"
+              className="btn btn-secondary btn-sm"
+              onClick={() => {
+                setSelectedId(null);
+                setSelectedNode(null);
+              }}
+            >
+              Close
+            </button>
+          </div>
+
+          {selectedConcept ? (
+            <>
+              <p className="concept-def">{selectedConcept.content.definition}</p>
+              <p className="hint">{selectedConcept.content.summary}</p>
+              {selectedConcept.dependency_graph.prerequisites.length > 0 && (
                 <p className="hint">
-                  Prerequisites:{" "}
-                  {c.dependency_graph.prerequisites.map((id) => getConceptTitle(bundle, id)).join(", ")}
+                  <strong>Prerequisites:</strong>{" "}
+                  {selectedConcept.dependency_graph.prerequisites
+                    .map((id) => getConceptTitle(bundle, id))
+                    .join(", ")}
                 </p>
               )}
-            </li>
-          ))}
-        </ul>
-      </section>
+              {selectedConcept.dependency_graph.unlocks.length > 0 && (
+                <p className="hint">
+                  <strong>Unlocks:</strong>{" "}
+                  {selectedConcept.dependency_graph.unlocks
+                    .map((id) => getConceptTitle(bundle, id))
+                    .join(", ")}
+                </p>
+              )}
+            </>
+          ) : (
+            <p className="hint">
+              Aggregated view over {selectedNode.subconceptCount} concept
+              {selectedNode.subconceptCount === 1 ? "" : "s"}. Zoom in to inspect individual
+              concepts.
+            </p>
+          )}
+        </section>
+      )}
     </div>
   );
 }

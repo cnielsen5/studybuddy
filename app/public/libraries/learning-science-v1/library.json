@@ -44,8 +44,8 @@
       "hierarchy": {
         "library_id": "lib_learning_science_v1",
         "domain": "Learning Science",
-        "category": "Cognitive Science",
-        "subcategory": "Memory & Retention",
+        "category": "Memory Foundations",
+        "subcategory": "Retention & Recall",
         "topic": "Active Recall",
         "subtopic": "Testing Effect"
       },
@@ -114,8 +114,8 @@
       "hierarchy": {
         "library_id": "lib_learning_science_v1",
         "domain": "Learning Science",
-        "category": "Cognitive Science",
-        "subcategory": "Memory & Retention",
+        "category": "Memory Foundations",
+        "subcategory": "Retention & Recall",
         "topic": "Forgetting Curve",
         "subtopic": "Retention Decay"
       },
@@ -180,8 +180,8 @@
       "hierarchy": {
         "library_id": "lib_learning_science_v1",
         "domain": "Learning Science",
-        "category": "Cognitive Science",
-        "subcategory": "Memory & Retention",
+        "category": "Scheduling Systems",
+        "subcategory": "Spaced Practice",
         "topic": "Spaced Repetition",
         "subtopic": "Scheduling"
       },
@@ -253,8 +253,8 @@
       "hierarchy": {
         "library_id": "lib_learning_science_v1",
         "domain": "Learning Science",
-        "category": "Cognitive Science",
-        "subcategory": "Memory & Retention",
+        "category": "Scheduling Systems",
+        "subcategory": "Spaced Practice",
         "topic": "FSRS",
         "subtopic": "Free Spaced Repetition Scheduler"
       },
@@ -324,8 +324,8 @@
       "hierarchy": {
         "library_id": "lib_learning_science_v1",
         "domain": "Learning Science",
-        "category": "Cognitive Science",
-        "subcategory": "Memory & Retention",
+        "category": "Platform Architecture",
+        "subcategory": "Socrates Systems",
         "topic": "Concept Maps",
         "subtopic": "Knowledge Graphs"
       },
@@ -394,8 +394,8 @@
       "hierarchy": {
         "library_id": "lib_learning_science_v1",
         "domain": "Learning Science",
-        "category": "Cognitive Science",
-        "subcategory": "Memory & Retention",
+        "category": "Platform Architecture",
+        "subcategory": "Socrates Systems",
         "topic": "Event Sourcing",
         "subtopic": "Socrates Architecture"
       },
@@ -460,8 +460,8 @@
       "hierarchy": {
         "library_id": "lib_learning_science_v1",
         "domain": "Learning Science",
-        "category": "Cognitive Science",
-        "subcategory": "Memory & Retention",
+        "category": "Scheduling Systems",
+        "subcategory": "Spaced Practice",
         "topic": "Mastery Certification",
         "subtopic": "Concept Mastery"
       },
