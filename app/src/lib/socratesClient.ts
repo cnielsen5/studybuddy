@@ -10,10 +10,11 @@ import {
   where,
   type Firestore,
 } from "firebase/firestore";
-import { createCardReviewedEvent, createQuestionAttemptedEvent } from "./events";
-import type { CardScheduleView, QuestionPerformanceView, ReviewGrade, UserEvent } from "./types";
+import { createCardReviewedEvent, createMasteryCertificationCompletedEvent, createQuestionAttemptedEvent } from "./events";
+import type { CardScheduleView, ConceptCertificationView, QuestionPerformanceView, ReviewGrade, UserEvent } from "./types";
 import {
   getCardScheduleViewPath,
+  getConceptCertificationViewPath,
   getEventPath,
   getQuestionPerformanceViewPath,
   getViewsCollectionPath,
@@ -110,6 +111,39 @@ export class SocratesClient {
       deviceId: this.deviceId,
     });
     return this.uploadEvent(event);
+  }
+
+  async completeCertification(
+    conceptId: string,
+    certificationResult: "full" | "partial" | "none",
+    questionsAnswered: number,
+    correctCount: number,
+    reasoningQuality?: "good" | "weak"
+  ): Promise<UploadResult> {
+    const event = createMasteryCertificationCompletedEvent({
+      userId: this.userId,
+      libraryId: this.libraryId,
+      conceptId,
+      certificationResult,
+      questionsAnswered,
+      correctCount,
+      reasoningQuality,
+      deviceId: this.deviceId,
+    });
+    return this.uploadEvent(event);
+  }
+
+  async getConceptCertification(
+    conceptId: string
+  ): Promise<ConceptCertificationView | null> {
+    const path = getConceptCertificationViewPath(
+      this.userId,
+      this.libraryId,
+      conceptId
+    );
+    const snap = await getDoc(doc(this.firestore, path));
+    if (!snap.exists()) return null;
+    return snap.data() as ConceptCertificationView;
   }
 
   async getQuestionPerformance(

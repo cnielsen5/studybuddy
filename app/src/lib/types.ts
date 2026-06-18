@@ -46,6 +46,28 @@ export interface QuestionPerformanceView {
   updated_at: string;
 }
 
+export interface ConceptCertificationView {
+  type: "concept_certification_view";
+  concept_id: string;
+  library_id: string;
+  user_id: string;
+  certification_result: "full" | "partial" | "none";
+  certification_date: string;
+  questions_answered: number;
+  correct_count: number;
+  accuracy: number;
+  reasoning_quality?: "good" | "weak";
+  certification_history: Array<{
+    certification_result: "full" | "partial" | "none";
+    date: string;
+    questions_answered: number;
+    correct_count: number;
+    reasoning_quality?: "good" | "weak";
+  }>;
+  last_applied: { received_at: string; event_id: string };
+  updated_at: string;
+}
+
 export interface StudyCard {
   id: string;
   conceptId: string;

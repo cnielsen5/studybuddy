@@ -61,3 +61,34 @@ export function createQuestionAttemptedEvent(params: {
     schema_version: "1.0",
   };
 }
+
+export function createMasteryCertificationCompletedEvent(params: {
+  userId: string;
+  libraryId: string;
+  conceptId: string;
+  certificationResult: "full" | "partial" | "none";
+  questionsAnswered: number;
+  correctCount: number;
+  reasoningQuality?: "good" | "weak";
+  deviceId?: string;
+}): UserEvent {
+  const now = new Date().toISOString();
+
+  return {
+    event_id: generateEventId(),
+    type: "mastery_certification_completed",
+    user_id: params.userId,
+    library_id: params.libraryId,
+    occurred_at: now,
+    received_at: now,
+    device_id: params.deviceId ?? "unknown",
+    entity: { kind: "concept", id: params.conceptId },
+    payload: {
+      certification_result: params.certificationResult,
+      questions_answered: params.questionsAnswered,
+      correct_count: params.correctCount,
+      reasoning_quality: params.reasoningQuality,
+    },
+    schema_version: "1.0",
+  };
+}

@@ -534,6 +534,19 @@
   margin-top: 0.25rem;
 }
 
+.certification-badge {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: #f0f6ff;
+  border-radius: 8px;
+}
+
+.certification-result-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
 .concept-detail-header h2 {
   margin: 0;
 }

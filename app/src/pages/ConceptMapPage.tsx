@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { ConceptMapGraph, conceptMapStats } from "../components/ConceptMapGraph";
 import { useAuth } from "../lib/auth";
+import { certificationResultLabel } from "../lib/certification";
 import {
   deriveAggregateMetrics,
   deriveConceptMetrics,
@@ -11,11 +12,12 @@ import {
 import { useLibrary } from "../lib/libraryContext";
 import type { TaxonomyNode } from "../lib/conceptMapHierarchy";
 import { getConceptTitle } from "../lib/libraryTypes";
+import { useConceptCertification } from "../lib/useConceptCertification";
 import { useConceptDerivedData } from "../lib/useConceptDerivedData";
 
 export function ConceptMapPage() {
   const { bundle, studyCards, loading, error } = useLibrary();
-  const { user } = useAuth();
+  const { user, client } = useAuth();
   const { schedules, performances, loading: derivedLoading } = useConceptDerivedData(loading);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [selectedNode, setSelectedNode] = useState<TaxonomyNode | null>(null);
@@ -53,6 +55,13 @@ export function ConceptMapPage() {
 
   const studyUrl = conceptQuery ? `/study?concepts=${conceptQuery}` : null;
   const questionsUrl = conceptQuery ? `/questions?concepts=${conceptQuery}` : null;
+  const certifyUrl =
+    selectedConcept && user ? `/certify?concept=${selectedConcept.id}` : null;
+
+  const { certification, loading: certLoading } = useConceptCertification(
+    client,
+    selectedConcept?.id ?? null
+  );
 
   if (loading) return <p className="status">Loading concept map…</p>;
   if (error || !bundle) {
@@ -140,6 +149,11 @@ export function ConceptMapPage() {
                   Questions
                 </Link>
               )}
+              {certifyUrl && (
+                <Link to={certifyUrl} className="btn btn-primary btn-sm">
+                  Certify
+                </Link>
+              )}
               <button
                 type="button"
                 className="btn btn-secondary btn-sm"
@@ -155,6 +169,17 @@ export function ConceptMapPage() {
 
           {selectedConcept ? (
             <>
+              {certification && (
+                <p className="hint certification-badge">
+                  <strong>Certification:</strong>{" "}
+                  {certificationResultLabel(certification.certification_result)} ·{" "}
+                  {Math.round(certification.accuracy * 100)}% (
+                  {certification.correct_count}/{certification.questions_answered})
+                </p>
+              )}
+              {certLoading && user && (
+                <p className="status">Loading certification…</p>
+              )}
               <p className="concept-def">{selectedConcept.content.definition}</p>
               <p className="hint">{selectedConcept.content.summary}</p>
               {selectedConcept.dependency_graph.prerequisites.length > 0 && (
