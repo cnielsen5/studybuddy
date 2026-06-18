@@ -10,11 +10,12 @@ import {
   where,
   type Firestore,
 } from "firebase/firestore";
-import { createCardReviewedEvent } from "./events";
-import type { CardScheduleView, ReviewGrade, UserEvent } from "./types";
+import { createCardReviewedEvent, createQuestionAttemptedEvent } from "./events";
+import type { CardScheduleView, QuestionPerformanceView, ReviewGrade, UserEvent } from "./types";
 import {
   getCardScheduleViewPath,
   getEventPath,
+  getQuestionPerformanceViewPath,
   getViewsCollectionPath,
 } from "./viewPaths";
 
@@ -91,6 +92,48 @@ export class SocratesClient {
       deviceId: this.deviceId,
     });
     return this.uploadEvent(event);
+  }
+
+  async attemptQuestion(
+    questionId: string,
+    selectedOptionId: string,
+    correct: boolean,
+    secondsSpent: number
+  ): Promise<UploadResult> {
+    const event = createQuestionAttemptedEvent({
+      userId: this.userId,
+      libraryId: this.libraryId,
+      questionId,
+      selectedOptionId,
+      correct,
+      secondsSpent,
+      deviceId: this.deviceId,
+    });
+    return this.uploadEvent(event);
+  }
+
+  async getQuestionPerformance(
+    questionId: string
+  ): Promise<QuestionPerformanceView | null> {
+    const path = getQuestionPerformanceViewPath(
+      this.userId,
+      this.libraryId,
+      questionId
+    );
+    const snap = await getDoc(doc(this.firestore, path));
+    if (!snap.exists()) return null;
+    return snap.data() as QuestionPerformanceView;
+  }
+
+  async getAllQuestionPerformances(max = 100): Promise<QuestionPerformanceView[]> {
+    const viewsPath = getViewsCollectionPath(this.userId, this.libraryId);
+    const q = query(
+      collection(this.firestore, viewsPath),
+      where("type", "==", "question_performance_view"),
+      limit(max)
+    );
+    const snapshot = await getDocs(q);
+    return snapshot.docs.map((d) => d.data() as QuestionPerformanceView);
   }
 
   async getCardSchedule(cardId: string): Promise<CardScheduleView | null> {

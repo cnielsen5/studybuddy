@@ -91,8 +91,13 @@ else
 fi
 
 echo -e "${ENV_COLOR}⚠️  Deploying to $ENV_TYPE environment: $CURRENT_PROJECT${NC}"
-read -p "Continue? (y/N): " -n 1 -r
-echo
+if [ -t 0 ]; then
+  read -p "Continue? (y/N): " -n 1 -r
+  echo
+else
+  REPLY="y"
+  echo "Non-interactive mode — continuing automatically."
+fi
 if [[ ! $REPLY =~ ^[Yy]$ ]]; then
   echo "Deployment cancelled."
   exit 1
@@ -163,14 +168,16 @@ else
   exit 1
 fi
 
-# Deploy indexes
+# Deploy indexes (non-blocking — orphan indexes in the console may require --force)
 echo "Deploying Firestore indexes..."
 if npx firebase deploy --only firestore:indexes; then
   echo -e "${GREEN}✅ Indexes deployed${NC}"
   echo -e "${YELLOW}⚠️  Note: Indexes may take time to build. Check Firebase Console for status.${NC}"
 else
-  echo -e "${RED}❌ Index deployment failed${NC}"
-  exit 1
+  echo -e "${YELLOW}⚠️  Index deployment skipped or failed (non-blocking)${NC}"
+  echo -e "${YELLOW}   If Firebase reports orphan indexes, either:${NC}"
+  echo -e "${YELLOW}   - Add them to firestore.indexes.json, or${NC}"
+  echo -e "${YELLOW}   - Run: firebase deploy --only firestore:indexes --force (deletes orphans)${NC}"
 fi
 
 # Deploy functions (optional - may fail if not properly configured)

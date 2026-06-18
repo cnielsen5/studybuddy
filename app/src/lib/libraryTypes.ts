@@ -52,10 +52,47 @@ export interface LibraryCard {
 
 export interface LibraryQuestion {
   id: string;
-  content: { stem: string; options: Array<{ id: string; text: string }>; correct_option_id: string };
+  content: {
+    stem: string;
+    options: Array<{ id: string; text: string }>;
+    correct_option_id: string;
+  };
   classification: { usage_role: string; question_type: string };
   relations: { concept_ids: string[] };
+  explanations: {
+    general: string;
+    distractors?: Record<string, string>;
+  };
   editorial: { difficulty: string };
+}
+
+export interface StudyQuestion {
+  id: string;
+  conceptIds: string[];
+  stem: string;
+  options: Array<{ id: string; text: string }>;
+  correctOptionId: string;
+  usageRole: string;
+  questionType: string;
+  difficulty: string;
+  explanations: {
+    general: string;
+    distractors?: Record<string, string>;
+  };
+}
+
+export function toStudyQuestions(bundle: LibraryBundle): StudyQuestion[] {
+  return bundle.questions.map((q) => ({
+    id: q.id,
+    conceptIds: q.relations.concept_ids,
+    stem: q.content.stem,
+    options: q.content.options,
+    correctOptionId: q.content.correct_option_id,
+    usageRole: q.classification.usage_role,
+    questionType: q.classification.question_type,
+    difficulty: q.editorial.difficulty,
+    explanations: q.explanations,
+  }));
 }
 
 export interface LibraryBundle {

@@ -32,3 +32,32 @@ export function createCardReviewedEvent(params: {
     schema_version: "1.0",
   };
 }
+
+export function createQuestionAttemptedEvent(params: {
+  userId: string;
+  libraryId: string;
+  questionId: string;
+  selectedOptionId: string;
+  correct: boolean;
+  secondsSpent: number;
+  deviceId?: string;
+}): UserEvent {
+  const now = new Date().toISOString();
+
+  return {
+    event_id: generateEventId(),
+    type: "question_attempted",
+    user_id: params.userId,
+    library_id: params.libraryId,
+    occurred_at: now,
+    received_at: now,
+    device_id: params.deviceId ?? "unknown",
+    entity: { kind: "question", id: params.questionId },
+    payload: {
+      selected_option_id: params.selectedOptionId,
+      correct: params.correct,
+      seconds_spent: params.secondsSpent,
+    },
+    schema_version: "1.0",
+  };
+}

@@ -193,8 +193,8 @@ Work through phases in order where dependencies exist. Some items within a phase
 | 6.3 | LocalForage persistent storage | ⬜ | |
 | 6.4 | Wire up client SDK | ✅ | `SocratesClient` — review, upload, read views |
 | 6.5 | **Home screen** (libraries, goals, sync status) | 🟡 | Sign-in + nav to study, library, concept map |
-| 6.6 | **Study screen** (card review flow) | 🟡 | E2E with full Learning Science library (21 cards) |
-| 6.7 | Question attempt UI | ⬜ | |
+| 6.6 | **Study screen** (card review flow) | 🟡 | Due-card queue from Firestore schedule views |
+| 6.7 | Question attempt UI | 🟡 | `/questions` — MCQ flow + `question_attempted` events |
 | 6.8 | Session lifecycle UI (start/end) | ⬜ | |
 | 6.9 | Settings screen | ⬜ | |
 | 6.10 | Card annotations UI (tags, pins) | ⬜ | |
@@ -329,7 +329,7 @@ When you sit down to work, pick from the top of this list:
 | 🔴 2 | ~~Scaffold app~~ | 6.1 | ✅ Vite + React in `app/` |
 | 🔴 3 | ~~End-to-end test: sign in → study → staging~~ | 6.6 | ✅ Done |
 | 🟠 4 | Fill `MESSAGING_SENDER_ID` + `APP_ID` in `.env.local` | 6.1 | 5 min |
-| 🟠 5 | Show due cards from Firestore (not just sequential order) | 6.6 | 2–4 hrs |
+| 🟠 5 | ~~Show due cards from Firestore (not just sequential order)~~ | 6.6 | ✅ Due-card queue |
 | 🟠 6 | Set `VITE_LIBRARY_ID=lib_learning_science_v1` in `.env.local` | 9.4 | 1 min |
 | 🟡 7 | Finish Zod runtime validation schemas | 2.10 | 4–8 hrs |
 | 🟡 8 | Implement certification side effects (card suppression) | 3.11 | 2–4 hrs |

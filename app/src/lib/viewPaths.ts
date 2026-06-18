@@ -19,6 +19,14 @@ export function getCardScheduleViewPath(
   return getViewPath(userId, libraryId, "card_schedule", cardId);
 }
 
+export function getQuestionPerformanceViewPath(
+  userId: string,
+  libraryId: string,
+  questionId: string
+): string {
+  return getViewPath(userId, libraryId, "question_perf", questionId);
+}
+
 export function getEventPath(
   userId: string,
   libraryId: string,

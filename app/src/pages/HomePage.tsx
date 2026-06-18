@@ -1,11 +1,17 @@
 import { Link } from "react-router-dom";
 import { useAuth } from "../lib/auth";
 import { useLibrary } from "../lib/libraryContext";
+import { useDeckStats } from "../lib/useDeckStats";
 
 export function HomePage() {
-  const { user, loading, configured, error, signIn, signOutUser, userId, libraryId } =
+  const { user, loading, configured, error, signIn, signOutUser, userId, libraryId, client } =
     useAuth();
-  const { bundle, studyCards, loading: libLoading, error: libError } = useLibrary();
+  const { bundle, studyCards, studyQuestions, loading: libLoading, error: libError } = useLibrary();
+  const { stats: deckStats, loading: deckLoading, error: deckError } = useDeckStats(
+    client,
+    studyCards,
+    libLoading
+  );
 
   if (loading) {
     return <p className="status">Loading…</p>;
@@ -39,6 +45,35 @@ export function HomePage() {
         </div>
       )}
 
+      {user && bundle && (
+        <section className="panel">
+          <h2>Deck</h2>
+          {deckLoading ? (
+            <p className="status">Loading deck stats…</p>
+          ) : deckStats ? (
+            <>
+              <div className="deck-stats">
+                <div className="stat-box">
+                  <span className="stat-value">{deckStats.total}</span>
+                  <span className="stat-label">In deck</span>
+                </div>
+                <div className="stat-box stat-learn">
+                  <span className="stat-value">{deckStats.toLearn}</span>
+                  <span className="stat-label">To learn</span>
+                </div>
+                <div className="stat-box stat-due">
+                  <span className="stat-value">{deckStats.dueToReview}</span>
+                  <span className="stat-label">Due</span>
+                </div>
+              </div>
+              {deckError && (
+                <p className="hint">Schedule sync issue — counts may be approximate.</p>
+              )}
+            </>
+          ) : null}
+        </section>
+      )}
+
       <section className="panel">
         <h2>Session</h2>
         {user ? (
@@ -51,7 +86,7 @@ export function HomePage() {
             </p>
             {bundle && (
               <p className="hint">
-                {bundle.manifest.name} — {studyCards.length} study cards loaded
+                {bundle.manifest.name} — {studyQuestions.length} questions
               </p>
             )}
             <button type="button" className="btn" onClick={() => signOutUser()}>
@@ -75,17 +110,29 @@ export function HomePage() {
 
       <section className="panel">
         <h2>Study</h2>
-        <p>Review library cards and upload <code>card_reviewed</code> events.</p>
-        <Link
-          to="/study"
-          className={`btn btn-primary ${!user || libLoading ? "btn-disabled" : ""}`}
-          aria-disabled={!user || libLoading}
-          onClick={(e) => {
-            if (!user || libLoading) e.preventDefault();
-          }}
-        >
-          {libLoading ? "Loading library…" : "Start studying"}
-        </Link>
+        <p>Review due cards or practice MCQs from the library.</p>
+        <div className="nav-grid">
+          <Link
+            to="/study"
+            className={`btn btn-primary ${!user || libLoading ? "btn-disabled" : ""}`}
+            aria-disabled={!user || libLoading}
+            onClick={(e) => {
+              if (!user || libLoading) e.preventDefault();
+            }}
+          >
+            {libLoading ? "Loading…" : "Cards"}
+          </Link>
+          <Link
+            to="/questions"
+            className={`btn btn-primary ${!user || libLoading ? "btn-disabled" : ""}`}
+            aria-disabled={!user || libLoading}
+            onClick={(e) => {
+              if (!user || libLoading) e.preventDefault();
+            }}
+          >
+            Questions
+          </Link>
+        </div>
         {!user && (
           <p className="hint">Sign in first — Firestore rules require authentication.</p>
         )}

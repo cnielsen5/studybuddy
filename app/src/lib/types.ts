@@ -31,6 +31,21 @@ export interface CardScheduleView {
 
 import type { ClozeData } from "./cloze";
 
+export interface QuestionPerformanceView {
+  type: "question_performance_view";
+  question_id: string;
+  library_id: string;
+  user_id: string;
+  total_attempts: number;
+  correct_attempts: number;
+  accuracy_rate: number;
+  avg_seconds: number;
+  streak: number;
+  max_streak: number;
+  last_attempted_at: string;
+  updated_at: string;
+}
+
 export interface StudyCard {
   id: string;
   conceptId: string;
