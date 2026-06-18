@@ -129,6 +129,36 @@ Socrates Structure and Organizer
             JSON bundles
             Public and private libraries
             Local CRUD options
+
+            Bundle shape (Golden Master export)
+                {
+                "manifest": { ... },
+                "concepts": [ ... ],
+                "relationships": [ ... ],
+                "cards": [ ... ],
+                "questions": [ ... ]
+                }
+
+            manifest (library identity — not user-specific)
+                {
+                "id": "lib_step1_usmle",
+                "name": "USMLE Step 1 — Cardiovascular",
+                "version": "1.0.0",
+                "description": "Shared content library for cardiovascular pathology.",
+                "domain": "Medicine",
+                "status": "published",
+                "tags": ["usmle", "pathology", "cardiovascular"]
+                }
+
+            Graph consistency rule
+                Learning order is expressed in two places that must agree:
+                    concept.dependency_graph.prerequisites / unlocks
+                    relationships[] with relationship_type: "prerequisite" (forward)
+                Every forward prerequisite edge in relationships[] must appear in the
+                to-concept's dependency_graph.prerequisites; every dependency_graph
+                prerequisite must be backed by a matching relationship; unlocks on the
+                from-concept must include the to-concept.
+
     5.2 Concepts
             The most basic unit of the concept map, houses multiple cards 
             Source
@@ -162,12 +192,17 @@ Socrates Structure and Organizer
                     | "stable"
                     | "robust"
                 Core Cards
-                    Central ideas that are critical for understanding the concept as a whole
+                    Central ideas critical for understanding the concept as a whole
+                    Tagged on cards via config.card_tier: "core"
                 Extension Cards
-                    Fringe material that relies on very specific information recall, not crucial to the core idea of the concept
+                    Fringe material relying on specific recall, not crucial to the core idea
+                    Tagged via config.card_tier: "extension"
                 Certification Cards
-                    Cards used to certify user knowledge during mastery certification
+                    Cards used during mastery certification flows
+                    Tagged via config.card_tier: "certification"
                 Remedial Cards
+                    Targeted repair cards for weak or misconception-prone areas
+                    Tagged via config.card_tier: "remedial"
             JSON (Master Template)
                 {
                 "id": "concept_0001",
@@ -344,7 +379,7 @@ Socrates Structure and Organizer
                     Recognition: W=1.0
                     Prompted Recall: W=1.5
                     Free Recall: W=1.8
-                    Application/Analysis: W=2.2
+                    Application: W=2.2
                     Integration: W=2.5
                 Semantic Vectorization
                     AI-generated embedding
@@ -387,7 +422,10 @@ Socrates Structure and Organizer
                         "_comment_card_type": "basic | cloze | image_occlusion",
 
                         "pedagogical_role": "recall",
-                        "_comment_role": "recognition | recall | synthesis | application/analysis | integration . Used for weight of card contribution to mastery."
+                        "_comment_role": "recognition | recall | synthesis | application | integration . Used for weight of card contribution to mastery.",
+
+                        "card_tier": "core",
+                        "_comment_tier": "core | extension | certification | remedial . Classifies the card's role in concept coverage and certification flows."
                     },
 
                     "content": {
@@ -675,7 +713,10 @@ Socrates Structure and Organizer
                     "_comment_card_type": "Enum: basic | cloze | image_occlusion | relationship",
 
                     "pedagogical_role": "synthesis",
-                    "_comment_role": "Enum: recognition | recall | synthesis",
+                    "_comment_role": "Enum: recognition | recall | synthesis | application | integration",
+
+                    "card_tier": "core",
+                    "_comment_tier": "Enum: core | extension | certification | remedial",
 
                     "relationship_probe_type": "directionality",
                     "_comment_probe_type": "Enum: directionality | causality | contrast | prerequisite_reasoning | scope",
