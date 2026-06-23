@@ -43,7 +43,7 @@ export async function applyCertificationRevocationOnFailure(
   const batch = firestore.batch();
   let schedulesUpdated = 0;
 
-  for (const { meta, path, schedule } of scheduleReads) {
+  for (const { path, schedule } of scheduleReads) {
     const updated = reduceCertificationSuppressionRevocation(schedule, event);
     if (updated) {
       batch.set(firestore.doc(path), updated, { merge: false });
