@@ -1632,57 +1632,228 @@ Socrates Structure and Organizer
             Skill scores
             Confidence calibration metrics
 
-13. Mastery Certification
-    11.1 Purpose
-            Detect pre-existing mastery
-            Prevent redundant learning
-    11.2 Trigger
-            Before unlocking a new concept chunk
-    11.3 Flow
-            Short diagnostic probe (2–4 items)
-                Types:
-                    Application in novel context
-                    Contrast with sibling concept
-                    Directionality / dependency check
-                    One transfer question
-                These can be:
-                    AI-generated
-                    Pre-authored certification questions
-            Evaluate correctness, reasoning, confidence
-            Outcome:
-                Full certification
-                Partial certification
-                No certification
-    11.4 Effects
-            Suppress redundant cards
-            Accelerate initial scheduling
-            Faster decay
-            Immediate revocation on error
-    11.5 Certification Criteria
-            Certification passes if all are true:
-                ≥80% correct
-                Correct reasoning, not lucky guessing
-                No confidence mismatch
-                No misconception pattern detected
-                Response times reasonable
-            A. Full Certification
-                Concept marked as pre-mastered
-                Most core cards suppressed
-                Only minimal review cards scheduled
-            B. Partial Certification (Most Common)
-                Skip introductory cards
-                Learn relationship / nuance cards only
-                Concept learning chunk reduced
-            C. No Certification
-                Learn concept normally
-    11.6 Other 
-        Caps
+13. Mastery Certification (Revised)
+
+    13.1 Purpose
+            Detect pre-existing mastery before introducing new concept chunks.
+            Prevent redundant learning by identifying and targeting only the cards
+            a user genuinely does not need to relearn.
+            Suppression and acceleration are never applied arbitrarily — they are
+            gated by semantic coverage, response quality, multi-component scoring,
+            and AI verification.
+
+    13.2 Trigger
+            Before unlocking a new concept chunk.
+            At least one existing library has cards in Review or Mastered stage,
+            OR CLKT seeded stability exists for cards in this concept (see §15).
+
+    13.3 Certification Question Design Standard
+
+        13.3a Purpose of the Question
+                Certification questions are not simply hard questions.
+                They are semantic coverage instruments — designed to activate
+                and reveal knowledge across as many cards in the concept as
+                possible within a single response.
+
+                The ideal certification question cannot be answered correctly
+                without knowing the content of most core cards in the concept.
+                If a question can be answered from a single card's content alone,
+                it is not a valid certification question.
+
+        13.3b Coverage Score Requirement
+                Before a question is approved for use (authored or AI-generated),
+                it must pass a coverage check:
+
+                coverage_score(question) =
+                    count of concept cards with sim(card, question_vector) > 0.85
+                    divided by total core cards in concept
+
+                Minimum required coverage score: 0.65
+                (question must semantically cover at least 65% of core cards)
+
+        13.3c Multi-Component Answer Scoring
+                Each certification question must have 10 or more discrete answer
+                components drawn from across the concept's card set.
+
+                Components are derived by:
+                    Mapping the question's semantic vector against all cards
+                    in the concept and selecting the top N scorers as the
+                    expected informational nodes the question should surface.
+
+                Components are tiered:
+
+                    Foundational Components (sim 0.85–0.92)
+                        Core mechanisms, definitions, basic relationships
+                        These are the minimum needed to show any prior knowledge
+
+                    Intermediate Components (sim 0.92–0.96)
+                        Applied reasoning, clinical context, conditional logic
+                        These indicate solid working knowledge
+
+                    Advanced Components (sim > 0.96)
+                        Synthesis, edge cases, nuance, transfer to novel contexts
+                        These indicate robust mastery
+
+                Scoring outcome per component tier:
+                    Foundational components met:   Acceleration eligible
+                    Intermediate components met:   Partial certification eligible
+                    Advanced components met:       Full certification eligible
+
+                This means a user who knows the core foundations but not the
+                high-level synthesis will receive acceleration on foundational
+                cards only — not suppression of content they haven't actually
+                demonstrated knowledge of.
+
+        13.3d Question Types
+                Application in novel context
+                Contrast with sibling concept
+                Directionality / dependency check
+                Transfer question (cross-domain if CLKT is active)
+                Multi-step clinical or reasoning scenario
+                    (preferred — maximizes component surfacing)
+
+    13.4 Flow
+
+        Step 1: Written / Selected Response
+                User answers the certification question in open-ended format
+                OR selects from structured response options.
+                Response is evaluated against all 10+ answer components.
+                Each component scored: present / partial / absent.
+
+        Step 2: Component Mapping
+                System maps which components were demonstrated.
+                Assigns each card in the concept a provisional action:
+                    suppress_eligible    (card sim > 0.90, advanced component met)
+                    accelerate_eligible  (card sim > 0.85, foundational/intermediate met)
+                    no_action            (card not covered or component not demonstrated)
+
+        Step 3: AI Verification Probe
+                Before any suppression or acceleration is applied, an AI-driven
+                conversational probe is conducted targeting the cards flagged as
+                suppress_eligible or accelerate_eligible.
+
+                Purpose:
+                    Confirm the written response reflected genuine prior knowledge
+                    and not lucky guessing, pattern recognition, or recency effect.
+                    Identify any misconception masked by a correct surface answer.
+                    Distinguish conceptual understanding from test-taking skill.
+
+                Probe format:
+                    2–4 follow-up questions, conversational, adaptive
+                    AI selects probe targets from the highest-similarity cards
+                    flagged for suppression
+                    Probes deliberately vary surface form from the original question
+                    to prevent recency advantage
+                    At least one probe must require explanation of mechanism
+                    or reasoning, not just recall of a fact
+
+                Probe outcome scoring:
+                    CONFIRMED:
+                        Correct reasoning across probe questions
+                        No confidence mismatch
+                        No misconception detected
+                        Response times reasonable
+                        --> Suppression and acceleration proceed as mapped
+
+                    PARTIAL:
+                        Correct on some probes, gaps on others
+                        --> Suppress_eligible cards downgraded to accelerate_eligible
+                        --> Cards with gaps flagged as no_action
+                        --> Acceleration proceeds only for confirmed components
+
+                    UNCONFIRMED:
+                        Probe reveals reasoning gap, misconception, or
+                        confidence mismatch inconsistent with the written response
+                        --> All suppression revoked
+                        --> Acceleration revoked
+                        --> Cards learn normally
+                        --> Misconception flagged for targeted remediation
+
+    13.5 Coverage-Gated Suppression and Acceleration
+
+            For each card c in concept, after AI probe confirmation:
+
+            coverage_score(c) = sim(c, cert_question_vector)
+
+            if coverage_score < 0.85:
+                --> no action (question did not cover this card)
+
+            if coverage_score 0.85–0.92 AND foundational component confirmed
+            AND probe outcome CONFIRMED or PARTIAL:
+                --> accelerate only
+                --> mandatory first review within 3–5 days
+                --> stability boost proportional to coverage_score
+
+            if coverage_score > 0.92 AND intermediate/advanced component confirmed
+            AND probe outcome CONFIRMED:
+                --> suppress eligible
+                --> apply suppression only if evidence floor passed (see 13.6)
+
+            if probe outcome UNCONFIRMED:
+                --> no action regardless of coverage score
+
+    13.6 Evidence Floor for Suppression
+            Suppression is never applied to a card unless at least one of the
+            following is true:
+
+                card.stage is not New
+                    (card has been seen at least once in a prior session)
+
+                OR
+
+                CLKT seeded_stability exists for this card
+                    (cross-library transfer established prior exposure)
+
+            A card the user has never encountered cannot be suppressed,
+            only accelerated, regardless of certification outcome.
+
+    13.7 Certification Outcomes
+
+        A. Full Certification
+                Advanced components confirmed across probe
+                Coverage score > 0.92 on majority of core cards
+                Evidence floor passed
+                --> Most core cards suppressed (coverage-gated)
+                --> Minimal review cards scheduled
+                --> Concept marked pre-mastered (dashed node on concept map)
+
+        B. Partial Certification (Most Common)
+                Foundational and intermediate components confirmed
+                Advanced components not fully demonstrated
+                --> Introductory / foundational cards accelerated
+                --> Intermediate and advanced cards learned normally
+                --> Concept learning chunk reduced, not eliminated
+
+        C. No Certification
+                Probe outcome UNCONFIRMED, or coverage score insufficient,
+                or evidence floor not met
+                --> Learn concept normally
+                --> If misconception detected, flag for remediation
+                   before or during learning sequence
+
+    13.8 Revocation
+            Suppressed cards resurface immediately if:
+                User fails a related card during normal review
+                Misconception is detected in a later probe session
+                Semantic neighbor lapse triggers erosion below threshold
+
+            On revocation:
+                Card returns to Learning stage (not reset to New)
+                Seeded or suppressed stability is cleared
+                Normal FSRS scheduling resumes
+
+    13.9 Caps and Safety
             Max 1 certification gate per concept
-        Safety
-            Suspended cards resurface if errors occur
-        User Prompt
-            "Let's check what you already know (2-3 minutes) to skip cards you don't need"
-            Opt-out option
+            Max 1 certification attempt per concept (no retries to game outcome)
+            AI probe capped at 4 follow-up questions
+            Opt-out available — user can skip certification and learn normally
+            All certification outcomes logged for review
+
+    13.10 User Prompt
+            "Before we start, let's check what you already know.
+             This takes 3–5 minutes and can skip cards you don't need.
+             There are no wrong answers — this just helps us find where to begin."
+            Opt-out: "Start from the beginning instead"
 
 14. Propagation, Modifiers & Caps
     12.1 Propagation
