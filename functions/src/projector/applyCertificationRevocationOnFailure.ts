@@ -1,27 +1,31 @@
 import { Firestore } from "@google-cloud/firestore";
-import { getConceptCardMeta } from "../content/libraryCatalog";
-import {
-  resolveCertificationScheduleAction,
-  type CertificationResult,
-} from "../core/certification/certificationSchedulePolicy";
+import { getCardConceptId, getConceptCardMeta } from "../content/libraryCatalog";
 import { UserEvent } from "./eventProjector";
 import { CardScheduleView } from "./reducers/cardReducers";
-import { reduceCertificationScheduleEffect } from "./reducers/certificationScheduleReducers";
+import { reduceCertificationSuppressionRevocation } from "./reducers/certificationScheduleReducers";
 import { getCardScheduleViewPath } from "../viewPaths";
 
-export async function applyCertificationScheduleEffects(
+/**
+ * When a user fails a card review, revoke certification suppression on sibling
+ * cards in the same concept (organizer §13.8).
+ */
+export async function applyCertificationRevocationOnFailure(
   firestore: Firestore,
   event: UserEvent,
-  conceptId: string,
-  certificationResult: CertificationResult
+  reviewedCardId: string
 ): Promise<number> {
-  const cardMeta = getConceptCardMeta(event.library_id, conceptId);
-  if (cardMeta.length === 0) {
+  const conceptId = getCardConceptId(event.library_id, reviewedCardId);
+  if (!conceptId) {
+    return 0;
+  }
+
+  const siblingMeta = getConceptCardMeta(event.library_id, conceptId);
+  if (siblingMeta.length === 0) {
     return 0;
   }
 
   const scheduleReads = await Promise.all(
-    cardMeta.map(async (meta) => {
+    siblingMeta.map(async (meta) => {
       const path = getCardScheduleViewPath(
         event.user_id,
         event.library_id,
@@ -40,16 +44,7 @@ export async function applyCertificationScheduleEffects(
   let schedulesUpdated = 0;
 
   for (const { meta, path, schedule } of scheduleReads) {
-    const action = resolveCertificationScheduleAction(
-      certificationResult,
-      meta,
-      schedule
-    );
-    const updated = reduceCertificationScheduleEffect(schedule, meta.cardId, event, {
-      certificationResult,
-      action,
-    });
-
+    const updated = reduceCertificationSuppressionRevocation(schedule, event);
     if (updated) {
       batch.set(firestore.doc(path), updated, { merge: false });
       schedulesUpdated++;

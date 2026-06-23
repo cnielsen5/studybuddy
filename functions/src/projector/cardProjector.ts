@@ -33,6 +33,7 @@ import {
   getCardScheduleViewPath,
   getCardPerformanceViewPath,
 } from "../viewPaths";
+import { applyCertificationRevocationOnFailure } from "./applyCertificationRevocationOnFailure";
 
 // Removed - now using reduceCardSchedule from reducers
 
@@ -131,6 +132,17 @@ export async function projectCardReviewedEvent(
         idempotent: false,
       };
     });
+
+    if (
+      result.scheduleUpdated &&
+      payloadValidation.data.grade === "again"
+    ) {
+      await applyCertificationRevocationOnFailure(
+        firestore,
+        event,
+        cardId
+      );
+    }
 
     return {
       success: true,

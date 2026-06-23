@@ -31,6 +31,18 @@ const ALLOWED_TIERS = new Set<LibraryCardTier>([
   "remedial",
 ]);
 
+export function getCardConceptId(
+  libraryId: string,
+  cardId: string
+): string | undefined {
+  const bundle = LIBRARIES[libraryId];
+  if (!bundle) return undefined;
+
+  const card = bundle.cards.find((entry) => entry.id === cardId);
+  if (!card || card.type !== "card") return undefined;
+  return card.relations?.concept_id;
+}
+
 export function getConceptCardMeta(
   libraryId: string,
   conceptId: string

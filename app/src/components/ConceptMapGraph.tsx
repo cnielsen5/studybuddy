@@ -241,11 +241,12 @@ export function ConceptMapGraph({
               node.level === "concept" && node.conceptIds[0]
                 ? certifications.get(node.conceptIds[0])
                 : undefined;
+            const isPreMastered = certification?.certification_result === "full";
 
             return (
               <g
                 key={node.id}
-                className={`map-node${isSelected ? " is-selected" : ""}${isHovered ? " is-hovered" : ""}`}
+                className={`map-node${isSelected ? " is-selected" : ""}${isHovered ? " is-hovered" : ""}${isPreMastered ? " is-pre-mastered" : ""}`}
                 transform={`translate(${pos.x} ${pos.y})`}
                 onClick={() => onSelect(isSelected ? null : node.id, isSelected ? null : node)}
                 onMouseEnter={() => setHoveredId(node.id)}
@@ -260,6 +261,7 @@ export function ConceptMapGraph({
                   fill={conceptStateColor(derived.conceptState)}
                   stroke={conceptStateStroke(derived.conceptState)}
                   strokeWidth={isSelected ? 3 : isHovered ? 2.5 : 1.5}
+                  strokeDasharray={isPreMastered ? "5 3" : undefined}
                   className="map-node-circle"
                   opacity={0.55 + derived.retentionScore * 0.45}
                 />
@@ -306,6 +308,7 @@ export function ConceptMapGraph({
             ))}
           </div>
           <p className="hint legend-note">Opacity reflects retention (recall likelihood now)</p>
+          <p className="hint legend-note">Dashed node border = pre-mastered (full certification)</p>
         </div>
         {showDomainBorders && (
           <span className="hint domain-border-hint">Dashed borders = domain regions</span>

@@ -37,6 +37,11 @@ export interface CardScheduleView {
   certification_applied?: boolean;
   certification_result?: "full" | "partial" | "none";
   certification_event_id?: string;
+  transfer_state?: {
+    seeded_stability?: number;
+    seed_source_library_id?: string;
+    seed_source_card_id?: string;
+  };
 }
 
 export interface CardPerformanceView {

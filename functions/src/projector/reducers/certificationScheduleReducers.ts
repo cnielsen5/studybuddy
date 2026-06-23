@@ -163,3 +163,41 @@ function createBaseSchedule(cardId: string, event: UserEvent): CardScheduleView 
     updated_at: new Date().toISOString(),
   };
 }
+
+/**
+ * Revoke certification suppression when a related card fails review (§13.8).
+ * Returns null when no write is needed.
+ */
+export function reduceCertificationSuppressionRevocation(
+  prev: CardScheduleView | undefined,
+  event: UserEvent
+): CardScheduleView | null {
+  if (!prev?.suppressed) {
+    return null;
+  }
+
+  if (prev.last_applied.event_id === event.event_id) {
+    return null;
+  }
+
+  const due = new Date();
+  due.setDate(due.getDate() + 1);
+
+  return {
+    ...prev,
+    state: 1,
+    due_at: due.toISOString(),
+    stability: 1,
+    interval_days: 1,
+    suppressed: false,
+    suppression_reason: undefined,
+    certification_applied: false,
+    certification_result: undefined,
+    certification_event_id: undefined,
+    last_applied: {
+      received_at: event.received_at,
+      event_id: event.event_id,
+    },
+    updated_at: new Date().toISOString(),
+  };
+}
