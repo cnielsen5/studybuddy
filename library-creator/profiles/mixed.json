@@ -1,0 +1,24 @@
+{
+  "archetypeId": "mixed",
+  "primaryLearningMode": "mixed",
+  "cardTierWeights": {
+    "core": 0.55,
+    "extension": 0.25,
+    "certification": 0.12,
+    "remedial": 0.08
+  },
+  "cardTypeWeights": {
+    "basic": 0.5,
+    "cloze": 0.35,
+    "imageOcclusion": 0.15
+  },
+  "pedagogicalRoleWeights": {
+    "recognition": 0.2,
+    "recall": 0.35,
+    "application": 0.3,
+    "integration": 0.15
+  },
+  "questionDensity": 1.5,
+  "relationshipDensity": 0.4,
+  "prefersDiagnosticQuestions": true
+}

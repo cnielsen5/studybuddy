@@ -1,0 +1,24 @@
+{
+  "archetypeId": "math",
+  "primaryLearningMode": "practice",
+  "cardTierWeights": {
+    "core": 0.45,
+    "extension": 0.3,
+    "certification": 0.15,
+    "remedial": 0.1
+  },
+  "cardTypeWeights": {
+    "basic": 0.3,
+    "cloze": 0.55,
+    "imageOcclusion": 0.15
+  },
+  "pedagogicalRoleWeights": {
+    "recognition": 0.1,
+    "recall": 0.25,
+    "application": 0.45,
+    "integration": 0.2
+  },
+  "questionDensity": 2.5,
+  "relationshipDensity": 0.6,
+  "prefersDiagnosticQuestions": true
+}
