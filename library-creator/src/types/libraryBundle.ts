@@ -10,7 +10,7 @@ import {
   LegacyHierarchySchema,
   LegacyLinkedContentSchema,
 } from "./domainContext.js";
-import { ResolutionLevelSchema, ResolutionRangeSchema, SpineConceptIdSchema } from "./resolution.js";
+import { ResolutionLevelSchema, ResolutionRangeSchema, AnchorConceptIdSchema } from "./resolution.js";
 
 const isoDateTime = z.string().datetime({ offset: true }).or(z.string().datetime());
 
@@ -40,7 +40,9 @@ export const ExportedConceptSchema = z
     id: z.string().regex(/^concept_[a-z0-9_]+$/),
     type: z.literal("concept"),
     resolution_level: ResolutionLevelSchema.default(3),
-    spine_concept_id: SpineConceptIdSchema.optional(),
+    anchor_concept_id: AnchorConceptIdSchema.optional(),
+    /** @deprecated Use anchor_concept_id */
+    spine_concept_id: AnchorConceptIdSchema.optional(),
     metadata: z.object({
       created_at: isoDateTime,
       updated_at: isoDateTime,
@@ -68,7 +70,7 @@ export const ExportedConceptSchema = z
     domain_contexts: z.array(DomainContextSchema).optional(),
     hierarchy: LegacyHierarchySchema.optional(),
     dependency_graph: z.object({
-      parent_concept_id: SpineConceptIdSchema.optional(),
+      parent_concept_id: z.string().optional(),
       prerequisites: z.array(z.string()),
       unlocks: z.array(z.string()),
       related_concepts: z.array(z.string()),

@@ -1,9 +1,11 @@
 /**
- * CLKT alignment — universal concept identity first, spine id second, cosine at leaves.
+ * CLKT alignment — match library concepts exclusively via anchor_concept_id (spine IDs).
  */
 
-export interface UniversalConceptRef {
+export interface LibraryConceptRef {
   id: string;
+  anchor_concept_id?: string | null;
+  /** @deprecated Use anchor_concept_id */
   spine_concept_id?: string | null;
 }
 
@@ -11,50 +13,39 @@ export interface ConceptAlignmentMatch {
   sourceConceptId: string;
   targetConceptId: string;
   alignmentKey: string;
-  matchType: "universal_id" | "spine_id";
-  /** Exact alignment confidence for id/spine matches. */
+  matchType: "anchor_concept_id";
   alignmentConfidence: 1;
 }
 
+function resolveAnchorId(concept: LibraryConceptRef): string | null {
+  return concept.anchor_concept_id?.trim() || concept.spine_concept_id?.trim() || null;
+}
+
 /**
- * Match concepts across libraries by shared universal concept id, then spine_concept_id.
+ * Match concepts across libraries by shared spine anchor id only.
+ * CLKT never matches on library concept ids directly.
  */
 export function alignConceptsAcrossLibraries(
-  sourceConcepts: UniversalConceptRef[],
-  targetConcepts: UniversalConceptRef[]
+  sourceConcepts: LibraryConceptRef[],
+  targetConcepts: LibraryConceptRef[]
 ): ConceptAlignmentMatch[] {
   const matches: ConceptAlignmentMatch[] = [];
   const matchedPairs = new Set<string>();
 
-  const targetById = indexByKey(targetConcepts, (concept) => concept.id);
-  const targetBySpine = indexByKey(
-    targetConcepts,
-    (concept) => concept.spine_concept_id?.trim() || null
-  );
+  const targetByAnchor = indexByKey(targetConcepts, resolveAnchorId);
 
   for (const source of sourceConcepts) {
-    const universalTargets = targetById.get(source.id) ?? [];
-    for (const targetConceptId of universalTargets) {
-      addMatch(matches, matchedPairs, {
-        sourceConceptId: source.id,
-        targetConceptId,
-        alignmentKey: source.id,
-        matchType: "universal_id",
-        alignmentConfidence: 1,
-      });
-    }
-
-    const spineId = source.spine_concept_id?.trim();
-    if (!spineId) {
+    const anchorId = resolveAnchorId(source);
+    if (!anchorId) {
       continue;
     }
-    const spineTargets = targetBySpine.get(spineId) ?? [];
-    for (const targetConceptId of spineTargets) {
+    const anchorTargets = targetByAnchor.get(anchorId) ?? [];
+    for (const targetConceptId of anchorTargets) {
       addMatch(matches, matchedPairs, {
         sourceConceptId: source.id,
         targetConceptId,
-        alignmentKey: spineId,
-        matchType: "spine_id",
+        alignmentKey: anchorId,
+        matchType: "anchor_concept_id",
         alignmentConfidence: 1,
       });
     }
@@ -65,8 +56,8 @@ export function alignConceptsAcrossLibraries(
 
 /** @deprecated Use alignConceptsAcrossLibraries */
 export function alignConceptsBySpine(
-  sourceConcepts: UniversalConceptRef[],
-  targetConcepts: UniversalConceptRef[]
+  sourceConcepts: LibraryConceptRef[],
+  targetConcepts: LibraryConceptRef[]
 ): Array<{
   sourceConceptId: string;
   targetConceptId: string;
@@ -82,8 +73,8 @@ export function alignConceptsBySpine(
 }
 
 function indexByKey(
-  concepts: UniversalConceptRef[],
-  keyFor: (concept: UniversalConceptRef) => string | null
+  concepts: LibraryConceptRef[],
+  keyFor: (concept: LibraryConceptRef) => string | null
 ): Map<string, string[]> {
   const map = new Map<string, string[]>();
   for (const concept of concepts) {
@@ -116,7 +107,7 @@ export interface TransferConfidenceInput {
   leafCosineSimilarity: number;
 }
 
-/** Universal/spine match dominates; leaf cosine similarity refines confidence. */
+/** Anchor match dominates; leaf cosine similarity refines confidence. */
 export function computeTransferConfidence(input: TransferConfidenceInput): number {
   const alignment = Math.max(0, Math.min(1, input.alignmentConfidence));
   const leaf = Math.max(0, Math.min(1, input.leafCosineSimilarity));

@@ -20,6 +20,8 @@ export interface LibraryConcept {
   id: string;
   type: "concept";
   resolution_level?: 1 | 2 | 3 | 4 | 5;
+  anchor_concept_id?: string;
+  /** @deprecated Use anchor_concept_id */
   spine_concept_id?: string;
   content: { title: string; definition: string; summary: string };
   editorial?: { difficulty: string; high_yield_score: number };

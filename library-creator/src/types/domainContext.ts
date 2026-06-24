@@ -1,9 +1,9 @@
 import { z } from "zod";
 import { ResolutionLevelSchema, type ResolutionLevel } from "./resolution.js";
 
-const conceptId = z.string().regex(/^concept_[a-z0-9_]+$/);
 const cardId = z.string().regex(/^card_[a-z0-9_]+$/);
 const questionId = z.string().regex(/^q_[a-z0-9_]+$/);
+const libraryId = z.string().regex(/^lib_[a-z0-9_]+$/);
 const domainId = z
   .string()
   .regex(/^[a-z][a-z0-9_]*$/, "domain_id must be lowercase slug (e.g. mathematics)");
@@ -44,17 +44,52 @@ export type DomainContextDependencyGraph = z.infer<
   typeof DomainContextDependencyGraphSchema
 >;
 
-export const DomainContextLinkedContentSchema = z.object({
+/** Flat linked content on library concepts (L4/L5) — this library only. */
+export const LibraryScopedLinkedContentSchema = z.object({
   card_ids: z.array(cardId),
   question_ids: z.array(questionId),
 });
+
+export type LibraryScopedLinkedContent = z.infer<
+  typeof LibraryScopedLinkedContentSchema
+>;
+
+/** Spine domain contexts — cards/questions scoped per library that anchored here. */
+export const SpineDomainLinkedContentSchema = z.object({
+  by_library: z.record(libraryId, LibraryScopedLinkedContentSchema),
+});
+
+export type SpineDomainLinkedContent = z.infer<typeof SpineDomainLinkedContentSchema>;
+
+export const DomainContextLinkedContentSchema = z.union([
+  SpineDomainLinkedContentSchema,
+  LibraryScopedLinkedContentSchema,
+]);
+
+export type DomainContextLinkedContent = z.infer<
+  typeof DomainContextLinkedContentSchema
+>;
+
+export function isSpineDomainLinkedContent(
+  linkedContent: DomainContextLinkedContent
+): linkedContent is SpineDomainLinkedContent {
+  return "by_library" in linkedContent;
+}
+
+export function emptySpineLinkedContent(): SpineDomainLinkedContent {
+  return { by_library: {} };
+}
+
+export function emptyLibraryLinkedContent(): LibraryScopedLinkedContent {
+  return { card_ids: [], question_ids: [] };
+}
 
 export const DomainContextSchema = z.object({
   domain_id: domainId,
   framing: DomainContextFramingSchema,
   hierarchy_location: HierarchyLocationSchema,
   dependency_graph: DomainContextDependencyGraphSchema,
-  /** Populated during library creation — empty at spine-build time. */
+  /** Spine: by_library map (empty at spine-build). Library L4/L5: flat card/question arrays. */
   linked_content: DomainContextLinkedContentSchema,
 });
 
@@ -71,12 +106,44 @@ export const KnowledgeGraphSchema = z.object({
 
 export type KnowledgeGraph = z.infer<typeof KnowledgeGraphSchema>;
 
+const spineId = z.string().regex(/^spine_[a-z0-9_]+$/);
 const isoDateTime = z.string().datetime({ offset: true }).or(z.string().datetime());
 
-/** Spine-build master template — no cards, no mastery_config yet. */
-export const UniversalConceptMasterSchema = z.object({
-  id: conceptId,
-  resolution_level: ResolutionLevelSchema,
+/** Canonical spine concept template (levels 1–3). */
+export const SpineConceptMasterSchema = z.object({
+  id: spineId,
+  resolution_level: z.union([z.literal(1), z.literal(2), z.literal(3)]),
+  content: z.object({
+    title: z.string(),
+    definition: z.string(),
+    summary: z.string(),
+  }),
+  knowledge_graph: KnowledgeGraphSchema,
+  dependency_graph: z.object({
+    parent_concept_id: spineId.nullable().optional(),
+    prerequisites: z.array(z.string()),
+    unlocks: z.array(z.string()),
+  }),
+  domain_contexts: z.array(DomainContextSchema).min(1),
+  metadata: z.object({
+    created_at: isoDateTime,
+    updated_at: isoDateTime,
+    created_by: z.string(),
+    version: z.string(),
+    status: z.enum(["draft", "published"]),
+    source_references: z.array(ConceptSourceReferenceSchema).optional(),
+  }),
+});
+
+export type SpineConceptMaster = z.infer<typeof SpineConceptMasterSchema>;
+
+const libraryConceptId = z.string().regex(/^concept_[a-z0-9_]+$/);
+
+/** Library-generated concept (L4/L5) anchored to a spine node. */
+export const LibraryConceptMasterSchema = z.object({
+  id: libraryConceptId,
+  anchor_concept_id: spineId,
+  resolution_level: z.union([z.literal(4), z.literal(5)]),
   content: z.object({
     title: z.string(),
     definition: z.string(),
@@ -99,7 +166,12 @@ export const UniversalConceptMasterSchema = z.object({
   }),
 });
 
-export type UniversalConceptMaster = z.infer<typeof UniversalConceptMasterSchema>;
+export type LibraryConceptMaster = z.infer<typeof LibraryConceptMasterSchema>;
+
+/** @deprecated Use SpineConceptMasterSchema — kept for migration reads. */
+export const UniversalConceptMasterSchema = SpineConceptMasterSchema;
+
+export type UniversalConceptMaster = SpineConceptMaster;
 
 /** @deprecated Legacy single-domain placement — use domain_contexts instead. */
 export const LegacyHierarchySchema = z.object({
@@ -113,10 +185,7 @@ export const LegacyHierarchySchema = z.object({
 
 export type LegacyHierarchy = z.infer<typeof LegacyHierarchySchema>;
 
-export const LegacyLinkedContentSchema = z.object({
-  card_ids: z.array(z.string()),
-  question_ids: z.array(z.string()),
-});
+export const LegacyLinkedContentSchema = LibraryScopedLinkedContentSchema;
 
 export function slugifyDomainId(value: string): string {
   return value
@@ -127,15 +196,41 @@ export function slugifyDomainId(value: string): string {
     .replace(/_+/g, "_");
 }
 
-export function aggregateLinkedContent(contexts: DomainContext[]): {
-  card_ids: string[];
-  question_ids: string[];
-} {
+export function aggregateLinkedContent(
+  contexts: DomainContext[],
+  libraryIdFilter?: string
+): LibraryScopedLinkedContent {
   const cardIds = new Set<string>();
   const questionIds = new Set<string>();
   for (const context of contexts) {
-    for (const id of context.linked_content.card_ids) cardIds.add(id);
-    for (const id of context.linked_content.question_ids) questionIds.add(id);
+    const slice = getLinkedContentSlice(context.linked_content, libraryIdFilter);
+    for (const id of slice.card_ids) cardIds.add(id);
+    for (const id of slice.question_ids) questionIds.add(id);
+  }
+  return { card_ids: [...cardIds], question_ids: [...questionIds] };
+}
+
+export function getLinkedContentSlice(
+  linkedContent: DomainContextLinkedContent,
+  libraryIdFilter?: string
+): LibraryScopedLinkedContent {
+  if (isSpineDomainLinkedContent(linkedContent)) {
+    if (libraryIdFilter) {
+      return linkedContent.by_library[libraryIdFilter] ?? emptyLibraryLinkedContent();
+    }
+    return aggregateSpineLinkedContent(linkedContent);
+  }
+  return linkedContent;
+}
+
+export function aggregateSpineLinkedContent(
+  linkedContent: SpineDomainLinkedContent
+): LibraryScopedLinkedContent {
+  const cardIds = new Set<string>();
+  const questionIds = new Set<string>();
+  for (const entry of Object.values(linkedContent.by_library)) {
+    for (const id of entry.card_ids) cardIds.add(id);
+    for (const id of entry.question_ids) questionIds.add(id);
   }
   return { card_ids: [...cardIds], question_ids: [...questionIds] };
 }
@@ -144,7 +239,7 @@ export interface ConceptShapeInput {
   knowledge_graph?: KnowledgeGraph;
   domain_contexts?: DomainContext[];
   hierarchy?: LegacyHierarchy;
-  linked_content?: { card_ids: string[]; question_ids: string[] };
+  linked_content?: LibraryScopedLinkedContent;
 }
 
 export function usesDomainContexts(concept: ConceptShapeInput): boolean {
@@ -153,9 +248,9 @@ export function usesDomainContexts(concept: ConceptShapeInput): boolean {
 
 export function getDomainContext(
   concept: ConceptShapeInput,
-  domainId: string
+  domainIdValue: string
 ): DomainContext | undefined {
-  return concept.domain_contexts?.find((context) => context.domain_id === domainId);
+  return concept.domain_contexts?.find((context) => context.domain_id === domainIdValue);
 }
 
 export function resolveActiveDomainId(
@@ -175,7 +270,7 @@ export function resolveActiveDomainId(
 export function getEffectiveHierarchy(
   concept: ConceptShapeInput,
   bundle: { manifest: { domain: string; id?: string }; concepts?: ConceptShapeInput[] },
-  domainId?: string
+  domainIdValue?: string
 ): {
   library_id?: string;
   domain: string;
@@ -184,7 +279,7 @@ export function getEffectiveHierarchy(
   topic: string;
   subtopic?: string;
 } {
-  const activeDomain = resolveActiveDomainId(concept, domainId);
+  const activeDomain = resolveActiveDomainId(concept, domainIdValue);
   const context = activeDomain ? getDomainContext(concept, activeDomain) : undefined;
 
   if (context) {
@@ -214,41 +309,77 @@ export function getEffectiveHierarchy(
 
 export function getLinkedContentForDomain(
   concept: ConceptShapeInput,
-  domainId?: string
-): { card_ids: string[]; question_ids: string[] } {
-  const activeDomain = resolveActiveDomainId(concept, domainId);
+  domainIdValue?: string,
+  libraryIdValue?: string
+): LibraryScopedLinkedContent {
+  const activeDomain = resolveActiveDomainId(concept, domainIdValue);
   const context = activeDomain ? getDomainContext(concept, activeDomain) : undefined;
   if (context) {
-    return context.linked_content;
+    return getLinkedContentSlice(context.linked_content, libraryIdValue);
   }
   if (concept.linked_content) {
     return concept.linked_content;
   }
   if (concept.domain_contexts?.length) {
-    return aggregateLinkedContent(concept.domain_contexts);
+    return aggregateLinkedContent(concept.domain_contexts, libraryIdValue);
   }
-  return { card_ids: [], question_ids: [] };
+  return emptyLibraryLinkedContent();
 }
 
 /**
- * Write generated card/question IDs back into the domain context for this library.
- * Required so the concept graph retains its connection to study content.
+ * Write generated card/question IDs to a spine concept's domain context,
+ * scoped to the library that produced the content.
  */
-export function writeLinkedContentToDomainContext(
-  concept: ConceptShapeInput,
-  domainId: string,
+export function writeLinkedContentToSpineDomainContext(
+  spineConcept: ConceptShapeInput,
+  domainIdValue: string,
+  libraryIdValue: string,
   cardIds: string[],
   questionIds: string[]
 ): void {
-  const context = getDomainContext(concept, domainId);
+  const context = getDomainContext(spineConcept, domainIdValue);
   if (!context) {
     throw new Error(
-      `Cannot write linked content: concept has no domain context "${domainId}"`
+      `Cannot write spine linked content: no domain context "${domainIdValue}"`
     );
   }
-  context.linked_content.card_ids = [...cardIds];
-  context.linked_content.question_ids = [...questionIds];
+  if (!isSpineDomainLinkedContent(context.linked_content)) {
+    context.linked_content = emptySpineLinkedContent();
+  }
+  context.linked_content.by_library[libraryIdValue] = {
+    card_ids: [...cardIds],
+    question_ids: [...questionIds],
+  };
+}
+
+/** Write linked content on a library concept's domain context (flat, this library only). */
+export function writeLinkedContentToLibraryDomainContext(
+  concept: ConceptShapeInput,
+  domainIdValue: string,
+  cardIds: string[],
+  questionIds: string[]
+): void {
+  const context = getDomainContext(concept, domainIdValue);
+  if (!context) {
+    throw new Error(
+      `Cannot write linked content: concept has no domain context "${domainIdValue}"`
+    );
+  }
+  context.linked_content = {
+    card_ids: [...cardIds],
+    question_ids: [...questionIds],
+  };
   ensureLinkedContentAggregate(concept);
+}
+
+/** @deprecated Use writeLinkedContentToLibraryDomainContext or writeLinkedContentToSpineDomainContext */
+export function writeLinkedContentToDomainContext(
+  concept: ConceptShapeInput,
+  domainIdValue: string,
+  cardIds: string[],
+  questionIds: string[]
+): void {
+  writeLinkedContentToLibraryDomainContext(concept, domainIdValue, cardIds, questionIds);
 }
 
 export function buildDomainContextFromLegacy(input: {
@@ -259,10 +390,10 @@ export function buildDomainContextFromLegacy(input: {
   relevance?: string;
   maxResolutionInContext?: ResolutionLevel;
 }): { knowledge_graph: KnowledgeGraph; domain_context: DomainContext } {
-  const domainId = slugifyDomainId(input.domain);
+  const domainIdValue = slugifyDomainId(input.domain);
   const maxResolution = input.maxResolutionInContext ?? input.resolutionLevel;
   const domainContext: DomainContext = {
-    domain_id: domainId,
+    domain_id: domainIdValue,
     framing: {
       relevance: input.relevance ?? `Core concept in ${input.domain}`,
       applications: [],
@@ -278,14 +409,14 @@ export function buildDomainContextFromLegacy(input: {
       prerequisites_in_context: [],
       unlocks_in_context: [],
     },
-    linked_content: { card_ids: [], question_ids: [] },
+    linked_content: emptyLibraryLinkedContent(),
   };
 
   return {
     knowledge_graph: {
       knowledge_area: input.domain,
       knowledge_cluster: input.hierarchy.subcategory,
-      primary_domain: domainId,
+      primary_domain: domainIdValue,
       library_id: input.libraryId,
     },
     domain_context: domainContext,
@@ -294,7 +425,7 @@ export function buildDomainContextFromLegacy(input: {
 
 export function ensureLinkedContentAggregate(concept: {
   domain_contexts?: DomainContext[];
-  linked_content?: { card_ids: string[]; question_ids: string[] };
+  linked_content?: LibraryScopedLinkedContent;
 }): void {
   if (concept.domain_contexts?.length) {
     concept.linked_content = aggregateLinkedContent(concept.domain_contexts);
@@ -303,11 +434,22 @@ export function ensureLinkedContentAggregate(concept: {
 
 export function conceptHasDomainContext(
   concept: ConceptShapeInput,
-  domainId: string
+  domainIdValue: string
 ): boolean {
-  return Boolean(getDomainContext(concept, domainId));
+  return Boolean(getDomainContext(concept, domainIdValue));
 }
 
 export function listDomainIds(concept: ConceptShapeInput): string[] {
   return concept.domain_contexts?.map((context) => context.domain_id) ?? [];
+}
+
+export function spineLinkedContentIsEmpty(
+  linkedContent: DomainContextLinkedContent
+): boolean {
+  if (!isSpineDomainLinkedContent(linkedContent)) {
+    return (
+      linkedContent.card_ids.length === 0 && linkedContent.question_ids.length === 0
+    );
+  }
+  return Object.keys(linkedContent.by_library).length === 0;
 }

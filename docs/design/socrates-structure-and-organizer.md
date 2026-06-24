@@ -280,7 +280,7 @@ Socrates Structure and Organizer
 
                 "dependency_graph": {
                     "_comment": "Universal learning order across domains.",
-                    "parent_concept_id": "spine_math_precalculus",
+                    "parent_concept_id": "spine_mathematics_precalculus",
                     "prerequisites": ["concept_exponential_functions", "concept_derivatives"],
                     "unlocks": ["concept_half_life", "concept_first_order_kinetics"]
                 },

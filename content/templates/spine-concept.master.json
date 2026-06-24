@@ -1,5 +1,5 @@
 {
-  "id": "concept_exponential_decay",
+  "id": "spine_mathematics_l3_exponential_decay",
   "resolution_level": 3,
   "content": {
     "title": "Exponential Decay",
@@ -12,9 +12,14 @@
     "primary_domain": "mathematics"
   },
   "dependency_graph": {
-    "parent_concept_id": "spine_math_precalculus",
-    "prerequisites": ["concept_exponential_functions", "concept_derivatives"],
-    "unlocks": ["concept_half_life", "concept_first_order_kinetics"]
+    "parent_concept_id": "spine_mathematics_l2_pre_calculus_and_functions",
+    "prerequisites": [
+      "spine_mathematics_l3_exponential_functions"
+    ],
+    "unlocks": [
+      "spine_chemistry_l3_integrated_rate_laws",
+      "spine_medicine_preclinical_l3_drug_elimination_kinetics"
+    ]
   },
   "domain_contexts": [
     {
@@ -22,7 +27,11 @@
       "framing": {
         "title_in_context": "Exponential Decay",
         "relevance": "Core example of differential equation solutions and the natural exponential function.",
-        "applications": ["Compound interest (reverse)", "Population decline", "Cooling curves"],
+        "applications": [
+          "Compound interest (reverse)",
+          "Population decline",
+          "Cooling curves"
+        ],
         "max_resolution_in_context": 4
       },
       "hierarchy_location": {
@@ -32,12 +41,15 @@
         "subtopic": null
       },
       "dependency_graph": {
-        "prerequisites_in_context": ["concept_exponential_functions", "concept_derivatives"],
-        "unlocks_in_context": ["concept_differential_equations_first_order"]
+        "prerequisites_in_context": [
+          "spine_mathematics_l3_exponential_functions"
+        ],
+        "unlocks_in_context": [
+          "spine_mathematics_l3_first_order_linear_equations"
+        ]
       },
       "linked_content": {
-        "card_ids": [],
-        "question_ids": []
+        "by_library": {}
       }
     },
     {
@@ -45,7 +57,11 @@
       "framing": {
         "title_in_context": "First-Order Reaction Kinetics",
         "relevance": "Describes radioactive decay and first-order chemical reactions where rate depends on concentration of one reactant.",
-        "applications": ["Radioactive decay", "First-order reaction rates", "Half-life calculations"],
+        "applications": [
+          "Radioactive decay",
+          "First-order reaction rates",
+          "Half-life calculations"
+        ],
         "max_resolution_in_context": 5
       },
       "hierarchy_location": {
@@ -55,20 +71,27 @@
         "subtopic": "First-Order Kinetics"
       },
       "dependency_graph": {
-        "prerequisites_in_context": ["concept_reaction_rates", "concept_proportional_reasoning"],
-        "unlocks_in_context": ["concept_half_life", "concept_integrated_rate_laws"]
+        "prerequisites_in_context": [
+          "spine_chemistry_l3_reaction_rates"
+        ],
+        "unlocks_in_context": [
+          "spine_chemistry_l3_integrated_rate_laws"
+        ]
       },
       "linked_content": {
-        "card_ids": [],
-        "question_ids": []
+        "by_library": {}
       }
     },
     {
       "domain_id": "medicine_preclinical",
       "framing": {
         "title_in_context": "Drug Clearance & Elimination Kinetics",
-        "relevance": "First-order elimination is the default pharmacokinetic model for most drugs — understanding it is prerequisite to dosing, half-life, and steady-state reasoning.",
-        "applications": ["Drug half-life", "Steady-state concentration", "Dosing interval design"],
+        "relevance": "First-order elimination is the default pharmacokinetic model for most drugs — prerequisite to dosing, half-life, and steady-state reasoning.",
+        "applications": [
+          "Drug half-life",
+          "Steady-state concentration",
+          "Dosing interval design"
+        ],
         "max_resolution_in_context": 5
       },
       "hierarchy_location": {
@@ -78,12 +101,15 @@
         "subtopic": "First-Order Kinetics"
       },
       "dependency_graph": {
-        "prerequisites_in_context": ["concept_volume_of_distribution", "concept_hepatic_metabolism"],
-        "unlocks_in_context": ["concept_steady_state", "concept_loading_dose", "concept_zero_order_kinetics"]
+        "prerequisites_in_context": [
+          "spine_medicine_preclinical_l3_volume_of_distribution"
+        ],
+        "unlocks_in_context": [
+          "spine_medicine_preclinical_l3_steady_state_concentration"
+        ]
       },
       "linked_content": {
-        "card_ids": [],
-        "question_ids": []
+        "by_library": {}
       }
     }
   ],
@@ -92,7 +118,7 @@
     "updated_at": "2025-01-01T00:00:00Z",
     "created_by": "system_admin",
     "version": "1.0",
-    "status": "published",
+    "status": "draft",
     "source_references": [
       {
         "source": "OpenStax Calculus Volume 1",

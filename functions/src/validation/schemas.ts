@@ -176,8 +176,10 @@ export const QuestionSchema = z.object({
 export const ConceptSchema = z.object({
   id: idPrefix("concept_"),
   type: z.literal("concept"),
-  resolution_level: resolutionLevel.default(3),
-  spine_concept_id: spineOrConceptId.optional(),
+  resolution_level: resolutionLevel.default(4),
+  anchor_concept_id: z.string().regex(/^spine_[a-z0-9_]+$/).optional(),
+  /** @deprecated Use anchor_concept_id */
+  spine_concept_id: z.string().regex(/^spine_[a-z0-9_]+$/).optional(),
 
   metadata: z.object({
     created_at: isoDateTime,

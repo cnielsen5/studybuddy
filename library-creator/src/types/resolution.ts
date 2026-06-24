@@ -18,6 +18,12 @@ export const ResolutionRangeSchema = z.object({
 
 export type ResolutionRange = z.infer<typeof ResolutionRangeSchema>;
 
+/** Canonical spine node id — authoritative universal concept identity. */
+export const AnchorConceptIdSchema = z.string().regex(/^spine_[a-z0-9_]+$/);
+
+export type AnchorConceptId = z.infer<typeof AnchorConceptIdSchema>;
+
+/** @deprecated Use AnchorConceptIdSchema */
 export const SpineConceptIdSchema = z
   .string()
   .regex(/^(concept_|spine_)[a-z0-9_]+$/);
@@ -55,11 +61,23 @@ export function isWithinResolutionRange(
   return level >= range.min && level <= range.max;
 }
 
-export function isSpineConcept(concept: {
+export function isSpineAnchoredLibraryConcept(concept: {
   resolution_level?: ResolutionLevel;
+  anchor_concept_id?: string | null;
+  /** @deprecated */
   spine_concept_id?: string | null;
 }): boolean {
-  return !concept.spine_concept_id && (concept.resolution_level ?? 3) <= 3;
+  return Boolean(
+    concept.anchor_concept_id?.trim() || concept.spine_concept_id?.trim()
+  );
+}
+
+export function resolveAnchorConceptId(concept: {
+  anchor_concept_id?: string | null;
+  /** @deprecated */
+  spine_concept_id?: string | null;
+}): string | undefined {
+  return concept.anchor_concept_id?.trim() || concept.spine_concept_id?.trim() || undefined;
 }
 
 /**
@@ -105,6 +123,8 @@ export function inferResolutionFromHierarchy(hierarchy: {
 
 export interface ConceptResolutionFields {
   resolution_level?: ResolutionLevel;
+  anchor_concept_id?: string;
+  /** @deprecated Use anchor_concept_id */
   spine_concept_id?: string;
   dependency_graph?: {
     parent_concept_id?: string;

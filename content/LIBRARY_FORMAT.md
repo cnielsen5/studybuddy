@@ -51,18 +51,22 @@ Concepts link via two complementary structures that must stay in sync:
 | `knowledge_graph` | Universal graph position — not domain ownership |
 | `domain_contexts[]` | Per-domain lens: framing, taxonomy placement, cards, context-specific prerequisites |
 | `resolution_level` (1–5) | Granularity of the universal concept node |
-| `spine_concept_id` | Legacy spine anchor for leaf concepts during migration |
+| `anchor_concept_id` | Required for L4/L5 library concepts — canonical `spine_*` node |
+| `spine_concept_id` | Deprecated alias for `anchor_concept_id` |
 | `manifest.audience.resolutionRange` | `{ min, max }` — which resolution levels are in scope for this library |
 
 ### Universal concepts and domain lenses
 
-Canonical spine master template: **`content/templates/universal-concept.master.json`** (`concept_exponential_decay`).
+Canonical templates:
 
-Concepts are **domain-agnostic at their core**. A single universal node can carry multiple domain contexts:
+- **Spine:** `content/templates/spine-concept.master.json` (`spine_mathematics_l3_exponential_decay`)
+- **Library:** `content/templates/library-concept.master.json` (`concept_lib_*` + `anchor_concept_id`)
+
+Spine example (`spine_mathematics_l3_exponential_decay`):
 
 ```json
 {
-  "id": "concept_exponential_decay",
+  "id": "spine_mathematics_l3_exponential_decay",
   "resolution_level": 3,
   "content": { "title": "...", "definition": "...", "summary": "..." },
   "knowledge_graph": {
@@ -89,11 +93,11 @@ Concepts are **domain-agnostic at their core**. A single universal node can carr
         "prerequisites_in_context": ["concept_exponential_functions"],
         "unlocks_in_context": ["concept_differential_equations_first_order"]
       },
-      "linked_content": { "card_ids": [], "question_ids": [] }
+      "linked_content": { "by_library": {} }
     }
   ],
   "dependency_graph": {
-    "parent_concept_id": "spine_math_precalculus",
+    "parent_concept_id": "spine_mathematics_precalculus",
     "prerequisites": ["concept_exponential_functions"],
     "unlocks": ["concept_half_life"]
   },
@@ -110,10 +114,10 @@ Concepts are **domain-agnostic at their core**. A single universal node can carr
 | Stage | `domain_contexts[].linked_content` |
 |-------|-------------------------------------|
 | Spine build (Phase 1–2) | Empty arrays — expected |
-| Library creation (Phase 3+) | **Library creator writes card/question IDs back** into the active domain context via `writeLinkedContentToDomainContext()` |
+| Library creation (Phase 3+) | Spine: `writeLinkedContentToSpineDomainContext()` writes to `by_library[lib_id]`. Library L4/L5: `writeLinkedContentToLibraryDomainContext()` |
 | Export | Aggregate mirror in top-level `linked_content` for conformance tooling |
 
-Cards carry `relations.domain_id` pointing to the domain context they belong to. CLKT uses shared **universal concept id** as the primary alignment key (exact match).
+Cards carry `relations.domain_id` pointing to the domain context they belong to. CLKT aligns libraries exclusively via shared `anchor_concept_id` (spine IDs), never library concept ids.
 
 Legacy bundles may still use top-level `hierarchy` + `linked_content` during migration.
 

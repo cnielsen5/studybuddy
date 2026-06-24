@@ -5,7 +5,7 @@ import { filterConceptsByResolution } from "../types/resolution.js";
 import {
   ensureLinkedContentAggregate,
   slugifyDomainId,
-  writeLinkedContentToDomainContext,
+  writeLinkedContentToLibraryDomainContext,
 } from "../types/domainContext.js";
 import {
   CardsQuestionsDraftSchema,
@@ -92,7 +92,7 @@ export function generateCardsQuestionsHeuristic(
     }
 
     if (domainContext) {
-      writeLinkedContentToDomainContext(concept, domainId, cardIds, questionIds);
+      writeLinkedContentToLibraryDomainContext(concept, domainId, cardIds, questionIds);
     } else if (concept.linked_content) {
       concept.linked_content.card_ids = cardIds;
       concept.linked_content.question_ids = questionIds;

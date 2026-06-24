@@ -64,17 +64,27 @@ interface RelationshipLike {
   linked_content: { relationship_card_ids: string[]; question_ids: string[] };
 }
 
-export function validateLibraryBundle(bundle: LibraryBundle): LibraryConformanceResult {
+export interface ValidateLibraryBundleOptions {
+  /** Canonical spine node ids — required for tier-2 unlock/prerequisite validation. */
+  spineIds?: Set<string>;
+}
+
+export function validateLibraryBundle(
+  bundle: LibraryBundle,
+  options: ValidateLibraryBundleOptions = {}
+): LibraryConformanceResult {
   LibraryBundleSchema.parse(bundle);
 
   const issues: LibraryConformanceIssue[] = [];
   const conceptIds = new Set(bundle.concepts.map((c) => c.id));
+  const spineIds = options.spineIds ?? new Set<string>();
+  const graphIds = new Set<string>([...conceptIds, ...spineIds]);
   const cardIds = new Set(bundle.cards.map((c) => c.id));
   const questionIds = new Set(bundle.questions.map((q) => q.id));
   const relationshipIds = new Set<string>();
 
   validateManifest(bundle, issues);
-  validateConcepts(bundle.concepts, conceptIds, cardIds, questionIds, issues);
+  validateConcepts(bundle.concepts, graphIds, spineIds, cardIds, questionIds, issues);
   validateRelationships(
     bundle.relationships,
     conceptIds,
@@ -146,7 +156,8 @@ function validateManifest(bundle: LibraryBundle, issues: LibraryConformanceIssue
 
 function validateConcepts(
   concepts: LibraryBundle["concepts"],
-  conceptIds: Set<string>,
+  graphIds: Set<string>,
+  spineIds: Set<string>,
   cardIds: Set<string>,
   questionIds: Set<string>,
   issues: LibraryConformanceIssue[]
@@ -160,23 +171,38 @@ function validateConcepts(
       });
     }
 
+    const level = concept.resolution_level ?? 3;
+    const anchor =
+      concept.anchor_concept_id?.trim() || concept.spine_concept_id?.trim();
+    if (level >= 4 && !anchor) {
+      issues.push({
+        severity: spineIds.size > 0 ? "error" : "warning",
+        entityId: concept.id,
+        message:
+          "Library concepts at resolution 4+ require anchor_concept_id before spine-linked export",
+      });
+    }
+
     for (const id of [
       ...concept.dependency_graph.prerequisites,
       ...concept.dependency_graph.unlocks,
       ...concept.dependency_graph.related_concepts,
       ...concept.dependency_graph.child_concepts,
     ]) {
-      if (!conceptIds.has(id)) {
+      if (!graphIds.has(id)) {
         issues.push({
           severity: "error",
           entityId: concept.id,
-          message: `Concept references missing concept ${id}`,
+          message:
+            id.startsWith("spine_")
+              ? `Concept references missing spine node ${id}`
+              : `Concept references missing concept ${id}`,
         });
       }
     }
 
     const parentId = concept.dependency_graph.parent_concept_id;
-    if (parentId?.startsWith("concept_") && !conceptIds.has(parentId)) {
+    if (parentId && !graphIds.has(parentId)) {
       issues.push({
         severity: "error",
         entityId: concept.id,
@@ -184,12 +210,12 @@ function validateConcepts(
       });
     }
 
-    const spineId = concept.spine_concept_id;
-    if (spineId?.startsWith("concept_") && !conceptIds.has(spineId)) {
+    const anchorId = concept.anchor_concept_id ?? concept.spine_concept_id;
+    if (anchorId?.startsWith("spine_") && spineIds.size > 0 && !spineIds.has(anchorId)) {
       issues.push({
-        severity: "warning",
+        severity: "error",
         entityId: concept.id,
-        message: `spine_concept_id ${spineId} is not present in this library bundle`,
+        message: `anchor_concept_id ${anchorId} is not present in the loaded spine`,
       });
     }
 
