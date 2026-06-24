@@ -182,11 +182,11 @@ export const ExportedQuestionSchema = z.object({
     stem: z.string(),
     options: z.array(
       z.object({
-        id: z.string().regex(/^opt_[A-D]$/),
+        id: z.string().regex(/^opt_[A-E]$/),
         text: z.string(),
       })
-    ),
-    correct_option_id: z.string(),
+    ).min(2),
+    correct_option_id: z.string().regex(/^opt_[A-E]$/),
   }),
   explanations: z.object({
     general: z.string(),
