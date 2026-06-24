@@ -1,0 +1,109 @@
+{
+  "id": "concept_exponential_decay",
+  "resolution_level": 3,
+  "content": {
+    "title": "Exponential Decay",
+    "definition": "A process in which a quantity decreases at a rate proportional to its current value, modeled by N(t) = N₀e^(−λt).",
+    "summary": "Exponential decay describes any system where the rate of loss is proportional to what remains. It appears across mathematics, physics, chemistry, biology, and medicine under different names but identical underlying mathematics."
+  },
+  "knowledge_graph": {
+    "knowledge_area": "Quantitative Reasoning",
+    "knowledge_cluster": "Change & Rate",
+    "primary_domain": "mathematics"
+  },
+  "dependency_graph": {
+    "parent_concept_id": "spine_math_precalculus",
+    "prerequisites": ["concept_exponential_functions", "concept_derivatives"],
+    "unlocks": ["concept_half_life", "concept_first_order_kinetics"]
+  },
+  "domain_contexts": [
+    {
+      "domain_id": "mathematics",
+      "framing": {
+        "title_in_context": "Exponential Decay",
+        "relevance": "Core example of differential equation solutions and the natural exponential function.",
+        "applications": ["Compound interest (reverse)", "Population decline", "Cooling curves"],
+        "max_resolution_in_context": 4
+      },
+      "hierarchy_location": {
+        "category": "Pre-Calculus & Functions",
+        "subcategory": "Function Families",
+        "topic": "Exponential & Logarithmic Functions",
+        "subtopic": null
+      },
+      "dependency_graph": {
+        "prerequisites_in_context": ["concept_exponential_functions", "concept_derivatives"],
+        "unlocks_in_context": ["concept_differential_equations_first_order"]
+      },
+      "linked_content": {
+        "card_ids": [],
+        "question_ids": []
+      }
+    },
+    {
+      "domain_id": "chemistry",
+      "framing": {
+        "title_in_context": "First-Order Reaction Kinetics",
+        "relevance": "Describes radioactive decay and first-order chemical reactions where rate depends on concentration of one reactant.",
+        "applications": ["Radioactive decay", "First-order reaction rates", "Half-life calculations"],
+        "max_resolution_in_context": 5
+      },
+      "hierarchy_location": {
+        "category": "Physical Chemistry",
+        "subcategory": "Chemical Kinetics",
+        "topic": "Reaction Orders",
+        "subtopic": "First-Order Kinetics"
+      },
+      "dependency_graph": {
+        "prerequisites_in_context": ["concept_reaction_rates", "concept_proportional_reasoning"],
+        "unlocks_in_context": ["concept_half_life", "concept_integrated_rate_laws"]
+      },
+      "linked_content": {
+        "card_ids": [],
+        "question_ids": []
+      }
+    },
+    {
+      "domain_id": "medicine_preclinical",
+      "framing": {
+        "title_in_context": "Drug Clearance & Elimination Kinetics",
+        "relevance": "First-order elimination is the default pharmacokinetic model for most drugs — understanding it is prerequisite to dosing, half-life, and steady-state reasoning.",
+        "applications": ["Drug half-life", "Steady-state concentration", "Dosing interval design"],
+        "max_resolution_in_context": 5
+      },
+      "hierarchy_location": {
+        "category": "Pharmacology",
+        "subcategory": "Pharmacokinetics",
+        "topic": "Drug Elimination",
+        "subtopic": "First-Order Kinetics"
+      },
+      "dependency_graph": {
+        "prerequisites_in_context": ["concept_volume_of_distribution", "concept_hepatic_metabolism"],
+        "unlocks_in_context": ["concept_steady_state", "concept_loading_dose", "concept_zero_order_kinetics"]
+      },
+      "linked_content": {
+        "card_ids": [],
+        "question_ids": []
+      }
+    }
+  ],
+  "metadata": {
+    "created_at": "2025-01-01T00:00:00Z",
+    "updated_at": "2025-01-01T00:00:00Z",
+    "created_by": "system_admin",
+    "version": "1.0",
+    "status": "published",
+    "source_references": [
+      {
+        "source": "OpenStax Calculus Volume 1",
+        "chapter": "6",
+        "section": "6.8"
+      },
+      {
+        "source": "OpenStax Chemistry 2e",
+        "chapter": "12",
+        "section": "12.4"
+      }
+    ]
+  }
+}

@@ -1,5 +1,6 @@
 import type { LibraryBundle } from "../types/libraryBundle.js";
 import { LibraryBundleSchema } from "../types/libraryBundle.js";
+import { aggregateLinkedContent } from "../types/domainContext.js";
 
 export const ALLOWED_RELATIONSHIP_TYPES = [
   "prerequisite",
@@ -120,8 +121,21 @@ export function validateLibraryBundle(bundle: LibraryBundle): LibraryConformance
   };
 }
 
+function conceptLinkedContent(concept: LibraryBundle["concepts"][number]): {
+  card_ids: string[];
+  question_ids: string[];
+} {
+  if (concept.domain_contexts?.length) {
+    return aggregateLinkedContent(concept.domain_contexts);
+  }
+  return concept.linked_content ?? { card_ids: [], question_ids: [] };
+}
+
 function validateManifest(bundle: LibraryBundle, issues: LibraryConformanceIssue[]): void {
-  if (bundle.manifest.id !== bundle.concepts[0]?.hierarchy.library_id) {
+  const libraryId =
+    bundle.concepts[0]?.knowledge_graph?.library_id ??
+    bundle.concepts[0]?.hierarchy?.library_id;
+  if (libraryId && bundle.manifest.id !== libraryId) {
     issues.push({
       severity: "error",
       entityId: bundle.manifest.id,
@@ -161,7 +175,25 @@ function validateConcepts(
       }
     }
 
-    for (const cardId of concept.linked_content.card_ids) {
+    const parentId = concept.dependency_graph.parent_concept_id;
+    if (parentId?.startsWith("concept_") && !conceptIds.has(parentId)) {
+      issues.push({
+        severity: "error",
+        entityId: concept.id,
+        message: `Concept references missing parent ${parentId}`,
+      });
+    }
+
+    const spineId = concept.spine_concept_id;
+    if (spineId?.startsWith("concept_") && !conceptIds.has(spineId)) {
+      issues.push({
+        severity: "warning",
+        entityId: concept.id,
+        message: `spine_concept_id ${spineId} is not present in this library bundle`,
+      });
+    }
+
+    for (const cardId of conceptLinkedContent(concept).card_ids) {
       if (!cardIds.has(cardId)) {
         issues.push({
           severity: "error",
@@ -171,7 +203,7 @@ function validateConcepts(
       }
     }
 
-    for (const questionId of concept.linked_content.question_ids) {
+    for (const questionId of conceptLinkedContent(concept).question_ids) {
       if (!questionIds.has(questionId)) {
         issues.push({
           severity: "error",
@@ -376,7 +408,7 @@ function validateCrossLinks(
 ): void {
   const linkedCards = new Set<string>();
   for (const concept of concepts) {
-    for (const cardId of concept.linked_content.card_ids) {
+    for (const cardId of conceptLinkedContent(concept).card_ids) {
       linkedCards.add(cardId);
     }
   }

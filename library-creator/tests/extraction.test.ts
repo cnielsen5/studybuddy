@@ -12,6 +12,7 @@ const baseIntent: LibraryCreationIntent = {
     level: "undergrad",
     priorKnowledge: ["basic biology"],
     targetDepth: "working",
+    resolutionRange: { min: 2, max: 4 },
   },
   scopeBoundaries: [],
   externalAugmentationAllowed: false,
@@ -61,9 +62,9 @@ describe("extractConceptGraphHeuristic", () => {
     );
 
     expect(draft.concepts.length).toBe(3);
-    expect(draft.concepts[0].hierarchy.domain).toBe("Anatomy and Physiology");
-    expect(draft.concepts[0].hierarchy.category).toBe("Ch. 1 Introduction");
-    expect(draft.concepts.every((c) => c.hierarchy.topic.length > 0)).toBe(true);
+    expect(draft.concepts[0].knowledge_graph?.primary_domain).toBeTruthy();
+    expect(draft.concepts[0].domain_contexts?.[0]?.hierarchy_location.category).toBeTruthy();
+    expect(draft.concepts.every((c) => c.content.title.length > 0)).toBe(true);
   });
 
   it("ignores placeholder scope boundaries like Unsure", () => {

@@ -48,6 +48,11 @@ export function buildLibraryBundle(input: BuildLibraryBundleInput): LibraryBundl
     updated_at: now,
     status: contentStatus,
     tags: collectTags(concepts, input.intent),
+    audience: {
+      level: input.intent.audience.level,
+      targetDepth: input.intent.audience.targetDepth,
+      resolutionRange: input.intent.audience.resolutionRange,
+    },
   };
 
   return LibraryBundleSchema.parse({
@@ -77,6 +82,7 @@ function exportConcept(
     media: concept.media ?? [],
     references: concept.references ?? [],
     dependency_graph: {
+      parent_concept_id: concept.dependency_graph.parent_concept_id,
       prerequisites: concept.dependency_graph.prerequisites,
       unlocks: concept.dependency_graph.unlocks,
       related_concepts: concept.dependency_graph.related_concepts,

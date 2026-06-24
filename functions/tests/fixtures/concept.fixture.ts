@@ -14,6 +14,7 @@
 export const validConcept = {
   id: "concept_0001",
   type: "concept",
+  resolution_level: 3 as const,
 
   metadata: {
     created_at: "2025-11-03T00:00:00Z",
@@ -48,6 +49,7 @@ export const validConcept = {
   },
 
   dependency_graph: {
+    parent_concept_id: undefined,
     prerequisites: [],
     unlocks: [],
     child_concepts: [],

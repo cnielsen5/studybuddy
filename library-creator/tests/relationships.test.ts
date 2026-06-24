@@ -13,6 +13,7 @@ const baseIntent: LibraryCreationIntent = {
     level: "undergrad",
     priorKnowledge: ["basic biology"],
     targetDepth: "working",
+    resolutionRange: { min: 2, max: 4 },
   },
   scopeBoundaries: [],
   externalAugmentationAllowed: false,

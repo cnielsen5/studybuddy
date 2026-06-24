@@ -24,6 +24,7 @@ import {
   nodeRadius,
 } from "../lib/conceptMapForceLayout";
 import { computeConceptGraphMetrics } from "../lib/conceptMapMetrics";
+import { libraryBundleAtResolution, resolutionRangeFromManifest } from "../lib/resolution";
 
 interface ConceptMapGraphProps {
   bundle: LibraryBundle;
@@ -53,13 +54,28 @@ export function ConceptMapGraph({
   const [hoveredId, setHoveredId] = useState<string | null>(null);
   const dragRef = useRef<{ x: number; y: number; panX: number; panY: number } | null>(null);
 
-  const taxonomyTree = useMemo(() => buildTaxonomyTree(bundle), [bundle]);
-  const conceptPositions = useMemo(() => layoutConceptPositions(bundle), [bundle]);
+  const resolutionRange = useMemo(
+    () => resolutionRangeFromManifest(bundle.manifest),
+    [bundle.manifest]
+  );
+  const scopedBundle = useMemo(
+    () => libraryBundleAtResolution(bundle, resolutionRange),
+    [bundle, resolutionRange]
+  );
+
+  const taxonomyTree = useMemo(
+    () => buildTaxonomyTree(scopedBundle, resolutionRange),
+    [scopedBundle, resolutionRange]
+  );
+  const conceptPositions = useMemo(
+    () => layoutConceptPositions(scopedBundle),
+    [scopedBundle]
+  );
   const allPositions = useMemo(
     () => layoutTaxonomyNodes(taxonomyTree, conceptPositions),
     [taxonomyTree, conceptPositions]
   );
-  const metrics = useMemo(() => computeConceptGraphMetrics(bundle), [bundle]);
+  const metrics = useMemo(() => computeConceptGraphMetrics(scopedBundle), [scopedBundle]);
 
   const activeLevel = zoomScaleToLevel(scale);
   const visibleNodes = useMemo(
@@ -88,7 +104,7 @@ export function ConceptMapGraph({
 
   const conceptEdges = useMemo(() => {
     if (activeLevel !== "concept") return [];
-    return getStructuralEdges(buildConceptMapEdges(bundle));
+    return getStructuralEdges(buildConceptMapEdges(scopedBundle));
   }, [bundle, activeLevel]);
 
   const conceptNodeByConceptId = useMemo(() => {
@@ -381,10 +397,13 @@ function truncate(text: string, max: number): string {
 }
 
 export function conceptMapStats(bundle: LibraryBundle) {
-  const tree = buildTaxonomyTree(bundle);
+  const resolutionRange = resolutionRangeFromManifest(bundle.manifest);
+  const scopedBundle = libraryBundleAtResolution(bundle, resolutionRange);
+  const tree = buildTaxonomyTree(scopedBundle, resolutionRange);
   return {
     domains: nodesAtLevel(tree, "domain").length,
     categories: nodesAtLevel(tree, "category").length,
-    concepts: bundle.concepts.length,
+    concepts: scopedBundle.concepts.length,
+    resolutionRange,
   };
 }

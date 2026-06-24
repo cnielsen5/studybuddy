@@ -1,5 +1,13 @@
 import type { DomainProfile } from "../types/domainProfile.js";
 import type { LibraryCreationIntent } from "../types/intent.js";
+import {
+  buildDomainContextFromLegacy,
+  ensureLinkedContentAggregate,
+} from "../types/domainContext.js";
+import {
+  inferResolutionFromHierarchy,
+  isWithinResolutionRange,
+} from "../types/resolution.js";
 import type { ParsedSource } from "../types/parsedSource.js";
 import {
   ConceptGraphDraftSchema,
@@ -25,6 +33,8 @@ interface OpenAIConceptResponse {
     difficulty?: "basic" | "intermediate" | "advanced";
     high_yield_score?: number;
     prerequisites?: string[];
+    spine_concept_id?: string;
+    parent_concept_id?: string;
   }>;
 }
 
@@ -146,14 +156,46 @@ function normalizeOpenAIResponse(
   const usedIds = new Set<string>();
   const titleToId = new Map<string, string>();
 
-  const concepts = response.concepts.slice(0, maxConcepts).map((item) => {
+  const concepts = response.concepts
+    .slice(0, maxConcepts)
+    .map((item) => {
     const slug = slugify(item.title);
     const id = uniqueConceptIdFromSlug(slug, usedIds);
     titleToId.set(item.title.toLowerCase(), id);
 
-    return {
+    const hierarchyPlacement = {
+      category: item.category ?? intent.domain,
+      subcategory: intent.purpose.replace(/_/g, " "),
+      topic: item.title,
+      subtopic: item.subtopic,
+    };
+    const resolutionLevel = inferResolutionFromHierarchy({
+      domain: intent.domain,
+      ...hierarchyPlacement,
+    });
+
+    if (!isWithinResolutionRange(resolutionLevel, intent.audience.resolutionRange)) {
+      return null;
+    }
+
+    const { knowledge_graph, domain_context } = buildDomainContextFromLegacy({
+      domain: intent.domain,
+      libraryId: proposedLibraryId,
+      hierarchy: hierarchyPlacement,
+      resolutionLevel,
+    });
+    if (item.parent_concept_id) {
+      domain_context.dependency_graph = {
+        prerequisites_in_context: [],
+        unlocks_in_context: [],
+      };
+    }
+
+    const concept = {
       id,
       type: "concept" as const,
+      resolution_level: resolutionLevel,
+      spine_concept_id: item.spine_concept_id,
       metadata: {
         created_at: now,
         updated_at: now,
@@ -171,17 +213,17 @@ function normalizeOpenAIResponse(
       hierarchy: {
         library_id: proposedLibraryId,
         domain: intent.domain,
-        category: item.category ?? intent.domain,
-        subcategory: intent.purpose.replace(/_/g, " "),
-        topic: item.title,
-        subtopic: item.subtopic,
+        ...hierarchyPlacement,
       },
+      knowledge_graph,
+      domain_contexts: [domain_context],
       content: {
         title: item.title,
         definition: item.definition,
         summary: item.summary,
       },
       dependency_graph: {
+        parent_concept_id: item.parent_concept_id,
         prerequisites: [],
         unlocks: [],
         related_concepts: [],
@@ -201,7 +243,16 @@ function normalizeOpenAIResponse(
         confidence: 0.8,
       },
     };
-  });
+    ensureLinkedContentAggregate(concept);
+    return concept;
+  })
+    .filter((concept): concept is NonNullable<typeof concept> => concept !== null);
+
+  if (concepts.length === 0) {
+    throw new Error(
+      "No AI-extracted concepts fell within the audience resolution window."
+    );
+  }
 
   const suggestedPrerequisites: ConceptGraphDraft["suggestedPrerequisites"] = [];
 

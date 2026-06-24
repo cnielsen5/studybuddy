@@ -113,11 +113,11 @@ function validateConcept(
     }
   }
 
-  if (!concept.hierarchy.domain.trim()) {
+  if (!concept.hierarchy?.domain?.trim() && !concept.domain_contexts?.length) {
     issues.push({
       severity: "error",
       conceptId: concept.id,
-      message: "Missing hierarchy.domain",
+      message: "Missing domain_contexts or legacy hierarchy.domain",
     });
   }
 }

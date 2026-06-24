@@ -17,6 +17,57 @@ import { z } from "zod";
 
 const idPrefix = (prefix: string) => z.string().startsWith(prefix);
 
+const spineOrConceptId = z.string().regex(/^(concept_|spine_)[a-z0-9_]+$/);
+
+const resolutionLevel = z.union([
+  z.literal(1),
+  z.literal(2),
+  z.literal(3),
+  z.literal(4),
+  z.literal(5),
+]);
+
+const domainId = z.string().regex(/^[a-z][a-z0-9_]*$/);
+
+const domainContextFramingSchema = z.object({
+  title_in_context: z.string().optional(),
+  relevance: z.string(),
+  applications: z.array(z.string()),
+  max_resolution_in_context: resolutionLevel,
+});
+
+const domainContextSchema = z.object({
+  domain_id: domainId,
+  framing: domainContextFramingSchema,
+  hierarchy_location: z.object({
+    category: z.string(),
+    subcategory: z.string(),
+    topic: z.string(),
+    subtopic: z.string().nullable().optional(),
+  }),
+  dependency_graph: z.object({
+    prerequisites_in_context: z.array(spineOrConceptId),
+    unlocks_in_context: z.array(spineOrConceptId),
+  }),
+  linked_content: z.object({
+    card_ids: z.array(idPrefix("card_")),
+    question_ids: z.array(idPrefix("q_")),
+  }),
+});
+
+const knowledgeGraphSchema = z.object({
+  knowledge_area: z.string(),
+  knowledge_cluster: z.string(),
+  primary_domain: domainId,
+  library_id: z.string().optional(),
+});
+
+const conceptSourceReferenceSchema = z.object({
+  source: z.string(),
+  chapter: z.string(),
+  section: z.string().optional(),
+});
+
 const isoDateTime = z.string().datetime();
 
 // ============================================================================
@@ -29,6 +80,7 @@ export const CardSchema = z.object({
 
   relations: z.object({
     concept_id: idPrefix("concept_"),
+    domain_id: domainId.optional(),
     related_question_ids: z.array(idPrefix("q_")).optional(),
   }),
 
@@ -124,6 +176,8 @@ export const QuestionSchema = z.object({
 export const ConceptSchema = z.object({
   id: idPrefix("concept_"),
   type: z.literal("concept"),
+  resolution_level: resolutionLevel.default(3),
+  spine_concept_id: spineOrConceptId.optional(),
 
   metadata: z.object({
     created_at: isoDateTime,
@@ -135,6 +189,7 @@ export const ConceptSchema = z.object({
     tags: z.array(z.string()),
     search_keywords: z.array(z.string()).optional(),
     version_history: z.array(z.any()).optional(),
+    source_references: z.array(conceptSourceReferenceSchema).optional(),
   }),
 
   editorial: z.object({
@@ -143,13 +198,16 @@ export const ConceptSchema = z.object({
   }).optional(),
 
   hierarchy: z.object({
-    library_id: z.string(), // May not always have lib_ prefix in fixtures
+    library_id: z.string(),
     domain: z.string(),
     category: z.string(),
     subcategory: z.string(),
     topic: z.string(),
     subtopic: z.string().optional(),
-  }),
+  }).optional(),
+
+  knowledge_graph: knowledgeGraphSchema.optional(),
+  domain_contexts: z.array(domainContextSchema).optional(),
 
   content: z.object({
     title: z.string(),
@@ -158,6 +216,7 @@ export const ConceptSchema = z.object({
   }),
 
   dependency_graph: z.object({
+    parent_concept_id: spineOrConceptId.optional(),
     prerequisites: z.array(idPrefix("concept_")),
     unlocks: z.array(idPrefix("concept_")),
     related_concepts: z.array(idPrefix("concept_")),
@@ -177,7 +236,7 @@ export const ConceptSchema = z.object({
   linked_content: z.object({
     card_ids: z.array(idPrefix("card_")),
     question_ids: z.array(idPrefix("q_")),
-  }),
+  }).optional(),
 });
 
 export const QuestionAttemptSchema = z.object({

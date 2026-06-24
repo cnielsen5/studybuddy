@@ -1,6 +1,12 @@
 import { validateLibraryBundle } from "../export/libraryConformance.js";
 import type { LibraryBundle } from "../types/libraryBundle.js";
 import { LibraryBundleSchema } from "../types/libraryBundle.js";
+import { inferResolutionFromHierarchy } from "../types/resolution.js";
+import {
+  buildDomainContextFromLegacy,
+  ensureLinkedContentAggregate,
+  slugifyDomainId,
+} from "../types/domainContext.js";
 import { parseCsv, rowsToRecords } from "./parseCsv.js";
 
 export interface SheetsImportInput {
@@ -44,10 +50,33 @@ export function importSheetsToLibraryBundle(
     }
 
     const conceptId = toConceptId(rawId);
+    const domainLabel = record.domain || "Recon";
+    const resolutionLevel = inferResolutionFromHierarchy({
+      domain: domainLabel,
+      category: record.category || domainLabel,
+      subcategory: record.subcategory || record.category || "General",
+      topic: record.topic || record.concept_title || rawId,
+      subtopic: record.subtopic || undefined,
+    });
+    const { knowledge_graph, domain_context } = buildDomainContextFromLegacy({
+      domain: domainLabel,
+      libraryId,
+      hierarchy: {
+        category: record.category || domainLabel,
+        subcategory: record.subcategory || record.category || "General",
+        topic: record.topic || record.concept_title || rawId,
+        subtopic: record.subtopic || undefined,
+      },
+      resolutionLevel,
+      relevance: record.source_name
+        ? `Imported from ${record.source_name}`
+        : undefined,
+    });
 
-    concepts.push({
+    const concept: LibraryBundle["concepts"][number] = {
       id: conceptId,
       type: "concept",
+      resolution_level: resolutionLevel,
       metadata: {
         created_at: parseSheetDate(record.created_at, now),
         updated_at: parseSheetDate(record.updated_at, now),
@@ -65,18 +94,21 @@ export function importSheetsToLibraryBundle(
       },
       hierarchy: {
         library_id: libraryId,
-        domain: record.domain || "Recon",
-        category: record.category || record.domain || "Recon",
+        domain: domainLabel,
+        category: record.category || domainLabel,
         subcategory: record.subcategory || record.category || "General",
         topic: record.topic || record.concept_title || rawId,
         subtopic: record.subtopic || undefined,
       },
+      knowledge_graph,
+      domain_contexts: [domain_context],
       content: {
         title: record.concept_title || rawId,
         definition: record.concept_definition || record.concept_title || "",
         summary: record.concept_summary || record.concept_definition || "",
       },
       dependency_graph: {
+        parent_concept_id: undefined,
         prerequisites: splitList(record.prerequisites).map(toConceptId),
         unlocks: [],
         related_concepts: [],
@@ -92,12 +124,13 @@ export function importSheetsToLibraryBundle(
       references: record.source_name
         ? [{ source: record.source_name, chapter: record.source_chapter }]
         : [],
-      linked_content: {
-        card_ids: [],
-        question_ids: [],
-      },
-    });
+      linked_content: { card_ids: [], question_ids: [] },
+    };
+    ensureLinkedContentAggregate(concept);
+    concepts.push(concept);
   }
+
+  const importDomainId = slugifyDomainId(conceptRecords[0]?.domain || "recon");
 
   const cards: LibraryBundle["cards"] = cardRecords
     .filter((record) => record["Card ID"]?.trim())
@@ -113,7 +146,7 @@ export function importSheetsToLibraryBundle(
       return {
         id: cardId,
         type: "card" as const,
-        relations: { concept_id: conceptId },
+        relations: { concept_id: conceptId, domain_id: importDomainId },
         config: {
           card_type: cardType,
           pedagogical_role: mapPedagogicalRole(record.pedagogicalRole, cardType),
@@ -220,9 +253,17 @@ export function importSheetsToLibraryBundle(
     if (!concept) {
       continue;
     }
-    if (!concept.linked_content.card_ids.includes(card.id)) {
-      concept.linked_content.card_ids.push(card.id);
+    const domainContext = concept.domain_contexts?.find(
+      (context) => context.domain_id === importDomainId
+    );
+    const linked = domainContext?.linked_content ?? concept.linked_content;
+    if (!linked) {
+      continue;
     }
+    if (!linked.card_ids.includes(card.id)) {
+      linked.card_ids.push(card.id);
+    }
+    ensureLinkedContentAggregate(concept);
   }
 
   for (const question of questions) {
@@ -231,9 +272,17 @@ export function importSheetsToLibraryBundle(
       if (!concept) {
         continue;
       }
-      if (!concept.linked_content.question_ids.includes(question.id)) {
-        concept.linked_content.question_ids.push(question.id);
+      const domainContext = concept.domain_contexts?.find(
+        (context) => context.domain_id === importDomainId
+      );
+      const linked = domainContext?.linked_content ?? concept.linked_content;
+      if (!linked) {
+        continue;
       }
+      if (!linked.question_ids.includes(question.id)) {
+        linked.question_ids.push(question.id);
+      }
+      ensureLinkedContentAggregate(concept);
     }
   }
 

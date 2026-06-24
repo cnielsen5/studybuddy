@@ -13,6 +13,7 @@ const baseIntent: LibraryCreationIntent = {
     level: "undergrad",
     priorKnowledge: ["basic biology"],
     targetDepth: "working",
+    resolutionRange: { min: 2, max: 4 },
   },
   scopeBoundaries: [],
   externalAugmentationAllowed: false,
@@ -63,9 +64,12 @@ describe("generateCardsQuestionsHeuristic", () => {
     );
 
     for (const concept of concepts) {
-      expect(concept.linked_content.card_ids.length).toBeGreaterThan(0);
-      expect(concept.linked_content.question_ids.length).toBeGreaterThan(0);
+      const domainContext = concept.domain_contexts?.[0];
+      expect(domainContext?.linked_content.card_ids.length).toBeGreaterThan(0);
+      expect(domainContext?.linked_content.question_ids.length).toBeGreaterThan(0);
     }
+
+    expect(draft.cards.every((card) => card.relations.domain_id)).toBe(true);
 
     const validation = validateCardsQuestionsDraft(draft, concepts);
     expect(validation.valid).toBe(true);

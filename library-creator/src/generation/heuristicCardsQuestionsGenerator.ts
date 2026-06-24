@@ -1,6 +1,12 @@
 import type { DraftConcept } from "../types/draftConcept.js";
 import type { DomainProfile } from "../types/domainProfile.js";
 import type { LibraryCreationIntent } from "../types/intent.js";
+import { filterConceptsByResolution } from "../types/resolution.js";
+import {
+  ensureLinkedContentAggregate,
+  slugifyDomainId,
+  writeLinkedContentToDomainContext,
+} from "../types/domainContext.js";
 import {
   CardsQuestionsDraftSchema,
   type CardsQuestionsDraft,
@@ -23,18 +29,27 @@ export function generateCardsQuestionsHeuristic(
   const questions: DraftQuestion[] = [];
   const usedCardIds = new Set<string>();
   const usedQuestionIds = new Set<string>();
+  const inScopeConcepts = filterConceptsByResolution(
+    input.concepts,
+    input.intent.audience.resolutionRange
+  );
 
-  for (const concept of input.concepts) {
+  for (const concept of inScopeConcepts) {
     const conceptSlug = conceptSlugFromId(concept.id);
+    const domainId =
+      concept.knowledge_graph?.primary_domain ?? slugifyDomainId(input.intent.domain);
+    const domainContext = concept.domain_contexts?.find(
+      (context) => context.domain_id === domainId
+    );
     const cardIds: string[] = [];
     const questionIds: string[] = [];
 
-    const recallCard = buildRecallCard(concept, conceptSlug, now, usedCardIds);
+    const recallCard = buildRecallCard(concept, conceptSlug, domainId, now, usedCardIds);
     cards.push(recallCard);
     cardIds.push(recallCard.id);
 
     if (input.domainProfile.cardTypeWeights.cloze >= 0.2) {
-      const clozeCard = buildClozeCard(concept, conceptSlug, now, usedCardIds);
+      const clozeCard = buildClozeCard(concept, conceptSlug, domainId, now, usedCardIds);
       if (clozeCard) {
         cards.push(clozeCard);
         cardIds.push(clozeCard.id);
@@ -42,7 +57,7 @@ export function generateCardsQuestionsHeuristic(
     }
 
     if (input.domainProfile.cardTierWeights.extension >= 0.15) {
-      const appCard = buildApplicationCard(concept, conceptSlug, now, usedCardIds);
+      const appCard = buildApplicationCard(concept, conceptSlug, domainId, now, usedCardIds);
       cards.push(appCard);
       cardIds.push(appCard.id);
     }
@@ -76,8 +91,14 @@ export function generateCardsQuestionsHeuristic(
       recallCard.relations.related_question_ids = [questionIds[0]];
     }
 
-    concept.linked_content.card_ids = cardIds;
-    concept.linked_content.question_ids = questionIds;
+    if (domainContext) {
+      writeLinkedContentToDomainContext(concept, domainId, cardIds, questionIds);
+    } else if (concept.linked_content) {
+      concept.linked_content.card_ids = cardIds;
+      concept.linked_content.question_ids = questionIds;
+    } else {
+      ensureLinkedContentAggregate(concept);
+    }
   }
 
   const draft: CardsQuestionsDraft = {
@@ -124,6 +145,7 @@ function uniqueQuestionId(base: string, used: Set<string>): string {
 function buildRecallCard(
   concept: DraftConcept,
   conceptSlug: string,
+  domainId: string,
   now: string,
   used: Set<string>
 ): DraftCard {
@@ -131,7 +153,7 @@ function buildRecallCard(
   return {
     id: uniqueCardId(`${conceptSlug}_def`, used),
     type: "card",
-    relations: { concept_id: concept.id },
+    relations: { concept_id: concept.id, domain_id: domainId },
     config: {
       card_type: "basic",
       pedagogical_role: "recall",
@@ -159,6 +181,7 @@ function buildRecallCard(
 function buildClozeCard(
   concept: DraftConcept,
   conceptSlug: string,
+  domainId: string,
   now: string,
   used: Set<string>
 ): DraftCard | null {
@@ -170,7 +193,7 @@ function buildClozeCard(
   return {
     id: uniqueCardId(`${conceptSlug}_cloze`, used),
     type: "card",
-    relations: { concept_id: concept.id },
+    relations: { concept_id: concept.id, domain_id: domainId },
     config: {
       card_type: "cloze",
       pedagogical_role: "recall",
@@ -207,6 +230,7 @@ function buildClozeCard(
 function buildApplicationCard(
   concept: DraftConcept,
   conceptSlug: string,
+  domainId: string,
   now: string,
   used: Set<string>
 ): DraftCard {
@@ -214,7 +238,7 @@ function buildApplicationCard(
   return {
     id: uniqueCardId(`${conceptSlug}_app`, used),
     type: "card",
-    relations: { concept_id: concept.id },
+    relations: { concept_id: concept.id, domain_id: domainId },
     config: {
       card_type: "basic",
       pedagogical_role: "application",

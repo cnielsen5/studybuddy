@@ -5,6 +5,7 @@ import type {
   LibraryCreationIntent,
   LibraryPurpose,
 } from "../types/intent.js";
+import { defaultResolutionRangeForLevel } from "../types/resolution.js";
 
 export interface PromptOptions {
   rl?: ReturnType<typeof createInterface>;
@@ -63,6 +64,12 @@ export async function collectLibraryCreationIntent(
       "working"
     );
 
+    const resolutionRange = defaultResolutionRangeForLevel(audienceLevel);
+    console.log(
+      `\nResolution window: levels ${resolutionRange.min}–${resolutionRange.max} ` +
+        `(granularity for this audience; hierarchy location is unchanged).`
+    );
+
     const priorRaw = await ask(
       rl,
       "Prerequisites assumed known (comma-separated, or leave blank)",
@@ -104,6 +111,7 @@ export async function collectLibraryCreationIntent(
         level: audienceLevel,
         priorKnowledge,
         targetDepth,
+        resolutionRange,
       },
       scopeBoundaries,
       externalAugmentationAllowed: augment,

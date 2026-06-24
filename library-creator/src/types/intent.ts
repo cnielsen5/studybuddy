@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { ResolutionRangeSchema } from "./resolution.js";
 
 export const AudienceLevelSchema = z.enum([
   "highschool",
@@ -21,6 +22,7 @@ export const AudienceProfileSchema = z.object({
   level: AudienceLevelSchema,
   priorKnowledge: z.array(z.string()),
   targetDepth: TargetDepthSchema,
+  resolutionRange: ResolutionRangeSchema,
 });
 
 export type AudienceProfile = z.infer<typeof AudienceProfileSchema>;

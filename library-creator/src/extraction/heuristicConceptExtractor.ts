@@ -1,5 +1,13 @@
 import type { DomainProfile } from "../types/domainProfile.js";
 import type { LibraryCreationIntent } from "../types/intent.js";
+import {
+  buildDomainContextFromLegacy,
+  ensureLinkedContentAggregate,
+} from "../types/domainContext.js";
+import {
+  inferResolutionFromHierarchy,
+  isWithinResolutionRange,
+} from "../types/resolution.js";
 import { titleFromContentLine } from "../ingestors/contentTitles.js";
 import type { ContentBlockType, ParsedSection, ParsedSource } from "../types/parsedSource.js";
 import type {
@@ -41,14 +49,39 @@ export function extractConceptGraphHeuristic(
 
   const hierarchyContext = buildHierarchyContext(intent, parsedSource, domainProfile);
 
-  const concepts: DraftConcept[] = candidates.map((block, index) => {
+  const concepts: DraftConcept[] = candidates
+    .map((block, index) => {
     const title = conceptTitleFromBlock(block);
     const id = uniqueConceptId(title, usedIds);
     const placement = assignConceptHierarchy(block, hierarchyContext, index, candidates.length);
+    const resolutionLevel = inferResolutionFromHierarchy({
+      domain: placement.domain,
+      category: placement.category,
+      subcategory: placement.subcategory,
+      topic: title,
+      subtopic: placement.subtopic,
+    });
 
-    return {
+    if (!isWithinResolutionRange(resolutionLevel, intent.audience.resolutionRange)) {
+      return null;
+    }
+
+    const { knowledge_graph, domain_context } = buildDomainContextFromLegacy({
+      domain: intent.domain,
+      libraryId: proposedLibraryId,
+      hierarchy: {
+        category: placement.category,
+        subcategory: placement.subcategory,
+        topic: title,
+        subtopic: placement.subtopic,
+      },
+      resolutionLevel,
+    });
+
+    const concept: DraftConcept = {
       id,
-      type: "concept",
+      type: "concept" as const,
+      resolution_level: resolutionLevel,
       metadata: {
         created_at: now,
         updated_at: now,
@@ -63,9 +96,11 @@ export function extractConceptGraphHeuristic(
         difficulty: inferDifficulty(intent, domainProfile, block, index, candidates.length),
         high_yield_score: inferHighYield(intent, block, index, candidates.length),
       },
+      knowledge_graph,
+      domain_contexts: [domain_context],
       hierarchy: {
         library_id: proposedLibraryId,
-        domain: placement.domain,
+        domain: intent.domain,
         category: placement.category,
         subcategory: placement.subcategory,
         topic: title,
@@ -77,6 +112,7 @@ export function extractConceptGraphHeuristic(
         summary: summarizeBody(block.body, title),
       },
       dependency_graph: {
+        parent_concept_id: undefined,
         prerequisites: [],
         unlocks: [],
         related_concepts: [],
@@ -90,10 +126,7 @@ export function extractConceptGraphHeuristic(
       },
       media: [],
       references: [],
-      linked_content: {
-        card_ids: [],
-        question_ids: [],
-      },
+      linked_content: { card_ids: [], question_ids: [] },
       provenance: {
         sourceSectionIndex: block.sequence,
         sourceSectionTitle: block.title,
@@ -103,7 +136,16 @@ export function extractConceptGraphHeuristic(
         confidence: confidenceForBlock(block),
       },
     };
-  });
+    ensureLinkedContentAggregate(concept);
+    return concept;
+  })
+    .filter((concept): concept is DraftConcept => concept !== null);
+
+  if (concepts.length === 0) {
+    throw new Error(
+      "No concepts fell within the audience resolution window. Widen resolutionRange or add more detailed source content."
+    );
+  }
 
   const suggestedPrerequisites = inferDomainOrderedPrerequisites(concepts);
   applyPrerequisites(concepts, suggestedPrerequisites);
@@ -450,7 +492,13 @@ function inferDomainOrderedPrerequisites(
   for (let i = 1; i < concepts.length; i += 1) {
     const prev = concepts[i - 1];
     const curr = concepts[i];
-    if (prev.hierarchy.subcategory === curr.hierarchy.subcategory) {
+    const prevCluster =
+      prev.domain_contexts?.[0]?.hierarchy_location.subcategory ??
+      prev.hierarchy?.subcategory;
+    const currCluster =
+      curr.domain_contexts?.[0]?.hierarchy_location.subcategory ??
+      curr.hierarchy?.subcategory;
+    if (prevCluster && currCluster && prevCluster === currCluster) {
       edges.push({
         from_concept_id: prev.id,
         to_concept_id: curr.id,

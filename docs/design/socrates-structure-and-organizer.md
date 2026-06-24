@@ -149,8 +149,17 @@ Socrates Structure and Organizer
                 "description": "Shared content library for cardiovascular pathology.",
                 "domain": "Medicine",
                 "status": "published",
-                "tags": ["usmle", "pathology", "cardiovascular"]
+                "tags": ["usmle", "pathology", "cardiovascular"],
+                "audience": {
+                    "level": "professional",
+                    "targetDepth": "mastery",
+                    "resolutionRange": { "min": 3, "max": 5 }
                 }
+                }
+
+            Canonical reference templates
+                content/templates/universal-concept.master.json — spine-build master (no cards yet)
+                content/LIBRARY_FORMAT.md — bundle export spec and validation rules
 
             Graph consistency rule
                 Learning order is expressed in two places that must agree:
@@ -162,9 +171,40 @@ Socrates Structure and Organizer
                 from-concept must include the to-concept.
 
     5.2 Concepts
-            The most basic unit of the concept map, houses multiple cards 
+            The most basic unit of the concept map. One universal concept node may appear
+            in multiple domain lenses via domain_contexts[] — it is not owned by a single
+            domain hierarchy field.
+
+            Architectural principles (2026-03)
+                Location vs resolution are orthogonal
+                    hierarchy_location (per domain context) = stable address in that domain's taxonomy
+                    resolution_level (1–5) = granularity of the universal node itself
+                Universal concept identity
+                    concept_* id is shared across libraries; CLKT aligns on exact id match first
+                Domain lenses
+                    domain_contexts[] holds per-domain framing, taxonomy placement, context-specific
+                    prerequisites, and linked cards/questions for that lens
+                Linked content lifecycle
+                    Spine build: domain_contexts[].linked_content is empty (expected)
+                    Library creation: library-creator writes card/question ids back into the
+                    active domain context (writeLinkedContentToDomainContext); aggregate mirror
+                    at top-level linked_content for conformance tooling
+
+            Resolution levels (resolution_level on concept)
+                1 = domain overview          ("Cardiovascular System")
+                2 = major subdivision        ("Cardiac Physiology")
+                3 = working concept          ("Cardiac Preload") — spine ↔ library overlap zone
+                4 = mechanistic detail       ("Frank-Starling Mechanism")
+                5 = granular / specialist    ("Titin passive tension")
+
+            Audience resolution window (manifest.audience.resolutionRange)
+                Controls which resolution levels are in scope when creating or viewing a library
+                Examples: highschool 2–3, undergrad 2–4, USMLE Step 1 3–4, fellowship 3–5
+                Per-domain cap: domain_contexts[].framing.max_resolution_in_context
+
             Source
-                AI-generated
+                AI-generated (library-creator pipeline)
+                Spine authoring (universal L1–3, then domain context layers, then AI L4–5)
             Qualities
                 Centroid Vector
                     Average of all semantic vectors of cards contained within this concept
@@ -216,11 +256,86 @@ Socrates Structure and Organizer
                 Remedial Cards
                     Targeted repair cards for weak or misconception-prone areas
                     Tagged via config.card_tier: "remedial"
-            JSON (Master Template)
+            JSON (Master Template — universal concept with domain lenses)
+                See content/templates/universal-concept.master.json for the full reference
+                (concept_exponential_decay with mathematics, chemistry, medicine_preclinical contexts).
+
+                {
+                "id": "concept_exponential_decay",
+                "resolution_level": 3,
+                "_comment": "Universal Golden Master. Domain-neutral core; lenses in domain_contexts.",
+
+                "content": {
+                    "title": "Exponential Decay",
+                    "definition": "Quantity decreases at a rate proportional to its current value.",
+                    "summary": "Same mathematics across math, chemistry, biology, and medicine."
+                },
+
+                "knowledge_graph": {
+                    "_comment": "Universal graph position — NOT domain ownership.",
+                    "knowledge_area": "Quantitative Reasoning",
+                    "knowledge_cluster": "Change & Rate",
+                    "primary_domain": "mathematics"
+                },
+
+                "dependency_graph": {
+                    "_comment": "Universal learning order across domains.",
+                    "parent_concept_id": "spine_math_precalculus",
+                    "prerequisites": ["concept_exponential_functions", "concept_derivatives"],
+                    "unlocks": ["concept_half_life", "concept_first_order_kinetics"]
+                },
+
+                "domain_contexts": [
+                    {
+                    "domain_id": "mathematics",
+                    "framing": {
+                        "title_in_context": "Exponential Decay",
+                        "relevance": "Core differential equation example.",
+                        "applications": ["Population decline", "Cooling curves"],
+                        "max_resolution_in_context": 4
+                    },
+                    "hierarchy_location": {
+                        "category": "Pre-Calculus & Functions",
+                        "subcategory": "Function Families",
+                        "topic": "Exponential & Logarithmic Functions",
+                        "subtopic": null
+                    },
+                    "dependency_graph": {
+                        "prerequisites_in_context": ["concept_exponential_functions"],
+                        "unlocks_in_context": ["concept_differential_equations_first_order"]
+                    },
+                    "linked_content": {
+                        "_comment": "Empty at spine-build; populated by library-creator write-back.",
+                        "card_ids": [],
+                        "question_ids": []
+                    }
+                    }
+                ],
+
+                "metadata": {
+                    "created_at": "2025-01-01T00:00:00Z",
+                    "updated_at": "2025-01-01T00:00:00Z",
+                    "created_by": "system_admin",
+                    "version": "1.0",
+                    "status": "published",
+                    "source_references": [
+                    { "source": "OpenStax Calculus Volume 1", "chapter": "6", "section": "6.8" }
+                    ]
+                },
+
+                "mastery_config": { "threshold": 0.8, "decay_rate": "standard", "min_questions_correct": 1 },
+                "linked_content": { "_comment": "Aggregate mirror after library creation", "card_ids": [], "question_ids": [] }
+                }
+
+            Legacy concept shape (deprecated — migration only)
+                Top-level hierarchy { domain, category, ... } encoded single-domain ownership.
+                New spine and library content must use domain_contexts[] instead.
+
+            JSON (Legacy single-domain example — do not use for new content)
                 {
                 "id": "concept_0001",
                 "type": "concept",
-                "_comment": "Static, read-only Golden Master record shared by all users. Contains only semantic, structural, and editorial intent.",
+                "_comment": "DEPRECATED pattern. Use universal template above.",
 
                 "metadata": {
                     "created_at": "2025-11-03T00:00:00Z",
@@ -423,10 +538,11 @@ Socrates Structure and Organizer
                     "_comment": "Static, read-only Golden Master card. Shared across all users.",
 
                     "relations": {
-                        "_comment": "Defines semantic ownership and assessment linkage.",
-                        "concept_id": "concept_0001",
+                        "_comment": "Universal concept + domain context ownership.",
+                        "concept_id": "concept_exponential_decay",
+                        "domain_id": "mathematics",
                         "related_question_ids": [
-                        "q_uuid_001_fatty_streak_mcq"
+                        "q_exp_01"
                         ]
                     },
 
@@ -1879,7 +1995,20 @@ Socrates Structure and Organizer
             At least one existing library has cards in Review or Mastered stage
             User explicitly opts in during library import flow
 
-    15.3 Seeding Formula
+    15.3 Alignment (before seeding)
+            Step 1 — Universal concept match (exact)
+                If imported library shares concept_exponential_decay with an existing library,
+                treat as the same node. Full transfer confidence at concept level; no cosine needed.
+
+            Step 2 — Spine match (exact)
+                If spine_concept_id matches across libraries, align at spine level.
+
+            Step 3 — Leaf refinement (graded)
+                For cards within aligned concepts, apply cosine similarity (> 0.90) and
+                seeded_stability formula below. Universal/spine alignment dominates confidence;
+                leaf similarity refines within the matched concept.
+
+    15.4 Seeding Formula
             For each new card c_new in the imported library:
 
             seeded_stability(c_new) =
@@ -1894,7 +2023,7 @@ Socrates Structure and Organizer
             Applied only to existing cards in stage: Review or Mastered
             Capped at: min(seeded_stability, 30 days)
 
-    15.4 First Review Rule
+    15.5 First Review Rule
             Despite high seeded stability, all transfer-seeded cards are scheduled
             for a mandatory first review within 3-5 days of library import.
 
@@ -1906,7 +2035,7 @@ Socrates Structure and Organizer
 
             This ensures the user confirms transfer before benefiting from it.
 
-    15.5 Data Model Fields (User Card State)
+    15.6 Data Model Fields (User Card State)
             {
                 "transfer_state": {
                     "seeded_stability": 28.0,
@@ -1921,7 +2050,7 @@ Socrates Structure and Organizer
 
             Lives on CardScheduleView (User State layer), not on Golden Master content.
 
-    15.6 Behavioral Rules
+    15.7 Behavioral Rules
             Seeding is a one-time event at import. It does not update as source
             cards are later reviewed.
 
@@ -1939,7 +2068,7 @@ Socrates Structure and Organizer
             Seeded cards are flagged visually in the concept map and card queue
             until directly reviewed at least once.
 
-    15.7 Caps and Safety
+    15.8 Caps and Safety
             Minimum similarity to qualify:     0.90 cosine
             Maximum seeded stability:          30 days
             Max source cards per new card:     5 (highest similarity only)
@@ -1947,7 +2076,7 @@ Socrates Structure and Organizer
             Decay multiplier before direct review: 1.3x
             Mandatory first review window:     3-5 days from import
 
-    15.8 User Flow
+    15.9 User Flow
             1. User initiates library import.
             2. System computes CLKT preview:
                "X cards in this library overlap with things you already know.
@@ -1959,7 +2088,7 @@ Socrates Structure and Organizer
             5. On acceptance: seeded stability applied, cards flagged as
                transfer_seeded in queue, first reviews scheduled within 3-5 days.
 
-    15.9 Concept Map Integration
+    15.10 Concept Map Integration
             Transfer-seeded cards render with a distinct visual indicator on the
             concept map (e.g., dashed node border) until directly reviewed.
 
@@ -2132,10 +2261,17 @@ Socrates Structure and Organizer
                 - Unexpected stability inflation
 
 20. Future Work (Explicitly Deferred)
-        AI-assisted library creation
-        External deck imports
+        External deck imports (Anki, etc.)
         Auto-refactoring of concept graphs
-        Cross-Library Knowledge Transfer (CLKT) — specified in §15; not yet implemented
+        Full CLKT import flow UI — alignment module implemented (§15.3); seeding at import not yet wired
+        Multi-domain context review tooling (Phase 4 spine build)
+        OpenStax/LibreTexts automated L4–5 expansion (Phase 3 spine build)
+
+        Implemented (library-creator package)
+            CLI pipeline: ingest → intent → domain profile → concept graph → cards/questions → export
+            Google Sheets import (OrthoBullets)
+            Universal concept schema with domain_contexts and resolution windows
+            Linked content write-back into domain contexts during card generation
                   
 21. Files
        /Users/colbynielsen/Documents/StudyBuddy

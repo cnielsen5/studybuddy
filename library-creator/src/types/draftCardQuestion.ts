@@ -7,6 +7,10 @@ export const DraftCardSchema = z.object({
   type: z.literal("card"),
   relations: z.object({
     concept_id: z.string().regex(/^concept_[a-z0-9_]+$/),
+    domain_id: z
+      .string()
+      .regex(/^[a-z][a-z0-9_]*$/)
+      .optional(),
     related_question_ids: z.array(z.string().regex(/^q_[a-z0-9_]+$/)).optional(),
   }),
   config: z.object({

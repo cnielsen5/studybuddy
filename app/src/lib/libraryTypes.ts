@@ -1,4 +1,5 @@
 import type { ClozeData } from "./cloze";
+import type { DomainContext, KnowledgeGraph } from "./domainContext";
 
 export interface LibraryManifest {
   id: string;
@@ -8,19 +9,29 @@ export interface LibraryManifest {
   domain: string;
   status: string;
   tags: string[];
+  audience?: {
+    level?: string;
+    targetDepth?: string;
+    resolutionRange?: { min: 1 | 2 | 3 | 4 | 5; max: 1 | 2 | 3 | 4 | 5 };
+  };
 }
 
 export interface LibraryConcept {
   id: string;
   type: "concept";
+  resolution_level?: 1 | 2 | 3 | 4 | 5;
+  spine_concept_id?: string;
   content: { title: string; definition: string; summary: string };
-  editorial: { difficulty: string; high_yield_score: number };
+  editorial?: { difficulty: string; high_yield_score: number };
   mastery_config?: {
     threshold: number;
     decay_rate?: string;
     min_questions_correct?: number;
   };
-  hierarchy: {
+  knowledge_graph?: KnowledgeGraph;
+  domain_contexts?: DomainContext[];
+  /** @deprecated Prefer domain_contexts for taxonomy placement. */
+  hierarchy?: {
     library_id?: string;
     domain?: string;
     category?: string;
@@ -29,11 +40,13 @@ export interface LibraryConcept {
     subtopic?: string;
   };
   dependency_graph: {
+    parent_concept_id?: string;
     prerequisites: string[];
     unlocks: string[];
     related_concepts: string[];
   };
-  linked_content: { card_ids: string[]; question_ids: string[] };
+  /** Aggregate mirror — prefer per-context linked_content when present. */
+  linked_content?: { card_ids: string[]; question_ids: string[] };
 }
 
 export interface LibraryRelationship {
@@ -48,6 +61,7 @@ export interface LibraryCard {
   type: "card" | "relationship_card";
   relations: {
     concept_id?: string;
+    domain_id?: string;
     relationship_id?: string;
     from_concept_id?: string;
     to_concept_id?: string;

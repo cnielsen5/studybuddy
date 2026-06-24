@@ -1,4 +1,16 @@
 import { z } from "zod";
+import {
+  AudienceLevelSchema,
+  TargetDepthSchema,
+} from "./intent.js";
+import {
+  ConceptSourceReferenceSchema,
+  DomainContextSchema,
+  KnowledgeGraphSchema,
+  LegacyHierarchySchema,
+  LegacyLinkedContentSchema,
+} from "./domainContext.js";
+import { ResolutionLevelSchema, ResolutionRangeSchema, SpineConceptIdSchema } from "./resolution.js";
 
 const isoDateTime = z.string().datetime({ offset: true }).or(z.string().datetime());
 
@@ -12,62 +24,85 @@ export const LibraryManifestSchema = z.object({
   updated_at: isoDateTime,
   status: z.enum(["draft", "published"]),
   tags: z.array(z.string()),
+  audience: z
+    .object({
+      level: AudienceLevelSchema.optional(),
+      targetDepth: TargetDepthSchema.optional(),
+      resolutionRange: ResolutionRangeSchema.optional(),
+    })
+    .optional(),
 });
 
 export type LibraryManifest = z.infer<typeof LibraryManifestSchema>;
 
-export const ExportedConceptSchema = z.object({
-  id: z.string().regex(/^concept_[a-z0-9_]+$/),
-  type: z.literal("concept"),
-  metadata: z.object({
-    created_at: isoDateTime,
-    updated_at: isoDateTime,
-    created_by: z.string(),
-    last_updated_by: z.string(),
-    version: z.string(),
-    status: z.enum(["draft", "published"]),
-    tags: z.array(z.string()),
-    search_keywords: z.array(z.string()).optional(),
-    version_history: z.array(z.unknown()).optional(),
-  }),
-  editorial: z
-    .object({
-      difficulty: z.enum(["basic", "intermediate", "advanced"]),
-      high_yield_score: z.number(),
-    })
-    .optional(),
-  hierarchy: z.object({
-    library_id: z.string(),
-    domain: z.string(),
-    category: z.string(),
-    subcategory: z.string(),
-    topic: z.string(),
-    subtopic: z.string().optional(),
-  }),
-  content: z.object({
-    title: z.string(),
-    definition: z.string(),
-    summary: z.string(),
-  }),
-  dependency_graph: z.object({
-    prerequisites: z.array(z.string()),
-    unlocks: z.array(z.string()),
-    related_concepts: z.array(z.string()),
-    child_concepts: z.array(z.string()),
-    semantic_relations: z.array(z.string()).optional(),
-  }),
-  mastery_config: z.object({
-    threshold: z.number(),
-    decay_rate: z.enum(["fast", "standard", "slow"]),
-    min_questions_correct: z.number().int().positive(),
-  }),
-  media: z.array(z.unknown()),
-  references: z.array(z.unknown()),
-  linked_content: z.object({
-    card_ids: z.array(z.string()),
-    question_ids: z.array(z.string()),
-  }),
-});
+export const ExportedConceptSchema = z
+  .object({
+    id: z.string().regex(/^concept_[a-z0-9_]+$/),
+    type: z.literal("concept"),
+    resolution_level: ResolutionLevelSchema.default(3),
+    spine_concept_id: SpineConceptIdSchema.optional(),
+    metadata: z.object({
+      created_at: isoDateTime,
+      updated_at: isoDateTime,
+      created_by: z.string(),
+      last_updated_by: z.string(),
+      version: z.string(),
+      status: z.enum(["draft", "published"]),
+      tags: z.array(z.string()),
+      search_keywords: z.array(z.string()).optional(),
+      version_history: z.array(z.unknown()).optional(),
+      source_references: z.array(ConceptSourceReferenceSchema).optional(),
+    }),
+    editorial: z
+      .object({
+        difficulty: z.enum(["basic", "intermediate", "advanced"]),
+        high_yield_score: z.number(),
+      })
+      .optional(),
+    content: z.object({
+      title: z.string(),
+      definition: z.string(),
+      summary: z.string(),
+    }),
+    knowledge_graph: KnowledgeGraphSchema.optional(),
+    domain_contexts: z.array(DomainContextSchema).optional(),
+    hierarchy: LegacyHierarchySchema.optional(),
+    dependency_graph: z.object({
+      parent_concept_id: SpineConceptIdSchema.optional(),
+      prerequisites: z.array(z.string()),
+      unlocks: z.array(z.string()),
+      related_concepts: z.array(z.string()),
+      child_concepts: z.array(z.string()),
+      semantic_relations: z.array(z.string()).optional(),
+    }),
+    mastery_config: z.object({
+      threshold: z.number(),
+      decay_rate: z.enum(["fast", "standard", "slow"]),
+      min_questions_correct: z.number().int().positive(),
+    }),
+    media: z.array(z.unknown()),
+    references: z.array(z.unknown()),
+    linked_content: LegacyLinkedContentSchema.optional(),
+  })
+  .superRefine((concept, ctx) => {
+    const hasContexts = (concept.domain_contexts?.length ?? 0) > 0;
+    const hasLegacy = Boolean(concept.hierarchy);
+
+    if (!hasContexts && !hasLegacy) {
+      ctx.addIssue({
+        code: z.ZodIssueCode.custom,
+        message:
+          "Concept must include domain_contexts (preferred) or legacy hierarchy",
+      });
+    }
+
+    if (hasContexts && !concept.knowledge_graph) {
+      ctx.addIssue({
+        code: z.ZodIssueCode.custom,
+        message: "domain_contexts require knowledge_graph positioning",
+      });
+    }
+  });
 
 export const ExportedRelationshipSchema = z.object({
   relationship_id: z.string().regex(/^rel_[a-z0-9_]+$/),
@@ -118,6 +153,7 @@ export const ExportedCardSchema = z.object({
   type: z.literal("card"),
   relations: z.object({
     concept_id: z.string(),
+    domain_id: z.string().optional(),
     related_question_ids: z.array(z.string()).optional(),
   }),
   config: z.object({

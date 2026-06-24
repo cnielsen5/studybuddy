@@ -1,4 +1,15 @@
 import type { LibraryBundle, LibraryConcept } from "./libraryTypes";
+import {
+  activeDomainIdFromManifest,
+  getEffectiveHierarchy,
+  getLinkedContentForDomain,
+} from "./domainContext";
+import {
+  filterConceptsByResolution,
+  type ResolutionRange,
+  FULL_RESOLUTION_RANGE,
+  resolutionRangeFromManifest,
+} from "./resolution";
 
 export type TaxonomyLevel = "domain" | "category" | "subcategory" | "topic" | "concept";
 
@@ -32,16 +43,17 @@ export interface TaxonomyNode {
 
 export function getConceptHierarchy(
   concept: LibraryConcept,
-  bundle: LibraryBundle
+  bundle: LibraryBundle,
+  domainId?: string
 ): ConceptHierarchyFields {
-  const h = concept.hierarchy as Partial<ConceptHierarchyFields>;
+  const h = getEffectiveHierarchy(concept, bundle, domainId);
   return {
     library_id: h.library_id,
-    domain: h.domain ?? bundle.manifest.domain,
-    category: h.category ?? "General",
-    subcategory: h.subcategory ?? h.topic ?? concept.content.title,
-    topic: h.topic ?? concept.content.title,
-    subtopic: h.subtopic ?? concept.content.title,
+    domain: h.domain,
+    category: h.category,
+    subcategory: h.subcategory,
+    topic: h.topic,
+    subtopic: h.subtopic ?? h.topic,
   };
 }
 
@@ -49,8 +61,25 @@ function taxonomyNodeId(level: TaxonomyLevel, key: string): string {
   return `${level}:${key}`;
 }
 
-export function buildTaxonomyTree(bundle: LibraryBundle): Map<string, TaxonomyNode> {
+export function buildTaxonomyTree(
+  bundle: LibraryBundle,
+  resolutionRange: ResolutionRange = resolutionRangeFromManifest(bundle.manifest),
+  domainId: string = activeDomainIdFromManifest(bundle.manifest)
+): Map<string, TaxonomyNode> {
   const nodes = new Map<string, TaxonomyNode>();
+  const visibleConcepts = filterConceptsByResolution(
+    bundle.concepts,
+    resolutionRange ?? FULL_RESOLUTION_RANGE
+  );
+  const visibleConceptIds = new Set(visibleConcepts.map((concept) => concept.id));
+  const parentLinks = new Map<string, string>();
+
+  for (const concept of visibleConcepts) {
+    const parentId = concept.dependency_graph.parent_concept_id?.trim();
+    if (parentId && (visibleConceptIds.has(parentId) || parentId.startsWith("spine_"))) {
+      parentLinks.set(concept.id, parentId);
+    }
+  }
 
   function ensureNode(
     level: TaxonomyLevel,
@@ -76,9 +105,10 @@ export function buildTaxonomyTree(bundle: LibraryBundle): Map<string, TaxonomyNo
     return node;
   }
 
-  for (const concept of bundle.concepts) {
-    const h = getConceptHierarchy(concept, bundle);
-    const cardCount = concept.linked_content.card_ids.length;
+  for (const concept of visibleConcepts) {
+    const h = getConceptHierarchy(concept, bundle, domainId);
+    const linked = getLinkedContentForDomain(concept, bundle, domainId);
+    const cardCount = linked.card_ids.length;
 
     const domainKey = h.domain;
     const categoryKey = `${h.domain}/${h.category}`;
@@ -104,6 +134,20 @@ export function buildTaxonomyTree(bundle: LibraryBundle): Map<string, TaxonomyNo
       node.cardCount += cardCount;
     }
     conceptNode.subconceptCount = 1;
+
+    const parentConceptId = parentLinks.get(concept.id);
+    if (parentConceptId && visibleConceptIds.has(parentConceptId)) {
+      const parentNode = ensureNode(
+        "concept",
+        parentConceptId,
+        visibleConcepts.find((item) => item.id === parentConceptId)?.content.title ??
+          parentConceptId,
+        h.domain
+      );
+      if (!parentNode.childIds.includes(conceptNode.id)) {
+        parentNode.childIds.push(conceptNode.id);
+      }
+    }
   }
 
   for (const node of nodes.values()) {
