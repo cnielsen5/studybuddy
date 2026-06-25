@@ -13,6 +13,7 @@ import {
   ALL_SUPERSEDED_SPINE_L3_IDS,
   SPINE_SHARED_CONCEPTS,
 } from "./spineSharedConceptsIndex.js";
+import { l2UnlockTargets } from "./spineL2Unlocks.js";
 
 const SPINE_TIMESTAMP = "2025-01-01T00:00:00Z";
 
@@ -110,7 +111,7 @@ function buildLevel1And2(): SpineConcept[] {
         dependency_graph: {
           parent_concept_id: rootId,
           prerequisites: [rootId],
-          unlocks: [],
+          unlocks: l2UnlockTargets(id),
         },
         domain_contexts: [
           baseDomainContext(

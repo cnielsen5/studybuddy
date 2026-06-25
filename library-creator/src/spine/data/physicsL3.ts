@@ -577,7 +577,7 @@ export const PHYSICS_L3: SpineConcept[] = [
       "The Schrödinger equation replaces classical trajectories with probability amplitudes. Particle-in-a-box and hydrogen-like models predict discrete spectra.",
     prerequisites: [
       l3Id("physics", "heisenberg_uncertainty_principle"),
-      "spine_mathematics_l3_first_order_linear_equations",
+      "spine_mathematics_l3_first_order_odes",
     ],
     unlocks: [l3Id("physics", "atomic_structure_and_spectra")],
     source: { source: UP3, chapter: "7", section: "7.2–7.4" },

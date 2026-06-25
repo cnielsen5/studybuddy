@@ -447,7 +447,10 @@ export const CHEMISTRY_L3: SpineConcept[] = [
     summary:
       "Carbohydrate stereochemistry and anomeric forms affect reactivity and recognition. Glycolysis is the entry point for cellular energy harvest.",
     prerequisites: ["spine_chemistry_l3_enzyme_kinetics_michaelis_menten"],
-    unlocks: [l3Id("chemistry", "lipid_structure_and_function")],
+    unlocks: [
+      l3Id("chemistry", "lipid_structure_and_function"),
+      "spine_chemistry_l3_glycolysis_and_central_metabolism",
+    ],
     source: { source: CHEM, chapter: "20", section: "20.2" },
   }),
   makeChemistryConcept({
@@ -473,7 +476,33 @@ export const CHEMISTRY_L3: SpineConcept[] = [
     summary:
       "DNA stores genetic information in double helices; RNA mediates expression. Base pairing rules enable replication, transcription, and hybridization assays.",
     prerequisites: [l3Id("chemistry", "lipid_structure_and_function")],
-    unlocks: ["spine_chemistry_l3_glycolysis_and_central_metabolism"],
+    unlocks: [l3Id("chemistry", "dna_replication_chemistry")],
+    source: { source: CHEM, chapter: "2", section: "2.6" },
+  }),
+  makeChemistryConcept({
+    shortName: "dna_replication_chemistry",
+    l2: BIOCHEM,
+    cluster: "Nucleic Acids",
+    title: "DNA Replication Chemistry",
+    definition:
+      "Template-directed synthesis of phosphodiester bonds by DNA polymerases, including primer extension, 5′→3′ directionality, and proofreading exonuclease activity.",
+    summary:
+      "Replication is a series of enzyme-catalyzed phosphoryl transfers and phosphodiester-forming steps. Chemistry focuses on bond-making, energy coupling, and fidelity mechanisms.",
+    prerequisites: [l3Id("chemistry", "nucleic_acid_structure")],
+    unlocks: [l3Id("chemistry", "transcription_chemistry")],
+    source: { source: CHEM, chapter: "2", section: "2.6" },
+  }),
+  makeChemistryConcept({
+    shortName: "transcription_chemistry",
+    l2: BIOCHEM,
+    cluster: "Gene Expression",
+    title: "Transcription Chemistry",
+    definition:
+      "RNA polymerase-catalyzed assembly of ribonucleotides on a DNA template via phosphodiester bond formation, promoter recognition, and transcript termination.",
+    summary:
+      "Transcription couples NTP hydrolysis to RNA chain elongation. Chemistry emphasizes reaction mechanism; biological information flow remains in biology central dogma.",
+    prerequisites: [l3Id("chemistry", "dna_replication_chemistry")],
+    unlocks: [l3Id("chemistry", "protein_synthesis_overview")],
     source: { source: CHEM, chapter: "2", section: "2.6" },
   }),
   makeChemistryConcept({
@@ -498,7 +527,7 @@ export const CHEMISTRY_L3: SpineConcept[] = [
       "Translation of mRNA codons into polypeptide chains on ribosomes using tRNA adapters and genetic code redundancy.",
     summary:
       "Protein synthesis connects nucleic acid information to catalytic and structural function. Codon–anticodon pairing and start/stop signals define reading frames.",
-    prerequisites: ["spine_chemistry_l3_glycolysis_and_central_metabolism"],
+    prerequisites: [l3Id("chemistry", "transcription_chemistry")],
     unlocks: [],
     source: { source: CHEM, chapter: "2", section: "2.6" },
   }),

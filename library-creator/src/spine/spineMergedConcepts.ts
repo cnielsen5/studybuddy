@@ -28,7 +28,7 @@ export const SPINE_MERGED_CONCEPTS: SpineConcept[] = [
       knowledge_cluster: "Electrical Signaling",
       primary_domain: "biology",
       _shared_concept_note:
-        "Merged resting_membrane_potential (psych) and cell_membrane_resting_potential (medicine_preclinical). Cardiac membrane potential remains a separate med node (B2).",
+        "Merged resting_membrane_potential (psych), cell_membrane_resting_potential (medicine_preclinical neuronal), and general excitable-tissue potential. Cardiac membrane potential remains a separate med node (B2).",
     },
     dependency_graph: {
       parent_concept_id: l2Id("biology", "Cell Biology"),
@@ -83,6 +83,29 @@ export const SPINE_MERGED_CONCEPTS: SpineConcept[] = [
             l3Id("psychology_neuroscience", "nervous_system_organization"),
           ],
           unlocks_in_context: ["spine_biology_l3_action_potential"],
+        },
+        linked_content: emptyLinks(),
+      },
+      {
+        domain_id: "medicine_preclinical",
+        framing: {
+          title_in_context: "Neuronal Membrane Potential",
+          relevance: "Resting potential and threshold in neurons and skeletal muscle — basis for electrophysiology and pharmacology.",
+          applications: ["Local anesthetic targets", "Neuromuscular junction baseline"],
+          max_resolution_in_context: 5,
+        },
+        hierarchy_location: {
+          category: "Physiology",
+          subcategory: "Electrophysiology",
+          topic: "Membrane Potential",
+          subtopic: null,
+        },
+        dependency_graph: {
+          prerequisites_in_context: [l2Id("medicine_preclinical", "Physiology")],
+          unlocks_in_context: [
+            "spine_biology_l3_action_potential",
+            "spine_medicine_preclinical_l3_cardiac_membrane_potential",
+          ],
         },
         linked_content: emptyLinks(),
       },
@@ -400,8 +423,8 @@ export const SPINE_MERGED_CONCEPTS: SpineConcept[] = [
     },
     dependency_graph: {
       parent_concept_id: l2Id("chemistry", "Biochemistry"),
-      prerequisites: [l3Id("chemistry", "nucleic_acid_structure")],
-      unlocks: [l3Id("chemistry", "protein_synthesis_overview")],
+      prerequisites: [l3Id("chemistry", "carbohydrate_structure_and_metabolism")],
+      unlocks: [],
     },
     domain_contexts: [
       {
@@ -419,8 +442,8 @@ export const SPINE_MERGED_CONCEPTS: SpineConcept[] = [
           subtopic: null,
         },
         dependency_graph: {
-          prerequisites_in_context: [l3Id("chemistry", "nucleic_acid_structure")],
-          unlocks_in_context: [l3Id("chemistry", "protein_synthesis_overview")],
+          prerequisites_in_context: [l3Id("chemistry", "carbohydrate_structure_and_metabolism")],
+          unlocks_in_context: [],
         },
         linked_content: emptyLinks(),
       },

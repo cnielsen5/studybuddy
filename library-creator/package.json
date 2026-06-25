@@ -11,6 +11,7 @@
     "build": "tsc",
     "cli": "tsx src/cli/main.ts",
     "build:spine": "tsx scripts/build-spine-graph.ts",
+    "build:spine-review": "tsx scripts/build-spine-review.ts",
     "import:orthobullets": "tsx scripts/import-orthobullets-sheet.ts",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "typecheck": "tsc --noEmit"

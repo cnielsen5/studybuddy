@@ -180,7 +180,8 @@ export const BIOLOGY_L3: SpineConcept[] = [
     cluster: "Nucleic Acids",
     title: "DNA Structure and Replication",
     definition: "Double-helical DNA polymer replicated semi-conservatively by complementary base pairing and polymerase proofreading at replication forks.",
-    summary: "DNA structure explains hereditary information storage. Replication fidelity depends on helicases, primers, and repair at forks.",
+    summary:
+      "DNA structure explains hereditary information storage. Semi-conservative replication and fork progression are the biological process; enzyme chemistry is owned by chemistry L3.",
     source: { source: "OpenStax Biology 2e", chapter: "14", section: "14.2" },
   }),
   makeBiologyConcept({
@@ -189,7 +190,8 @@ export const BIOLOGY_L3: SpineConcept[] = [
     cluster: "Gene Expression",
     title: "Central Dogma: Transcription and Translation",
     definition: "Flow of genetic information from DNA to RNA by transcription and from mRNA to protein by ribosomal translation according to the genetic code.",
-    summary: "Gene expression couples nuclear transcription with cytoplasmic translation. Codon–anticodon pairing specifies amino acid sequence.",
+    summary:
+      "Gene expression couples nuclear transcription with cytoplasmic translation. Codon–anticodon pairing specifies amino acid sequence; polymerase chemistry is owned by chemistry L3.",
     prerequisites: [l3Id("biology", "dna_structure_replication")],
     source: { source: "OpenStax Biology 2e", chapter: "15", section: "15.1" },
   }),
@@ -562,16 +564,6 @@ export const BIOLOGY_L3: SpineConcept[] = [
     summary: "Hypersensitivity types explain allergy and serum sickness. Imbalance between tolerance and attack drives pathology.",
     prerequisites: [l3Id("biology", "antibodies_and_b_cells")],
     source: { source: "OpenStax Biology 2e", chapter: "44", section: "44.5" },
-  }),
-  makeBiologyConcept({
-    shortName: "autoimmunity_basics",
-    l2: "Immunology",
-    cluster: "Immune Pathology",
-    title: "Autoimmunity Basics",
-    definition: "Loss of self-tolerance producing immune attack against host antigens in diseases such as rheumatoid arthritis and type 1 diabetes.",
-    summary: "Central and peripheral tolerance failures permit autoreactive clones. Genetic and environmental triggers interact.",
-    prerequisites: ["spine_biology_l3_t_cell_responses"],
-    source: { source: "OpenStax Biology 2e", chapter: "44", section: "44.6" },
   }),
   makeBiologyConcept({
     shortName: "vaccination_principles",

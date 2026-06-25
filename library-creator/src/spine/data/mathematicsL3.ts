@@ -1636,9 +1636,9 @@ export const MATHEMATICS_L3: SpineConcept[] = [
     content: {
       title: "First-Order Ordinary Differential Equations",
       definition:
-        "A first-order ODE relates an unknown function to its first derivative, F(x, y, y′) = 0; a solution is a function whose derivative satisfies the equation on an interval.",
+        "A first-order ODE relates an unknown function to its first derivative, F(x, y, y′) = 0; includes separable equations and linear forms y′ + p(x)y = q(x) solved by integrating factors.",
       summary:
-        "First-order ODEs model growth, cooling, and mixing when rates depend on current state. Classification by type guides choice of analytic, graphical, or numerical solution methods.",
+        "First-order ODEs model growth, cooling, and mixing when rates depend on current state. Linear first-order equations (integrating-factor method) are developed at L4 under this anchor.",
     },
     knowledge_graph: {
       knowledge_area: "Quantitative Reasoning",
@@ -1654,6 +1654,7 @@ export const MATHEMATICS_L3: SpineConcept[] = [
       unlocks: [
         l3Id("mathematics", "separable_differential_equations"),
         l3Id("mathematics", "second_order_linear_odes"),
+        l3Id("mathematics", "systems_of_odes"),
       ],
     },
     domain_contexts: [
@@ -1700,7 +1701,7 @@ export const MATHEMATICS_L3: SpineConcept[] = [
         l3Id("mathematics", "first_order_odes"),
         l3Id("mathematics", "logarithmic_functions"),
       ],
-      unlocks: [l3Id("mathematics", "first_order_linear_equations")],
+      unlocks: [l3Id("mathematics", "systems_of_odes")],
     },
     domain_contexts: [
       mathContext(
@@ -1769,52 +1770,6 @@ export const MATHEMATICS_L3: SpineConcept[] = [
     },
   },
   {
-    id: l3Id("mathematics", "first_order_linear_equations"),
-    resolution_level: 3,
-    content: {
-      title: "First-Order Linear Differential Equations",
-      definition:
-        "A first-order linear ODE has the form y′ + p(x)y = q(x), solved using integrating factors to produce a general solution.",
-      summary:
-        "First-order linear equations extend separable methods to forcing terms that depend on x alone. Integrating-factor techniques appear in RC circuits, mixing problems, and as building blocks for higher-order theory.",
-    },
-    knowledge_graph: {
-      knowledge_area: "Quantitative Reasoning",
-      knowledge_cluster: "Dynamical Systems",
-      primary_domain: "mathematics",
-    },
-    dependency_graph: {
-      parent_concept_id: l2Id("mathematics", "Differential Equations"),
-      prerequisites: [
-        l3Id("mathematics", "separable_differential_equations"),
-        l3Id("mathematics", "fundamental_theorem_of_calculus"),
-      ],
-      unlocks: [l3Id("mathematics", "systems_of_odes")],
-    },
-    domain_contexts: [
-      mathContext(
-        "Differential Equations",
-        "First-Order Linear Differential Equations",
-        "Integrating factors solve linear first-order models with nonhomogeneous terms.",
-        4
-      ),
-    ],
-    metadata: {
-      created_at: TS,
-      updated_at: TS,
-      created_by: "ai_draft",
-      version: "0.1-draft",
-      status: "draft",
-      source_references: [
-        {
-          source: "OpenStax Calculus Volume 2",
-          chapter: "4",
-          section: "4.5",
-        },
-      ],
-    },
-  },
-  {
     id: l3Id("mathematics", "systems_of_odes"),
     resolution_level: 3,
     content: {
@@ -1832,7 +1787,7 @@ export const MATHEMATICS_L3: SpineConcept[] = [
     dependency_graph: {
       parent_concept_id: l2Id("mathematics", "Differential Equations"),
       prerequisites: [
-        l3Id("mathematics", "first_order_linear_equations"),
+        l3Id("mathematics", "first_order_odes"),
         l3Id("mathematics", "second_order_linear_odes"),
         l3Id("mathematics", "eigenvalues_and_eigenvectors"),
       ],

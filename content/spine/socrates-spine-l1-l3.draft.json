@@ -20,8 +20,8 @@
     "concept_counts": {
       "level_1": 7,
       "level_2": 68,
-      "level_3": 510,
-      "total": 585
+      "level_3": 502,
+      "total": 577
     },
     "forward_reference_warnings": []
   },
@@ -521,7 +521,9 @@
         "prerequisites": [
           "spine_biology"
         ],
-        "unlocks": []
+        "unlocks": [
+          "spine_biology_l2_molecular_biology_and_genetics"
+        ]
       },
       "domain_contexts": [
         {
@@ -1041,7 +1043,10 @@
         "prerequisites": [
           "spine_chemistry"
         ],
-        "unlocks": []
+        "unlocks": [
+          "spine_chemistry_l2_organic_chemistry",
+          "spine_chemistry_l2_physical_chemistry"
+        ]
       },
       "domain_contexts": [
         {
@@ -1301,7 +1306,9 @@
         "prerequisites": [
           "spine_mathematics"
         ],
-        "unlocks": []
+        "unlocks": [
+          "spine_mathematics_l2_linear_algebra"
+        ]
       },
       "domain_contexts": [
         {
@@ -1665,7 +1672,10 @@
         "prerequisites": [
           "spine_mathematics"
         ],
-        "unlocks": []
+        "unlocks": [
+          "spine_mathematics_l2_single_variable_calculus",
+          "spine_mathematics_l2_statistics_and_probability"
+        ]
       },
       "domain_contexts": [
         {
@@ -1717,7 +1727,11 @@
         "prerequisites": [
           "spine_mathematics"
         ],
-        "unlocks": []
+        "unlocks": [
+          "spine_mathematics_l2_multivariable_calculus",
+          "spine_mathematics_l2_differential_equations",
+          "spine_physics_l2_classical_mechanics"
+        ]
       },
       "domain_contexts": [
         {
@@ -3121,7 +3135,10 @@
         "prerequisites": [
           "spine_physics"
         ],
-        "unlocks": []
+        "unlocks": [
+          "spine_physics_l2_waves_and_oscillations",
+          "spine_physics_l2_fluid_mechanics"
+        ]
       },
       "domain_contexts": [
         {
@@ -4571,67 +4588,6 @@
       }
     },
     {
-      "id": "spine_biology_l3_autoimmunity_basics",
-      "resolution_level": 3,
-      "content": {
-        "title": "Autoimmunity Basics",
-        "definition": "Loss of self-tolerance producing immune attack against host antigens in diseases such as rheumatoid arthritis and type 1 diabetes.",
-        "summary": "Central and peripheral tolerance failures permit autoreactive clones. Genetic and environmental triggers interact."
-      },
-      "knowledge_graph": {
-        "knowledge_area": "Life Sciences",
-        "knowledge_cluster": "Immune Pathology",
-        "primary_domain": "biology"
-      },
-      "dependency_graph": {
-        "parent_concept_id": "spine_biology_l2_immunology",
-        "prerequisites": [
-          "spine_biology_l3_t_cell_responses"
-        ],
-        "unlocks": []
-      },
-      "domain_contexts": [
-        {
-          "domain_id": "biology",
-          "framing": {
-            "title_in_context": "Autoimmunity Basics",
-            "relevance": "Core immunology concept for understanding biological structure, function, and process.",
-            "applications": [],
-            "max_resolution_in_context": 3
-          },
-          "hierarchy_location": {
-            "category": "Biology",
-            "subcategory": "Immunology",
-            "topic": "Autoimmunity Basics",
-            "subtopic": null
-          },
-          "dependency_graph": {
-            "prerequisites_in_context": [
-              "spine_biology_l3_t_cell_responses"
-            ],
-            "unlocks_in_context": []
-          },
-          "linked_content": {
-            "by_library": {}
-          }
-        }
-      ],
-      "metadata": {
-        "created_at": "2025-01-01T00:00:00Z",
-        "updated_at": "2025-01-01T00:00:00Z",
-        "created_by": "ai_draft",
-        "version": "0.1-draft",
-        "status": "draft",
-        "source_references": [
-          {
-            "source": "OpenStax Biology 2e",
-            "chapter": "44",
-            "section": "44.6"
-          }
-        ]
-      }
-    },
-    {
       "id": "spine_biology_l3_bacterial_growth_and_metabolism",
       "resolution_level": 3,
       "content": {
@@ -4942,7 +4898,7 @@
       "content": {
         "title": "Central Dogma: Transcription and Translation",
         "definition": "Flow of genetic information from DNA to RNA by transcription and from mRNA to protein by ribosomal translation according to the genetic code.",
-        "summary": "Gene expression couples nuclear transcription with cytoplasmic translation. Codon–anticodon pairing specifies amino acid sequence."
+        "summary": "Gene expression couples nuclear transcription with cytoplasmic translation. Codon–anticodon pairing specifies amino acid sequence; polymerase chemistry is owned by chemistry L3."
       },
       "knowledge_graph": {
         "knowledge_area": "Life Sciences",
@@ -5369,7 +5325,7 @@
       "content": {
         "title": "DNA Structure and Replication",
         "definition": "Double-helical DNA polymer replicated semi-conservatively by complementary base pairing and polymerase proofreading at replication forks.",
-        "summary": "DNA structure explains hereditary information storage. Replication fidelity depends on helicases, primers, and repair at forks."
+        "summary": "DNA structure explains hereditary information storage. Semi-conservative replication and fork progression are the biological process; enzyme chemistry is owned by chemistry L3."
       },
       "knowledge_graph": {
         "knowledge_area": "Life Sciences",
@@ -6180,7 +6136,7 @@
         "knowledge_area": "Life Sciences",
         "knowledge_cluster": "Electrical Signaling",
         "primary_domain": "biology",
-        "_shared_concept_note": "Merged resting_membrane_potential (psych) and cell_membrane_resting_potential (medicine_preclinical). Cardiac membrane potential remains a separate med node (B2)."
+        "_shared_concept_note": "Merged resting_membrane_potential (psych), cell_membrane_resting_potential (medicine_preclinical neuronal), and general excitable-tissue potential. Cardiac membrane potential remains a separate med node (B2)."
       },
       "dependency_graph": {
         "parent_concept_id": "spine_biology_l2_cell_biology",
@@ -6248,6 +6204,36 @@
             ],
             "unlocks_in_context": [
               "spine_biology_l3_action_potential"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Neuronal Membrane Potential",
+            "relevance": "Resting potential and threshold in neurons and skeletal muscle — basis for electrophysiology and pharmacology.",
+            "applications": [
+              "Local anesthetic targets",
+              "Neuromuscular junction baseline"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Electrophysiology",
+            "topic": "Membrane Potential",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_preclinical_l2_physiology"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l3_action_potential",
+              "spine_medicine_preclinical_l3_cardiac_membrane_potential"
             ]
           },
           "linked_content": {
@@ -7511,33 +7497,68 @@
       "knowledge_graph": {
         "knowledge_area": "Life Sciences",
         "knowledge_cluster": "Microbial Cell Biology",
-        "primary_domain": "biology"
+        "primary_domain": "biology",
+        "_shared_concept_note": "Merged prokaryotic_cell_structure (biology) and bacterial_cell_structure (medicine_preclinical)."
       },
       "dependency_graph": {
         "parent_concept_id": "spine_biology_l2_microbiology",
         "prerequisites": [
           "spine_biology_l2_microbiology"
         ],
-        "unlocks": []
+        "unlocks": [
+          "spine_biology_l3_bacterial_growth_and_metabolism"
+        ]
       },
       "domain_contexts": [
         {
           "domain_id": "biology",
           "framing": {
             "title_in_context": "Prokaryotic Cell Structure",
-            "relevance": "Core microbiology concept for understanding biological structure, function, and process.",
-            "applications": [],
-            "max_resolution_in_context": 3
+            "relevance": "Structural and evolutionary framing across bacterial and archaeal domains.",
+            "applications": [
+              "Cell envelope layers",
+              "Flagella and pili"
+            ],
+            "max_resolution_in_context": 4
           },
           "hierarchy_location": {
-            "category": "Biology",
-            "subcategory": "Microbiology",
+            "category": "Microbiology",
+            "subcategory": "Microbial Cell Biology",
             "topic": "Prokaryotic Cell Structure",
             "subtopic": null
           },
           "dependency_graph": {
             "prerequisites_in_context": [
               "spine_biology_l2_microbiology"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l3_bacterial_growth_and_metabolism"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Bacterial Cell Structure",
+            "relevance": "Gram staining, virulence factors, and antibiotic targets on Step 1.",
+            "applications": [
+              "Gram-positive vs gram-negative",
+              "Endospore resistance"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Microbiology & Infectious Disease",
+            "subcategory": "Bacteriology",
+            "topic": "Bacterial Cell Structure",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_preclinical_l2_microbiology_and_infectious_disease"
             ],
             "unlocks_in_context": []
           },
@@ -7557,6 +7578,11 @@
             "source": "OpenStax Biology 2e",
             "chapter": "22",
             "section": "22.1"
+          },
+          {
+            "source": "NCBI StatPearls",
+            "chapter": "Bacteriology",
+            "section": "Structure"
           }
         ]
       }
@@ -8812,7 +8838,8 @@
           "spine_chemistry_l3_enzyme_kinetics_michaelis_menten"
         ],
         "unlocks": [
-          "spine_chemistry_l3_lipid_structure_and_function"
+          "spine_chemistry_l3_lipid_structure_and_function",
+          "spine_chemistry_l3_glycolysis_and_central_metabolism"
         ]
       },
       "domain_contexts": [
@@ -8835,7 +8862,8 @@
               "spine_chemistry_l3_enzyme_kinetics_michaelis_menten"
             ],
             "unlocks_in_context": [
-              "spine_chemistry_l3_lipid_structure_and_function"
+              "spine_chemistry_l3_lipid_structure_and_function",
+              "spine_chemistry_l3_glycolysis_and_central_metabolism"
             ]
           },
           "linked_content": {
@@ -9175,6 +9203,71 @@
             "source": "OpenStax Chemistry 2e",
             "chapter": "17",
             "section": "17.7"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_chemistry_l3_dna_replication_chemistry",
+      "resolution_level": 3,
+      "content": {
+        "title": "DNA Replication Chemistry",
+        "definition": "Template-directed synthesis of phosphodiester bonds by DNA polymerases, including primer extension, 5′→3′ directionality, and proofreading exonuclease activity.",
+        "summary": "Replication is a series of enzyme-catalyzed phosphoryl transfers and phosphodiester-forming steps. Chemistry focuses on bond-making, energy coupling, and fidelity mechanisms."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Nucleic Acids",
+        "primary_domain": "chemistry"
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_chemistry_l2_biochemistry",
+        "prerequisites": [
+          "spine_chemistry_l3_nucleic_acid_structure"
+        ],
+        "unlocks": [
+          "spine_chemistry_l3_transcription_chemistry"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "chemistry",
+          "framing": {
+            "title_in_context": "DNA Replication Chemistry",
+            "relevance": "Core biochemistry concept for predicting and explaining chemical behavior.",
+            "applications": [],
+            "max_resolution_in_context": 3
+          },
+          "hierarchy_location": {
+            "category": "Chemistry",
+            "subcategory": "Biochemistry",
+            "topic": "DNA Replication Chemistry",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_chemistry_l3_nucleic_acid_structure"
+            ],
+            "unlocks_in_context": [
+              "spine_chemistry_l3_transcription_chemistry"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2025-01-01T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.1-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Chemistry 2e",
+            "chapter": "2",
+            "section": "2.6"
           }
         ]
       }
@@ -9887,11 +9980,9 @@
       "dependency_graph": {
         "parent_concept_id": "spine_chemistry_l2_biochemistry",
         "prerequisites": [
-          "spine_chemistry_l3_nucleic_acid_structure"
+          "spine_chemistry_l3_carbohydrate_structure_and_metabolism"
         ],
-        "unlocks": [
-          "spine_chemistry_l3_protein_synthesis_overview"
-        ]
+        "unlocks": []
       },
       "domain_contexts": [
         {
@@ -9913,11 +10004,9 @@
           },
           "dependency_graph": {
             "prerequisites_in_context": [
-              "spine_chemistry_l3_nucleic_acid_structure"
+              "spine_chemistry_l3_carbohydrate_structure_and_metabolism"
             ],
-            "unlocks_in_context": [
-              "spine_chemistry_l3_protein_synthesis_overview"
-            ]
+            "unlocks_in_context": []
           },
           "linked_content": {
             "by_library": {}
@@ -10991,7 +11080,8 @@
       "knowledge_graph": {
         "knowledge_area": "Physical Sciences",
         "knowledge_cluster": "Nucleic Acids",
-        "primary_domain": "chemistry"
+        "primary_domain": "chemistry",
+        "_shared_concept_note": "Structure owned by chemistry. Biology dna_structure_replication covers the replication process; dna_replication_chemistry covers enzyme mechanisms."
       },
       "dependency_graph": {
         "parent_concept_id": "spine_chemistry_l2_biochemistry",
@@ -10999,6 +11089,7 @@
           "spine_chemistry_l3_lipid_structure_and_function"
         ],
         "unlocks": [
+          "spine_chemistry_l3_dna_replication_chemistry",
           "spine_chemistry_l3_glycolysis_and_central_metabolism"
         ]
       },
@@ -11007,13 +11098,16 @@
           "domain_id": "chemistry",
           "framing": {
             "title_in_context": "Nucleic Acid Structure",
-            "relevance": "Core biochemistry concept for predicting and explaining chemical behavior.",
-            "applications": [],
-            "max_resolution_in_context": 3
+            "relevance": "Chemical structure of DNA and RNA polymers.",
+            "applications": [
+              "Base pairing",
+              "Hybridization assays"
+            ],
+            "max_resolution_in_context": 5
           },
           "hierarchy_location": {
-            "category": "Chemistry",
-            "subcategory": "Biochemistry",
+            "category": "Biochemistry",
+            "subcategory": "Nucleic Acids",
             "topic": "Nucleic Acid Structure",
             "subtopic": null
           },
@@ -11022,7 +11116,36 @@
               "spine_chemistry_l3_lipid_structure_and_function"
             ],
             "unlocks_in_context": [
-              "spine_chemistry_l3_glycolysis_and_central_metabolism"
+              "spine_chemistry_l3_dna_replication_chemistry"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "DNA and RNA Molecular Structure",
+            "relevance": "Structural basis linking to DNA replication and gene expression in biology.",
+            "applications": [
+              "Double helix",
+              "Complementary strands"
+            ],
+            "max_resolution_in_context": 3
+          },
+          "hierarchy_location": {
+            "category": "Molecular Biology & Genetics",
+            "subcategory": "Nucleic Acids",
+            "topic": "DNA Structure",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l2_molecular_biology_and_genetics"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l3_dna_structure_replication"
             ]
           },
           "linked_content": {
@@ -11041,6 +11164,11 @@
             "source": "OpenStax Chemistry 2e",
             "chapter": "2",
             "section": "2.6"
+          },
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "14",
+            "section": "14.1"
           }
         ]
       }
@@ -11388,7 +11516,7 @@
       "dependency_graph": {
         "parent_concept_id": "spine_chemistry_l2_biochemistry",
         "prerequisites": [
-          "spine_chemistry_l3_glycolysis_and_central_metabolism"
+          "spine_chemistry_l3_transcription_chemistry"
         ],
         "unlocks": []
       },
@@ -11409,7 +11537,7 @@
           },
           "dependency_graph": {
             "prerequisites_in_context": [
-              "spine_chemistry_l3_glycolysis_and_central_metabolism"
+              "spine_chemistry_l3_transcription_chemistry"
             ],
             "unlocks_in_context": []
           },
@@ -12071,6 +12199,71 @@
             "source": "OpenStax Chemistry 2e",
             "chapter": "5",
             "section": "5.1–5.4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_chemistry_l3_transcription_chemistry",
+      "resolution_level": 3,
+      "content": {
+        "title": "Transcription Chemistry",
+        "definition": "RNA polymerase-catalyzed assembly of ribonucleotides on a DNA template via phosphodiester bond formation, promoter recognition, and transcript termination.",
+        "summary": "Transcription couples NTP hydrolysis to RNA chain elongation. Chemistry emphasizes reaction mechanism; biological information flow remains in biology central dogma."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Gene Expression",
+        "primary_domain": "chemistry"
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_chemistry_l2_biochemistry",
+        "prerequisites": [
+          "spine_chemistry_l3_dna_replication_chemistry"
+        ],
+        "unlocks": [
+          "spine_chemistry_l3_protein_synthesis_overview"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "chemistry",
+          "framing": {
+            "title_in_context": "Transcription Chemistry",
+            "relevance": "Core biochemistry concept for predicting and explaining chemical behavior.",
+            "applications": [],
+            "max_resolution_in_context": 3
+          },
+          "hierarchy_location": {
+            "category": "Chemistry",
+            "subcategory": "Biochemistry",
+            "topic": "Transcription Chemistry",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_chemistry_l3_dna_replication_chemistry"
+            ],
+            "unlocks_in_context": [
+              "spine_chemistry_l3_protein_synthesis_overview"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2025-01-01T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.1-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Chemistry 2e",
+            "chapter": "2",
+            "section": "2.6"
           }
         ]
       }
@@ -12852,7 +13045,7 @@
               "spine_mathematics_l3_exponential_functions"
             ],
             "unlocks_in_context": [
-              "spine_mathematics_l3_first_order_linear_equations"
+              "spine_mathematics_l3_first_order_odes"
             ]
           },
           "linked_content": {
@@ -13132,74 +13325,12 @@
       }
     },
     {
-      "id": "spine_mathematics_l3_first_order_linear_equations",
-      "resolution_level": 3,
-      "content": {
-        "title": "First-Order Linear Differential Equations",
-        "definition": "A first-order linear ODE has the form y′ + p(x)y = q(x), solved using integrating factors to produce a general solution.",
-        "summary": "First-order linear equations extend separable methods to forcing terms that depend on x alone. Integrating-factor techniques appear in RC circuits, mixing problems, and as building blocks for higher-order theory."
-      },
-      "knowledge_graph": {
-        "knowledge_area": "Quantitative Reasoning",
-        "knowledge_cluster": "Dynamical Systems",
-        "primary_domain": "mathematics"
-      },
-      "dependency_graph": {
-        "parent_concept_id": "spine_mathematics_l2_differential_equations",
-        "prerequisites": [
-          "spine_mathematics_l3_separable_differential_equations",
-          "spine_mathematics_l3_fundamental_theorem_of_calculus"
-        ],
-        "unlocks": [
-          "spine_mathematics_l3_systems_of_odes"
-        ]
-      },
-      "domain_contexts": [
-        {
-          "domain_id": "mathematics",
-          "framing": {
-            "title_in_context": "First-Order Linear Differential Equations",
-            "relevance": "Integrating factors solve linear first-order models with nonhomogeneous terms.",
-            "applications": [],
-            "max_resolution_in_context": 4
-          },
-          "hierarchy_location": {
-            "category": "Mathematics",
-            "subcategory": "Differential Equations",
-            "topic": "First-Order Linear Differential Equations",
-            "subtopic": null
-          },
-          "dependency_graph": {
-            "prerequisites_in_context": [],
-            "unlocks_in_context": []
-          },
-          "linked_content": {
-            "by_library": {}
-          }
-        }
-      ],
-      "metadata": {
-        "created_at": "2025-01-01T00:00:00Z",
-        "updated_at": "2025-01-01T00:00:00Z",
-        "created_by": "ai_draft",
-        "version": "0.1-draft",
-        "status": "draft",
-        "source_references": [
-          {
-            "source": "OpenStax Calculus Volume 2",
-            "chapter": "4",
-            "section": "4.5"
-          }
-        ]
-      }
-    },
-    {
       "id": "spine_mathematics_l3_first_order_odes",
       "resolution_level": 3,
       "content": {
         "title": "First-Order Ordinary Differential Equations",
-        "definition": "A first-order ODE relates an unknown function to its first derivative, F(x, y, y′) = 0; a solution is a function whose derivative satisfies the equation on an interval.",
-        "summary": "First-order ODEs model growth, cooling, and mixing when rates depend on current state. Classification by type guides choice of analytic, graphical, or numerical solution methods."
+        "definition": "A first-order ODE relates an unknown function to its first derivative, F(x, y, y′) = 0; includes separable equations and linear forms y′ + p(x)y = q(x) solved by integrating factors.",
+        "summary": "First-order ODEs model growth, cooling, and mixing when rates depend on current state. Linear first-order equations (integrating-factor method) are developed at L4 under this anchor."
       },
       "knowledge_graph": {
         "knowledge_area": "Quantitative Reasoning",
@@ -13214,7 +13345,8 @@
         ],
         "unlocks": [
           "spine_mathematics_l3_separable_differential_equations",
-          "spine_mathematics_l3_second_order_linear_odes"
+          "spine_mathematics_l3_second_order_linear_odes",
+          "spine_mathematics_l3_systems_of_odes"
         ]
       },
       "domain_contexts": [
@@ -14980,7 +15112,7 @@
           "spine_mathematics_l3_logarithmic_functions"
         ],
         "unlocks": [
-          "spine_mathematics_l3_first_order_linear_equations"
+          "spine_mathematics_l3_systems_of_odes"
         ]
       },
       "domain_contexts": [
@@ -15162,7 +15294,7 @@
       "dependency_graph": {
         "parent_concept_id": "spine_mathematics_l2_differential_equations",
         "prerequisites": [
-          "spine_mathematics_l3_first_order_linear_equations",
+          "spine_mathematics_l3_first_order_odes",
           "spine_mathematics_l3_second_order_linear_odes",
           "spine_mathematics_l3_eigenvalues_and_eigenvectors"
         ],
@@ -16246,67 +16378,6 @@
             "source": "NCBI StatPearls",
             "chapter": "Anesthesia",
             "section": "Overview"
-          }
-        ]
-      }
-    },
-    {
-      "id": "spine_medicine_clinical_l3_anxiety_disorders",
-      "resolution_level": 3,
-      "content": {
-        "title": "Anxiety Disorders",
-        "definition": "GAD, panic disorder, and phobias treated with CBT, SSRIs, and short-term anxiolytics when appropriate.",
-        "summary": "Panic attacks peak within minutes with somatic symptoms. Exposure therapy helps specific phobias."
-      },
-      "knowledge_graph": {
-        "knowledge_area": "Clinical Sciences",
-        "knowledge_cluster": "Anxiety Disorders",
-        "primary_domain": "medicine_clinical"
-      },
-      "dependency_graph": {
-        "parent_concept_id": "spine_medicine_clinical_l2_psychiatry_and_behavioral_health",
-        "prerequisites": [
-          "spine_medicine_clinical_l2_psychiatry_and_behavioral_health"
-        ],
-        "unlocks": []
-      },
-      "domain_contexts": [
-        {
-          "domain_id": "medicine_clinical",
-          "framing": {
-            "title_in_context": "Anxiety Disorders",
-            "relevance": "Core psychiatry & behavioral health concept for medical sciences.",
-            "applications": [],
-            "max_resolution_in_context": 3
-          },
-          "hierarchy_location": {
-            "category": "Medicine (Clinical)",
-            "subcategory": "Psychiatry & Behavioral Health",
-            "topic": "Anxiety Disorders",
-            "subtopic": null
-          },
-          "dependency_graph": {
-            "prerequisites_in_context": [
-              "spine_medicine_clinical_l2_psychiatry_and_behavioral_health"
-            ],
-            "unlocks_in_context": []
-          },
-          "linked_content": {
-            "by_library": {}
-          }
-        }
-      ],
-      "metadata": {
-        "created_at": "2025-01-01T00:00:00Z",
-        "updated_at": "2025-01-01T00:00:00Z",
-        "created_by": "ai_draft",
-        "version": "0.1-draft",
-        "status": "draft",
-        "source_references": [
-          {
-            "source": "NCBI StatPearls",
-            "chapter": "Anxiety",
-            "section": "Management"
           }
         ]
       }
@@ -17959,67 +18030,6 @@
       }
     },
     {
-      "id": "spine_medicine_clinical_l3_eating_disorders",
-      "resolution_level": 3,
-      "content": {
-        "title": "Eating Disorders",
-        "definition": "Anorexia nervosa, bulimia nervosa, and binge-eating disorder with medical stabilization and psychotherapy.",
-        "summary": "Anorexia has highest psychiatric mortality. Electrolyte abnormalities occur with purging behaviors."
-      },
-      "knowledge_graph": {
-        "knowledge_area": "Clinical Sciences",
-        "knowledge_cluster": "Eating Disorders",
-        "primary_domain": "medicine_clinical"
-      },
-      "dependency_graph": {
-        "parent_concept_id": "spine_medicine_clinical_l2_psychiatry_and_behavioral_health",
-        "prerequisites": [
-          "spine_medicine_clinical_l2_psychiatry_and_behavioral_health"
-        ],
-        "unlocks": []
-      },
-      "domain_contexts": [
-        {
-          "domain_id": "medicine_clinical",
-          "framing": {
-            "title_in_context": "Eating Disorders",
-            "relevance": "Core psychiatry & behavioral health concept for medical sciences.",
-            "applications": [],
-            "max_resolution_in_context": 3
-          },
-          "hierarchy_location": {
-            "category": "Medicine (Clinical)",
-            "subcategory": "Psychiatry & Behavioral Health",
-            "topic": "Eating Disorders",
-            "subtopic": null
-          },
-          "dependency_graph": {
-            "prerequisites_in_context": [
-              "spine_medicine_clinical_l2_psychiatry_and_behavioral_health"
-            ],
-            "unlocks_in_context": []
-          },
-          "linked_content": {
-            "by_library": {}
-          }
-        }
-      ],
-      "metadata": {
-        "created_at": "2025-01-01T00:00:00Z",
-        "updated_at": "2025-01-01T00:00:00Z",
-        "created_by": "ai_draft",
-        "version": "0.1-draft",
-        "status": "draft",
-        "source_references": [
-          {
-            "source": "NCBI StatPearls",
-            "chapter": "Eating Disorders",
-            "section": "Management"
-          }
-        ]
-      }
-    },
-    {
       "id": "spine_medicine_clinical_l3_ecg_interpretation_basics",
       "resolution_level": 3,
       "content": {
@@ -19488,13 +19498,14 @@
       "resolution_level": 3,
       "content": {
         "title": "Meningitis and Encephalitis",
-        "definition": "Acute CNS infection with lumbar puncture findings, empiric antibiotics, and antivirals when indicated.",
-        "summary": "Bacterial meningitis shows low glucose and high protein in CSF. HSV encephalitis needs acyclovir promptly."
+        "definition": "Acute CNS infection presenting with fever, headache, and altered mental status; lumbar puncture guides empiric antibiotics and antivirals.",
+        "summary": "Bacterial meningitis shows low glucose and high protein in CSF. HSV encephalitis needs acyclovir promptly. Organism-specific therapy follows culture."
       },
       "knowledge_graph": {
         "knowledge_area": "Clinical Sciences",
         "knowledge_cluster": "CNS Infections",
-        "primary_domain": "medicine_clinical"
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": "Merged meningitis_bacterial (Infectious Disease) and meningitis_and_encephalitis (Neurology). Organism/antibiotic and neurologic presentation are domain contexts."
       },
       "dependency_graph": {
         "parent_concept_id": "spine_medicine_clinical_l2_neurology",
@@ -19508,19 +19519,24 @@
           "domain_id": "medicine_clinical",
           "framing": {
             "title_in_context": "Meningitis and Encephalitis",
-            "relevance": "Core neurology concept for medical sciences.",
-            "applications": [],
-            "max_resolution_in_context": 3
+            "relevance": "Neurologic presentation and CSF interpretation; organism-specific empiric antibiotics, prophylaxis, and antivirals.",
+            "applications": [
+              "HSV encephalitis",
+              "Neisseria prophylaxis",
+              "Dexamethasone adjunct"
+            ],
+            "max_resolution_in_context": 5
           },
           "hierarchy_location": {
             "category": "Medicine (Clinical)",
-            "subcategory": "Neurology",
+            "subcategory": "Neurology / Infectious Disease",
             "topic": "Meningitis and Encephalitis",
             "subtopic": null
           },
           "dependency_graph": {
             "prerequisites_in_context": [
-              "spine_medicine_clinical_l2_neurology"
+              "spine_medicine_clinical_l2_neurology",
+              "spine_medicine_clinical_l2_infectious_disease"
             ],
             "unlocks_in_context": []
           },
@@ -19540,63 +19556,7 @@
             "source": "NCBI StatPearls",
             "chapter": "Meningitis",
             "section": "Management"
-          }
-        ]
-      }
-    },
-    {
-      "id": "spine_medicine_clinical_l3_meningitis_bacterial",
-      "resolution_level": 3,
-      "content": {
-        "title": "Bacterial Meningitis",
-        "definition": "Empiric cephalosporin plus vancomycin pending culture with dexamethasone in some cases.",
-        "summary": "Neisseria meningitidis requires prophylaxis for close contacts. Petechial rash suggests meningococcemia."
-      },
-      "knowledge_graph": {
-        "knowledge_area": "Clinical Sciences",
-        "knowledge_cluster": "CNS Infections",
-        "primary_domain": "medicine_clinical"
-      },
-      "dependency_graph": {
-        "parent_concept_id": "spine_medicine_clinical_l2_infectious_disease",
-        "prerequisites": [
-          "spine_medicine_clinical_l2_infectious_disease"
-        ],
-        "unlocks": []
-      },
-      "domain_contexts": [
-        {
-          "domain_id": "medicine_clinical",
-          "framing": {
-            "title_in_context": "Bacterial Meningitis",
-            "relevance": "Core infectious disease concept for medical sciences.",
-            "applications": [],
-            "max_resolution_in_context": 3
           },
-          "hierarchy_location": {
-            "category": "Medicine (Clinical)",
-            "subcategory": "Infectious Disease",
-            "topic": "Bacterial Meningitis",
-            "subtopic": null
-          },
-          "dependency_graph": {
-            "prerequisites_in_context": [
-              "spine_medicine_clinical_l2_infectious_disease"
-            ],
-            "unlocks_in_context": []
-          },
-          "linked_content": {
-            "by_library": {}
-          }
-        }
-      ],
-      "metadata": {
-        "created_at": "2025-01-01T00:00:00Z",
-        "updated_at": "2025-01-01T00:00:00Z",
-        "created_by": "ai_draft",
-        "version": "0.1-draft",
-        "status": "draft",
-        "source_references": [
           {
             "source": "NCBI StatPearls",
             "chapter": "Bacterial Meningitis",
@@ -20216,67 +20176,6 @@
       }
     },
     {
-      "id": "spine_medicine_clinical_l3_personality_disorders_overview",
-      "resolution_level": 3,
-      "content": {
-        "title": "Personality Disorders Overview",
-        "definition": "Enduring maladaptive trait patterns including borderline, antisocial, and avoidant clusters.",
-        "summary": "Borderline PD features unstable relationships and self-image. DBT is evidence-based for borderline PD."
-      },
-      "knowledge_graph": {
-        "knowledge_area": "Clinical Sciences",
-        "knowledge_cluster": "Personality Disorders",
-        "primary_domain": "medicine_clinical"
-      },
-      "dependency_graph": {
-        "parent_concept_id": "spine_medicine_clinical_l2_psychiatry_and_behavioral_health",
-        "prerequisites": [
-          "spine_medicine_clinical_l2_psychiatry_and_behavioral_health"
-        ],
-        "unlocks": []
-      },
-      "domain_contexts": [
-        {
-          "domain_id": "medicine_clinical",
-          "framing": {
-            "title_in_context": "Personality Disorders Overview",
-            "relevance": "Core psychiatry & behavioral health concept for medical sciences.",
-            "applications": [],
-            "max_resolution_in_context": 3
-          },
-          "hierarchy_location": {
-            "category": "Medicine (Clinical)",
-            "subcategory": "Psychiatry & Behavioral Health",
-            "topic": "Personality Disorders Overview",
-            "subtopic": null
-          },
-          "dependency_graph": {
-            "prerequisites_in_context": [
-              "spine_medicine_clinical_l2_psychiatry_and_behavioral_health"
-            ],
-            "unlocks_in_context": []
-          },
-          "linked_content": {
-            "by_library": {}
-          }
-        }
-      ],
-      "metadata": {
-        "created_at": "2025-01-01T00:00:00Z",
-        "updated_at": "2025-01-01T00:00:00Z",
-        "created_by": "ai_draft",
-        "version": "0.1-draft",
-        "status": "draft",
-        "source_references": [
-          {
-            "source": "NCBI StatPearls",
-            "chapter": "Personality Disorders",
-            "section": "Overview"
-          }
-        ]
-      }
-    },
-    {
       "id": "spine_medicine_clinical_l3_pituitary_disorders",
       "resolution_level": 3,
       "content": {
@@ -20887,67 +20786,6 @@
       }
     },
     {
-      "id": "spine_medicine_clinical_l3_schizophrenia_spectrum",
-      "resolution_level": 3,
-      "content": {
-        "title": "Schizophrenia Spectrum Disorders",
-        "definition": "Positive and negative psychotic symptoms managed with antipsychotics and psychosocial rehabilitation.",
-        "summary": "First episode psychosis warrants thorough medical workup. Clozapine for treatment-resistant schizophrenia."
-      },
-      "knowledge_graph": {
-        "knowledge_area": "Clinical Sciences",
-        "knowledge_cluster": "Psychotic Disorders",
-        "primary_domain": "medicine_clinical"
-      },
-      "dependency_graph": {
-        "parent_concept_id": "spine_medicine_clinical_l2_psychiatry_and_behavioral_health",
-        "prerequisites": [
-          "spine_medicine_clinical_l2_psychiatry_and_behavioral_health"
-        ],
-        "unlocks": []
-      },
-      "domain_contexts": [
-        {
-          "domain_id": "medicine_clinical",
-          "framing": {
-            "title_in_context": "Schizophrenia Spectrum Disorders",
-            "relevance": "Core psychiatry & behavioral health concept for medical sciences.",
-            "applications": [],
-            "max_resolution_in_context": 3
-          },
-          "hierarchy_location": {
-            "category": "Medicine (Clinical)",
-            "subcategory": "Psychiatry & Behavioral Health",
-            "topic": "Schizophrenia Spectrum Disorders",
-            "subtopic": null
-          },
-          "dependency_graph": {
-            "prerequisites_in_context": [
-              "spine_medicine_clinical_l2_psychiatry_and_behavioral_health"
-            ],
-            "unlocks_in_context": []
-          },
-          "linked_content": {
-            "by_library": {}
-          }
-        }
-      ],
-      "metadata": {
-        "created_at": "2025-01-01T00:00:00Z",
-        "updated_at": "2025-01-01T00:00:00Z",
-        "created_by": "ai_draft",
-        "version": "0.1-draft",
-        "status": "draft",
-        "source_references": [
-          {
-            "source": "NCBI StatPearls",
-            "chapter": "Schizophrenia",
-            "section": "Management"
-          }
-        ]
-      }
-    },
-    {
       "id": "spine_medicine_clinical_l3_seizure_and_epilepsy",
       "resolution_level": 3,
       "content": {
@@ -21431,67 +21269,6 @@
             "source": "NCBI StatPearls",
             "chapter": "Stroke",
             "section": "Acute Management"
-          }
-        ]
-      }
-    },
-    {
-      "id": "spine_medicine_clinical_l3_substance_use_disorders",
-      "resolution_level": 3,
-      "content": {
-        "title": "Substance Use Disorders",
-        "definition": "Alcohol, opioid, and stimulant use disorders with withdrawal management and maintenance therapies.",
-        "summary": "Opioid withdrawal managed with buprenorphine or methadone. AUD responds to naltrexone and counseling."
-      },
-      "knowledge_graph": {
-        "knowledge_area": "Clinical Sciences",
-        "knowledge_cluster": "Addiction Medicine",
-        "primary_domain": "medicine_clinical"
-      },
-      "dependency_graph": {
-        "parent_concept_id": "spine_medicine_clinical_l2_psychiatry_and_behavioral_health",
-        "prerequisites": [
-          "spine_medicine_clinical_l2_psychiatry_and_behavioral_health"
-        ],
-        "unlocks": []
-      },
-      "domain_contexts": [
-        {
-          "domain_id": "medicine_clinical",
-          "framing": {
-            "title_in_context": "Substance Use Disorders",
-            "relevance": "Core psychiatry & behavioral health concept for medical sciences.",
-            "applications": [],
-            "max_resolution_in_context": 3
-          },
-          "hierarchy_location": {
-            "category": "Medicine (Clinical)",
-            "subcategory": "Psychiatry & Behavioral Health",
-            "topic": "Substance Use Disorders",
-            "subtopic": null
-          },
-          "dependency_graph": {
-            "prerequisites_in_context": [
-              "spine_medicine_clinical_l2_psychiatry_and_behavioral_health"
-            ],
-            "unlocks_in_context": []
-          },
-          "linked_content": {
-            "by_library": {}
-          }
-        }
-      ],
-      "metadata": {
-        "created_at": "2025-01-01T00:00:00Z",
-        "updated_at": "2025-01-01T00:00:00Z",
-        "created_by": "ai_draft",
-        "version": "0.1-draft",
-        "status": "draft",
-        "source_references": [
-          {
-            "source": "NCBI StatPearls",
-            "chapter": "Substance Use",
-            "section": "Management"
           }
         ]
       }
@@ -23017,67 +22794,6 @@
             "source": "NCBI StatPearls",
             "chapter": "Autonomic",
             "section": "Cholinergic"
-          }
-        ]
-      }
-    },
-    {
-      "id": "spine_medicine_preclinical_l3_bacterial_cell_structure",
-      "resolution_level": 3,
-      "content": {
-        "title": "Bacterial Cell Structure",
-        "definition": "Peptidoglycan cell wall, membranes, flagella, pili, and spore formation distinguishing gram stain groups.",
-        "summary": "Gram-positive thick peptidoglycan retains crystal violet. Endospores resist heat and disinfectants."
-      },
-      "knowledge_graph": {
-        "knowledge_area": "Clinical Sciences",
-        "knowledge_cluster": "Bacteriology",
-        "primary_domain": "medicine_preclinical"
-      },
-      "dependency_graph": {
-        "parent_concept_id": "spine_medicine_preclinical_l2_microbiology_and_infectious_disease",
-        "prerequisites": [
-          "spine_medicine_preclinical_l2_microbiology_and_infectious_disease"
-        ],
-        "unlocks": []
-      },
-      "domain_contexts": [
-        {
-          "domain_id": "medicine_preclinical",
-          "framing": {
-            "title_in_context": "Bacterial Cell Structure",
-            "relevance": "Core microbiology & infectious disease concept for medical sciences.",
-            "applications": [],
-            "max_resolution_in_context": 3
-          },
-          "hierarchy_location": {
-            "category": "Medicine (Pre-Clinical)",
-            "subcategory": "Microbiology & Infectious Disease",
-            "topic": "Bacterial Cell Structure",
-            "subtopic": null
-          },
-          "dependency_graph": {
-            "prerequisites_in_context": [
-              "spine_medicine_preclinical_l2_microbiology_and_infectious_disease"
-            ],
-            "unlocks_in_context": []
-          },
-          "linked_content": {
-            "by_library": {}
-          }
-        }
-      ],
-      "metadata": {
-        "created_at": "2025-01-01T00:00:00Z",
-        "updated_at": "2025-01-01T00:00:00Z",
-        "created_by": "ai_draft",
-        "version": "0.1-draft",
-        "status": "draft",
-        "source_references": [
-          {
-            "source": "NCBI StatPearls",
-            "chapter": "Bacteriology",
-            "section": "Structure"
           }
         ]
       }
@@ -26038,67 +25754,6 @@
             "source": "NCBI StatPearls",
             "chapter": "Inflammation",
             "section": "Types"
-          }
-        ]
-      }
-    },
-    {
-      "id": "spine_medicine_preclinical_l3_learning_theory_and_conditioning",
-      "resolution_level": 3,
-      "content": {
-        "title": "Learning Theory and Conditioning",
-        "definition": "Classical and operant conditioning, reinforcement schedules, and extinction shaping behavior.",
-        "summary": "Positive reinforcement increases behavior frequency. Classical conditioning pairs neutral and unconditioned stimuli."
-      },
-      "knowledge_graph": {
-        "knowledge_area": "Clinical Sciences",
-        "knowledge_cluster": "Behavioral Science",
-        "primary_domain": "medicine_preclinical"
-      },
-      "dependency_graph": {
-        "parent_concept_id": "spine_medicine_preclinical_l2_behavioral_science_and_epidemiology",
-        "prerequisites": [
-          "spine_medicine_preclinical_l2_behavioral_science_and_epidemiology"
-        ],
-        "unlocks": []
-      },
-      "domain_contexts": [
-        {
-          "domain_id": "medicine_preclinical",
-          "framing": {
-            "title_in_context": "Learning Theory and Conditioning",
-            "relevance": "Core behavioral science & epidemiology concept for medical sciences.",
-            "applications": [],
-            "max_resolution_in_context": 3
-          },
-          "hierarchy_location": {
-            "category": "Medicine (Pre-Clinical)",
-            "subcategory": "Behavioral Science & Epidemiology",
-            "topic": "Learning Theory and Conditioning",
-            "subtopic": null
-          },
-          "dependency_graph": {
-            "prerequisites_in_context": [
-              "spine_medicine_preclinical_l2_behavioral_science_and_epidemiology"
-            ],
-            "unlocks_in_context": []
-          },
-          "linked_content": {
-            "by_library": {}
-          }
-        }
-      ],
-      "metadata": {
-        "created_at": "2025-01-01T00:00:00Z",
-        "updated_at": "2025-01-01T00:00:00Z",
-        "created_by": "ai_draft",
-        "version": "0.1-draft",
-        "status": "draft",
-        "source_references": [
-          {
-            "source": "NCBI StatPearls",
-            "chapter": "Behavioral Science",
-            "section": "Learning"
           }
         ]
       }
@@ -31922,7 +31577,7 @@
         "parent_concept_id": "spine_physics_l2_modern_physics_and_quantum_mechanics",
         "prerequisites": [
           "spine_physics_l3_heisenberg_uncertainty_principle",
-          "spine_mathematics_l3_first_order_linear_equations"
+          "spine_mathematics_l3_first_order_odes"
         ],
         "unlocks": [
           "spine_physics_l3_atomic_structure_and_spectra"
@@ -31946,7 +31601,7 @@
           "dependency_graph": {
             "prerequisites_in_context": [
               "spine_physics_l3_heisenberg_uncertainty_principle",
-              "spine_mathematics_l3_first_order_linear_equations"
+              "spine_mathematics_l3_first_order_odes"
             ],
             "unlocks_in_context": [
               "spine_physics_l3_atomic_structure_and_spectra"
@@ -32816,7 +32471,8 @@
       "knowledge_graph": {
         "knowledge_area": "Behavioral & Cognitive Sciences",
         "knowledge_cluster": "Anxiety Disorders",
-        "primary_domain": "psychology_neuroscience"
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3)."
       },
       "dependency_graph": {
         "parent_concept_id": "spine_psychology_neuroscience_l2_abnormal_psychology_and_psychopathology",
@@ -32830,9 +32486,9 @@
           "domain_id": "psychology_neuroscience",
           "framing": {
             "title_in_context": "Anxiety Disorders",
-            "relevance": "Core abnormal psychology & psychopathology concept for understanding behavior, cognition, and mental processes.",
+            "relevance": "DSM-based psychopathology classification and behavioral mechanisms.",
             "applications": [],
-            "max_resolution_in_context": 3
+            "max_resolution_in_context": 4
           },
           "hierarchy_location": {
             "category": "Psychology & Neuroscience",
@@ -32843,6 +32499,33 @@
           "dependency_graph": {
             "prerequisites_in_context": [
               "spine_psychology_neuroscience_l3_diagnostic_classification_dsm"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Anxiety Disorders",
+            "relevance": "Clinical management with CBT, SSRIs, and short-term anxiolytics.",
+            "applications": [
+              "Panic disorder treatment",
+              "Exposure therapy for phobias"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Medicine (Clinical)",
+            "subcategory": "Psychiatry & Behavioral Health",
+            "topic": "Anxiety Disorders",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l2_psychiatry_and_behavioral_health"
             ],
             "unlocks_in_context": []
           },
@@ -32862,6 +32545,11 @@
             "source": "OpenStax Psychology 2e",
             "chapter": "15",
             "section": "15.2"
+          },
+          {
+            "source": "NCBI StatPearls",
+            "chapter": "Anxiety",
+            "section": "Management"
           }
         ]
       }
@@ -33304,23 +32992,30 @@
       "knowledge_graph": {
         "knowledge_area": "Behavioral & Cognitive Sciences",
         "knowledge_cluster": "Associative Learning",
-        "primary_domain": "psychology_neuroscience"
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Medicine preclinical behavioral science (patient adherence, aversive conditioning) is a domain context — not a separate L3."
       },
       "dependency_graph": {
         "parent_concept_id": "spine_psychology_neuroscience_l2_learning_and_conditioning",
         "prerequisites": [
           "spine_psychology_neuroscience_l2_learning_and_conditioning"
         ],
-        "unlocks": []
+        "unlocks": [
+          "spine_psychology_neuroscience_l3_extinction_and_spontaneous_recovery",
+          "spine_psychology_neuroscience_l3_biological_constraints_on_learning"
+        ]
       },
       "domain_contexts": [
         {
           "domain_id": "psychology_neuroscience",
           "framing": {
             "title_in_context": "Classical Conditioning",
-            "relevance": "Core learning & conditioning concept for understanding behavior, cognition, and mental processes.",
-            "applications": [],
-            "max_resolution_in_context": 3
+            "relevance": "Foundation of associative learning in behavioral psychology.",
+            "applications": [
+              "Pavlovian paradigms",
+              "Conditioned emotional responses"
+            ],
+            "max_resolution_in_context": 4
           },
           "hierarchy_location": {
             "category": "Psychology & Neuroscience",
@@ -33331,6 +33026,35 @@
           "dependency_graph": {
             "prerequisites_in_context": [
               "spine_psychology_neuroscience_l2_learning_and_conditioning"
+            ],
+            "unlocks_in_context": [
+              "spine_psychology_neuroscience_l3_extinction_and_spontaneous_recovery"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Classical Conditioning in Behavioral Medicine",
+            "relevance": "Behavioral medicine and patient adherence — conditioned responses to clinical cues.",
+            "applications": [
+              "Aversive conditioning",
+              "Placebo/nocebo mechanisms"
+            ],
+            "max_resolution_in_context": 3
+          },
+          "hierarchy_location": {
+            "category": "Behavioral Science & Epidemiology",
+            "subcategory": "Behavioral Science",
+            "topic": "Learning Theory",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_preclinical_l2_behavioral_science_and_epidemiology"
             ],
             "unlocks_in_context": []
           },
@@ -33350,6 +33074,11 @@
             "source": "OpenStax Psychology 2e",
             "chapter": "6",
             "section": "6.1"
+          },
+          {
+            "source": "NCBI StatPearls",
+            "chapter": "Behavioral Science",
+            "section": "Learning"
           }
         ]
       }
@@ -33792,7 +33521,8 @@
       "knowledge_graph": {
         "knowledge_area": "Behavioral & Cognitive Sciences",
         "knowledge_cluster": "Feeding and Eating Disorders",
-        "primary_domain": "psychology_neuroscience"
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3)."
       },
       "dependency_graph": {
         "parent_concept_id": "spine_psychology_neuroscience_l2_abnormal_psychology_and_psychopathology",
@@ -33806,9 +33536,9 @@
           "domain_id": "psychology_neuroscience",
           "framing": {
             "title_in_context": "Eating Disorders",
-            "relevance": "Core abnormal psychology & psychopathology concept for understanding behavior, cognition, and mental processes.",
+            "relevance": "DSM-based psychopathology classification and behavioral mechanisms.",
             "applications": [],
-            "max_resolution_in_context": 3
+            "max_resolution_in_context": 4
           },
           "hierarchy_location": {
             "category": "Psychology & Neuroscience",
@@ -33819,6 +33549,33 @@
           "dependency_graph": {
             "prerequisites_in_context": [
               "spine_psychology_neuroscience_l3_diagnostic_classification_dsm"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Eating Disorders",
+            "relevance": "Medical stabilization and psychotherapy in inpatient and outpatient settings.",
+            "applications": [
+              "Anorexia medical complications",
+              "Electrolyte monitoring with purging"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Medicine (Clinical)",
+            "subcategory": "Psychiatry & Behavioral Health",
+            "topic": "Eating Disorders",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l2_psychiatry_and_behavioral_health"
             ],
             "unlocks_in_context": []
           },
@@ -33838,6 +33595,11 @@
             "source": "OpenStax Psychology 2e",
             "chapter": "15",
             "section": "15.8"
+          },
+          {
+            "source": "NCBI StatPearls",
+            "chapter": "Eating Disorders",
+            "section": "Management"
           }
         ]
       }
@@ -35195,23 +34957,29 @@
       "knowledge_graph": {
         "knowledge_area": "Behavioral & Cognitive Sciences",
         "knowledge_cluster": "Associative Learning",
-        "primary_domain": "psychology_neuroscience"
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Medicine preclinical behavioral science (reinforcement in adherence) is a domain context — not a separate L3."
       },
       "dependency_graph": {
         "parent_concept_id": "spine_psychology_neuroscience_l2_learning_and_conditioning",
         "prerequisites": [
           "spine_psychology_neuroscience_l2_learning_and_conditioning"
         ],
-        "unlocks": []
+        "unlocks": [
+          "spine_psychology_neuroscience_l3_reinforcement_schedules"
+        ]
       },
       "domain_contexts": [
         {
           "domain_id": "psychology_neuroscience",
           "framing": {
             "title_in_context": "Operant Conditioning",
-            "relevance": "Core learning & conditioning concept for understanding behavior, cognition, and mental processes.",
-            "applications": [],
-            "max_resolution_in_context": 3
+            "relevance": "Voluntary behavior shaped by reinforcement and punishment.",
+            "applications": [
+              "Skinner box paradigms",
+              "Behavior modification"
+            ],
+            "max_resolution_in_context": 4
           },
           "hierarchy_location": {
             "category": "Psychology & Neuroscience",
@@ -35222,6 +34990,35 @@
           "dependency_graph": {
             "prerequisites_in_context": [
               "spine_psychology_neuroscience_l2_learning_and_conditioning"
+            ],
+            "unlocks_in_context": [
+              "spine_psychology_neuroscience_l3_reinforcement_schedules"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Operant Conditioning in Behavioral Medicine",
+            "relevance": "Reinforcement schedules in patient behavior change and adherence programs.",
+            "applications": [
+              "Positive reinforcement in lifestyle change",
+              "Contingency management"
+            ],
+            "max_resolution_in_context": 3
+          },
+          "hierarchy_location": {
+            "category": "Behavioral Science & Epidemiology",
+            "subcategory": "Behavioral Science",
+            "topic": "Learning Theory",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_preclinical_l2_behavioral_science_and_epidemiology"
             ],
             "unlocks_in_context": []
           },
@@ -35241,6 +35038,11 @@
             "source": "OpenStax Psychology 2e",
             "chapter": "6",
             "section": "6.2"
+          },
+          {
+            "source": "NCBI StatPearls",
+            "chapter": "Behavioral Science",
+            "section": "Learning"
           }
         ]
       }
@@ -35317,7 +35119,8 @@
       "knowledge_graph": {
         "knowledge_area": "Behavioral & Cognitive Sciences",
         "knowledge_cluster": "Personality Disorders",
-        "primary_domain": "psychology_neuroscience"
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3)."
       },
       "dependency_graph": {
         "parent_concept_id": "spine_psychology_neuroscience_l2_abnormal_psychology_and_psychopathology",
@@ -35331,9 +35134,9 @@
           "domain_id": "psychology_neuroscience",
           "framing": {
             "title_in_context": "Personality Disorders Overview",
-            "relevance": "Core abnormal psychology & psychopathology concept for understanding behavior, cognition, and mental processes.",
+            "relevance": "DSM-based psychopathology classification and behavioral mechanisms.",
             "applications": [],
-            "max_resolution_in_context": 3
+            "max_resolution_in_context": 4
           },
           "hierarchy_location": {
             "category": "Psychology & Neuroscience",
@@ -35344,6 +35147,33 @@
           "dependency_graph": {
             "prerequisites_in_context": [
               "spine_psychology_neuroscience_l3_diagnostic_classification_dsm"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Personality Disorders Overview",
+            "relevance": "Cluster-based clinical approach including DBT for borderline personality disorder.",
+            "applications": [
+              "Borderline PD management",
+              "Antisocial vs avoidant clusters"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Medicine (Clinical)",
+            "subcategory": "Psychiatry & Behavioral Health",
+            "topic": "Personality Disorders Overview",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l2_psychiatry_and_behavioral_health"
             ],
             "unlocks_in_context": []
           },
@@ -35363,6 +35193,11 @@
             "source": "OpenStax Psychology 2e",
             "chapter": "15",
             "section": "15.5"
+          },
+          {
+            "source": "NCBI StatPearls",
+            "chapter": "Personality Disorders",
+            "section": "Overview"
           }
         ]
       }
@@ -35927,7 +35762,8 @@
       "knowledge_graph": {
         "knowledge_area": "Behavioral & Cognitive Sciences",
         "knowledge_cluster": "Psychotic Disorders",
-        "primary_domain": "psychology_neuroscience"
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3)."
       },
       "dependency_graph": {
         "parent_concept_id": "spine_psychology_neuroscience_l2_abnormal_psychology_and_psychopathology",
@@ -35941,9 +35777,9 @@
           "domain_id": "psychology_neuroscience",
           "framing": {
             "title_in_context": "Schizophrenia Spectrum Disorders",
-            "relevance": "Core abnormal psychology & psychopathology concept for understanding behavior, cognition, and mental processes.",
+            "relevance": "DSM-based psychopathology classification and behavioral mechanisms.",
             "applications": [],
-            "max_resolution_in_context": 3
+            "max_resolution_in_context": 4
           },
           "hierarchy_location": {
             "category": "Psychology & Neuroscience",
@@ -35954,6 +35790,33 @@
           "dependency_graph": {
             "prerequisites_in_context": [
               "spine_psychology_neuroscience_l3_diagnostic_classification_dsm"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Schizophrenia Spectrum Disorders",
+            "relevance": "Antipsychotic pharmacotherapy and psychosocial rehabilitation.",
+            "applications": [
+              "First-episode psychosis workup",
+              "Clozapine for treatment resistance"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Medicine (Clinical)",
+            "subcategory": "Psychiatry & Behavioral Health",
+            "topic": "Schizophrenia Spectrum Disorders",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l2_psychiatry_and_behavioral_health"
             ],
             "unlocks_in_context": []
           },
@@ -35973,6 +35836,11 @@
             "source": "OpenStax Psychology 2e",
             "chapter": "15",
             "section": "15.4"
+          },
+          {
+            "source": "NCBI StatPearls",
+            "chapter": "Schizophrenia",
+            "section": "Management"
           }
         ]
       }
@@ -36232,7 +36100,8 @@
       "knowledge_graph": {
         "knowledge_area": "Behavioral & Cognitive Sciences",
         "knowledge_cluster": "Addiction",
-        "primary_domain": "psychology_neuroscience"
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3)."
       },
       "dependency_graph": {
         "parent_concept_id": "spine_psychology_neuroscience_l2_abnormal_psychology_and_psychopathology",
@@ -36246,9 +36115,9 @@
           "domain_id": "psychology_neuroscience",
           "framing": {
             "title_in_context": "Substance Use Disorders",
-            "relevance": "Core abnormal psychology & psychopathology concept for understanding behavior, cognition, and mental processes.",
+            "relevance": "DSM-based psychopathology classification and behavioral mechanisms.",
             "applications": [],
-            "max_resolution_in_context": 3
+            "max_resolution_in_context": 4
           },
           "hierarchy_location": {
             "category": "Psychology & Neuroscience",
@@ -36259,6 +36128,33 @@
           "dependency_graph": {
             "prerequisites_in_context": [
               "spine_psychology_neuroscience_l3_psychopharmacology_basics"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Substance Use Disorders",
+            "relevance": "Withdrawal management and maintenance therapies in clinical practice.",
+            "applications": [
+              "Opioid MAT",
+              "Alcohol use disorder pharmacotherapy"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Medicine (Clinical)",
+            "subcategory": "Psychiatry & Behavioral Health",
+            "topic": "Substance Use Disorders",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l2_psychiatry_and_behavioral_health"
             ],
             "unlocks_in_context": []
           },
@@ -36278,6 +36174,11 @@
             "source": "OpenStax Psychology 2e",
             "chapter": "15",
             "section": "15.7"
+          },
+          {
+            "source": "NCBI StatPearls",
+            "chapter": "Substance Use",
+            "section": "Management"
           }
         ]
       }

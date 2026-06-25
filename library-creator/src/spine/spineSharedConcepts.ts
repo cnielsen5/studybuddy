@@ -53,7 +53,7 @@ export const SPINE_SHARED_CONCEPTS: SpineConcept[] = [
         },
         dependency_graph: {
           prerequisites_in_context: ["spine_mathematics_l3_exponential_functions"],
-          unlocks_in_context: ["spine_mathematics_l3_first_order_linear_equations"],
+          unlocks_in_context: ["spine_mathematics_l3_first_order_odes"],
         },
         linked_content: emptyLinks(),
       },
