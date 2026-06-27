@@ -315,7 +315,9 @@ function buildQuestion(
     classification: {
       question_type: "mcq",
       usage_role: usageRole,
-      cognitive_level: inferCognitiveLevel(concept.hierarchy.domain),
+      cognitive_level: inferCognitiveLevel(
+        concept.hierarchy?.domain ?? concept.knowledge_graph?.primary_domain ?? "General"
+      ),
     },
     content: {
       stem,

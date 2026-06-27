@@ -10,8 +10,8 @@ How new information (cards, library concepts, imported content) finds a home on 
 
 The spine is a **living framework**, not a one-time export.
 
-1. **L1–L3** is the stable domain skeleton (502 concepts today).
-2. **L4/L5** exists where already expanded (49 anchors today) — more can be added incrementally.
+1. **L1–L3** is the stable domain skeleton (702 concepts today).
+2. **L4/L5** exists where already expanded (166 anchor bundles today) — more can be added incrementally.
 3. When **new information** appears during library/card work, run **placement** before committing content:
    - Does it fit an existing node?
    - Should an existing universal node gain a new `domain_context`?

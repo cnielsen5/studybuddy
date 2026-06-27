@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "study-buddy-cb8bc"
+    "default": "study-buddy-cb8bc",
+    "staging": "socrates-staging-eedc4"
   }
 }

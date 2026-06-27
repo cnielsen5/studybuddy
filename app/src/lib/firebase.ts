@@ -23,6 +23,10 @@ let _app: FirebaseApp | null = null;
 let _auth: Auth | null = null;
 let _db: Firestore | null = null;
 
+export function getAppInstance(): FirebaseApp {
+  return getApp();
+}
+
 function getApp(): FirebaseApp {
   if (!isFirebaseConfigured()) {
     throw new Error("Firebase is not configured. Add credentials to .env.local");

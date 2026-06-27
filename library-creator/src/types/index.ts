@@ -7,3 +7,7 @@ export * from "./draftRelationship.js";
 export * from "./libraryBundle.js";
 export * from "./pipeline.js";
 export * from "./curriculumLens.js";
+export * from "./intentDialogue.js";
+export * from "./sourceConfig.js";
+export * from "./reconcile.js";
+export * from "./spineContribution.js";

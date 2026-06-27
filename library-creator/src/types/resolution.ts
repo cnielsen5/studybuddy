@@ -37,6 +37,7 @@ export const DEFAULT_RESOLUTION_RANGE_BY_LEVEL: Record<
   undergrad: { min: 2, max: 4 },
   grad: { min: 3, max: 4 },
   professional: { min: 3, max: 5 },
+  self_taught: { min: 2, max: 4 },
 };
 
 export function defaultResolutionRangeForLevel(

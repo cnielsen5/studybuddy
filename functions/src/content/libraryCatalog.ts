@@ -1,4 +1,4 @@
-import learningScienceV1 from "../../../content/libraries/learning-science-v1/library.json";
+import learningScienceV1 from "./data/learning-science-v1-library.json";
 
 export type LibraryCardTier = "core" | "extension" | "certification" | "remedial";
 

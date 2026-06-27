@@ -21,7 +21,8 @@
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
     "paths": {
-      "@socrates/concept-metrics": ["../functions/src/core/concept/deriveConceptMetrics.ts"]
+      "@socrates/concept-metrics": ["../functions/src/core/concept/deriveConceptMetrics.ts"],
+      "@lc/*": ["../library-creator/src/*"]
     }
   },
   "include": ["src"]

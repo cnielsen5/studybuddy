@@ -1,4 +1,4 @@
-import { ingestText, ingestTextFile, ingestWebsite } from "../ingestors/index.js";
+import { ingestText, ingestTextFile } from "../ingestors/text.js";
 import { mergeParsedSources } from "../ingestors/mergeParsedSources.js";
 import { extractConceptGraph } from "../extraction/extractConceptGraph.js";
 import {
@@ -105,6 +105,7 @@ export class LibraryCreationService {
       throw new Error("At least one URL is required");
     }
 
+    const { ingestWebsite } = await import("../ingestors/website.js");
     const parsedSources = await Promise.all(urls.map((url) => ingestWebsite(url)));
     const parsed =
       parsedSources.length === 1
@@ -258,6 +259,58 @@ export class LibraryCreationService {
       domainProfile,
       options
     );
+    const validation = validateConceptGraphDraft(draft);
+    if (!validation.valid) {
+      const summary = validation.issues
+        .filter((i) => i.severity === "error")
+        .map((i) => i.message)
+        .join("; ");
+      throw new Error(`Concept graph validation failed: ${summary}`);
+    }
+
+    const draftWithNotes: ConceptGraphDraft = {
+      ...draft,
+      notes: [
+        ...(draft.notes ?? []),
+        ...validation.issues
+          .filter((i) => i.severity === "warning")
+          .map((i) => `Warning: ${i.message}`),
+      ],
+    };
+    ConceptGraphDraftSchema.parse(draftWithNotes);
+
+    const artifactPath = await this.store.saveArtifact(
+      jobId,
+      "concept-graph.json",
+      draftWithNotes
+    );
+
+    const updated = markStage(
+      {
+        ...job,
+        artifacts: {
+          ...job.artifacts,
+          conceptGraph: draftWithNotes,
+        },
+      },
+      "concept_graph",
+      "awaiting_review",
+      artifactPath
+    );
+
+    await this.store.save(updated);
+    return updated;
+  }
+
+  /** Save an externally built concept graph (e.g. after spine anchoring). */
+  async persistConceptGraph(
+    jobId: string,
+    draft: ConceptGraphDraft
+  ): Promise<LibraryCreationJob> {
+    const job = await this.store.load(jobId);
+    assertCurrentStage(job, "concept_graph");
+    assertStageApproved(job, "domain_profile");
+
     const validation = validateConceptGraphDraft(draft);
     if (!validation.valid) {
       const summary = validation.issues

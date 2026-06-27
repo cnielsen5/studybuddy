@@ -15,7 +15,7 @@ export function buildCertificationQuestions(
   allQuestions: StudyQuestion[],
   maxQuestions = 5
 ): StudyQuestion[] {
-  const linked = new Set(concept.linked_content.question_ids);
+  const linked = new Set(concept.linked_content?.question_ids ?? []);
   const rolePriority: Record<string, number> = {
     diagnostic: 0,
     misconception_directed: 1,

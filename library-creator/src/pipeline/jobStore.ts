@@ -11,10 +11,16 @@ import {
   LibraryCreationJobSchema,
 } from "../types/pipeline.js";
 
-const PACKAGE_ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
+function packageRoot(): string {
+  const url = typeof import.meta !== "undefined" ? import.meta.url : "";
+  if (!url) {
+    throw new Error("JobStore requires an explicit jobsDir in bundled runtime.");
+  }
+  return join(dirname(fileURLToPath(url)), "..", "..");
+}
 
 export function defaultJobsDir(): string {
-  return join(PACKAGE_ROOT, ".jobs");
+  return join(packageRoot(), ".jobs");
 }
 
 export class JobStore {

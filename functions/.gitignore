@@ -1,6 +1,7 @@
 # Compiled JavaScript files
 lib/**/*.js
 lib/**/*.js.map
+!lib/vendor/**
 
 # TypeScript v1 declaration files
 typings/
@@ -12,8 +13,8 @@ node_modules/
 # Firebase configuration (contains project-specific IDs)
 .firebaserc
 
-# Environment variables
-.env
+# Generated runtime content (spine, lenses, profiles) for Cloud Functions
+runtime/
 .env.local
 .env.production
 .env.staging

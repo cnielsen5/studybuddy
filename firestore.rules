@@ -51,5 +51,11 @@ service cloud.firestore {
       // This rule is for client-side access prevention
       allow write: if false;
     }
+
+    // Library creation jobs — server writes; client reads own jobs for live progress
+    match /users/{userId}/libraryCreationJobs/{jobId} {
+      allow read: if request.auth != null && request.auth.uid == userId;
+      allow write: if false;
+    }
   }
 }

@@ -4,15 +4,22 @@ import { fileURLToPath } from "node:url";
 import type { DomainArchetypeId, DomainProfile } from "../types/domainProfile.js";
 import { DomainProfileSchema } from "../types/domainProfile.js";
 
-const PROFILES_DIR = join(
-  dirname(fileURLToPath(import.meta.url)),
-  "..",
-  "..",
-  "profiles"
-);
+function moduleProfilesDir(): string {
+  const url = typeof import.meta !== "undefined" ? import.meta.url : "";
+  if (!url) {
+    throw new Error(
+      "Domain profiles path unavailable in bundled runtime; pass profilesDir explicitly."
+    );
+  }
+  return join(dirname(fileURLToPath(url)), "..", "..", "profiles");
+}
 
-export function loadDomainProfile(archetypeId: DomainArchetypeId): DomainProfile {
-  const path = join(PROFILES_DIR, `${archetypeId}.json`);
+export function loadDomainProfile(
+  archetypeId: DomainArchetypeId,
+  profilesDir?: string
+): DomainProfile {
+  const dir = profilesDir ?? moduleProfilesDir();
+  const path = join(dir, `${archetypeId}.json`);
   const raw = readFileSync(path, "utf8");
   return DomainProfileSchema.parse(JSON.parse(raw));
 }

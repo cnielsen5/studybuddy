@@ -1,6 +1,6 @@
 # Curriculum Lenses
 
-> **Status:** Schema + runtime helpers implemented (2026-06-27). Mapping population is manual / semi-automated.
+> **Status:** Schema + runtime helpers implemented (2026-06-27). ABOS and Orthobullets orthopaedic lenses populated (137 + 136 mappings).
 
 ## Concept
 
@@ -86,12 +86,19 @@ cd library-creator && npm run validate:lenses
 
 Checks Zod schema, section graph integrity, duplicate mappings, and (when spine draft exists) known spine concept IDs.
 
-## Stubs
+## Active lenses
 
-- `content/lenses/lens_abos_blueprint_2024.stub.json` — ABOS section outline, empty mappings
-- `content/lenses/lens_orthobullets_topic_taxonomy.stub.json` — Orthobullets-style clusters, empty mappings
+| File | Mappings | Audience |
+|------|----------|----------|
+| `lens_abos_orthopaedic_2025.json` | 137 | ABOS board certification blueprint 2025 |
+| `lens_orthobullets_orthopaedic_2026.json` | 136 | Orthobullets subspecialty topic navigation |
 
-Populate mappings as orthopaedic spine nodes land in `medicine_clinical`.
+Both lenses map `medicine_clinical` orthopaedic spine concepts. High-yield flags exist only in lens mappings (G60), not on spine concept JSON.
+
+## Stubs / archived
+
+- `content/lenses/lens_abos_blueprint_2024.stub.json` — ABOS section outline, empty mappings (schema reference)
+- `content/lenses/lens_orthobullets_topic_taxonomy.stub.archived.json` — superseded by `lens_orthobullets_orthopaedic_2026.json`
 
 ## Integration roadmap
 

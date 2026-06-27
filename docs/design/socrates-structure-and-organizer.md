@@ -160,6 +160,8 @@ Socrates Structure and Organizer
             Canonical reference templates
                 content/templates/universal-concept.master.json — spine-build master (no cards yet)
                 content/LIBRARY_FORMAT.md — bundle export spec and validation rules
+                content/spine/socrates-spine-l1-l5.draft.json — universal spine merged index
+                content/lenses/*.json — curriculum lens definitions (see §5.2)
 
             Graph consistency rule
                 Learning order is expressed in two places that must agree:
@@ -190,6 +192,87 @@ Socrates Structure and Organizer
                     active domain context (writeLinkedContentToDomainContext); aggregate mirror
                     at top-level linked_content for conformance tooling
 
+            Universal spine graph (L1–L5)
+                Shared repository of universal concept nodes — the structural backbone before any
+                library bundles attach cards and questions.
+
+                Canonical files
+                    content/spine/socrates-spine-l1-l5.draft.json — merged L1–L5 index (authoritative)
+                    content/spine/socrates-spine-l1-l3.draft.json — L1–L3 skeleton only
+                    content/spine/l4-l5-bundles/<l3-anchor-id>.json — L4/L5 children per L3 anchor
+                    content/templates/universal-concept.master.json — reference shape (no cards)
+                    content/spine/spine-growth-queue.json — pending structural growth proposals
+
+                Scale (2026-06, post orthopaedic consolidation)
+                    L1: 7 · L2: 69 · L3: 626 · L4: 1002 · L5: 176 · total: 1880 concepts
+                    L1–L3-only graph: 702 concepts
+                    L4/L5 anchor bundles: 166 (one bundle per L3 anchor with max_resolution ≥ 4)
+
+                Build pipeline (library-creator/)
+                    npm run build:spine — assemble L1–L3 from domain data modules
+                    npm run build:spine-l4-l5 — expand anchor bundles into L4/L5 child concepts
+                    npm run build:spine-l1-l5 — merge L1–L3 + L4/L5 into socrates-spine-l1-l5.draft.json
+                    Domain extension (orthopaedic): build:orthopaedic-l2-l3 → build:orthopaedic-l4-l5
+                    Consolidation: consolidate:orthopaedic-spine — merge domain draft into main spine
+                    Placement check: check:spine-placement — heuristic match + optional growth-queue append
+                    See docs/design/spine-growth-and-placement.md · spine-l4-l5-generation-prompt.md
+
+                L4/L5 generation model
+                    Each L3 anchor whose domain_context.framing.max_resolution_in_context ≥ 4 may have
+                    a bundle JSON listing L4 specs (and optional L5 children). Generation priority:
+                        1. Hand-crafted overrides (orthopaedicL4L5Overrides.ts)
+                        2. ABOS high-yield specs (orthopaedicL4L5AbosHighYield.ts)
+                        3. Default ABOS-aligned scaffold (generateAbosAlignedAnchorSpec)
+                    Editorial high-yield scores belong on curriculum lens mappings only — not on spine
+                    concept JSON (G60). Lens depth overrides use depth_in_lens on each mapping.
+
+                Hub hierarchy (domain extension — Orthopaedic Surgery under medicine_clinical)
+                    Some L2 domains use a three-level L3 tree instead of flat L3 children:
+                        L2 major subdivision
+                          → hub L3 (subspecialty cluster; isHub: true)
+                            → topic L3 (board- or workflow-sized working concepts)
+                    spine_medicine_clinical_l2_orthopaedic_surgery (L2)
+                        → 11 hub L3s (Basic Science, Trauma, Adult Reconstruction, Spine, Sports Medicine, …)
+                        → 113 topic L3s (e.g. fracture fixation principles, total hip arthroplasty)
+                        → 124 L3 nodes total under orthopaedic L2
+                    Sibling of spine_medicine_clinical_l2_musculoskeletal_and_rheumatology — shared MSK
+                    conditions, distinct surgical subspecialty pathway.
+                    Perioperative orthopaedic topics merged into existing clinical L3 nodes (not duplicated):
+                        preoperative assessment, anesthesia basics, DVT/PE prophylaxis, wound healing.
+                    Shared preclinical/biology spine nodes receive medicine_clinical orthopaedic domain_context
+                    during build via applyOrthopaedicExistingNodeContexts() (21 existing-node references).
+                    Review-only orthopaedic drafts live under content/spine/drafts/orthopaedic-* (merged-into-main-spine).
+
+            Curriculum lenses (exam / board views over the spine)
+                Orthogonal to domain_contexts[] — same universal concept ids; a lens defines navigation
+                scaffold, section grouping, order_in_section, depth_in_lens, and high_yield_in_lens.
+
+                Layer stack
+                    Spine concept (universal node, resolution_level 1–5)
+                    domain_contexts[] — subject framing (mathematics vs medicine_clinical vs …)
+                    Curriculum lens — exam outline (ABOS, Orthobullets, future USMLE views)
+
+                Storage and code
+                    content/lenses/*.json — one file per lens
+                    library-creator/src/types/curriculumLens.ts — schema
+                    library-creator/src/lens/applyLens.ts — LensView runtime
+                    npm run validate:lenses — schema, section graph, duplicate mappings, spine id checks
+                    Full spec: docs/design/curriculum-lenses.md
+
+                Active orthopaedic lenses (2026-06)
+                    lens_abos_orthopaedic_2025.json — ABOS blueprint 2025 (137 concept mappings)
+                    lens_orthobullets_orthopaedic_2026.json — Orthobullets subspecialty nav (136 mappings)
+                Cross-section mappings (same spine id appears in multiple lens sections):
+                    compartment syndrome — trauma hub + basic science
+                    stress fractures — foot/ankle + metabolic bone / osteoporosis context
+                Stub / archived: lens_abos_blueprint_2024.stub.json (outline only);
+                    lens_orthobullets_topic_taxonomy.stub.archived.json (superseded by 2026 lens)
+
+                Library creation with a lens
+                    Use lens sections as organizational scaffold (not raw spine hierarchy)
+                    Generate cards to depth_in_lens per mapping; set editorial.high_yield_score from
+                    high_yield_in_lens + section weight; order by order_in_section
+
             Resolution levels (resolution_level on concept)
                 1 = domain overview          ("Cardiovascular System")
                 2 = major subdivision        ("Cardiac Physiology")
@@ -204,7 +287,11 @@ Socrates Structure and Organizer
 
             Source
                 AI-generated (library-creator pipeline)
-                Spine authoring (universal L1–3, then domain context layers, then AI L4–5)
+                Spine authoring:
+                    L1–L3 domain modules → build:spine
+                    L4/L5 anchor bundles + spec generators → build:spine-l4-l5 → build:spine-l1-l5
+                    Domain context patches on existing universal nodes during domain consolidation
+                Curriculum lens mapping — manual / semi-automated after L3 placement stabilizes
             Qualities
                 Centroid Vector
                     Average of all semantic vectors of cards contained within this concept
@@ -2265,13 +2352,20 @@ Socrates Structure and Organizer
         Auto-refactoring of concept graphs
         Full CLKT import flow UI — alignment module implemented (§15.3); seeding at import not yet wired
         Multi-domain context review tooling (Phase 4 spine build)
-        OpenStax/LibreTexts automated L4–5 expansion (Phase 3 spine build)
+        OpenStax/LibreTexts automated L4–5 expansion beyond orthopaedic high-yield anchors (Phase 3)
+        Deepen non-high-yield L4/L5 scaffolds across remaining orthopaedic topic anchors
+        Biostatistics / PROMs L4 under ABOS Part I (deferred from orthopaedic review)
 
-        Implemented (library-creator package)
+        Implemented (library-creator package — spine & content)
             CLI pipeline: ingest → intent → domain profile → concept graph → cards/questions → export
             Google Sheets import (OrthoBullets)
             Universal concept schema with domain_contexts and resolution windows
             Linked content write-back into domain contexts during card generation
+            Universal spine L1–L5 build — 1880 concepts, 166 L4/L5 anchor bundles (see §5.2)
+            Orthopaedic surgery under medicine_clinical — 124 L3 (11 hubs + 113 topics), consolidated into main spine
+            Curriculum lens schema, validation, applyLens runtime; ABOS + Orthobullets orthopaedic lenses populated
+            Spine placement heuristic (placeOnSpine) + spine-growth-queue.json workflow
+            Domain consolidation script (consolidate:orthopaedic-spine) with existing-node context patches
                   
 21. Files
        /Users/colbynielsen/Documents/StudyBuddy

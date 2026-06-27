@@ -4,6 +4,15 @@
   "private": true,
   "type": "module",
   "description": "CLI pipeline for creating Socrates content libraries (Option B — app UI later)",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./dist/*": "./dist/*"
+  },
+  "files": [
+    "dist"
+  ],
   "bin": {
     "library-creator": "./dist/cli/main.js"
   },
@@ -27,6 +36,7 @@
     "build:orthopaedic-l2-l3": "tsx scripts/build-orthopaedic-l2-l3-draft.ts",
     "build:orthopaedic-l4-l5": "tsx scripts/build-orthopaedic-l4-l5-draft.ts",
     "consolidate:orthopaedic-spine": "tsx scripts/consolidate-orthopaedic-spine.ts",
+    "pipeline:create": "tsx scripts/run-user-pipeline.ts",
     "import:orthobullets": "tsx scripts/import-orthobullets-sheet.ts",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "typecheck": "tsc --noEmit"

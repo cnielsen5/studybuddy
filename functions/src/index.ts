@@ -23,9 +23,9 @@ try {
 // Export event projector trigger
 export { onEventCreated } from "./triggers/eventProjectorTrigger";
 
-// Export legacy triggers if they exist
-// export * from "./pre.12.26.25 files/triggers";
-
-// Export HTTP callable functions (if any)
-// export * from "./application/...";
+// Library creation pipeline (Stage 3 + publish)
+export {
+  generateLibraryPreview,
+  publishLibraryFromJob,
+} from "./callables/libraryCreation";
 

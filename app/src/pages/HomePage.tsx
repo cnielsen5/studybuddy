@@ -148,6 +148,9 @@ export function HomePage() {
           <Link to="/concept-map" className="btn">
             Concept map
           </Link>
+          <Link to="/create-library" className="btn btn-primary">
+            Create library
+          </Link>
         </div>
       </section>
     </div>

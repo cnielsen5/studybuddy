@@ -48,8 +48,8 @@ export function LibraryPage() {
             <h2>{concept.content.title}</h2>
             <p className="concept-def">{concept.content.summary}</p>
             <p className="hint">
-              <code>{concept.id}</code> · {concept.editorial.difficulty} · high-yield{" "}
-              {concept.editorial.high_yield_score}
+              <code>{concept.id}</code> · {concept.editorial?.difficulty ?? "—"} · high-yield{" "}
+              {concept.editorial?.high_yield_score ?? "—"}
             </p>
 
             {cards.length > 0 && (
