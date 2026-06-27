@@ -1,0 +1,305 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_biology_l3_homeostasis_and_feedback",
+    "anchor_primary_domain": "biology",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_biology_l3_homeostasis_and_feedback.medicine_preclinical.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "4 per-context concepts merged into 4 universal concepts (4 L4 + 0 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_biology_l4_homeostatic_disruption_disease",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_homeostasis_and_feedback",
+      "content": {
+        "title": "Homeostatic Disruption in Disease",
+        "definition": "Pathological states arising when feedback control fails, set points shift, or compensatory mechanisms become overwhelmed or maladaptive.",
+        "summary": "Disease can reflect sensor failure, effector failure, or inappropriate gain in feedback loops. Understanding disruption guides diagnosis and treatment."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Physiology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_homeostasis_and_feedback",
+        "prerequisites": [
+          "spine_biology_l4_positive_feedback_loops",
+          "spine_biology_l4_set_point_compensation"
+        ],
+        "unlocks": [
+          {
+            "concept_id": "spine_medicine_preclinical_l3_cardiac_physiology",
+            "_forward_reference": true
+          },
+          {
+            "concept_id": "spine_medicine_preclinical_l3_acid_base_balance_renal",
+            "_forward_reference": true
+          }
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Homeostatic Disruption in Disease",
+            "relevance": "Links physiology to clinical presentation.",
+            "applications": [
+              "Diabetes as glucose homeostasis failure",
+              "Hypertension as pressure dysregulation"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Integrative Physiology",
+            "topic": "Homeostasis",
+            "subtopic": "Disease Disruption"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_positive_feedback_loops",
+              "spine_biology_l4_set_point_compensation"
+            ],
+            "unlocks_in_context": [
+              {
+                "concept_id": "spine_medicine_preclinical_l3_cardiac_physiology",
+                "_forward_reference": true
+              },
+              {
+                "concept_id": "spine_medicine_preclinical_l3_acid_base_balance_renal",
+                "_forward_reference": true
+              }
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "1",
+            "section": "1.5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_negative_feedback_loops",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_homeostasis_and_feedback",
+      "content": {
+        "title": "Negative Feedback Loops",
+        "definition": "Regulatory circuits in which a change in a controlled variable triggers responses that oppose the initial deviation, returning the system toward a set point.",
+        "summary": "Negative feedback stabilizes temperature, blood pressure, and hormone levels. Sensors, integrators, and effectors form closed-loop control."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Physiology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_homeostasis_and_feedback",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_biology_l4_positive_feedback_loops",
+          "spine_biology_l4_set_point_compensation"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Negative Feedback Loops",
+            "relevance": "Core framework for endocrine and cardiovascular regulation.",
+            "applications": [
+              "Thermoregulation",
+              "Baroreceptor reflex"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Integrative Physiology",
+            "topic": "Homeostasis",
+            "subtopic": "Negative Feedback"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_biology_l4_positive_feedback_loops",
+              "spine_biology_l4_set_point_compensation"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "1",
+            "section": "1.5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_positive_feedback_loops",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_homeostasis_and_feedback",
+      "content": {
+        "title": "Positive Feedback Loops",
+        "definition": "Amplifying circuits in which an initial change promotes further change in the same direction until an endpoint event terminates the cycle.",
+        "summary": "Positive feedback drives events requiring rapid completion such as childbirth (oxytocin) and blood clotting cascade amplification."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Physiology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_homeostasis_and_feedback",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_biology_l4_homeostatic_disruption_disease"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Positive Feedback Loops",
+            "relevance": "Distinguish from negative feedback on exams.",
+            "applications": [
+              "Oxytocin in labor",
+              "Platelet aggregation cascade"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Integrative Physiology",
+            "topic": "Homeostasis",
+            "subtopic": "Positive Feedback"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_biology_l4_homeostatic_disruption_disease"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "33",
+            "section": "33.1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_set_point_compensation",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_homeostasis_and_feedback",
+      "content": {
+        "title": "Set Point and Compensatory Mechanisms",
+        "definition": "Defended physiological targets around which variables oscillate, with secondary compensatory responses attempting to restore balance when primary control fails.",
+        "summary": "Compensation may fully correct (respiratory alkalosis compensation) or partially restore (cardiac remodeling in heart failure). Chronic compensation can become maladaptive."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Physiology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_homeostasis_and_feedback",
+        "prerequisites": [
+          "spine_biology_l4_negative_feedback_loops"
+        ],
+        "unlocks": [
+          "spine_biology_l4_homeostatic_disruption_disease"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Set Point and Compensatory Mechanisms",
+            "relevance": "Acid-base and cardiac compensation reasoning.",
+            "applications": [
+              "Metabolic acidosis respiratory compensation",
+              "Frank-Starling compensation"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Integrative Physiology",
+            "topic": "Homeostasis",
+            "subtopic": "Set Point"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_negative_feedback_loops"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_homeostatic_disruption_disease"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "26",
+            "section": "26.4"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,616 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_psychology_neuroscience_l3_eating_disorders",
+    "anchor_primary_domain": "psychology_neuroscience",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_psychology_neuroscience_l3_eating_disorders.medicine_clinical.json",
+      "content/spine/l4-l5-bundles/spine_psychology_neuroscience_l3_eating_disorders.psychology_neuroscience.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "9 per-context concepts merged into 9 universal concepts (8 L4 + 1 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_psychology_neuroscience_l4_anorexia_nervosa_features",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_eating_disorders",
+      "content": {
+        "title": "Anorexia Nervosa Features",
+        "definition": "Restriction of energy intake, intense fear of weight gain, and distorted body image.",
+        "summary": "Restricting and binge-purge subtypes differ in behavioral phenotype."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Feeding and Eating Disorders",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing ."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_eating_disorders",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_psychology_neuroscience_l4_bulimia_nervosa_features"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Anorexia Nervosa Features",
+            "relevance": "DSM-based psychopathology classification and behavioral mechanisms.",
+            "applications": [
+              "Anorexia"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Psychology & Neuroscience",
+            "subcategory": "Abnormal Psychology & Psychopathology",
+            "topic": "Eating Disorders",
+            "subtopic": "Anorexia"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_psychology_neuroscience_l4_bulimia_nervosa_features"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Psychology 2e",
+            "chapter": "15",
+            "section": "15.8"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l4_binge_eating_disorder_features",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_eating_disorders",
+      "content": {
+        "title": "Binge Eating Disorder Features",
+        "definition": "Recurrent binge episodes without regular compensatory behaviors.",
+        "summary": "Marked distress distinguishes BED from occasional overeating."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Feeding and Eating Disorders",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing ."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_eating_disorders",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_psychology_neuroscience_l4_eating_disorder_risk_factors"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Binge Eating Disorder Features",
+            "relevance": "DSM-based psychopathology classification and behavioral mechanisms.",
+            "applications": [
+              "BED"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Psychology & Neuroscience",
+            "subcategory": "Abnormal Psychology & Psychopathology",
+            "topic": "Eating Disorders",
+            "subtopic": "BED"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_psychology_neuroscience_l4_eating_disorder_risk_factors"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Psychology 2e",
+            "chapter": "15",
+            "section": "15.8.2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l4_bulimia_nervosa_features",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_eating_disorders",
+      "content": {
+        "title": "Bulimia Nervosa Features",
+        "definition": "Recurrent binge eating with compensatory purging or other behaviors.",
+        "summary": "Self-evaluation overly tied to shape and weight."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Feeding and Eating Disorders",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing ."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_eating_disorders",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_psychology_neuroscience_l4_binge_eating_disorder_features"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Bulimia Nervosa Features",
+            "relevance": "DSM-based psychopathology classification and behavioral mechanisms.",
+            "applications": [
+              "Bulimia"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Psychology & Neuroscience",
+            "subcategory": "Abnormal Psychology & Psychopathology",
+            "topic": "Eating Disorders",
+            "subtopic": "Bulimia"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_psychology_neuroscience_l4_binge_eating_disorder_features"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Psychology 2e",
+            "chapter": "15",
+            "section": "15.8.1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l4_eating_disorder_pharmacotherapy_limits",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_eating_disorders",
+      "content": {
+        "title": "Pharmacotherapy Limits in Eating Disorders",
+        "definition": "Limited evidence for medications except lisdexamfetamine in binge eating disorder.",
+        "summary": "Antidepressants treat comorbid mood disorders but do not cure core ED pathology."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Feeding and Eating Disorders",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing ."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_eating_disorders",
+        "prerequisites": [
+          "spine_psychology_neuroscience_l4_eating_disorder_psychotherapy_medical"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Pharmacotherapy Limits in Eating Disorders",
+            "relevance": "Medical stabilization and psychotherapy in inpatient and outpatient settings.",
+            "applications": [
+              "Anorexia medical complications",
+              "Electrolyte monitoring with purging"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Medicine (Clinical)",
+            "subcategory": "Psychiatry & Behavioral Health",
+            "topic": "Eating Disorders",
+            "subtopic": "Medications"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_psychology_neuroscience_l4_eating_disorder_psychotherapy_medical"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Eating Disorders",
+            "section": "Pharmacotherapy",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l4_eating_disorder_medical_complications",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_eating_disorders",
+      "content": {
+        "title": "Medical Complications of Eating Disorders",
+        "definition": "Bradycardia, electrolyte disturbances, osteoporosis, and cardiac risk in malnutrition.",
+        "summary": "Purging behaviors cause hypokalemia and arrhythmia risk."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Feeding and Eating Disorders",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing ."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_eating_disorders",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_psychology_neuroscience_l4_hospitalization_refeeding_criteria"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Medical Complications of Eating Disorders",
+            "relevance": "Medical stabilization and psychotherapy in inpatient and outpatient settings.",
+            "applications": [
+              "Anorexia medical complications",
+              "Electrolyte monitoring with purging"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Medicine (Clinical)",
+            "subcategory": "Psychiatry & Behavioral Health",
+            "topic": "Eating Disorders",
+            "subtopic": "Complications"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_psychology_neuroscience_l4_hospitalization_refeeding_criteria"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Eating Disorders",
+            "section": "Medical Complications",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l4_eating_disorder_psychotherapy_medical",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_eating_disorders",
+      "content": {
+        "title": "Psychotherapy in Eating Disorder Care",
+        "definition": "CBT-E, family-based treatment for adolescents, and multidisciplinary team roles.",
+        "summary": "Medical stability precedes intensive psychological work in severe anorexia."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Feeding and Eating Disorders",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing ."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_eating_disorders",
+        "prerequisites": [
+          "spine_psychology_neuroscience_l4_hospitalization_refeeding_criteria"
+        ],
+        "unlocks": [
+          "spine_psychology_neuroscience_l4_eating_disorder_pharmacotherapy_limits"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Psychotherapy in Eating Disorder Care",
+            "relevance": "Medical stabilization and psychotherapy in inpatient and outpatient settings.",
+            "applications": [
+              "Anorexia medical complications",
+              "Electrolyte monitoring with purging"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Medicine (Clinical)",
+            "subcategory": "Psychiatry & Behavioral Health",
+            "topic": "Eating Disorders",
+            "subtopic": "Psychotherapy"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_psychology_neuroscience_l4_hospitalization_refeeding_criteria"
+            ],
+            "unlocks_in_context": [
+              "spine_psychology_neuroscience_l4_eating_disorder_pharmacotherapy_limits"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Eating Disorders",
+            "section": "Psychotherapy",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l4_eating_disorder_risk_factors",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_eating_disorders",
+      "content": {
+        "title": "Biopsychosocial Risk and Comorbidity",
+        "definition": "Genetic, personality, sociocultural, and psychiatric comorbidity contributors.",
+        "summary": "Perfectionism and trauma history elevate risk across diagnoses."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Feeding and Eating Disorders",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing ."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_eating_disorders",
+        "prerequisites": [
+          "spine_psychology_neuroscience_l4_anorexia_nervosa_features"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Biopsychosocial Risk and Comorbidity",
+            "relevance": "DSM-based psychopathology classification and behavioral mechanisms.",
+            "applications": [
+              "Risk"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Psychology & Neuroscience",
+            "subcategory": "Abnormal Psychology & Psychopathology",
+            "topic": "Eating Disorders",
+            "subtopic": "Risk"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_psychology_neuroscience_l4_anorexia_nervosa_features"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Psychology 2e",
+            "chapter": "15",
+            "section": "15.8.3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l4_hospitalization_refeeding_criteria",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_eating_disorders",
+      "content": {
+        "title": "Hospitalization and Refeeding Criteria",
+        "definition": "Indications for inpatient medical stabilization including vital sign instability and suicidality.",
+        "summary": "Refeeding syndrome risk mandates phased caloric restoration and monitoring."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Feeding and Eating Disorders",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing ."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_eating_disorders",
+        "prerequisites": [
+          "spine_psychology_neuroscience_l4_eating_disorder_medical_complications"
+        ],
+        "unlocks": [
+          "spine_psychology_neuroscience_l4_eating_disorder_psychotherapy_medical",
+          "spine_psychology_neuroscience_l5_refeeding_syndrome_monitoring"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Hospitalization and Refeeding Criteria",
+            "relevance": "Medical stabilization and psychotherapy in inpatient and outpatient settings.",
+            "applications": [
+              "Anorexia medical complications",
+              "Electrolyte monitoring with purging"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Medicine (Clinical)",
+            "subcategory": "Psychiatry & Behavioral Health",
+            "topic": "Eating Disorders",
+            "subtopic": "Admission"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_psychology_neuroscience_l4_eating_disorder_medical_complications"
+            ],
+            "unlocks_in_context": [
+              "spine_psychology_neuroscience_l4_eating_disorder_psychotherapy_medical",
+              "spine_psychology_neuroscience_l5_refeeding_syndrome_monitoring"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Eating Disorders",
+            "section": "Hospitalization Criteria",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l5_refeeding_syndrome_monitoring",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_eating_disorders",
+      "content": {
+        "title": "Refeeding Syndrome Monitoring",
+        "definition": "Phosphate, magnesium, and thiamine shifts during nutritional rehabilitation.",
+        "summary": "Prophylactic supplementation and gradual calories reduce catastrophic refeeding complications."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Feeding and Eating Disorders",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing ."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l4_hospitalization_refeeding_criteria",
+        "prerequisites": [
+          "spine_psychology_neuroscience_l4_hospitalization_refeeding_criteria"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Refeeding Syndrome Monitoring",
+            "relevance": "Medical stabilization and psychotherapy in inpatient and outpatient settings.",
+            "applications": [
+              "Anorexia medical complications",
+              "Electrolyte monitoring with purging"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Medicine (Clinical)",
+            "subcategory": "Psychiatry & Behavioral Health",
+            "topic": "Eating Disorders",
+            "subtopic": "Refeeding"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_psychology_neuroscience_l4_hospitalization_refeeding_criteria"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Refeeding Syndrome",
+            "section": "Monitoring",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    }
+  ]
+}

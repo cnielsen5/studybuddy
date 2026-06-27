@@ -1,0 +1,1173 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_biology_l3_membrane_potential",
+    "anchor_primary_domain": "biology",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_biology_l3_membrane_potential.biology.json",
+      "content/spine/l4-l5-bundles/spine_biology_l3_membrane_potential.medicine_preclinical.json",
+      "content/spine/l4-l5-bundles/spine_biology_l3_membrane_potential.psychology_neuroscience.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "20 per-context concepts merged into 15 universal concepts (10 L4 + 5 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_biology_l4_electrochemical_driving_force",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_membrane_potential",
+      "content": {
+        "title": "Electrochemical Driving Force on Ions",
+        "definition": "Net force on an ion combining chemical and electrical gradients, determining direction and magnitude of ion flux when channels open.",
+        "summary": "Driving force = Vm − Eion. Positive driving force on Na+ during rest drives inward current upon channel opening."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Cell Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_membrane_potential",
+        "prerequisites": [
+          "spine_biology_l4_resting_membrane_potential"
+        ],
+        "unlocks": [
+          {
+            "concept_id": "spine_biology_l3_action_potential",
+            "_forward_reference": true
+          },
+          {
+            "concept_id": "spine_medicine_preclinical_l3_cardiac_membrane_potential",
+            "_forward_reference": true
+          }
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Electrochemical Driving Force on Ions",
+            "relevance": "Explains depolarizing vs hyperpolarizing currents.",
+            "applications": [
+              "Na+ inward driving force at rest",
+              "K+ outward driving force at rest"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Electrophysiology",
+            "topic": "Membrane Potential",
+            "subtopic": "Driving Force"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_resting_membrane_potential"
+            ],
+            "unlocks_in_context": [
+              {
+                "concept_id": "spine_biology_l3_action_potential",
+                "_forward_reference": true
+              },
+              {
+                "concept_id": "spine_medicine_preclinical_l3_cardiac_membrane_potential",
+                "_forward_reference": true
+              }
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "12",
+            "section": "12.4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_electrochemical_gradient",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_membrane_potential",
+      "content": {
+        "title": "Electrochemical Gradient",
+        "definition": "Combined electrical and chemical driving forces on an ion across the membrane, determining the direction and magnitude of passive ion flux.",
+        "summary": "Ions move down their electrochemical gradients through open channels. The equilibrium potential is the voltage at which electrical and chemical forces balance for a given ion."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Electrical Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_membrane_potential",
+        "prerequisites": [
+          "spine_biology_l4_sodium_potassium_pump"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Electrochemical Gradient",
+            "relevance": "Unified framework for understanding ion movement across membranes.",
+            "applications": [
+              "Driving force",
+              "Equilibrium potential"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Cell Biology",
+            "subcategory": "Electrical Signaling",
+            "topic": "Membrane Potential",
+            "subtopic": "Electrochemical Gradient"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_sodium_potassium_pump"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "33",
+            "section": "33.10"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_equilibrium_vs_steady_state",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_membrane_potential",
+      "content": {
+        "title": "Equilibrium vs Steady-State Membrane Potential",
+        "definition": "Resting potential is maintained by active transport despite passive ion leak.",
+        "summary": "True equilibrium would require zero net flux for all ions simultaneously, which does not hold in living cells."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Electrical Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_membrane_potential",
+        "prerequisites": [
+          "spine_biology_l4_goldman_hodgkin_katz_equation",
+          "spine_biology_l4_sodium_potassium_pump"
+        ],
+        "unlocks": [
+          {
+            "concept_id": "spine_biology_l3_action_potential",
+            "_forward_reference": true
+          }
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Equilibrium vs Steady-State Membrane Potential",
+            "relevance": "Baseline voltage before synaptic input in neurons.",
+            "applications": [
+              "Neural excitability threshold",
+              "Ion gradient maintenance"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biological Psychology & Neuroscience",
+            "subcategory": "Cellular Neuroscience",
+            "topic": "Resting Membrane Potential",
+            "subtopic": "Steady State"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_goldman_hodgkin_katz_equation",
+              "spine_biology_l4_sodium_potassium_pump"
+            ],
+            "unlocks_in_context": [
+              {
+                "concept_id": "spine_biology_l3_action_potential",
+                "_forward_reference": true
+              }
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "12",
+            "section": "12.2.4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_goldman_hodgkin_katz_equation",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_membrane_potential",
+      "content": {
+        "title": "Goldman-Hodgkin-Katz Voltage Equation",
+        "definition": "Extension of Nernst equation weighting multiple ion permeabilities to predict membrane potential when more than one ion is permeable simultaneously.",
+        "summary": "GHK equation shows resting potential lies between individual equilibrium potentials, closer to the ion with highest relative permeability."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Electrical Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_membrane_potential",
+        "prerequisites": [
+          "spine_biology_l4_nernst_equilibrium_potential"
+        ],
+        "unlocks": [
+          "spine_biology_l4_equilibrium_vs_steady_state",
+          "spine_biology_l5_gkh_potassium_dominance",
+          "spine_biology_l5_baseline_potential_shifts"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Goldman-Hodgkin-Katz Voltage Equation",
+            "relevance": "Quantitative electrophysiology for exams.",
+            "applications": [
+              "Relative permeability weighting",
+              "Dominant K+ permeability at rest"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Electrophysiology",
+            "topic": "Membrane Potential",
+            "subtopic": "GHK Equation"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_nernst_equilibrium_potential"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Goldman–Hodgkin–Katz Resting Potential",
+            "relevance": "Baseline voltage before synaptic input in neurons.",
+            "applications": [
+              "Neural excitability threshold",
+              "Ion gradient maintenance"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biological Psychology & Neuroscience",
+            "subcategory": "Cellular Neuroscience",
+            "topic": "Resting Membrane Potential",
+            "subtopic": "GKH"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_nernst_equilibrium_potential"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_equilibrium_vs_steady_state",
+              "spine_biology_l5_gkh_potassium_dominance",
+              "spine_biology_l5_baseline_potential_shifts"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-26T05:54:17.139Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "12",
+            "section": "12.2.2"
+          },
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "12",
+            "section": "12.2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_ion_concentration_gradients",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_membrane_potential",
+      "content": {
+        "title": "Ion Concentration Gradients",
+        "definition": "Unequal distribution of Na⁺, K⁺, Cl⁻, and other ions across the plasma membrane established by selective permeability and active transport.",
+        "summary": "High intracellular K⁺ and low intracellular Na⁺ create chemical gradients that drive ion movement. These gradients store potential energy for electrical signaling."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Electrical Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_membrane_potential",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_biology_l4_selective_permeability",
+          "spine_biology_l4_sodium_potassium_pump",
+          "spine_biology_l4_nernst_equilibrium_potential",
+          "spine_biology_l4_sodium_potassium_pump"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Ion Concentration Gradients",
+            "relevance": "Chemical basis for membrane voltage in excitable cells.",
+            "applications": [
+              "Na⁺/K⁺ distribution",
+              "Chemical driving force"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Cell Biology",
+            "subcategory": "Electrical Signaling",
+            "topic": "Membrane Potential",
+            "subtopic": "Ion Gradients"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_biology_l4_selective_permeability",
+              "spine_biology_l4_sodium_potassium_pump"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Ion Concentration Gradients Across Membranes",
+            "relevance": "Foundation for diuretics and channelopathies.",
+            "applications": [
+              "Na+/K+ gradient",
+              "Ca2+ signaling pools"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Electrophysiology",
+            "topic": "Membrane Potential",
+            "subtopic": "Ion Gradients"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_biology_l4_nernst_equilibrium_potential",
+              "spine_biology_l4_sodium_potassium_pump"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Ion Concentration Gradients Across the Membrane",
+            "relevance": "Baseline voltage before synaptic input in neurons.",
+            "applications": [
+              "Neural excitability threshold",
+              "Ion gradient maintenance"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biological Psychology & Neuroscience",
+            "subcategory": "Cellular Neuroscience",
+            "topic": "Resting Membrane Potential",
+            "subtopic": "Ion Gradients"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_biology_l4_sodium_potassium_pump",
+              "spine_biology_l4_nernst_equilibrium_potential"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "33",
+            "section": "12.2.1"
+          },
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "12",
+            "section": "12.2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_nernst_equilibrium_potential",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_membrane_potential",
+      "content": {
+        "title": "Nernst Equilibrium Potential",
+        "definition": "Membrane voltage at which the electrical driving force on an ion exactly balances its chemical gradient, calculated from intra- and extracellular concentrations.",
+        "summary": "Each permeable ion contributes an equilibrium potential. The resting potential reflects weighted influence of multiple ions at partial permeability."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Cell Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_membrane_potential",
+        "prerequisites": [
+          "spine_biology_l4_ion_concentration_gradients"
+        ],
+        "unlocks": [
+          "spine_biology_l4_resting_membrane_potential",
+          "spine_biology_l4_goldman_hodgkin_katz_equation",
+          "spine_biology_l4_goldman_hodgkin_katz_equation",
+          "spine_biology_l5_nernst_calculation"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Nernst Equilibrium Potential",
+            "relevance": "Predicts direction of ion flux during depolarization.",
+            "applications": [
+              "Ek near −90 mV",
+              "Ena near +60 mV"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Electrophysiology",
+            "topic": "Membrane Potential",
+            "subtopic": "Nernst"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_ion_concentration_gradients"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_resting_membrane_potential",
+              "spine_biology_l4_goldman_hodgkin_katz_equation"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Nernst Equilibrium Potential",
+            "relevance": "Baseline voltage before synaptic input in neurons.",
+            "applications": [
+              "Neural excitability threshold",
+              "Ion gradient maintenance"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biological Psychology & Neuroscience",
+            "subcategory": "Cellular Neuroscience",
+            "topic": "Resting Membrane Potential",
+            "subtopic": "Nernst"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_ion_concentration_gradients"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_goldman_hodgkin_katz_equation",
+              "spine_biology_l5_nernst_calculation"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "12",
+            "section": "12.2"
+          },
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "12",
+            "section": "12.2.1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_resting_membrane_potential",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_membrane_potential",
+      "content": {
+        "title": "Resting Membrane Potential",
+        "definition": "Stable negative voltage across the membrane of unstimulated excitable cells, typically near −70 mV in neurons, maintained by ion gradients and selective permeability.",
+        "summary": "Resting potential represents a steady state, not equilibrium. It provides the baseline from which depolarizing and hyperpolarizing signals are measured."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Electrical Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_membrane_potential",
+        "prerequisites": [
+          "spine_biology_l4_selective_permeability",
+          "spine_biology_l4_sodium_potassium_pump",
+          "spine_biology_l4_nernst_equilibrium_potential",
+          "spine_biology_l4_sodium_potassium_pump"
+        ],
+        "unlocks": [
+          "spine_biology_l4_electrochemical_driving_force"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Resting Membrane Potential",
+            "relevance": "Baseline voltage for all electrical signaling in excitable cells.",
+            "applications": [
+              "~−70 mV in neurons",
+              "Steady-state maintenance"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Cell Biology",
+            "subcategory": "Electrical Signaling",
+            "topic": "Membrane Potential",
+            "subtopic": "Resting Potential"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_selective_permeability",
+              "spine_biology_l4_sodium_potassium_pump"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Resting Membrane Potential",
+            "relevance": "Baseline for threshold and excitability.",
+            "applications": [
+              "K+ leak conductance",
+              "Resting near −70 mV"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Electrophysiology",
+            "topic": "Membrane Potential",
+            "subtopic": "Resting Potential"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_nernst_equilibrium_potential",
+              "spine_biology_l4_sodium_potassium_pump"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_electrochemical_driving_force"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "33",
+            "section": "12.2.4"
+          },
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "12",
+            "section": "12.3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_selective_permeability",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_membrane_potential",
+      "content": {
+        "title": "Selective Membrane Permeability",
+        "definition": "Differential ion flux across the membrane governed by leak channels and gated channels, with potassium permeability dominating at rest in most neurons.",
+        "summary": "Membrane permeability determines which ions contribute most to membrane voltage. At rest, K⁺ leak channels keep the membrane near the potassium equilibrium potential."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Electrical Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_membrane_potential",
+        "prerequisites": [
+          "spine_biology_l4_ion_concentration_gradients"
+        ],
+        "unlocks": [
+          "spine_biology_l4_resting_membrane_potential"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Selective Membrane Permeability",
+            "relevance": "Explains why resting potential is not zero.",
+            "applications": [
+              "K⁺ leak channels",
+              "Relative permeability"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Cell Biology",
+            "subcategory": "Electrical Signaling",
+            "topic": "Membrane Potential",
+            "subtopic": "Permeability"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_ion_concentration_gradients"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_resting_membrane_potential"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "33",
+            "section": "33.7"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_sodium_potassium_pump",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_membrane_potential",
+      "content": {
+        "title": "Na+/K+-ATPase and Resting Potential Maintenance",
+        "definition": "Primary active transport exchanging three Na+ out for two K+ in per ATP hydrolyzed, sustaining ion gradients that establish negative resting membrane potential.",
+        "summary": "The Na+/K+ pump is electrogenic and consumes significant metabolic energy in neurons. Ouabain inhibits the pump, depolarizing cells."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Electrical Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_membrane_potential",
+        "prerequisites": [
+          "spine_biology_l4_ion_concentration_gradients"
+        ],
+        "unlocks": [
+          "spine_biology_l4_electrochemical_gradient",
+          "spine_biology_l4_equilibrium_vs_steady_state",
+          "spine_biology_l4_resting_membrane_potential"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Na⁺/K⁺-ATPase Pump",
+            "relevance": "Active transport maintaining resting ion distributions.",
+            "applications": [
+              "3 Na⁺ / 2 K⁺ exchange",
+              "ATP consumption"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Cell Biology",
+            "subcategory": "Electrical Signaling",
+            "topic": "Membrane Potential",
+            "subtopic": "Na/K Pump"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_ion_concentration_gradients"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_electrochemical_gradient",
+              "spine_biology_l4_resting_membrane_potential"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Na+/K+-ATPase and Resting Potential Maintenance",
+            "relevance": "Digoxin mechanism and hyperkalemia effects.",
+            "applications": [
+              "3Na+/2K+ exchange",
+              "Ouabain inhibition"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Electrophysiology",
+            "topic": "Membrane Potential",
+            "subtopic": "Na/K Pump"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_ion_concentration_gradients"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_resting_membrane_potential"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Na⁺/K⁺-ATPase and the Resting State",
+            "relevance": "Baseline voltage before synaptic input in neurons.",
+            "applications": [
+              "Neural excitability threshold",
+              "Ion gradient maintenance"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biological Psychology & Neuroscience",
+            "subcategory": "Cellular Neuroscience",
+            "topic": "Resting Membrane Potential",
+            "subtopic": "Na/K Pump"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_ion_concentration_gradients"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_equilibrium_vs_steady_state"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-26T05:54:17.139Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "33",
+            "section": "33.8"
+          },
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "12",
+            "section": "12.2.3"
+          },
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "33",
+            "section": "33.2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l5_baseline_potential_shifts",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_biology_l3_membrane_potential",
+      "content": {
+        "title": "Depolarizing vs Hyperpolarizing Shifts in Baseline",
+        "definition": "Permeability and extracellular ion changes move resting voltage.",
+        "summary": "Clinical hyperkalemia narrows excitability margins by depolarizing rest."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Electrical Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l4_goldman_hodgkin_katz_equation",
+        "prerequisites": [
+          "spine_biology_l4_goldman_hodgkin_katz_equation"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Depolarizing vs Hyperpolarizing Shifts in Baseline",
+            "relevance": "Baseline voltage before synaptic input in neurons.",
+            "applications": [
+              "Neural excitability threshold",
+              "Ion gradient maintenance"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biological Psychology & Neuroscience",
+            "subcategory": "Cellular Neuroscience",
+            "topic": "Resting Membrane Potential",
+            "subtopic": "Baseline"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_goldman_hodgkin_katz_equation"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "33",
+            "section": "33.2.2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l5_gkh_potassium_dominance",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_biology_l3_membrane_potential",
+      "content": {
+        "title": "Relative Permeability and Emphasis on K⁺ at Rest",
+        "definition": "Why resting potential is drawn toward potassium equilibrium.",
+        "summary": "Increasing sodium permeability depolarizes resting baseline toward threshold."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Electrical Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l4_goldman_hodgkin_katz_equation",
+        "prerequisites": [
+          "spine_biology_l4_goldman_hodgkin_katz_equation"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Relative Permeability and Emphasis on K⁺ at Rest",
+            "relevance": "Baseline voltage before synaptic input in neurons.",
+            "applications": [
+              "Neural excitability threshold",
+              "Ion gradient maintenance"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biological Psychology & Neuroscience",
+            "subcategory": "Cellular Neuroscience",
+            "topic": "Resting Membrane Potential",
+            "subtopic": "K Dominance"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_goldman_hodgkin_katz_equation"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "33",
+            "section": "33.2.1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l5_hypokalemia_membrane_effects",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_biology_l3_membrane_potential",
+      "content": {
+        "title": "Hypokalemia and Membrane Hyperpolarization",
+        "definition": "Reduced extracellular potassium hyperpolarizes resting membrane potential, decreasing excitability in skeletal muscle and cardiac tissue.",
+        "summary": "Low [K+]o increases K+ equilibrium potential magnitude, making cells harder to depolarize to threshold. ECG changes reflect cardiac effects."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Cell Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l4_resting_membrane_potential",
+        "prerequisites": [
+          "spine_biology_l4_resting_membrane_potential"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Hypokalemia and Membrane Hyperpolarization",
+            "relevance": "Electrolyte disorders and ECG correlation.",
+            "applications": [
+              "U waves on ECG",
+              "Muscle weakness"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Electrophysiology",
+            "topic": "Membrane Potential",
+            "subtopic": "Hypokalemia"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_resting_membrane_potential"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "section": "Hypokalemia",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l5_nernst_calculation",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_biology_l3_membrane_potential",
+      "content": {
+        "title": "Calculating Single-Ion Reversal Potentials",
+        "definition": "Logarithmic Nernst equation with valence and concentration ratio.",
+        "summary": "Practice with E_K and E_Na builds intuition for synaptic driving forces."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Electrical Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l4_nernst_equilibrium_potential",
+        "prerequisites": [
+          "spine_biology_l4_nernst_equilibrium_potential"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Calculating Single-Ion Reversal Potentials",
+            "relevance": "Baseline voltage before synaptic input in neurons.",
+            "applications": [
+              "Neural excitability threshold",
+              "Ion gradient maintenance"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biological Psychology & Neuroscience",
+            "subcategory": "Cellular Neuroscience",
+            "topic": "Resting Membrane Potential",
+            "subtopic": "Calculation"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_nernst_equilibrium_potential"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "12",
+            "section": "12.2.5"
+          }
+        ]
+      }
+    }
+  ]
+}

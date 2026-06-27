@@ -1,0 +1,548 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_legg_calve_perthes_disease",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "ABOS-aligned scaffold for abos_p2_pediatrics."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_legg_calve_perthes_disease_core_principles",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_legg_calve_perthes_disease",
+      "content": {
+        "title": "Legg-Calvé-Perthes Disease — Core Principles",
+        "definition": "Idiopathic avascular necrosis of the femoral head in children causing hip pain and potential femoral head deformity.",
+        "summary": "Age at onset and Herring lateral pillar classification guide containment treatment. Goal is spherical femoral head at skeletal maturity."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_legg_calve_perthes_disease",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Legg-Calvé-Perthes Disease — Core Principles",
+            "relevance": "ABOS hip developmental section.",
+            "applications": [
+              "Containment surgery",
+              "Prognostic factors",
+              "Activity modification"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Hip Development",
+            "topic": "Legg-Calvé-Perthes Disease",
+            "subtopic": "Legg-Calvé-Perthes Disease — Core Principles"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Legg-Calvé-Perthes Disease",
+            "chapter": "NBK557519",
+            "section": "Perthes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_legg_calve_perthes_disease_evaluation_and_diagnosis",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_legg_calve_perthes_disease",
+      "content": {
+        "title": "Evaluation and Diagnosis",
+        "definition": "History, physical examination, and initial imaging for legg-calvé-perthes disease.",
+        "summary": "Systematic assessment identifies severity, associated injuries, and urgency in legg-calvé-perthes disease."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_legg_calve_perthes_disease",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_legg_calve_perthes_disease_core_principles"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Evaluation and Diagnosis",
+            "relevance": "ABOS hip developmental section.",
+            "applications": [
+              "Containment surgery",
+              "Prognostic factors",
+              "Activity modification"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Hip Development",
+            "topic": "Legg-Calvé-Perthes Disease",
+            "subtopic": "Evaluation and Diagnosis"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_legg_calve_perthes_disease_core_principles"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Legg-Calvé-Perthes Disease",
+            "chapter": "NBK557519",
+            "section": "Perthes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_legg_calve_perthes_disease_management_principles",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_legg_calve_perthes_disease",
+      "content": {
+        "title": "Management Principles",
+        "definition": "Nonoperative and operative treatment algorithms for legg-calvé-perthes disease.",
+        "summary": "Age at onset and Herring lateral pillar classification guide containment treatment."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_legg_calve_perthes_disease",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_legg_calve_perthes_disease_evaluation_and_diagnosis"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Management Principles",
+            "relevance": "ABOS hip developmental section.",
+            "applications": [
+              "Containment surgery",
+              "Prognostic factors",
+              "Activity modification"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Hip Development",
+            "topic": "Legg-Calvé-Perthes Disease",
+            "subtopic": "Management Principles"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_legg_calve_perthes_disease_evaluation_and_diagnosis"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Legg-Calvé-Perthes Disease",
+            "chapter": "NBK557519",
+            "section": "Perthes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_legg_calve_perthes_disease_containment_surgery",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_legg_calve_perthes_disease",
+      "content": {
+        "title": "Containment surgery",
+        "definition": "Focused assessment and management of containment surgery in the context of legg-calvé-perthes disease.",
+        "summary": "Containment surgery — key decision points from Paediatric Orthopaedics practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_legg_calve_perthes_disease",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_legg_calve_perthes_disease_management_principles"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Containment surgery",
+            "relevance": "ABOS hip developmental section.",
+            "applications": [
+              "Containment surgery",
+              "Prognostic factors",
+              "Activity modification"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Hip Development",
+            "topic": "Legg-Calvé-Perthes Disease",
+            "subtopic": "Containment surgery"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_legg_calve_perthes_disease_management_principles"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Legg-Calvé-Perthes Disease",
+            "chapter": "NBK557519",
+            "section": "Perthes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_legg_calve_perthes_disease_prognostic_factors",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_legg_calve_perthes_disease",
+      "content": {
+        "title": "Prognostic factors",
+        "definition": "Focused assessment and management of prognostic factors in the context of legg-calvé-perthes disease.",
+        "summary": "Prognostic factors — key decision points from Paediatric Orthopaedics practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_legg_calve_perthes_disease",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_legg_calve_perthes_disease_containment_surgery"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Prognostic factors",
+            "relevance": "ABOS hip developmental section.",
+            "applications": [
+              "Containment surgery",
+              "Prognostic factors",
+              "Activity modification"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Hip Development",
+            "topic": "Legg-Calvé-Perthes Disease",
+            "subtopic": "Prognostic factors"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_legg_calve_perthes_disease_containment_surgery"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Legg-Calvé-Perthes Disease",
+            "chapter": "NBK557519",
+            "section": "Perthes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_legg_calve_perthes_disease_activity_modification",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_legg_calve_perthes_disease",
+      "content": {
+        "title": "Activity modification",
+        "definition": "Focused assessment and management of activity modification in the context of legg-calvé-perthes disease.",
+        "summary": "Activity modification — key decision points from Paediatric Orthopaedics practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_legg_calve_perthes_disease",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_legg_calve_perthes_disease_prognostic_factors"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Activity modification",
+            "relevance": "ABOS hip developmental section.",
+            "applications": [
+              "Containment surgery",
+              "Prognostic factors",
+              "Activity modification"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Hip Development",
+            "topic": "Legg-Calvé-Perthes Disease",
+            "subtopic": "Activity modification"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_legg_calve_perthes_disease_prognostic_factors"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Legg-Calvé-Perthes Disease",
+            "chapter": "NBK557519",
+            "section": "Perthes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_legg_calve_perthes_disease_complications_and_outcomes",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_legg_calve_perthes_disease",
+      "content": {
+        "title": "Complications and Outcomes",
+        "definition": "Recognized complications, failure modes, and expected recovery after treatment of legg-calvé-perthes disease.",
+        "summary": "Anticipate, diagnose, and manage complications; counsel on prognosis and rehabilitation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_legg_calve_perthes_disease",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_legg_calve_perthes_disease_activity_modification"
+        ],
+        "unlocks": [
+          "spine_medicine_clinical_l5_legg_calve_perthes_disease_salvage_and_revision"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Complications and Outcomes",
+            "relevance": "ABOS hip developmental section.",
+            "applications": [
+              "Containment surgery",
+              "Prognostic factors",
+              "Activity modification"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Hip Development",
+            "topic": "Legg-Calvé-Perthes Disease",
+            "subtopic": "Complications and Outcomes"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_legg_calve_perthes_disease_activity_modification"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_clinical_l5_legg_calve_perthes_disease_salvage_and_revision"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Legg-Calvé-Perthes Disease",
+            "chapter": "NBK557519",
+            "section": "Perthes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l5_legg_calve_perthes_disease_salvage_and_revision",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_clinical_l3_legg_calve_perthes_disease",
+      "content": {
+        "title": "Salvage and Revision Strategies",
+        "definition": "Revision and salvage options when initial management of legg-calvé-perthes disease fails.",
+        "summary": "Staged revision and alternative strategies when primary treatment fails or complications develop."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l4_legg_calve_perthes_disease_complications_and_outcomes",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_legg_calve_perthes_disease_complications_and_outcomes"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Salvage and Revision Strategies",
+            "relevance": "ABOS hip developmental section.",
+            "applications": [
+              "Containment surgery",
+              "Prognostic factors",
+              "Activity modification"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Hip Development",
+            "topic": "Legg-Calvé-Perthes Disease",
+            "subtopic": "Salvage and Revision Strategies"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_legg_calve_perthes_disease_complications_and_outcomes"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Legg-Calvé-Perthes Disease",
+            "chapter": "NBK557519",
+            "section": "Perthes"
+          }
+        ]
+      }
+    }
+  ]
+}

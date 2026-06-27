@@ -2,9 +2,9 @@
 
 > **Purpose:** Single source of truth for where Socrates is headed, what's done, and what's next.  
 > **Navigation:** See [`README.md`](README.md) for full repo map and where to go for each kind of work.  
-> **Last updated:** June 14, 2026  
+> **Last updated:** June 27, 2026  
 > **Repo:** [github.com/cnielsen5/studybuddy](https://github.com/cnielsen5/studybuddy)  
-> **Last code activity:** January 20, 2026
+> **Last code activity:** June 25, 2026
 
 ---
 
@@ -43,7 +43,7 @@ Phase 5  Client SDK & Sync        ██████████████░�
 Phase 6  User-Facing App          ████████░░░░░░░░░░░░   35%  ← IN PROGRESS
 Phase 7  Cloud Ops & Deployment   ████████░░░░░░░░░░░░   35%
 Phase 8  AI & Advanced Features   ██░░░░░░░░░░░░░░░░░░   10%
-Phase 9  Content & Libraries      ████████░░░░░░░░░░░░   35%  ← IN PROGRESS
+Phase 9  Content & Libraries      ███████████░░░░░░░░░   55%  ← IN PROGRESS
 Phase 10 Quality & Launch         ████░░░░░░░░░░░░░░░░   20%
 ```
 
@@ -257,7 +257,7 @@ Work through phases in order where dependencies exist. Some items within a phase
 
 ### Phase 9 — Content & Libraries
 **Goal:** Actual study material users can learn from.  
-**Phase progress:** 35% 🟡
+**Phase progress:** 58% 🟡
 
 | # | Step | Status | Notes |
 |---|------|--------|-------|
@@ -268,6 +268,15 @@ Work through phases in order where dependencies exist. Some items within a phase
 | 9.5 | Library version updates & sync | ⬜ | |
 | 9.6 | Content authoring workflow | ⏸️ | Explicit non-goal for v1 |
 | 9.7 | Community / shared libraries | ⏸️ | Future |
+| 9.8 | Universal spine L1–L3 concept graph | ✅ | **626 L3**, 69 L2 · orthopaedic merged · `socrates-spine-l1-l3.draft.json` |
+| 9.9 | L4/L5 child generation pipeline + prompt | ✅ | `library-creator` schema/units/bundler · `docs/design/spine-l4-l5-generation-prompt.md` |
+| 9.10 | **Universal L4/L5 model + migration** | ✅ | **166 anchors** · L1-L5: `socrates-spine-l1-l5.draft.json` (**1880 concepts**: L4=1002 L5=176) |
+| 9.11 | Align generation prompt to universal L4/L5 output | ✅ | `docs/design/spine-l4-l5-generation-prompt.md` — relevance + gap pass, `domain_contexts[]` |
+| 9.12 | Merge & consolidation review queue | ✅ | Rules applied + **psych R-MIG-F spot-check fixes** (anxiety/eating splits, borderline restored, schizophrenia med title) → **396 L4/L5** (973 L1–L5), 0 graph warnings |
+| 9.13 | **Incremental spine growth (placement)** | ✅ | `docs/design/spine-growth-and-placement.md` · `npm run check:spine-placement` · `content/spine/spine-growth-queue.json` |
+| 9.14 | **Curriculum lenses (schema + runtime)** | ✅ | ABOS + Orthobullets orthopaedic lenses in `content/lenses/` · `npm run validate:lenses` |
+| 9.15 | **Orthopaedic surgery L2/L3** | ✅ | Merged into main spine · L2 + 11 hubs + 113 topics · `npm run build:orthopaedic-l2-l3` |
+| 9.16 | **Orthopaedic L4/L5 + lenses** | ✅ | **117 anchor bundles** merged · `npm run consolidate:orthopaedic-spine` · `npm run build:spine-l1-l5` |
 
 ---
 
@@ -333,8 +342,7 @@ When you sit down to work, pick from the top of this list:
 | 🟠 6 | Set `VITE_LIBRARY_ID=lib_learning_science_v1` in `.env.local` | 9.4 | 1 min |
 | 🟡 7 | Finish Zod runtime validation schemas | 2.10 | 4–8 hrs |
 | 🟡 8 | Implement certification side effects (card suppression) | 3.11 | 2–4 hrs |
-| 🟡 9 | Build policies layer (AFI, cramming) | 4.10 | 1–2 weeks |
-| ⚪ 10 | Re-introduce AI / embeddings | 8.x | Later |
+| ⚪ 12 | Re-introduce AI / embeddings | 8.x | Later |
 | ⚪ 11 | Production deployment | 7.11 | After app MVP |
 
 ---

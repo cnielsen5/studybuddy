@@ -1,0 +1,1191 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_biology_l3_synaptic_transmission",
+    "anchor_primary_domain": "biology",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_biology_l3_synaptic_transmission.biology.json",
+      "content/spine/l4-l5-bundles/spine_biology_l3_synaptic_transmission.medicine_preclinical.json",
+      "content/spine/l4-l5-bundles/spine_biology_l3_synaptic_transmission.psychology_neuroscience.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "18 per-context concepts merged into 15 universal concepts (11 L4 + 4 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_biology_l4_calcium_triggered_vesicle_release",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_synaptic_transmission",
+      "content": {
+        "title": "Calcium-Triggered Vesicle Fusion",
+        "definition": "Voltage-gated calcium influx coupling action potentials to synaptic vesicle exocytosis.",
+        "summary": "Calcium sensors trigger fusion of docked vesicles, releasing neurotransmitter into the cleft."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Neural Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_synaptic_transmission",
+        "prerequisites": [
+          "spine_biology_l4_chemical_synapse_structure"
+        ],
+        "unlocks": [
+          "spine_biology_l4_postsynaptic_potentials"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Calcium-Triggered Vesicle Fusion",
+            "relevance": "Foundation of neural network computation and learning.",
+            "applications": [
+              "EPSP/IPSP summation",
+              "Long-term potentiation"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biological Psychology & Neuroscience",
+            "subcategory": "Synaptic Physiology",
+            "topic": "Synaptic Transmission",
+            "subtopic": "Release"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_chemical_synapse_structure"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_postsynaptic_potentials"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "33",
+            "section": "33.3.1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_chemical_synapse_structure",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_synaptic_transmission",
+      "content": {
+        "title": "Chemical Synapse Structure",
+        "definition": "Specialized junction with presynaptic terminal containing vesicles, synaptic cleft, and postsynaptic membrane bearing neurotransmitter receptors.",
+        "summary": "Synaptic structure determines transmission direction and specificity. The synaptic cleft separates pre- and postsynaptic membranes, preventing direct electrical coupling."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Neural Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_synaptic_transmission",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_biology_l4_presynaptic_vesicle_release",
+          "spine_biology_l4_calcium_triggered_vesicle_release"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Chemical Synapse Structure",
+            "relevance": "Anatomical basis for directed chemical communication.",
+            "applications": [
+              "Presynaptic terminal",
+              "Synaptic cleft"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Organismal Physiology",
+            "subcategory": "Neural Signaling",
+            "topic": "Synaptic Transmission",
+            "subtopic": "Synapse Structure"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_biology_l4_presynaptic_vesicle_release"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Chemical Synapse Structure",
+            "relevance": "Foundation of neural network computation and learning.",
+            "applications": [
+              "EPSP/IPSP summation",
+              "Long-term potentiation"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biological Psychology & Neuroscience",
+            "subcategory": "Synaptic Physiology",
+            "topic": "Synaptic Transmission",
+            "subtopic": "Synapse"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_biology_l4_calcium_triggered_vesicle_release"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "34",
+            "section": "34.6"
+          },
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "33",
+            "section": "33.3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_excitatory_inhibitory_synapses",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_synaptic_transmission",
+      "content": {
+        "title": "Excitatory vs Inhibitory Synapses",
+        "definition": "Synaptic classification based on whether neurotransmitter–receptor binding depolarizes (excitatory) or hyperpolarizes (inhibitory) the postsynaptic membrane.",
+        "summary": "Excitatory synapses bring membrane potential toward threshold; inhibitory synapses move it away. Neural circuits balance both to regulate output."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Neural Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_synaptic_transmission",
+        "prerequisites": [
+          "spine_biology_l4_postsynaptic_potentials"
+        ],
+        "unlocks": [
+          "spine_biology_l4_synaptic_plasticity_ltp"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Excitatory vs Inhibitory Synapses",
+            "relevance": "Determines net effect of synaptic input on postsynaptic firing.",
+            "applications": [
+              "EPSPs",
+              "IPSPs"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Organismal Physiology",
+            "subcategory": "Neural Signaling",
+            "topic": "Synaptic Transmission",
+            "subtopic": "Excitation vs Inhibition"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_postsynaptic_potentials"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_synaptic_plasticity_ltp"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "34",
+            "section": "34.9"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_postsynaptic_potentials",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_synaptic_transmission",
+      "content": {
+        "title": "Postsynaptic Potentials",
+        "definition": "Graded, local changes in postsynaptic membrane potential produced by neurotransmitter binding to receptors, decaying with distance from the synapse.",
+        "summary": "Postsynaptic potentials are subthreshold and decremental. Their amplitude depends on the number of vesicles released and receptor sensitivity."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Neural Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_synaptic_transmission",
+        "prerequisites": [
+          "spine_biology_l4_presynaptic_vesicle_release",
+          "spine_biology_l4_presynaptic_vesicle_release",
+          "spine_biology_l4_synaptic_cleft_clearance",
+          "spine_biology_l4_calcium_triggered_vesicle_release"
+        ],
+        "unlocks": [
+          "spine_biology_l4_excitatory_inhibitory_synapses",
+          "spine_biology_l4_synaptic_plasticity_ltp",
+          "spine_biology_l4_synaptic_integration_shunting",
+          "spine_biology_l4_synaptic_cleft_clearance"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Postsynaptic Potentials",
+            "relevance": "Local voltage changes that integrate toward action potential threshold.",
+            "applications": [
+              "Graded potentials",
+              "Decremental spread"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Organismal Physiology",
+            "subcategory": "Neural Signaling",
+            "topic": "Synaptic Transmission",
+            "subtopic": "Postsynaptic Potentials"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_presynaptic_vesicle_release"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_excitatory_inhibitory_synapses",
+              "spine_biology_l4_synaptic_plasticity_ltp"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Excitatory and Inhibitory Postsynaptic Potentials",
+            "relevance": "Neural integration and anesthesia effects.",
+            "applications": [
+              "EPSP summation",
+              "IPSP shunting inhibition"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Neurophysiology",
+            "topic": "Synaptic Transmission",
+            "subtopic": "PSPs"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_presynaptic_vesicle_release",
+              "spine_biology_l4_synaptic_cleft_clearance"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_synaptic_plasticity_ltp",
+              "spine_biology_l4_synaptic_cleft_clearance"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Excitatory and Inhibitory Postsynaptic Potentials",
+            "relevance": "Foundation of neural network computation and learning.",
+            "applications": [
+              "EPSP/IPSP summation",
+              "Long-term potentiation"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biological Psychology & Neuroscience",
+            "subcategory": "Synaptic Physiology",
+            "topic": "Synaptic Transmission",
+            "subtopic": "PSPs"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_calcium_triggered_vesicle_release",
+              "spine_biology_l4_synaptic_cleft_clearance"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_synaptic_integration_shunting",
+              "spine_biology_l4_synaptic_plasticity_ltp",
+              "spine_biology_l4_synaptic_cleft_clearance"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "34",
+            "section": "34.8"
+          },
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "12",
+            "section": "12.6"
+          },
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "12",
+            "section": "12.5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_presynaptic_vesicle_release",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_synaptic_transmission",
+      "content": {
+        "title": "Presynaptic Vesicle Release Machinery",
+        "definition": "Calcium-triggered fusion of synaptic vesicles with the presynaptic membrane via SNARE complex proteins releasing neurotransmitter into the synaptic cleft.",
+        "summary": "Action potential invasion opens voltage-gated Ca2+ channels. Ca2+ binds synaptotagmin, triggering SNARE-mediated exocytosis."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Cell Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_synaptic_transmission",
+        "prerequisites": [
+          "spine_biology_l4_chemical_synapse_structure"
+        ],
+        "unlocks": [
+          "spine_biology_l4_synaptic_cleft_clearance",
+          "spine_biology_l4_postsynaptic_potentials"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Synaptic Vesicle Release",
+            "relevance": "Converts presynaptic electrical activity to chemical signaling.",
+            "applications": [
+              "Ca²⁺-triggered exocytosis",
+              "Quantal release"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Organismal Physiology",
+            "subcategory": "Neural Signaling",
+            "topic": "Synaptic Transmission",
+            "subtopic": "Vesicle Release"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_chemical_synapse_structure"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_postsynaptic_potentials"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Presynaptic Vesicle Release Machinery",
+            "relevance": "Botulinum toxin SNARE cleavage.",
+            "applications": [
+              "SNARE complex",
+              "Voltage-gated Ca2+ entry"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Neurophysiology",
+            "topic": "Synaptic Transmission",
+            "subtopic": "Vesicle Release"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_biology_l4_synaptic_cleft_clearance",
+              "spine_biology_l4_postsynaptic_potentials"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-26T05:54:17.140Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "12",
+            "section": "12.6"
+          },
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "34",
+            "section": "34.7"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_short_term_synaptic_plasticity",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_synaptic_transmission",
+      "content": {
+        "title": "Short-Term Synaptic Plasticity",
+        "definition": "Facilitation, depression, and post-tetanic potentiation modifying synaptic strength over seconds to minutes.",
+        "summary": "Presynaptic vesicle depletion and calcium buildup tune synaptic gain during burst firing."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Neural Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_synaptic_transmission",
+        "prerequisites": [
+          "spine_biology_l4_synaptic_integration_shunting"
+        ],
+        "unlocks": [
+          "spine_biology_l5_presynaptic_facilitation_depression",
+          {
+            "concept_id": "spine_psychology_neuroscience_l3_classical_conditioning",
+            "_forward_reference": true
+          }
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Short-Term Synaptic Plasticity",
+            "relevance": "Foundation of neural network computation and learning.",
+            "applications": [
+              "EPSP/IPSP summation",
+              "Long-term potentiation"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biological Psychology & Neuroscience",
+            "subcategory": "Synaptic Physiology",
+            "topic": "Synaptic Transmission",
+            "subtopic": "Plasticity"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_synaptic_integration_shunting"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l5_presynaptic_facilitation_depression",
+              {
+                "concept_id": "spine_psychology_neuroscience_l3_classical_conditioning",
+                "_forward_reference": true
+              }
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "33",
+            "section": "33.3.2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_synaptic_cleft_clearance",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_synaptic_transmission",
+      "content": {
+        "title": "Synaptic Cleft Clearance Mechanisms",
+        "definition": "Reuptake transporters and enzymatic degradation terminating synaptic signaling by removing neurotransmitter from the cleft.",
+        "summary": "SSRIs block serotonin reuptake. Acetylcholinesterase hydrolyzes ACh at the NMJ."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Cell Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_synaptic_transmission",
+        "prerequisites": [
+          "spine_biology_l4_presynaptic_vesicle_release",
+          "spine_biology_l4_postsynaptic_potentials"
+        ],
+        "unlocks": [
+          "spine_biology_l4_postsynaptic_potentials"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Synaptic Cleft Clearance Mechanisms",
+            "relevance": "Reuptake inhibitor pharmacology.",
+            "applications": [
+              "SERT and NET transporters",
+              "AChE at NMJ"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Neurophysiology",
+            "topic": "Synaptic Transmission",
+            "subtopic": "Clearance"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_presynaptic_vesicle_release",
+              "spine_biology_l4_postsynaptic_potentials"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_postsynaptic_potentials"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Synaptic Cleft Clearance Mechanisms",
+            "relevance": "Foundation of neural network computation and learning.",
+            "applications": [
+              "EPSP/IPSP summation",
+              "Long-term potentiation"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biological Psychology & Neuroscience",
+            "subcategory": "Synaptic Physiology",
+            "topic": "Synaptic Transmission",
+            "subtopic": "Clearance"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_postsynaptic_potentials"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_postsynaptic_potentials"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "12",
+            "section": "12.6"
+          },
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "12",
+            "section": "12.5.2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_synaptic_integration_shunting",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_synaptic_transmission",
+      "content": {
+        "title": "Synaptic Integration and Shunting Inhibition",
+        "definition": "Combined excitatory and inhibitory input shaping output firing patterns including shunting effects.",
+        "summary": "Inhibition can veto excitation locally without large hyperpolarization."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Neural Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_synaptic_transmission",
+        "prerequisites": [
+          "spine_biology_l4_postsynaptic_potentials"
+        ],
+        "unlocks": [
+          "spine_biology_l4_short_term_synaptic_plasticity"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Synaptic Integration and Shunting Inhibition",
+            "relevance": "Foundation of neural network computation and learning.",
+            "applications": [
+              "EPSP/IPSP summation",
+              "Long-term potentiation"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biological Psychology & Neuroscience",
+            "subcategory": "Synaptic Physiology",
+            "topic": "Synaptic Transmission",
+            "subtopic": "Integration"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_postsynaptic_potentials"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_short_term_synaptic_plasticity"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "12",
+            "section": "12.5.1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_synaptic_plasticity_ltp",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_synaptic_transmission",
+      "content": {
+        "title": "Synaptic Plasticity and LTP",
+        "definition": "Activity-dependent strengthening of synaptic transmission, notably long-term potentiation (LTP), underlying learning and memory formation.",
+        "summary": "NMDA receptor coincidence detection (glutamate + depolarization) triggers Ca2+-dependent strengthening. LTP increases AMPA receptor insertion."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Cell Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_synaptic_transmission",
+        "prerequisites": [
+          "spine_biology_l4_postsynaptic_potentials",
+          "spine_biology_l4_excitatory_inhibitory_synapses"
+        ],
+        "unlocks": [
+          "spine_biology_l5_nmda_ltp_coincidence"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Synaptic Plasticity Basics",
+            "relevance": "Cellular mechanism linking neural activity to learning.",
+            "applications": [
+              "LTP",
+              "LTD"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Organismal Physiology",
+            "subcategory": "Neural Signaling",
+            "topic": "Synaptic Transmission",
+            "subtopic": "Plasticity"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_excitatory_inhibitory_synapses",
+              "spine_biology_l4_postsynaptic_potentials"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Synaptic Plasticity and LTP",
+            "relevance": "Molecular basis of memory.",
+            "applications": [
+              "NMDA receptor Mg2+ block removal",
+              "AMPA receptor trafficking"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Neurophysiology",
+            "topic": "Synaptic Transmission",
+            "subtopic": "Plasticity"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_postsynaptic_potentials"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l5_nmda_ltp_coincidence"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Synaptic Plasticity and LTP",
+            "relevance": "Cellular mechanism underlying learning, memory, and Hebbian plasticity.",
+            "applications": [
+              "Hebbian learning",
+              "NMDA coincidence detection",
+              "AMPA trafficking"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biological Psychology & Neuroscience",
+            "subcategory": "Synaptic Physiology",
+            "topic": "Synaptic Transmission",
+            "subtopic": "Long-Term Potentiation"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_postsynaptic_potentials"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l5_nmda_ltp_coincidence"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-26T05:54:17.140Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "33",
+            "section": "33.4"
+          },
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "34",
+            "section": "34.10"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l5_botulinum_tetanus_toxins",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_biology_l3_synaptic_transmission",
+      "content": {
+        "title": "Botulinum and Tetanus Toxin Mechanisms",
+        "definition": "Clostridial neurotoxins cleaving SNARE proteins: botulinum blocks presynaptic ACh release (flaccid paralysis); tetanus blocks inhibitory interneuron release (spastic paralysis).",
+        "summary": "Both toxins are proteases targeting VAMP, SNAP-25, or syntaxin. Clinical presentations reflect affected synapse type."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Cell Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l4_presynaptic_vesicle_release",
+        "prerequisites": [
+          "spine_biology_l4_presynaptic_vesicle_release"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Botulinum and Tetanus Toxin Mechanisms",
+            "relevance": "Distinct paralysis patterns high-yield.",
+            "applications": [
+              "Botulinum flaccid paralysis",
+              "Tetanus spastic paralysis"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Neurophysiology",
+            "topic": "Synaptic Transmission",
+            "subtopic": "Toxins"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_presynaptic_vesicle_release"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "section": "Botulism",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l5_nmda_ltp_coincidence",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_biology_l3_synaptic_transmission",
+      "content": {
+        "title": "NMDA Receptor Coincidence Detection in LTP",
+        "definition": "NMDA receptors require simultaneous glutamate binding and postsynaptic depolarization to relieve Mg2+ block and permit Ca2+ influx initiating LTP.",
+        "summary": "Coincidence detection implements Hebbian learning: cells that fire together wire together."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Cell Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l4_synaptic_plasticity_ltp",
+        "prerequisites": [
+          "spine_biology_l4_synaptic_plasticity_ltp"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "NMDA Receptor Coincidence Detection in LTP",
+            "relevance": "Memory and excitotoxicity mechanisms.",
+            "applications": [
+              "Mg2+ voltage-dependent block",
+              "Ca2+ as second messenger"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Neurophysiology",
+            "topic": "Synaptic Transmission",
+            "subtopic": "NMDA LTP"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_synaptic_plasticity_ltp"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "NMDA Receptor Coincidence Detection in LTP",
+            "relevance": "Hebbian plasticity — cells that fire together wire together.",
+            "applications": [
+              "Mg2+ voltage-dependent block",
+              "Coincidence detection",
+              "Ca2+-dependent signaling"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biological Psychology & Neuroscience",
+            "subcategory": "Synaptic Physiology",
+            "topic": "Synaptic Transmission",
+            "subtopic": "NMDA LTP"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_synaptic_plasticity_ltp"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "33",
+            "section": "33.4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l5_presynaptic_facilitation_depression",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_biology_l3_synaptic_transmission",
+      "content": {
+        "title": "Presynaptic Facilitation and Depression",
+        "definition": "Short-term increases (facilitation) or decreases (depression) in neurotransmitter release probability following patterns of prior activity, driven by residual presynaptic calcium and vesicle pool depletion.",
+        "summary": "Facilitation enhances release after brief bursts; depression follows sustained high-frequency firing. Together they filter synaptic gain over seconds and shape temporal coding."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Neural Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l4_short_term_synaptic_plasticity",
+        "prerequisites": [
+          "spine_biology_l4_short_term_synaptic_plasticity"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Presynaptic Facilitation and Depression",
+            "relevance": "Short-term synaptic dynamics underlying temporal pattern sensitivity in neural circuits.",
+            "applications": [
+              "Synaptic filtering",
+              "Burst vs tonic firing",
+              "Post-tetanic potentiation"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biological Psychology & Neuroscience",
+            "subcategory": "Synaptic Physiology",
+            "topic": "Synaptic Transmission",
+            "subtopic": "Short-Term Plasticity"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_short_term_synaptic_plasticity"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "33",
+            "section": "33.3.2 — Short-Term Synaptic Plasticity"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l5_ssri_serotonin_reuptake",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_biology_l3_synaptic_transmission",
+      "content": {
+        "title": "SSRI Mechanism (Serotonin Reuptake Inhibition)",
+        "definition": "Selective serotonin reuptake inhibitors block SERT, increasing synaptic serotonin availability and enhancing serotonergic neurotransmission.",
+        "summary": "SSRIs are first-line antidepressants. Delayed therapeutic onset reflects downstream receptor adaptations."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Cell Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l4_synaptic_cleft_clearance",
+        "prerequisites": [
+          "spine_biology_l4_synaptic_cleft_clearance"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "SSRI Mechanism (Serotonin Reuptake Inhibition)",
+            "relevance": "Antidepressant pharmacology.",
+            "applications": [
+              "SERT blockade",
+              "Serotonin syndrome risk"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Neurophysiology",
+            "topic": "Synaptic Transmission",
+            "subtopic": "SSRIs"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_synaptic_cleft_clearance"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "section": "Selective Serotonin Reuptake Inhibitors",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    }
+  ]
+}

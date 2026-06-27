@@ -1,0 +1,347 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_cerebral_palsy_orthopaedic_management",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "A5: Adult transition L5 added per resident review."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_cp_classification_and_gait",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_cerebral_palsy_orthopaedic_management",
+      "content": {
+        "title": "CP Classification and Gait Assessment",
+        "definition": "GMFCS levels, spasticity patterns, and instrumented gait analysis guiding orthopaedic intervention timing.",
+        "summary": "GMFCS IV-V patients need hip surveillance; ambulators benefit from SEMLS planning."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_cerebral_palsy_orthopaedic_management",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "CP Classification and Gait Assessment",
+            "relevance": "Primary paediatric orthopaedic neuromuscular topic.",
+            "applications": [
+              "GMFCS classification",
+              "Hip surveillance",
+              "Multilevel surgery planning"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Neuromuscular Paeds",
+            "topic": "Cerebral Palsy — Orthopaedic Management",
+            "subtopic": "CP Classification and Gait Assessment"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Cerebral Palsy — Orthopaedic Management",
+            "chapter": "NBK557519",
+            "section": "Cerebral Palsy"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_cp_hip_surveillance_and_reconstruction",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_cerebral_palsy_orthopaedic_management",
+      "content": {
+        "title": "CP Hip Surveillance and Reconstruction",
+        "definition": "Progressive hip subluxation in non-ambulatory CP with monitoring, soft-tissue releases, and reconstructive osteotomy.",
+        "summary": "Migration percentage on AP pelvis guides intervention before dislocation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_cerebral_palsy_orthopaedic_management",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_cp_classification_and_gait"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "CP Hip Surveillance and Reconstruction",
+            "relevance": "Primary paediatric orthopaedic neuromuscular topic.",
+            "applications": [
+              "GMFCS classification",
+              "Hip surveillance",
+              "Multilevel surgery planning"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Neuromuscular Paeds",
+            "topic": "Cerebral Palsy — Orthopaedic Management",
+            "subtopic": "CP Hip Surveillance and Reconstruction"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_cp_classification_and_gait"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Cerebral Palsy — Orthopaedic Management",
+            "chapter": "NBK557519",
+            "section": "Hip Surveillance"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_cp_multilevel_extremity_surgery",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_cerebral_palsy_orthopaedic_management",
+      "content": {
+        "title": "CP Multilevel Extremity Surgery",
+        "definition": "Single-event multilevel surgery addressing equinus, hamstring contracture, and femoral anteversion in ambulatory CP.",
+        "summary": "SEMLS improves gait efficiency; postoperative rehab is prolonged."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_cerebral_palsy_orthopaedic_management",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_cp_hip_surveillance_and_reconstruction"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "CP Multilevel Extremity Surgery",
+            "relevance": "Primary paediatric orthopaedic neuromuscular topic.",
+            "applications": [
+              "GMFCS classification",
+              "Hip surveillance",
+              "Multilevel surgery planning"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Neuromuscular Paeds",
+            "topic": "Cerebral Palsy — Orthopaedic Management",
+            "subtopic": "CP Multilevel Extremity Surgery"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_cp_hip_surveillance_and_reconstruction"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Cerebral Palsy — Orthopaedic Management",
+            "chapter": "NBK557519",
+            "section": "SEMLS"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_cp_spasticity_and_contracture_management",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_cerebral_palsy_orthopaedic_management",
+      "content": {
+        "title": "CP Spasticity and Contracture Management",
+        "definition": "Medical spasticity control, selective dorsal rhizotomy, and tendon transfers as adjuncts to bony procedures.",
+        "summary": "Botulinum toxin and baclofen bridge to definitive surgery; tone management is multidisciplinary."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_cerebral_palsy_orthopaedic_management",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_cp_multilevel_extremity_surgery"
+        ],
+        "unlocks": [
+          "spine_medicine_clinical_l5_cp_adult_transition_of_care"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "CP Spasticity and Contracture Management",
+            "relevance": "Primary paediatric orthopaedic neuromuscular topic.",
+            "applications": [
+              "GMFCS classification",
+              "Hip surveillance",
+              "Multilevel surgery planning"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Neuromuscular Paeds",
+            "topic": "Cerebral Palsy — Orthopaedic Management",
+            "subtopic": "CP Spasticity and Contracture Management"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_cp_multilevel_extremity_surgery"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_clinical_l5_cp_adult_transition_of_care"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Cerebral Palsy — Orthopaedic Management",
+            "chapter": "NBK557519",
+            "section": "Spasticity"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l5_cp_adult_transition_of_care",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_clinical_l3_cerebral_palsy_orthopaedic_management",
+      "content": {
+        "title": "Cerebral Palsy — Adult Transition of Care",
+        "definition": "Transfer from pediatric to adult orthopaedic and rehabilitation services for aging CP patients with arthritis, scoliosis, and declining mobility.",
+        "summary": "Lifetime musculoskeletal care includes hip pain in former ambulators, pathologic fractures, and equipment adaptation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l4_cp_spasticity_and_contracture_management",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_cp_spasticity_and_contracture_management"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Cerebral Palsy — Adult Transition of Care",
+            "relevance": "Primary paediatric orthopaedic neuromuscular topic.",
+            "applications": [
+              "GMFCS classification",
+              "Hip surveillance",
+              "Multilevel surgery planning"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Neuromuscular Paeds",
+            "topic": "Cerebral Palsy — Orthopaedic Management",
+            "subtopic": "Cerebral Palsy — Adult Transition of Care"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_cp_spasticity_and_contracture_management"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Cerebral Palsy — Orthopaedic Management",
+            "chapter": "NBK557519",
+            "section": "Adult CP"
+          }
+        ]
+      }
+    }
+  ]
+}

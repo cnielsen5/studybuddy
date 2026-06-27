@@ -1,0 +1,799 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_biology_l3_prokaryotic_cell_structure",
+    "anchor_primary_domain": "biology",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_biology_l3_prokaryotic_cell_structure.biology.json",
+      "content/spine/l4-l5-bundles/spine_biology_l3_prokaryotic_cell_structure.medicine_preclinical.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "12 per-context concepts merged into 12 universal concepts (10 L4 + 2 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_biology_l4_bacterial_appendages",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_prokaryotic_cell_structure",
+      "content": {
+        "title": "Flagella and Pili",
+        "definition": "External prokaryotic structures where flagella provide motility via rotary motion and pili mediate attachment and conjugative DNA transfer.",
+        "summary": "Flagellar rotation is powered by proton motive force. Sex pili connect donor and recipient cells during conjugation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Microbial Cell Biology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_prokaryotic_cell_structure",
+        "prerequisites": [
+          "spine_biology_l4_prokaryotic_genome",
+          "spine_biology_l4_prokaryotic_cell_envelope"
+        ],
+        "unlocks": [
+          "spine_biology_l4_bacterial_ribosomes_antibiotic_targets"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Flagella and Pili",
+            "relevance": "Motility and genetic exchange structures in bacteria.",
+            "applications": [
+              "Bacterial motility",
+              "Conjugation pili"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Microbiology",
+            "subcategory": "Microbial Cell Biology",
+            "topic": "Prokaryotic Cell Structure",
+            "subtopic": "Appendages"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_prokaryotic_genome"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Bacterial Flagella and Pili",
+            "relevance": "UTI adherence via fimbriae.",
+            "applications": [
+              "Flagellar rotation",
+              "Fimbrial adherence"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Microbiology",
+            "subcategory": "Bacteriology",
+            "topic": "Prokaryotic Structure",
+            "subtopic": "Appendages"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_prokaryotic_cell_envelope"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_bacterial_ribosomes_antibiotic_targets"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-26T05:54:17.140Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "22",
+            "section": "22.4"
+          },
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "22",
+            "section": "22.3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_bacterial_cell_envelope",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_prokaryotic_cell_structure",
+      "content": {
+        "title": "Bacterial Cell Envelope",
+        "definition": "Layered structure comprising plasma membrane, peptidoglycan cell wall, and in gram-negative bacteria an outer membrane with lipopolysaccharide.",
+        "summary": "The cell envelope provides shape, osmotic protection, and a permeability barrier. Gram stain distinguishes thick peptidoglycan (gram-positive) from thin peptidoglycan plus outer membrane (gram-negative)."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Microbial Cell Biology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_prokaryotic_cell_structure",
+        "prerequisites": [
+          "spine_biology_l4_prokaryotic_vs_eukaryotic"
+        ],
+        "unlocks": [
+          "spine_biology_l4_gram_stain_classification"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Bacterial Cell Envelope",
+            "relevance": "Structural basis for gram staining and antibiotic targets.",
+            "applications": [
+              "Peptidoglycan",
+              "Outer membrane"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Microbiology",
+            "subcategory": "Microbial Cell Biology",
+            "topic": "Prokaryotic Cell Structure",
+            "subtopic": "Cell Envelope"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_prokaryotic_vs_eukaryotic"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_gram_stain_classification"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "22",
+            "section": "22.2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_bacterial_ribosomes_antibiotic_targets",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_prokaryotic_cell_structure",
+      "content": {
+        "title": "Bacterial Ribosomes and Antibiotic Targets",
+        "definition": "70S prokaryotic ribosomes (30S and 50S subunits) differing from 80S eukaryotic ribosomes, enabling selective inhibition by aminoglycosides, tetracyclines, macrolides, and chloramphenicol.",
+        "summary": "Antibiotics exploit structural differences in ribosomal RNA and proteins. Misuse promotes resistance."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Microbiology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_prokaryotic_cell_structure",
+        "prerequisites": [
+          "spine_biology_l4_bacterial_appendages"
+        ],
+        "unlocks": [
+          "spine_biology_l4_plasmids_horizontal_gene_transfer"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Bacterial Ribosomes and Antibiotic Targets",
+            "relevance": "Protein synthesis inhibitor mechanisms.",
+            "applications": [
+              "30S aminoglycoside binding",
+              "50S macrolide binding"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Microbiology",
+            "subcategory": "Bacteriology",
+            "topic": "Prokaryotic Structure",
+            "subtopic": "Ribosomes"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_bacterial_appendages"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_plasmids_horizontal_gene_transfer"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "22",
+            "section": "22.4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_gram_stain_classification",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_prokaryotic_cell_structure",
+      "content": {
+        "title": "Gram-Positive vs Gram-Negative Classification",
+        "definition": "Differential staining based on peptidoglycan thickness and outer membrane presence, dividing bacteria into gram-positive (purple) and gram-negative (pink) groups.",
+        "summary": "Gram classification reflects fundamental envelope architecture. It predicts antibiotic susceptibility and informs clinical microbiology."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Microbial Cell Biology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_prokaryotic_cell_structure",
+        "prerequisites": [
+          "spine_biology_l4_bacterial_cell_envelope"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Gram-Positive vs Gram-Negative Classification",
+            "relevance": "Key diagnostic classification in microbiology.",
+            "applications": [
+              "Gram stain",
+              "Peptidoglycan thickness"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Microbiology",
+            "subcategory": "Microbial Cell Biology",
+            "topic": "Prokaryotic Cell Structure",
+            "subtopic": "Gram Classification"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_bacterial_cell_envelope"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "22",
+            "section": "22.5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_gram_stain_properties",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_prokaryotic_cell_structure",
+      "content": {
+        "title": "Gram Stain and Cell Wall Properties",
+        "definition": "Differential staining based on peptidoglycan thickness and lipid content distinguishing gram-positive (purple) from gram-negative (pink) bacteria.",
+        "summary": "Crystal violet retention in thick peptidoglycan defines gram-positive organisms. Outer membrane of gram-negatives prevents dye retention after alcohol decolorization."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Microbiology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_prokaryotic_cell_structure",
+        "prerequisites": [
+          "spine_biology_l4_prokaryotic_cell_envelope"
+        ],
+        "unlocks": [
+          "spine_biology_l5_outer_membrane_lps"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Gram Stain and Cell Wall Properties",
+            "relevance": "Initial microbiology identification step.",
+            "applications": [
+              "Crystal violet and safranin",
+              "Alcohol decolorization"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Microbiology",
+            "subcategory": "Bacteriology",
+            "topic": "Prokaryotic Structure",
+            "subtopic": "Gram Stain"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_prokaryotic_cell_envelope"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l5_outer_membrane_lps"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "22",
+            "section": "22.2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_plasmids_horizontal_gene_transfer",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_prokaryotic_cell_structure",
+      "content": {
+        "title": "Plasmids and Horizontal Gene Transfer",
+        "definition": "Extrachromosomal circular DNA carrying resistance genes and virulence factors, transferred between bacteria via conjugation, transformation, or transduction.",
+        "summary": "Horizontal transfer accelerates antibiotic resistance spread. R-plasmids confer multi-drug resistance."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Microbiology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_prokaryotic_cell_structure",
+        "prerequisites": [
+          "spine_biology_l4_bacterial_ribosomes_antibiotic_targets"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Plasmids and Horizontal Gene Transfer",
+            "relevance": "MRSA and resistance epidemiology.",
+            "applications": [
+              "Conjugation via sex pilus",
+              "R-plasmids"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Microbiology",
+            "subcategory": "Bacteriology",
+            "topic": "Prokaryotic Structure",
+            "subtopic": "Plasmids"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_bacterial_ribosomes_antibiotic_targets"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "22",
+            "section": "22.5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_prokaryotic_cell_envelope",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_prokaryotic_cell_structure",
+      "content": {
+        "title": "Prokaryotic Cell Envelope (Wall and Membrane)",
+        "definition": "Peptidoglycan cell wall surrounding the plasma membrane in bacteria, with gram-positive thick single layer and gram-negative thin wall plus outer membrane.",
+        "summary": "The envelope provides osmotic protection and antibiotic targets. Lysozyme cleaves peptidoglycan; beta-lactams inhibit cross-linking."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Microbiology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_prokaryotic_cell_structure",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_biology_l4_bacterial_appendages",
+          "spine_biology_l4_gram_stain_properties"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Prokaryotic Cell Envelope (Wall and Membrane)",
+            "relevance": "Gram stain and antibiotic selectivity.",
+            "applications": [
+              "Peptidoglycan structure",
+              "Gram-positive vs gram-negative"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Microbiology",
+            "subcategory": "Bacteriology",
+            "topic": "Prokaryotic Structure",
+            "subtopic": "Cell Envelope"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_biology_l4_bacterial_appendages",
+              "spine_biology_l4_gram_stain_properties"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "22",
+            "section": "22.1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_prokaryotic_genome",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_prokaryotic_cell_structure",
+      "content": {
+        "title": "Prokaryotic Genome and Plasmids",
+        "definition": "Circular double-stranded DNA chromosome in the nucleoid region plus optional small extrachromosomal plasmids carrying accessory genes such as antibiotic resistance.",
+        "summary": "Prokaryotic genomes are compact with little noncoding DNA. Plasmids enable horizontal gene transfer and rapid adaptation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Microbial Cell Biology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_prokaryotic_cell_structure",
+        "prerequisites": [
+          "spine_biology_l4_prokaryotic_vs_eukaryotic"
+        ],
+        "unlocks": [
+          "spine_biology_l4_bacterial_appendages"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Prokaryotic Genome and Plasmids",
+            "relevance": "Genetic organization enabling rapid replication and adaptation.",
+            "applications": [
+              "Circular chromosome",
+              "Plasmid transfer"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Microbiology",
+            "subcategory": "Microbial Cell Biology",
+            "topic": "Prokaryotic Cell Structure",
+            "subtopic": "Genome"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_prokaryotic_vs_eukaryotic"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_bacterial_appendages"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "22",
+            "section": "22.3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_prokaryotic_vs_eukaryotic",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_prokaryotic_cell_structure",
+      "content": {
+        "title": "Prokaryotic vs Eukaryotic Organization",
+        "definition": "Fundamental differences between prokaryotic cells lacking a nucleus and membrane-bound organelles and eukaryotic cells with compartmentalized organelles.",
+        "summary": "Prokaryotes include bacteria and archaea. Their simpler architecture enables rapid growth and genetic exchange but limits compartmental specialization."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Microbial Cell Biology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_prokaryotic_cell_structure",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_biology_l4_bacterial_cell_envelope",
+          "spine_biology_l4_prokaryotic_genome"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Prokaryotic vs Eukaryotic Organization",
+            "relevance": "Evolutionary and structural context for microbial cells.",
+            "applications": [
+              "No nucleus",
+              "No membrane organelles"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Microbiology",
+            "subcategory": "Microbial Cell Biology",
+            "topic": "Prokaryotic Cell Structure",
+            "subtopic": "Prokaryote vs Eukaryote"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_biology_l4_bacterial_cell_envelope",
+              "spine_biology_l4_prokaryotic_genome"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "22",
+            "section": "22.1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l5_beta_lactam_cell_wall",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_biology_l3_prokaryotic_cell_structure",
+      "content": {
+        "title": "Beta-Lactam Antibiotics and Cell Wall Synthesis",
+        "definition": "Beta-lactam antibiotics inhibit transpeptidases (penicillin-binding proteins) preventing peptidoglycan cross-linking and causing bacterial lysis.",
+        "summary": "Bactericidal effect is greatest on actively dividing bacteria with intact cell wall synthesis. Resistance via beta-lactamase enzymes."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Microbiology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l4_prokaryotic_cell_envelope",
+        "prerequisites": [
+          "spine_biology_l4_prokaryotic_cell_envelope"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Beta-Lactam Antibiotics and Cell Wall Synthesis",
+            "relevance": "Penicillin mechanism and resistance.",
+            "applications": [
+              "PBP inhibition",
+              "Beta-lactamase resistance"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Microbiology",
+            "subcategory": "Bacteriology",
+            "topic": "Prokaryotic Structure",
+            "subtopic": "Beta-Lactams"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_prokaryotic_cell_envelope"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "section": "Beta-Lactam Antibiotics",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l5_outer_membrane_lps",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_biology_l3_prokaryotic_cell_structure",
+      "content": {
+        "title": "Gram-Negative Outer Membrane and LPS",
+        "definition": "Outer membrane of gram-negative bacteria containing lipopolysaccharide (LPS) in the outer leaflet, acting as endotoxin and permeability barrier.",
+        "summary": "LPS lipid A triggers TLR4-mediated inflammation. Porins allow passage of small hydrophilic molecules."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Microbiology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l4_gram_stain_properties",
+        "prerequisites": [
+          "spine_biology_l4_gram_stain_properties"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Gram-Negative Outer Membrane and LPS",
+            "relevance": "Endotoxin and septic shock.",
+            "applications": [
+              "Lipid A endotoxin",
+              "Porin channels"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Microbiology",
+            "subcategory": "Bacteriology",
+            "topic": "Prokaryotic Structure",
+            "subtopic": "LPS"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_gram_stain_properties"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "section": "Gram-Negative Bacteria",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    }
+  ]
+}

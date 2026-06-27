@@ -1,0 +1,4223 @@
+{
+  "generated": "2026-06-26",
+  "proposal_count": 308,
+  "proposals": [
+    {
+      "id": "depth_reconciled:spine_biology_l4_refractory_periods",
+      "kind": "depth_reconciled",
+      "anchor": "spine_biology_l3_action_potential",
+      "reason": "Mixed L4/L5 across contexts; promoted to L4 during migration",
+      "members": [
+        "spine_biology_l4_refractory_periods"
+      ],
+      "suggestedAction": "Confirm L4 vs L5 resolution for all member contexts",
+      "domains": [
+        "biology",
+        "medicine_preclinical",
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "depth_reconciled:spine_biology_l4_synaptic_cleft_clearance",
+      "kind": "depth_reconciled",
+      "anchor": "spine_biology_l3_synaptic_transmission",
+      "reason": "Mixed L4/L5 across contexts; promoted to L4 during migration",
+      "members": [
+        "spine_biology_l4_synaptic_cleft_clearance"
+      ],
+      "suggestedAction": "Confirm L4 vs L5 resolution for all member contexts",
+      "domains": [
+        "medicine_preclinical",
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "depth_reconciled:spine_mathematics_l4_half_life_decay_constant",
+      "kind": "depth_reconciled",
+      "anchor": "spine_mathematics_l3_exponential_decay",
+      "reason": "Mixed L4/L5 across contexts; promoted to L4 during migration",
+      "members": [
+        "spine_mathematics_l4_half_life_decay_constant"
+      ],
+      "suggestedAction": "Confirm L4 vs L5 resolution for all member contexts",
+      "domains": [
+        "chemistry",
+        "physics"
+      ]
+    },
+    {
+      "id": "cross_anchor_shared_note:spine_biology_l3_dna_structure_replication|spine_chemistry_l4_dna_double_helix_base_pairing",
+      "kind": "cross_anchor_shared_note",
+      "anchor": "spine_chemistry_l3_nucleic_acid_structure",
+      "reason": "_shared_concept_note references spine_biology_l3_dna_structure_replication",
+      "members": [
+        "spine_chemistry_l4_dna_double_helix_base_pairing",
+        "spine_biology_l3_dna_structure_replication"
+      ],
+      "sharedNote": "Biology process of replication covered under spine_biology_l3_dna_structure_replication.",
+      "suggestedAction": "Add domain context to existing node OR merge with target anchor concept OR add forward reference"
+    },
+    {
+      "id": "cross_anchor_shared_note:spine_chemistry_l3_integrated_rate_laws|spine_mathematics_l4_first_order_elimination_model",
+      "kind": "cross_anchor_shared_note",
+      "anchor": "spine_mathematics_l3_exponential_decay",
+      "reason": "_shared_concept_note references spine_chemistry_l3_integrated_rate_laws",
+      "members": [
+        "spine_mathematics_l4_first_order_elimination_model",
+        "spine_chemistry_l3_integrated_rate_laws"
+      ],
+      "sharedNote": "Mathematically identical to first-order reaction kinetics in chemistry (spine_chemistry_l3_integrated_rate_laws). Add chemistry domain context in consolidation pass.",
+      "suggestedAction": "Add domain context to existing node OR merge with target anchor concept OR add forward reference"
+    },
+    {
+      "id": "cross_anchor_shared_note:spine_mathematics_l3_exponential_decay|spine_mathematics_l4_first_order_reaction_model",
+      "kind": "cross_anchor_shared_note",
+      "anchor": "spine_mathematics_l3_exponential_decay",
+      "reason": "_shared_concept_note references spine_mathematics_l3_exponential_decay",
+      "members": [
+        "spine_mathematics_l4_first_order_reaction_model",
+        "spine_mathematics_l3_exponential_decay"
+      ],
+      "sharedNote": "Mathematically identical to exponential decay (spine_mathematics_l3_exponential_decay) and first-order drug elimination in pharmacokinetics.",
+      "suggestedAction": "Add domain context to existing node OR merge with target anchor concept OR add forward reference"
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_biology_l4_action_potential_phases|spine_biology_l4_resting_membrane_potential",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_biology_l3_action_potential",
+      "anchor_b": "spine_biology_l3_membrane_potential",
+      "reason": "Possible cross-anchor overlap in biology, medicine_preclinical (titleDice=0.47)",
+      "members": [
+        "spine_biology_l4_action_potential_phases",
+        "spine_biology_l4_resting_membrane_potential"
+      ],
+      "titleDice": 0.46511627906976744,
+      "defDice": 0.4452296819787986,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "biology",
+        "medicine_preclinical"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_biology_l5_saltatory_conduction|spine_mathematics_l4_elimination_rate_constant",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_biology_l3_action_potential",
+      "anchor_b": "spine_mathematics_l3_exponential_decay",
+      "reason": "Possible cross-anchor overlap in medicine_preclinical (titleDice=0.47)",
+      "members": [
+        "spine_biology_l5_saltatory_conduction",
+        "spine_mathematics_l4_elimination_rate_constant"
+      ],
+      "titleDice": 0.4745762711864407,
+      "defDice": 0.4229390681003584,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "medicine_preclinical"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_biology_l4_clonal_selection_principle|spine_mathematics_l4_clearance_elimination_relationship",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_biology_l3_adaptive_immunity_overview",
+      "anchor_b": "spine_mathematics_l3_exponential_decay",
+      "reason": "Possible cross-anchor overlap in medicine_preclinical (titleDice=0.46)",
+      "members": [
+        "spine_biology_l4_clonal_selection_principle",
+        "spine_mathematics_l4_clearance_elimination_relationship"
+      ],
+      "titleDice": 0.463768115942029,
+      "defDice": 0.4207492795389049,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "medicine_preclinical"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_biology_l4_clonal_selection_principle|spine_medicine_preclinical_l5_creatinine_clearance_caveats",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_biology_l3_adaptive_immunity_overview",
+      "anchor_b": "spine_medicine_preclinical_l3_renal_filtration_and_gfr",
+      "reason": "Possible cross-anchor overlap in medicine_preclinical (titleDice=0.47)",
+      "members": [
+        "spine_biology_l4_clonal_selection_principle",
+        "spine_medicine_preclinical_l5_creatinine_clearance_caveats"
+      ],
+      "titleDice": 0.46875,
+      "defDice": 0.4492307692307692,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "medicine_preclinical"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_biology_l4_complement_activation|spine_biology_l4_lymphocyte_activation",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_biology_l3_adaptive_immunity_overview",
+      "anchor_b": "spine_biology_l3_innate_immunity",
+      "reason": "Possible cross-anchor overlap in medicine_preclinical (titleDice=0.57)",
+      "members": [
+        "spine_biology_l4_lymphocyte_activation",
+        "spine_biology_l4_complement_activation"
+      ],
+      "titleDice": 0.5714285714285714,
+      "defDice": 0.36177474402730375,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "medicine_preclinical"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_biology_l4_set_point_compensation|spine_biology_l5_botulinum_tetanus_toxins",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_biology_l3_homeostasis_and_feedback",
+      "anchor_b": "spine_biology_l3_synaptic_transmission",
+      "reason": "Possible cross-anchor overlap in medicine_preclinical (titleDice=0.46)",
+      "members": [
+        "spine_biology_l4_set_point_compensation",
+        "spine_biology_l5_botulinum_tetanus_toxins"
+      ],
+      "titleDice": 0.46153846153846156,
+      "defDice": 0.3724137931034483,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "medicine_preclinical"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_biology_l5_anaphylaxis_mediators|spine_biology_l5_complement_anaphylatoxins",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_biology_l3_hypersensitivity_reactions",
+      "anchor_b": "spine_biology_l3_innate_immunity",
+      "reason": "Possible cross-anchor overlap in medicine_preclinical (titleDice=0.45)",
+      "members": [
+        "spine_biology_l5_anaphylaxis_mediators",
+        "spine_biology_l5_complement_anaphylatoxins"
+      ],
+      "titleDice": 0.4528301886792453,
+      "defDice": 0.37735849056603776,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "medicine_preclinical"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_biology_l5_mrna_vaccine_mechanism|spine_biology_l5_serum_sickness_mechanism",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_biology_l3_hypersensitivity_reactions",
+      "anchor_b": "spine_biology_l3_vaccination_principles",
+      "reason": "Possible cross-anchor overlap in medicine_preclinical (titleDice=0.45)",
+      "members": [
+        "spine_biology_l5_serum_sickness_mechanism",
+        "spine_biology_l5_mrna_vaccine_mechanism"
+      ],
+      "titleDice": 0.45,
+      "defDice": 0.4218181818181818,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "medicine_preclinical"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_biology_l4_ionotropic_receptors|spine_biology_l4_pattern_recognition_receptors",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_biology_l3_innate_immunity",
+      "anchor_b": "spine_biology_l3_neurotransmitters_and_receptors",
+      "reason": "Possible cross-anchor overlap in biology (titleDice=0.45)",
+      "members": [
+        "spine_biology_l4_pattern_recognition_receptors",
+        "spine_biology_l4_ionotropic_receptors"
+      ],
+      "titleDice": 0.45454545454545453,
+      "defDice": 0.29213483146067415,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "biology"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_biology_l4_pattern_recognition_receptors|spine_biology_l5_nmda_ltp_coincidence",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_biology_l3_innate_immunity",
+      "anchor_b": "spine_biology_l3_synaptic_transmission",
+      "reason": "Possible cross-anchor overlap in medicine_preclinical (titleDice=0.45)",
+      "members": [
+        "spine_biology_l4_pattern_recognition_receptors",
+        "spine_biology_l5_nmda_ltp_coincidence"
+      ],
+      "titleDice": 0.45161290322580644,
+      "defDice": 0.36496350364963503,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "medicine_preclinical"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_biology_l4_ion_concentration_gradients|spine_medicine_preclinical_l4_excitation_contraction_coupling",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_biology_l3_membrane_potential",
+      "anchor_b": "spine_medicine_preclinical_l3_muscle_contraction",
+      "reason": "Possible cross-anchor overlap in medicine_preclinical (titleDice=0.54)",
+      "members": [
+        "spine_biology_l4_ion_concentration_gradients",
+        "spine_medicine_preclinical_l4_excitation_contraction_coupling"
+      ],
+      "titleDice": 0.5384615384615384,
+      "defDice": 0.3881856540084388,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "medicine_preclinical"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_biology_l4_postsynaptic_potentials|spine_biology_l4_resting_membrane_potential",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_biology_l3_membrane_potential",
+      "anchor_b": "spine_biology_l3_synaptic_transmission",
+      "reason": "Possible cross-anchor overlap in biology, medicine_preclinical (titleDice=0.45)",
+      "members": [
+        "spine_biology_l4_resting_membrane_potential",
+        "spine_biology_l4_postsynaptic_potentials"
+      ],
+      "titleDice": 0.45454545454545453,
+      "defDice": 0.4226415094339623,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "biology",
+        "medicine_preclinical"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_biology_l4_prokaryotic_cell_envelope|spine_biology_l5_hypokalemia_membrane_effects",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_biology_l3_membrane_potential",
+      "anchor_b": "spine_biology_l3_prokaryotic_cell_structure",
+      "reason": "Possible cross-anchor overlap in medicine_preclinical (titleDice=0.48)",
+      "members": [
+        "spine_biology_l5_hypokalemia_membrane_effects",
+        "spine_biology_l4_prokaryotic_cell_envelope"
+      ],
+      "titleDice": 0.48,
+      "defDice": 0.376,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "medicine_preclinical"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_biology_l5_botulinum_tetanus_toxins|spine_medicine_preclinical_l4_frank_starling_mechanism",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_biology_l3_synaptic_transmission",
+      "anchor_b": "spine_medicine_preclinical_l3_cardiac_physiology",
+      "reason": "Possible cross-anchor overlap in medicine_preclinical (titleDice=0.48)",
+      "members": [
+        "spine_biology_l5_botulinum_tetanus_toxins",
+        "spine_medicine_preclinical_l4_frank_starling_mechanism"
+      ],
+      "titleDice": 0.48148148148148145,
+      "defDice": 0.43727598566308246,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "medicine_preclinical"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_biology_l5_ssri_serotonin_reuptake|spine_chemistry_l5_cyanide_complex_iv",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_biology_l3_synaptic_transmission",
+      "anchor_b": "spine_chemistry_l3_glycolysis_and_central_metabolism",
+      "reason": "Possible cross-anchor overlap in medicine_preclinical (titleDice=0.45)",
+      "members": [
+        "spine_biology_l5_ssri_serotonin_reuptake",
+        "spine_chemistry_l5_cyanide_complex_iv"
+      ],
+      "titleDice": 0.45,
+      "defDice": 0.41295546558704455,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "medicine_preclinical"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_biology_l4_active_immunization_principle|spine_mathematics_l4_dosing_interval_accumulation",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_biology_l3_vaccination_principles",
+      "anchor_b": "spine_mathematics_l3_exponential_decay",
+      "reason": "Possible cross-anchor overlap in medicine_preclinical (titleDice=0.47)",
+      "members": [
+        "spine_biology_l4_active_immunization_principle",
+        "spine_mathematics_l4_dosing_interval_accumulation"
+      ],
+      "titleDice": 0.46875,
+      "defDice": 0.4014084507042254,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "medicine_preclinical"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_biology_l5_mrna_vaccine_mechanism|spine_medicine_preclinical_l4_frank_starling_mechanism",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_biology_l3_vaccination_principles",
+      "anchor_b": "spine_medicine_preclinical_l3_cardiac_physiology",
+      "reason": "Possible cross-anchor overlap in medicine_preclinical (titleDice=0.45)",
+      "members": [
+        "spine_biology_l5_mrna_vaccine_mechanism",
+        "spine_medicine_preclinical_l4_frank_starling_mechanism"
+      ],
+      "titleDice": 0.45,
+      "defDice": 0.37593984962406013,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "medicine_preclinical"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_critical_points_first_derivative|spine_mathematics_l4_exp_log_derivatives",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_applications_of_derivatives",
+      "anchor_b": "spine_mathematics_l3_derivatives",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.47)",
+      "members": [
+        "spine_mathematics_l4_critical_points_first_derivative",
+        "spine_mathematics_l4_exp_log_derivatives"
+      ],
+      "titleDice": 0.4691358024691358,
+      "defDice": 0.3300970873786408,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_critical_points_first_derivative|spine_mathematics_l4_partial_derivative_definition",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_applications_of_derivatives",
+      "anchor_b": "spine_mathematics_l3_partial_derivatives",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.46)",
+      "members": [
+        "spine_mathematics_l4_critical_points_first_derivative",
+        "spine_mathematics_l4_partial_derivative_definition"
+      ],
+      "titleDice": 0.45901639344262296,
+      "defDice": 0.39111111111111113,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_mean_value_theorem|spine_mathematics_l4_net_change_theorem",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_applications_of_derivatives",
+      "anchor_b": "spine_mathematics_l3_fundamental_theorem_of_calculus",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.53)",
+      "members": [
+        "spine_mathematics_l4_mean_value_theorem",
+        "spine_mathematics_l4_net_change_theorem"
+      ],
+      "titleDice": 0.5333333333333333,
+      "defDice": 0.3018867924528302,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_intermediate_value_theorem|spine_mathematics_l4_mean_value_theorem",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_applications_of_derivatives",
+      "anchor_b": "spine_mathematics_l3_limits_and_continuity",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.63)",
+      "members": [
+        "spine_mathematics_l4_mean_value_theorem",
+        "spine_mathematics_l4_intermediate_value_theorem"
+      ],
+      "titleDice": 0.631578947368421,
+      "defDice": 0.5972222222222222,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_eigenvalue_method_systems|spine_mathematics_l4_mean_value_theorem",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_applications_of_derivatives",
+      "anchor_b": "spine_mathematics_l3_systems_of_odes",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.48)",
+      "members": [
+        "spine_mathematics_l4_mean_value_theorem",
+        "spine_mathematics_l4_eigenvalue_method_systems"
+      ],
+      "titleDice": 0.4782608695652174,
+      "defDice": 0.22598870056497175,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_average_value_function|spine_mathematics_l4_functions_several_variables",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_definite_integrals",
+      "anchor_b": "spine_mathematics_l3_partial_derivatives",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.58)",
+      "members": [
+        "spine_mathematics_l4_average_value_function",
+        "spine_mathematics_l4_functions_several_variables"
+      ],
+      "titleDice": 0.5833333333333334,
+      "defDice": 0.28402366863905326,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_definite_integral_definition|spine_mathematics_l4_partial_derivative_definition",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_definite_integrals",
+      "anchor_b": "spine_mathematics_l3_partial_derivatives",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.47)",
+      "members": [
+        "spine_mathematics_l4_definite_integral_definition",
+        "spine_mathematics_l4_partial_derivative_definition"
+      ],
+      "titleDice": 0.47058823529411764,
+      "defDice": 0.4052863436123348,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_definite_integral_definition|spine_mathematics_l4_vector_field_definition",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_definite_integrals",
+      "anchor_b": "spine_mathematics_l3_vector_fields",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.49)",
+      "members": [
+        "spine_mathematics_l4_definite_integral_definition",
+        "spine_mathematics_l4_vector_field_definition"
+      ],
+      "titleDice": 0.4888888888888889,
+      "defDice": 0.3673469387755102,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_definite_integral_properties|spine_mathematics_l4_logarithm_properties",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_definite_integrals",
+      "anchor_b": "spine_mathematics_l3_logarithmic_functions",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.49)",
+      "members": [
+        "spine_mathematics_l4_definite_integral_properties",
+        "spine_mathematics_l4_logarithm_properties"
+      ],
+      "titleDice": 0.4897959183673469,
+      "defDice": 0.1452513966480447,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_riemann_sums|spine_mathematics_l4_volume_mass_applications",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_definite_integrals",
+      "anchor_b": "spine_mathematics_l3_multiple_integrals",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.48)",
+      "members": [
+        "spine_mathematics_l4_riemann_sums",
+        "spine_mathematics_l4_volume_mass_applications"
+      ],
+      "titleDice": 0.48148148148148145,
+      "defDice": 0.1986754966887417,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_exponential_function_definition|spine_mathematics_l4_substitution_definite_integrals",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_definite_integrals",
+      "anchor_b": "spine_mathematics_l3_exponential_functions",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.45)",
+      "members": [
+        "spine_mathematics_l4_substitution_definite_integrals",
+        "spine_mathematics_l4_exponential_function_definition"
+      ],
+      "titleDice": 0.45454545454545453,
+      "defDice": 0.2153846153846154,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_iterated_integrals|spine_mathematics_l4_substitution_definite_integrals",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_definite_integrals",
+      "anchor_b": "spine_mathematics_l3_multiple_integrals",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.48)",
+      "members": [
+        "spine_mathematics_l4_substitution_definite_integrals",
+        "spine_mathematics_l4_iterated_integrals"
+      ],
+      "titleDice": 0.47619047619047616,
+      "defDice": 0.2781456953642384,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_chain_rule|spine_mathematics_l4_multivariable_chain_rule",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_derivatives",
+      "anchor_b": "spine_mathematics_l3_partial_derivatives",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.55)",
+      "members": [
+        "spine_mathematics_l4_chain_rule",
+        "spine_mathematics_l4_multivariable_chain_rule"
+      ],
+      "titleDice": 0.5517241379310345,
+      "defDice": 0.2047244094488189,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_exp_log_derivatives|spine_mathematics_l4_exponential_function_definition",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_derivatives",
+      "anchor_b": "spine_mathematics_l3_exponential_functions",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.54)",
+      "members": [
+        "spine_mathematics_l4_exp_log_derivatives",
+        "spine_mathematics_l4_exponential_function_definition"
+      ],
+      "titleDice": 0.5365853658536586,
+      "defDice": 0.2893081761006289,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_exp_log_derivatives|spine_mathematics_l4_exponential_transformations",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_derivatives",
+      "anchor_b": "spine_mathematics_l3_exponential_functions",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.48)",
+      "members": [
+        "spine_mathematics_l4_exp_log_derivatives",
+        "spine_mathematics_l4_exponential_transformations"
+      ],
+      "titleDice": 0.4810126582278481,
+      "defDice": 0.3915343915343915,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_exp_log_derivatives|spine_mathematics_l4_logarithm_as_inverse",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_derivatives",
+      "anchor_b": "spine_mathematics_l3_logarithmic_functions",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.58)",
+      "members": [
+        "spine_mathematics_l4_exp_log_derivatives",
+        "spine_mathematics_l4_logarithm_as_inverse"
+      ],
+      "titleDice": 0.5789473684210527,
+      "defDice": 0.3375,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_exp_log_derivatives|spine_mathematics_l4_logarithmic_equations",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_derivatives",
+      "anchor_b": "spine_mathematics_l3_logarithmic_functions",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.67)",
+      "members": [
+        "spine_mathematics_l4_exp_log_derivatives",
+        "spine_mathematics_l4_logarithmic_equations"
+      ],
+      "titleDice": 0.6744186046511628,
+      "defDice": 0.33653846153846156,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_exp_log_derivatives|spine_mathematics_l4_functions_several_variables",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_derivatives",
+      "anchor_b": "spine_mathematics_l3_partial_derivatives",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.50)",
+      "members": [
+        "spine_mathematics_l4_exp_log_derivatives",
+        "spine_mathematics_l4_functions_several_variables"
+      ],
+      "titleDice": 0.5,
+      "defDice": 0.21468926553672316,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_exp_log_derivatives|spine_mathematics_l4_partial_derivative_definition",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_derivatives",
+      "anchor_b": "spine_mathematics_l3_partial_derivatives",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.47)",
+      "members": [
+        "spine_mathematics_l4_exp_log_derivatives",
+        "spine_mathematics_l4_partial_derivative_definition"
+      ],
+      "titleDice": 0.4722222222222222,
+      "defDice": 0.34146341463414637,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_dot_product|spine_mathematics_l4_product_quotient_rules",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_derivatives",
+      "anchor_b": "spine_mathematics_l3_vectors_in_space",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.45)",
+      "members": [
+        "spine_mathematics_l4_product_quotient_rules",
+        "spine_mathematics_l4_dot_product"
+      ],
+      "titleDice": 0.45161290322580644,
+      "defDice": 0.16806722689075632,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_data_visualization|spine_mathematics_l4_diagonalization_concept",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_descriptive_statistics",
+      "anchor_b": "spine_mathematics_l3_eigenvalues_and_eigenvectors",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.50)",
+      "members": [
+        "spine_mathematics_l4_data_visualization",
+        "spine_mathematics_l4_diagonalization_concept"
+      ],
+      "titleDice": 0.5,
+      "defDice": 0.3333333333333333,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_data_visualization|spine_mathematics_l4_direction_fields",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_descriptive_statistics",
+      "anchor_b": "spine_mathematics_l3_first_order_odes",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.47)",
+      "members": [
+        "spine_mathematics_l4_data_visualization",
+        "spine_mathematics_l4_direction_fields"
+      ],
+      "titleDice": 0.47058823529411764,
+      "defDice": 0.4039408866995074,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_distribution_shape|spine_mathematics_l4_test_statistics",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_descriptive_statistics",
+      "anchor_b": "spine_mathematics_l3_hypothesis_testing",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.50)",
+      "members": [
+        "spine_mathematics_l4_distribution_shape",
+        "spine_mathematics_l4_test_statistics"
+      ],
+      "titleDice": 0.5,
+      "defDice": 0.3251231527093596,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_outliers_robust_statistics|spine_mathematics_l4_test_statistics",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_descriptive_statistics",
+      "anchor_b": "spine_mathematics_l3_hypothesis_testing",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.54)",
+      "members": [
+        "spine_mathematics_l4_outliers_robust_statistics",
+        "spine_mathematics_l4_test_statistics"
+      ],
+      "titleDice": 0.5396825396825397,
+      "defDice": 0.4392523364485981,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_characteristic_equation|spine_mathematics_l4_characteristic_polynomial",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_eigenvalues_and_eigenvectors",
+      "anchor_b": "spine_mathematics_l3_second_order_linear_odes",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.59)",
+      "members": [
+        "spine_mathematics_l4_characteristic_polynomial",
+        "spine_mathematics_l4_characteristic_equation"
+      ],
+      "titleDice": 0.5909090909090909,
+      "defDice": 0.26,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_eigenvector_definition|spine_mathematics_l4_partial_derivative_definition",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_eigenvalues_and_eigenvectors",
+      "anchor_b": "spine_mathematics_l3_partial_derivatives",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.47)",
+      "members": [
+        "spine_mathematics_l4_eigenvector_definition",
+        "spine_mathematics_l4_partial_derivative_definition"
+      ],
+      "titleDice": 0.4745762711864407,
+      "defDice": 0.3402061855670103,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_eigenvector_definition|spine_mathematics_l4_vector_field_definition",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_eigenvalues_and_eigenvectors",
+      "anchor_b": "spine_mathematics_l3_vector_fields",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.53)",
+      "members": [
+        "spine_mathematics_l4_eigenvector_definition",
+        "spine_mathematics_l4_vector_field_definition"
+      ],
+      "titleDice": 0.5283018867924528,
+      "defDice": 0.31901840490797545,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_finding_eigenvectors|spine_mathematics_l4_gradient_vector",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_eigenvalues_and_eigenvectors",
+      "anchor_b": "spine_mathematics_l3_partial_derivatives",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.45)",
+      "members": [
+        "spine_mathematics_l4_finding_eigenvectors",
+        "spine_mathematics_l4_gradient_vector"
+      ],
+      "titleDice": 0.45161290322580644,
+      "defDice": 0.25,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_geometric_interpretation_eigen|spine_mathematics_l5_interpreting_p_values",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_eigenvalues_and_eigenvectors",
+      "anchor_b": "spine_mathematics_l3_hypothesis_testing",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.45)",
+      "members": [
+        "spine_mathematics_l4_geometric_interpretation_eigen",
+        "spine_mathematics_l5_interpreting_p_values"
+      ],
+      "titleDice": 0.45161290322580644,
+      "defDice": 0.24731182795698925,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_geometric_interpretation_eigen|spine_mathematics_l5_p_value_misinterpretations",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_eigenvalues_and_eigenvectors",
+      "anchor_b": "spine_mathematics_l3_hypothesis_testing",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.56)",
+      "members": [
+        "spine_mathematics_l4_geometric_interpretation_eigen",
+        "spine_mathematics_l5_p_value_misinterpretations"
+      ],
+      "titleDice": 0.5625,
+      "defDice": 0.34196891191709844,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_clearance_elimination_relationship|spine_medicine_preclinical_l5_creatinine_clearance_caveats",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_exponential_decay",
+      "anchor_b": "spine_medicine_preclinical_l3_renal_filtration_and_gfr",
+      "reason": "Possible cross-anchor overlap in medicine_preclinical (titleDice=0.70)",
+      "members": [
+        "spine_mathematics_l4_clearance_elimination_relationship",
+        "spine_medicine_preclinical_l5_creatinine_clearance_caveats"
+      ],
+      "titleDice": 0.6984126984126984,
+      "defDice": 0.5543478260869565,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "medicine_preclinical"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_decay_vs_growth_comparison|spine_mathematics_l4_logarithmic_equations",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_exponential_decay",
+      "anchor_b": "spine_mathematics_l3_logarithmic_functions",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.47)",
+      "members": [
+        "spine_mathematics_l4_decay_vs_growth_comparison",
+        "spine_mathematics_l4_logarithmic_equations"
+      ],
+      "titleDice": 0.4657534246575342,
+      "defDice": 0.3157894736842105,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_elimination_rate_constant|spine_medicine_preclinical_l5_creatinine_clearance_caveats",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_exponential_decay",
+      "anchor_b": "spine_medicine_preclinical_l3_renal_filtration_and_gfr",
+      "reason": "Possible cross-anchor overlap in medicine_preclinical (titleDice=0.57)",
+      "members": [
+        "spine_mathematics_l4_elimination_rate_constant",
+        "spine_medicine_preclinical_l5_creatinine_clearance_caveats"
+      ],
+      "titleDice": 0.5660377358490566,
+      "defDice": 0.44666666666666666,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "medicine_preclinical"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_exponential_equations|spine_mathematics_l4_solving_decay_problems",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_exponential_decay",
+      "anchor_b": "spine_mathematics_l3_exponential_functions",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.64)",
+      "members": [
+        "spine_mathematics_l4_solving_decay_problems",
+        "spine_mathematics_l4_exponential_equations"
+      ],
+      "titleDice": 0.6428571428571429,
+      "defDice": 0.34831460674157305,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_logarithmic_equations|spine_mathematics_l4_solving_decay_problems",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_exponential_decay",
+      "anchor_b": "spine_mathematics_l3_logarithmic_functions",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.54)",
+      "members": [
+        "spine_mathematics_l4_solving_decay_problems",
+        "spine_mathematics_l4_logarithmic_equations"
+      ],
+      "titleDice": 0.5428571428571428,
+      "defDice": 0.3804878048780488,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_initial_value_problems_separable|spine_mathematics_l4_solving_decay_problems",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_exponential_decay",
+      "anchor_b": "spine_mathematics_l3_separable_differential_equations",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.49)",
+      "members": [
+        "spine_mathematics_l4_solving_decay_problems",
+        "spine_mathematics_l4_initial_value_problems_separable"
+      ],
+      "titleDice": 0.4897959183673469,
+      "defDice": 0.35978835978835977,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_exponential_equations|spine_mathematics_l4_logarithmic_equations",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_exponential_functions",
+      "anchor_b": "spine_mathematics_l3_logarithmic_functions",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.76)",
+      "members": [
+        "spine_mathematics_l4_exponential_equations",
+        "spine_mathematics_l4_logarithmic_equations"
+      ],
+      "titleDice": 0.7575757575757576,
+      "defDice": 0.3842364532019704,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_exponential_function_definition|spine_mathematics_l4_limit_definition",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_exponential_functions",
+      "anchor_b": "spine_mathematics_l3_limits_and_continuity",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.49)",
+      "members": [
+        "spine_mathematics_l4_exponential_function_definition",
+        "spine_mathematics_l4_limit_definition"
+      ],
+      "titleDice": 0.4918032786885246,
+      "defDice": 0.21301775147928995,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_exponential_function_definition|spine_mathematics_l4_logarithmic_equations",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_exponential_functions",
+      "anchor_b": "spine_mathematics_l3_logarithmic_functions",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.47)",
+      "members": [
+        "spine_mathematics_l4_exponential_function_definition",
+        "spine_mathematics_l4_logarithmic_equations"
+      ],
+      "titleDice": 0.47368421052631576,
+      "defDice": 0.26519337016574585,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_exponential_function_definition|spine_mathematics_l4_gradient_fields",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_exponential_functions",
+      "anchor_b": "spine_mathematics_l3_vector_fields",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.54)",
+      "members": [
+        "spine_mathematics_l4_exponential_function_definition",
+        "spine_mathematics_l4_gradient_fields"
+      ],
+      "titleDice": 0.5428571428571428,
+      "defDice": 0.23952095808383234,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_exponential_transformations|spine_mathematics_l4_logarithmic_equations",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_exponential_functions",
+      "anchor_b": "spine_mathematics_l3_logarithmic_functions",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.47)",
+      "members": [
+        "spine_mathematics_l4_exponential_transformations",
+        "spine_mathematics_l4_logarithmic_equations"
+      ],
+      "titleDice": 0.4657534246575342,
+      "defDice": 0.3033175355450237,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_exponential_transformations|spine_mathematics_l4_logarithmic_graphs",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_exponential_functions",
+      "anchor_b": "spine_mathematics_l3_logarithmic_functions",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.57)",
+      "members": [
+        "spine_mathematics_l4_exponential_transformations",
+        "spine_mathematics_l4_logarithmic_graphs"
+      ],
+      "titleDice": 0.5671641791044776,
+      "defDice": 0.4578313253012048,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_natural_base_e|spine_mathematics_l4_natural_logarithm",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_exponential_functions",
+      "anchor_b": "spine_mathematics_l3_logarithmic_functions",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.45)",
+      "members": [
+        "spine_mathematics_l4_natural_base_e",
+        "spine_mathematics_l4_natural_logarithm"
+      ],
+      "titleDice": 0.45161290322580644,
+      "defDice": 0.40476190476190477,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_integrating_factor_method|spine_mathematics_l4_vector_line_integrals",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_first_order_odes",
+      "anchor_b": "spine_mathematics_l3_line_integrals",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.50)",
+      "members": [
+        "spine_mathematics_l4_integrating_factor_method",
+        "spine_mathematics_l4_vector_line_integrals"
+      ],
+      "titleDice": 0.5,
+      "defDice": 0.3333333333333333,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_linear_first_order_odes|spine_mathematics_l4_second_order_linear_classification",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_first_order_odes",
+      "anchor_b": "spine_mathematics_l3_second_order_linear_odes",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.50)",
+      "members": [
+        "spine_mathematics_l4_linear_first_order_odes",
+        "spine_mathematics_l4_second_order_linear_classification"
+      ],
+      "titleDice": 0.5,
+      "defDice": 0.24489795918367346,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_ode_classification|spine_mathematics_l4_second_order_linear_classification",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_first_order_odes",
+      "anchor_b": "spine_mathematics_l3_second_order_linear_odes",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.77)",
+      "members": [
+        "spine_mathematics_l4_ode_classification",
+        "spine_mathematics_l4_second_order_linear_classification"
+      ],
+      "titleDice": 0.7719298245614035,
+      "defDice": 0.2918918918918919,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_ode_classification|spine_mathematics_l4_stability_classification",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_first_order_odes",
+      "anchor_b": "spine_mathematics_l3_systems_of_odes",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.46)",
+      "members": [
+        "spine_mathematics_l4_ode_classification",
+        "spine_mathematics_l4_stability_classification"
+      ],
+      "titleDice": 0.45614035087719296,
+      "defDice": 0.27411167512690354,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_intermediate_value_theorem|spine_mathematics_l5_p_value_misinterpretations",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_hypothesis_testing",
+      "anchor_b": "spine_mathematics_l3_limits_and_continuity",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.46)",
+      "members": [
+        "spine_mathematics_l5_p_value_misinterpretations",
+        "spine_mathematics_l4_intermediate_value_theorem"
+      ],
+      "titleDice": 0.46153846153846156,
+      "defDice": 0.2558139534883721,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_intermediate_value_theorem|spine_mathematics_l4_iterated_integrals",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_limits_and_continuity",
+      "anchor_b": "spine_mathematics_l3_multiple_integrals",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.54)",
+      "members": [
+        "spine_mathematics_l4_intermediate_value_theorem",
+        "spine_mathematics_l4_iterated_integrals"
+      ],
+      "titleDice": 0.5357142857142857,
+      "defDice": 0.2125,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_partial_derivative_definition|spine_mathematics_l4_path_independence",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_line_integrals",
+      "anchor_b": "spine_mathematics_l3_partial_derivatives",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.45)",
+      "members": [
+        "spine_mathematics_l4_path_independence",
+        "spine_mathematics_l4_partial_derivative_definition"
+      ],
+      "titleDice": 0.45161290322580644,
+      "defDice": 0.28699551569506726,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_polar_coordinates_integration|spine_mathematics_l4_scalar_line_integrals",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_line_integrals",
+      "anchor_b": "spine_mathematics_l3_multiple_integrals",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.48)",
+      "members": [
+        "spine_mathematics_l4_scalar_line_integrals",
+        "spine_mathematics_l4_polar_coordinates_integration"
+      ],
+      "titleDice": 0.48,
+      "defDice": 0.31901840490797545,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_scalar_line_integrals|spine_mathematics_l4_triple_integrals",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_line_integrals",
+      "anchor_b": "spine_mathematics_l3_multiple_integrals",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.56)",
+      "members": [
+        "spine_mathematics_l4_scalar_line_integrals",
+        "spine_mathematics_l4_triple_integrals"
+      ],
+      "titleDice": 0.5625,
+      "defDice": 0.4142857142857143,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_double_integrals_rectangles|spine_mathematics_l4_vector_line_integrals",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_line_integrals",
+      "anchor_b": "spine_mathematics_l3_multiple_integrals",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.52)",
+      "members": [
+        "spine_mathematics_l4_vector_line_integrals",
+        "spine_mathematics_l4_double_integrals_rectangles"
+      ],
+      "titleDice": 0.5217391304347826,
+      "defDice": 0.12244897959183673,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_triple_integrals|spine_mathematics_l4_vector_line_integrals",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_line_integrals",
+      "anchor_b": "spine_mathematics_l3_multiple_integrals",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.56)",
+      "members": [
+        "spine_mathematics_l4_vector_line_integrals",
+        "spine_mathematics_l4_triple_integrals"
+      ],
+      "titleDice": 0.5625,
+      "defDice": 0.2153846153846154,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_gradient_vector|spine_mathematics_l4_vector_line_integrals",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_line_integrals",
+      "anchor_b": "spine_mathematics_l3_partial_derivatives",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.52)",
+      "members": [
+        "spine_mathematics_l4_vector_line_integrals",
+        "spine_mathematics_l4_gradient_vector"
+      ],
+      "titleDice": 0.5161290322580645,
+      "defDice": 0.1780821917808219,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_polar_coordinates_integration|spine_mathematics_l4_unit_circle_coordinates",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_multiple_integrals",
+      "anchor_b": "spine_mathematics_l3_unit_circle_and_radians",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.46)",
+      "members": [
+        "spine_mathematics_l4_polar_coordinates_integration",
+        "spine_mathematics_l4_unit_circle_coordinates"
+      ],
+      "titleDice": 0.46153846153846156,
+      "defDice": 0.2891566265060241,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_growth_decay_applications|spine_mathematics_l4_volume_mass_applications",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_multiple_integrals",
+      "anchor_b": "spine_mathematics_l3_separable_differential_equations",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.53)",
+      "members": [
+        "spine_mathematics_l4_volume_mass_applications",
+        "spine_mathematics_l4_growth_decay_applications"
+      ],
+      "titleDice": 0.5306122448979592,
+      "defDice": 0.2608695652173913,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_functions_several_variables|spine_mathematics_l4_separation_of_variables_procedure",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_partial_derivatives",
+      "anchor_b": "spine_mathematics_l3_separable_differential_equations",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.51)",
+      "members": [
+        "spine_mathematics_l4_functions_several_variables",
+        "spine_mathematics_l4_separation_of_variables_procedure"
+      ],
+      "titleDice": 0.509090909090909,
+      "defDice": 0.21768707482993196,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_partial_derivative_definition|spine_mathematics_l4_vector_field_definition",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_partial_derivatives",
+      "anchor_b": "spine_mathematics_l3_vector_fields",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.48)",
+      "members": [
+        "spine_mathematics_l4_partial_derivative_definition",
+        "spine_mathematics_l4_vector_field_definition"
+      ],
+      "titleDice": 0.4782608695652174,
+      "defDice": 0.2694300518134715,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_mathematics_l4_equilibrium_solutions|spine_mathematics_l4_stability_classification",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_mathematics_l3_separable_differential_equations",
+      "anchor_b": "spine_mathematics_l3_systems_of_odes",
+      "reason": "Possible cross-anchor overlap in mathematics (titleDice=0.54)",
+      "members": [
+        "spine_mathematics_l4_equilibrium_solutions",
+        "spine_mathematics_l4_stability_classification"
+      ],
+      "titleDice": 0.5384615384615384,
+      "defDice": 0.38372093023255816,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_medicine_preclinical_l4_frank_starling_mechanism|spine_medicine_preclinical_l4_sliding_filament_mechanism",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_medicine_preclinical_l3_cardiac_physiology",
+      "anchor_b": "spine_medicine_preclinical_l3_muscle_contraction",
+      "reason": "Possible cross-anchor overlap in medicine_preclinical (titleDice=0.50)",
+      "members": [
+        "spine_medicine_preclinical_l4_frank_starling_mechanism",
+        "spine_medicine_preclinical_l4_sliding_filament_mechanism"
+      ],
+      "titleDice": 0.5,
+      "defDice": 0.31654676258992803,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "medicine_preclinical"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_psychology_neuroscience_l4_anxiety_biopsychosocial_etiology|spine_psychology_neuroscience_l4_eating_disorder_risk_factors",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_psychology_neuroscience_l3_anxiety_disorders",
+      "anchor_b": "spine_psychology_neuroscience_l3_eating_disorders",
+      "reason": "Possible cross-anchor overlap in psychology_neuroscience (titleDice=0.51)",
+      "members": [
+        "spine_psychology_neuroscience_l4_anxiety_biopsychosocial_etiology",
+        "spine_psychology_neuroscience_l4_eating_disorder_risk_factors"
+      ],
+      "titleDice": 0.5079365079365079,
+      "defDice": 0.37681159420289856,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_psychology_neuroscience_l4_anxiety_first_line_pharmacotherapy|spine_psychology_neuroscience_l4_eating_disorder_pharmacotherapy_limits",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_psychology_neuroscience_l3_anxiety_disorders",
+      "anchor_b": "spine_psychology_neuroscience_l3_eating_disorders",
+      "reason": "Possible cross-anchor overlap in medicine_clinical (titleDice=0.54)",
+      "members": [
+        "spine_psychology_neuroscience_l4_anxiety_first_line_pharmacotherapy",
+        "spine_psychology_neuroscience_l4_eating_disorder_pharmacotherapy_limits"
+      ],
+      "titleDice": 0.5428571428571428,
+      "defDice": 0.2837370242214533,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "medicine_clinical"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_psychology_neuroscience_l4_anxiety_first_line_pharmacotherapy|spine_psychology_neuroscience_l4_personality_disorder_pharmacotherapy_limits",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_psychology_neuroscience_l3_anxiety_disorders",
+      "anchor_b": "spine_psychology_neuroscience_l3_personality_disorders_overview",
+      "reason": "Possible cross-anchor overlap in medicine_clinical (titleDice=0.50)",
+      "members": [
+        "spine_psychology_neuroscience_l4_anxiety_first_line_pharmacotherapy",
+        "spine_psychology_neuroscience_l4_personality_disorder_pharmacotherapy_limits"
+      ],
+      "titleDice": 0.5,
+      "defDice": 0.2935153583617747,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "medicine_clinical"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_psychology_neuroscience_l4_borderline_dbt_management|spine_psychology_neuroscience_l4_generalized_anxiety_disorder",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_psychology_neuroscience_l3_anxiety_disorders",
+      "anchor_b": "spine_psychology_neuroscience_l3_personality_disorders_overview",
+      "reason": "Possible cross-anchor overlap in medicine_clinical (titleDice=0.47)",
+      "members": [
+        "spine_psychology_neuroscience_l4_generalized_anxiety_disorder",
+        "spine_psychology_neuroscience_l4_borderline_dbt_management"
+      ],
+      "titleDice": 0.47368421052631576,
+      "defDice": 0.24892703862660945,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "medicine_clinical"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_psychology_neuroscience_l4_generalized_anxiety_disorder|spine_psychology_neuroscience_l4_personality_disorder_longitudinal_diagnosis",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_psychology_neuroscience_l3_anxiety_disorders",
+      "anchor_b": "spine_psychology_neuroscience_l3_personality_disorders_overview",
+      "reason": "Possible cross-anchor overlap in medicine_clinical (titleDice=0.58)",
+      "members": [
+        "spine_psychology_neuroscience_l4_generalized_anxiety_disorder",
+        "spine_psychology_neuroscience_l4_personality_disorder_longitudinal_diagnosis"
+      ],
+      "titleDice": 0.5753424657534246,
+      "defDice": 0.33884297520661155,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "medicine_clinical"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_psychology_neuroscience_l4_anorexia_nervosa_features|spine_psychology_neuroscience_l4_generalized_anxiety_features",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_psychology_neuroscience_l3_anxiety_disorders",
+      "anchor_b": "spine_psychology_neuroscience_l3_eating_disorders",
+      "reason": "Possible cross-anchor overlap in psychology_neuroscience (titleDice=0.47)",
+      "members": [
+        "spine_psychology_neuroscience_l4_generalized_anxiety_features",
+        "spine_psychology_neuroscience_l4_anorexia_nervosa_features"
+      ],
+      "titleDice": 0.46808510638297873,
+      "defDice": 0.3582089552238806,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_psychology_neuroscience_l4_bulimia_nervosa_features|spine_psychology_neuroscience_l4_generalized_anxiety_features",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_psychology_neuroscience_l3_anxiety_disorders",
+      "anchor_b": "spine_psychology_neuroscience_l3_eating_disorders",
+      "reason": "Possible cross-anchor overlap in psychology_neuroscience (titleDice=0.48)",
+      "members": [
+        "spine_psychology_neuroscience_l4_generalized_anxiety_features",
+        "spine_psychology_neuroscience_l4_bulimia_nervosa_features"
+      ],
+      "titleDice": 0.4782608695652174,
+      "defDice": 0.3387096774193548,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_psychology_neuroscience_l4_borderline_personality_features|spine_psychology_neuroscience_l4_generalized_anxiety_features",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_psychology_neuroscience_l3_anxiety_disorders",
+      "anchor_b": "spine_psychology_neuroscience_l3_personality_disorders_overview",
+      "reason": "Possible cross-anchor overlap in psychology_neuroscience (titleDice=0.49)",
+      "members": [
+        "spine_psychology_neuroscience_l4_generalized_anxiety_features",
+        "spine_psychology_neuroscience_l4_borderline_personality_features"
+      ],
+      "titleDice": 0.49056603773584906,
+      "defDice": 0.3776223776223776,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_psychology_neuroscience_l4_acute_psychosis_management|spine_psychology_neuroscience_l5_acute_panic_management",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_psychology_neuroscience_l3_anxiety_disorders",
+      "anchor_b": "spine_psychology_neuroscience_l3_schizophrenia_spectrum",
+      "reason": "Possible cross-anchor overlap in medicine_clinical (titleDice=0.52)",
+      "members": [
+        "spine_psychology_neuroscience_l5_acute_panic_management",
+        "spine_psychology_neuroscience_l4_acute_psychosis_management"
+      ],
+      "titleDice": 0.5245901639344263,
+      "defDice": 0.37554585152838427,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "medicine_clinical"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_psychology_neuroscience_l4_binge_eating_disorder_features|spine_psychology_neuroscience_l4_borderline_personality_features",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_psychology_neuroscience_l3_eating_disorders",
+      "anchor_b": "spine_psychology_neuroscience_l3_personality_disorders_overview",
+      "reason": "Possible cross-anchor overlap in psychology_neuroscience (titleDice=0.48)",
+      "members": [
+        "spine_psychology_neuroscience_l4_binge_eating_disorder_features",
+        "spine_psychology_neuroscience_l4_borderline_personality_features"
+      ],
+      "titleDice": 0.48148148148148145,
+      "defDice": 0.2857142857142857,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_psychology_neuroscience_l4_eating_disorder_pharmacotherapy_limits|spine_psychology_neuroscience_l4_personality_disorder_pharmacotherapy_limits",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_psychology_neuroscience_l3_eating_disorders",
+      "anchor_b": "spine_psychology_neuroscience_l3_personality_disorders_overview",
+      "reason": "Possible cross-anchor overlap in medicine_clinical (titleDice=0.70)",
+      "members": [
+        "spine_psychology_neuroscience_l4_eating_disorder_pharmacotherapy_limits",
+        "spine_psychology_neuroscience_l4_personality_disorder_pharmacotherapy_limits"
+      ],
+      "titleDice": 0.7,
+      "defDice": 0.2876712328767123,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "medicine_clinical"
+      ]
+    },
+    {
+      "id": "cross_anchor_same_domain:spine_psychology_neuroscience_l4_hospitalization_refeeding_criteria|spine_psychology_neuroscience_l4_substance_screening_brief_intervention",
+      "kind": "cross_anchor_same_domain",
+      "anchor": "spine_psychology_neuroscience_l3_eating_disorders",
+      "anchor_b": "spine_psychology_neuroscience_l3_substance_use_disorders",
+      "reason": "Possible cross-anchor overlap in medicine_clinical (titleDice=0.45)",
+      "members": [
+        "spine_psychology_neuroscience_l4_hospitalization_refeeding_criteria",
+        "spine_psychology_neuroscience_l4_substance_screening_brief_intervention"
+      ],
+      "titleDice": 0.45161290322580644,
+      "defDice": 0.40789473684210525,
+      "suggestedAction": "Review for consolidation or shared-context addition",
+      "domains": [
+        "medicine_clinical"
+      ]
+    },
+    {
+      "id": "context_addition:spine_biology_l4_action_potential_phases",
+      "kind": "context_addition",
+      "anchor": "spine_biology_l3_action_potential",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_biology_l4_action_potential_phases"
+      ],
+      "sharedNote": "Also used in psychology_neuroscience (neural signaling) and medicine_preclinical (cardiac/neural electrophysiology).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "biology",
+        "medicine_preclinical",
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_biology_l4_action_potential_threshold",
+      "kind": "context_addition",
+      "anchor": "spine_biology_l3_action_potential",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_biology_l4_action_potential_threshold"
+      ],
+      "sharedNote": "Also used in psychology_neuroscience (neural signaling) and medicine_preclinical (cardiac/neural electrophysiology).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "biology",
+        "medicine_preclinical",
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_biology_l4_axonal_propagation",
+      "kind": "context_addition",
+      "anchor": "spine_biology_l3_action_potential",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_biology_l4_axonal_propagation"
+      ],
+      "sharedNote": "Also used in psychology_neuroscience (neural signaling) and medicine_preclinical (cardiac/neural electrophysiology).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_biology_l4_refractory_periods",
+      "kind": "context_addition",
+      "anchor": "spine_biology_l3_action_potential",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_biology_l4_refractory_periods"
+      ],
+      "sharedNote": "Also used in psychology_neuroscience (neural signaling) and medicine_preclinical (cardiac/neural electrophysiology).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "biology",
+        "medicine_preclinical",
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_biology_l4_voltage_gated_ion_channels",
+      "kind": "context_addition",
+      "anchor": "spine_biology_l3_action_potential",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_biology_l4_voltage_gated_ion_channels"
+      ],
+      "sharedNote": "Also used in psychology_neuroscience (neural signaling) and medicine_preclinical (cardiac/neural electrophysiology).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "biology",
+        "medicine_preclinical",
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_biology_l5_saltatory_conduction",
+      "kind": "context_addition",
+      "anchor": "spine_biology_l3_action_potential",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_biology_l5_saltatory_conduction"
+      ],
+      "sharedNote": "Also used in psychology_neuroscience (neural signaling) and medicine_preclinical (cardiac/neural electrophysiology).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "medicine_preclinical",
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_biology_l4_equilibrium_vs_steady_state",
+      "kind": "context_addition",
+      "anchor": "spine_biology_l3_membrane_potential",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_biology_l4_equilibrium_vs_steady_state"
+      ],
+      "sharedNote": "Merged resting_membrane_potential (psych), cell_membrane_resting_potential (medicine_preclinical neuronal), and general excitable-tissue potential. Cardiac membrane potential remains a separate med node (B2).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_biology_l4_goldman_hodgkin_katz_equation",
+      "kind": "context_addition",
+      "anchor": "spine_biology_l3_membrane_potential",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_biology_l4_goldman_hodgkin_katz_equation"
+      ],
+      "sharedNote": "Merged resting_membrane_potential (psych), cell_membrane_resting_potential (medicine_preclinical neuronal), and general excitable-tissue potential. Cardiac membrane potential remains a separate med node (B2).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_biology_l4_ion_concentration_gradients",
+      "kind": "context_addition",
+      "anchor": "spine_biology_l3_membrane_potential",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_biology_l4_ion_concentration_gradients"
+      ],
+      "sharedNote": "Merged resting_membrane_potential (psych), cell_membrane_resting_potential (medicine_preclinical neuronal), and general excitable-tissue potential. Cardiac membrane potential remains a separate med node (B2).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "biology",
+        "medicine_preclinical",
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_biology_l4_nernst_equilibrium_potential",
+      "kind": "context_addition",
+      "anchor": "spine_biology_l3_membrane_potential",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_biology_l4_nernst_equilibrium_potential"
+      ],
+      "sharedNote": "Merged resting_membrane_potential (psych), cell_membrane_resting_potential (medicine_preclinical neuronal), and general excitable-tissue potential. Cardiac membrane potential remains a separate med node (B2).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "medicine_preclinical",
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_biology_l4_sodium_potassium_pump",
+      "kind": "context_addition",
+      "anchor": "spine_biology_l3_membrane_potential",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_biology_l4_sodium_potassium_pump"
+      ],
+      "sharedNote": "Merged resting_membrane_potential (psych), cell_membrane_resting_potential (medicine_preclinical neuronal), and general excitable-tissue potential. Cardiac membrane potential remains a separate med node (B2).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "biology",
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_biology_l5_baseline_potential_shifts",
+      "kind": "context_addition",
+      "anchor": "spine_biology_l3_membrane_potential",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_biology_l5_baseline_potential_shifts"
+      ],
+      "sharedNote": "Merged resting_membrane_potential (psych), cell_membrane_resting_potential (medicine_preclinical neuronal), and general excitable-tissue potential. Cardiac membrane potential remains a separate med node (B2).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_biology_l5_gkh_potassium_dominance",
+      "kind": "context_addition",
+      "anchor": "spine_biology_l3_membrane_potential",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_biology_l5_gkh_potassium_dominance"
+      ],
+      "sharedNote": "Merged resting_membrane_potential (psych), cell_membrane_resting_potential (medicine_preclinical neuronal), and general excitable-tissue potential. Cardiac membrane potential remains a separate med node (B2).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_biology_l5_nernst_calculation",
+      "kind": "context_addition",
+      "anchor": "spine_biology_l3_membrane_potential",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_biology_l5_nernst_calculation"
+      ],
+      "sharedNote": "Merged resting_membrane_potential (psych), cell_membrane_resting_potential (medicine_preclinical neuronal), and general excitable-tissue potential. Cardiac membrane potential remains a separate med node (B2).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_biology_l4_major_neurotransmitter_systems",
+      "kind": "context_addition",
+      "anchor": "spine_biology_l3_neurotransmitters_and_receptors",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_biology_l4_major_neurotransmitter_systems"
+      ],
+      "sharedNote": "Merged neurotransmitters_and_receptors (psychology_neuroscience and medicine_preclinical).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "biology",
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_biology_l4_neurotransmitter_clearance_reuptake",
+      "kind": "context_addition",
+      "anchor": "spine_biology_l3_neurotransmitters_and_receptors",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_biology_l4_neurotransmitter_clearance_reuptake"
+      ],
+      "sharedNote": "Merged neurotransmitters_and_receptors (psychology_neuroscience and medicine_preclinical).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_biology_l4_neurotransmitter_synthesis_release",
+      "kind": "context_addition",
+      "anchor": "spine_biology_l3_neurotransmitters_and_receptors",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_biology_l4_neurotransmitter_synthesis_release"
+      ],
+      "sharedNote": "Merged neurotransmitters_and_receptors (psychology_neuroscience and medicine_preclinical).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "biology",
+        "medicine_preclinical",
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_biology_l4_receptor_types_ionotropic_metabotropic",
+      "kind": "context_addition",
+      "anchor": "spine_biology_l3_neurotransmitters_and_receptors",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_biology_l4_receptor_types_ionotropic_metabotropic"
+      ],
+      "sharedNote": "Merged neurotransmitters_and_receptors (psychology_neuroscience and medicine_preclinical).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_biology_l5_dopamine_pathways_overview",
+      "kind": "context_addition",
+      "anchor": "spine_biology_l3_neurotransmitters_and_receptors",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_biology_l5_dopamine_pathways_overview"
+      ],
+      "sharedNote": "Merged neurotransmitters_and_receptors (psychology_neuroscience and medicine_preclinical).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_biology_l5_ionotropic_receptor_kinetics",
+      "kind": "context_addition",
+      "anchor": "spine_biology_l3_neurotransmitters_and_receptors",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_biology_l5_ionotropic_receptor_kinetics"
+      ],
+      "sharedNote": "Merged neurotransmitters_and_receptors (psychology_neuroscience and medicine_preclinical).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_biology_l4_calcium_triggered_vesicle_release",
+      "kind": "context_addition",
+      "anchor": "spine_biology_l3_synaptic_transmission",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_biology_l4_calcium_triggered_vesicle_release"
+      ],
+      "sharedNote": "Merged synapse_structure (biology), synaptic_transmission (psych), synaptic_transmission_physiology (medicine_preclinical).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_biology_l4_chemical_synapse_structure",
+      "kind": "context_addition",
+      "anchor": "spine_biology_l3_synaptic_transmission",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_biology_l4_chemical_synapse_structure"
+      ],
+      "sharedNote": "Merged synapse_structure (biology), synaptic_transmission (psych), synaptic_transmission_physiology (medicine_preclinical).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "biology",
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_biology_l4_postsynaptic_potentials",
+      "kind": "context_addition",
+      "anchor": "spine_biology_l3_synaptic_transmission",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_biology_l4_postsynaptic_potentials"
+      ],
+      "sharedNote": "Merged synapse_structure (biology), synaptic_transmission (psych), synaptic_transmission_physiology (medicine_preclinical).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "biology",
+        "medicine_preclinical",
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_biology_l4_short_term_synaptic_plasticity",
+      "kind": "context_addition",
+      "anchor": "spine_biology_l3_synaptic_transmission",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_biology_l4_short_term_synaptic_plasticity"
+      ],
+      "sharedNote": "Merged synapse_structure (biology), synaptic_transmission (psych), synaptic_transmission_physiology (medicine_preclinical).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_biology_l4_synaptic_cleft_clearance",
+      "kind": "context_addition",
+      "anchor": "spine_biology_l3_synaptic_transmission",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_biology_l4_synaptic_cleft_clearance"
+      ],
+      "sharedNote": "Merged synapse_structure (biology), synaptic_transmission (psych), synaptic_transmission_physiology (medicine_preclinical).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "medicine_preclinical",
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_biology_l4_synaptic_integration_shunting",
+      "kind": "context_addition",
+      "anchor": "spine_biology_l3_synaptic_transmission",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_biology_l4_synaptic_integration_shunting"
+      ],
+      "sharedNote": "Merged synapse_structure (biology), synaptic_transmission (psych), synaptic_transmission_physiology (medicine_preclinical).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_mathematics_l4_correlation_descriptive_association",
+      "kind": "context_addition",
+      "anchor": "spine_mathematics_l3_descriptive_statistics",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_mathematics_l4_correlation_descriptive_association"
+      ],
+      "sharedNote": "Merged descriptive_statistics (mathematics and psychology_neuroscience research methods).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_mathematics_l4_distribution_shape_normality",
+      "kind": "context_addition",
+      "anchor": "spine_mathematics_l3_descriptive_statistics",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_mathematics_l4_distribution_shape_normality"
+      ],
+      "sharedNote": "Merged descriptive_statistics (mathematics and psychology_neuroscience research methods).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_mathematics_l4_measures_central_tendency",
+      "kind": "context_addition",
+      "anchor": "spine_mathematics_l3_descriptive_statistics",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_mathematics_l4_measures_central_tendency"
+      ],
+      "sharedNote": "Merged descriptive_statistics (mathematics and psychology_neuroscience research methods).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "mathematics",
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_mathematics_l4_variability_standard_deviation",
+      "kind": "context_addition",
+      "anchor": "spine_mathematics_l3_descriptive_statistics",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_mathematics_l4_variability_standard_deviation"
+      ],
+      "sharedNote": "Merged descriptive_statistics (mathematics and psychology_neuroscience research methods).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_mathematics_l4_elimination_rate_constant",
+      "kind": "context_addition",
+      "anchor": "spine_mathematics_l3_exponential_decay",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_mathematics_l4_elimination_rate_constant"
+      ],
+      "sharedNote": "Mathematically equivalent to decay constant λ in physics and rate constant k in first-order chemical reactions.",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "medicine_preclinical"
+      ]
+    },
+    {
+      "id": "context_addition:spine_mathematics_l4_exponential_decay_model",
+      "kind": "context_addition",
+      "anchor": "spine_mathematics_l3_exponential_decay",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_mathematics_l4_exponential_decay_model"
+      ],
+      "sharedNote": "Also used in chemistry (first-order kinetics), medicine_preclinical (drug elimination), physics (radioactive decay).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "context_addition:spine_mathematics_l4_null_alternative_hypotheses",
+      "kind": "context_addition",
+      "anchor": "spine_mathematics_l3_hypothesis_testing",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_mathematics_l4_null_alternative_hypotheses"
+      ],
+      "sharedNote": "Merged hypothesis_testing (mathematics) and inferential_statistics_hypothesis_testing (psychology_neuroscience).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "mathematics",
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_mathematics_l4_p_values_significance",
+      "kind": "context_addition",
+      "anchor": "spine_mathematics_l3_hypothesis_testing",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_mathematics_l4_p_values_significance"
+      ],
+      "sharedNote": "Merged hypothesis_testing (mathematics) and inferential_statistics_hypothesis_testing (psychology_neuroscience).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_mathematics_l4_parametric_nonparametric_overview",
+      "kind": "context_addition",
+      "anchor": "spine_mathematics_l3_hypothesis_testing",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_mathematics_l4_parametric_nonparametric_overview"
+      ],
+      "sharedNote": "Merged hypothesis_testing (mathematics) and inferential_statistics_hypothesis_testing (psychology_neuroscience).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_mathematics_l4_type_i_ii_errors_power",
+      "kind": "context_addition",
+      "anchor": "spine_mathematics_l3_hypothesis_testing",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_mathematics_l4_type_i_ii_errors_power"
+      ],
+      "sharedNote": "Merged hypothesis_testing (mathematics) and inferential_statistics_hypothesis_testing (psychology_neuroscience).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_anxiety_biopsychosocial_etiology",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_anxiety_disorders",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_anxiety_biopsychosocial_etiology"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_anxiety_treatment_overview",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_anxiety_disorders",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_anxiety_treatment_overview"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_generalized_anxiety_features",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_anxiety_disorders",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_generalized_anxiety_features"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_panic_phobia_presentation",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_anxiety_disorders",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_panic_phobia_presentation"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_acquisition_extinction_spontaneous_recovery",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_classical_conditioning",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_acquisition_extinction_spontaneous_recovery"
+      ],
+      "sharedNote": "Medicine preclinical behavioral science (patient adherence, aversive conditioning) is a domain context — not a separate L3.",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_classical_conditioning_applications",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_classical_conditioning",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_classical_conditioning_applications"
+      ],
+      "sharedNote": "Medicine preclinical behavioral science (patient adherence, aversive conditioning) is a domain context — not a separate L3.",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_generalization_discrimination",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_classical_conditioning",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_generalization_discrimination"
+      ],
+      "sharedNote": "Medicine preclinical behavioral science (patient adherence, aversive conditioning) is a domain context — not a separate L3.",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_pavlovian_conditioning_paradigm",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_classical_conditioning",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_pavlovian_conditioning_paradigm"
+      ],
+      "sharedNote": "Medicine preclinical behavioral science (patient adherence, aversive conditioning) is a domain context — not a separate L3.",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_anorexia_nervosa_features",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_eating_disorders",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_anorexia_nervosa_features"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_binge_eating_disorder_features",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_eating_disorders",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_binge_eating_disorder_features"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_bulimia_nervosa_features",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_eating_disorders",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_bulimia_nervosa_features"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_eating_disorder_medical_complications",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_eating_disorders",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_eating_disorder_medical_complications"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "medicine_clinical"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_eating_disorder_pharmacotherapy_limits",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_eating_disorders",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_eating_disorder_pharmacotherapy_limits"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "medicine_clinical"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_eating_disorder_psychotherapy_medical",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_eating_disorders",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_eating_disorder_psychotherapy_medical"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "medicine_clinical"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_eating_disorder_risk_factors",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_eating_disorders",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_eating_disorder_risk_factors"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_hospitalization_refeeding_criteria",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_eating_disorders",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_hospitalization_refeeding_criteria"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "medicine_clinical"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l5_refeeding_syndrome_monitoring",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_eating_disorders",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l5_refeeding_syndrome_monitoring"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "medicine_clinical"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_operant_applications_behavior_mod",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_operant_conditioning",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_operant_applications_behavior_mod"
+      ],
+      "sharedNote": "Medicine preclinical behavioral science (reinforcement in adherence) is a domain context — not a separate L3.",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_reinforcement_punishment",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_operant_conditioning",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_reinforcement_punishment"
+      ],
+      "sharedNote": "Medicine preclinical behavioral science (reinforcement in adherence) is a domain context — not a separate L3.",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_schedules_of_reinforcement",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_operant_conditioning",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_schedules_of_reinforcement"
+      ],
+      "sharedNote": "Medicine preclinical behavioral science (reinforcement in adherence) is a domain context — not a separate L3.",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_shaping_chaining",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_operant_conditioning",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_shaping_chaining"
+      ],
+      "sharedNote": "Medicine preclinical behavioral science (reinforcement in adherence) is a domain context — not a separate L3.",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_antisocial_management_legal_interface",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_personality_disorders_overview",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_antisocial_management_legal_interface"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "medicine_clinical"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_antisocial_narcissistic_overview",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_personality_disorders_overview",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_antisocial_narcissistic_overview"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_borderline_dbt_management",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_personality_disorders_overview",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_borderline_dbt_management"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "medicine_clinical"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_borderline_personality_features",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_personality_disorders_overview",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_borderline_personality_features"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_dimensional_trait_models",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_personality_disorders_overview",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_dimensional_trait_models"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_personality_disorder_clusters",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_personality_disorders_overview",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_personality_disorder_clusters"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_personality_disorder_longitudinal_diagnosis",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_personality_disorders_overview",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_personality_disorder_longitudinal_diagnosis"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "medicine_clinical"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_personality_disorder_pharmacotherapy_limits",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_personality_disorders_overview",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_personality_disorder_pharmacotherapy_limits"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "medicine_clinical"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l5_splitting_countertransference",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_personality_disorders_overview",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l5_splitting_countertransference"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "medicine_clinical"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_acute_psychosis_management",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_schizophrenia_spectrum",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_acute_psychosis_management"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "medicine_clinical"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_antipsychotic_generation_selection",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_schizophrenia_spectrum",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_antipsychotic_generation_selection"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "medicine_clinical"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_long_acting_injectable_antipsychotics",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_schizophrenia_spectrum",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_long_acting_injectable_antipsychotics"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "medicine_clinical"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_negative_cognitive_symptoms",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_schizophrenia_spectrum",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_negative_cognitive_symptoms"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_negative_symptom_psychosocial_care",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_schizophrenia_spectrum",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_negative_symptom_psychosocial_care"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "medicine_clinical"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_neurodevelopmental_dopamine_models",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_schizophrenia_spectrum",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_neurodevelopmental_dopamine_models"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_positive_symptoms_psychosis",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_schizophrenia_spectrum",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_positive_symptoms_psychosis"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_schizophrenia_treatment_overview",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_schizophrenia_spectrum",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_schizophrenia_treatment_overview"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l5_neuroleptic_malignant_syndrome",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_schizophrenia_spectrum",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l5_neuroleptic_malignant_syndrome"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "medicine_clinical"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_behavioral_addictions_overview",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_substance_use_disorders",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_behavioral_addictions_overview"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_motivational_interviewing_substance_care",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_substance_use_disorders",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_motivational_interviewing_substance_care"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "medicine_clinical"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_opioid_use_disorder_mat",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_substance_use_disorders",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_opioid_use_disorder_mat"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "medicine_clinical"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_reward_pathways_addiction",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_substance_use_disorders",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_reward_pathways_addiction"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_substance_screening_brief_intervention",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_substance_use_disorders",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_substance_screening_brief_intervention"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "medicine_clinical"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_sud_diagnostic_criteria",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_substance_use_disorders",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_sud_diagnostic_criteria"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_tolerance_withdrawal",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_substance_use_disorders",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_tolerance_withdrawal"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "psychology_neuroscience"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l4_withdrawal_management_alcohol_benzo",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_substance_use_disorders",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l4_withdrawal_management_alcohol_benzo"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "medicine_clinical"
+      ]
+    },
+    {
+      "id": "context_addition:spine_psychology_neuroscience_l5_opioid_overdose_naloxone",
+      "kind": "context_addition",
+      "anchor": "spine_psychology_neuroscience_l3_substance_use_disorders",
+      "reason": "Concept flagged as shared across domains (no explicit spine id in note)",
+      "members": [
+        "spine_psychology_neuroscience_l5_opioid_overdose_naloxone"
+      ],
+      "sharedNote": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing (merged duplicate clinical L3).",
+      "suggestedAction": "Review _shared_concept_note and add domain_contexts[] to this node or link via forward reference",
+      "domains": [
+        "medicine_clinical"
+      ]
+    },
+    {
+      "id": "migration:spine_biology_l3_action_potential:0",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_action_potential",
+      "reason": "possible duplicate (titleDice=0.46, defDice=0.46)",
+      "members": [
+        "spine_biology_l4_action_potential_phases",
+        "spine_medicine_preclinical_l4_cardiac_ap_ventricular"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_action_potential:1",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_action_potential",
+      "reason": "possible duplicate (titleDice=0.50, defDice=0.55)",
+      "members": [
+        "spine_biology_l4_signal_propagation",
+        "spine_psychology_neuroscience_l4_axonal_propagation"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_action_potential:2",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_action_potential",
+      "reason": "possible duplicate (titleDice=0.61, defDice=0.44)",
+      "members": [
+        "spine_biology_l4_signal_propagation",
+        "spine_psychology_neuroscience_l5_saltatory_conduction"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_action_potential:3",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_action_potential",
+      "reason": "possible duplicate (titleDice=0.61, defDice=0.71)",
+      "members": [
+        "spine_biology_l4_signal_propagation",
+        "spine_medicine_preclinical_l5_saltatory_conduction"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_action_potential:4",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_action_potential",
+      "reason": "possible duplicate (titleDice=0.47, defDice=0.51)",
+      "members": [
+        "spine_psychology_neuroscience_l4_axonal_propagation",
+        "spine_medicine_preclinical_l5_saltatory_conduction"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_adaptive_immunity_overview:5",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_adaptive_immunity_overview",
+      "reason": "possible duplicate (titleDice=0.56, defDice=0.59)",
+      "members": [
+        "spine_biology_l4_clonal_selection",
+        "spine_medicine_preclinical_l4_clonal_selection_principle"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_adaptive_immunity_overview:6",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_adaptive_immunity_overview",
+      "reason": "possible duplicate (titleDice=0.49, defDice=0.42)",
+      "members": [
+        "spine_biology_l4_primary_secondary_response",
+        "spine_medicine_preclinical_l5_secondary_response_igm_igg_switch"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_adaptive_immunity_overview:7",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_adaptive_immunity_overview",
+      "reason": "possible duplicate (titleDice=0.47, defDice=0.45)",
+      "members": [
+        "spine_biology_l4_immunological_memory",
+        "spine_medicine_preclinical_l4_humoral_vs_cell_mediated_immunity"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_adaptive_immunity_overview:8",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_adaptive_immunity_overview",
+      "reason": "possible duplicate (titleDice=0.61, defDice=0.63)",
+      "members": [
+        "spine_biology_l4_immunological_memory",
+        "spine_medicine_preclinical_l4_immunologic_memory_mechanisms"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_autoimmunity:9",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_autoimmunity",
+      "reason": "possible duplicate (titleDice=0.70, defDice=0.65)",
+      "members": [
+        "spine_biology_l4_central_tolerance",
+        "spine_medicine_preclinical_l4_central_peripheral_tolerance"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_autoimmunity:10",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_autoimmunity",
+      "reason": "possible duplicate (titleDice=0.78, defDice=0.61)",
+      "members": [
+        "spine_biology_l4_peripheral_tolerance",
+        "spine_medicine_preclinical_l4_central_peripheral_tolerance"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_autoimmunity:11",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_autoimmunity",
+      "reason": "possible duplicate (titleDice=0.61, defDice=0.55)",
+      "members": [
+        "spine_biology_l4_molecular_mimicry",
+        "spine_medicine_preclinical_l4_epitope_spreading"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_hypersensitivity_reactions:12",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_hypersensitivity_reactions",
+      "reason": "possible duplicate (titleDice=0.58, defDice=0.48)",
+      "members": [
+        "spine_biology_l4_hypersensitivity_type_i",
+        "spine_medicine_preclinical_l4_type_ii_cytotoxic_antibody"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_hypersensitivity_reactions:13",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_hypersensitivity_reactions",
+      "reason": "possible duplicate (titleDice=0.61, defDice=0.44)",
+      "members": [
+        "spine_biology_l4_hypersensitivity_type_i",
+        "spine_medicine_preclinical_l4_type_iii_immune_complex"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_hypersensitivity_reactions:14",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_hypersensitivity_reactions",
+      "reason": "possible duplicate (titleDice=0.63, defDice=0.42)",
+      "members": [
+        "spine_biology_l4_hypersensitivity_type_i",
+        "spine_medicine_preclinical_l4_type_iv_delayed_tcell"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_hypersensitivity_reactions:15",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_hypersensitivity_reactions",
+      "reason": "possible duplicate (titleDice=0.47, defDice=0.54)",
+      "members": [
+        "spine_biology_l4_hypersensitivity_type_ii",
+        "spine_medicine_preclinical_l4_type_i_ige_immediate"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_hypersensitivity_reactions:16",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_hypersensitivity_reactions",
+      "reason": "possible duplicate (titleDice=0.62, defDice=0.70)",
+      "members": [
+        "spine_biology_l4_hypersensitivity_type_ii",
+        "spine_medicine_preclinical_l4_type_ii_cytotoxic_antibody"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_hypersensitivity_reactions:17",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_hypersensitivity_reactions",
+      "reason": "possible duplicate (titleDice=0.66, defDice=0.74)",
+      "members": [
+        "spine_biology_l4_hypersensitivity_type_iii",
+        "spine_medicine_preclinical_l4_type_iii_immune_complex"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_hypersensitivity_reactions:18",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_hypersensitivity_reactions",
+      "reason": "possible duplicate (titleDice=0.53, defDice=0.42)",
+      "members": [
+        "spine_biology_l4_hypersensitivity_type_iv",
+        "spine_medicine_preclinical_l4_type_ii_cytotoxic_antibody"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_hypersensitivity_reactions:19",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_hypersensitivity_reactions",
+      "reason": "possible duplicate (titleDice=0.55, defDice=0.45)",
+      "members": [
+        "spine_biology_l4_hypersensitivity_type_iv",
+        "spine_medicine_preclinical_l4_type_iii_immune_complex"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_hypersensitivity_reactions:20",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_hypersensitivity_reactions",
+      "reason": "possible duplicate (titleDice=0.75, defDice=0.54)",
+      "members": [
+        "spine_biology_l4_hypersensitivity_type_iv",
+        "spine_medicine_preclinical_l4_type_iv_delayed_tcell"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_hypersensitivity_reactions:21",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_hypersensitivity_reactions",
+      "reason": "auto-merge skipped (same-domain collision, score=0.83)",
+      "members": [
+        "spine_biology_l4_hypersensitivity_type_iv",
+        "spine_medicine_preclinical_l4_type_i_ige_immediate"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_innate_immunity:22",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_innate_immunity",
+      "reason": "possible duplicate (titleDice=0.75, defDice=0.69)",
+      "members": [
+        "spine_biology_l4_complement_system",
+        "spine_medicine_preclinical_l4_complement_activation"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_innate_immunity:23",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_innate_immunity",
+      "reason": "possible duplicate (titleDice=0.58, defDice=0.56)",
+      "members": [
+        "spine_biology_l4_inflammatory_response",
+        "spine_medicine_preclinical_l4_inflammatory_mediators_innate"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_membrane_potential:24",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_membrane_potential",
+      "reason": "possible duplicate (titleDice=0.54, defDice=0.29)",
+      "members": [
+        "spine_biology_l4_selective_permeability",
+        "spine_psychology_neuroscience_l5_gkh_potassium_dominance"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_membrane_potential:25",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_membrane_potential",
+      "reason": "possible duplicate (titleDice=0.32, defDice=0.63)",
+      "members": [
+        "spine_biology_l4_sodium_potassium_pump",
+        "spine_medicine_preclinical_l4_na_k_atpase_role"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_membrane_potential:26",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_membrane_potential",
+      "reason": "possible duplicate (titleDice=0.49, defDice=0.48)",
+      "members": [
+        "spine_biology_l4_resting_membrane_potential",
+        "spine_medicine_preclinical_l4_na_k_atpase_role"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_membrane_potential:27",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_membrane_potential",
+      "reason": "possible duplicate (titleDice=0.46, defDice=0.47)",
+      "members": [
+        "spine_biology_l4_resting_membrane_potential",
+        "spine_medicine_preclinical_l4_nernst_equilibrium_potential"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_membrane_potential:28",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_membrane_potential",
+      "reason": "possible duplicate (titleDice=0.46, defDice=0.30)",
+      "members": [
+        "spine_biology_l4_resting_membrane_potential",
+        "spine_psychology_neuroscience_l4_nernst_equilibrium_potential"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_membrane_potential:29",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_membrane_potential",
+      "reason": "possible duplicate (titleDice=0.54, defDice=0.35)",
+      "members": [
+        "spine_biology_l4_resting_membrane_potential",
+        "spine_psychology_neuroscience_l4_goldman_hodgkin_katz_equation"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_membrane_potential:30",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_membrane_potential",
+      "reason": "possible duplicate (titleDice=0.54, defDice=0.40)",
+      "members": [
+        "spine_biology_l4_resting_membrane_potential",
+        "spine_psychology_neuroscience_l4_equilibrium_vs_steady_state"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_membrane_potential:31",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_membrane_potential",
+      "reason": "possible duplicate (titleDice=0.52, defDice=0.72)",
+      "members": [
+        "spine_biology_l4_electrochemical_gradient",
+        "spine_medicine_preclinical_l4_electrochemical_driving_force"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_membrane_potential:32",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_membrane_potential",
+      "reason": "possible duplicate (titleDice=0.56, defDice=0.33)",
+      "members": [
+        "spine_medicine_preclinical_l4_na_k_atpase_role",
+        "spine_psychology_neuroscience_l4_goldman_hodgkin_katz_equation"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_membrane_potential:33",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_membrane_potential",
+      "reason": "possible duplicate (titleDice=0.56, defDice=0.44)",
+      "members": [
+        "spine_medicine_preclinical_l4_na_k_atpase_role",
+        "spine_psychology_neuroscience_l4_sodium_potassium_pump"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_membrane_potential:34",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_membrane_potential",
+      "reason": "possible duplicate (titleDice=0.65, defDice=0.28)",
+      "members": [
+        "spine_medicine_preclinical_l4_nernst_equilibrium_potential",
+        "spine_psychology_neuroscience_l4_equilibrium_vs_steady_state"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_membrane_potential:35",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_membrane_potential",
+      "reason": "possible duplicate (titleDice=0.46, defDice=0.28)",
+      "members": [
+        "spine_medicine_preclinical_l4_resting_membrane_potential",
+        "spine_psychology_neuroscience_l4_nernst_equilibrium_potential"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_membrane_potential:36",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_membrane_potential",
+      "reason": "possible duplicate (titleDice=0.54, defDice=0.35)",
+      "members": [
+        "spine_medicine_preclinical_l4_resting_membrane_potential",
+        "spine_psychology_neuroscience_l4_goldman_hodgkin_katz_equation"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_membrane_potential:37",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_membrane_potential",
+      "reason": "possible duplicate (titleDice=0.54, defDice=0.39)",
+      "members": [
+        "spine_medicine_preclinical_l4_resting_membrane_potential",
+        "spine_psychology_neuroscience_l4_equilibrium_vs_steady_state"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_membrane_potential:38",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_membrane_potential",
+      "reason": "possible duplicate (titleDice=0.55, defDice=0.46)",
+      "members": [
+        "spine_medicine_preclinical_l5_goldman_hodgkin_katz",
+        "spine_psychology_neuroscience_l4_goldman_hodgkin_katz_equation"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_neurotransmitters_and_receptors:39",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_neurotransmitters_and_receptors",
+      "reason": "possible duplicate (titleDice=0.70, defDice=0.62)",
+      "members": [
+        "spine_biology_l4_neurotransmitter_synthesis_release",
+        "spine_medicine_preclinical_l4_neurotransmitter_synthesis_storage"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_neurotransmitters_and_receptors:40",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_neurotransmitters_and_receptors",
+      "reason": "possible duplicate (titleDice=0.50, defDice=0.36)",
+      "members": [
+        "spine_biology_l4_neurotransmitter_synthesis_release",
+        "spine_medicine_preclinical_l4_excitatory_inhibitory_neurotransmitters"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_neurotransmitters_and_receptors:41",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_neurotransmitters_and_receptors",
+      "reason": "possible duplicate (titleDice=0.56, defDice=0.28)",
+      "members": [
+        "spine_biology_l4_neurotransmitter_synthesis_release",
+        "spine_psychology_neuroscience_l4_major_neurotransmitter_systems"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_neurotransmitters_and_receptors:42",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_neurotransmitters_and_receptors",
+      "reason": "possible duplicate (titleDice=0.55, defDice=0.52)",
+      "members": [
+        "spine_biology_l4_ionotropic_receptors",
+        "spine_medicine_preclinical_l4_ligand_gated_vs_gpcr_receptors"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_neurotransmitters_and_receptors:43",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_neurotransmitters_and_receptors",
+      "reason": "possible duplicate (titleDice=0.72, defDice=0.48)",
+      "members": [
+        "spine_biology_l4_ionotropic_receptors",
+        "spine_psychology_neuroscience_l4_receptor_types_ionotropic_metabotropic"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_neurotransmitters_and_receptors:44",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_neurotransmitters_and_receptors",
+      "reason": "possible duplicate (titleDice=0.59, defDice=0.42)",
+      "members": [
+        "spine_biology_l4_ionotropic_receptors",
+        "spine_psychology_neuroscience_l5_ionotropic_receptor_kinetics"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_neurotransmitters_and_receptors:45",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_neurotransmitters_and_receptors",
+      "reason": "possible duplicate (titleDice=0.63, defDice=0.53)",
+      "members": [
+        "spine_biology_l4_metabotropic_receptors",
+        "spine_medicine_preclinical_l4_ligand_gated_vs_gpcr_receptors"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_neurotransmitters_and_receptors:46",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_neurotransmitters_and_receptors",
+      "reason": "possible duplicate (titleDice=0.77, defDice=0.56)",
+      "members": [
+        "spine_biology_l4_metabotropic_receptors",
+        "spine_psychology_neuroscience_l4_receptor_types_ionotropic_metabotropic"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_neurotransmitters_and_receptors:47",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_neurotransmitters_and_receptors",
+      "reason": "possible duplicate (titleDice=0.53, defDice=0.28)",
+      "members": [
+        "spine_biology_l4_metabotropic_receptors",
+        "spine_psychology_neuroscience_l5_ionotropic_receptor_kinetics"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_neurotransmitters_and_receptors:48",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_neurotransmitters_and_receptors",
+      "reason": "possible duplicate (titleDice=0.54, defDice=0.39)",
+      "members": [
+        "spine_biology_l4_major_neurotransmitter_systems",
+        "spine_medicine_preclinical_l4_neurotransmitter_synthesis_storage"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_neurotransmitters_and_receptors:49",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_neurotransmitters_and_receptors",
+      "reason": "possible duplicate (titleDice=0.52, defDice=0.51)",
+      "members": [
+        "spine_biology_l4_major_neurotransmitter_systems",
+        "spine_medicine_preclinical_l4_excitatory_inhibitory_neurotransmitters"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_neurotransmitters_and_receptors:50",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_neurotransmitters_and_receptors",
+      "reason": "possible duplicate (titleDice=0.54, defDice=0.38)",
+      "members": [
+        "spine_biology_l4_major_neurotransmitter_systems",
+        "spine_psychology_neuroscience_l4_neurotransmitter_synthesis_release"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_neurotransmitters_and_receptors:51",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_neurotransmitters_and_receptors",
+      "reason": "possible duplicate (titleDice=0.54, defDice=0.30)",
+      "members": [
+        "spine_medicine_preclinical_l4_neurotransmitter_synthesis_storage",
+        "spine_psychology_neuroscience_l4_major_neurotransmitter_systems"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_neurotransmitters_and_receptors:52",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_neurotransmitters_and_receptors",
+      "reason": "possible duplicate (titleDice=0.49, defDice=0.38)",
+      "members": [
+        "spine_medicine_preclinical_l4_excitatory_inhibitory_neurotransmitters",
+        "spine_psychology_neuroscience_l4_neurotransmitter_synthesis_release"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_neurotransmitters_and_receptors:53",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_neurotransmitters_and_receptors",
+      "reason": "possible duplicate (titleDice=0.52, defDice=0.37)",
+      "members": [
+        "spine_medicine_preclinical_l4_excitatory_inhibitory_neurotransmitters",
+        "spine_psychology_neuroscience_l4_major_neurotransmitter_systems"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_neurotransmitters_and_receptors:54",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_neurotransmitters_and_receptors",
+      "reason": "possible duplicate (titleDice=0.63, defDice=0.46)",
+      "members": [
+        "spine_medicine_preclinical_l4_ligand_gated_vs_gpcr_receptors",
+        "spine_psychology_neuroscience_l4_receptor_types_ionotropic_metabotropic"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_neurotransmitters_and_receptors:55",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_neurotransmitters_and_receptors",
+      "reason": "possible duplicate (titleDice=0.55, defDice=0.37)",
+      "members": [
+        "spine_medicine_preclinical_l4_ligand_gated_vs_gpcr_receptors",
+        "spine_psychology_neuroscience_l5_ionotropic_receptor_kinetics"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_prokaryotic_cell_structure:56",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_prokaryotic_cell_structure",
+      "reason": "possible duplicate (titleDice=0.42, defDice=0.65)",
+      "members": [
+        "spine_biology_l4_bacterial_cell_envelope",
+        "spine_medicine_preclinical_l4_prokaryotic_cell_envelope"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_prokaryotic_cell_structure:57",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_prokaryotic_cell_structure",
+      "reason": "possible duplicate (titleDice=0.47, defDice=0.38)",
+      "members": [
+        "spine_biology_l4_bacterial_cell_envelope",
+        "spine_medicine_preclinical_l4_bacterial_flagella_pili"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_prokaryotic_cell_structure:58",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_prokaryotic_cell_structure",
+      "reason": "possible duplicate (titleDice=0.47, defDice=0.36)",
+      "members": [
+        "spine_biology_l4_prokaryotic_genome",
+        "spine_medicine_preclinical_l4_prokaryotic_cell_envelope"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_prokaryotic_cell_structure:59",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_prokaryotic_cell_structure",
+      "reason": "possible duplicate (titleDice=0.76, defDice=0.48)",
+      "members": [
+        "spine_biology_l4_bacterial_appendages",
+        "spine_medicine_preclinical_l4_bacterial_flagella_pili"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_prokaryotic_cell_structure:60",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_prokaryotic_cell_structure",
+      "reason": "possible duplicate (titleDice=0.16, defDice=0.62)",
+      "members": [
+        "spine_biology_l4_gram_stain_classification",
+        "spine_medicine_preclinical_l4_prokaryotic_cell_envelope"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_prokaryotic_cell_structure:61",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_prokaryotic_cell_structure",
+      "reason": "possible duplicate (titleDice=0.12, defDice=0.77)",
+      "members": [
+        "spine_biology_l4_gram_stain_classification",
+        "spine_medicine_preclinical_l4_gram_stain_properties"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_synaptic_transmission:62",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_synaptic_transmission",
+      "reason": "possible duplicate (titleDice=0.36, defDice=0.66)",
+      "members": [
+        "spine_biology_l4_chemical_synapse_structure",
+        "spine_medicine_preclinical_l4_presynaptic_vesicle_release"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_synaptic_transmission:63",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_synaptic_transmission",
+      "reason": "possible duplicate (titleDice=0.78, defDice=0.63)",
+      "members": [
+        "spine_biology_l4_synaptic_vesicle_release",
+        "spine_medicine_preclinical_l4_presynaptic_vesicle_release"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_synaptic_transmission:64",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_synaptic_transmission",
+      "reason": "possible duplicate (titleDice=0.45, defDice=0.41)",
+      "members": [
+        "spine_biology_l4_postsynaptic_potentials",
+        "spine_medicine_preclinical_l4_synaptic_plasticity_ltp"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_synaptic_transmission:65",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_synaptic_transmission",
+      "reason": "possible duplicate (titleDice=0.47, defDice=0.46)",
+      "members": [
+        "spine_biology_l4_postsynaptic_potentials",
+        "spine_psychology_neuroscience_l4_short_term_synaptic_plasticity"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_synaptic_transmission:66",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_synaptic_transmission",
+      "reason": "possible duplicate (titleDice=0.60, defDice=0.58)",
+      "members": [
+        "spine_biology_l4_excitatory_inhibitory_synapses",
+        "spine_medicine_preclinical_l4_postsynaptic_potentials"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_synaptic_transmission:67",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_synaptic_transmission",
+      "reason": "possible duplicate (titleDice=0.60, defDice=0.37)",
+      "members": [
+        "spine_biology_l4_excitatory_inhibitory_synapses",
+        "spine_psychology_neuroscience_l4_postsynaptic_potentials"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_synaptic_transmission:68",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_synaptic_transmission",
+      "reason": "possible duplicate (titleDice=0.74, defDice=0.77)",
+      "members": [
+        "spine_biology_l4_synaptic_plasticity_basics",
+        "spine_medicine_preclinical_l4_synaptic_plasticity_ltp"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_synaptic_transmission:69",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_synaptic_transmission",
+      "reason": "possible duplicate (titleDice=0.69, defDice=0.43)",
+      "members": [
+        "spine_biology_l4_synaptic_plasticity_basics",
+        "spine_psychology_neuroscience_l4_short_term_synaptic_plasticity"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_synaptic_transmission:70",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_synaptic_transmission",
+      "reason": "possible duplicate (titleDice=0.48, defDice=0.33)",
+      "members": [
+        "spine_medicine_preclinical_l4_postsynaptic_potentials",
+        "spine_psychology_neuroscience_l4_synaptic_integration_shunting"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_synaptic_transmission:71",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_synaptic_transmission",
+      "reason": "possible duplicate (titleDice=0.69, defDice=0.51)",
+      "members": [
+        "spine_medicine_preclinical_l4_synaptic_plasticity_ltp",
+        "spine_psychology_neuroscience_l4_short_term_synaptic_plasticity"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_vaccination_principles:72",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_vaccination_principles",
+      "reason": "possible duplicate (titleDice=0.79, defDice=0.57)",
+      "members": [
+        "spine_biology_l4_active_immunization",
+        "spine_medicine_preclinical_l4_active_immunization_principle"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_vaccination_principles:73",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_vaccination_principles",
+      "reason": "possible duplicate (titleDice=0.51, defDice=0.73)",
+      "members": [
+        "spine_biology_l4_herd_immunity",
+        "spine_medicine_preclinical_l4_herd_immunity_threshold"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_vaccination_principles:74",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_vaccination_principles",
+      "reason": "possible duplicate (titleDice=0.55, defDice=0.46)",
+      "members": [
+        "spine_biology_l4_booster_immunization",
+        "spine_medicine_preclinical_l4_active_immunization_principle"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_vaccination_principles:75",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_vaccination_principles",
+      "reason": "possible duplicate (titleDice=0.54, defDice=0.58)",
+      "members": [
+        "spine_biology_l4_booster_immunization",
+        "spine_medicine_preclinical_l5_booster_dose_rationale"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_biology_l3_vaccination_principles:76",
+      "kind": "migration_skipped",
+      "anchor": "spine_biology_l3_vaccination_principles",
+      "reason": "possible duplicate (titleDice=0.64, defDice=0.44)",
+      "members": [
+        "spine_biology_l4_passive_immunization",
+        "spine_medicine_preclinical_l4_active_immunization_principle"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_chemistry_l3_enzyme_kinetics_michaelis_menten:77",
+      "kind": "migration_skipped",
+      "anchor": "spine_chemistry_l3_enzyme_kinetics_michaelis_menten",
+      "reason": "possible duplicate (titleDice=0.33, defDice=0.64)",
+      "members": [
+        "spine_chemistry_l4_vmax_km_interpretation",
+        "spine_medicine_preclinical_l4_km_and_substrate_affinity"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_chemistry_l3_enzyme_kinetics_michaelis_menten:78",
+      "kind": "migration_skipped",
+      "anchor": "spine_chemistry_l3_enzyme_kinetics_michaelis_menten",
+      "reason": "possible duplicate (titleDice=0.82, defDice=0.54)",
+      "members": [
+        "spine_chemistry_l4_competitive_inhibition",
+        "spine_medicine_preclinical_l4_noncompetitive_inhibition"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_chemistry_l3_enzyme_kinetics_michaelis_menten:79",
+      "kind": "migration_skipped",
+      "anchor": "spine_chemistry_l3_enzyme_kinetics_michaelis_menten",
+      "reason": "possible duplicate (titleDice=0.66, defDice=0.47)",
+      "members": [
+        "spine_chemistry_l4_competitive_inhibition",
+        "spine_medicine_preclinical_l5_competitive_inhibitor_lineweaver"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_chemistry_l3_enzyme_kinetics_michaelis_menten:80",
+      "kind": "migration_skipped",
+      "anchor": "spine_chemistry_l3_enzyme_kinetics_michaelis_menten",
+      "reason": "possible duplicate (titleDice=0.80, defDice=0.50)",
+      "members": [
+        "spine_chemistry_l4_competitive_inhibition",
+        "spine_medicine_preclinical_l5_mixed_vs_uncompetitive"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_chemistry_l3_enzyme_kinetics_michaelis_menten:81",
+      "kind": "migration_skipped",
+      "anchor": "spine_chemistry_l3_enzyme_kinetics_michaelis_menten",
+      "reason": "possible duplicate (titleDice=0.62, defDice=0.46)",
+      "members": [
+        "spine_chemistry_l4_noncompetitive_uncompetitive_inhibition",
+        "spine_medicine_preclinical_l4_competitive_inhibition"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_chemistry_l3_enzyme_kinetics_michaelis_menten:82",
+      "kind": "migration_skipped",
+      "anchor": "spine_chemistry_l3_enzyme_kinetics_michaelis_menten",
+      "reason": "possible duplicate (titleDice=0.68, defDice=0.50)",
+      "members": [
+        "spine_chemistry_l4_noncompetitive_uncompetitive_inhibition",
+        "spine_medicine_preclinical_l4_noncompetitive_inhibition"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_chemistry_l3_enzyme_kinetics_michaelis_menten:83",
+      "kind": "migration_skipped",
+      "anchor": "spine_chemistry_l3_enzyme_kinetics_michaelis_menten",
+      "reason": "possible duplicate (titleDice=0.55, defDice=0.34)",
+      "members": [
+        "spine_chemistry_l4_noncompetitive_uncompetitive_inhibition",
+        "spine_medicine_preclinical_l5_competitive_inhibitor_lineweaver"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_chemistry_l3_enzyme_kinetics_michaelis_menten:84",
+      "kind": "migration_skipped",
+      "anchor": "spine_chemistry_l3_enzyme_kinetics_michaelis_menten",
+      "reason": "possible duplicate (titleDice=0.72, defDice=0.52)",
+      "members": [
+        "spine_chemistry_l4_noncompetitive_uncompetitive_inhibition",
+        "spine_medicine_preclinical_l5_mixed_vs_uncompetitive"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_chemistry_l3_enzyme_kinetics_michaelis_menten:85",
+      "kind": "migration_skipped",
+      "anchor": "spine_chemistry_l3_enzyme_kinetics_michaelis_menten",
+      "reason": "possible duplicate (titleDice=0.51, defDice=0.45)",
+      "members": [
+        "spine_chemistry_l5_competitive_inhibitor_examples",
+        "spine_medicine_preclinical_l4_competitive_inhibition"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_chemistry_l3_enzyme_kinetics_michaelis_menten:86",
+      "kind": "migration_skipped",
+      "anchor": "spine_chemistry_l3_enzyme_kinetics_michaelis_menten",
+      "reason": "possible duplicate (titleDice=0.49, defDice=0.44)",
+      "members": [
+        "spine_chemistry_l5_competitive_inhibitor_examples",
+        "spine_medicine_preclinical_l4_noncompetitive_inhibition"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_chemistry_l3_enzyme_kinetics_michaelis_menten:87",
+      "kind": "migration_skipped",
+      "anchor": "spine_chemistry_l3_enzyme_kinetics_michaelis_menten",
+      "reason": "possible duplicate (titleDice=0.46, defDice=0.39)",
+      "members": [
+        "spine_chemistry_l5_competitive_inhibitor_examples",
+        "spine_medicine_preclinical_l5_competitive_inhibitor_lineweaver"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_chemistry_l3_enzyme_kinetics_michaelis_menten:88",
+      "kind": "migration_skipped",
+      "anchor": "spine_chemistry_l3_enzyme_kinetics_michaelis_menten",
+      "reason": "possible duplicate (titleDice=0.56, defDice=0.49)",
+      "members": [
+        "spine_chemistry_l5_competitive_inhibitor_examples",
+        "spine_medicine_preclinical_l5_mixed_vs_uncompetitive"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_chemistry_l3_glycolysis_and_central_metabolism:89",
+      "kind": "migration_skipped",
+      "anchor": "spine_chemistry_l3_glycolysis_and_central_metabolism",
+      "reason": "possible duplicate (titleDice=0.52, defDice=0.47)",
+      "members": [
+        "spine_chemistry_l4_glycolysis_energy_payoff",
+        "spine_medicine_preclinical_l4_glycolysis_pathway_overview"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_chemistry_l3_glycolysis_and_central_metabolism:90",
+      "kind": "migration_skipped",
+      "anchor": "spine_chemistry_l3_glycolysis_and_central_metabolism",
+      "reason": "possible duplicate (titleDice=0.13, defDice=0.62)",
+      "members": [
+        "spine_chemistry_l4_fermentation_pathways",
+        "spine_medicine_preclinical_l4_pyruvate_fate_aerobic_anaerobic"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_chemistry_l3_glycolysis_and_central_metabolism:91",
+      "kind": "migration_skipped",
+      "anchor": "spine_chemistry_l3_glycolysis_and_central_metabolism",
+      "reason": "possible duplicate (titleDice=0.48, defDice=0.34)",
+      "members": [
+        "spine_chemistry_l4_gluconeogenesis_overview",
+        "spine_medicine_preclinical_l4_glycolysis_pathway_overview"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_chemistry_l3_glycolysis_and_central_metabolism:92",
+      "kind": "migration_skipped",
+      "anchor": "spine_chemistry_l3_glycolysis_and_central_metabolism",
+      "reason": "possible duplicate (titleDice=0.46, defDice=0.48)",
+      "members": [
+        "spine_chemistry_l5_net_atp_yield_glycolysis",
+        "spine_medicine_preclinical_l4_glycolysis_pathway_overview"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_mathematics_l3_descriptive_statistics:93",
+      "kind": "migration_skipped",
+      "anchor": "spine_mathematics_l3_descriptive_statistics",
+      "reason": "possible duplicate (titleDice=0.46, defDice=0.30)",
+      "members": [
+        "spine_mathematics_l4_measures_spread",
+        "spine_mathematics_l4_measures_of_central_tendency"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_mathematics_l3_descriptive_statistics:94",
+      "kind": "migration_skipped",
+      "anchor": "spine_mathematics_l3_descriptive_statistics",
+      "reason": "possible duplicate (titleDice=0.00, defDice=0.72)",
+      "members": [
+        "spine_mathematics_l4_measures_spread",
+        "spine_mathematics_l4_variability_standard_deviation"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_mathematics_l3_descriptive_statistics:95",
+      "kind": "migration_skipped",
+      "anchor": "spine_mathematics_l3_descriptive_statistics",
+      "reason": "possible duplicate (titleDice=0.69, defDice=0.19)",
+      "members": [
+        "spine_mathematics_l4_distribution_shape",
+        "spine_mathematics_l4_distribution_shape_normality"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_mathematics_l3_exponential_decay:96",
+      "kind": "migration_skipped",
+      "anchor": "spine_mathematics_l3_exponential_decay",
+      "reason": "possible duplicate (titleDice=0.77, defDice=0.62)",
+      "members": [
+        "spine_chemistry_l4_first_order_reaction_model",
+        "spine_medicine_preclinical_l4_first_order_elimination_model"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_mathematics_l3_exponential_decay:97",
+      "kind": "migration_skipped",
+      "anchor": "spine_mathematics_l3_exponential_decay",
+      "reason": "possible duplicate (titleDice=0.57, defDice=0.51)",
+      "members": [
+        "spine_chemistry_l4_first_order_reaction_model",
+        "spine_medicine_preclinical_l4_zero_order_vs_first_order_elimination"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_mathematics_l3_exponential_decay:98",
+      "kind": "migration_skipped",
+      "anchor": "spine_mathematics_l3_exponential_decay",
+      "reason": "possible duplicate (titleDice=0.47, defDice=0.49)",
+      "members": [
+        "spine_chemistry_l4_rate_constant_first_order",
+        "spine_medicine_preclinical_l4_first_order_elimination_model"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_mathematics_l3_exponential_decay:99",
+      "kind": "migration_skipped",
+      "anchor": "spine_mathematics_l3_exponential_decay",
+      "reason": "possible duplicate (titleDice=0.52, defDice=0.60)",
+      "members": [
+        "spine_chemistry_l4_rate_constant_first_order",
+        "spine_medicine_preclinical_l4_elimination_rate_constant"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_mathematics_l3_exponential_decay:100",
+      "kind": "migration_skipped",
+      "anchor": "spine_mathematics_l3_exponential_decay",
+      "reason": "possible duplicate (titleDice=0.45, defDice=0.45)",
+      "members": [
+        "spine_chemistry_l4_half_life_first_order",
+        "spine_mathematics_l4_decay_constant_half_life"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_mathematics_l3_exponential_decay:101",
+      "kind": "migration_skipped",
+      "anchor": "spine_mathematics_l3_exponential_decay",
+      "reason": "possible duplicate (titleDice=0.48, defDice=0.46)",
+      "members": [
+        "spine_chemistry_l4_half_life_first_order",
+        "spine_medicine_preclinical_l4_first_order_elimination_model"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_mathematics_l3_exponential_decay:102",
+      "kind": "migration_skipped",
+      "anchor": "spine_mathematics_l3_exponential_decay",
+      "reason": "possible duplicate (titleDice=0.45, defDice=0.56)",
+      "members": [
+        "spine_chemistry_l4_half_life_first_order",
+        "spine_medicine_preclinical_l4_drug_half_life"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_mathematics_l3_exponential_decay:103",
+      "kind": "migration_skipped",
+      "anchor": "spine_mathematics_l3_exponential_decay",
+      "reason": "possible duplicate (titleDice=0.47, defDice=0.45)",
+      "members": [
+        "spine_chemistry_l4_integrated_rate_law_first_order",
+        "spine_medicine_preclinical_l4_first_order_elimination_model"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_mathematics_l3_exponential_decay:104",
+      "kind": "migration_skipped",
+      "anchor": "spine_mathematics_l3_exponential_decay",
+      "reason": "possible duplicate (titleDice=0.45, defDice=0.41)",
+      "members": [
+        "spine_chemistry_l4_radioactive_decay_kinetics",
+        "spine_physics_l4_mean_lifetime_radioactive"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_mathematics_l3_exponential_decay:105",
+      "kind": "migration_skipped",
+      "anchor": "spine_mathematics_l3_exponential_decay",
+      "reason": "possible duplicate (titleDice=0.60, defDice=0.39)",
+      "members": [
+        "spine_chemistry_l5_half_life_k_equation",
+        "spine_mathematics_l4_decay_constant_half_life"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_mathematics_l3_exponential_decay:106",
+      "kind": "migration_skipped",
+      "anchor": "spine_mathematics_l3_exponential_decay",
+      "reason": "possible duplicate (titleDice=0.59, defDice=0.45)",
+      "members": [
+        "spine_chemistry_l5_half_life_k_equation",
+        "spine_medicine_preclinical_l4_elimination_rate_constant"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_mathematics_l3_exponential_decay:107",
+      "kind": "migration_skipped",
+      "anchor": "spine_mathematics_l3_exponential_decay",
+      "reason": "possible duplicate (titleDice=0.56, defDice=0.36)",
+      "members": [
+        "spine_chemistry_l5_half_life_k_equation",
+        "spine_medicine_preclinical_l4_clearance_elimination_relationship"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_mathematics_l3_exponential_decay:108",
+      "kind": "migration_skipped",
+      "anchor": "spine_mathematics_l3_exponential_decay",
+      "reason": "possible duplicate (titleDice=0.52, defDice=0.42)",
+      "members": [
+        "spine_chemistry_l5_temperature_effect_rate_constant",
+        "spine_medicine_preclinical_l4_elimination_rate_constant"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_mathematics_l3_exponential_decay:109",
+      "kind": "migration_skipped",
+      "anchor": "spine_mathematics_l3_exponential_decay",
+      "reason": "possible duplicate (titleDice=0.80, defDice=0.59)",
+      "members": [
+        "spine_mathematics_l4_exponential_decay_model",
+        "spine_physics_l4_exponential_decay_law"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_mathematics_l3_exponential_decay:110",
+      "kind": "migration_skipped",
+      "anchor": "spine_mathematics_l3_exponential_decay",
+      "reason": "possible duplicate (titleDice=0.72, defDice=0.58)",
+      "members": [
+        "spine_mathematics_l4_decay_constant_half_life",
+        "spine_physics_l4_half_life_decay_constant"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_mathematics_l3_exponential_decay:111",
+      "kind": "migration_skipped",
+      "anchor": "spine_mathematics_l3_exponential_decay",
+      "reason": "possible duplicate (titleDice=0.56, defDice=0.49)",
+      "members": [
+        "spine_mathematics_l4_solving_decay_problems",
+        "spine_physics_l4_exponential_decay_law"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_mathematics_l3_exponential_decay:112",
+      "kind": "migration_skipped",
+      "anchor": "spine_mathematics_l3_exponential_decay",
+      "reason": "possible duplicate (titleDice=0.53, defDice=0.39)",
+      "members": [
+        "spine_mathematics_l4_decay_vs_growth_comparison",
+        "spine_physics_l4_exponential_decay_law"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_mathematics_l3_exponential_decay:113",
+      "kind": "migration_skipped",
+      "anchor": "spine_mathematics_l3_exponential_decay",
+      "reason": "possible duplicate (titleDice=0.47, defDice=0.40)",
+      "members": [
+        "spine_physics_l4_half_life_decay_constant",
+        "spine_medicine_preclinical_l4_elimination_rate_constant"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_mathematics_l3_exponential_decay:114",
+      "kind": "migration_skipped",
+      "anchor": "spine_mathematics_l3_exponential_decay",
+      "reason": "possible duplicate (titleDice=0.52, defDice=0.35)",
+      "members": [
+        "spine_physics_l4_half_life_decay_constant",
+        "spine_medicine_preclinical_l4_clearance_elimination_relationship"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_mathematics_l3_hypothesis_testing:115",
+      "kind": "migration_skipped",
+      "anchor": "spine_mathematics_l3_hypothesis_testing",
+      "reason": "possible duplicate (titleDice=0.79, defDice=0.49)",
+      "members": [
+        "spine_mathematics_l4_type_errors_significance",
+        "spine_mathematics_l4_type_i_ii_errors_power"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_mathematics_l3_hypothesis_testing:116",
+      "kind": "migration_skipped",
+      "anchor": "spine_mathematics_l3_hypothesis_testing",
+      "reason": "possible duplicate (titleDice=0.41, defDice=0.68)",
+      "members": [
+        "spine_mathematics_l4_p_values",
+        "spine_mathematics_l4_p_values_significance"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_psychology_neuroscience_l3_anxiety_disorders:117",
+      "kind": "migration_skipped",
+      "anchor": "spine_psychology_neuroscience_l3_anxiety_disorders",
+      "reason": "possible duplicate (titleDice=0.58, defDice=0.38)",
+      "members": [
+        "spine_medicine_clinical_l4_generalized_anxiety_disorder",
+        "spine_psychology_neuroscience_l4_generalized_anxiety_features"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_psychology_neuroscience_l3_anxiety_disorders:118",
+      "kind": "migration_skipped",
+      "anchor": "spine_psychology_neuroscience_l3_anxiety_disorders",
+      "reason": "possible duplicate (titleDice=0.55, defDice=0.33)",
+      "members": [
+        "spine_medicine_clinical_l4_phobia_social_anxiety",
+        "spine_psychology_neuroscience_l4_panic_phobia_presentation"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_psychology_neuroscience_l3_anxiety_disorders:119",
+      "kind": "migration_skipped",
+      "anchor": "spine_psychology_neuroscience_l3_anxiety_disorders",
+      "reason": "possible duplicate (titleDice=0.45, defDice=0.27)",
+      "members": [
+        "spine_medicine_clinical_l5_ssri_anxiety_titration",
+        "spine_psychology_neuroscience_l4_panic_phobia_presentation"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_psychology_neuroscience_l3_eating_disorders:120",
+      "kind": "migration_skipped",
+      "anchor": "spine_psychology_neuroscience_l3_eating_disorders",
+      "reason": "possible duplicate (titleDice=0.48, defDice=0.20)",
+      "members": [
+        "spine_medicine_clinical_l4_eating_disorder_medical_complications",
+        "spine_psychology_neuroscience_l4_binge_eating_disorder_features"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_psychology_neuroscience_l3_eating_disorders:121",
+      "kind": "migration_skipped",
+      "anchor": "spine_psychology_neuroscience_l3_eating_disorders",
+      "reason": "possible duplicate (titleDice=0.52, defDice=0.25)",
+      "members": [
+        "spine_medicine_clinical_l4_eating_disorder_psychotherapy_medical",
+        "spine_psychology_neuroscience_l4_binge_eating_disorder_features"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_psychology_neuroscience_l3_personality_disorders_overview:122",
+      "kind": "migration_skipped",
+      "anchor": "spine_psychology_neuroscience_l3_personality_disorders_overview",
+      "reason": "possible duplicate (titleDice=0.53, defDice=0.30)",
+      "members": [
+        "spine_medicine_clinical_l4_personality_disorder_longitudinal_diagnosis",
+        "spine_psychology_neuroscience_l4_personality_disorder_clusters"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_psychology_neuroscience_l3_personality_disorders_overview:123",
+      "kind": "migration_skipped",
+      "anchor": "spine_psychology_neuroscience_l3_personality_disorders_overview",
+      "reason": "possible duplicate (titleDice=0.48, defDice=0.34)",
+      "members": [
+        "spine_medicine_clinical_l4_personality_disorder_longitudinal_diagnosis",
+        "spine_psychology_neuroscience_l4_borderline_personality_features"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_psychology_neuroscience_l3_personality_disorders_overview:124",
+      "kind": "migration_skipped",
+      "anchor": "spine_psychology_neuroscience_l3_personality_disorders_overview",
+      "reason": "possible duplicate (titleDice=0.48, defDice=0.36)",
+      "members": [
+        "spine_medicine_clinical_l4_borderline_dbt_management",
+        "spine_psychology_neuroscience_l4_personality_disorder_clusters"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_psychology_neuroscience_l3_personality_disorders_overview:125",
+      "kind": "migration_skipped",
+      "anchor": "spine_psychology_neuroscience_l3_personality_disorders_overview",
+      "reason": "possible duplicate (titleDice=0.57, defDice=0.32)",
+      "members": [
+        "spine_medicine_clinical_l4_borderline_dbt_management",
+        "spine_psychology_neuroscience_l4_borderline_personality_features"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_psychology_neuroscience_l3_personality_disorders_overview:126",
+      "kind": "migration_skipped",
+      "anchor": "spine_psychology_neuroscience_l3_personality_disorders_overview",
+      "reason": "possible duplicate (titleDice=0.56, defDice=0.24)",
+      "members": [
+        "spine_medicine_clinical_l4_personality_disorder_pharmacotherapy_limits",
+        "spine_psychology_neuroscience_l4_personality_disorder_clusters"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    },
+    {
+      "id": "migration:spine_psychology_neuroscience_l3_schizophrenia_spectrum:127",
+      "kind": "migration_skipped",
+      "anchor": "spine_psychology_neuroscience_l3_schizophrenia_spectrum",
+      "reason": "possible duplicate (titleDice=0.53, defDice=0.46)",
+      "members": [
+        "spine_medicine_clinical_l4_negative_symptom_psychosocial_care",
+        "spine_psychology_neuroscience_l4_negative_cognitive_symptoms"
+      ],
+      "suggestedAction": "Review from migration pass — merge or keep separate"
+    }
+  ]
+}

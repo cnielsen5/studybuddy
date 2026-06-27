@@ -1,0 +1,1111 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_chemistry_l3_glycolysis_and_central_metabolism",
+    "anchor_primary_domain": "chemistry",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_chemistry_l3_glycolysis_and_central_metabolism.chemistry.json",
+      "content/spine/l4-l5-bundles/spine_chemistry_l3_glycolysis_and_central_metabolism.medicine_preclinical.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "17 per-context concepts merged into 15 universal concepts (9 L4 + 6 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_chemistry_l4_fermentation_pathways",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_chemistry_l3_glycolysis_and_central_metabolism",
+      "content": {
+        "title": "Fermentation Pathways",
+        "definition": "Anaerobic regeneration of NAD⁺ from NADH by reducing pyruvate to lactate or ethanol, allowing glycolysis to continue without oxidative phosphorylation.",
+        "summary": "Fermentation recycles NAD⁺ so glycolysis can sustain ATP production under anaerobic conditions. Lactic acid fermentation occurs in muscle; alcoholic fermentation in yeast."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Metabolic Pathways",
+        "primary_domain": "chemistry",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_chemistry_l3_glycolysis_and_central_metabolism",
+        "prerequisites": [
+          "spine_chemistry_l4_glycolysis_energy_payoff"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "chemistry",
+          "framing": {
+            "title_in_context": "Fermentation Pathways",
+            "relevance": "NAD⁺ regeneration enabling anaerobic ATP production.",
+            "applications": [
+              "Lactic acid fermentation",
+              "Alcoholic fermentation"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Carbohydrate Metabolism",
+            "topic": "Glycolysis",
+            "subtopic": "Fermentation"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_chemistry_l4_glycolysis_energy_payoff"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "7",
+            "section": "7.2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_chemistry_l4_gluconeogenesis_overview",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_chemistry_l3_glycolysis_and_central_metabolism",
+      "content": {
+        "title": "Gluconeogenesis Overview",
+        "definition": "Synthesis of glucose from non-carbohydrate precursors (lactate, glycerol, amino acids) using bypass reactions for irreversible glycolytic steps.",
+        "summary": "Gluconeogenesis is essential during fasting. It shares seven glycolytic enzymes but uses distinct enzymes for the three irreversible steps."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Metabolic Pathways",
+        "primary_domain": "chemistry",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_chemistry_l3_glycolysis_and_central_metabolism",
+        "prerequisites": [
+          "spine_chemistry_l4_glycolysis_regulation"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "chemistry",
+          "framing": {
+            "title_in_context": "Gluconeogenesis Overview",
+            "relevance": "Counter-regulatory pathway maintaining blood glucose.",
+            "applications": [
+              "Bypass reactions",
+              "Fasting metabolism"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Carbohydrate Metabolism",
+            "topic": "Glycolysis",
+            "subtopic": "Gluconeogenesis"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_chemistry_l4_glycolysis_regulation"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "24",
+            "section": "24.4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_chemistry_l4_glycolysis_energy_investment",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_chemistry_l3_glycolysis_and_central_metabolism",
+      "content": {
+        "title": "Glycolysis Energy Investment Phase",
+        "definition": "Initial steps of glycolysis consuming two ATP per glucose to phosphorylate and cleave hexose into two triose phosphate intermediates.",
+        "summary": "Hexokinase and phosphofructokinase-1 catalyze irreversible, ATP-consuming steps. The investment phase prepares glucose for energy extraction."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Metabolic Pathways",
+        "primary_domain": "chemistry",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_chemistry_l3_glycolysis_and_central_metabolism",
+        "prerequisites": [
+          "spine_chemistry_l4_glycolysis_pathway_overview"
+        ],
+        "unlocks": [
+          "spine_chemistry_l4_glycolysis_regulation"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "chemistry",
+          "framing": {
+            "title_in_context": "Glycolysis Energy Investment Phase",
+            "relevance": "Upfront ATP cost enabling downstream energy payoff.",
+            "applications": [
+              "Hexokinase",
+              "PFK-1"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Carbohydrate Metabolism",
+            "topic": "Glycolysis",
+            "subtopic": "Energy Investment"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_chemistry_l4_glycolysis_pathway_overview"
+            ],
+            "unlocks_in_context": [
+              "spine_chemistry_l4_glycolysis_regulation"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Chemistry 2e",
+            "chapter": "20",
+            "section": "20.10"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_chemistry_l4_glycolysis_energy_payoff",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_chemistry_l3_glycolysis_and_central_metabolism",
+      "content": {
+        "title": "Glycolysis Energy Payoff Phase",
+        "definition": "Later glycolytic steps generating four ATP and two NADH per glucose through substrate-level phosphorylation and glyceraldehyde-3-phosphate oxidation.",
+        "summary": "The payoff phase yields a net gain of two ATP and two NADH per glucose. Pyruvate kinase catalyzes the final irreversible step."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Metabolic Pathways",
+        "primary_domain": "chemistry",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_chemistry_l3_glycolysis_and_central_metabolism",
+        "prerequisites": [
+          "spine_chemistry_l4_glycolysis_pathway_overview"
+        ],
+        "unlocks": [
+          "spine_chemistry_l4_fermentation_pathways"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "chemistry",
+          "framing": {
+            "title_in_context": "Glycolysis Energy Payoff Phase",
+            "relevance": "ATP and NADH production from triose phosphates.",
+            "applications": [
+              "Substrate-level phosphorylation",
+              "NADH generation"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Carbohydrate Metabolism",
+            "topic": "Glycolysis",
+            "subtopic": "Energy Payoff"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_chemistry_l4_glycolysis_pathway_overview"
+            ],
+            "unlocks_in_context": [
+              "spine_chemistry_l4_fermentation_pathways"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Chemistry 2e",
+            "chapter": "20",
+            "section": "20.11"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_chemistry_l4_glycolysis_pathway_overview",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_chemistry_l3_glycolysis_and_central_metabolism",
+      "content": {
+        "title": "Glycolysis Pathway Overview",
+        "definition": "Ten-step cytoplasmic pathway converting one glucose molecule to two pyruvate molecules with net production of ATP and NADH.",
+        "summary": "Glycolysis is the universal first stage of glucose catabolism. It proceeds without oxygen and provides ATP and biosynthetic precursors."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Metabolic Pathways",
+        "primary_domain": "chemistry",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_chemistry_l3_glycolysis_and_central_metabolism",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_chemistry_l4_glycolysis_energy_investment",
+          "spine_chemistry_l4_glycolysis_energy_payoff",
+          "spine_chemistry_l5_net_atp_yield_glycolysis",
+          "spine_chemistry_l4_glycolysis_regulation",
+          "spine_chemistry_l4_pyruvate_fate_aerobic_anaerobic"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "chemistry",
+          "framing": {
+            "title_in_context": "Glycolysis Pathway Overview",
+            "relevance": "Entry point for carbohydrate energy harvest.",
+            "applications": [
+              "Glucose to pyruvate",
+              "10 enzymatic steps"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Carbohydrate Metabolism",
+            "topic": "Glycolysis",
+            "subtopic": "Pathway Overview"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_chemistry_l4_glycolysis_energy_investment",
+              "spine_chemistry_l4_glycolysis_energy_payoff",
+              "spine_chemistry_l5_net_atp_yield_glycolysis",
+              "spine_chemistry_l4_glycolysis_regulation"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Glycolysis Pathway Overview",
+            "relevance": "Metabolic flux in fasting and exercise.",
+            "applications": [
+              "Glucose to pyruvate",
+              "Net 2 ATP per glucose"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Metabolism",
+            "topic": "Glycolysis",
+            "subtopic": "Pathway Overview"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_chemistry_l4_glycolysis_regulation",
+              "spine_chemistry_l4_pyruvate_fate_aerobic_anaerobic"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Chemistry 2e",
+            "chapter": "20",
+            "section": "20.9"
+          },
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "6",
+            "section": "6.4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_chemistry_l4_glycolysis_regulation",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_chemistry_l3_glycolysis_and_central_metabolism",
+      "content": {
+        "title": "Glycolysis Regulatory Steps",
+        "definition": "Allosteric and hormonal control of irreversible glycolytic enzymes hexokinase, phosphofructokinase-1, and pyruvate kinase to match flux to cellular energy demand.",
+        "summary": "PFK-1 is the primary flux-control step, inhibited by ATP and citrate and activated by AMP. Insulin and glucagon modulate glycolysis through kinase/phosphatase cascades."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Metabolic Pathways",
+        "primary_domain": "chemistry",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_chemistry_l3_glycolysis_and_central_metabolism",
+        "prerequisites": [
+          "spine_chemistry_l4_glycolysis_energy_investment",
+          "spine_chemistry_l4_glycolysis_pathway_overview"
+        ],
+        "unlocks": [
+          "spine_chemistry_l5_pfk1_allosteric_regulation",
+          "spine_chemistry_l5_insulin_glucagon_glycolysis",
+          "spine_chemistry_l4_tca_cycle_overview"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "chemistry",
+          "framing": {
+            "title_in_context": "Glycolysis Regulatory Steps",
+            "relevance": "Metabolic flux control at committed steps.",
+            "applications": [
+              "PFK-1 allostery",
+              "Hormonal regulation"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Carbohydrate Metabolism",
+            "topic": "Glycolysis",
+            "subtopic": "Regulation"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_chemistry_l4_glycolysis_energy_investment",
+              "spine_chemistry_l4_glycolysis_pathway_overview"
+            ],
+            "unlocks_in_context": [
+              "spine_chemistry_l5_pfk1_allosteric_regulation",
+              "spine_chemistry_l5_insulin_glucagon_glycolysis"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Glycolysis Regulatory Steps",
+            "relevance": "Warburg effect and PFK-1 in cancer.",
+            "applications": [
+              "PFK-1 allosteric regulation",
+              "Fructose-2,6-bisphosphate"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Metabolism",
+            "topic": "Glycolysis",
+            "subtopic": "Regulation"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_chemistry_l4_glycolysis_pathway_overview"
+            ],
+            "unlocks_in_context": [
+              "spine_chemistry_l4_tca_cycle_overview"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "24",
+            "section": "24.3"
+          },
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "6",
+            "section": "6.4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_chemistry_l4_oxidative_phosphorylation_coupling",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_chemistry_l3_glycolysis_and_central_metabolism",
+      "content": {
+        "title": "Oxidative Phosphorylation and ATP Yield",
+        "definition": "Electron transport chain oxidizing NADH and FADH2 with chemiosmotic proton gradient driving ATP synthase, yielding ~30–32 ATP per glucose oxidized completely.",
+        "summary": "Oxidative phosphorylation is the major ATP source aerobically. Cyanide blocks complex IV, halting ATP production."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Biochemical Mechanism",
+        "primary_domain": "chemistry",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_chemistry_l3_glycolysis_and_central_metabolism",
+        "prerequisites": [
+          "spine_chemistry_l4_tca_cycle_overview"
+        ],
+        "unlocks": [
+          "spine_chemistry_l5_cyanide_complex_iv"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Oxidative Phosphorylation and ATP Yield",
+            "relevance": "Cyanide poisoning and ATP depletion.",
+            "applications": [
+              "Proton-motive force",
+              "ATP synthase"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Metabolism",
+            "topic": "Glycolysis",
+            "subtopic": "OXPHOS"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_chemistry_l4_tca_cycle_overview"
+            ],
+            "unlocks_in_context": [
+              "spine_chemistry_l5_cyanide_complex_iv"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "6",
+            "section": "6.5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_chemistry_l4_pyruvate_fate_aerobic_anaerobic",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_chemistry_l3_glycolysis_and_central_metabolism",
+      "content": {
+        "title": "Pyruvate Fate: Aerobic vs Anaerobic",
+        "definition": "Aerobic conditions route pyruvate to mitochondrial acetyl-CoA; anaerobic conditions reduce pyruvate to lactate regenerating NAD+ for glycolysis continuation.",
+        "summary": "Lactate dehydrogenase reaction sustains glycolysis in hypoxic tissue. Aerobic pyruvate dehydrogenase links glycolysis to TCA cycle."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Biochemical Mechanism",
+        "primary_domain": "chemistry",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_chemistry_l3_glycolysis_and_central_metabolism",
+        "prerequisites": [
+          "spine_chemistry_l4_glycolysis_regulation"
+        ],
+        "unlocks": [
+          "spine_chemistry_l4_tca_cycle_overview",
+          "spine_chemistry_l5_pyruvate_dehydrogenase_deficiency"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Pyruvate Fate: Aerobic vs Anaerobic",
+            "relevance": "Lactic acidosis in sepsis and exercise.",
+            "applications": [
+              "Lactate formation in hypoxia",
+              "Pyruvate dehydrogenase commit step"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Metabolism",
+            "topic": "Glycolysis",
+            "subtopic": "Pyruvate Fate"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_chemistry_l4_glycolysis_regulation"
+            ],
+            "unlocks_in_context": [
+              "spine_chemistry_l4_tca_cycle_overview",
+              "spine_chemistry_l5_pyruvate_dehydrogenase_deficiency"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "6",
+            "section": "6.4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_chemistry_l4_tca_cycle_overview",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_chemistry_l3_glycolysis_and_central_metabolism",
+      "content": {
+        "title": "TCA (Krebs) Cycle Overview",
+        "definition": "Mitochondrial cyclic oxidation of acetyl-CoA generating NADH, FADH2, and GTP with release of CO2, serving as central hub connecting carbohydrates, fats, and proteins.",
+        "summary": "Each acetyl-CoA turn produces 3 NADH, 1 FADH2, 1 GTP. TCA is aerobic and requires NAD+ regeneration via oxidative phosphorylation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Biochemical Mechanism",
+        "primary_domain": "chemistry",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_chemistry_l3_glycolysis_and_central_metabolism",
+        "prerequisites": [
+          "spine_chemistry_l4_pyruvate_fate_aerobic_anaerobic"
+        ],
+        "unlocks": [
+          "spine_chemistry_l4_oxidative_phosphorylation_coupling"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "TCA (Krebs) Cycle Overview",
+            "relevance": "Mitochondrial disease and thiamine deficiency.",
+            "applications": [
+              "Acetyl-CoA entry",
+              "NADH and FADH2 output"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Metabolism",
+            "topic": "Glycolysis",
+            "subtopic": "TCA Cycle"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_chemistry_l4_pyruvate_fate_aerobic_anaerobic"
+            ],
+            "unlocks_in_context": [
+              "spine_chemistry_l4_oxidative_phosphorylation_coupling"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "6",
+            "section": "6.5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_chemistry_l5_cyanide_complex_iv",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_chemistry_l3_glycolysis_and_central_metabolism",
+      "content": {
+        "title": "Cyanide and Electron Transport Chain Inhibition",
+        "definition": "Cyanide binds cytochrome c oxidase (complex IV), blocking electron transfer to oxygen and collapsing the proton gradient required for ATP synthesis.",
+        "summary": "Cells shift to anaerobic metabolism causing severe lactic acidosis. Treatment includes nitrites and hydroxocobalamin."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Biochemical Mechanism",
+        "primary_domain": "chemistry",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_chemistry_l4_oxidative_phosphorylation_coupling",
+        "prerequisites": [
+          "spine_chemistry_l4_oxidative_phosphorylation_coupling"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Cyanide and Electron Transport Chain Inhibition",
+            "relevance": "Toxicology high-yield.",
+            "applications": [
+              "Complex IV inhibition",
+              "Histotoxic hypoxia"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Metabolism",
+            "topic": "Glycolysis",
+            "subtopic": "Cyanide"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_chemistry_l4_oxidative_phosphorylation_coupling"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "section": "Cyanide Toxicity",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_chemistry_l5_insulin_glucagon_glycolysis",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_chemistry_l3_glycolysis_and_central_metabolism",
+      "content": {
+        "title": "Insulin and Glucagon Effects on Glycolysis",
+        "definition": "Hormonal regulation in which insulin promotes glycolysis and glucagon suppresses it through phosphorylation cascades affecting PFK-2/fructose-2,6-bisphosphate levels.",
+        "summary": "Insulin lowers blood glucose by enhancing glycolytic flux. Glucagon mobilizes glucose precursors and inhibits glycolysis during fasting."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Metabolic Pathways",
+        "primary_domain": "chemistry",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_chemistry_l4_glycolysis_regulation",
+        "prerequisites": [
+          "spine_chemistry_l4_glycolysis_regulation"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "chemistry",
+          "framing": {
+            "title_in_context": "Insulin and Glucagon Effects on Glycolysis",
+            "relevance": "Endocrine coordination of carbohydrate metabolism.",
+            "applications": [
+              "Fructose-2,6-bisphosphate",
+              "Fed vs fasted state"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Carbohydrate Metabolism",
+            "topic": "Glycolysis",
+            "subtopic": "Hormonal Control"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_chemistry_l4_glycolysis_regulation"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "24",
+            "section": "24.5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_chemistry_l5_net_atp_yield_glycolysis",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_chemistry_l3_glycolysis_and_central_metabolism",
+      "content": {
+        "title": "Net ATP Yield from Glycolysis",
+        "definition": "Accounting of two ATP invested and four ATP produced per glucose, yielding net two ATP and two NADH molecules per glucose molecule oxidized to pyruvate.",
+        "summary": "Per-glucose stoichiometry: 2 ATP consumed, 4 ATP produced, net +2 ATP. Each NADH can yield additional ATP if shuttled into oxidative phosphorylation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Metabolic Pathways",
+        "primary_domain": "chemistry",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_chemistry_l4_glycolysis_pathway_overview",
+        "prerequisites": [
+          "spine_chemistry_l4_glycolysis_pathway_overview"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "chemistry",
+          "framing": {
+            "title_in_context": "Net ATP Yield from Glycolysis",
+            "relevance": "Stoichiometric summary for metabolic accounting.",
+            "applications": [
+              "2 net ATP",
+              "2 NADH per glucose"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Carbohydrate Metabolism",
+            "topic": "Glycolysis",
+            "subtopic": "ATP Yield"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_chemistry_l4_glycolysis_pathway_overview"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "LibreTexts — Biochemistry",
+            "chapter": "Glycolysis",
+            "section": "ATP Balance"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_chemistry_l5_pfk1_allosteric_regulation",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_chemistry_l3_glycolysis_and_central_metabolism",
+      "content": {
+        "title": "PFK-1 Allosteric Regulation",
+        "definition": "Phosphofructokinase-1 activation by AMP and fructose-2,6-bisphosphate and inhibition by ATP and citrate as the primary glycolytic flux control point.",
+        "summary": "PFK-1 integrates cellular energy status. High AMP signals energy deficit and activates PFK-1; high ATP and citrate signal abundance and inhibit flux."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Metabolic Pathways",
+        "primary_domain": "chemistry",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_chemistry_l4_glycolysis_regulation",
+        "prerequisites": [
+          "spine_chemistry_l4_glycolysis_regulation"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "chemistry",
+          "framing": {
+            "title_in_context": "PFK-1 Allosteric Regulation",
+            "relevance": "Master switch controlling glycolytic flux.",
+            "applications": [
+              "AMP activation",
+              "ATP inhibition"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Carbohydrate Metabolism",
+            "topic": "Glycolysis",
+            "subtopic": "PFK-1 Regulation"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_chemistry_l4_glycolysis_regulation"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "LibreTexts — Biochemistry",
+            "chapter": "Glycolysis",
+            "section": "PFK-1 Allostery"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_chemistry_l5_pyruvate_dehydrogenase_deficiency",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_chemistry_l3_glycolysis_and_central_metabolism",
+      "content": {
+        "title": "Pyruvate Dehydrogenase Deficiency",
+        "definition": "Inherited PDH complex deficiency causing lactic acidosis and neurologic impairment due to blocked pyruvate entry into aerobic metabolism.",
+        "summary": "Treatment includes ketogenic diet providing alternative brain fuel. Thiamine is PDH cofactor."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Biochemical Mechanism",
+        "primary_domain": "chemistry",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_chemistry_l4_pyruvate_fate_aerobic_anaerobic",
+        "prerequisites": [
+          "spine_chemistry_l4_pyruvate_fate_aerobic_anaerobic"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Pyruvate Dehydrogenase Deficiency",
+            "relevance": "Inborn error of metabolism.",
+            "applications": [
+              "Lactic acidosis",
+              "Ketogenic diet therapy"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Metabolism",
+            "topic": "Glycolysis",
+            "subtopic": "PDH Deficiency"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_chemistry_l4_pyruvate_fate_aerobic_anaerobic"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "section": "Pyruvate Dehydrogenase Deficiency",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_chemistry_l5_warburg_effect_glycolysis",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_chemistry_l3_glycolysis_and_central_metabolism",
+      "content": {
+        "title": "Warburg Effect (Aerobic Glycolysis)",
+        "definition": "Cancer cells preferentially using glycolysis for ATP even in adequate oxygen, supporting biosynthetic precursor production for rapid proliferation.",
+        "summary": "Warburg effect reflects altered PFK and mitochondrial regulation, not simply hypoxia. Provides target for metabolic therapy research."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Biochemical Mechanism",
+        "primary_domain": "chemistry",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_chemistry_l4_glycolysis_regulation",
+        "prerequisites": [
+          "spine_chemistry_l4_glycolysis_regulation"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Warburg Effect (Aerobic Glycolysis)",
+            "relevance": "Oncology metabolism connection.",
+            "applications": [
+              "Aerobic glycolysis in tumors",
+              "Biosynthetic precursor demand"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Metabolism",
+            "topic": "Glycolysis",
+            "subtopic": "Warburg Effect"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_chemistry_l4_glycolysis_regulation"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "section": "Warburg Effect",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    }
+  ]
+}

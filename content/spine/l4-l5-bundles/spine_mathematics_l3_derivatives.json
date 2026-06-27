@@ -1,0 +1,399 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_mathematics_l3_derivatives",
+    "anchor_primary_domain": "mathematics",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_mathematics_l3_derivatives.mathematics.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "6 per-context concepts merged into 6 universal concepts (6 L4 + 0 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_mathematics_l4_basic_differentiation_rules",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_derivatives",
+      "content": {
+        "title": "Power, Sum, and Constant Multiple Rules",
+        "definition": "Differentiation rules stating that the derivative of xⁿ is nxⁿ⁻¹, the derivative of a sum is the sum of derivatives, and constants factor out of derivatives.",
+        "summary": "These elementary rules differentiate polynomials and linear combinations efficiently without returning to the limit definition each time."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_derivatives",
+        "prerequisites": [
+          "spine_mathematics_l4_derivative_rate_of_change"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_product_quotient_rules",
+          "spine_mathematics_l4_chain_rule"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Derivatives measure instantaneous rate of change across science and engineering.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Single-Variable Calculus",
+            "topic": "Derivatives and Differentiation Rules",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_derivative_rate_of_change"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_product_quotient_rules",
+              "spine_mathematics_l4_chain_rule"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 1",
+            "chapter": "3",
+            "section": "Power, Sum, and Constant Multiple Rules"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_chain_rule",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_derivatives",
+      "content": {
+        "title": "Chain Rule",
+        "definition": "If y = f(g(x)), then dy/dx = f′(g(x)) · g′(x), giving the derivative of a composition as the product of the outer and inner derivatives.",
+        "summary": "The chain rule handles nested functions and is essential for implicit differentiation, related rates, and transcendental derivatives."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_derivatives",
+        "prerequisites": [
+          "spine_mathematics_l4_basic_differentiation_rules"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_exp_log_derivatives",
+          "spine_mathematics_l4_implicit_differentiation"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Derivatives measure instantaneous rate of change across science and engineering.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Single-Variable Calculus",
+            "topic": "Derivatives and Differentiation Rules",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_basic_differentiation_rules"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_exp_log_derivatives",
+              "spine_mathematics_l4_implicit_differentiation"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 1",
+            "chapter": "3",
+            "section": "Chain Rule"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_derivative_rate_of_change",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_derivatives",
+      "content": {
+        "title": "Derivative as Instantaneous Rate of Change",
+        "definition": "The derivative f′(x) is the limit of the average rate of change of f over shrinking intervals around x, representing the instantaneous rate of change or slope of the tangent line at x.",
+        "summary": "The limit definition connects secant-line slopes to tangent-line slope. This is the foundation for all differentiation rules and applied rate problems."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_derivatives",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_mathematics_l4_basic_differentiation_rules"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Derivatives measure instantaneous rate of change across science and engineering.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Single-Variable Calculus",
+            "topic": "Derivatives and Differentiation Rules",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_basic_differentiation_rules"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 1",
+            "chapter": "3",
+            "section": "Derivative as Instantaneous Rate of Change"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_exp_log_derivatives",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_derivatives",
+      "content": {
+        "title": "Derivatives of Exponential and Logarithmic Functions",
+        "definition": "Standard results d/dx(eˣ) = eˣ and d/dx(ln x) = 1/x, extended by the chain rule to general exponential and logarithmic bases.",
+        "summary": "Exponential and logarithmic derivatives underpin growth, decay, and logarithmic-differentiation techniques used throughout calculus and differential equations."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_derivatives",
+        "prerequisites": [
+          "spine_mathematics_l4_chain_rule"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Derivatives measure instantaneous rate of change across science and engineering.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Single-Variable Calculus",
+            "topic": "Derivatives and Differentiation Rules",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_chain_rule"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 1",
+            "chapter": "3",
+            "section": "Derivatives of Exponential and Logarithmic Functions"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_implicit_differentiation",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_derivatives",
+      "content": {
+        "title": "Implicit Differentiation",
+        "definition": "Technique for finding dy/dx when y is defined implicitly by an equation F(x, y) = 0 by differentiating both sides with respect to x and applying the chain rule.",
+        "summary": "Implicit differentiation finds slopes of curves not expressible as y = f(x), including circles, ellipses, and inverse-function relationships."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_derivatives",
+        "prerequisites": [
+          "spine_mathematics_l4_chain_rule"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Derivatives measure instantaneous rate of change across science and engineering.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Single-Variable Calculus",
+            "topic": "Derivatives and Differentiation Rules",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_chain_rule"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 1",
+            "chapter": "3",
+            "section": "Implicit Differentiation"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_product_quotient_rules",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_derivatives",
+      "content": {
+        "title": "Product and Quotient Rules",
+        "definition": "Rules for differentiating products (uv)′ = u′v + uv′ and quotients (u/v)′ = (u′v − uv′)/v² of differentiable functions.",
+        "summary": "When functions are multiplied or divided rather than added, the product and quotient rules extend basic rules to composite algebraic forms."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_derivatives",
+        "prerequisites": [
+          "spine_mathematics_l4_basic_differentiation_rules"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Derivatives measure instantaneous rate of change across science and engineering.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Single-Variable Calculus",
+            "topic": "Derivatives and Differentiation Rules",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_basic_differentiation_rules"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 1",
+            "chapter": "3",
+            "section": "Product and Quotient Rules"
+          }
+        ]
+      }
+    }
+  ]
+}

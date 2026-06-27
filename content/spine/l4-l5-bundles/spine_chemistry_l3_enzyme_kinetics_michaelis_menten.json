@@ -1,0 +1,1091 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_chemistry_l3_enzyme_kinetics_michaelis_menten",
+    "anchor_primary_domain": "chemistry",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_chemistry_l3_enzyme_kinetics_michaelis_menten.chemistry.json",
+      "content/spine/l4-l5-bundles/spine_chemistry_l3_enzyme_kinetics_michaelis_menten.medicine_preclinical.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "17 per-context concepts merged into 14 universal concepts (9 L4 + 5 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_chemistry_l4_competitive_inhibition",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_chemistry_l3_enzyme_kinetics_michaelis_menten",
+      "content": {
+        "title": "Competitive Inhibition",
+        "definition": "Inhibition in which an inhibitor competes with substrate for the active site, increasing apparent Km while leaving Vmax unchanged at high substrate concentrations.",
+        "summary": "Competitive inhibitors resemble substrate structure. Excess substrate can overcome competitive inhibition, restoring Vmax."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Biochemical Mechanism",
+        "primary_domain": "chemistry",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_chemistry_l3_enzyme_kinetics_michaelis_menten",
+        "prerequisites": [
+          "spine_chemistry_l4_vmax_km_interpretation",
+          "spine_chemistry_l4_lineweaver_burk_plot",
+          "spine_chemistry_l4_km_and_substrate_affinity"
+        ],
+        "unlocks": [
+          "spine_chemistry_l4_noncompetitive_uncompetitive_inhibition",
+          "spine_chemistry_l5_competitive_apparent_km",
+          "spine_chemistry_l5_competitive_inhibitor_examples",
+          "spine_chemistry_l5_competitive_inhibitor_lineweaver"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "chemistry",
+          "framing": {
+            "title_in_context": "Competitive Inhibition",
+            "relevance": "Most common reversible inhibitor mechanism in biochemistry.",
+            "applications": [
+              "Apparent Km increase",
+              "Active site competition"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Proteins",
+            "topic": "Enzyme Kinetics",
+            "subtopic": "Competitive Inhibition"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_chemistry_l4_vmax_km_interpretation",
+              "spine_chemistry_l4_lineweaver_burk_plot"
+            ],
+            "unlocks_in_context": [
+              "spine_chemistry_l4_noncompetitive_uncompetitive_inhibition",
+              "spine_chemistry_l5_competitive_apparent_km",
+              "spine_chemistry_l5_competitive_inhibitor_examples"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Competitive Enzyme Inhibition",
+            "relevance": "Statin and methotrexate mechanisms.",
+            "applications": [
+              "Increased apparent Km",
+              "Unchanged Vmax"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Enzyme Kinetics",
+            "topic": "Michaelis-Menten",
+            "subtopic": "Competitive"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_chemistry_l4_lineweaver_burk_plot",
+              "spine_chemistry_l4_km_and_substrate_affinity"
+            ],
+            "unlocks_in_context": [
+              "spine_chemistry_l5_competitive_inhibitor_lineweaver"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Chemistry 2e",
+            "chapter": "20",
+            "section": "20.6"
+          },
+          {
+            "source": "OpenStax Chemistry 2e",
+            "chapter": "19",
+            "section": "19.5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_chemistry_l4_enzyme_catalytic_cycle",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_chemistry_l3_enzyme_kinetics_michaelis_menten",
+      "content": {
+        "title": "Enzyme–Substrate Binding and Catalytic Cycle",
+        "definition": "Sequence of substrate binding, transition-state stabilization, product release, and enzyme regeneration underlying Michaelis–Menten kinetics.",
+        "summary": "Enzymes lower activation energy by stabilizing the transition state. The ES complex is a central intermediate; product release is often rate-limiting."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Biochemical Mechanism",
+        "primary_domain": "chemistry",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_chemistry_l3_enzyme_kinetics_michaelis_menten",
+        "prerequisites": [
+          "spine_chemistry_l4_michaelis_menten_equation"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "chemistry",
+          "framing": {
+            "title_in_context": "Enzyme–Substrate Binding and Catalytic Cycle",
+            "relevance": "Molecular basis for rate equations.",
+            "applications": [
+              "ES complex",
+              "Transition state stabilization"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Proteins",
+            "topic": "Enzyme Kinetics",
+            "subtopic": "Catalytic Cycle"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_chemistry_l4_michaelis_menten_equation"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Chemistry 2e",
+            "chapter": "20",
+            "section": "20.8"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_chemistry_l4_km_and_substrate_affinity",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_chemistry_l3_enzyme_kinetics_michaelis_menten",
+      "content": {
+        "title": "Km and Substrate Affinity",
+        "definition": "Michaelis constant Km as the substrate concentration at half-maximal velocity, inversely related to enzyme–substrate affinity when kcat is constant.",
+        "summary": "Low Km indicates high affinity (less substrate needed for half Vmax). Km approximates the dissociation constant under simplifying assumptions."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Biochemical Mechanism",
+        "primary_domain": "chemistry",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_chemistry_l3_enzyme_kinetics_michaelis_menten",
+        "prerequisites": [
+          "spine_chemistry_l4_michaelis_menten_equation"
+        ],
+        "unlocks": [
+          "spine_chemistry_l4_lineweaver_burk_plot",
+          "spine_chemistry_l4_competitive_inhibition"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Km and Substrate Affinity",
+            "relevance": "Interpreting enzyme efficiency.",
+            "applications": [
+              "Km as half-Vmax substrate",
+              "Low Km = high affinity"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Enzyme Kinetics",
+            "topic": "Michaelis-Menten",
+            "subtopic": "Km"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_chemistry_l4_michaelis_menten_equation"
+            ],
+            "unlocks_in_context": [
+              "spine_chemistry_l4_lineweaver_burk_plot",
+              "spine_chemistry_l4_competitive_inhibition"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Chemistry 2e",
+            "chapter": "19",
+            "section": "19.4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_chemistry_l4_lineweaver_burk_plot",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_chemistry_l3_enzyme_kinetics_michaelis_menten",
+      "content": {
+        "title": "Lineweaver–Burk Double-Reciprocal Plot",
+        "definition": "Graphical method plotting 1/v versus 1/[S] to linearize Michaelis–Menten data and determine Km and Vmax from intercepts and slope.",
+        "summary": "Lineweaver–Burk plots yield a straight line with y-intercept 1/Vmax and x-intercept −1/Km. Inhibitor effects appear as characteristic changes in slope and intercepts."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Biochemical Mechanism",
+        "primary_domain": "chemistry",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_chemistry_l3_enzyme_kinetics_michaelis_menten",
+        "prerequisites": [
+          "spine_chemistry_l4_michaelis_menten_equation",
+          "spine_chemistry_l4_km_and_substrate_affinity"
+        ],
+        "unlocks": [
+          "spine_chemistry_l5_lb_plot_inhibitor_patterns",
+          "spine_chemistry_l4_competitive_inhibition",
+          "spine_chemistry_l4_noncompetitive_inhibition"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "chemistry",
+          "framing": {
+            "title_in_context": "Lineweaver–Burk Double-Reciprocal Plot",
+            "relevance": "Experimental determination of kinetic parameters.",
+            "applications": [
+              "1/v vs 1/[S]",
+              "Km and Vmax from intercepts"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Proteins",
+            "topic": "Enzyme Kinetics",
+            "subtopic": "Lineweaver-Burk"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_chemistry_l4_michaelis_menten_equation"
+            ],
+            "unlocks_in_context": [
+              "spine_chemistry_l5_lb_plot_inhibitor_patterns",
+              "spine_chemistry_l4_competitive_inhibition"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Lineweaver-Burk Double-Reciprocal Plot",
+            "relevance": "Classic board-style inhibitor identification.",
+            "applications": [
+              "1/Vmax y-intercept",
+              "−1/Km x-intercept"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Enzyme Kinetics",
+            "topic": "Michaelis-Menten",
+            "subtopic": "Lineweaver-Burk"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_chemistry_l4_km_and_substrate_affinity",
+              "spine_chemistry_l4_michaelis_menten_equation"
+            ],
+            "unlocks_in_context": [
+              "spine_chemistry_l4_competitive_inhibition",
+              "spine_chemistry_l4_noncompetitive_inhibition"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Chemistry 2e",
+            "chapter": "20",
+            "section": "20.5"
+          },
+          {
+            "source": "OpenStax Chemistry 2e",
+            "chapter": "19",
+            "section": "19.5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_chemistry_l4_michaelis_menten_equation",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_chemistry_l3_enzyme_kinetics_michaelis_menten",
+      "content": {
+        "title": "Michaelis–Menten Equation",
+        "definition": "Rate equation v = Vmax[S]/(Km + [S]) describing hyperbolic dependence of initial reaction velocity on substrate concentration for many enzymes.",
+        "summary": "The Michaelis–Menten model assumes rapid equilibrium or steady-state formation of an enzyme–substrate complex. Velocity rises with [S] and asymptotically approaches Vmax."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Biochemical Mechanism",
+        "primary_domain": "chemistry",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_chemistry_l3_enzyme_kinetics_michaelis_menten",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_chemistry_l4_vmax_km_interpretation",
+          "spine_chemistry_l4_lineweaver_burk_plot",
+          "spine_chemistry_l4_enzyme_catalytic_cycle",
+          "spine_chemistry_l4_km_and_substrate_affinity",
+          "spine_chemistry_l4_vmax_catalytic_capacity"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "chemistry",
+          "framing": {
+            "title_in_context": "Michaelis–Menten Equation",
+            "relevance": "Quantitative model for enzyme-catalyzed reaction rates.",
+            "applications": [
+              "Hyperbolic kinetics",
+              "Vmax and Km"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Proteins",
+            "topic": "Enzyme Kinetics",
+            "subtopic": "Michaelis-Menten"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_chemistry_l4_vmax_km_interpretation",
+              "spine_chemistry_l4_lineweaver_burk_plot",
+              "spine_chemistry_l4_enzyme_catalytic_cycle"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Michaelis-Menten Equation",
+            "relevance": "Drug metabolism saturation kinetics.",
+            "applications": [
+              "Hyperbolic saturation curve",
+              "Vmax plateau"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Enzyme Kinetics",
+            "topic": "Michaelis-Menten",
+            "subtopic": "MM Equation"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_chemistry_l4_km_and_substrate_affinity",
+              "spine_chemistry_l4_vmax_catalytic_capacity",
+              "spine_chemistry_l4_lineweaver_burk_plot"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Chemistry 2e",
+            "chapter": "20",
+            "section": "20.3"
+          },
+          {
+            "source": "OpenStax Chemistry 2e",
+            "chapter": "19",
+            "section": "19.4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_chemistry_l4_noncompetitive_inhibition",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_chemistry_l3_enzyme_kinetics_michaelis_menten",
+      "content": {
+        "title": "Noncompetitive Enzyme Inhibition",
+        "definition": "Inhibitor binds allosteric site or enzyme-substrate complex, decreasing Vmax without changing Km, non-surmountable by excess substrate.",
+        "summary": "Noncompetitive inhibition reduces catalytically active enzyme fraction. Lineweaver-Burk shows increased 1/Vmax intercept."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Biochemical Mechanism",
+        "primary_domain": "chemistry",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_chemistry_l3_enzyme_kinetics_michaelis_menten",
+        "prerequisites": [
+          "spine_chemistry_l4_lineweaver_burk_plot",
+          "spine_chemistry_l4_vmax_catalytic_capacity"
+        ],
+        "unlocks": [
+          "spine_chemistry_l5_mixed_vs_uncompetitive"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Noncompetitive Enzyme Inhibition",
+            "relevance": "Distinguish from competitive on plots.",
+            "applications": [
+              "Decreased Vmax",
+              "Unchanged Km"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Enzyme Kinetics",
+            "topic": "Michaelis-Menten",
+            "subtopic": "Noncompetitive"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_chemistry_l4_lineweaver_burk_plot",
+              "spine_chemistry_l4_vmax_catalytic_capacity"
+            ],
+            "unlocks_in_context": [
+              "spine_chemistry_l5_mixed_vs_uncompetitive"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Chemistry 2e",
+            "chapter": "19",
+            "section": "19.5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_chemistry_l4_noncompetitive_uncompetitive_inhibition",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_chemistry_l3_enzyme_kinetics_michaelis_menten",
+      "content": {
+        "title": "Noncompetitive and Uncompetitive Inhibition",
+        "definition": "Inhibition modes in which the inhibitor binds away from (noncompetitive) or only to (uncompetitive) the enzyme–substrate complex, altering Vmax and/or Km distinct from competitive patterns.",
+        "summary": "Noncompetitive inhibitors reduce Vmax without changing Km. Uncompetitive inhibitors decrease both Km and Vmax proportionally."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Biochemical Mechanism",
+        "primary_domain": "chemistry",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_chemistry_l3_enzyme_kinetics_michaelis_menten",
+        "prerequisites": [
+          "spine_chemistry_l4_competitive_inhibition"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "chemistry",
+          "framing": {
+            "title_in_context": "Noncompetitive and Uncompetitive Inhibition",
+            "relevance": "Distinguishing inhibitor binding sites and kinetic signatures.",
+            "applications": [
+              "Vmax reduction",
+              "Allosteric inhibition"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Proteins",
+            "topic": "Enzyme Kinetics",
+            "subtopic": "Noncompetitive Inhibition"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_chemistry_l4_competitive_inhibition"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Chemistry 2e",
+            "chapter": "20",
+            "section": "20.7"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_chemistry_l4_vmax_catalytic_capacity",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_chemistry_l3_enzyme_kinetics_michaelis_menten",
+      "content": {
+        "title": "Vmax and Catalytic Capacity",
+        "definition": "Maximum reaction velocity when all enzyme active sites are saturated with substrate, proportional to total enzyme concentration and turnover number kcat.",
+        "summary": "Vmax increases with enzyme concentration. It decreases when active enzyme is lost to irreversible inhibition."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Biochemical Mechanism",
+        "primary_domain": "chemistry",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_chemistry_l3_enzyme_kinetics_michaelis_menten",
+        "prerequisites": [
+          "spine_chemistry_l4_michaelis_menten_equation"
+        ],
+        "unlocks": [
+          "spine_chemistry_l4_noncompetitive_inhibition"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Vmax and Catalytic Capacity",
+            "relevance": "Liver enzyme induction effects on drug metabolism.",
+            "applications": [
+              "Enzyme concentration effect",
+              "kcat turnover number"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Enzyme Kinetics",
+            "topic": "Michaelis-Menten",
+            "subtopic": "Vmax"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_chemistry_l4_michaelis_menten_equation"
+            ],
+            "unlocks_in_context": [
+              "spine_chemistry_l4_noncompetitive_inhibition"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "6",
+            "section": "6.5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_chemistry_l4_vmax_km_interpretation",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_chemistry_l3_enzyme_kinetics_michaelis_menten",
+      "content": {
+        "title": "Vmax and Km Interpretation",
+        "definition": "Vmax is the maximal reaction velocity at saturating substrate concentration; Km is the substrate concentration at which velocity equals half Vmax, reflecting apparent affinity.",
+        "summary": "Low Km indicates high substrate affinity. Vmax depends on enzyme concentration and catalytic turnover. Km is not a true dissociation constant but approximates it when catalysis is slow."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Biochemical Mechanism",
+        "primary_domain": "chemistry",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_chemistry_l3_enzyme_kinetics_michaelis_menten",
+        "prerequisites": [
+          "spine_chemistry_l4_michaelis_menten_equation"
+        ],
+        "unlocks": [
+          "spine_chemistry_l4_competitive_inhibition"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "chemistry",
+          "framing": {
+            "title_in_context": "Vmax and Km Interpretation",
+            "relevance": "Parameter meaning for comparing enzyme efficiency and affinity.",
+            "applications": [
+              "Km as affinity proxy",
+              "Vmax saturation"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Proteins",
+            "topic": "Enzyme Kinetics",
+            "subtopic": "Vmax and Km"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_chemistry_l4_michaelis_menten_equation"
+            ],
+            "unlocks_in_context": [
+              "spine_chemistry_l4_competitive_inhibition"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Chemistry 2e",
+            "chapter": "20",
+            "section": "20.4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_chemistry_l5_competitive_apparent_km",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_chemistry_l3_enzyme_kinetics_michaelis_menten",
+      "content": {
+        "title": "Apparent Km and Inhibitor Concentration",
+        "definition": "Relationship Km,app = Km(1 + [I]/Ki) describing how competitive inhibitor concentration increases the apparent Michaelis constant.",
+        "summary": "Higher inhibitor concentration raises apparent Km without changing Vmax. Ki quantifies inhibitor potency."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Biochemical Mechanism",
+        "primary_domain": "chemistry",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_chemistry_l4_competitive_inhibition",
+        "prerequisites": [
+          "spine_chemistry_l4_competitive_inhibition"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "chemistry",
+          "framing": {
+            "title_in_context": "Apparent Km and Inhibitor Concentration",
+            "relevance": "Quantitative prediction of competitive inhibition effects.",
+            "applications": [
+              "Km,app equation",
+              "Ki determination"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Proteins",
+            "topic": "Enzyme Kinetics",
+            "subtopic": "Apparent Km"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_chemistry_l4_competitive_inhibition"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "LibreTexts — Biochemistry",
+            "chapter": "Enzyme Kinetics",
+            "section": "Competitive Inhibition Mathematics"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_chemistry_l5_competitive_inhibitor_examples",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_chemistry_l3_enzyme_kinetics_michaelis_menten",
+      "content": {
+        "title": "Clinical and Industrial Competitive Inhibitors",
+        "definition": "Examples of competitive enzyme inhibitors including statins (HMG-CoA reductase) and ACE inhibitors used therapeutically and in metabolic research.",
+        "summary": "Competitive inhibition is exploited in drug design to block specific metabolic enzymes. Statins competitively inhibit cholesterol synthesis; ACE inhibitors block angiotensin conversion."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Biochemical Mechanism",
+        "primary_domain": "chemistry",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_chemistry_l4_competitive_inhibition",
+        "prerequisites": [
+          "spine_chemistry_l4_competitive_inhibition"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "chemistry",
+          "framing": {
+            "title_in_context": "Clinical and Industrial Competitive Inhibitors",
+            "relevance": "Real-world applications of competitive inhibition.",
+            "applications": [
+              "Statins",
+              "ACE inhibitors"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Proteins",
+            "topic": "Enzyme Kinetics",
+            "subtopic": "Inhibitor Examples"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_chemistry_l4_competitive_inhibition"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "chapter": "Enzyme Inhibition",
+            "section": "Competitive Examples"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_chemistry_l5_competitive_inhibitor_lineweaver",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_chemistry_l3_enzyme_kinetics_michaelis_menten",
+      "content": {
+        "title": "Competitive Inhibition Lineweaver-Burk Pattern",
+        "definition": "Lineweaver-Burk plot showing increased slope and x-intercept magnitude (more negative) with common y-intercept, indicating increased apparent Km and unchanged Vmax.",
+        "summary": "Lines converge at y-axis for competitive inhibition. Diagnostic pattern for board questions."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Biochemical Mechanism",
+        "primary_domain": "chemistry",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_chemistry_l4_competitive_inhibition",
+        "prerequisites": [
+          "spine_chemistry_l4_competitive_inhibition"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Competitive Inhibition Lineweaver-Burk Pattern",
+            "relevance": "Graph interpretation high-yield.",
+            "applications": [
+              "Common y-intercept",
+              "Steeper slope"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Enzyme Kinetics",
+            "topic": "Michaelis-Menten",
+            "subtopic": "Competitive Plot"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_chemistry_l4_competitive_inhibition"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Chemistry 2e",
+            "chapter": "19",
+            "section": "19.5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_chemistry_l5_lb_plot_inhibitor_patterns",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_chemistry_l3_enzyme_kinetics_michaelis_menten",
+      "content": {
+        "title": "Distinguishing Inhibition Types on LB Plots",
+        "definition": "Characteristic Lineweaver–Burk line intersections that identify competitive (common y-intercept), noncompetitive (common x-intercept), and uncompetitive (parallel lines) inhibition.",
+        "summary": "LB plot patterns provide rapid visual classification of inhibitor mechanism. Competitive inhibition rotates the line about the y-intercept."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Biochemical Mechanism",
+        "primary_domain": "chemistry",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_chemistry_l4_lineweaver_burk_plot",
+        "prerequisites": [
+          "spine_chemistry_l4_lineweaver_burk_plot"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "chemistry",
+          "framing": {
+            "title_in_context": "Distinguishing Inhibition Types on LB Plots",
+            "relevance": "Graphical diagnosis of inhibitor class from kinetic data.",
+            "applications": [
+              "Line intersection analysis",
+              "Inhibitor classification"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Proteins",
+            "topic": "Enzyme Kinetics",
+            "subtopic": "LB Inhibitor Patterns"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_chemistry_l4_lineweaver_burk_plot"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "LibreTexts — Biochemistry",
+            "chapter": "Enzyme Kinetics",
+            "section": "Lineweaver-Burk Inhibitor Analysis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_chemistry_l5_mixed_vs_uncompetitive",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_chemistry_l3_enzyme_kinetics_michaelis_menten",
+      "content": {
+        "title": "Mixed and Uncompetitive Inhibition",
+        "definition": "Mixed inhibition alters both Km and Vmax; uncompetitive inhibition binds only ES complex, decreasing both parameters proportionally with parallel Lineweaver-Burk lines.",
+        "summary": "Uncompetitive inhibition rare in drugs but tested conceptually. Mixed is general case of noncompetitive binding."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Biochemical Mechanism",
+        "primary_domain": "chemistry",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_chemistry_l4_noncompetitive_inhibition",
+        "prerequisites": [
+          "spine_chemistry_l4_noncompetitive_inhibition"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Mixed and Uncompetitive Inhibition",
+            "relevance": "Complete inhibitor classification.",
+            "applications": [
+              "Parallel lines = uncompetitive",
+              "Both intercepts change = mixed"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Enzyme Kinetics",
+            "topic": "Michaelis-Menten",
+            "subtopic": "Mixed Inhibition"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_chemistry_l4_noncompetitive_inhibition"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Chemistry 2e",
+            "chapter": "19",
+            "section": "19.5"
+          }
+        ]
+      }
+    }
+  ]
+}

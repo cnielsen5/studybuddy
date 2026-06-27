@@ -1,0 +1,1131 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_biology_l3_neurotransmitters_and_receptors",
+    "anchor_primary_domain": "biology",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_biology_l3_neurotransmitters_and_receptors.biology.json",
+      "content/spine/l4-l5-bundles/spine_biology_l3_neurotransmitters_and_receptors.medicine_preclinical.json",
+      "content/spine/l4-l5-bundles/spine_biology_l3_neurotransmitters_and_receptors.psychology_neuroscience.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "19 per-context concepts merged into 16 universal concepts (11 L4 + 5 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_biology_l4_catecholamine_dopamine_signaling",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_neurotransmitters_and_receptors",
+      "content": {
+        "title": "Catecholamine and Dopamine Signaling",
+        "definition": "Biosynthesis of dopamine, norepinephrine, and epinephrine from tyrosine with distinct receptor subtypes (D1–D5, α, β) mediating diverse autonomic and CNS effects.",
+        "summary": "Catecholamines act through GPCRs. Dopamine pathways in basal ganglia underlie motor and reward circuitry."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Cell Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_neurotransmitters_and_receptors",
+        "prerequisites": [
+          "spine_biology_l4_ligand_gated_vs_gpcr_receptors"
+        ],
+        "unlocks": [
+          {
+            "concept_id": "spine_biology_l3_synaptic_transmission",
+            "_forward_reference": true
+          }
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Catecholamine and Dopamine Signaling",
+            "relevance": "Parkinson disease and sympathomimetic drugs.",
+            "applications": [
+              "Tyrosine → L-DOPA → dopamine",
+              "Alpha and beta adrenergic receptors"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Neurophysiology",
+            "topic": "Neurotransmitters",
+            "subtopic": "Catecholamines"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_ligand_gated_vs_gpcr_receptors"
+            ],
+            "unlocks_in_context": [
+              {
+                "concept_id": "spine_biology_l3_synaptic_transmission",
+                "_forward_reference": true
+              }
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "15",
+            "section": "15.4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_cholinergic_signaling",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_neurotransmitters_and_receptors",
+      "content": {
+        "title": "Cholinergic Signaling",
+        "definition": "Acetylcholine-mediated neurotransmission at nicotinic receptors (ionotropic) in autonomic ganglia and NMJ and muscarinic receptors (GPCR) in parasympathetic effectors.",
+        "summary": "ACh is synthesized from choline and acetyl-CoA. Acetylcholinesterase terminates signaling at synapses."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Cell Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_neurotransmitters_and_receptors",
+        "prerequisites": [
+          "spine_biology_l4_ligand_gated_vs_gpcr_receptors"
+        ],
+        "unlocks": [
+          "spine_biology_l5_neuromuscular_nicotinic_ach"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Cholinergic Signaling",
+            "relevance": "Organophosphate poisoning and myasthenia gravis.",
+            "applications": [
+              "Nicotinic at NMJ",
+              "Muscarinic in bronchi"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Neurophysiology",
+            "topic": "Neurotransmitters",
+            "subtopic": "Cholinergic"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_ligand_gated_vs_gpcr_receptors"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l5_neuromuscular_nicotinic_ach"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "section": "Acetylcholine",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_excitatory_inhibitory_neurotransmitters",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_neurotransmitters_and_receptors",
+      "content": {
+        "title": "Excitatory vs Inhibitory Neurotransmitters",
+        "definition": "Classification by postsynaptic effect: excitatory transmitters depolarize toward threshold (glutamate, ACh at NMJ), inhibitory transmitters hyperpolarize or shunt (GABA, glycine).",
+        "summary": "Balance of EPSPs and IPSPs determines neuronal output. GABA is the major CNS inhibitory transmitter."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Cell Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_neurotransmitters_and_receptors",
+        "prerequisites": [
+          "spine_biology_l4_neurotransmitter_synthesis_release"
+        ],
+        "unlocks": [
+          "spine_biology_l4_ligand_gated_vs_gpcr_receptors"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Excitatory vs Inhibitory Neurotransmitters",
+            "relevance": "Seizures (too much excitation) and benzodiazepines.",
+            "applications": [
+              "Glutamate excitotoxicity",
+              "GABAergic inhibition"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Neurophysiology",
+            "topic": "Neurotransmitters",
+            "subtopic": "E/I Balance"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_neurotransmitter_synthesis_release"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_ligand_gated_vs_gpcr_receptors"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "33",
+            "section": "33.3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_ligand_gated_vs_gpcr_receptors",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_neurotransmitters_and_receptors",
+      "content": {
+        "title": "Ligand-Gated Ion Channels vs Metabotropic Receptors",
+        "definition": "Ionotropic receptors mediate fast synaptic potentials via direct ion channel opening; metabotropic GPCRs modulate ion channels through second messenger cascades.",
+        "summary": "Nicotinic ACh and GABA-A are ionotropic. Muscarinic ACh and adrenergic receptors are metabotropic with slower, modulatory effects."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Cell Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_neurotransmitters_and_receptors",
+        "prerequisites": [
+          "spine_biology_l4_excitatory_inhibitory_neurotransmitters"
+        ],
+        "unlocks": [
+          "spine_biology_l4_catecholamine_dopamine_signaling",
+          "spine_biology_l4_cholinergic_signaling"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Ligand-Gated Ion Channels vs Metabotropic Receptors",
+            "relevance": "Drug receptor targets for anesthesia and psychiatry.",
+            "applications": [
+              "Nicotinic vs muscarinic ACh",
+              "GABA-A benzodiazepine site"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Neurophysiology",
+            "topic": "Neurotransmitters",
+            "subtopic": "Receptor Classes"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_excitatory_inhibitory_neurotransmitters"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_catecholamine_dopamine_signaling",
+              "spine_biology_l4_cholinergic_signaling"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "12",
+            "section": "12.5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_major_neurotransmitter_systems",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_neurotransmitters_and_receptors",
+      "content": {
+        "title": "Major Neurotransmitter Systems",
+        "definition": "Principal neurotransmitters including glutamate (excitatory), GABA (inhibitory), acetylcholine, dopamine, and serotonin with distinct synthesis pathways and functional roles.",
+        "summary": "Each neurotransmitter system has characteristic anatomical distribution and behavioral correlates. Balance between excitation and inhibition is essential for normal neural function."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Synaptic Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_neurotransmitters_and_receptors",
+        "prerequisites": [
+          "spine_biology_l4_receptor_types_ionotropic_metabotropic",
+          "spine_biology_l4_receptor_types_ionotropic_metabotropic"
+        ],
+        "unlocks": [
+          "spine_biology_l4_neurotransmitter_clearance_reuptake",
+          "spine_biology_l5_dopamine_pathways_overview"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Major Neurotransmitter Systems",
+            "relevance": "Maps chemical messengers to nervous system function.",
+            "applications": [
+              "Glutamate/GABA balance",
+              "Dopamine pathways"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Organismal Physiology",
+            "subcategory": "Neural Signaling",
+            "topic": "Neurotransmitters and Receptors",
+            "subtopic": "Major Systems"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_receptor_types_ionotropic_metabotropic"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Major Neurotransmitter Systems",
+            "relevance": "Maps brain chemistry to behavior and psychopharmacology.",
+            "applications": [
+              "Dopamine reward pathways",
+              "SSRI mechanisms"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biological Psychology & Neuroscience",
+            "subcategory": "Synaptic Physiology",
+            "topic": "Neurotransmitters and Receptors",
+            "subtopic": "Systems"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_receptor_types_ionotropic_metabotropic"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_neurotransmitter_clearance_reuptake",
+              "spine_biology_l5_dopamine_pathways_overview"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "34",
+            "section": "34.4"
+          },
+          {
+            "source": "OpenStax Psychology 2e",
+            "chapter": "3",
+            "section": "3.5.2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_neurotransmitter_clearance_reuptake",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_neurotransmitters_and_receptors",
+      "content": {
+        "title": "Reuptake, Enzymatic Degradation, and Clearance",
+        "definition": "Termination of synaptic signals via transporters, degradative enzymes, and diffusion.",
+        "summary": "Reuptake transporters are targets for antidepressants and stimulants."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Synaptic Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_neurotransmitters_and_receptors",
+        "prerequisites": [
+          "spine_biology_l4_major_neurotransmitter_systems"
+        ],
+        "unlocks": [
+          {
+            "concept_id": "spine_biology_l3_synaptic_transmission",
+            "_forward_reference": true
+          }
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Reuptake, Enzymatic Degradation, and Clearance",
+            "relevance": "Maps brain chemistry to behavior and psychopharmacology.",
+            "applications": [
+              "Dopamine reward pathways",
+              "SSRI mechanisms"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biological Psychology & Neuroscience",
+            "subcategory": "Synaptic Physiology",
+            "topic": "Neurotransmitters and Receptors",
+            "subtopic": "Clearance"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_major_neurotransmitter_systems"
+            ],
+            "unlocks_in_context": [
+              {
+                "concept_id": "spine_biology_l3_synaptic_transmission",
+                "_forward_reference": true
+              }
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "12",
+            "section": "12.6"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_neurotransmitter_synthesis_release",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_neurotransmitters_and_receptors",
+      "content": {
+        "title": "Neurotransmitter Synthesis and Release",
+        "definition": "Biosynthesis of neurotransmitters in presynaptic neurons, packaging into synaptic vesicles, and calcium-triggered exocytotic release into the synaptic cleft.",
+        "summary": "Neurotransmitter availability depends on synthesis, vesicle loading, and regulated release. Action potential arrival opens voltage-gated Ca²⁺ channels to trigger fusion."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Synaptic Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_neurotransmitters_and_receptors",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_biology_l4_receptor_types_ionotropic_metabotropic",
+          "spine_biology_l4_receptor_types_ionotropic_metabotropic",
+          "spine_biology_l4_ligand_gated_vs_gpcr_receptors",
+          "spine_biology_l4_excitatory_inhibitory_neurotransmitters",
+          "spine_biology_l4_receptor_types_ionotropic_metabotropic"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Neurotransmitter Synthesis and Release",
+            "relevance": "Presynaptic steps converting electrical signals to chemical messengers.",
+            "applications": [
+              "Vesicle exocytosis",
+              "Ca²⁺-triggered release"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Organismal Physiology",
+            "subcategory": "Neural Signaling",
+            "topic": "Neurotransmitters and Receptors",
+            "subtopic": "Synthesis and Release"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_biology_l4_receptor_types_ionotropic_metabotropic",
+              "spine_biology_l4_receptor_types_ionotropic_metabotropic"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Neurotransmitter Synthesis and Vesicular Storage",
+            "relevance": "VMAT inhibitors and synthesis enzyme targets.",
+            "applications": [
+              "Tyrosine hydroxylase in catecholamine synthesis",
+              "VMAT2 for dopamine"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Neurophysiology",
+            "topic": "Neurotransmitters",
+            "subtopic": "Synthesis"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_biology_l4_ligand_gated_vs_gpcr_receptors",
+              "spine_biology_l4_excitatory_inhibitory_neurotransmitters"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Neurotransmitter Synthesis and Vesicular Storage",
+            "relevance": "Maps brain chemistry to behavior and psychopharmacology.",
+            "applications": [
+              "Dopamine reward pathways",
+              "SSRI mechanisms"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biological Psychology & Neuroscience",
+            "subcategory": "Synaptic Physiology",
+            "topic": "Neurotransmitters and Receptors",
+            "subtopic": "Synthesis"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_biology_l4_receptor_types_ionotropic_metabotropic"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "34",
+            "section": "12.6.5"
+          },
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "12",
+            "section": "12.5"
+          },
+          {
+            "source": "OpenStax Psychology 2e",
+            "chapter": "3",
+            "section": "3.5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_receptor_types_ionotropic_metabotropic",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_neurotransmitters_and_receptors",
+      "content": {
+        "title": "Metabotropic Receptors",
+        "definition": "G protein-coupled neurotransmitter receptors that initiate intracellular signaling cascades producing slower, modulatory changes in postsynaptic excitability.",
+        "summary": "Metabotropic receptors amplify signals through second messengers. They modulate ion channel activity and gene expression on slower timescales than ionotropic receptors."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Synaptic Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_neurotransmitters_and_receptors",
+        "prerequisites": [
+          "spine_biology_l4_neurotransmitter_synthesis_release"
+        ],
+        "unlocks": [
+          "spine_biology_l4_major_neurotransmitter_systems",
+          "spine_biology_l5_ionotropic_receptor_kinetics",
+          "spine_biology_l4_synaptic_integration"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Ionotropic Receptors",
+            "relevance": "Fast postsynaptic responses in chemical synapses.",
+            "applications": [
+              "Ligand-gated channels",
+              "EPSPs and IPSPs"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Organismal Physiology",
+            "subcategory": "Neural Signaling",
+            "topic": "Neurotransmitters and Receptors",
+            "subtopic": "Ionotropic Receptors"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_neurotransmitter_synthesis_release"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_synaptic_integration",
+              "spine_biology_l4_major_neurotransmitter_systems"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Ionotropic vs Metabotropic Receptors",
+            "relevance": "Maps brain chemistry to behavior and psychopharmacology.",
+            "applications": [
+              "Dopamine reward pathways",
+              "SSRI mechanisms"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biological Psychology & Neuroscience",
+            "subcategory": "Synaptic Physiology",
+            "topic": "Neurotransmitters and Receptors",
+            "subtopic": "Receptors"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_neurotransmitter_synthesis_release"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_major_neurotransmitter_systems",
+              "spine_biology_l5_ionotropic_receptor_kinetics"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-26T05:54:17.140Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Psychology 2e",
+            "chapter": "3",
+            "section": "3.5.1"
+          },
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "34",
+            "section": "34.2"
+          },
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "34",
+            "section": "34.3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_synaptic_integration",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_neurotransmitters_and_receptors",
+      "content": {
+        "title": "EPSPs, IPSPs, and Synaptic Integration",
+        "definition": "Summation of excitatory postsynaptic potentials (EPSPs) and inhibitory postsynaptic potentials (IPSPs) through temporal and spatial integration at the axon hillock.",
+        "summary": "Multiple synaptic inputs combine algebraically. Net depolarization toward threshold determines whether the postsynaptic neuron fires an action potential."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Synaptic Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_neurotransmitters_and_receptors",
+        "prerequisites": [
+          "spine_biology_l4_receptor_types_ionotropic_metabotropic"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "EPSPs, IPSPs, and Synaptic Integration",
+            "relevance": "How neurons combine multiple synaptic inputs.",
+            "applications": [
+              "Temporal summation",
+              "Spatial summation"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Organismal Physiology",
+            "subcategory": "Neural Signaling",
+            "topic": "Neurotransmitters and Receptors",
+            "subtopic": "Integration"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_receptor_types_ionotropic_metabotropic"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "34",
+            "section": "34.5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l5_dopamine_pathways_overview",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_biology_l3_neurotransmitters_and_receptors",
+      "content": {
+        "title": "Mesolimbic and Nigrostriatal Dopamine Pathways",
+        "definition": "Distinct dopamine projections supporting reward, movement, and executive function.",
+        "summary": "Hyperdopaminergic mesolimbic signaling is implicated in positive psychotic symptoms."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Synaptic Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l4_major_neurotransmitter_systems",
+        "prerequisites": [
+          "spine_biology_l4_major_neurotransmitter_systems"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Mesolimbic and Nigrostriatal Dopamine Pathways",
+            "relevance": "Maps brain chemistry to behavior and psychopharmacology.",
+            "applications": [
+              "Dopamine reward pathways",
+              "SSRI mechanisms"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biological Psychology & Neuroscience",
+            "subcategory": "Synaptic Physiology",
+            "topic": "Neurotransmitters and Receptors",
+            "subtopic": "Dopamine"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_major_neurotransmitter_systems"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Psychology 2e",
+            "chapter": "3",
+            "section": "3.5.3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l5_gaba_a_benzodiazepine_site",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_biology_l3_neurotransmitters_and_receptors",
+      "content": {
+        "title": "GABA-A Receptor and Benzodiazepine Site",
+        "definition": "Chloride-permeable GABA-A receptor with allosteric benzodiazepine binding site that enhances GABA-mediated inhibition.",
+        "summary": "Benzodiazepines increase frequency of Cl− channel opening. Barbiturates increase duration. Both potentiate GABA-A."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Cell Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l4_ligand_gated_vs_gpcr_receptors",
+        "prerequisites": [
+          "spine_biology_l4_ligand_gated_vs_gpcr_receptors"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "GABA-A Receptor and Benzodiazepine Site",
+            "relevance": "Anxiolytics, sedatives, and overdose management.",
+            "applications": [
+              "BZD allosteric modulation",
+              "Flumazenil reversal"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Neurophysiology",
+            "topic": "Neurotransmitters",
+            "subtopic": "GABA-A"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_ligand_gated_vs_gpcr_receptors"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "section": "Benzodiazepines",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l5_ionotropic_receptor_kinetics",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_biology_l3_neurotransmitters_and_receptors",
+      "content": {
+        "title": "Ionotropic Receptor Kinetics and Conductances",
+        "definition": "Opening, desensitization, and ion selectivity of ligand-gated channels.",
+        "summary": "NMDA receptor magnesium block links channel opening to depolarization."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Synaptic Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l4_receptor_types_ionotropic_metabotropic",
+        "prerequisites": [
+          "spine_biology_l4_receptor_types_ionotropic_metabotropic"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Ionotropic Receptor Kinetics and Conductances",
+            "relevance": "Maps brain chemistry to behavior and psychopharmacology.",
+            "applications": [
+              "Dopamine reward pathways",
+              "SSRI mechanisms"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biological Psychology & Neuroscience",
+            "subcategory": "Synaptic Physiology",
+            "topic": "Neurotransmitters and Receptors",
+            "subtopic": "Ionotropic"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_receptor_types_ionotropic_metabotropic"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "12",
+            "section": "12.6.1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l5_neuromuscular_nicotinic_ach",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_biology_l3_neurotransmitters_and_receptors",
+      "content": {
+        "title": "Nicotinic ACh at the Neuromuscular Junction",
+        "definition": "Acetylcholine binding to nicotinic receptors on the motor end plate causing Na+ influx, end-plate potential, and skeletal muscle action potential initiation.",
+        "summary": "NMJ nicotinic receptors are ligand-gated Na+/K+ channels. Curare and succinylcholine act at this receptor."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Cell Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l4_cholinergic_signaling",
+        "prerequisites": [
+          "spine_biology_l4_cholinergic_signaling"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Nicotinic ACh at the Neuromuscular Junction",
+            "relevance": "Neuromuscular blockers for anesthesia.",
+            "applications": [
+              "End-plate potential",
+              "Succinylcholine depolarizing block"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Neurophysiology",
+            "topic": "Neurotransmitters",
+            "subtopic": "NMJ"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_cholinergic_signaling"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "10",
+            "section": "10.3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l5_parkinson_dopamine_deficiency",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_biology_l3_neurotransmitters_and_receptors",
+      "content": {
+        "title": "Parkinson Disease and Dopamine Deficiency",
+        "definition": "Degeneration of substantia nigra dopaminergic neurons reducing striatal dopamine, causing bradykinesia, rigidity, and resting tremor.",
+        "summary": "L-DOPA crosses the blood-brain barrier and replenishes dopamine. Dopamine itself cannot cross the BBB."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Cell Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l4_catecholamine_dopamine_signaling",
+        "prerequisites": [
+          "spine_biology_l4_catecholamine_dopamine_signaling"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Parkinson Disease and Dopamine Deficiency",
+            "relevance": "L-DOPA/carbidopa therapy rationale.",
+            "applications": [
+              "Substantia nigra degeneration",
+              "L-DOPA with carbidopa"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Neurophysiology",
+            "topic": "Neurotransmitters",
+            "subtopic": "Parkinson"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_catecholamine_dopamine_signaling"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "section": "Parkinson Disease",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    }
+  ]
+}

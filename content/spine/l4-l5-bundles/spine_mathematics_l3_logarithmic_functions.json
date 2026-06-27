@@ -1,0 +1,393 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_mathematics_l3_logarithmic_functions",
+    "anchor_primary_domain": "mathematics",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_mathematics_l3_logarithmic_functions.mathematics.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "6 per-context concepts merged into 6 universal concepts (6 L4 + 0 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_mathematics_l4_change_of_base",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_logarithmic_functions",
+      "content": {
+        "title": "Change-of-Base Formula",
+        "definition": "log_b x = (ln x)/(ln b), converting logarithms to any convenient base, typically e or 10.",
+        "summary": "Change of base enables calculator evaluation of logs in arbitrary bases and appears in algorithm analysis."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Functions & Graphs",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_logarithmic_functions",
+        "prerequisites": [
+          "spine_mathematics_l4_logarithm_properties"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Logarithms invert exponentials and simplify multiplicative change.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Pre-Calculus & Functions",
+            "topic": "Logarithmic Functions",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_logarithm_properties"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Precalculus 2e",
+            "chapter": "6",
+            "section": "Change-of-Base Formula"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_logarithm_as_inverse",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_logarithmic_functions",
+      "content": {
+        "title": "Logarithm as Inverse of Exponential",
+        "definition": "y = log_b(x) means b^y = x for b > 0, b ≠ 1; the logarithm is the exponent that produces x from base b.",
+        "summary": "Logarithmic and exponential functions are inverses, interchanging exponent and output roles."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Functions & Graphs",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_logarithmic_functions",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_mathematics_l4_logarithm_properties",
+          "spine_mathematics_l4_natural_logarithm"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Logarithms invert exponentials and simplify multiplicative change.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Pre-Calculus & Functions",
+            "topic": "Logarithmic Functions",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_logarithm_properties",
+              "spine_mathematics_l4_natural_logarithm"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Precalculus 2e",
+            "chapter": "6",
+            "section": "Logarithm as Inverse of Exponential"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_logarithm_properties",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_logarithmic_functions",
+      "content": {
+        "title": "Properties of Logarithms",
+        "definition": "Rules log_b(xy) = log_b x + log_b y, log_b(x/y) = log_b x − log_b y, and log_b(x^p) = p log_b x for valid arguments.",
+        "summary": "Log properties convert products to sums and powers to products, essential for solving equations and differentiating log functions."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Functions & Graphs",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_logarithmic_functions",
+        "prerequisites": [
+          "spine_mathematics_l4_logarithm_as_inverse"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_logarithmic_equations"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Logarithms invert exponentials and simplify multiplicative change.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Pre-Calculus & Functions",
+            "topic": "Logarithmic Functions",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_logarithm_as_inverse"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_logarithmic_equations"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Precalculus 2e",
+            "chapter": "6",
+            "section": "Properties of Logarithms"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_logarithmic_equations",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_logarithmic_functions",
+      "content": {
+        "title": "Solving Logarithmic and Exponential Equations",
+        "definition": "Methods combining exponentiation, log application to both sides, and domain checking to solve equations involving logs and exponentials.",
+        "summary": "Unified exponential-log equation solving supports separable differential equations and half-life calculations."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Functions & Graphs",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_logarithmic_functions",
+        "prerequisites": [
+          "spine_mathematics_l4_logarithm_properties"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Logarithms invert exponentials and simplify multiplicative change.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Pre-Calculus & Functions",
+            "topic": "Logarithmic Functions",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_logarithm_properties"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Precalculus 2e",
+            "chapter": "6",
+            "section": "Solving Logarithmic and Exponential Equations"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_logarithmic_graphs",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_logarithmic_functions",
+      "content": {
+        "title": "Logarithmic Graphs and Transformations",
+        "definition": "Graphs of y = log_b x with vertical asymptote x = 0, domain (0, ∞), and transformations y = a log_b(x − h) + k.",
+        "summary": "Log graphs rise slowly, reflecting compressed scale for large multiplicative ranges such as pH and decibels."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Functions & Graphs",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_logarithmic_functions",
+        "prerequisites": [
+          "spine_mathematics_l4_logarithm_as_inverse"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Logarithms invert exponentials and simplify multiplicative change.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Pre-Calculus & Functions",
+            "topic": "Logarithmic Functions",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_logarithm_as_inverse"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Precalculus 2e",
+            "chapter": "6",
+            "section": "Logarithmic Graphs and Transformations"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_natural_logarithm",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_logarithmic_functions",
+      "content": {
+        "title": "Natural Logarithm (ln)",
+        "definition": "The logarithm with base e, written ln x = log_e x, inverse of eˣ and central to calculus integration of 1/x.",
+        "summary": "ln x appears in growth/decay models, entropy, and as the antiderivative of 1/x for x > 0."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Functions & Graphs",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_logarithmic_functions",
+        "prerequisites": [
+          "spine_mathematics_l4_logarithm_as_inverse"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Logarithms invert exponentials and simplify multiplicative change.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Pre-Calculus & Functions",
+            "topic": "Logarithmic Functions",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_logarithm_as_inverse"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Precalculus 2e",
+            "chapter": "6",
+            "section": "Natural Logarithm (ln)"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,559 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_meningitis_and_encephalitis",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_medicine_clinical_l3_meningitis_and_encephalitis.medicine_clinical.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "8 per-context concepts merged into 8 universal concepts (5 L4 + 3 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_bacterial_meningitis_empiric_therapy",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_meningitis_and_encephalitis",
+      "content": {
+        "title": "Bacterial Meningitis Empiric Antibiotic Therapy",
+        "definition": "Age- and setting-appropriate empiric regimens with adjunct dexamethasone in adults when indicated.",
+        "summary": "Delay in antibiotics worsens outcomes; blood cultures should not postpone treatment."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "CNS Infections",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_meningitis_and_encephalitis",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_csf_interpretation"
+        ],
+        "unlocks": [
+          "spine_medicine_clinical_l4_meningococcal_prophylaxis",
+          "spine_medicine_clinical_l5_age_specific_meningitis_antibiotics"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Bacterial Meningitis Empiric Antibiotic Therapy",
+            "relevance": "Neurologic presentation and CSF interpretation; organism-specific empiric antibiotics, prophylaxis, and antivirals.",
+            "applications": [
+              "HSV encephalitis",
+              "Neisseria prophylaxis"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Medicine (Clinical)",
+            "subcategory": "Neurology / Infectious Disease",
+            "topic": "Meningitis and Encephalitis",
+            "subtopic": "Antibiotics"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_csf_interpretation"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_clinical_l4_meningococcal_prophylaxis",
+              "spine_medicine_clinical_l5_age_specific_meningitis_antibiotics"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Bacterial Meningitis",
+            "section": "Treatment",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_csf_interpretation",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_meningitis_and_encephalitis",
+      "content": {
+        "title": "Lumbar Puncture and CSF Interpretation",
+        "definition": "Opening pressure, cell count differential, glucose, protein, and Gram stain interpretation.",
+        "summary": "Bacterial patterns show neutrophilic pleocytosis and low glucose; viral often lymphocytic."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "CNS Infections",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_meningitis_and_encephalitis",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_meningitis_vs_encephalitis"
+        ],
+        "unlocks": [
+          "spine_medicine_clinical_l4_bacterial_meningitis_empiric_therapy",
+          "spine_medicine_clinical_l4_viral_cns_infection_management",
+          "spine_medicine_clinical_l5_csf_pattern_comparison",
+          "spine_medicine_clinical_l5_lp_contraindications"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Lumbar Puncture and CSF Interpretation",
+            "relevance": "Neurologic presentation and CSF interpretation; organism-specific empiric antibiotics, prophylaxis, and antivirals.",
+            "applications": [
+              "HSV encephalitis",
+              "Neisseria prophylaxis"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Medicine (Clinical)",
+            "subcategory": "Neurology / Infectious Disease",
+            "topic": "Meningitis and Encephalitis",
+            "subtopic": "CSF"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_meningitis_vs_encephalitis"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_clinical_l4_bacterial_meningitis_empiric_therapy",
+              "spine_medicine_clinical_l4_viral_cns_infection_management",
+              "spine_medicine_clinical_l5_csf_pattern_comparison",
+              "spine_medicine_clinical_l5_lp_contraindications"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Meningitis",
+            "section": "Cerebrospinal Fluid Analysis",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_meningitis_vs_encephalitis",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_meningitis_and_encephalitis",
+      "content": {
+        "title": "Meningitis vs Encephalitis Clinical Distinction",
+        "definition": "Meningeal inflammation signs versus altered cognition, seizures, and focal deficits in encephalitis.",
+        "summary": "Encephalitis may present with personality change and parenchymal findings on MRI."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "CNS Infections",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_meningitis_and_encephalitis",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_medicine_clinical_l4_csf_interpretation"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Meningitis vs Encephalitis Clinical Distinction",
+            "relevance": "Neurologic presentation and CSF interpretation; organism-specific empiric antibiotics, prophylaxis, and antivirals.",
+            "applications": [
+              "HSV encephalitis",
+              "Neisseria prophylaxis"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Medicine (Clinical)",
+            "subcategory": "Neurology / Infectious Disease",
+            "topic": "Meningitis and Encephalitis",
+            "subtopic": "Distinction"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_medicine_clinical_l4_csf_interpretation"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Meningitis",
+            "section": "Introduction",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_meningococcal_prophylaxis",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_meningitis_and_encephalitis",
+      "content": {
+        "title": "Meningococcal Prophylaxis for Contacts",
+        "definition": "Post-exposure chemoprophylaxis with rifampin, ciprofloxacin, or ceftriaxone for close contacts.",
+        "summary": "Prophylaxis targets nasopharyngeal carriage to prevent secondary cases."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "CNS Infections",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_meningitis_and_encephalitis",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_bacterial_meningitis_empiric_therapy"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Meningococcal Prophylaxis for Contacts",
+            "relevance": "Neurologic presentation and CSF interpretation; organism-specific empiric antibiotics, prophylaxis, and antivirals.",
+            "applications": [
+              "HSV encephalitis",
+              "Neisseria prophylaxis"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Medicine (Clinical)",
+            "subcategory": "Neurology / Infectious Disease",
+            "topic": "Meningitis and Encephalitis",
+            "subtopic": "Prophylaxis"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_bacterial_meningitis_empiric_therapy"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Meningococcal Meningitis",
+            "section": "Prophylaxis",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_viral_cns_infection_management",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_meningitis_and_encephalitis",
+      "content": {
+        "title": "Viral Meningitis and HSV Encephalitis",
+        "definition": "Supportive care for most viral meningitis versus urgent IV acyclovir for suspected HSV encephalitis.",
+        "summary": "Temporal lobe involvement and CSF PCR guide HSV therapy."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "CNS Infections",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_meningitis_and_encephalitis",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_csf_interpretation"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Viral Meningitis and HSV Encephalitis",
+            "relevance": "Neurologic presentation and CSF interpretation; organism-specific empiric antibiotics, prophylaxis, and antivirals.",
+            "applications": [
+              "HSV encephalitis",
+              "Neisseria prophylaxis"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Medicine (Clinical)",
+            "subcategory": "Neurology / Infectious Disease",
+            "topic": "Meningitis and Encephalitis",
+            "subtopic": "Viral"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_csf_interpretation"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Encephalitis",
+            "section": "Herpes Simplex Encephalitis",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l5_age_specific_meningitis_antibiotics",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_clinical_l3_meningitis_and_encephalitis",
+      "content": {
+        "title": "Neonatal and Elderly Meningitis Regimens",
+        "definition": "Listeria coverage with ampicillin in neonates and older adults alongside standard empiric therapy.",
+        "summary": "Immunocompromised patients may need broader coverage including cryptococcus or TB."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "CNS Infections",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l4_bacterial_meningitis_empiric_therapy",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_bacterial_meningitis_empiric_therapy"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Neonatal and Elderly Meningitis Regimens",
+            "relevance": "Neurologic presentation and CSF interpretation; organism-specific empiric antibiotics, prophylaxis, and antivirals.",
+            "applications": [
+              "HSV encephalitis",
+              "Neisseria prophylaxis"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Medicine (Clinical)",
+            "subcategory": "Neurology / Infectious Disease",
+            "topic": "Meningitis and Encephalitis",
+            "subtopic": "Age Regimens"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_bacterial_meningitis_empiric_therapy"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Bacterial Meningitis",
+            "section": "Empiric Therapy by Age",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l5_csf_pattern_comparison",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_clinical_l3_meningitis_and_encephalitis",
+      "content": {
+        "title": "CSF Findings: Bacterial vs Viral vs Fungal/TB",
+        "definition": "High-yield comparison of pleocytosis, glucose, protein, and opening pressure patterns.",
+        "summary": "TB and fungal meningitis often present subacutely with lymphocytes and very low glucose."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "CNS Infections",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l4_csf_interpretation",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_csf_interpretation"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "CSF Findings: Bacterial vs Viral vs Fungal/TB",
+            "relevance": "Neurologic presentation and CSF interpretation; organism-specific empiric antibiotics, prophylaxis, and antivirals.",
+            "applications": [
+              "HSV encephalitis",
+              "Neisseria prophylaxis"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Medicine (Clinical)",
+            "subcategory": "Neurology / Infectious Disease",
+            "topic": "Meningitis and Encephalitis",
+            "subtopic": "CSF Patterns"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_csf_interpretation"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Meningitis",
+            "section": "CSF Differential Diagnosis",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l5_lp_contraindications",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_clinical_l3_meningitis_and_encephalitis",
+      "content": {
+        "title": "Contraindications to Lumbar Puncture",
+        "definition": "Signs of increased intracranial pressure, coagulopathy, and overlying skin infection.",
+        "summary": "CT may be needed before LP when focal deficits or papilledema are present."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "CNS Infections",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l4_csf_interpretation",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_csf_interpretation"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Contraindications to Lumbar Puncture",
+            "relevance": "Neurologic presentation and CSF interpretation; organism-specific empiric antibiotics, prophylaxis, and antivirals.",
+            "applications": [
+              "HSV encephalitis",
+              "Neisseria prophylaxis"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Medicine (Clinical)",
+            "subcategory": "Neurology / Infectious Disease",
+            "topic": "Meningitis and Encephalitis",
+            "subtopic": "LP Safety"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_csf_interpretation"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Lumbar Puncture",
+            "section": "Contraindications",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    }
+  ]
+}

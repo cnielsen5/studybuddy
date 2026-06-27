@@ -1,0 +1,548 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_cartilage_injuries_and_restoration",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "ABOS-aligned scaffold for abos_p2_sports_medicine."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_cartilage_injuries_and_restoration_core_principles",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_cartilage_injuries_and_restoration",
+      "content": {
+        "title": "Cartilage Injuries and Restoration — Core Principles",
+        "definition": "Focal articular cartilage defects and osteochondral injuries managed with marrow stimulation, grafting, or cell-based therapies.",
+        "summary": "Microfracture, OATS, and MACI are options by defect size and location. OCD lesions in adolescents may require drilling or fixation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Sports Medicine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_cartilage_injuries_and_restoration",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Cartilage Injuries and Restoration — Core Principles",
+            "relevance": "ABOS cartilage/meniscus section.",
+            "applications": [
+              "Defect size classification",
+              "OCD management",
+              "Return to sport after cartilage procedure"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Cartilage",
+            "topic": "Cartilage Injuries and Restoration",
+            "subtopic": "Cartilage Injuries and Restoration — Core Principles"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Cartilage Injuries and Restoration",
+            "chapter": "NBK442001",
+            "section": "Cartilage Restoration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_cartilage_injuries_and_restoration_evaluation_and_diagnosis",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_cartilage_injuries_and_restoration",
+      "content": {
+        "title": "Evaluation and Diagnosis",
+        "definition": "History, physical examination, and initial imaging for cartilage injuries and restoration.",
+        "summary": "Systematic assessment identifies severity, associated injuries, and urgency in cartilage injuries and restoration."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Sports Medicine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_cartilage_injuries_and_restoration",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_cartilage_injuries_and_restoration_core_principles"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Evaluation and Diagnosis",
+            "relevance": "ABOS cartilage/meniscus section.",
+            "applications": [
+              "Defect size classification",
+              "OCD management",
+              "Return to sport after cartilage procedure"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Cartilage",
+            "topic": "Cartilage Injuries and Restoration",
+            "subtopic": "Evaluation and Diagnosis"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_cartilage_injuries_and_restoration_core_principles"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Cartilage Injuries and Restoration",
+            "chapter": "NBK442001",
+            "section": "Cartilage Restoration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_cartilage_injuries_and_restoration_management_principles",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_cartilage_injuries_and_restoration",
+      "content": {
+        "title": "Management Principles",
+        "definition": "Nonoperative and operative treatment algorithms for cartilage injuries and restoration.",
+        "summary": "Microfracture, OATS, and MACI are options by defect size and location."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Sports Medicine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_cartilage_injuries_and_restoration",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_cartilage_injuries_and_restoration_evaluation_and_diagnosis"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Management Principles",
+            "relevance": "ABOS cartilage/meniscus section.",
+            "applications": [
+              "Defect size classification",
+              "OCD management",
+              "Return to sport after cartilage procedure"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Cartilage",
+            "topic": "Cartilage Injuries and Restoration",
+            "subtopic": "Management Principles"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_cartilage_injuries_and_restoration_evaluation_and_diagnosis"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Cartilage Injuries and Restoration",
+            "chapter": "NBK442001",
+            "section": "Cartilage Restoration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_cartilage_injuries_and_restoration_defect_size_classificatio",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_cartilage_injuries_and_restoration",
+      "content": {
+        "title": "Defect size classification",
+        "definition": "Focused assessment and management of defect size classification in the context of cartilage injuries and restoration.",
+        "summary": "Defect size classification — key decision points from Sports Medicine practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Sports Medicine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_cartilage_injuries_and_restoration",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_cartilage_injuries_and_restoration_management_principles"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Defect size classification",
+            "relevance": "ABOS cartilage/meniscus section.",
+            "applications": [
+              "Defect size classification",
+              "OCD management",
+              "Return to sport after cartilage procedure"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Cartilage",
+            "topic": "Cartilage Injuries and Restoration",
+            "subtopic": "Defect size classification"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_cartilage_injuries_and_restoration_management_principles"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Cartilage Injuries and Restoration",
+            "chapter": "NBK442001",
+            "section": "Cartilage Restoration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_cartilage_injuries_and_restoration_ocd_management",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_cartilage_injuries_and_restoration",
+      "content": {
+        "title": "OCD management",
+        "definition": "Focused assessment and management of ocd management in the context of cartilage injuries and restoration.",
+        "summary": "OCD management — key decision points from Sports Medicine practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Sports Medicine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_cartilage_injuries_and_restoration",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_cartilage_injuries_and_restoration_defect_size_classificatio"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "OCD management",
+            "relevance": "ABOS cartilage/meniscus section.",
+            "applications": [
+              "Defect size classification",
+              "OCD management",
+              "Return to sport after cartilage procedure"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Cartilage",
+            "topic": "Cartilage Injuries and Restoration",
+            "subtopic": "OCD management"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_cartilage_injuries_and_restoration_defect_size_classificatio"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Cartilage Injuries and Restoration",
+            "chapter": "NBK442001",
+            "section": "Cartilage Restoration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_cartilage_injuries_and_restoration_return_to_sport_after_car",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_cartilage_injuries_and_restoration",
+      "content": {
+        "title": "Return to sport after cartilage procedure",
+        "definition": "Focused assessment and management of return to sport after cartilage procedure in the context of cartilage injuries and restoration.",
+        "summary": "Return to sport after cartilage procedure — key decision points from Sports Medicine practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Sports Medicine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_cartilage_injuries_and_restoration",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_cartilage_injuries_and_restoration_ocd_management"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Return to sport after cartilage procedure",
+            "relevance": "ABOS cartilage/meniscus section.",
+            "applications": [
+              "Defect size classification",
+              "OCD management",
+              "Return to sport after cartilage procedure"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Cartilage",
+            "topic": "Cartilage Injuries and Restoration",
+            "subtopic": "Return to sport after cartilage procedure"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_cartilage_injuries_and_restoration_ocd_management"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Cartilage Injuries and Restoration",
+            "chapter": "NBK442001",
+            "section": "Cartilage Restoration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_cartilage_injuries_and_restoration_complications_and_outcome",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_cartilage_injuries_and_restoration",
+      "content": {
+        "title": "Complications and Outcomes",
+        "definition": "Recognized complications, failure modes, and expected recovery after treatment of cartilage injuries and restoration.",
+        "summary": "Anticipate, diagnose, and manage complications; counsel on prognosis and rehabilitation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Sports Medicine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_cartilage_injuries_and_restoration",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_cartilage_injuries_and_restoration_return_to_sport_after_car"
+        ],
+        "unlocks": [
+          "spine_medicine_clinical_l5_cartilage_injuries_and_restoration_salvage_and_revision"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Complications and Outcomes",
+            "relevance": "ABOS cartilage/meniscus section.",
+            "applications": [
+              "Defect size classification",
+              "OCD management",
+              "Return to sport after cartilage procedure"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Cartilage",
+            "topic": "Cartilage Injuries and Restoration",
+            "subtopic": "Complications and Outcomes"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_cartilage_injuries_and_restoration_return_to_sport_after_car"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_clinical_l5_cartilage_injuries_and_restoration_salvage_and_revision"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Cartilage Injuries and Restoration",
+            "chapter": "NBK442001",
+            "section": "Cartilage Restoration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l5_cartilage_injuries_and_restoration_salvage_and_revision",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_clinical_l3_cartilage_injuries_and_restoration",
+      "content": {
+        "title": "Salvage and Revision Strategies",
+        "definition": "Revision and salvage options when initial management of cartilage injuries and restoration fails.",
+        "summary": "Staged revision and alternative strategies when primary treatment fails or complications develop."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Sports Medicine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l4_cartilage_injuries_and_restoration_complications_and_outcome",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_cartilage_injuries_and_restoration_complications_and_outcome"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Salvage and Revision Strategies",
+            "relevance": "ABOS cartilage/meniscus section.",
+            "applications": [
+              "Defect size classification",
+              "OCD management",
+              "Return to sport after cartilage procedure"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Cartilage",
+            "topic": "Cartilage Injuries and Restoration",
+            "subtopic": "Salvage and Revision Strategies"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_cartilage_injuries_and_restoration_complications_and_outcome"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Cartilage Injuries and Restoration",
+            "chapter": "NBK442001",
+            "section": "Cartilage Restoration"
+          }
+        ]
+      }
+    }
+  ]
+}

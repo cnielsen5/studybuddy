@@ -1,0 +1,559 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_preclinical_l3_nutrient_absorption_physiology",
+    "anchor_primary_domain": "medicine_preclinical",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_medicine_preclinical_l3_nutrient_absorption_physiology.medicine_preclinical.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "8 per-context concepts merged into 8 universal concepts (5 L4 + 3 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_preclinical_l4_carbohydrate_digestion_absorption",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_preclinical_l3_nutrient_absorption_physiology",
+      "content": {
+        "title": "Carbohydrate Digestion and Absorption",
+        "definition": "Enzymatic hydrolysis of starch and disaccharides to monosaccharides (glucose, galactose, fructose) absorbed via specific transporters in the small intestinal brush border.",
+        "summary": "SGLT1 cotransports glucose and galactose with Na+. GLUT5 absorbs fructose. Lactase deficiency causes lactose intolerance."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Gastrointestinal Physiology",
+        "primary_domain": "medicine_preclinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_preclinical_l3_nutrient_absorption_physiology",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_medicine_preclinical_l4_protein_digestion_absorption",
+          "spine_medicine_preclinical_l4_lipid_digestion_absorption"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Carbohydrate Digestion and Absorption",
+            "relevance": "Lactose intolerance and SGLT2 inhibitors.",
+            "applications": [
+              "SGLT1 glucose absorption",
+              "Lactase brush border enzyme"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Gastrointestinal Physiology",
+            "topic": "Nutrient Absorption",
+            "subtopic": "Carbohydrates"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_medicine_preclinical_l4_protein_digestion_absorption",
+              "spine_medicine_preclinical_l4_lipid_digestion_absorption"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "23",
+            "section": "23.5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_preclinical_l4_iron_absorption_regulation",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_preclinical_l3_nutrient_absorption_physiology",
+      "content": {
+        "title": "Iron Absorption and Regulation",
+        "definition": "Duodenal enterocyte uptake of non-heme iron via DMT1 and export through ferroportin, regulated by hepcidin controlling systemic iron balance.",
+        "summary": "Hepcidin blocks ferroportin in iron overload. Iron deficiency increases absorption efficiency."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Gastrointestinal Physiology",
+        "primary_domain": "medicine_preclinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_preclinical_l3_nutrient_absorption_physiology",
+        "prerequisites": [
+          "spine_medicine_preclinical_l4_vitamin_b12_intrinsic_factor"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Iron Absorption and Regulation",
+            "relevance": "Anemia of chronic disease and hemochromatosis.",
+            "applications": [
+              "DMT1 duodenal uptake",
+              "Hepcidin-ferroportin axis"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Gastrointestinal Physiology",
+            "topic": "Nutrient Absorption",
+            "subtopic": "Iron"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_preclinical_l4_vitamin_b12_intrinsic_factor"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "23",
+            "section": "23.6"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_preclinical_l4_lipid_digestion_absorption",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_preclinical_l3_nutrient_absorption_physiology",
+      "content": {
+        "title": "Lipid Digestion and Absorption",
+        "definition": "Emulsification and lipase hydrolysis of triglycerides, micelle formation, enterocyte re-esterification, and chylomicron packaging for lymphatic transport.",
+        "summary": "Bile salts form micelles delivering lipid digestion products to enterocytes. Chylomicrons bypass portal circulation via lacteals."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Gastrointestinal Physiology",
+        "primary_domain": "medicine_preclinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_preclinical_l3_nutrient_absorption_physiology",
+        "prerequisites": [
+          "spine_medicine_preclinical_l4_protein_digestion_absorption"
+        ],
+        "unlocks": [
+          "spine_medicine_preclinical_l4_vitamin_b12_intrinsic_factor",
+          "spine_medicine_preclinical_l5_celiac_malabsorption"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Lipid Digestion and Absorption",
+            "relevance": "Steatorrhea and bile acid deficiency.",
+            "applications": [
+              "Bile salt micelles",
+              "Chylomicron lymphatic transport"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Gastrointestinal Physiology",
+            "topic": "Nutrient Absorption",
+            "subtopic": "Lipids"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_preclinical_l4_protein_digestion_absorption"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_preclinical_l4_vitamin_b12_intrinsic_factor",
+              "spine_medicine_preclinical_l5_celiac_malabsorption"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "23",
+            "section": "23.6"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_preclinical_l4_protein_digestion_absorption",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_preclinical_l3_nutrient_absorption_physiology",
+      "content": {
+        "title": "Protein Digestion and Absorption",
+        "definition": "Gastric and pancreatic proteases cleaving proteins to di- and tripeptides and amino acids absorbed via PepT1 and amino acid transporters in enterocytes.",
+        "summary": "Pepsin initiates in stomach; trypsin and chymotrypsin complete in duodenum. Absorbed amino acids enter portal circulation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Gastrointestinal Physiology",
+        "primary_domain": "medicine_preclinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_preclinical_l3_nutrient_absorption_physiology",
+        "prerequisites": [
+          "spine_medicine_preclinical_l4_carbohydrate_digestion_absorption"
+        ],
+        "unlocks": [
+          "spine_medicine_preclinical_l4_lipid_digestion_absorption"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Protein Digestion and Absorption",
+            "relevance": "Malabsorption and celiac disease.",
+            "applications": [
+              "PepT1 di/tripeptide transport",
+              "Trypsin activation cascade"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Gastrointestinal Physiology",
+            "topic": "Nutrient Absorption",
+            "subtopic": "Proteins"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_preclinical_l4_carbohydrate_digestion_absorption"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_preclinical_l4_lipid_digestion_absorption"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "23",
+            "section": "23.5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_preclinical_l4_vitamin_b12_intrinsic_factor",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_preclinical_l3_nutrient_absorption_physiology",
+      "content": {
+        "title": "Vitamin B12 and Intrinsic Factor",
+        "definition": "Gastric parietal cell secretion of intrinsic factor binding dietary B12 for absorption via cubilin receptor in terminal ileum.",
+        "summary": "B12 deficiency causes megaloblastic anemia and neurologic deficits. Pernicious anemia is autoimmune IF deficiency."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Gastrointestinal Physiology",
+        "primary_domain": "medicine_preclinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_preclinical_l3_nutrient_absorption_physiology",
+        "prerequisites": [
+          "spine_medicine_preclinical_l4_lipid_digestion_absorption"
+        ],
+        "unlocks": [
+          "spine_medicine_preclinical_l5_pernicious_anemia_if"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Vitamin B12 and Intrinsic Factor",
+            "relevance": "Megaloblastic anemia workup.",
+            "applications": [
+              "Intrinsic factor from parietal cells",
+              "Terminal ileum absorption"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Gastrointestinal Physiology",
+            "topic": "Nutrient Absorption",
+            "subtopic": "B12"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_preclinical_l4_lipid_digestion_absorption"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_preclinical_l5_pernicious_anemia_if"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "section": "Vitamin B12 Deficiency",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_preclinical_l5_celiac_malabsorption",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_preclinical_l3_nutrient_absorption_physiology",
+      "content": {
+        "title": "Celiac Disease Malabsorption",
+        "definition": "Autoimmune gluten sensitivity damaging small intestinal villi, reducing absorptive surface and causing malabsorption of fats, vitamins, and minerals.",
+        "summary": "Anti-tTG antibodies are diagnostic. Villous atrophy on biopsy confirms. Gluten-free diet is treatment."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Gastrointestinal Physiology",
+        "primary_domain": "medicine_preclinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_preclinical_l4_lipid_digestion_absorption",
+        "prerequisites": [
+          "spine_medicine_preclinical_l4_lipid_digestion_absorption"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Celiac Disease Malabsorption",
+            "relevance": "Malabsorption differential diagnosis.",
+            "applications": [
+              "Villous atrophy",
+              "Anti-tTG antibodies"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Gastrointestinal Physiology",
+            "topic": "Nutrient Absorption",
+            "subtopic": "Celiac"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_preclinical_l4_lipid_digestion_absorption"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "section": "Celiac Disease",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_preclinical_l5_lactose_intolerance",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_preclinical_l3_nutrient_absorption_physiology",
+      "content": {
+        "title": "Lactose Intolerance",
+        "definition": "Lactase deficiency causing undigested lactose osmotic diarrhea and bacterial fermentation gas after dairy ingestion.",
+        "summary": "Primary lactase non-persistence is common in adults. Secondary lactase loss follows mucosal injury."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Gastrointestinal Physiology",
+        "primary_domain": "medicine_preclinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_preclinical_l4_carbohydrate_digestion_absorption",
+        "prerequisites": [
+          "spine_medicine_preclinical_l4_carbohydrate_digestion_absorption"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Lactose Intolerance",
+            "relevance": "Common GI complaint diagnosis.",
+            "applications": [
+              "Osmotic diarrhea mechanism",
+              "Hydrogen breath test"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Gastrointestinal Physiology",
+            "topic": "Nutrient Absorption",
+            "subtopic": "Lactose"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_preclinical_l4_carbohydrate_digestion_absorption"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "section": "Lactose Intolerance",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_preclinical_l5_pernicious_anemia_if",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_preclinical_l3_nutrient_absorption_physiology",
+      "content": {
+        "title": "Pernicious Anemia (Intrinsic Factor Deficiency)",
+        "definition": "Autoimmune destruction of gastric parietal cells reducing intrinsic factor and B12 absorption, causing macrocytic anemia and subacute combined degeneration.",
+        "summary": "Anti-parietal cell and anti-IF antibodies present. Requires lifelong B12 replacement."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Gastrointestinal Physiology",
+        "primary_domain": "medicine_preclinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_preclinical_l4_vitamin_b12_intrinsic_factor",
+        "prerequisites": [
+          "spine_medicine_preclinical_l4_vitamin_b12_intrinsic_factor"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Pernicious Anemia (Intrinsic Factor Deficiency)",
+            "relevance": "B12 deficiency neurologic signs.",
+            "applications": [
+              "Anti-intrinsic factor antibodies",
+              "Subacute combined degeneration"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Gastrointestinal Physiology",
+            "topic": "Nutrient Absorption",
+            "subtopic": "Pernicious Anemia"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_preclinical_l4_vitamin_b12_intrinsic_factor"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "section": "Pernicious Anemia",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    }
+  ]
+}

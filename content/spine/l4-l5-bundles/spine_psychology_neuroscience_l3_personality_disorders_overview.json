@@ -1,0 +1,462 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_psychology_neuroscience_l3_personality_disorders_overview",
+    "anchor_primary_domain": "psychology_neuroscience",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_psychology_neuroscience_l3_personality_disorders_overview.medicine_clinical.json",
+      "content/spine/l4-l5-bundles/spine_psychology_neuroscience_l3_personality_disorders_overview.psychology_neuroscience.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "9 per-context concepts merged into 9 universal concepts (8 L4 + 1 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_psychology_neuroscience_l4_antisocial_management_legal_interface",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_personality_disorders_overview",
+      "content": {
+        "title": "Antisocial Traits and Legal/Forensic Interface",
+        "definition": "Risk assessment, contingency management, and mandated treatment contexts.",
+        "summary": "Low empathy and manipulation complicate therapeutic alliance."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Personality Disorders",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing ."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_personality_disorders_overview",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Antisocial Traits and Legal/Forensic Interface",
+            "relevance": "Cluster-based clinical approach including DBT for borderline personality disorder.",
+            "applications": [
+              "Borderline PD management",
+              "Antisocial vs avoidant clusters"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Medicine (Clinical)",
+            "subcategory": "Psychiatry & Behavioral Health",
+            "topic": "Personality Disorders Overview",
+            "subtopic": "Antisocial"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Antisocial Personality Disorder",
+            "section": "Management",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l4_antisocial_narcissistic_overview",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_personality_disorders_overview",
+      "content": {
+        "title": "Antisocial and Narcissistic Personality Features",
+        "definition": "Disregard for others' rights versus grandiosity and need for admiration.",
+        "summary": "Conduct history distinguishes antisocial patterns from situational aggression."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Personality Disorders",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing ."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_personality_disorders_overview",
+        "prerequisites": [
+          "spine_psychology_neuroscience_l4_borderline_personality_features"
+        ],
+        "unlocks": [
+          "spine_psychology_neuroscience_l4_dimensional_trait_models"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Antisocial and Narcissistic Personality Features",
+            "relevance": "DSM-based psychopathology classification and behavioral mechanisms.",
+            "applications": [
+              "Cluster B"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Psychology & Neuroscience",
+            "subcategory": "Abnormal Psychology & Psychopathology",
+            "topic": "Personality Disorders Overview",
+            "subtopic": "Cluster B"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_psychology_neuroscience_l4_borderline_personality_features"
+            ],
+            "unlocks_in_context": [
+              "spine_psychology_neuroscience_l4_dimensional_trait_models"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Psychology 2e",
+            "chapter": "15",
+            "section": "15.9.2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l4_dimensional_trait_models",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_personality_disorders_overview",
+      "content": {
+        "title": "Dimensional Trait and Functioning Models",
+        "definition": "Five-factor and ICD-11 severity continua complement categorical PD diagnoses.",
+        "summary": "Trait measures capture subclinical dysfunction and treatment change."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Personality Disorders",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing ."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_personality_disorders_overview",
+        "prerequisites": [
+          "spine_psychology_neuroscience_l4_personality_disorder_clusters"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Dimensional Trait and Functioning Models",
+            "relevance": "DSM-based psychopathology classification and behavioral mechanisms.",
+            "applications": [
+              "Dimensional"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Psychology & Neuroscience",
+            "subcategory": "Abnormal Psychology & Psychopathology",
+            "topic": "Personality Disorders Overview",
+            "subtopic": "Dimensional"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_psychology_neuroscience_l4_personality_disorder_clusters"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Psychology 2e",
+            "chapter": "15",
+            "section": "15.9.3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l4_personality_disorder_clusters",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_personality_disorders_overview",
+      "content": {
+        "title": "DSM Personality Disorder Clusters",
+        "definition": "DSM groups personality disorders into Cluster A (odd/eccentric), Cluster B (dramatic/erratic), and Cluster C (anxious/fearful), organizing overlapping symptom patterns for clinical and educational framing.",
+        "summary": "Cluster A includes paranoid, schizoid, and schizotypal; Cluster B includes antisocial, borderline, histrionic, and narcissistic; Cluster C includes avoidant, dependent, and obsessive-compulsive personality disorders."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Personality Disorders",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing ."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_personality_disorders_overview",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_psychology_neuroscience_l4_borderline_personality_features",
+          "spine_psychology_neuroscience_l4_antisocial_management_legal_interface",
+          "spine_psychology_neuroscience_l5_splitting_countertransference"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Longitudinal Personality Disorder Diagnosis",
+            "relevance": "Cluster-based clinical approach including DBT for borderline personality disorder.",
+            "applications": [
+              "Borderline PD management",
+              "Antisocial vs avoidant clusters"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Medicine (Clinical)",
+            "subcategory": "Psychiatry & Behavioral Health",
+            "topic": "Personality Disorders Overview",
+            "subtopic": "Diagnosis"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_psychology_neuroscience_l4_antisocial_management_legal_interface",
+              "spine_psychology_neuroscience_l5_splitting_countertransference"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "DSM Personality Disorder Clusters",
+            "relevance": "DSM-based psychopathology classification and behavioral mechanisms.",
+            "applications": [
+              "Clusters"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Psychology & Neuroscience",
+            "subcategory": "Abnormal Psychology & Psychopathology",
+            "topic": "Personality Disorders Overview",
+            "subtopic": "Clusters"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_psychology_neuroscience_l4_borderline_personality_features"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-26T05:54:17.140Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Psychology 2e",
+            "chapter": "15",
+            "section": "15.9"
+          },
+          {
+            "source": "StatPearls — Personality Disorders",
+            "section": "Diagnosis",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          },
+          {
+            "source": "OpenStax Psychology 2e",
+            "chapter": "15",
+            "section": "15.9.1"
+          },
+          {
+            "source": "StatPearls — Borderline Personality Disorder",
+            "section": "Treatment",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          },
+          {
+            "source": "StatPearls — Personality Disorders",
+            "section": "Pharmacotherapy",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l4_borderline_personality_features",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_personality_disorders_overview",
+      "content": {
+        "title": "Borderline Personality Features",
+        "definition": "Instability in relationships, self-image, and affect with impulsivity and abandonment fears.",
+        "summary": "Invalidation and emotion dysregulation models inform DBT targets."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Personality Disorders",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing ."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_personality_disorders_overview",
+        "prerequisites": [
+          "spine_psychology_neuroscience_l4_personality_disorder_clusters"
+        ],
+        "unlocks": [
+          "spine_psychology_neuroscience_l4_antisocial_narcissistic_overview"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Borderline Personality Features",
+            "relevance": "DSM-based psychopathology classification and behavioral mechanisms.",
+            "applications": [
+              "Borderline"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Psychology & Neuroscience",
+            "subcategory": "Abnormal Psychology & Psychopathology",
+            "topic": "Personality Disorders Overview",
+            "subtopic": "Borderline"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_psychology_neuroscience_l4_personality_disorder_clusters"
+            ],
+            "unlocks_in_context": [
+              "spine_psychology_neuroscience_l4_antisocial_narcissistic_overview"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Psychology 2e",
+            "chapter": "15",
+            "section": "15.9.1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l5_splitting_countertransference",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_personality_disorders_overview",
+      "content": {
+        "title": "Splitting and Countertransference in Care Teams",
+        "definition": "Idealization-devaluation cycles affecting staff cohesion and continuity of care.",
+        "summary": "Team communication protocols mitigate splitting on inpatient units."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Personality Disorders",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing ."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l4_personality_disorder_clusters",
+        "prerequisites": [
+          "spine_psychology_neuroscience_l4_personality_disorder_clusters"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Splitting and Countertransference in Care Teams",
+            "relevance": "Cluster-based clinical approach including DBT for borderline personality disorder.",
+            "applications": [
+              "Borderline PD management",
+              "Antisocial vs avoidant clusters"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Medicine (Clinical)",
+            "subcategory": "Psychiatry & Behavioral Health",
+            "topic": "Personality Disorders Overview",
+            "subtopic": "Splitting"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_psychology_neuroscience_l4_personality_disorder_clusters"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Borderline Personality Disorder",
+            "section": "Countertransference",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    }
+  ]
+}

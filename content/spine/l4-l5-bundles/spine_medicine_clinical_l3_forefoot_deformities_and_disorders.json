@@ -1,0 +1,548 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_forefoot_deformities_and_disorders",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "ABOS-aligned scaffold for abos_p2_foot_ankle."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_forefoot_deformities_and_disorders_core_principles",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_forefoot_deformities_and_disorders",
+      "content": {
+        "title": "Forefoot Deformities and Disorders — Core Principles",
+        "definition": "Hallux valgus, hallux rigidus, lesser toe deformities, metatarsalgia, and neuroma causing forefoot pain and dysfunction.",
+        "summary": "Hallux valgus angle and IM angle guide bunion surgery. Cheilectomy versus fusion for hallux rigidus depends on arthritis severity."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Foot and Ankle",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_forefoot_deformities_and_disorders",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Forefoot Deformities and Disorders — Core Principles",
+            "relevance": "ABOS forefoot 1% weight.",
+            "applications": [
+              "Bunion osteotomy selection",
+              "Hallux rigidus fusion",
+              "Morton neuroma management"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Forefoot",
+            "topic": "Forefoot Deformities and Disorders",
+            "subtopic": "Forefoot Deformities and Disorders — Core Principles"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Forefoot Deformities and Disorders",
+            "chapter": "NBK557386",
+            "section": "Forefoot"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_forefoot_deformities_and_disorders_evaluation_and_diagnosis",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_forefoot_deformities_and_disorders",
+      "content": {
+        "title": "Evaluation and Diagnosis",
+        "definition": "History, physical examination, and initial imaging for forefoot deformities and disorders.",
+        "summary": "Systematic assessment identifies severity, associated injuries, and urgency in forefoot deformities and disorders."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Foot and Ankle",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_forefoot_deformities_and_disorders",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_forefoot_deformities_and_disorders_core_principles"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Evaluation and Diagnosis",
+            "relevance": "ABOS forefoot 1% weight.",
+            "applications": [
+              "Bunion osteotomy selection",
+              "Hallux rigidus fusion",
+              "Morton neuroma management"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Forefoot",
+            "topic": "Forefoot Deformities and Disorders",
+            "subtopic": "Evaluation and Diagnosis"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_forefoot_deformities_and_disorders_core_principles"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Forefoot Deformities and Disorders",
+            "chapter": "NBK557386",
+            "section": "Forefoot"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_forefoot_deformities_and_disorders_management_principles",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_forefoot_deformities_and_disorders",
+      "content": {
+        "title": "Management Principles",
+        "definition": "Nonoperative and operative treatment algorithms for forefoot deformities and disorders.",
+        "summary": "Hallux valgus angle and IM angle guide bunion surgery."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Foot and Ankle",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_forefoot_deformities_and_disorders",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_forefoot_deformities_and_disorders_evaluation_and_diagnosis"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Management Principles",
+            "relevance": "ABOS forefoot 1% weight.",
+            "applications": [
+              "Bunion osteotomy selection",
+              "Hallux rigidus fusion",
+              "Morton neuroma management"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Forefoot",
+            "topic": "Forefoot Deformities and Disorders",
+            "subtopic": "Management Principles"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_forefoot_deformities_and_disorders_evaluation_and_diagnosis"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Forefoot Deformities and Disorders",
+            "chapter": "NBK557386",
+            "section": "Forefoot"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_forefoot_deformities_and_disorders_bunion_osteotomy_selectio",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_forefoot_deformities_and_disorders",
+      "content": {
+        "title": "Bunion osteotomy selection",
+        "definition": "Focused assessment and management of bunion osteotomy selection in the context of forefoot deformities and disorders.",
+        "summary": "Bunion osteotomy selection — key decision points from Foot and Ankle practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Foot and Ankle",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_forefoot_deformities_and_disorders",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_forefoot_deformities_and_disorders_management_principles"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Bunion osteotomy selection",
+            "relevance": "ABOS forefoot 1% weight.",
+            "applications": [
+              "Bunion osteotomy selection",
+              "Hallux rigidus fusion",
+              "Morton neuroma management"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Forefoot",
+            "topic": "Forefoot Deformities and Disorders",
+            "subtopic": "Bunion osteotomy selection"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_forefoot_deformities_and_disorders_management_principles"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Forefoot Deformities and Disorders",
+            "chapter": "NBK557386",
+            "section": "Forefoot"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_forefoot_deformities_and_disorders_hallux_rigidus_fusion",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_forefoot_deformities_and_disorders",
+      "content": {
+        "title": "Hallux rigidus fusion",
+        "definition": "Focused assessment and management of hallux rigidus fusion in the context of forefoot deformities and disorders.",
+        "summary": "Hallux rigidus fusion — key decision points from Foot and Ankle practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Foot and Ankle",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_forefoot_deformities_and_disorders",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_forefoot_deformities_and_disorders_bunion_osteotomy_selectio"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Hallux rigidus fusion",
+            "relevance": "ABOS forefoot 1% weight.",
+            "applications": [
+              "Bunion osteotomy selection",
+              "Hallux rigidus fusion",
+              "Morton neuroma management"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Forefoot",
+            "topic": "Forefoot Deformities and Disorders",
+            "subtopic": "Hallux rigidus fusion"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_forefoot_deformities_and_disorders_bunion_osteotomy_selectio"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Forefoot Deformities and Disorders",
+            "chapter": "NBK557386",
+            "section": "Forefoot"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_forefoot_deformities_and_disorders_morton_neuroma_management",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_forefoot_deformities_and_disorders",
+      "content": {
+        "title": "Morton neuroma management",
+        "definition": "Focused assessment and management of morton neuroma management in the context of forefoot deformities and disorders.",
+        "summary": "Morton neuroma management — key decision points from Foot and Ankle practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Foot and Ankle",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_forefoot_deformities_and_disorders",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_forefoot_deformities_and_disorders_hallux_rigidus_fusion"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Morton neuroma management",
+            "relevance": "ABOS forefoot 1% weight.",
+            "applications": [
+              "Bunion osteotomy selection",
+              "Hallux rigidus fusion",
+              "Morton neuroma management"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Forefoot",
+            "topic": "Forefoot Deformities and Disorders",
+            "subtopic": "Morton neuroma management"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_forefoot_deformities_and_disorders_hallux_rigidus_fusion"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Forefoot Deformities and Disorders",
+            "chapter": "NBK557386",
+            "section": "Forefoot"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_forefoot_deformities_and_disorders_complications_and_outcome",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_forefoot_deformities_and_disorders",
+      "content": {
+        "title": "Complications and Outcomes",
+        "definition": "Recognized complications, failure modes, and expected recovery after treatment of forefoot deformities and disorders.",
+        "summary": "Anticipate, diagnose, and manage complications; counsel on prognosis and rehabilitation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Foot and Ankle",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_forefoot_deformities_and_disorders",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_forefoot_deformities_and_disorders_morton_neuroma_management"
+        ],
+        "unlocks": [
+          "spine_medicine_clinical_l5_forefoot_deformities_and_disorders_salvage_and_revision"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Complications and Outcomes",
+            "relevance": "ABOS forefoot 1% weight.",
+            "applications": [
+              "Bunion osteotomy selection",
+              "Hallux rigidus fusion",
+              "Morton neuroma management"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Forefoot",
+            "topic": "Forefoot Deformities and Disorders",
+            "subtopic": "Complications and Outcomes"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_forefoot_deformities_and_disorders_morton_neuroma_management"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_clinical_l5_forefoot_deformities_and_disorders_salvage_and_revision"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Forefoot Deformities and Disorders",
+            "chapter": "NBK557386",
+            "section": "Forefoot"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l5_forefoot_deformities_and_disorders_salvage_and_revision",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_clinical_l3_forefoot_deformities_and_disorders",
+      "content": {
+        "title": "Salvage and Revision Strategies",
+        "definition": "Revision and salvage options when initial management of forefoot deformities and disorders fails.",
+        "summary": "Staged revision and alternative strategies when primary treatment fails or complications develop."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Foot and Ankle",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l4_forefoot_deformities_and_disorders_complications_and_outcome",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_forefoot_deformities_and_disorders_complications_and_outcome"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Salvage and Revision Strategies",
+            "relevance": "ABOS forefoot 1% weight.",
+            "applications": [
+              "Bunion osteotomy selection",
+              "Hallux rigidus fusion",
+              "Morton neuroma management"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Forefoot",
+            "topic": "Forefoot Deformities and Disorders",
+            "subtopic": "Salvage and Revision Strategies"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_forefoot_deformities_and_disorders_complications_and_outcome"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Forefoot Deformities and Disorders",
+            "chapter": "NBK557386",
+            "section": "Forefoot"
+          }
+        ]
+      }
+    }
+  ]
+}

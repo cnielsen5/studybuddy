@@ -1,0 +1,347 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_total_hip_arthroplasty",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "Orthopaedic L4/L5 expansion for Total Hip Arthroplasty. 4 L4, 1 L5."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_tha_indications_and_contraindications",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_total_hip_arthroplasty",
+      "content": {
+        "title": "THA Indications and Contraindications",
+        "definition": "End-stage hip arthritis, osteonecrosis, and selected fracture indications with medical optimization.",
+        "summary": "Active infection and severe neurologic disease are contraindications."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Adult Reconstruction",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_total_hip_arthroplasty",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "THA Indications and Contraindications",
+            "relevance": "Core ABOS adult reconstruction topic.",
+            "applications": [
+              "Approach selection",
+              "Component positioning",
+              "Dislocation prevention"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Hip Arthroplasty",
+            "topic": "Total Hip Arthroplasty",
+            "subtopic": "THA Indications and Contraindications"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Total Hip Arthroplasty",
+            "chapter": "NBK441999",
+            "section": "Total Hip Arthroplasty"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_tha_surgical_approaches",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_total_hip_arthroplasty",
+      "content": {
+        "title": "THA Surgical Approaches",
+        "definition": "Posterior, direct anterior, anterolateral, and dual-mobility considerations.",
+        "summary": "Posterior approach has dislocation risk; anterior may reduce muscle damage with learning curve."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Adult Reconstruction",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_total_hip_arthroplasty",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_tha_indications_and_contraindications"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "THA Surgical Approaches",
+            "relevance": "Core ABOS adult reconstruction topic.",
+            "applications": [
+              "Approach selection",
+              "Component positioning",
+              "Dislocation prevention"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Hip Arthroplasty",
+            "topic": "Total Hip Arthroplasty",
+            "subtopic": "THA Surgical Approaches"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_tha_indications_and_contraindications"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Total Hip Arthroplasty",
+            "chapter": "NBK441999",
+            "section": "Total Hip Arthroplasty"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_tha_component_fixation",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_total_hip_arthroplasty",
+      "content": {
+        "title": "THA Component Fixation",
+        "definition": "Cemented versus cementless fixation, porous coating, and dual-mobility bearings.",
+        "summary": "Cementless fixation relies on initial scratch fit and biologic ingrowth."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Adult Reconstruction",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_total_hip_arthroplasty",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_tha_surgical_approaches"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "THA Component Fixation",
+            "relevance": "Core ABOS adult reconstruction topic.",
+            "applications": [
+              "Approach selection",
+              "Component positioning",
+              "Dislocation prevention"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Hip Arthroplasty",
+            "topic": "Total Hip Arthroplasty",
+            "subtopic": "THA Component Fixation"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_tha_surgical_approaches"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Total Hip Arthroplasty",
+            "chapter": "NBK441999",
+            "section": "Total Hip Arthroplasty"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_tha_complications",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_total_hip_arthroplasty",
+      "content": {
+        "title": "THA Complications",
+        "definition": "Dislocation, leg-length inequality, nerve injury, infection, and periprosthetic fracture.",
+        "summary": "Posterior soft-tissue repair and patient education reduce dislocation rate."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Adult Reconstruction",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_total_hip_arthroplasty",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_tha_component_fixation"
+        ],
+        "unlocks": [
+          "spine_medicine_clinical_l5_tha_dislocation_management"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "THA Complications",
+            "relevance": "Core ABOS adult reconstruction topic.",
+            "applications": [
+              "Approach selection",
+              "Component positioning",
+              "Dislocation prevention"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Hip Arthroplasty",
+            "topic": "Total Hip Arthroplasty",
+            "subtopic": "THA Complications"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_tha_component_fixation"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_clinical_l5_tha_dislocation_management"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Total Hip Arthroplasty",
+            "chapter": "NBK441999",
+            "section": "Total Hip Arthroplasty"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l5_tha_dislocation_management",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_clinical_l3_total_hip_arthroplasty",
+      "content": {
+        "title": "THA Dislocation Management",
+        "definition": "Closed reduction, abduction brace, and revision for recurrent instability.",
+        "summary": "Component malposition and soft-tissue insufficiency are revision indications."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Adult Reconstruction",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l4_tha_complications",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_tha_complications"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "THA Dislocation Management",
+            "relevance": "Core ABOS adult reconstruction topic.",
+            "applications": [
+              "Approach selection",
+              "Component positioning",
+              "Dislocation prevention"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Hip Arthroplasty",
+            "topic": "Total Hip Arthroplasty",
+            "subtopic": "THA Dislocation Management"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_tha_complications"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Total Hip Arthroplasty",
+            "chapter": "NBK441999",
+            "section": "Total Hip Arthroplasty"
+          }
+        ]
+      }
+    }
+  ]
+}

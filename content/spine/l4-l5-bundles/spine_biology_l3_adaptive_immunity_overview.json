@@ -1,0 +1,801 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_biology_l3_adaptive_immunity_overview",
+    "anchor_primary_domain": "biology",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_biology_l3_adaptive_immunity_overview.biology.json",
+      "content/spine/l4-l5-bundles/spine_biology_l3_adaptive_immunity_overview.medicine_preclinical.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "13 per-context concepts merged into 10 universal concepts (7 L4 + 3 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_biology_l4_clonal_selection",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_adaptive_immunity_overview",
+      "content": {
+        "title": "Clonal Selection and Lymphocyte Expansion",
+        "definition": "Process by which antigen binding to a lymphocyte receptor selects that clone for proliferation and differentiation, producing effector cells and memory cells specific to the encountered antigen.",
+        "summary": "Clonal selection explains antigen specificity and memory in adaptive immunity. Each lymphocyte recognizes one epitope; antigen encounter drives clonal expansion."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Immune Defense",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_adaptive_immunity_overview",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_biology_l4_primary_secondary_response",
+          "spine_biology_l4_immunological_memory"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Clonal Selection and Lymphocyte Expansion",
+            "relevance": "Core mechanism linking antigen recognition to specific immune responses.",
+            "applications": [
+              "B cell activation",
+              "T cell proliferation"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Immune Defense",
+            "topic": "Adaptive Immunity",
+            "subtopic": "Clonal Selection"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_biology_l4_primary_secondary_response",
+              "spine_biology_l4_immunological_memory"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "44",
+            "section": "44.2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_clonal_selection_principle",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_adaptive_immunity_overview",
+      "content": {
+        "title": "Clonal Selection and Affinity Maturation",
+        "definition": "Antigen-driven proliferation and differentiation of lymphocytes bearing antigen-specific receptors, with somatic hypermutation refining antibody affinity in germinal centers.",
+        "summary": "Clonal selection explains how a vast receptor repertoire yields a focused response. Affinity maturation improves antibody quality during secondary responses."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Immunology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_adaptive_immunity_overview",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_biology_l4_primary_secondary_response",
+          "spine_biology_l4_humoral_vs_cell_mediated"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Clonal Selection and Affinity Maturation",
+            "relevance": "Foundation for understanding lymphoma and immunodeficiency.",
+            "applications": [
+              "B-cell receptor diversity",
+              "T-cell selection"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Adaptive Immunity",
+            "topic": "Adaptive Immunity Overview",
+            "subtopic": "Clonal Selection"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_biology_l4_primary_secondary_response",
+              "spine_biology_l4_humoral_vs_cell_mediated"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "44",
+            "section": "44.2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_humoral_vs_cell_mediated",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_adaptive_immunity_overview",
+      "content": {
+        "title": "Humoral and Cell-Mediated Immunity",
+        "definition": "Two adaptive arms in which B lymphocytes produce circulating antibodies (humoral) and T lymphocytes directly kill infected cells or coordinate responses (cell-mediated).",
+        "summary": "Humoral immunity targets extracellular pathogens via antibody neutralization and opsonization. Cell-mediated immunity eliminates intracellular pathogens through cytotoxic T cells and helper T cell coordination."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Immune Defense",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_adaptive_immunity_overview",
+        "prerequisites": [
+          "spine_biology_l4_clonal_selection_principle"
+        ],
+        "unlocks": [
+          "spine_biology_l4_lymphocyte_activation"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Humoral and Cell-Mediated Immunity",
+            "relevance": "Framework for understanding how adaptive immunity addresses diverse pathogen niches.",
+            "applications": [
+              "Antibody production",
+              "Cytotoxic T cells"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Immune Defense",
+            "topic": "Adaptive Immunity",
+            "subtopic": "Humoral vs Cell-Mediated"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_biology_l4_lymphocyte_activation"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Humoral vs Cell-Mediated Immunity",
+            "relevance": "Framework for immunodeficiency classification.",
+            "applications": [
+              "Antibody-mediated neutralization",
+              "CD8+ cytotoxic T cells"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Adaptive Immunity",
+            "topic": "Adaptive Immunity Overview",
+            "subtopic": "Humoral vs Cellular"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_clonal_selection_principle"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_lymphocyte_activation"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "44",
+            "section": "44.3"
+          },
+          {
+            "source": "NCBI StatPearls",
+            "section": "Adaptive Immunity — Humoral and Cellular",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_immunologic_memory_mechanisms",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_adaptive_immunity_overview",
+      "content": {
+        "title": "Immunologic Memory Mechanisms",
+        "definition": "Persistence of long-lived memory B and T cells with altered activation thresholds enabling rapid recall responses upon re-exposure to the same antigen.",
+        "summary": "Memory lymphocytes circulate and reside in lymphoid and peripheral tissues. They respond faster and with greater magnitude than naïve cells."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Immunology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_adaptive_immunity_overview",
+        "prerequisites": [
+          "spine_biology_l4_primary_secondary_response",
+          "spine_biology_l4_lymphocyte_activation"
+        ],
+        "unlocks": [
+          {
+            "concept_id": "spine_medicine_preclinical_l3_mhc_and_antigen_presentation",
+            "_forward_reference": true
+          }
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Immunologic Memory Mechanisms",
+            "relevance": "Basis for vaccine durability and serologic testing.",
+            "applications": [
+              "Memory B cells",
+              "Central vs effector memory T cells"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Adaptive Immunity",
+            "topic": "Adaptive Immunity Overview",
+            "subtopic": "Memory"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_primary_secondary_response",
+              "spine_biology_l4_lymphocyte_activation"
+            ],
+            "unlocks_in_context": [
+              {
+                "concept_id": "spine_medicine_preclinical_l3_mhc_and_antigen_presentation",
+                "_forward_reference": true
+              }
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "44",
+            "section": "44.7"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_immunological_memory",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_adaptive_immunity_overview",
+      "content": {
+        "title": "Immunological Memory Cells",
+        "definition": "Long-lived memory B and T lymphocytes generated during primary responses that persist and mount accelerated responses upon re-encounter with the same antigen.",
+        "summary": "Memory cells provide durable protection without continuous antigen exposure. They underpin vaccination efficacy and explain why some infections confer lifelong immunity."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Immune Defense",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_adaptive_immunity_overview",
+        "prerequisites": [
+          "spine_biology_l4_clonal_selection"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Immunological Memory Cells",
+            "relevance": "Long-term protection after infection or vaccination.",
+            "applications": [
+              "Memory B cells",
+              "Memory T cells"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Immune Defense",
+            "topic": "Adaptive Immunity",
+            "subtopic": "Memory Cells"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_clonal_selection"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "44",
+            "section": "44.5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_lymphocyte_activation",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_adaptive_immunity_overview",
+      "content": {
+        "title": "Lymphocyte Activation Requirements",
+        "definition": "Dual-signal requirement for full lymphocyte activation involving antigen receptor engagement plus co-stimulatory signals, with MHC molecules presenting processed antigen to T cells.",
+        "summary": "T cells require MHC-presented peptide antigen and co-stimulation to avoid anergy. B cells can be activated by T-dependent or T-independent antigens with distinct outcomes."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Immune Defense",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_adaptive_immunity_overview",
+        "prerequisites": [
+          "spine_biology_l4_humoral_vs_cell_mediated"
+        ],
+        "unlocks": [
+          "spine_biology_l4_immunologic_memory_mechanisms"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Lymphocyte Activation Requirements",
+            "relevance": "Links antigen presentation to productive adaptive responses.",
+            "applications": [
+              "MHC restriction",
+              "Co-stimulation"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Immune Defense",
+            "topic": "Adaptive Immunity",
+            "subtopic": "Activation"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_humoral_vs_cell_mediated"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Lymphocyte Activation Requirements",
+            "relevance": "Explains transplant rejection and anergy in chronic infection.",
+            "applications": [
+              "CD28–B7 co-stimulation",
+              "Anergy without signal 2"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Adaptive Immunity",
+            "topic": "Adaptive Immunity Overview",
+            "subtopic": "Activation Signals"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_humoral_vs_cell_mediated"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_immunologic_memory_mechanisms"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "44",
+            "section": "44.6"
+          },
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "44",
+            "section": "44.4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_primary_secondary_response",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_adaptive_immunity_overview",
+      "content": {
+        "title": "Primary vs Secondary Immune Response",
+        "definition": "The slower, lower-magnitude initial adaptive response to a novel antigen compared with the faster, stronger recall response upon re-exposure due to expanded memory lymphocyte populations.",
+        "summary": "Primary responses generate effector cells and memory over days to weeks. Secondary responses mobilize memory B and T cells rapidly, producing higher antibody titers and faster pathogen clearance."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Immune Defense",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_adaptive_immunity_overview",
+        "prerequisites": [
+          "spine_biology_l4_clonal_selection",
+          "spine_biology_l4_clonal_selection_principle"
+        ],
+        "unlocks": [
+          "spine_biology_l4_immunologic_memory_mechanisms"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Primary vs Secondary Immune Response",
+            "relevance": "Explains immunologic memory and the basis for booster vaccinations.",
+            "applications": [
+              "IgM to IgG switch",
+              "Faster recall kinetics"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Immune Defense",
+            "topic": "Adaptive Immunity",
+            "subtopic": "Primary vs Secondary Response"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_clonal_selection"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Primary vs Secondary Immune Response",
+            "relevance": "IgM vs IgG switch and vaccine booster rationale.",
+            "applications": [
+              "Primary IgM response",
+              "Secondary IgG dominance"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Adaptive Immunity",
+            "topic": "Adaptive Immunity Overview",
+            "subtopic": "Primary vs Secondary"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_clonal_selection_principle"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_immunologic_memory_mechanisms"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "44",
+            "section": "44.4"
+          },
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "44",
+            "section": "44.3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l5_germinal_center_affinity_maturation",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_biology_l3_adaptive_immunity_overview",
+      "content": {
+        "title": "Germinal Center Affinity Maturation",
+        "definition": "Somatic hypermutation and selection in germinal centers producing high-affinity antibody variants on memory B cells and plasma cells.",
+        "summary": "B cells compete for antigen and T follicular helper signals in germinal centers. Selected clones expand; others undergo apoptosis."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Immunology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l4_clonal_selection_principle",
+        "prerequisites": [
+          "spine_biology_l4_clonal_selection_principle"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Germinal Center Affinity Maturation",
+            "relevance": "High-yield for understanding vaccine response quality.",
+            "applications": [
+              "Somatic hypermutation",
+              "Class-switch recombination"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Adaptive Immunity",
+            "topic": "Adaptive Immunity Overview",
+            "subtopic": "Germinal Centers"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_clonal_selection_principle"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "44",
+            "section": "44.4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l5_memory_t_cell_subsets",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_biology_l3_adaptive_immunity_overview",
+      "content": {
+        "title": "Central vs Effector Memory T Cells",
+        "definition": "Memory T-cell subsets distinguished by lymphoid homing versus peripheral tissue surveillance, with different recall kinetics and effector potential.",
+        "summary": "Central memory T cells (CCR7+) circulate through lymph nodes for rapid reactivation. Effector memory T cells (CCR7−) provide immediate tissue surveillance."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Immunology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l4_immunologic_memory_mechanisms",
+        "prerequisites": [
+          "spine_biology_l4_immunologic_memory_mechanisms"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Central vs Effector Memory T Cells",
+            "relevance": "Relevant to chronic viral infection and vaccine design.",
+            "applications": [
+              "CCR7 and lymph node homing",
+              "Tissue-resident memory"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Adaptive Immunity",
+            "topic": "Adaptive Immunity Overview",
+            "subtopic": "Memory T Subsets"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_immunologic_memory_mechanisms"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "section": "Adaptive Immunity — Memory T Cells",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l5_secondary_response_igm_igg_switch",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_biology_l3_adaptive_immunity_overview",
+      "content": {
+        "title": "Secondary Response IgM-to-IgG Switch",
+        "definition": "Accelerated class-switch recombination during secondary responses producing predominantly high-affinity IgG with minimal IgM in recall responses.",
+        "summary": "Memory B cells rapidly differentiate into plasma cells upon re-exposure. Class switching and affinity maturation yield qualitatively superior antibody."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Immunology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l4_primary_secondary_response",
+        "prerequisites": [
+          "spine_biology_l4_primary_secondary_response"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Secondary Response IgM-to-IgG Switch",
+            "relevance": "Explains booster serology patterns.",
+            "applications": [
+              "IgG dominance in recall",
+              "Rapid plasma cell differentiation"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Adaptive Immunity",
+            "topic": "Adaptive Immunity Overview",
+            "subtopic": "Class Switching"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_primary_secondary_response"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "44",
+            "section": "44.5"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,385 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_mathematics_l3_applications_of_derivatives",
+    "anchor_primary_domain": "mathematics",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_mathematics_l3_applications_of_derivatives.mathematics.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "6 per-context concepts merged into 6 universal concepts (6 L4 + 0 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_mathematics_l4_concavity_second_derivative",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_applications_of_derivatives",
+      "content": {
+        "title": "Concavity and Second Derivative Test",
+        "definition": "A function is concave up where f″ > 0 and concave down where f″ < 0; inflection points occur where concavity changes, and f″ at a critical point can confirm extrema.",
+        "summary": "Second-derivative information refines curve shape beyond increasing/decreasing intervals and provides a shortcut for classifying critical points."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_applications_of_derivatives",
+        "prerequisites": [
+          "spine_mathematics_l4_critical_points_first_derivative"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_curve_sketching"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Optimization and related rates translate derivatives into applied decisions.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Single-Variable Calculus",
+            "topic": "Applications of Derivatives",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_critical_points_first_derivative"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_curve_sketching"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 1",
+            "chapter": "4",
+            "section": "Concavity and Second Derivative Test"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_critical_points_first_derivative",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_applications_of_derivatives",
+      "content": {
+        "title": "Critical Points and First Derivative Test",
+        "definition": "Critical points occur where f′(x) = 0 or f′ is undefined; the first derivative test classifies them as local maxima or minima by sign changes of f′.",
+        "summary": "Finding where the rate of change vanishes locates candidate extrema. Sign analysis of f′ on intervals determines increasing and decreasing behavior."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_applications_of_derivatives",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_mathematics_l4_concavity_second_derivative",
+          "spine_mathematics_l4_optimization_problems"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Optimization and related rates translate derivatives into applied decisions.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Single-Variable Calculus",
+            "topic": "Applications of Derivatives",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_concavity_second_derivative",
+              "spine_mathematics_l4_optimization_problems"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 1",
+            "chapter": "4",
+            "section": "Critical Points and First Derivative Test"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_curve_sketching",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_applications_of_derivatives",
+      "content": {
+        "title": "Curve Sketching with Derivatives",
+        "definition": "Systematic graphing using intercepts, asymptotes, intervals of increase/decrease from f′, and concavity from f″ to produce accurate function plots.",
+        "summary": "Combining first- and second-derivative analyses yields complete qualitative graphs without plotting every point."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_applications_of_derivatives",
+        "prerequisites": [
+          "spine_mathematics_l4_concavity_second_derivative"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Optimization and related rates translate derivatives into applied decisions.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Single-Variable Calculus",
+            "topic": "Applications of Derivatives",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_concavity_second_derivative"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 1",
+            "chapter": "4",
+            "section": "Curve Sketching with Derivatives"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_mean_value_theorem",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_applications_of_derivatives",
+      "content": {
+        "title": "Mean Value Theorem",
+        "definition": "If f is continuous on [a, b] and differentiable on (a, b), there exists c in (a, b) such that f′(c) = (f(b) − f(a))/(b − a).",
+        "summary": "The MVT guarantees at least one point where instantaneous rate equals average rate over an interval, underpinning monotonicity and error bounds."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_applications_of_derivatives",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Optimization and related rates translate derivatives into applied decisions.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Single-Variable Calculus",
+            "topic": "Applications of Derivatives",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 1",
+            "chapter": "4",
+            "section": "Mean Value Theorem"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_optimization_problems",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_applications_of_derivatives",
+      "content": {
+        "title": "Optimization Problems",
+        "definition": "Applied problems that maximize or minimize a quantity subject to constraints by identifying a differentiable objective function, finding critical points on a valid domain, and verifying the extremum.",
+        "summary": "Optimization translates word problems into calculus: define variables, write the function to optimize, differentiate, and interpret results in context."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_applications_of_derivatives",
+        "prerequisites": [
+          "spine_mathematics_l4_critical_points_first_derivative"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Optimization and related rates translate derivatives into applied decisions.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Single-Variable Calculus",
+            "topic": "Applications of Derivatives",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_critical_points_first_derivative"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 1",
+            "chapter": "4",
+            "section": "Optimization Problems"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_related_rates",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_applications_of_derivatives",
+      "content": {
+        "title": "Related Rates",
+        "definition": "Problems in which several quantities vary with time and are linked by an equation; differentiating implicitly with respect to time relates their rates of change.",
+        "summary": "Related rates apply the chain rule to dynamic geometric and physical situations such as expanding balloons, sliding ladders, and filling tanks."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_applications_of_derivatives",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Optimization and related rates translate derivatives into applied decisions.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Single-Variable Calculus",
+            "topic": "Applications of Derivatives",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 1",
+            "chapter": "4",
+            "section": "Related Rates"
+          }
+        ]
+      }
+    }
+  ]
+}

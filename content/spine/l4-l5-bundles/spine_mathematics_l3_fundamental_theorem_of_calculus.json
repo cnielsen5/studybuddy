@@ -1,0 +1,269 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_mathematics_l3_fundamental_theorem_of_calculus",
+    "anchor_primary_domain": "mathematics",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_mathematics_l3_fundamental_theorem_of_calculus.mathematics.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "4 per-context concepts merged into 4 universal concepts (4 L4 + 0 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_mathematics_l4_accumulation_functions",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_fundamental_theorem_of_calculus",
+      "content": {
+        "title": "Accumulation Functions",
+        "definition": "Functions defined by F(x) = ∫_a^x f(t) dt whose values represent accumulated quantity from a fixed lower limit to x.",
+        "summary": "Accumulation functions model running totals and their derivatives recover the instantaneous rate being accumulated."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_fundamental_theorem_of_calculus",
+        "prerequisites": [
+          "spine_mathematics_l4_ftc_part1"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "FTC links differentiation and integration as inverse operations.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Single-Variable Calculus",
+            "topic": "Fundamental Theorem of Calculus",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_ftc_part1"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 1",
+            "chapter": "5",
+            "section": "Accumulation Functions"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_ftc_part1",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_fundamental_theorem_of_calculus",
+      "content": {
+        "title": "Fundamental Theorem of Calculus Part 1",
+        "definition": "If f is continuous on [a, b] and F(x) = ∫_a^x f(t) dt, then F′(x) = f(x) for x in (a, b).",
+        "summary": "Part 1 shows differentiation undoes integration: the rate of change of accumulated area equals the integrand."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_fundamental_theorem_of_calculus",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_mathematics_l4_ftc_part2",
+          "spine_mathematics_l4_accumulation_functions"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "FTC links differentiation and integration as inverse operations.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Single-Variable Calculus",
+            "topic": "Fundamental Theorem of Calculus",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_ftc_part2",
+              "spine_mathematics_l4_accumulation_functions"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 1",
+            "chapter": "5",
+            "section": "Fundamental Theorem of Calculus Part 1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_ftc_part2",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_fundamental_theorem_of_calculus",
+      "content": {
+        "title": "Fundamental Theorem of Calculus Part 2",
+        "definition": "If f is continuous on [a, b] and F is any antiderivative of f, then ∫_a^b f(x) dx = F(b) − F(a).",
+        "summary": "Part 2 enables evaluation of definite integrals via antiderivatives, completing the link between rates and totals."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_fundamental_theorem_of_calculus",
+        "prerequisites": [
+          "spine_mathematics_l4_ftc_part1"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_net_change_theorem"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "FTC links differentiation and integration as inverse operations.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Single-Variable Calculus",
+            "topic": "Fundamental Theorem of Calculus",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_ftc_part1"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_net_change_theorem"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 1",
+            "chapter": "5",
+            "section": "Fundamental Theorem of Calculus Part 2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_net_change_theorem",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_fundamental_theorem_of_calculus",
+      "content": {
+        "title": "Net Change Theorem",
+        "definition": "The integral of a rate of change over an interval equals the net change in the original quantity: ∫_a^b F′(x) dx = F(b) − F(a).",
+        "summary": "Net change interprets integration physically: integrating velocity gives displacement; integrating marginal cost gives total cost change."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_fundamental_theorem_of_calculus",
+        "prerequisites": [
+          "spine_mathematics_l4_ftc_part2"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "FTC links differentiation and integration as inverse operations.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Single-Variable Calculus",
+            "topic": "Fundamental Theorem of Calculus",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_ftc_part2"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 1",
+            "chapter": "5",
+            "section": "Net Change Theorem"
+          }
+        ]
+      }
+    }
+  ]
+}

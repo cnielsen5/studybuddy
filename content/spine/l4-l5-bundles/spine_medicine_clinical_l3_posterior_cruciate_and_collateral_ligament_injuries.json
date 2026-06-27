@@ -1,0 +1,548 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_posterior_cruciate_and_collateral_ligament_injuries",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "ABOS-aligned scaffold for abos_p2_sports_medicine."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_posterior_cruciate_and_collateral_ligament_injur_core_princi",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_posterior_cruciate_and_collateral_ligament_injuries",
+      "content": {
+        "title": "Posterior Cruciate and Collateral Ligament Injuries — Core Principles",
+        "definition": "Injuries to the PCL, MCL, LCL, and posterolateral corner causing varus, valgus, or posterior instability of the knee.",
+        "summary": "PCL injuries often from dashboard injury. PLC injuries require anatomic reconstruction. Combined ligament injuries have higher stiffness risk."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Sports Medicine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_posterior_cruciate_and_collateral_ligament_injuries",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Posterior Cruciate and Collateral Ligament Injuries — Core Principles",
+            "relevance": "ABOS knee dislocations/instability 2% weight within sports.",
+            "applications": [
+              "PLC reconstruction",
+              "PCL nonoperative vs operative",
+              "Multi-ligament knee protocol"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Knee Ligaments",
+            "topic": "Posterior Cruciate and Collateral Ligament Injuries",
+            "subtopic": "Posterior Cruciate and Collateral Ligament Injuries — Core Principles"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Posterior Cruciate and Collateral Ligament Injuries",
+            "chapter": "NBK442001",
+            "section": "PCL and Collateral"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_posterior_cruciate_and_collateral_ligament_injur_evaluation_",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_posterior_cruciate_and_collateral_ligament_injuries",
+      "content": {
+        "title": "Evaluation and Diagnosis",
+        "definition": "History, physical examination, and initial imaging for posterior cruciate and collateral ligament injuries.",
+        "summary": "Systematic assessment identifies severity, associated injuries, and urgency in posterior cruciate and collateral ligament injuries."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Sports Medicine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_posterior_cruciate_and_collateral_ligament_injuries",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_posterior_cruciate_and_collateral_ligament_injur_core_princi"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Evaluation and Diagnosis",
+            "relevance": "ABOS knee dislocations/instability 2% weight within sports.",
+            "applications": [
+              "PLC reconstruction",
+              "PCL nonoperative vs operative",
+              "Multi-ligament knee protocol"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Knee Ligaments",
+            "topic": "Posterior Cruciate and Collateral Ligament Injuries",
+            "subtopic": "Evaluation and Diagnosis"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_posterior_cruciate_and_collateral_ligament_injur_core_princi"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Posterior Cruciate and Collateral Ligament Injuries",
+            "chapter": "NBK442001",
+            "section": "PCL and Collateral"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_posterior_cruciate_and_collateral_ligament_injur_management_",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_posterior_cruciate_and_collateral_ligament_injuries",
+      "content": {
+        "title": "Management Principles",
+        "definition": "Nonoperative and operative treatment algorithms for posterior cruciate and collateral ligament injuries.",
+        "summary": "PCL injuries often from dashboard injury."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Sports Medicine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_posterior_cruciate_and_collateral_ligament_injuries",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_posterior_cruciate_and_collateral_ligament_injur_evaluation_"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Management Principles",
+            "relevance": "ABOS knee dislocations/instability 2% weight within sports.",
+            "applications": [
+              "PLC reconstruction",
+              "PCL nonoperative vs operative",
+              "Multi-ligament knee protocol"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Knee Ligaments",
+            "topic": "Posterior Cruciate and Collateral Ligament Injuries",
+            "subtopic": "Management Principles"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_posterior_cruciate_and_collateral_ligament_injur_evaluation_"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Posterior Cruciate and Collateral Ligament Injuries",
+            "chapter": "NBK442001",
+            "section": "PCL and Collateral"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_posterior_cruciate_and_collateral_ligament_injur_plc_reconst",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_posterior_cruciate_and_collateral_ligament_injuries",
+      "content": {
+        "title": "PLC reconstruction",
+        "definition": "Focused assessment and management of plc reconstruction in the context of posterior cruciate and collateral ligament injuries.",
+        "summary": "PLC reconstruction — key decision points from Sports Medicine practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Sports Medicine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_posterior_cruciate_and_collateral_ligament_injuries",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_posterior_cruciate_and_collateral_ligament_injur_management_"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "PLC reconstruction",
+            "relevance": "ABOS knee dislocations/instability 2% weight within sports.",
+            "applications": [
+              "PLC reconstruction",
+              "PCL nonoperative vs operative",
+              "Multi-ligament knee protocol"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Knee Ligaments",
+            "topic": "Posterior Cruciate and Collateral Ligament Injuries",
+            "subtopic": "PLC reconstruction"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_posterior_cruciate_and_collateral_ligament_injur_management_"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Posterior Cruciate and Collateral Ligament Injuries",
+            "chapter": "NBK442001",
+            "section": "PCL and Collateral"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_posterior_cruciate_and_collateral_ligament_injur_pcl_nonoper",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_posterior_cruciate_and_collateral_ligament_injuries",
+      "content": {
+        "title": "PCL nonoperative vs operative",
+        "definition": "Focused assessment and management of pcl nonoperative vs operative in the context of posterior cruciate and collateral ligament injuries.",
+        "summary": "PCL nonoperative vs operative — key decision points from Sports Medicine practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Sports Medicine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_posterior_cruciate_and_collateral_ligament_injuries",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_posterior_cruciate_and_collateral_ligament_injur_plc_reconst"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "PCL nonoperative vs operative",
+            "relevance": "ABOS knee dislocations/instability 2% weight within sports.",
+            "applications": [
+              "PLC reconstruction",
+              "PCL nonoperative vs operative",
+              "Multi-ligament knee protocol"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Knee Ligaments",
+            "topic": "Posterior Cruciate and Collateral Ligament Injuries",
+            "subtopic": "PCL nonoperative vs operative"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_posterior_cruciate_and_collateral_ligament_injur_plc_reconst"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Posterior Cruciate and Collateral Ligament Injuries",
+            "chapter": "NBK442001",
+            "section": "PCL and Collateral"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_posterior_cruciate_and_collateral_ligament_injur_multi_ligam",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_posterior_cruciate_and_collateral_ligament_injuries",
+      "content": {
+        "title": "Multi-ligament knee protocol",
+        "definition": "Focused assessment and management of multi-ligament knee protocol in the context of posterior cruciate and collateral ligament injuries.",
+        "summary": "Multi-ligament knee protocol — key decision points from Sports Medicine practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Sports Medicine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_posterior_cruciate_and_collateral_ligament_injuries",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_posterior_cruciate_and_collateral_ligament_injur_pcl_nonoper"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Multi-ligament knee protocol",
+            "relevance": "ABOS knee dislocations/instability 2% weight within sports.",
+            "applications": [
+              "PLC reconstruction",
+              "PCL nonoperative vs operative",
+              "Multi-ligament knee protocol"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Knee Ligaments",
+            "topic": "Posterior Cruciate and Collateral Ligament Injuries",
+            "subtopic": "Multi-ligament knee protocol"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_posterior_cruciate_and_collateral_ligament_injur_pcl_nonoper"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Posterior Cruciate and Collateral Ligament Injuries",
+            "chapter": "NBK442001",
+            "section": "PCL and Collateral"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_posterior_cruciate_and_collateral_ligament_injur_complicatio",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_posterior_cruciate_and_collateral_ligament_injuries",
+      "content": {
+        "title": "Complications and Outcomes",
+        "definition": "Recognized complications, failure modes, and expected recovery after treatment of posterior cruciate and collateral ligament injuries.",
+        "summary": "Anticipate, diagnose, and manage complications; counsel on prognosis and rehabilitation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Sports Medicine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_posterior_cruciate_and_collateral_ligament_injuries",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_posterior_cruciate_and_collateral_ligament_injur_multi_ligam"
+        ],
+        "unlocks": [
+          "spine_medicine_clinical_l5_posterior_cruciate_and_collateral_ligament_injur_salvage_and"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Complications and Outcomes",
+            "relevance": "ABOS knee dislocations/instability 2% weight within sports.",
+            "applications": [
+              "PLC reconstruction",
+              "PCL nonoperative vs operative",
+              "Multi-ligament knee protocol"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Knee Ligaments",
+            "topic": "Posterior Cruciate and Collateral Ligament Injuries",
+            "subtopic": "Complications and Outcomes"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_posterior_cruciate_and_collateral_ligament_injur_multi_ligam"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_clinical_l5_posterior_cruciate_and_collateral_ligament_injur_salvage_and"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Posterior Cruciate and Collateral Ligament Injuries",
+            "chapter": "NBK442001",
+            "section": "PCL and Collateral"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l5_posterior_cruciate_and_collateral_ligament_injur_salvage_and",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_clinical_l3_posterior_cruciate_and_collateral_ligament_injuries",
+      "content": {
+        "title": "Salvage and Revision Strategies",
+        "definition": "Revision and salvage options when initial management of posterior cruciate and collateral ligament injuries fails.",
+        "summary": "Staged revision and alternative strategies when primary treatment fails or complications develop."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Sports Medicine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l4_posterior_cruciate_and_collateral_ligament_injur_complicatio",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_posterior_cruciate_and_collateral_ligament_injur_complicatio"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Salvage and Revision Strategies",
+            "relevance": "ABOS knee dislocations/instability 2% weight within sports.",
+            "applications": [
+              "PLC reconstruction",
+              "PCL nonoperative vs operative",
+              "Multi-ligament knee protocol"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Knee Ligaments",
+            "topic": "Posterior Cruciate and Collateral Ligament Injuries",
+            "subtopic": "Salvage and Revision Strategies"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_posterior_cruciate_and_collateral_ligament_injur_complicatio"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Posterior Cruciate and Collateral Ligament Injuries",
+            "chapter": "NBK442001",
+            "section": "PCL and Collateral"
+          }
+        ]
+      }
+    }
+  ]
+}

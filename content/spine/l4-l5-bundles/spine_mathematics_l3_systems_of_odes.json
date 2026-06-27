@@ -1,0 +1,341 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_mathematics_l3_systems_of_odes",
+    "anchor_primary_domain": "mathematics",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_mathematics_l3_systems_of_odes.mathematics.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "5 per-context concepts merged into 5 universal concepts (5 L4 + 0 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_mathematics_l4_eigenvalue_method_systems",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_systems_of_odes",
+      "content": {
+        "title": "Eigenvalue Method for Linear Systems",
+        "definition": "Solutions built from eigenvectors v with eigenvalues λ: e^{λt}v forms fundamental solutions when eigenvalues are real and distinct.",
+        "summary": "The eigenvalue method diagonalizes linear system dynamics into independent exponential modes."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Dynamical Systems",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_systems_of_odes",
+        "prerequisites": [
+          "spine_mathematics_l4_matrix_form_linear_systems"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_stability_classification"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Coupled ODEs model interacting populations, circuits, and mechanical systems.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Differential Equations",
+            "topic": "Systems of Differential Equations",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_matrix_form_linear_systems"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_stability_classification"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 2",
+            "chapter": "4",
+            "section": "Eigenvalue Method for Linear Systems"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_matrix_form_linear_systems",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_systems_of_odes",
+      "content": {
+        "title": "Matrix Form x′ = Ax",
+        "definition": "Linear systems written as x′ = Ax with x a vector and A a coefficient matrix, enabling eigenvalue analysis.",
+        "summary": "Matrix notation compactly expresses coupled linear dynamics and connects to linear algebra."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Dynamical Systems",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_systems_of_odes",
+        "prerequisites": [
+          "spine_mathematics_l4_system_formulation"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_eigenvalue_method_systems"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Coupled ODEs model interacting populations, circuits, and mechanical systems.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Differential Equations",
+            "topic": "Systems of Differential Equations",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_system_formulation"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_eigenvalue_method_systems"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 2",
+            "chapter": "4",
+            "section": "Matrix Form x′ = Ax"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_phase_plane",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_systems_of_odes",
+      "content": {
+        "title": "Phase Plane Analysis",
+        "definition": "Plot of trajectories (x(t), y(t)) in the xy-plane revealing equilibrium points and flow patterns.",
+        "summary": "Phase portraits visualize long-term behavior of coupled systems without explicit time-series plots."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Dynamical Systems",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_systems_of_odes",
+        "prerequisites": [
+          "spine_mathematics_l4_system_formulation"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_stability_classification"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Coupled ODEs model interacting populations, circuits, and mechanical systems.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Differential Equations",
+            "topic": "Systems of Differential Equations",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_system_formulation"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_stability_classification"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 2",
+            "chapter": "4",
+            "section": "Phase Plane Analysis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_stability_classification",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_systems_of_odes",
+      "content": {
+        "title": "Equilibrium Stability Classification",
+        "definition": "Classifying equilibria as stable/unstable nodes, saddles, or spirals based on eigenvalue signs and complex parts.",
+        "summary": "Stability determines whether small perturbations decay or grow, critical for population and control models."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Dynamical Systems",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_systems_of_odes",
+        "prerequisites": [
+          "spine_mathematics_l4_eigenvalue_method_systems",
+          "spine_mathematics_l4_phase_plane"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Coupled ODEs model interacting populations, circuits, and mechanical systems.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Differential Equations",
+            "topic": "Systems of Differential Equations",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_eigenvalue_method_systems",
+              "spine_mathematics_l4_phase_plane"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 2",
+            "chapter": "4",
+            "section": "Equilibrium Stability Classification"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_system_formulation",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_systems_of_odes",
+      "content": {
+        "title": "System Formulation",
+        "definition": "Coupled first-order ODEs x′ = f(x, y), y′ = g(x, y) describing interacting rates of change.",
+        "summary": "Many higher-order ODEs convert to first-order systems by introducing auxiliary variables."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Dynamical Systems",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_systems_of_odes",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_mathematics_l4_matrix_form_linear_systems",
+          "spine_mathematics_l4_phase_plane"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Coupled ODEs model interacting populations, circuits, and mechanical systems.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Differential Equations",
+            "topic": "Systems of Differential Equations",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_matrix_form_linear_systems",
+              "spine_mathematics_l4_phase_plane"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 2",
+            "chapter": "4",
+            "section": "System Formulation"
+          }
+        ]
+      }
+    }
+  ]
+}

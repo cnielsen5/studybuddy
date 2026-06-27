@@ -1,0 +1,548 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_implant_materials_and_tribology",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "ABOS-aligned scaffold for abos_p1_basic_science_principles."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_implant_materials_and_tribology_core_principles",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_implant_materials_and_tribology",
+      "content": {
+        "title": "Implant Materials and Tribology — Core Principles",
+        "definition": "Properties of metals, polymers, and ceramics used in orthopaedic implants, including wear mechanisms at bearing interfaces.",
+        "summary": "Modulus mismatch drives stress shielding. Cross-linked polyethylene, ceramic-on-ceramic, and metal-on-metal bearings differ in wear and osteolysis risk."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_implant_materials_and_tribology",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Implant Materials and Tribology — Core Principles",
+            "relevance": "Core adult reconstruction and bearing selection knowledge.",
+            "applications": [
+              "Bearing surface selection",
+              "Stress shielding recognition",
+              "Wear particle disease"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Implant Science",
+            "topic": "Implant Materials and Tribology",
+            "subtopic": "Implant Materials and Tribology — Core Principles"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Implant Materials and Tribology",
+            "chapter": "NBK557386",
+            "section": "Implant Materials"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_implant_materials_and_tribology_evaluation_and_diagnosis",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_implant_materials_and_tribology",
+      "content": {
+        "title": "Evaluation and Diagnosis",
+        "definition": "History, physical examination, and initial imaging for implant materials and tribology.",
+        "summary": "Systematic assessment identifies severity, associated injuries, and urgency in implant materials and tribology."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_implant_materials_and_tribology",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_implant_materials_and_tribology_core_principles"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Evaluation and Diagnosis",
+            "relevance": "Core adult reconstruction and bearing selection knowledge.",
+            "applications": [
+              "Bearing surface selection",
+              "Stress shielding recognition",
+              "Wear particle disease"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Implant Science",
+            "topic": "Implant Materials and Tribology",
+            "subtopic": "Evaluation and Diagnosis"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_implant_materials_and_tribology_core_principles"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Implant Materials and Tribology",
+            "chapter": "NBK557386",
+            "section": "Implant Materials"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_implant_materials_and_tribology_management_principles",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_implant_materials_and_tribology",
+      "content": {
+        "title": "Management Principles",
+        "definition": "Nonoperative and operative treatment algorithms for implant materials and tribology.",
+        "summary": "Modulus mismatch drives stress shielding."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_implant_materials_and_tribology",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_implant_materials_and_tribology_evaluation_and_diagnosis"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Management Principles",
+            "relevance": "Core adult reconstruction and bearing selection knowledge.",
+            "applications": [
+              "Bearing surface selection",
+              "Stress shielding recognition",
+              "Wear particle disease"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Implant Science",
+            "topic": "Implant Materials and Tribology",
+            "subtopic": "Management Principles"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_implant_materials_and_tribology_evaluation_and_diagnosis"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Implant Materials and Tribology",
+            "chapter": "NBK557386",
+            "section": "Implant Materials"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_implant_materials_and_tribology_bearing_surface_selection",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_implant_materials_and_tribology",
+      "content": {
+        "title": "Bearing surface selection",
+        "definition": "Focused assessment and management of bearing surface selection in the context of implant materials and tribology.",
+        "summary": "Bearing surface selection — key decision points from Basic Science practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_implant_materials_and_tribology",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_implant_materials_and_tribology_management_principles"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Bearing surface selection",
+            "relevance": "Core adult reconstruction and bearing selection knowledge.",
+            "applications": [
+              "Bearing surface selection",
+              "Stress shielding recognition",
+              "Wear particle disease"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Implant Science",
+            "topic": "Implant Materials and Tribology",
+            "subtopic": "Bearing surface selection"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_implant_materials_and_tribology_management_principles"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Implant Materials and Tribology",
+            "chapter": "NBK557386",
+            "section": "Implant Materials"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_implant_materials_and_tribology_stress_shielding_recognition",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_implant_materials_and_tribology",
+      "content": {
+        "title": "Stress shielding recognition",
+        "definition": "Focused assessment and management of stress shielding recognition in the context of implant materials and tribology.",
+        "summary": "Stress shielding recognition — key decision points from Basic Science practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_implant_materials_and_tribology",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_implant_materials_and_tribology_bearing_surface_selection"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Stress shielding recognition",
+            "relevance": "Core adult reconstruction and bearing selection knowledge.",
+            "applications": [
+              "Bearing surface selection",
+              "Stress shielding recognition",
+              "Wear particle disease"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Implant Science",
+            "topic": "Implant Materials and Tribology",
+            "subtopic": "Stress shielding recognition"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_implant_materials_and_tribology_bearing_surface_selection"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Implant Materials and Tribology",
+            "chapter": "NBK557386",
+            "section": "Implant Materials"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_implant_materials_and_tribology_wear_particle_disease",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_implant_materials_and_tribology",
+      "content": {
+        "title": "Wear particle disease",
+        "definition": "Focused assessment and management of wear particle disease in the context of implant materials and tribology.",
+        "summary": "Wear particle disease — key decision points from Basic Science practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_implant_materials_and_tribology",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_implant_materials_and_tribology_stress_shielding_recognition"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Wear particle disease",
+            "relevance": "Core adult reconstruction and bearing selection knowledge.",
+            "applications": [
+              "Bearing surface selection",
+              "Stress shielding recognition",
+              "Wear particle disease"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Implant Science",
+            "topic": "Implant Materials and Tribology",
+            "subtopic": "Wear particle disease"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_implant_materials_and_tribology_stress_shielding_recognition"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Implant Materials and Tribology",
+            "chapter": "NBK557386",
+            "section": "Implant Materials"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_implant_materials_and_tribology_complications_and_outcomes",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_implant_materials_and_tribology",
+      "content": {
+        "title": "Complications and Outcomes",
+        "definition": "Recognized complications, failure modes, and expected recovery after treatment of implant materials and tribology.",
+        "summary": "Anticipate, diagnose, and manage complications; counsel on prognosis and rehabilitation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_implant_materials_and_tribology",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_implant_materials_and_tribology_wear_particle_disease"
+        ],
+        "unlocks": [
+          "spine_medicine_clinical_l5_implant_materials_and_tribology_salvage_and_revision"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Complications and Outcomes",
+            "relevance": "Core adult reconstruction and bearing selection knowledge.",
+            "applications": [
+              "Bearing surface selection",
+              "Stress shielding recognition",
+              "Wear particle disease"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Implant Science",
+            "topic": "Implant Materials and Tribology",
+            "subtopic": "Complications and Outcomes"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_implant_materials_and_tribology_wear_particle_disease"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_clinical_l5_implant_materials_and_tribology_salvage_and_revision"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Implant Materials and Tribology",
+            "chapter": "NBK557386",
+            "section": "Implant Materials"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l5_implant_materials_and_tribology_salvage_and_revision",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_clinical_l3_implant_materials_and_tribology",
+      "content": {
+        "title": "Salvage and Revision Strategies",
+        "definition": "Revision and salvage options when initial management of implant materials and tribology fails.",
+        "summary": "Staged revision and alternative strategies when primary treatment fails or complications develop."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l4_implant_materials_and_tribology_complications_and_outcomes",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_implant_materials_and_tribology_complications_and_outcomes"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Salvage and Revision Strategies",
+            "relevance": "Core adult reconstruction and bearing selection knowledge.",
+            "applications": [
+              "Bearing surface selection",
+              "Stress shielding recognition",
+              "Wear particle disease"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Implant Science",
+            "topic": "Implant Materials and Tribology",
+            "subtopic": "Salvage and Revision Strategies"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_implant_materials_and_tribology_complications_and_outcomes"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Implant Materials and Tribology",
+            "chapter": "NBK557386",
+            "section": "Implant Materials"
+          }
+        ]
+      }
+    }
+  ]
+}

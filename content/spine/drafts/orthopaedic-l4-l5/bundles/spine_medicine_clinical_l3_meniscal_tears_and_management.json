@@ -1,0 +1,276 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_meniscal_tears_and_management",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "Orthopaedic L4/L5 expansion for Meniscal Tears and Management. 4 L4, 0 L5."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_meniscal_anatomy_and_tear_patterns",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_meniscal_tears_and_management",
+      "content": {
+        "title": "Meniscal Anatomy and Tear Patterns",
+        "definition": "Red-red, red-white, and white-white zones; longitudinal, bucket-handle, radial, and root tears.",
+        "summary": "Peripheral tears in vascular zone heal with repair; white-white often partial meniscectomy."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Sports Medicine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_meniscal_tears_and_management",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Meniscal Anatomy and Tear Patterns",
+            "relevance": "Cartilage/meniscus ABOS sports section.",
+            "applications": [
+              "Repair vs resection",
+              "Meniscal root repair",
+              "Discoid meniscus in peds"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Meniscus",
+            "topic": "Meniscal Tears and Management",
+            "subtopic": "Meniscal Anatomy and Tear Patterns"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Meniscal Tears and Management",
+            "chapter": "NBK442001",
+            "section": "Meniscal Tears"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_meniscal_tear_clinical_presentation",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_meniscal_tears_and_management",
+      "content": {
+        "title": "Meniscal Tear Clinical Presentation",
+        "definition": "Joint line tenderness, effusion, locking, and McMurray test.",
+        "summary": "Bucket-handle tear causes mechanical block to extension."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Sports Medicine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_meniscal_tears_and_management",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_meniscal_anatomy_and_tear_patterns"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Meniscal Tear Clinical Presentation",
+            "relevance": "Cartilage/meniscus ABOS sports section.",
+            "applications": [
+              "Repair vs resection",
+              "Meniscal root repair",
+              "Discoid meniscus in peds"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Meniscus",
+            "topic": "Meniscal Tears and Management",
+            "subtopic": "Meniscal Tear Clinical Presentation"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_meniscal_anatomy_and_tear_patterns"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Meniscal Tears and Management",
+            "chapter": "NBK442001",
+            "section": "Meniscal Tears"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_meniscal_repair_indications",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_meniscal_tears_and_management",
+      "content": {
+        "title": "Meniscal Repair Indications",
+        "definition": "Vertical longitudinal tears in young patients with stable knee and adequate tissue quality.",
+        "summary": "All-inside, inside-out, and outside-in techniques; protect with brace and limited flexion."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Sports Medicine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_meniscal_tears_and_management",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_meniscal_tear_clinical_presentation"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Meniscal Repair Indications",
+            "relevance": "Cartilage/meniscus ABOS sports section.",
+            "applications": [
+              "Repair vs resection",
+              "Meniscal root repair",
+              "Discoid meniscus in peds"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Meniscus",
+            "topic": "Meniscal Tears and Management",
+            "subtopic": "Meniscal Repair Indications"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_meniscal_tear_clinical_presentation"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Meniscal Tears and Management",
+            "chapter": "NBK442001",
+            "section": "Meniscal Tears"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_meniscectomy_and_outcomes",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_meniscal_tears_and_management",
+      "content": {
+        "title": "Meniscectomy and Long-Term Outcomes",
+        "definition": "Partial versus total meniscectomy and accelerated OA risk.",
+        "summary": "Preserve meniscus when possible; root repair critical to prevent compartment overload."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Sports Medicine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_meniscal_tears_and_management",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_meniscal_repair_indications"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Meniscectomy and Long-Term Outcomes",
+            "relevance": "Cartilage/meniscus ABOS sports section.",
+            "applications": [
+              "Repair vs resection",
+              "Meniscal root repair",
+              "Discoid meniscus in peds"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Meniscus",
+            "topic": "Meniscal Tears and Management",
+            "subtopic": "Meniscectomy and Long-Term Outcomes"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_meniscal_repair_indications"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Meniscal Tears and Management",
+            "chapter": "NBK442001",
+            "section": "Meniscal Tears"
+          }
+        ]
+      }
+    }
+  ]
+}

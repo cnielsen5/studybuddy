@@ -1,0 +1,976 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_mathematics_l3_hypothesis_testing",
+    "anchor_primary_domain": "mathematics",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_mathematics_l3_hypothesis_testing.mathematics.json",
+      "content/spine/l4-l5-bundles/spine_mathematics_l3_hypothesis_testing.psychology_neuroscience.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "15 per-context concepts merged into 14 universal concepts (9 L4 + 5 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_mathematics_l4_chi_square_goodness_of_fit",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_hypothesis_testing",
+      "content": {
+        "title": "Chi-Square Goodness-of-Fit Test",
+        "definition": "Test comparing observed category counts to expected counts under H₀ using χ² = Σ(O − E)²/E with df = k − 1.",
+        "summary": "Goodness-of-fit tests whether sample data match a specified categorical distribution."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Statistical Inference",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_hypothesis_testing",
+        "prerequisites": [
+          "spine_mathematics_l4_test_statistics"
+        ],
+        "unlocks": [
+          {
+            "concept_id": "spine_mathematics_l3_normal_distribution",
+            "_forward_reference": true
+          }
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Core inferential framework in statistics.",
+            "applications": [
+              "t-tests",
+              "Chi-square tests"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Statistics & Probability",
+            "subcategory": "Inference",
+            "topic": "Hypothesis Testing",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_test_statistics"
+            ],
+            "unlocks_in_context": [
+              {
+                "concept_id": "spine_mathematics_l3_normal_distribution",
+                "_forward_reference": true
+              }
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Introductory Statistics",
+            "chapter": "11",
+            "section": "Chi-Square Goodness-of-Fit Test"
+          }
+        ]
+      },
+      "_reviewer_note": "Contains forward reference to existing L3 node — verify target exists in spine."
+    },
+    {
+      "id": "spine_mathematics_l4_null_alternative_hypotheses",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_hypothesis_testing",
+      "content": {
+        "title": "Null and Alternative Hypotheses",
+        "definition": "The null hypothesis H₀ states no effect or no difference; the alternative Hₐ states the effect or difference of interest.",
+        "summary": "Hypothesis testing begins by formalizing competing claims about a population parameter."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Statistical Inference",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_hypothesis_testing",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_mathematics_l4_type_i_ii_errors_power",
+          "spine_mathematics_l4_test_statistics",
+          "spine_mathematics_l4_p_values_significance"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Core inferential framework in statistics.",
+            "applications": [
+              "t-tests",
+              "Chi-square tests"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Statistics & Probability",
+            "subcategory": "Inference",
+            "topic": "Hypothesis Testing",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_type_i_ii_errors_power",
+              "spine_mathematics_l4_test_statistics"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Null and Alternative Hypotheses",
+            "relevance": "Evaluate experimental findings in behavioral science.",
+            "applications": [
+              "NHST in psychology",
+              "Effect size reporting"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Research Methods & Statistics",
+            "subcategory": "Inferential Statistics",
+            "topic": "Hypothesis Testing",
+            "subtopic": "Hypotheses"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_p_values_significance",
+              "spine_mathematics_l4_type_i_ii_errors_power"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Introductory Statistics",
+            "chapter": "9",
+            "section": "Null and Alternative Hypotheses"
+          },
+          {
+            "source": "OpenStax Introductory Statistics 2e",
+            "chapter": "9",
+            "section": "9.1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_one_sample_t_test",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_hypothesis_testing",
+      "content": {
+        "title": "One-Sample t-Test",
+        "definition": "Test of H₀: μ = μ₀ using t = (x̄ − μ₀)/(s/√n) when σ is unknown and data are approximately normal.",
+        "summary": "The one-sample t-test compares a sample mean to a hypothesized population mean with unknown variance."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Statistical Inference",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_hypothesis_testing",
+        "prerequisites": [
+          "spine_mathematics_l4_test_statistics"
+        ],
+        "unlocks": [
+          "spine_mathematics_l5_t_test_assumptions",
+          "spine_mathematics_l5_one_vs_two_tailed_tests"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Core inferential framework in statistics.",
+            "applications": [
+              "t-tests",
+              "Chi-square tests"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Statistics & Probability",
+            "subcategory": "Inference",
+            "topic": "Hypothesis Testing",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_test_statistics"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l5_t_test_assumptions",
+              "spine_mathematics_l5_one_vs_two_tailed_tests"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Introductory Statistics",
+            "chapter": "9",
+            "section": "One-Sample t-Test"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_p_values",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_hypothesis_testing",
+      "content": {
+        "title": "P-Values and Decision Rules",
+        "definition": "The p-value is the probability, assuming H₀ is true, of observing a test statistic at least as extreme as the sample result.",
+        "summary": "Compare p-value to α: reject H₀ if p ≤ α; otherwise fail to reject. P-values quantify evidence strength against H₀."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Statistical Inference",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_hypothesis_testing",
+        "prerequisites": [
+          "spine_mathematics_l4_type_i_ii_errors_power"
+        ],
+        "unlocks": [
+          "spine_mathematics_l5_interpreting_p_values",
+          "spine_mathematics_l5_p_value_misinterpretations"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Core inferential framework in statistics.",
+            "applications": [
+              "t-tests",
+              "Chi-square tests"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Statistics & Probability",
+            "subcategory": "Inference",
+            "topic": "Hypothesis Testing",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_type_i_ii_errors_power"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l5_interpreting_p_values",
+              "spine_mathematics_l5_p_value_misinterpretations"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Introductory Statistics",
+            "chapter": "9",
+            "section": "P-Values and Decision Rules"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_p_values_significance",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_hypothesis_testing",
+      "content": {
+        "title": "p-Values and Statistical Significance",
+        "definition": "Probability of observing data at least as extreme as the sample if the null were true.",
+        "summary": "Alpha levels control Type I error rate; p-values do not measure effect size or clinical importance."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Statistical Inference",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_hypothesis_testing",
+        "prerequisites": [
+          "spine_mathematics_l4_null_alternative_hypotheses"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_type_i_ii_errors_power"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "p-Values and Statistical Significance",
+            "relevance": "Evaluate experimental findings in behavioral science.",
+            "applications": [
+              "NHST in psychology",
+              "Effect size reporting"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Research Methods & Statistics",
+            "subcategory": "Inferential Statistics",
+            "topic": "Hypothesis Testing",
+            "subtopic": "p-Values"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_null_alternative_hypotheses"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_type_i_ii_errors_power"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Introductory Statistics 2e",
+            "chapter": "9",
+            "section": "9.2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_parametric_nonparametric_overview",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_hypothesis_testing",
+      "content": {
+        "title": "Parametric vs Nonparametric Tests Overview",
+        "definition": "t-tests and ANOVA assumptions versus rank-based alternatives when normality fails.",
+        "summary": "Choosing tests requires matching data type, design, and assumption checks."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Statistical Inference",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_hypothesis_testing",
+        "prerequisites": [
+          "spine_mathematics_l4_type_i_ii_errors_power"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Parametric vs Nonparametric Tests Overview",
+            "relevance": "Evaluate experimental findings in behavioral science.",
+            "applications": [
+              "NHST in psychology",
+              "Effect size reporting"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Research Methods & Statistics",
+            "subcategory": "Inferential Statistics",
+            "topic": "Hypothesis Testing",
+            "subtopic": "Tests"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_type_i_ii_errors_power"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Introductory Statistics 2e",
+            "chapter": "9",
+            "section": "9.4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_test_statistics",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_hypothesis_testing",
+      "content": {
+        "title": "Test Statistics and Sampling Distributions",
+        "definition": "A test statistic is a standardized measure computed from sample data whose distribution under H₀ determines the p-value.",
+        "summary": "Choosing the correct test statistic depends on parameter, sample size, and distributional assumptions."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Statistical Inference",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_hypothesis_testing",
+        "prerequisites": [
+          "spine_mathematics_l4_null_alternative_hypotheses"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_one_sample_t_test",
+          "spine_mathematics_l4_chi_square_goodness_of_fit"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Core inferential framework in statistics.",
+            "applications": [
+              "t-tests",
+              "Chi-square tests"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Statistics & Probability",
+            "subcategory": "Inference",
+            "topic": "Hypothesis Testing",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_null_alternative_hypotheses"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_one_sample_t_test",
+              "spine_mathematics_l4_chi_square_goodness_of_fit"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Introductory Statistics",
+            "chapter": "9",
+            "section": "Test Statistics and Sampling Distributions"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_type_i_ii_errors_power",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_hypothesis_testing",
+      "content": {
+        "title": "Type I and Type II Errors",
+        "definition": "Type I error rejects true H₀ (false positive); Type II error fails to reject false H₀ (false negative). Significance level α bounds Type I error probability.",
+        "summary": "Error types and α quantify the risk of wrong conclusions in hypothesis testing."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Statistical Inference",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_hypothesis_testing",
+        "prerequisites": [
+          "spine_mathematics_l4_p_values_significance",
+          "spine_mathematics_l4_null_alternative_hypotheses"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_parametric_nonparametric_overview",
+          "spine_mathematics_l4_p_values",
+          "spine_mathematics_l5_alpha_level_selection"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Core inferential framework in statistics.",
+            "applications": [
+              "t-tests",
+              "Chi-square tests"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Statistics & Probability",
+            "subcategory": "Inference",
+            "topic": "Hypothesis Testing",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_null_alternative_hypotheses"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_p_values",
+              "spine_mathematics_l5_alpha_level_selection"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Type I, Type II Errors, and Power",
+            "relevance": "Evaluate experimental findings in behavioral science.",
+            "applications": [
+              "NHST in psychology",
+              "Effect size reporting"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Research Methods & Statistics",
+            "subcategory": "Inferential Statistics",
+            "topic": "Hypothesis Testing",
+            "subtopic": "Errors"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_p_values_significance",
+              "spine_mathematics_l4_null_alternative_hypotheses"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_parametric_nonparametric_overview"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-26T05:54:17.140Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Introductory Statistics 2e",
+            "chapter": "9",
+            "section": "9.3"
+          },
+          {
+            "source": "OpenStax Introductory Statistics",
+            "chapter": "9",
+            "section": "Type I and Type II Errors"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l5_alpha_level_selection",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_mathematics_l3_hypothesis_testing",
+      "content": {
+        "title": "Choosing Significance Level α",
+        "definition": "Common choices α = 0.05 or 0.01 balance Type I error tolerance against field conventions; stricter α reduces false positives but increases Type II error.",
+        "summary": "α selection reflects context-specific cost of false positive vs false negative."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Statistical Inference",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l4_type_i_ii_errors_power",
+        "prerequisites": [
+          "spine_mathematics_l4_type_i_ii_errors_power"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "title_in_context": "Choosing Significance Level α",
+            "relevance": "Connects error types to study design decisions.",
+            "applications": [
+              "Clinical vs exploratory research"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Statistics & Probability",
+            "subcategory": "Inference",
+            "topic": "Hypothesis Testing",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_type_i_ii_errors_power"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Introductory Statistics",
+            "chapter": "9",
+            "section": "Choosing Significance Level α"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l5_interpreting_p_values",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_mathematics_l3_hypothesis_testing",
+      "content": {
+        "title": "Interpreting P-Values Correctly",
+        "definition": "A p-value is not the probability that H₀ is true; it is the probability of the observed (or more extreme) data given H₀.",
+        "summary": "Correct interpretation avoids the common inverse-probability fallacy in reporting statistical results."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Statistical Inference",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l4_p_values",
+        "prerequisites": [
+          "spine_mathematics_l4_p_values"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "title_in_context": "Interpreting P-Values Correctly",
+            "relevance": "Prevents common misreadings in research and MCAT-style passages.",
+            "applications": [
+              "Evidence strength language"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Statistics & Probability",
+            "subcategory": "Inference",
+            "topic": "Hypothesis Testing",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_p_values"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Introductory Statistics",
+            "chapter": "9",
+            "section": "Interpreting P-Values Correctly"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l5_one_vs_two_tailed_tests",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_mathematics_l3_hypothesis_testing",
+      "content": {
+        "title": "One-Tailed vs Two-Tailed Tests",
+        "definition": "Two-tailed tests split α between both directions; one-tailed tests concentrate α in one direction when the alternative is directional.",
+        "summary": "Tail choice must be pre-specified; one-tailed tests have greater power for directional hypotheses but cannot detect effects in the opposite direction."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Statistical Inference",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l4_one_sample_t_test",
+        "prerequisites": [
+          "spine_mathematics_l4_one_sample_t_test"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "title_in_context": "One-Tailed vs Two-Tailed Tests",
+            "relevance": "Standard decision in hypothesis test setup.",
+            "applications": [
+              "Directional research hypotheses"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Statistics & Probability",
+            "subcategory": "Inference",
+            "topic": "Hypothesis Testing",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_one_sample_t_test"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Introductory Statistics",
+            "chapter": "9",
+            "section": "One-Tailed vs Two-Tailed Tests"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l5_p_value_misinterpretations",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_mathematics_l3_hypothesis_testing",
+      "content": {
+        "title": "Common P-Value Misinterpretations",
+        "definition": "Errors include treating p as P(H₀ true), equating non-significance with proof of H₀, and p-hacking through repeated testing.",
+        "summary": "Recognizing misinterpretations supports critical reading of published studies and experimental design."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Statistical Inference",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l4_p_values",
+        "prerequisites": [
+          "spine_mathematics_l4_p_values"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "title_in_context": "Common P-Value Misinterpretations",
+            "relevance": "Research literacy and statistics reasoning.",
+            "applications": [
+              "Multiple comparisons awareness"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Statistics & Probability",
+            "subcategory": "Inference",
+            "topic": "Hypothesis Testing",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_p_values"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Introductory Statistics",
+            "chapter": "9",
+            "section": "Common P-Value Misinterpretations"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l5_t_test_assumptions",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_mathematics_l3_hypothesis_testing",
+      "content": {
+        "title": "t-Test Assumptions",
+        "definition": "One-sample t-tests require independent observations, approximate normality (or large n by CLT), and random sampling from the target population.",
+        "summary": "Violations of assumptions affect validity; robust alternatives exist for non-normal small samples."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Statistical Inference",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l4_one_sample_t_test",
+        "prerequisites": [
+          "spine_mathematics_l4_one_sample_t_test"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "title_in_context": "t-Test Assumptions",
+            "relevance": "Determines when t-test results are trustworthy.",
+            "applications": [
+              "Normality checking",
+              "Sample size planning"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Statistics & Probability",
+            "subcategory": "Inference",
+            "topic": "Hypothesis Testing",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_one_sample_t_test"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Introductory Statistics",
+            "chapter": "9",
+            "section": "t-Test Assumptions"
+          }
+        ]
+      }
+    }
+  ]
+}

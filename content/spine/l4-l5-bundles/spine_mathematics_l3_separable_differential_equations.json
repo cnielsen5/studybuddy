@@ -1,0 +1,344 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_mathematics_l3_separable_differential_equations",
+    "anchor_primary_domain": "mathematics",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_mathematics_l3_separable_differential_equations.mathematics.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "5 per-context concepts merged into 5 universal concepts (5 L4 + 0 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_mathematics_l4_equilibrium_solutions",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_separable_differential_equations",
+      "content": {
+        "title": "Equilibrium Solutions",
+        "definition": "Constant solutions y = c where dy/dx = 0; equilibria appear as horizontal lines in direction fields.",
+        "summary": "Equilibria are fixed points of dynamics; stability analysis begins by locating them."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Dynamical Systems",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_separable_differential_equations",
+        "prerequisites": [
+          "spine_mathematics_l4_separable_equation_form"
+        ],
+        "unlocks": [
+          {
+            "concept_id": "spine_mathematics_l3_systems_of_odes",
+            "_forward_reference": true
+          }
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Separable ODEs yield analytic solutions by algebraic separation and integration.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Differential Equations",
+            "topic": "Separable Differential Equations",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_separable_equation_form"
+            ],
+            "unlocks_in_context": [
+              {
+                "concept_id": "spine_mathematics_l3_systems_of_odes",
+                "_forward_reference": true
+              }
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 2",
+            "chapter": "4",
+            "section": "Equilibrium Solutions"
+          }
+        ]
+      },
+      "_reviewer_note": "Contains forward reference to existing L3 node — verify target exists in spine."
+    },
+    {
+      "id": "spine_mathematics_l4_growth_decay_applications",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_separable_differential_equations",
+      "content": {
+        "title": "Growth and Decay Applications",
+        "definition": "Models dy/dt = ky with solutions y = Ce^{kt}; k > 0 growth, k < 0 decay, linking to exponential functions.",
+        "summary": "Separable ODEs unify population, radioactive, and financial exponential models under one technique."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Dynamical Systems",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_separable_differential_equations",
+        "prerequisites": [
+          "spine_mathematics_l4_initial_value_problems_separable"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Separable ODEs yield analytic solutions by algebraic separation and integration.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Differential Equations",
+            "topic": "Separable Differential Equations",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_initial_value_problems_separable"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 2",
+            "chapter": "4",
+            "section": "Growth and Decay Applications"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_initial_value_problems_separable",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_separable_differential_equations",
+      "content": {
+        "title": "Initial Value Problems",
+        "definition": "Particular solution determined by applying y(x₀) = y₀ after finding the general solution to fix the integration constant.",
+        "summary": "IVPs select the unique solution curve passing through a given point in the direction field."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Dynamical Systems",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_separable_differential_equations",
+        "prerequisites": [
+          "spine_mathematics_l4_separation_of_variables_procedure"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_growth_decay_applications"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Separable ODEs yield analytic solutions by algebraic separation and integration.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Differential Equations",
+            "topic": "Separable Differential Equations",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_separation_of_variables_procedure"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_growth_decay_applications"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 2",
+            "chapter": "4",
+            "section": "Initial Value Problems"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_separable_equation_form",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_separable_differential_equations",
+      "content": {
+        "title": "Separable Equation Form",
+        "definition": "ODEs writable as dy/dx = g(x)h(y) or M(x) dx + N(y) dy = 0, allowing variables on opposite sides.",
+        "summary": "Separability is the simplest analytic technique for first-order ODEs and includes exponential growth/decay."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Dynamical Systems",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_separable_differential_equations",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_mathematics_l4_separation_of_variables_procedure"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Separable ODEs yield analytic solutions by algebraic separation and integration.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Differential Equations",
+            "topic": "Separable Differential Equations",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_separation_of_variables_procedure"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 2",
+            "chapter": "4",
+            "section": "Separable Equation Form"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_separation_of_variables_procedure",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_separable_differential_equations",
+      "content": {
+        "title": "Separation of Variables Procedure",
+        "definition": "Rearrange to (1/h(y)) dy = g(x) dx and integrate both sides, then solve for y if possible.",
+        "summary": "Integration after separation yields implicit or explicit general solutions."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Dynamical Systems",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_separable_differential_equations",
+        "prerequisites": [
+          "spine_mathematics_l4_separable_equation_form"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_initial_value_problems_separable"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Separable ODEs yield analytic solutions by algebraic separation and integration.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Differential Equations",
+            "topic": "Separable Differential Equations",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_separable_equation_form"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_initial_value_problems_separable"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 2",
+            "chapter": "4",
+            "section": "Separation of Variables Procedure"
+          }
+        ]
+      }
+    }
+  ]
+}

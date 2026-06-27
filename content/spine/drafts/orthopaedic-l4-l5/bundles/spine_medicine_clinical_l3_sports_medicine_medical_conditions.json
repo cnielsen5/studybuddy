@@ -1,0 +1,548 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_sports_medicine_medical_conditions",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "ABOS-aligned scaffold for abos_p2_sports_medical."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_sports_medicine_medical_conditions_core_principles",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_sports_medicine_medical_conditions",
+      "content": {
+        "title": "Sports Medicine Medical Conditions — Core Principles",
+        "definition": "Non-musculoskeletal conditions affecting athletes including concussion, cardiac screening, heat illness, and endocrine disorders.",
+        "summary": "Return-to-play protocols follow concussion guidelines. Female athlete triad and RED-S affect bone health. Sickle cell trait affects exertional collapse."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Sports Medicine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_sports_medicine_medical_conditions",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Sports Medicine Medical Conditions — Core Principles",
+            "relevance": "ABOS medical aspects of sports medicine 1%.",
+            "applications": [
+              "Concussion return-to-play",
+              "Preparticipation screening",
+              "Heat stroke management"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Medical Sports Medicine",
+            "topic": "Sports Medicine Medical Conditions",
+            "subtopic": "Sports Medicine Medical Conditions — Core Principles"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Sports Medicine Medical Conditions",
+            "chapter": "NBK557519",
+            "section": "Medical Sports Medicine"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_sports_medicine_medical_conditions_evaluation_and_diagnosis",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_sports_medicine_medical_conditions",
+      "content": {
+        "title": "Evaluation and Diagnosis",
+        "definition": "History, physical examination, and initial imaging for sports medicine medical conditions.",
+        "summary": "Systematic assessment identifies severity, associated injuries, and urgency in sports medicine medical conditions."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Sports Medicine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_sports_medicine_medical_conditions",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_sports_medicine_medical_conditions_core_principles"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Evaluation and Diagnosis",
+            "relevance": "ABOS medical aspects of sports medicine 1%.",
+            "applications": [
+              "Concussion return-to-play",
+              "Preparticipation screening",
+              "Heat stroke management"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Medical Sports Medicine",
+            "topic": "Sports Medicine Medical Conditions",
+            "subtopic": "Evaluation and Diagnosis"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_sports_medicine_medical_conditions_core_principles"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Sports Medicine Medical Conditions",
+            "chapter": "NBK557519",
+            "section": "Medical Sports Medicine"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_sports_medicine_medical_conditions_management_principles",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_sports_medicine_medical_conditions",
+      "content": {
+        "title": "Management Principles",
+        "definition": "Nonoperative and operative treatment algorithms for sports medicine medical conditions.",
+        "summary": "Return-to-play protocols follow concussion guidelines."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Sports Medicine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_sports_medicine_medical_conditions",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_sports_medicine_medical_conditions_evaluation_and_diagnosis"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Management Principles",
+            "relevance": "ABOS medical aspects of sports medicine 1%.",
+            "applications": [
+              "Concussion return-to-play",
+              "Preparticipation screening",
+              "Heat stroke management"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Medical Sports Medicine",
+            "topic": "Sports Medicine Medical Conditions",
+            "subtopic": "Management Principles"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_sports_medicine_medical_conditions_evaluation_and_diagnosis"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Sports Medicine Medical Conditions",
+            "chapter": "NBK557519",
+            "section": "Medical Sports Medicine"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_sports_medicine_medical_conditions_concussion_return_to_play",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_sports_medicine_medical_conditions",
+      "content": {
+        "title": "Concussion return-to-play",
+        "definition": "Focused assessment and management of concussion return-to-play in the context of sports medicine medical conditions.",
+        "summary": "Concussion return-to-play — key decision points from Sports Medicine practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Sports Medicine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_sports_medicine_medical_conditions",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_sports_medicine_medical_conditions_management_principles"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Concussion return-to-play",
+            "relevance": "ABOS medical aspects of sports medicine 1%.",
+            "applications": [
+              "Concussion return-to-play",
+              "Preparticipation screening",
+              "Heat stroke management"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Medical Sports Medicine",
+            "topic": "Sports Medicine Medical Conditions",
+            "subtopic": "Concussion return-to-play"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_sports_medicine_medical_conditions_management_principles"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Sports Medicine Medical Conditions",
+            "chapter": "NBK557519",
+            "section": "Medical Sports Medicine"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_sports_medicine_medical_conditions_preparticipation_screenin",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_sports_medicine_medical_conditions",
+      "content": {
+        "title": "Preparticipation screening",
+        "definition": "Focused assessment and management of preparticipation screening in the context of sports medicine medical conditions.",
+        "summary": "Preparticipation screening — key decision points from Sports Medicine practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Sports Medicine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_sports_medicine_medical_conditions",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_sports_medicine_medical_conditions_concussion_return_to_play"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Preparticipation screening",
+            "relevance": "ABOS medical aspects of sports medicine 1%.",
+            "applications": [
+              "Concussion return-to-play",
+              "Preparticipation screening",
+              "Heat stroke management"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Medical Sports Medicine",
+            "topic": "Sports Medicine Medical Conditions",
+            "subtopic": "Preparticipation screening"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_sports_medicine_medical_conditions_concussion_return_to_play"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Sports Medicine Medical Conditions",
+            "chapter": "NBK557519",
+            "section": "Medical Sports Medicine"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_sports_medicine_medical_conditions_heat_stroke_management",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_sports_medicine_medical_conditions",
+      "content": {
+        "title": "Heat stroke management",
+        "definition": "Focused assessment and management of heat stroke management in the context of sports medicine medical conditions.",
+        "summary": "Heat stroke management — key decision points from Sports Medicine practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Sports Medicine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_sports_medicine_medical_conditions",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_sports_medicine_medical_conditions_preparticipation_screenin"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Heat stroke management",
+            "relevance": "ABOS medical aspects of sports medicine 1%.",
+            "applications": [
+              "Concussion return-to-play",
+              "Preparticipation screening",
+              "Heat stroke management"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Medical Sports Medicine",
+            "topic": "Sports Medicine Medical Conditions",
+            "subtopic": "Heat stroke management"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_sports_medicine_medical_conditions_preparticipation_screenin"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Sports Medicine Medical Conditions",
+            "chapter": "NBK557519",
+            "section": "Medical Sports Medicine"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_sports_medicine_medical_conditions_complications_and_outcome",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_sports_medicine_medical_conditions",
+      "content": {
+        "title": "Complications and Outcomes",
+        "definition": "Recognized complications, failure modes, and expected recovery after treatment of sports medicine medical conditions.",
+        "summary": "Anticipate, diagnose, and manage complications; counsel on prognosis and rehabilitation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Sports Medicine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_sports_medicine_medical_conditions",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_sports_medicine_medical_conditions_heat_stroke_management"
+        ],
+        "unlocks": [
+          "spine_medicine_clinical_l5_sports_medicine_medical_conditions_salvage_and_revision"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Complications and Outcomes",
+            "relevance": "ABOS medical aspects of sports medicine 1%.",
+            "applications": [
+              "Concussion return-to-play",
+              "Preparticipation screening",
+              "Heat stroke management"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Medical Sports Medicine",
+            "topic": "Sports Medicine Medical Conditions",
+            "subtopic": "Complications and Outcomes"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_sports_medicine_medical_conditions_heat_stroke_management"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_clinical_l5_sports_medicine_medical_conditions_salvage_and_revision"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Sports Medicine Medical Conditions",
+            "chapter": "NBK557519",
+            "section": "Medical Sports Medicine"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l5_sports_medicine_medical_conditions_salvage_and_revision",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_clinical_l3_sports_medicine_medical_conditions",
+      "content": {
+        "title": "Salvage and Revision Strategies",
+        "definition": "Revision and salvage options when initial management of sports medicine medical conditions fails.",
+        "summary": "Staged revision and alternative strategies when primary treatment fails or complications develop."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Sports Medicine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l4_sports_medicine_medical_conditions_complications_and_outcome",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_sports_medicine_medical_conditions_complications_and_outcome"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Salvage and Revision Strategies",
+            "relevance": "ABOS medical aspects of sports medicine 1%.",
+            "applications": [
+              "Concussion return-to-play",
+              "Preparticipation screening",
+              "Heat stroke management"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Medical Sports Medicine",
+            "topic": "Sports Medicine Medical Conditions",
+            "subtopic": "Salvage and Revision Strategies"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_sports_medicine_medical_conditions_complications_and_outcome"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Sports Medicine Medical Conditions",
+            "chapter": "NBK557519",
+            "section": "Medical Sports Medicine"
+          }
+        ]
+      }
+    }
+  ]
+}

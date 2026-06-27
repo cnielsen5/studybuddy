@@ -1,0 +1,410 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_mathematics_l3_multiple_integrals",
+    "anchor_primary_domain": "mathematics",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_mathematics_l3_multiple_integrals.mathematics.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "6 per-context concepts merged into 6 universal concepts (6 L4 + 0 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_mathematics_l4_double_integrals_general_regions",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_multiple_integrals",
+      "content": {
+        "title": "Double Integrals over General Regions",
+        "definition": "Integration over Type I and Type II regions bounded by curves, with limits determined by bounding functions.",
+        "summary": "Setting correct integration limits for non-rectangular domains is the main skill in applied double integration."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Multivariable Analysis",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_multiple_integrals",
+        "prerequisites": [
+          "spine_mathematics_l4_iterated_integrals"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_polar_coordinates_integration"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Multiple integrals compute volume, mass, and accumulated quantities over regions in ℝⁿ.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Multivariable Calculus",
+            "topic": "Multiple Integrals",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_iterated_integrals"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_polar_coordinates_integration"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 3",
+            "chapter": "5",
+            "section": "Double Integrals over General Regions"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_double_integrals_rectangles",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_multiple_integrals",
+      "content": {
+        "title": "Double Integrals over Rectangles",
+        "definition": "∬_R f(x, y) dA approximates volume under z = f(x, y) over rectangular region R via Riemann sums in two variables.",
+        "summary": "Double integrals extend accumulation to functions of two variables over planar regions."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Multivariable Analysis",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_multiple_integrals",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_mathematics_l4_iterated_integrals"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Multiple integrals compute volume, mass, and accumulated quantities over regions in ℝⁿ.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Multivariable Calculus",
+            "topic": "Multiple Integrals",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_iterated_integrals"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 3",
+            "chapter": "5",
+            "section": "Double Integrals over Rectangles"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_iterated_integrals",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_multiple_integrals",
+      "content": {
+        "title": "Iterated Integrals and Fubini's Theorem",
+        "definition": "Double integrals evaluated as nested single integrals ∫∫ f(x,y) dA = ∫(∫ f(x,y) dy) dx with order often interchangeable.",
+        "summary": "Fubini's theorem reduces double integration to sequential single integrals, making computation tractable."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Multivariable Analysis",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_multiple_integrals",
+        "prerequisites": [
+          "spine_mathematics_l4_double_integrals_rectangles"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_double_integrals_general_regions"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Multiple integrals compute volume, mass, and accumulated quantities over regions in ℝⁿ.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Multivariable Calculus",
+            "topic": "Multiple Integrals",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_double_integrals_rectangles"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_double_integrals_general_regions"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 3",
+            "chapter": "5",
+            "section": "Iterated Integrals and Fubini's Theorem"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_polar_coordinates_integration",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_multiple_integrals",
+      "content": {
+        "title": "Double Integrals in Polar Coordinates",
+        "definition": "Transform dA = r dr dθ for circular or radially symmetric regions, simplifying integrals with x² + y² structure.",
+        "summary": "Polar coordinates exploit circular symmetry in disks, annuli, and rotationally symmetric density functions."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Multivariable Analysis",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_multiple_integrals",
+        "prerequisites": [
+          "spine_mathematics_l4_double_integrals_general_regions"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Multiple integrals compute volume, mass, and accumulated quantities over regions in ℝⁿ.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Multivariable Calculus",
+            "topic": "Multiple Integrals",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_double_integrals_general_regions"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 3",
+            "chapter": "5",
+            "section": "Double Integrals in Polar Coordinates"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_triple_integrals",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_multiple_integrals",
+      "content": {
+        "title": "Triple Integrals",
+        "definition": "∭_E f(x, y, z) dV accumulates a scalar density over a solid region E in three dimensions.",
+        "summary": "Triple integrals compute mass, center of mass, and volume in 3D when density varies spatially."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Multivariable Analysis",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_multiple_integrals",
+        "prerequisites": [
+          "spine_mathematics_l4_iterated_integrals"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_volume_mass_applications"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Multiple integrals compute volume, mass, and accumulated quantities over regions in ℝⁿ.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Multivariable Calculus",
+            "topic": "Multiple Integrals",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_iterated_integrals"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_volume_mass_applications"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 3",
+            "chapter": "5",
+            "section": "Triple Integrals"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_volume_mass_applications",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_multiple_integrals",
+      "content": {
+        "title": "Volume and Mass Applications",
+        "definition": "Volume V = ∬_D 1 dA or ∭_E 1 dV; mass M = ∭ ρ dV with density function ρ.",
+        "summary": "Geometric and physical applications motivate setting up and evaluating multiple integrals in practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Multivariable Analysis",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_multiple_integrals",
+        "prerequisites": [
+          "spine_mathematics_l4_triple_integrals"
+        ],
+        "unlocks": [
+          {
+            "concept_id": "spine_mathematics_l3_line_integrals",
+            "_forward_reference": true
+          }
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Multiple integrals compute volume, mass, and accumulated quantities over regions in ℝⁿ.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Multivariable Calculus",
+            "topic": "Multiple Integrals",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_triple_integrals"
+            ],
+            "unlocks_in_context": [
+              {
+                "concept_id": "spine_mathematics_l3_line_integrals",
+                "_forward_reference": true
+              }
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 3",
+            "chapter": "5",
+            "section": "Volume and Mass Applications"
+          }
+        ]
+      },
+      "_reviewer_note": "Contains forward reference to existing L3 node — verify target exists in spine."
+    }
+  ]
+}

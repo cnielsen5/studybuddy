@@ -1,0 +1,499 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_preclinical_l3_gas_exchange_and_ventilation_perfusion",
+    "anchor_primary_domain": "medicine_preclinical",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_medicine_preclinical_l3_gas_exchange_and_ventilation_perfusion.medicine_preclinical.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "7 per-context concepts merged into 7 universal concepts (5 L4 + 2 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_preclinical_l4_alveolar_arterial_gradient",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_preclinical_l3_gas_exchange_and_ventilation_perfusion",
+      "content": {
+        "title": "Alveolar-Arterial (A-a) Oxygen Gradient",
+        "definition": "Difference between alveolar and arterial PO2 reflecting efficiency of oxygen transfer; elevated in V/Q mismatch, shunt, and diffusion impairment.",
+        "summary": "A-a gradient = PAO2 − PaO2. Normal gradient increases slightly with age. Calculation uses alveolar gas equation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Respiratory Physiology",
+        "primary_domain": "medicine_preclinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_preclinical_l3_gas_exchange_and_ventilation_perfusion",
+        "prerequisites": [
+          "spine_medicine_preclinical_l4_shunt_vs_dead_space"
+        ],
+        "unlocks": [
+          {
+            "concept_id": "spine_medicine_preclinical_l3_oxygen_hemoglobin_dissociation",
+            "_forward_reference": true
+          }
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Alveolar-Arterial (A-a) Oxygen Gradient",
+            "relevance": "ABG interpretation framework.",
+            "applications": [
+              "Elevated A-a in PE",
+              "Alveolar gas equation"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Respiratory Physiology",
+            "topic": "Gas Exchange",
+            "subtopic": "A-a Gradient"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_preclinical_l4_shunt_vs_dead_space"
+            ],
+            "unlocks_in_context": [
+              {
+                "concept_id": "spine_medicine_preclinical_l3_oxygen_hemoglobin_dissociation",
+                "_forward_reference": true
+              }
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "section": "Arterial Blood Gas Analysis",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_preclinical_l4_alveolar_gas_exchange_diffusion",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_preclinical_l3_gas_exchange_and_ventilation_perfusion",
+      "content": {
+        "title": "Alveolar Gas Exchange by Diffusion",
+        "definition": "Passive diffusion of O2 and CO2 across the thin alveolar-capillary membrane driven by partial pressure gradients between alveolar gas and pulmonary capillary blood.",
+        "summary": "Diffusion is rapid due to large surface area and short diffusion distance. Impaired diffusion is a less common hypoxemia mechanism than V/Q mismatch."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Respiratory Physiology",
+        "primary_domain": "medicine_preclinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_preclinical_l3_gas_exchange_and_ventilation_perfusion",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_medicine_preclinical_l4_ventilation_perfusion_ratio",
+          "spine_medicine_preclinical_l4_oxygen_dissolved_vs_bound"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Alveolar Gas Exchange by Diffusion",
+            "relevance": "Interstitial lung disease and diffusion limitation.",
+            "applications": [
+              "Partial pressure gradients",
+              "Thin alveolar-capillary barrier"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Respiratory Physiology",
+            "topic": "Gas Exchange",
+            "subtopic": "Diffusion"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_medicine_preclinical_l4_ventilation_perfusion_ratio",
+              "spine_medicine_preclinical_l4_oxygen_dissolved_vs_bound"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "22",
+            "section": "22.4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_preclinical_l4_oxygen_dissolved_vs_bound",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_preclinical_l3_gas_exchange_and_ventilation_perfusion",
+      "content": {
+        "title": "Dissolved vs Hemoglobin-Bound Oxygen",
+        "definition": "Oxygen exists in blood as a small dissolved fraction (determining PaO2) and a large hemoglobin-bound fraction (determining total O2 content and SaO2).",
+        "summary": "PaO2 reflects dissolved O2; pulse oximetry estimates SaO2. Anemia reduces content despite normal PaO2."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Respiratory Physiology",
+        "primary_domain": "medicine_preclinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_preclinical_l3_gas_exchange_and_ventilation_perfusion",
+        "prerequisites": [
+          "spine_medicine_preclinical_l4_alveolar_gas_exchange_diffusion"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Dissolved vs Hemoglobin-Bound Oxygen",
+            "relevance": "Pulse oximetry limitations.",
+            "applications": [
+              "PaO2 vs SaO2",
+              "O2 content equation"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Respiratory Physiology",
+            "topic": "Gas Exchange",
+            "subtopic": "O2 Transport"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_preclinical_l4_alveolar_gas_exchange_diffusion"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "22",
+            "section": "22.4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_preclinical_l4_shunt_vs_dead_space",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_preclinical_l3_gas_exchange_and_ventilation_perfusion",
+      "content": {
+        "title": "Shunt vs Dead Space Physiology",
+        "definition": "Shunt is perfusion without ventilation (V/Q = 0); dead space is ventilation without perfusion (V/Q = ∞); both cause abnormal gas exchange and hypoxemia or hypercapnia.",
+        "summary": "True shunt does not correct fully with supplemental O2. Dead space increases PaCO2 when alveolar ventilation is insufficient."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Respiratory Physiology",
+        "primary_domain": "medicine_preclinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_preclinical_l3_gas_exchange_and_ventilation_perfusion",
+        "prerequisites": [
+          "spine_medicine_preclinical_l4_ventilation_perfusion_ratio"
+        ],
+        "unlocks": [
+          "spine_medicine_preclinical_l4_alveolar_arterial_gradient",
+          "spine_medicine_preclinical_l5_refractory_hypoxemia_shunt"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Shunt vs Dead Space Physiology",
+            "relevance": "A-a gradient interpretation.",
+            "applications": [
+              "Intrapulmonary shunt",
+              "Anatomic dead space"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Respiratory Physiology",
+            "topic": "Gas Exchange",
+            "subtopic": "Shunt/Dead Space"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_preclinical_l4_ventilation_perfusion_ratio"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_preclinical_l4_alveolar_arterial_gradient",
+              "spine_medicine_preclinical_l5_refractory_hypoxemia_shunt"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "22",
+            "section": "22.5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_preclinical_l4_ventilation_perfusion_ratio",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_preclinical_l3_gas_exchange_and_ventilation_perfusion",
+      "content": {
+        "title": "Ventilation-Perfusion (V/Q) Ratio",
+        "definition": "Regional ratio of alveolar ventilation to pulmonary blood flow; ideal matching is approximately 0.8 at the lung apex in upright posture.",
+        "summary": "V/Q mismatch is the most common cause of hypoxemia. Gravity creates regional V/Q heterogeneity in the upright lung."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Respiratory Physiology",
+        "primary_domain": "medicine_preclinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_preclinical_l3_gas_exchange_and_ventilation_perfusion",
+        "prerequisites": [
+          "spine_medicine_preclinical_l4_alveolar_gas_exchange_diffusion"
+        ],
+        "unlocks": [
+          "spine_medicine_preclinical_l4_shunt_vs_dead_space"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Ventilation-Perfusion (V/Q) Ratio",
+            "relevance": "PE and COPD hypoxemia mechanisms.",
+            "applications": [
+              "Apex high V/Q",
+              "Base lower V/Q"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Respiratory Physiology",
+            "topic": "Gas Exchange",
+            "subtopic": "V/Q Ratio"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_preclinical_l4_alveolar_gas_exchange_diffusion"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_preclinical_l4_shunt_vs_dead_space"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "22",
+            "section": "22.5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_preclinical_l5_pulmonary_embolism_vq",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_preclinical_l3_gas_exchange_and_ventilation_perfusion",
+      "content": {
+        "title": "Pulmonary Embolism V/Q Mismatch",
+        "definition": "PE obstructs perfusion to ventilated lung units creating high V/Q (dead space-like) regions and increasing physiologic dead space with hypoxemia.",
+        "summary": "Sudden dyspnea and hypoxemia with clear chest X-ray suggest PE. V/Q scan or CTPA confirms diagnosis."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Respiratory Physiology",
+        "primary_domain": "medicine_preclinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_preclinical_l4_ventilation_perfusion_ratio",
+        "prerequisites": [
+          "spine_medicine_preclinical_l4_ventilation_perfusion_ratio"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Pulmonary Embolism V/Q Mismatch",
+            "relevance": "Classic V/Q mismatch presentation.",
+            "applications": [
+              "Increased dead space ventilation",
+              "Hypoxemia with PE"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Respiratory Physiology",
+            "topic": "Gas Exchange",
+            "subtopic": "PE"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_preclinical_l4_ventilation_perfusion_ratio"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "section": "Pulmonary Embolism",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_preclinical_l5_refractory_hypoxemia_shunt",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_preclinical_l3_gas_exchange_and_ventilation_perfusion",
+      "content": {
+        "title": "Refractory Hypoxemia from Shunt",
+        "definition": "Severe hypoxemia poorly responsive to supplemental oxygen when significant intrapulmonary or intracardiac shunt bypasses ventilated alveoli.",
+        "summary": "Shunt physiology explains refractory hypoxemia in ARDS and severe pneumonia. PEEP recruits collapsed alveoli to reduce shunt."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Respiratory Physiology",
+        "primary_domain": "medicine_preclinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_preclinical_l4_shunt_vs_dead_space",
+        "prerequisites": [
+          "spine_medicine_preclinical_l4_shunt_vs_dead_space"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Refractory Hypoxemia from Shunt",
+            "relevance": "ARDS management rationale.",
+            "applications": [
+              "Shunt unresponsive to 100% O2",
+              "PEEP recruitment"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Respiratory Physiology",
+            "topic": "Gas Exchange",
+            "subtopic": "Refractory Hypoxemia"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_preclinical_l4_shunt_vs_dead_space"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "section": "Acute Respiratory Distress Syndrome",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    }
+  ]
+}

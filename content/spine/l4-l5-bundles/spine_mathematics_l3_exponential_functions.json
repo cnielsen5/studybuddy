@@ -1,0 +1,393 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_mathematics_l3_exponential_functions",
+    "anchor_primary_domain": "mathematics",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_mathematics_l3_exponential_functions.mathematics.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "6 per-context concepts merged into 6 universal concepts (6 L4 + 0 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_mathematics_l4_compound_interest_growth",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_exponential_functions",
+      "content": {
+        "title": "Compound Interest and Continuous Growth",
+        "definition": "Discrete compound interest A = P(1 + r/n)^{nt} and continuous growth A = Pe^{rt} model accumulating quantities over time.",
+        "summary": "Financial and population growth applications motivate exponential functions and the transition from discrete to continuous compounding."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Functions & Graphs",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_exponential_functions",
+        "prerequisites": [
+          "spine_mathematics_l4_natural_base_e"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Exponential functions model growth, compound change, and continuous scaling.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Pre-Calculus & Functions",
+            "topic": "Exponential Functions",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_natural_base_e"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Precalculus 2e",
+            "chapter": "6",
+            "section": "Compound Interest and Continuous Growth"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_exponential_equations",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_exponential_functions",
+      "content": {
+        "title": "Solving Exponential Equations",
+        "definition": "Techniques using matching bases, logarithms, or algebraic isolation to find x when b^{f(x)} equals a given value.",
+        "summary": "Solving exponential equations connects to logarithmic functions and appears in half-life and doubling-time problems."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Functions & Graphs",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_exponential_functions",
+        "prerequisites": [
+          "spine_mathematics_l4_laws_of_exponents"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Exponential functions model growth, compound change, and continuous scaling.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Pre-Calculus & Functions",
+            "topic": "Exponential Functions",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_laws_of_exponents"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Precalculus 2e",
+            "chapter": "6",
+            "section": "Solving Exponential Equations"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_exponential_function_definition",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_exponential_functions",
+      "content": {
+        "title": "Exponential Function Definition and Graph",
+        "definition": "A function f(x) = bˣ with base b > 0, b ≠ 1, having domain ℝ, range (0, ∞), and horizontal asymptote y = 0.",
+        "summary": "Exponential graphs rise or fall depending on whether b > 1 or 0 < b < 1, always passing through (0, 1)."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Functions & Graphs",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_exponential_functions",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_mathematics_l4_natural_base_e",
+          "spine_mathematics_l4_exponential_transformations"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Exponential functions model growth, compound change, and continuous scaling.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Pre-Calculus & Functions",
+            "topic": "Exponential Functions",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_natural_base_e",
+              "spine_mathematics_l4_exponential_transformations"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Precalculus 2e",
+            "chapter": "6",
+            "section": "Exponential Function Definition and Graph"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_exponential_transformations",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_exponential_functions",
+      "content": {
+        "title": "Transformations of Exponential Graphs",
+        "definition": "Vertical and horizontal shifts, reflections, and stretches of y = bˣ produce y = a·b^{x−h} + k with adjusted asymptote and range.",
+        "summary": "Transformations model scaled, shifted, and reflected growth or decay processes in applied settings."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Functions & Graphs",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_exponential_functions",
+        "prerequisites": [
+          "spine_mathematics_l4_exponential_function_definition"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Exponential functions model growth, compound change, and continuous scaling.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Pre-Calculus & Functions",
+            "topic": "Exponential Functions",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_exponential_function_definition"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Precalculus 2e",
+            "chapter": "6",
+            "section": "Transformations of Exponential Graphs"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_laws_of_exponents",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_exponential_functions",
+      "content": {
+        "title": "Laws of Exponents",
+        "definition": "Rules b^m · b^n = b^{m+n}, (b^m)^n = b^{mn}, (ab)^n = a^n b^n, and b^0 = 1 governing algebraic manipulation of exponential expressions.",
+        "summary": "Exponent laws simplify products, quotients, and powers of exponential terms before applying logarithms or calculus."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Functions & Graphs",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_exponential_functions",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_mathematics_l4_exponential_equations"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Exponential functions model growth, compound change, and continuous scaling.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Pre-Calculus & Functions",
+            "topic": "Exponential Functions",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_exponential_equations"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Precalculus 2e",
+            "chapter": "6",
+            "section": "Laws of Exponents"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_natural_base_e",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_exponential_functions",
+      "content": {
+        "title": "The Natural Base e",
+        "definition": "The number e ≈ 2.71828 arising as lim_{n→∞}(1 + 1/n)ⁿ, base of the natural exponential f(x) = eˣ with slope equal to its value.",
+        "summary": "e is the unique base where instantaneous rate of change equals the function value, central to calculus and continuous growth models."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Functions & Graphs",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_exponential_functions",
+        "prerequisites": [
+          "spine_mathematics_l4_exponential_function_definition"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_compound_interest_growth"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Exponential functions model growth, compound change, and continuous scaling.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Pre-Calculus & Functions",
+            "topic": "Exponential Functions",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_exponential_function_definition"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_compound_interest_growth"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Precalculus 2e",
+            "chapter": "6",
+            "section": "The Natural Base e"
+          }
+        ]
+      }
+    }
+  ]
+}

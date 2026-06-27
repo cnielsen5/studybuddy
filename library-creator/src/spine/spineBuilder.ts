@@ -14,6 +14,7 @@ import {
   SPINE_SHARED_CONCEPTS,
 } from "./spineSharedConceptsIndex.js";
 import { l2UnlockTargets } from "./spineL2Unlocks.js";
+import { applyOrthopaedicExistingNodeContexts } from "./data/orthopaedicExistingNodeContextPatches.js";
 
 const SPINE_TIMESTAMP = "2025-01-01T00:00:00Z";
 
@@ -156,12 +157,14 @@ export function buildSpineGraphDraft(): SpineGraphBundle {
     byId.set(concept.id, concept);
   }
 
-  const concepts = [...byId.values()].sort((a, b) => {
-    if (a.resolution_level !== b.resolution_level) {
-      return a.resolution_level - b.resolution_level;
-    }
-    return a.id.localeCompare(b.id);
-  });
+  const concepts = applyOrthopaedicExistingNodeContexts(
+    [...byId.values()].sort((a, b) => {
+      if (a.resolution_level !== b.resolution_level) {
+        return a.resolution_level - b.resolution_level;
+      }
+      return a.id.localeCompare(b.id);
+    })
+  );
 
   const counts = {
     level_1: concepts.filter((c) => c.resolution_level === 1).length,

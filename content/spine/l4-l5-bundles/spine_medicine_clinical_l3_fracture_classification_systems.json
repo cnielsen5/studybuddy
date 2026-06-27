@@ -1,0 +1,347 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_fracture_classification_systems",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "Orthopaedic L4/L5 expansion for Fracture Classification Systems. 4 L4, 1 L5."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_descriptive_fracture_terminology",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_fracture_classification_systems",
+      "content": {
+        "title": "Descriptive Fracture Terminology",
+        "definition": "Standard terms for fracture location, pattern, displacement, angulation, and associated soft-tissue injury.",
+        "summary": "Consistent nomenclature enables communication, research, and treatment planning across teams."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Trauma",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_fracture_classification_systems",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Descriptive Fracture Terminology",
+            "relevance": "Foundation for all trauma subspecialty management.",
+            "applications": [
+              "Fracture description",
+              "Treatment algorithm selection",
+              "Research and outcomes"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Fracture Principles",
+            "topic": "Fracture Classification Systems",
+            "subtopic": "Descriptive Fracture Terminology"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Fracture Classification Systems",
+            "chapter": "NBK482316",
+            "section": "Classification"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_ao_ota_fracture_classification",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_fracture_classification_systems",
+      "content": {
+        "title": "AO/OTA Fracture Classification",
+        "definition": "Alphanumeric system classifying fractures by bone segment, location, and pattern complexity.",
+        "summary": "AO/OTA provides universal long-bone and periarticular classification; higher numbers indicate increasing complexity."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Trauma",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_fracture_classification_systems",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_descriptive_fracture_terminology"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "AO/OTA Fracture Classification",
+            "relevance": "Foundation for all trauma subspecialty management.",
+            "applications": [
+              "Fracture description",
+              "Treatment algorithm selection",
+              "Research and outcomes"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Fracture Principles",
+            "topic": "Fracture Classification Systems",
+            "subtopic": "AO/OTA Fracture Classification"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_descriptive_fracture_terminology"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Fracture Classification Systems",
+            "chapter": "NBK482316",
+            "section": "AO/OTA"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_regional_classification_systems",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_fracture_classification_systems",
+      "content": {
+        "title": "Regional Classification Systems",
+        "definition": "Anatomic-region schemes including Neer (proximal humerus), Garden (femoral neck), Gustilo (open fractures), and Schatzker (tibial plateau).",
+        "summary": "Regional classifications guide operative indication and prognosis within specific anatomic areas."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Trauma",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_fracture_classification_systems",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_ao_ota_fracture_classification"
+        ],
+        "unlocks": [
+          "spine_medicine_clinical_l5_gustilo_anderson_open_fracture_grading"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Regional Classification Systems",
+            "relevance": "Foundation for all trauma subspecialty management.",
+            "applications": [
+              "Fracture description",
+              "Treatment algorithm selection",
+              "Research and outcomes"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Fracture Principles",
+            "topic": "Fracture Classification Systems",
+            "subtopic": "Regional Classification Systems"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_ao_ota_fracture_classification"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_clinical_l5_gustilo_anderson_open_fracture_grading"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Fracture Classification Systems",
+            "chapter": "NBK482316",
+            "section": "Regional Classifications"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l5_gustilo_anderson_open_fracture_grading",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_clinical_l3_fracture_classification_systems",
+      "content": {
+        "title": "Gustilo-Anderson Open Fracture Grading",
+        "definition": "Soft-tissue injury grading for open fractures predicting infection risk and guiding antibiotic duration.",
+        "summary": "Type IIIB requires soft-tissue coverage; type IIIC includes arterial injury requiring repair."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Trauma",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l4_regional_classification_systems",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_regional_classification_systems"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Gustilo-Anderson Open Fracture Grading",
+            "relevance": "Foundation for all trauma subspecialty management.",
+            "applications": [
+              "Fracture description",
+              "Treatment algorithm selection",
+              "Research and outcomes"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Fracture Principles",
+            "topic": "Fracture Classification Systems",
+            "subtopic": "Gustilo-Anderson Open Fracture Grading"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_regional_classification_systems"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Fracture Classification Systems",
+            "chapter": "NBK482316",
+            "section": "Open Fractures"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_classification_treatment_and_prognosis",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_fracture_classification_systems",
+      "content": {
+        "title": "Classification in Treatment Planning and Prognosis",
+        "definition": "Using classification to select operative versus nonoperative management and estimate complication rates.",
+        "summary": "Classification alone does not dictate treatment — patient factors and soft-tissue status modify algorithms."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Trauma",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_fracture_classification_systems",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_regional_classification_systems"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Classification in Treatment Planning and Prognosis",
+            "relevance": "Foundation for all trauma subspecialty management.",
+            "applications": [
+              "Fracture description",
+              "Treatment algorithm selection",
+              "Research and outcomes"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Fracture Principles",
+            "topic": "Fracture Classification Systems",
+            "subtopic": "Classification in Treatment Planning and Prognosis"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_regional_classification_systems"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Fracture Classification Systems",
+            "chapter": "NBK482316",
+            "section": "Clinical Application"
+          }
+        ]
+      }
+    }
+  ]
+}

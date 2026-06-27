@@ -1,0 +1,401 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_mathematics_l3_vectors_in_space",
+    "anchor_primary_domain": "mathematics",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_mathematics_l3_vectors_in_space.mathematics.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "6 per-context concepts merged into 6 universal concepts (6 L4 + 0 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_mathematics_l4_cross_product",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_vectors_in_space",
+      "content": {
+        "title": "Cross Product",
+        "definition": "u × v is a vector perpendicular to both u and v with magnitude |u||v|sin θ, computed via determinant formula in 3D.",
+        "summary": "Cross products yield area of parallelograms, torque vectors, and surface normal directions."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Multivariable Analysis",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_vectors_in_space",
+        "prerequisites": [
+          "spine_mathematics_l4_vector_components_magnitude"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_lines_and_planes"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Vectors represent directed quantities in 2D and 3D, foundation for multivariable calculus.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Multivariable Calculus",
+            "topic": "Vectors in Two and Three Dimensions",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_vector_components_magnitude"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_lines_and_planes"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 3",
+            "chapter": "1",
+            "section": "Cross Product"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_dot_product",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_vectors_in_space",
+      "content": {
+        "title": "Dot Product",
+        "definition": "For u = ⟨u₁, u₂, u₃⟩ and v = ⟨v₁, v₂, v₃⟩, u · v = u₁v₁ + u₂v₂ + u₃v₃ = |u||v|cos θ.",
+        "summary": "The dot product measures alignment of vectors, yields projections, and tests orthogonality when u · v = 0."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Multivariable Analysis",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_vectors_in_space",
+        "prerequisites": [
+          "spine_mathematics_l4_vector_components_magnitude"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_vector_projections"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Vectors represent directed quantities in 2D and 3D, foundation for multivariable calculus.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Multivariable Calculus",
+            "topic": "Vectors in Two and Three Dimensions",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_vector_components_magnitude"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_vector_projections"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 3",
+            "chapter": "1",
+            "section": "Dot Product"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_lines_and_planes",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_vectors_in_space",
+      "content": {
+        "title": "Equations of Lines and Planes",
+        "definition": "Lines in space via parametric or symmetric equations; planes via point-normal form n · (r − r₀) = 0.",
+        "summary": "Line and plane equations are essential for intersection problems and multivariable optimization constraints."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Multivariable Analysis",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_vectors_in_space",
+        "prerequisites": [
+          "spine_mathematics_l4_cross_product"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Vectors represent directed quantities in 2D and 3D, foundation for multivariable calculus.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Multivariable Calculus",
+            "topic": "Vectors in Two and Three Dimensions",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_cross_product"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 3",
+            "chapter": "1",
+            "section": "Equations of Lines and Planes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_three_dimensional_coordinates",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_vectors_in_space",
+      "content": {
+        "title": "Three-Dimensional Coordinate System",
+        "definition": "Points in space represented as (x, y, z) with orthogonal axes and distance formula derived from the Pythagorean theorem.",
+        "summary": "The 3D coordinate system extends plane geometry to model spatial positions and vector components."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Multivariable Analysis",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_vectors_in_space",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_mathematics_l4_vector_components_magnitude"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Vectors represent directed quantities in 2D and 3D, foundation for multivariable calculus.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Multivariable Calculus",
+            "topic": "Vectors in Two and Three Dimensions",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_vector_components_magnitude"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 3",
+            "chapter": "1",
+            "section": "Three-Dimensional Coordinate System"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_vector_components_magnitude",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_vectors_in_space",
+      "content": {
+        "title": "Vector Components and Magnitude",
+        "definition": "A vector v = ⟨a, b, c⟩ has magnitude |v| = √(a² + b² + c²) and direction specified by components.",
+        "summary": "Component form enables algebraic vector operations and connects geometry to linear algebra."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Multivariable Analysis",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_vectors_in_space",
+        "prerequisites": [
+          "spine_mathematics_l4_three_dimensional_coordinates"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_dot_product",
+          "spine_mathematics_l4_cross_product"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Vectors represent directed quantities in 2D and 3D, foundation for multivariable calculus.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Multivariable Calculus",
+            "topic": "Vectors in Two and Three Dimensions",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_three_dimensional_coordinates"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_dot_product",
+              "spine_mathematics_l4_cross_product"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 3",
+            "chapter": "1",
+            "section": "Vector Components and Magnitude"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_vector_projections",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_vectors_in_space",
+      "content": {
+        "title": "Vector Projections",
+        "definition": "The projection of u onto v is projv u = ((u · v)/|v|²)v, giving the component of u along v.",
+        "summary": "Projections decompose forces and velocities into parallel and perpendicular components."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Multivariable Analysis",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_vectors_in_space",
+        "prerequisites": [
+          "spine_mathematics_l4_dot_product"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Vectors represent directed quantities in 2D and 3D, foundation for multivariable calculus.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Multivariable Calculus",
+            "topic": "Vectors in Two and Three Dimensions",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_dot_product"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 3",
+            "chapter": "1",
+            "section": "Vector Projections"
+          }
+        ]
+      }
+    }
+  ]
+}

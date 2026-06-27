@@ -1,0 +1,548 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_total_ankle_arthroplasty_and_arthrodesis",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "ABOS-aligned scaffold for abos_p2_foot_ankle."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_total_ankle_arthroplasty_and_arthrodesis_core_principles",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_total_ankle_arthroplasty_and_arthrodesis",
+      "content": {
+        "title": "Total Ankle Arthroplasty and Ankle Arthrodesis — Core Principles",
+        "definition": "Surgical treatment of end-stage ankle arthritis with joint replacement or fusion.",
+        "summary": "TAA preserves motion in appropriate candidates; arthrodesis remains gold standard for deformity and heavy demand. Alignment guides fusion technique."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Foot and Ankle",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_total_ankle_arthroplasty_and_arthrodesis",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Total Ankle Arthroplasty and Ankle Arthrodesis — Core Principles",
+            "relevance": "ABOS ankle arthritis section.",
+            "applications": [
+              "TAA vs arthrodesis selection",
+              "Fusion positioning",
+              "Revision options"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Ankle Arthritis",
+            "topic": "Total Ankle Arthroplasty and Ankle Arthrodesis",
+            "subtopic": "Total Ankle Arthroplasty and Ankle Arthrodesis — Core Principles"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Total Ankle Arthroplasty and Ankle Arthrodesis",
+            "chapter": "NBK557386",
+            "section": "Ankle Arthritis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_total_ankle_arthroplasty_and_arthrodesis_evaluation_and_diag",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_total_ankle_arthroplasty_and_arthrodesis",
+      "content": {
+        "title": "Evaluation and Diagnosis",
+        "definition": "History, physical examination, and initial imaging for total ankle arthroplasty and ankle arthrodesis.",
+        "summary": "Systematic assessment identifies severity, associated injuries, and urgency in total ankle arthroplasty and ankle arthrodesis."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Foot and Ankle",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_total_ankle_arthroplasty_and_arthrodesis",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_total_ankle_arthroplasty_and_arthrodesis_core_principles"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Evaluation and Diagnosis",
+            "relevance": "ABOS ankle arthritis section.",
+            "applications": [
+              "TAA vs arthrodesis selection",
+              "Fusion positioning",
+              "Revision options"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Ankle Arthritis",
+            "topic": "Total Ankle Arthroplasty and Ankle Arthrodesis",
+            "subtopic": "Evaluation and Diagnosis"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_total_ankle_arthroplasty_and_arthrodesis_core_principles"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Total Ankle Arthroplasty and Ankle Arthrodesis",
+            "chapter": "NBK557386",
+            "section": "Ankle Arthritis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_total_ankle_arthroplasty_and_arthrodesis_management_principl",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_total_ankle_arthroplasty_and_arthrodesis",
+      "content": {
+        "title": "Management Principles",
+        "definition": "Nonoperative and operative treatment algorithms for total ankle arthroplasty and ankle arthrodesis.",
+        "summary": "TAA preserves motion in appropriate candidates; arthrodesis remains gold standard for deformity and heavy demand."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Foot and Ankle",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_total_ankle_arthroplasty_and_arthrodesis",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_total_ankle_arthroplasty_and_arthrodesis_evaluation_and_diag"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Management Principles",
+            "relevance": "ABOS ankle arthritis section.",
+            "applications": [
+              "TAA vs arthrodesis selection",
+              "Fusion positioning",
+              "Revision options"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Ankle Arthritis",
+            "topic": "Total Ankle Arthroplasty and Ankle Arthrodesis",
+            "subtopic": "Management Principles"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_total_ankle_arthroplasty_and_arthrodesis_evaluation_and_diag"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Total Ankle Arthroplasty and Ankle Arthrodesis",
+            "chapter": "NBK557386",
+            "section": "Ankle Arthritis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_total_ankle_arthroplasty_and_arthrodesis_taa_vs_arthrodesis_",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_total_ankle_arthroplasty_and_arthrodesis",
+      "content": {
+        "title": "TAA vs arthrodesis selection",
+        "definition": "Focused assessment and management of taa vs arthrodesis selection in the context of total ankle arthroplasty and ankle arthrodesis.",
+        "summary": "TAA vs arthrodesis selection — key decision points from Foot and Ankle practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Foot and Ankle",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_total_ankle_arthroplasty_and_arthrodesis",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_total_ankle_arthroplasty_and_arthrodesis_management_principl"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "TAA vs arthrodesis selection",
+            "relevance": "ABOS ankle arthritis section.",
+            "applications": [
+              "TAA vs arthrodesis selection",
+              "Fusion positioning",
+              "Revision options"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Ankle Arthritis",
+            "topic": "Total Ankle Arthroplasty and Ankle Arthrodesis",
+            "subtopic": "TAA vs arthrodesis selection"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_total_ankle_arthroplasty_and_arthrodesis_management_principl"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Total Ankle Arthroplasty and Ankle Arthrodesis",
+            "chapter": "NBK557386",
+            "section": "Ankle Arthritis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_total_ankle_arthroplasty_and_arthrodesis_fusion_positioning",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_total_ankle_arthroplasty_and_arthrodesis",
+      "content": {
+        "title": "Fusion positioning",
+        "definition": "Focused assessment and management of fusion positioning in the context of total ankle arthroplasty and ankle arthrodesis.",
+        "summary": "Fusion positioning — key decision points from Foot and Ankle practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Foot and Ankle",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_total_ankle_arthroplasty_and_arthrodesis",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_total_ankle_arthroplasty_and_arthrodesis_taa_vs_arthrodesis_"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Fusion positioning",
+            "relevance": "ABOS ankle arthritis section.",
+            "applications": [
+              "TAA vs arthrodesis selection",
+              "Fusion positioning",
+              "Revision options"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Ankle Arthritis",
+            "topic": "Total Ankle Arthroplasty and Ankle Arthrodesis",
+            "subtopic": "Fusion positioning"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_total_ankle_arthroplasty_and_arthrodesis_taa_vs_arthrodesis_"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Total Ankle Arthroplasty and Ankle Arthrodesis",
+            "chapter": "NBK557386",
+            "section": "Ankle Arthritis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_total_ankle_arthroplasty_and_arthrodesis_revision_options",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_total_ankle_arthroplasty_and_arthrodesis",
+      "content": {
+        "title": "Revision options",
+        "definition": "Focused assessment and management of revision options in the context of total ankle arthroplasty and ankle arthrodesis.",
+        "summary": "Revision options — key decision points from Foot and Ankle practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Foot and Ankle",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_total_ankle_arthroplasty_and_arthrodesis",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_total_ankle_arthroplasty_and_arthrodesis_fusion_positioning"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Revision options",
+            "relevance": "ABOS ankle arthritis section.",
+            "applications": [
+              "TAA vs arthrodesis selection",
+              "Fusion positioning",
+              "Revision options"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Ankle Arthritis",
+            "topic": "Total Ankle Arthroplasty and Ankle Arthrodesis",
+            "subtopic": "Revision options"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_total_ankle_arthroplasty_and_arthrodesis_fusion_positioning"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Total Ankle Arthroplasty and Ankle Arthrodesis",
+            "chapter": "NBK557386",
+            "section": "Ankle Arthritis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_total_ankle_arthroplasty_and_arthrodesis_complications_and_o",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_total_ankle_arthroplasty_and_arthrodesis",
+      "content": {
+        "title": "Complications and Outcomes",
+        "definition": "Recognized complications, failure modes, and expected recovery after treatment of total ankle arthroplasty and ankle arthrodesis.",
+        "summary": "Anticipate, diagnose, and manage complications; counsel on prognosis and rehabilitation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Foot and Ankle",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_total_ankle_arthroplasty_and_arthrodesis",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_total_ankle_arthroplasty_and_arthrodesis_revision_options"
+        ],
+        "unlocks": [
+          "spine_medicine_clinical_l5_total_ankle_arthroplasty_and_arthrodesis_salvage_and_revisio"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Complications and Outcomes",
+            "relevance": "ABOS ankle arthritis section.",
+            "applications": [
+              "TAA vs arthrodesis selection",
+              "Fusion positioning",
+              "Revision options"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Ankle Arthritis",
+            "topic": "Total Ankle Arthroplasty and Ankle Arthrodesis",
+            "subtopic": "Complications and Outcomes"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_total_ankle_arthroplasty_and_arthrodesis_revision_options"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_clinical_l5_total_ankle_arthroplasty_and_arthrodesis_salvage_and_revisio"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Total Ankle Arthroplasty and Ankle Arthrodesis",
+            "chapter": "NBK557386",
+            "section": "Ankle Arthritis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l5_total_ankle_arthroplasty_and_arthrodesis_salvage_and_revisio",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_clinical_l3_total_ankle_arthroplasty_and_arthrodesis",
+      "content": {
+        "title": "Salvage and Revision Strategies",
+        "definition": "Revision and salvage options when initial management of total ankle arthroplasty and ankle arthrodesis fails.",
+        "summary": "Staged revision and alternative strategies when primary treatment fails or complications develop."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Foot and Ankle",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l4_total_ankle_arthroplasty_and_arthrodesis_complications_and_o",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_total_ankle_arthroplasty_and_arthrodesis_complications_and_o"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Salvage and Revision Strategies",
+            "relevance": "ABOS ankle arthritis section.",
+            "applications": [
+              "TAA vs arthrodesis selection",
+              "Fusion positioning",
+              "Revision options"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Ankle Arthritis",
+            "topic": "Total Ankle Arthroplasty and Ankle Arthrodesis",
+            "subtopic": "Salvage and Revision Strategies"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_total_ankle_arthroplasty_and_arthrodesis_complications_and_o"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Total Ankle Arthroplasty and Ankle Arthrodesis",
+            "chapter": "NBK557386",
+            "section": "Ankle Arthritis"
+          }
+        ]
+      }
+    }
+  ]
+}

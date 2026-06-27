@@ -1,0 +1,366 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_psychology_neuroscience_l3_classical_conditioning",
+    "anchor_primary_domain": "psychology_neuroscience",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_psychology_neuroscience_l3_classical_conditioning.psychology_neuroscience.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "4 per-context concepts merged into 4 universal concepts (4 L4 + 0 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_psychology_neuroscience_l4_acquisition_extinction_spontaneous_recovery",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_classical_conditioning",
+      "content": {
+        "title": "Acquisition, Extinction, and Spontaneous Recovery",
+        "definition": "Strengthening of CS–US associations, their weakening when US is omitted, and return over time.",
+        "summary": "Extinction is new inhibitory learning, not erasure of original memory."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Associative Learning",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Medicine preclinical behavioral science (patient adherence, aversive conditioning) is a domain context — not a separate L3."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_classical_conditioning",
+        "prerequisites": [
+          "spine_psychology_neuroscience_l4_pavlovian_conditioning_paradigm"
+        ],
+        "unlocks": [
+          "spine_psychology_neuroscience_l4_generalization_discrimination"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Acquisition, Extinction, and Spontaneous Recovery",
+            "relevance": "Foundation of associative learning in behavioral psychology.",
+            "applications": [
+              "Pavlovian paradigms",
+              "Conditioned emotional responses"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Psychology & Neuroscience",
+            "subcategory": "Learning & Conditioning",
+            "topic": "Classical Conditioning",
+            "subtopic": "Acquisition"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_psychology_neuroscience_l4_pavlovian_conditioning_paradigm"
+            ],
+            "unlocks_in_context": [
+              "spine_psychology_neuroscience_l4_generalization_discrimination"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Psychology 2e",
+            "chapter": "6",
+            "section": "6.2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l4_classical_conditioning_applications",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_classical_conditioning",
+      "content": {
+        "title": "Applications: Fear Learning and Drug Cues",
+        "definition": "Conditioned fear paradigms and cue-induced craving in substance use.",
+        "summary": "Understanding CS pathways informs exposure-based therapies."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Associative Learning",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Medicine preclinical behavioral science (patient adherence, aversive conditioning) is a domain context — not a separate L3."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_classical_conditioning",
+        "prerequisites": [
+          "spine_psychology_neuroscience_l4_generalization_discrimination"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Applications: Fear Learning and Drug Cues",
+            "relevance": "Behavioral medicine applications including patient adherence, aversive conditioning, and reinforcement in clinical settings.",
+            "applications": [
+              "Patient adherence",
+              "Behavioral change protocols"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Behavioral Science",
+            "subcategory": "Learning & Conditioning",
+            "topic": "Classical Conditioning",
+            "subtopic": "Applications"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_psychology_neuroscience_l4_generalization_discrimination"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Applications: Fear Learning and Drug Cues",
+            "relevance": "Foundation of associative learning in behavioral psychology.",
+            "applications": [
+              "Pavlovian paradigms",
+              "Conditioned emotional responses"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Psychology & Neuroscience",
+            "subcategory": "Learning & Conditioning",
+            "topic": "Classical Conditioning",
+            "subtopic": "Applications"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_psychology_neuroscience_l4_generalization_discrimination"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Psychology 2e",
+            "chapter": "6",
+            "section": "6.4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l4_generalization_discrimination",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_classical_conditioning",
+      "content": {
+        "title": "Stimulus Generalization and Discrimination",
+        "definition": "Spread of conditioned responding to similar cues versus sharpening to specific CS.",
+        "summary": "Discrimination training reduces fear overgeneralization seen in anxiety."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Associative Learning",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Medicine preclinical behavioral science (patient adherence, aversive conditioning) is a domain context — not a separate L3."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_classical_conditioning",
+        "prerequisites": [
+          "spine_psychology_neuroscience_l4_acquisition_extinction_spontaneous_recovery"
+        ],
+        "unlocks": [
+          "spine_psychology_neuroscience_l4_classical_conditioning_applications"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Stimulus Generalization and Discrimination",
+            "relevance": "Behavioral medicine applications including patient adherence, aversive conditioning, and reinforcement in clinical settings.",
+            "applications": [
+              "Patient adherence",
+              "Behavioral change protocols"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Behavioral Science",
+            "subcategory": "Learning & Conditioning",
+            "topic": "Classical Conditioning",
+            "subtopic": "Generalization"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_psychology_neuroscience_l4_classical_conditioning_applications"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Stimulus Generalization and Discrimination",
+            "relevance": "Foundation of associative learning in behavioral psychology.",
+            "applications": [
+              "Pavlovian paradigms",
+              "Conditioned emotional responses"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Psychology & Neuroscience",
+            "subcategory": "Learning & Conditioning",
+            "topic": "Classical Conditioning",
+            "subtopic": "Generalization"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_psychology_neuroscience_l4_acquisition_extinction_spontaneous_recovery"
+            ],
+            "unlocks_in_context": [
+              "spine_psychology_neuroscience_l4_classical_conditioning_applications"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Psychology 2e",
+            "chapter": "6",
+            "section": "6.3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l4_pavlovian_conditioning_paradigm",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_classical_conditioning",
+      "content": {
+        "title": "Pavlovian Conditioning Paradigm",
+        "definition": "Pairing neutral conditioned stimuli with unconditioned stimuli to elicit conditioned responses.",
+        "summary": "Temporal contiguity and predictiveness determine learning strength."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Associative Learning",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Medicine preclinical behavioral science (patient adherence, aversive conditioning) is a domain context — not a separate L3."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_classical_conditioning",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_psychology_neuroscience_l4_acquisition_extinction_spontaneous_recovery"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Pavlovian Conditioning Paradigm",
+            "relevance": "Behavioral medicine applications including patient adherence, aversive conditioning, and reinforcement in clinical settings.",
+            "applications": [
+              "Patient adherence",
+              "Behavioral change protocols"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Behavioral Science",
+            "subcategory": "Learning & Conditioning",
+            "topic": "Classical Conditioning",
+            "subtopic": "Paradigm"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Pavlovian Conditioning Paradigm",
+            "relevance": "Foundation of associative learning in behavioral psychology.",
+            "applications": [
+              "Pavlovian paradigms",
+              "Conditioned emotional responses"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Psychology & Neuroscience",
+            "subcategory": "Learning & Conditioning",
+            "topic": "Classical Conditioning",
+            "subtopic": "Paradigm"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_psychology_neuroscience_l4_acquisition_extinction_spontaneous_recovery"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Psychology 2e",
+            "chapter": "6",
+            "section": "6.1"
+          }
+        ]
+      }
+    }
+  ]
+}

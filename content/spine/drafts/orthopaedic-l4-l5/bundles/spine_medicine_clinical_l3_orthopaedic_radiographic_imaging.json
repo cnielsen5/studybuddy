@@ -1,0 +1,276 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_orthopaedic_radiographic_imaging",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "Orthopaedic L4/L5 expansion for Orthopaedic Radiographic Imaging. 4 L4, 0 L5."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_standard_radiographic_views",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_orthopaedic_radiographic_imaging",
+      "content": {
+        "title": "Standard Radiographic Views",
+        "definition": "AP, lateral, oblique, and joint-specific views for shoulder, hip, knee, ankle, and spine.",
+        "summary": "Always obtain orthogonal views; compare with contralateral side in paediatrics when appropriate."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_orthopaedic_radiographic_imaging",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Standard Radiographic Views",
+            "relevance": "Gateway diagnostic skill across all orthopaedic subspecialties.",
+            "applications": [
+              "Fracture identification",
+              "Arthritis grading",
+              "Postoperative alignment assessment"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Imaging",
+            "topic": "Orthopaedic Radiographic Imaging",
+            "subtopic": "Standard Radiographic Views"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Orthopaedic Radiographic Imaging",
+            "chapter": "NBK554585",
+            "section": "Radiography"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_systematic_film_interpretation",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_orthopaedic_radiographic_imaging",
+      "content": {
+        "title": "Systematic Film Interpretation",
+        "definition": "ABCS approach: alignment, bone, cartilage/joint space, soft tissue.",
+        "summary": "Soft-tissue swelling and fat-pad signs suggest occult fracture."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_orthopaedic_radiographic_imaging",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_standard_radiographic_views"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Systematic Film Interpretation",
+            "relevance": "Gateway diagnostic skill across all orthopaedic subspecialties.",
+            "applications": [
+              "Fracture identification",
+              "Arthritis grading",
+              "Postoperative alignment assessment"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Imaging",
+            "topic": "Orthopaedic Radiographic Imaging",
+            "subtopic": "Systematic Film Interpretation"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_standard_radiographic_views"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Orthopaedic Radiographic Imaging",
+            "chapter": "NBK554585",
+            "section": "Radiography"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_alignment_and_angular_measurement",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_orthopaedic_radiographic_imaging",
+      "content": {
+        "title": "Alignment and Angular Measurement",
+        "definition": "Mechanical axis, joint line obliquity, and anatomic angles for preoperative planning.",
+        "summary": "Hip-knee-ankle alignment guides osteotomy and arthroplasty component positioning."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_orthopaedic_radiographic_imaging",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_systematic_film_interpretation"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Alignment and Angular Measurement",
+            "relevance": "Gateway diagnostic skill across all orthopaedic subspecialties.",
+            "applications": [
+              "Fracture identification",
+              "Arthritis grading",
+              "Postoperative alignment assessment"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Imaging",
+            "topic": "Orthopaedic Radiographic Imaging",
+            "subtopic": "Alignment and Angular Measurement"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_systematic_film_interpretation"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Orthopaedic Radiographic Imaging",
+            "chapter": "NBK554585",
+            "section": "Radiography"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_postoperative_radiographic_assessment",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_orthopaedic_radiographic_imaging",
+      "content": {
+        "title": "Postoperative Radiographic Assessment",
+        "definition": "Evaluation of implant position, fracture reduction, and signs of loosening or nonunion.",
+        "summary": "Lucency around cementless stems and progressive screw cutout indicate failure modes."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_orthopaedic_radiographic_imaging",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_alignment_and_angular_measurement"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Postoperative Radiographic Assessment",
+            "relevance": "Gateway diagnostic skill across all orthopaedic subspecialties.",
+            "applications": [
+              "Fracture identification",
+              "Arthritis grading",
+              "Postoperative alignment assessment"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Imaging",
+            "topic": "Orthopaedic Radiographic Imaging",
+            "subtopic": "Postoperative Radiographic Assessment"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_alignment_and_angular_measurement"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Orthopaedic Radiographic Imaging",
+            "chapter": "NBK554585",
+            "section": "Radiography"
+          }
+        ]
+      }
+    }
+  ]
+}

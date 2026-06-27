@@ -1,0 +1,769 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_biology_l3_hypersensitivity_reactions",
+    "anchor_primary_domain": "biology",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_biology_l3_hypersensitivity_reactions.biology.json",
+      "content/spine/l4-l5-bundles/spine_biology_l3_hypersensitivity_reactions.medicine_preclinical.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "13 per-context concepts merged into 12 universal concepts (8 L4 + 4 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_biology_l4_hypersensitivity_classification_overview",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_hypersensitivity_reactions",
+      "content": {
+        "title": "Gell and Coombs Classification Overview",
+        "definition": "Framework categorizing excessive immune responses into four types by effector mechanism: IgE-mediated (I), cytotoxic antibody (II), immune complex (III), and delayed T-cell (IV).",
+        "summary": "Type classification predicts timing, mediators, and clinical examples. Each type uses distinct adaptive immune effector pathways."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Immunology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_hypersensitivity_reactions",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_biology_l4_hypersensitivity_type_i",
+          "spine_biology_l4_hypersensitivity_type_ii",
+          "spine_biology_l4_hypersensitivity_type_iii",
+          "spine_biology_l4_hypersensitivity_type_iv"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Gell and Coombs Classification Overview",
+            "relevance": "High-yield Step 1 mechanistic taxonomy.",
+            "applications": [
+              "Type I immediate",
+              "Type IV delayed"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Hypersensitivity",
+            "topic": "Hypersensitivity Types",
+            "subtopic": "Classification"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_biology_l4_hypersensitivity_type_i",
+              "spine_biology_l4_hypersensitivity_type_ii",
+              "spine_biology_l4_hypersensitivity_type_iii",
+              "spine_biology_l4_hypersensitivity_type_iv"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "44",
+            "section": "44.5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_hypersensitivity_type_i",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_hypersensitivity_reactions",
+      "content": {
+        "title": "Type I IgE-Mediated Hypersensitivity",
+        "definition": "Immediate hypersensitivity mediated by IgE antibodies binding FcεRI on mast cells and basophils, triggering degranulation and allergic symptoms upon allergen re-exposure.",
+        "summary": "Type I reactions include hay fever, asthma, and anaphylaxis. Sensitization produces allergen-specific IgE; subsequent exposure causes rapid mediator release."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Immune Pathology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_hypersensitivity_reactions",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_biology_l4_hypersensitivity_type_ii",
+          "spine_biology_l5_anaphylaxis_mediators"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Type I IgE-Mediated Hypersensitivity",
+            "relevance": "Most common allergic disease mechanism.",
+            "applications": [
+              "Mast cell degranulation",
+              "Anaphylaxis"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Immune Pathology",
+            "topic": "Hypersensitivity",
+            "subtopic": "Type I"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_biology_l4_hypersensitivity_type_ii"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Type I (IgE-Mediated) Hypersensitivity",
+            "relevance": "Anaphylaxis and allergic rhinitis.",
+            "applications": [
+              "Mast cell degranulation",
+              "Epinephrine treatment"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Hypersensitivity",
+            "topic": "Hypersensitivity Types",
+            "subtopic": "Type I"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_biology_l5_anaphylaxis_mediators",
+              "spine_biology_l4_hypersensitivity_type_ii"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "44",
+            "section": "44.5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_hypersensitivity_type_ii",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_hypersensitivity_reactions",
+      "content": {
+        "title": "Type II Antibody-Mediated Cytotoxicity",
+        "definition": "Hypersensitivity in which IgG or IgM antibodies bind cell-surface antigens, leading to complement-mediated lysis, opsonization, or antibody-dependent cellular cytotoxicity.",
+        "summary": "Type II reactions destroy host cells bearing targeted antigens. Examples include hemolytic transfusion reactions and some drug-induced cytopenias."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Immune Pathology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_hypersensitivity_reactions",
+        "prerequisites": [
+          "spine_biology_l4_hypersensitivity_type_i"
+        ],
+        "unlocks": [
+          "spine_biology_l4_hypersensitivity_type_iii",
+          "spine_biology_l5_autoimmune_hemolytic_anemia"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Type II Antibody-Mediated Cytotoxicity",
+            "relevance": "Antibody-driven destruction of host cells.",
+            "applications": [
+              "Complement lysis",
+              "ADCC"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Immune Pathology",
+            "topic": "Hypersensitivity",
+            "subtopic": "Type II"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_hypersensitivity_type_i"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_hypersensitivity_type_iii"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Type II (Cytotoxic Antibody) Hypersensitivity",
+            "relevance": "Autoimmune hemolytic anemia and Goodpasture syndrome.",
+            "applications": [
+              "Complement-mediated lysis",
+              "ADCC"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Hypersensitivity",
+            "topic": "Hypersensitivity Types",
+            "subtopic": "Type II"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_hypersensitivity_type_i"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l5_autoimmune_hemolytic_anemia",
+              "spine_biology_l4_hypersensitivity_type_iii"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-26T05:54:17.139Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "44",
+            "section": "44.9"
+          },
+          {
+            "source": "NCBI StatPearls",
+            "section": "Hypersensitivity — Type II",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_hypersensitivity_type_iii",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_hypersensitivity_reactions",
+      "content": {
+        "title": "Type III Immune Complex Disease",
+        "definition": "Tissue damage from deposition of antigen–antibody complexes in vessel walls and tissues, activating complement and recruiting inflammatory cells.",
+        "summary": "Type III reactions cause serum sickness and Arthus reactions. Soluble immune complexes deposit in joints, kidneys, and skin, provoking inflammation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Immune Pathology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_hypersensitivity_reactions",
+        "prerequisites": [
+          "spine_biology_l4_hypersensitivity_type_ii"
+        ],
+        "unlocks": [
+          "spine_biology_l4_hypersensitivity_type_iv",
+          "spine_biology_l5_serum_sickness_mechanism"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Type III Immune Complex Disease",
+            "relevance": "Immune complex deposition as a mechanism of tissue injury.",
+            "applications": [
+              "Serum sickness",
+              "Immune complex deposition"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Immune Pathology",
+            "topic": "Hypersensitivity",
+            "subtopic": "Type III"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_hypersensitivity_type_ii"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_hypersensitivity_type_iv"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Type III (Immune Complex) Hypersensitivity",
+            "relevance": "SLE nephritis and serum sickness.",
+            "applications": [
+              "Immune complex deposition",
+              "Neutrophil-mediated damage"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Hypersensitivity",
+            "topic": "Hypersensitivity Types",
+            "subtopic": "Type III"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_hypersensitivity_type_ii"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l5_serum_sickness_mechanism",
+              "spine_biology_l4_hypersensitivity_type_iv"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-26T05:54:17.139Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "chapter": "Hypersensitivity",
+            "section": "Type III"
+          },
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "44",
+            "section": "44.5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_hypersensitivity_type_iv",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_hypersensitivity_reactions",
+      "content": {
+        "title": "Type IV (Delayed T-Cell) Hypersensitivity",
+        "definition": "T-cell-mediated tissue injury occurring 24–72 hours after antigen exposure, without antibody involvement, driven by sensitized CD4+ or CD8+ T cells.",
+        "summary": "Delayed-type hypersensitivity involves macrophage activation and cytotoxic T-cell killing. PPD skin test and contact dermatitis are classic examples."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Immune Pathology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_hypersensitivity_reactions",
+        "prerequisites": [
+          "spine_biology_l4_hypersensitivity_type_iii"
+        ],
+        "unlocks": [
+          "spine_biology_l5_ppd_tb_skin_test",
+          {
+            "concept_id": "spine_biology_l3_autoimmunity",
+            "_forward_reference": true
+          }
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Type IV T Cell-Mediated Hypersensitivity",
+            "relevance": "Cell-mediated immune pathology without antibodies.",
+            "applications": [
+              "Contact dermatitis",
+              "TB skin test"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Immune Pathology",
+            "topic": "Hypersensitivity",
+            "subtopic": "Type IV"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_hypersensitivity_type_iii"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Type IV (Delayed T-Cell) Hypersensitivity",
+            "relevance": "TB skin test and poison ivy dermatitis.",
+            "applications": [
+              "PPD and tuberculin reaction",
+              "Contact dermatitis"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Hypersensitivity",
+            "topic": "Hypersensitivity Types",
+            "subtopic": "Type IV"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_hypersensitivity_type_iii"
+            ],
+            "unlocks_in_context": [
+              {
+                "concept_id": "spine_biology_l3_autoimmunity",
+                "_forward_reference": true
+              },
+              "spine_biology_l5_ppd_tb_skin_test"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-26T05:54:17.139Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "chapter": "Hypersensitivity",
+            "section": "Type IV"
+          },
+          {
+            "source": "NCBI StatPearls",
+            "section": "Hypersensitivity — Type IV",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l5_anaphylaxis_mediators",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_biology_l3_hypersensitivity_reactions",
+      "content": {
+        "title": "Anaphylaxis Mediators and Treatment",
+        "definition": "Systemic type I reaction with rapid hypotension, bronchospasm, and urticaria mediated by histamine and leukotrienes; epinephrine is first-line treatment.",
+        "summary": "Anaphylaxis requires immediate IM epinephrine. Antihistamines and steroids are adjunctive but do not replace epinephrine."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Immunology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l4_hypersensitivity_type_i",
+        "prerequisites": [
+          "spine_biology_l4_hypersensitivity_type_i"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Anaphylaxis Mediators and Treatment",
+            "relevance": "Emergency management high-yield.",
+            "applications": [
+              "Epinephrine IM",
+              "Leukotriene bronchospasm"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Hypersensitivity",
+            "topic": "Hypersensitivity Types",
+            "subtopic": "Anaphylaxis"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_hypersensitivity_type_i"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "section": "Anaphylaxis",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l5_autoimmune_hemolytic_anemia",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_biology_l3_hypersensitivity_reactions",
+      "content": {
+        "title": "Autoimmune Hemolytic Anemia (Type II)",
+        "definition": "Warm or cold autoantibodies against RBC surface antigens causing extravascular or intravascular hemolysis as a type II hypersensitivity manifestation.",
+        "summary": "Warm AIHA involves IgG against Rh antigens with splenic sequestration. Cold agglutinin disease involves IgM and complement."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Immunology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l4_hypersensitivity_type_ii",
+        "prerequisites": [
+          "spine_biology_l4_hypersensitivity_type_ii"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Autoimmune Hemolytic Anemia (Type II)",
+            "relevance": "Direct Coombs test interpretation.",
+            "applications": [
+              "Warm vs cold AIHA",
+              "Direct antiglobulin test"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Hypersensitivity",
+            "topic": "Hypersensitivity Types",
+            "subtopic": "AIHA"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_hypersensitivity_type_ii"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "section": "Autoimmune Hemolytic Anemia",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l5_ppd_tb_skin_test",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_biology_l3_hypersensitivity_reactions",
+      "content": {
+        "title": "PPD and TB Skin Test (Type IV)",
+        "definition": "Delayed hypersensitivity reaction to tuberculin protein reflecting prior sensitization by Mycobacterium tuberculosis, read at 48–72 hours as induration.",
+        "summary": "PPD tests cell-mediated immunity, not antibody. False negatives occur in immunosuppression; BCG can cause false positives."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Immunology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l4_hypersensitivity_type_iv",
+        "prerequisites": [
+          "spine_biology_l4_hypersensitivity_type_iv"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "PPD and TB Skin Test (Type IV)",
+            "relevance": "TB screening and immunocompromise.",
+            "applications": [
+              "Induration measurement",
+              "BCG effect on PPD"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Hypersensitivity",
+            "topic": "Hypersensitivity Types",
+            "subtopic": "PPD"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_hypersensitivity_type_iv"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "section": "Tuberculosis Screening",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l5_serum_sickness_mechanism",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_biology_l3_hypersensitivity_reactions",
+      "content": {
+        "title": "Serum Sickness Mechanism",
+        "definition": "Type III reaction 1–2 weeks after foreign protein exposure when antigen–antibody complexes deposit in joints, kidneys, and vessels causing fever, rash, and arthralgia.",
+        "summary": "Serum sickness follows antitoxin or drug-protein conjugate administration. Complement consumption and neutrophil infiltration drive symptoms."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Immunology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l4_hypersensitivity_type_iii",
+        "prerequisites": [
+          "spine_biology_l4_hypersensitivity_type_iii"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Serum Sickness Mechanism",
+            "relevance": "Drug-induced serum sickness.",
+            "applications": [
+              "Immune complex vasculitis",
+              "Complement C3 consumption"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Hypersensitivity",
+            "topic": "Hypersensitivity Types",
+            "subtopic": "Serum Sickness"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_hypersensitivity_type_iii"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "section": "Serum Sickness",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    }
+  ]
+}

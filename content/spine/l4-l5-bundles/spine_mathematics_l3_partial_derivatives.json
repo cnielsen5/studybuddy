@@ -1,0 +1,401 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_mathematics_l3_partial_derivatives",
+    "anchor_primary_domain": "mathematics",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_mathematics_l3_partial_derivatives.mathematics.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "6 per-context concepts merged into 6 universal concepts (6 L4 + 0 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_mathematics_l4_clairaut_theorem",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_partial_derivatives",
+      "content": {
+        "title": "Clairaut's Theorem on Mixed Partials",
+        "definition": "If f_{xy} and f_{yx} are continuous on an open disk, then f_{xy} = f_{yx} at each point.",
+        "summary": "Equality of mixed partials simplifies computation and guarantees symmetric Hessian entries for optimization."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Multivariable Analysis",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_partial_derivatives",
+        "prerequisites": [
+          "spine_mathematics_l4_higher_order_partials"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Partial derivatives measure rate of change in multivariable functions.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Multivariable Calculus",
+            "topic": "Partial Derivatives",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_higher_order_partials"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 3",
+            "chapter": "4",
+            "section": "Clairaut's Theorem on Mixed Partials"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_functions_several_variables",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_partial_derivatives",
+      "content": {
+        "title": "Functions of Several Variables",
+        "definition": "Functions z = f(x, y) mapping multiple inputs to a single output, with domain in ℝⁿ and graphs as surfaces in 3D.",
+        "summary": "Multivariable functions model quantities depending on several independent variables such as temperature over space and time."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Multivariable Analysis",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_partial_derivatives",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_mathematics_l4_partial_derivative_definition"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Partial derivatives measure rate of change in multivariable functions.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Multivariable Calculus",
+            "topic": "Partial Derivatives",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_partial_derivative_definition"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 3",
+            "chapter": "4",
+            "section": "Functions of Several Variables"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_gradient_vector",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_partial_derivatives",
+      "content": {
+        "title": "Gradient Vector",
+        "definition": "∇f = ⟨f_x, f_y⟩ points in the direction of steepest ascent with magnitude equal to maximum rate of increase.",
+        "summary": "The gradient is central to optimization, level curves, and vector field definitions."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Multivariable Analysis",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_partial_derivatives",
+        "prerequisites": [
+          "spine_mathematics_l4_partial_derivative_definition"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_multivariable_chain_rule"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Partial derivatives measure rate of change in multivariable functions.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Multivariable Calculus",
+            "topic": "Partial Derivatives",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_partial_derivative_definition"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_multivariable_chain_rule"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 3",
+            "chapter": "4",
+            "section": "Gradient Vector"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_higher_order_partials",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_partial_derivatives",
+      "content": {
+        "title": "Higher-Order Partial Derivatives",
+        "definition": "Second partials f_{xx}, f_{xy}, f_{yx}, f_{yy} and beyond, with Clairaut's theorem f_{xy} = f_{yx} under continuity.",
+        "summary": "Mixed partials describe interaction effects between variables and appear in heat equation and optimization tests."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Multivariable Analysis",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_partial_derivatives",
+        "prerequisites": [
+          "spine_mathematics_l4_partial_derivative_definition"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_clairaut_theorem"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Partial derivatives measure rate of change in multivariable functions.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Multivariable Calculus",
+            "topic": "Partial Derivatives",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_partial_derivative_definition"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_clairaut_theorem"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 3",
+            "chapter": "4",
+            "section": "Higher-Order Partial Derivatives"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_multivariable_chain_rule",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_partial_derivatives",
+      "content": {
+        "title": "Multivariable Chain Rule",
+        "definition": "If z = f(x, y) with x = g(t), y = h(t), then dz/dt = (∂f/∂x)(dx/dt) + (∂f/∂y)(dy/dt).",
+        "summary": "The multivariable chain rule tracks total rate of change through composed dependencies."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Multivariable Analysis",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_partial_derivatives",
+        "prerequisites": [
+          "spine_mathematics_l4_gradient_vector"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Partial derivatives measure rate of change in multivariable functions.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Multivariable Calculus",
+            "topic": "Partial Derivatives",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_gradient_vector"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 3",
+            "chapter": "4",
+            "section": "Multivariable Chain Rule"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_partial_derivative_definition",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_partial_derivatives",
+      "content": {
+        "title": "Partial Derivative Definition",
+        "definition": "∂f/∂x is the derivative of f with respect to x holding other variables fixed; computed by usual rules treating other variables as constants.",
+        "summary": "Partial derivatives isolate sensitivity to one input while holding others constant."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Multivariable Analysis",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_partial_derivatives",
+        "prerequisites": [
+          "spine_mathematics_l4_functions_several_variables"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_higher_order_partials",
+          "spine_mathematics_l4_gradient_vector"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Partial derivatives measure rate of change in multivariable functions.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Multivariable Calculus",
+            "topic": "Partial Derivatives",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_functions_several_variables"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_higher_order_partials",
+              "spine_mathematics_l4_gradient_vector"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 3",
+            "chapter": "4",
+            "section": "Partial Derivative Definition"
+          }
+        ]
+      }
+    }
+  ]
+}

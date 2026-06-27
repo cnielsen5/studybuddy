@@ -1,0 +1,344 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_mathematics_l3_second_order_linear_odes",
+    "anchor_primary_domain": "mathematics",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_mathematics_l3_second_order_linear_odes.mathematics.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "5 per-context concepts merged into 5 universal concepts (5 L4 + 0 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_mathematics_l4_characteristic_equation",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_second_order_linear_odes",
+      "content": {
+        "title": "Characteristic Equation",
+        "definition": "For ay″ + by′ + cy = 0, substitute y = e^{rx} to obtain ar² + br + c = 0 whose roots determine the solution form.",
+        "summary": "The characteristic polynomial reduces second-order ODEs to algebraic root-finding."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Dynamical Systems",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_second_order_linear_odes",
+        "prerequisites": [
+          "spine_mathematics_l4_second_order_linear_classification"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_real_distinct_roots",
+          "spine_mathematics_l4_complex_conjugate_roots",
+          "spine_mathematics_l4_repeated_roots"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Second-order ODEs model oscillations, springs, and circuits.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Differential Equations",
+            "topic": "Second-Order Linear Differential Equations",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_second_order_linear_classification"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_real_distinct_roots",
+              "spine_mathematics_l4_complex_conjugate_roots",
+              "spine_mathematics_l4_repeated_roots"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 2",
+            "chapter": "4",
+            "section": "Characteristic Equation"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_complex_conjugate_roots",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_second_order_linear_odes",
+      "content": {
+        "title": "Complex Conjugate Roots",
+        "definition": "When r = α ± βi, solution y = e^{αx}(C₁ cos βx + C₂ sin βx) exhibits oscillation modulated by exponential envelope.",
+        "summary": "Complex roots model damped or undamped oscillations in mechanical and electrical systems."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Dynamical Systems",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_second_order_linear_odes",
+        "prerequisites": [
+          "spine_mathematics_l4_characteristic_equation"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Second-order ODEs model oscillations, springs, and circuits.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Differential Equations",
+            "topic": "Second-Order Linear Differential Equations",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_characteristic_equation"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 2",
+            "chapter": "4",
+            "section": "Complex Conjugate Roots"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_real_distinct_roots",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_second_order_linear_odes",
+      "content": {
+        "title": "Real Distinct Roots",
+        "definition": "When r₁ ≠ r₂ are real, general solution y = C₁e^{r₁x} + C₂e^{r₂x}.",
+        "summary": "Real distinct roots produce exponential modes without oscillation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Dynamical Systems",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_second_order_linear_odes",
+        "prerequisites": [
+          "spine_mathematics_l4_characteristic_equation"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Second-order ODEs model oscillations, springs, and circuits.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Differential Equations",
+            "topic": "Second-Order Linear Differential Equations",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_characteristic_equation"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 2",
+            "chapter": "4",
+            "section": "Real Distinct Roots"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_repeated_roots",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_second_order_linear_odes",
+      "content": {
+        "title": "Repeated Roots",
+        "definition": "When r is a double root, general solution y = (C₁ + C₂x)e^{rx} includes an x factor for linear independence.",
+        "summary": "Repeated roots require multiplying by x to obtain a second linearly independent solution."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Dynamical Systems",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_second_order_linear_odes",
+        "prerequisites": [
+          "spine_mathematics_l4_characteristic_equation"
+        ],
+        "unlocks": [
+          {
+            "concept_id": "spine_mathematics_l3_systems_of_odes",
+            "_forward_reference": true
+          }
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Second-order ODEs model oscillations, springs, and circuits.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Differential Equations",
+            "topic": "Second-Order Linear Differential Equations",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_characteristic_equation"
+            ],
+            "unlocks_in_context": [
+              {
+                "concept_id": "spine_mathematics_l3_systems_of_odes",
+                "_forward_reference": true
+              }
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 2",
+            "chapter": "4",
+            "section": "Repeated Roots"
+          }
+        ]
+      },
+      "_reviewer_note": "Contains forward reference to existing L3 node — verify target exists in spine."
+    },
+    {
+      "id": "spine_mathematics_l4_second_order_linear_classification",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_second_order_linear_odes",
+      "content": {
+        "title": "Second-Order Linear ODE Classification",
+        "definition": "Equations ay″ + by′ + cy = g(x); homogeneous when g = 0, nonhomogeneous otherwise; linear superposition applies.",
+        "summary": "Classification determines whether superposition and characteristic equation methods apply."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Dynamical Systems",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_second_order_linear_odes",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_mathematics_l4_characteristic_equation"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Second-order ODEs model oscillations, springs, and circuits.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Differential Equations",
+            "topic": "Second-Order Linear Differential Equations",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_characteristic_equation"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 2",
+            "chapter": "4",
+            "section": "Second-Order Linear ODE Classification"
+          }
+        ]
+      }
+    }
+  ]
+}

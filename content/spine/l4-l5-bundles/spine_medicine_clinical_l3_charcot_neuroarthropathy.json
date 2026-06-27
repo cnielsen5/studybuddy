@@ -1,0 +1,276 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_charcot_neuroarthropathy",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "Orthopaedic L4/L5 expansion for Charcot Neuroarthropathy. 4 L4, 0 L5."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_charcot_pathophysiology_and_stages",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_charcot_neuroarthropathy",
+      "content": {
+        "title": "Charcot Pathophysiology and Eichenholtz Stages",
+        "definition": "Neuropathic bone and joint destruction in diabetes with acute fragmentation and coalescence phases.",
+        "summary": "Acute stage: immobilize non-weight-bearing; misdiagnosis as infection is common."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Foot and Ankle",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_charcot_neuroarthropathy",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Charcot Pathophysiology and Eichenholtz Stages",
+            "relevance": "Standalone foot and ankle topic per ABOS diabetic foot section; distinct from general diabetes management.",
+            "applications": [
+              "Acute immobilization",
+              "Total contact cast",
+              "Surgical reconstruction timing"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Charcot Foot",
+            "topic": "Charcot Neuroarthropathy",
+            "subtopic": "Charcot Pathophysiology and Eichenholtz Stages"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Charcot Neuroarthropathy",
+            "chapter": "NBK557386",
+            "section": "Charcot Arthropathy"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_charcot_clinical_diagnosis",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_charcot_neuroarthropathy",
+      "content": {
+        "title": "Charcot Clinical Diagnosis",
+        "definition": "Warm, swollen, red foot with minimal pain and intact pulses distinguishing from cellulitis.",
+        "summary": "Temperature difference >2°C versus contralateral foot supports Charcot."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Foot and Ankle",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_charcot_neuroarthropathy",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_charcot_pathophysiology_and_stages"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Charcot Clinical Diagnosis",
+            "relevance": "Standalone foot and ankle topic per ABOS diabetic foot section; distinct from general diabetes management.",
+            "applications": [
+              "Acute immobilization",
+              "Total contact cast",
+              "Surgical reconstruction timing"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Charcot Foot",
+            "topic": "Charcot Neuroarthropathy",
+            "subtopic": "Charcot Clinical Diagnosis"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_charcot_pathophysiology_and_stages"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Charcot Neuroarthropathy",
+            "chapter": "NBK557386",
+            "section": "Charcot Arthropathy"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_charcot_nonoperative_management",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_charcot_neuroarthropathy",
+      "content": {
+        "title": "Charcot Nonoperative Management",
+        "definition": "Total contact cast and protected weight-bearing until consolidation.",
+        "summary": "Cast changes weekly; may require months; lifelong depth-inlay shoes after."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Foot and Ankle",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_charcot_neuroarthropathy",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_charcot_clinical_diagnosis"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Charcot Nonoperative Management",
+            "relevance": "Standalone foot and ankle topic per ABOS diabetic foot section; distinct from general diabetes management.",
+            "applications": [
+              "Acute immobilization",
+              "Total contact cast",
+              "Surgical reconstruction timing"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Charcot Foot",
+            "topic": "Charcot Neuroarthropathy",
+            "subtopic": "Charcot Nonoperative Management"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_charcot_clinical_diagnosis"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Charcot Neuroarthropathy",
+            "chapter": "NBK557386",
+            "section": "Charcot Arthropathy"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_charcot_surgical_reconstruction",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_charcot_neuroarthropathy",
+      "content": {
+        "title": "Charcot Surgical Reconstruction",
+        "definition": "Exostectomy, realignment osteotomy, and fusion for rocker-bottom deformity with ulcer.",
+        "summary": "Surgery when quiescent stage; high complication and amputation risk."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Foot and Ankle",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_charcot_neuroarthropathy",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_charcot_nonoperative_management"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Charcot Surgical Reconstruction",
+            "relevance": "Standalone foot and ankle topic per ABOS diabetic foot section; distinct from general diabetes management.",
+            "applications": [
+              "Acute immobilization",
+              "Total contact cast",
+              "Surgical reconstruction timing"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Charcot Foot",
+            "topic": "Charcot Neuroarthropathy",
+            "subtopic": "Charcot Surgical Reconstruction"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_charcot_nonoperative_management"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Charcot Neuroarthropathy",
+            "chapter": "NBK557386",
+            "section": "Charcot Arthropathy"
+          }
+        ]
+      }
+    }
+  ]
+}

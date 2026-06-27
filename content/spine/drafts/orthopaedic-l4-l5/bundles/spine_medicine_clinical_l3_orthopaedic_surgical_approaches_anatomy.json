@@ -1,0 +1,548 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_orthopaedic_surgical_approaches_anatomy",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "ABOS-aligned scaffold for abos_p1_anatomy_approaches."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_orthopaedic_surgical_approaches_anatomy_core_principles",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_orthopaedic_surgical_approaches_anatomy",
+      "content": {
+        "title": "Orthopaedic Surgical Approaches and Anatomy — Core Principles",
+        "definition": "Anatomic relationships and internervous planes defining safe surgical access to major musculoskeletal regions.",
+        "summary": "Approaches respect neurovascular bundles and internervous planes. Draping, positioning, and incision planning minimize iatrogenic injury."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_orthopaedic_surgical_approaches_anatomy",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Orthopaedic Surgical Approaches and Anatomy — Core Principles",
+            "relevance": "ABOS Part I anatomy section; prerequisite for all operative subspecialties.",
+            "applications": [
+              "Approach selection",
+              "Neurovascular protection",
+              "Extensile exposure for trauma"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Anatomy and Approaches",
+            "topic": "Orthopaedic Surgical Approaches and Anatomy",
+            "subtopic": "Orthopaedic Surgical Approaches and Anatomy — Core Principles"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Orthopaedic Surgical Approaches and Anatomy",
+            "chapter": "NBK551582",
+            "section": "Surgical Approaches"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_orthopaedic_surgical_approaches_anatomy_evaluation_and_diagn",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_orthopaedic_surgical_approaches_anatomy",
+      "content": {
+        "title": "Evaluation and Diagnosis",
+        "definition": "History, physical examination, and initial imaging for orthopaedic surgical approaches and anatomy.",
+        "summary": "Systematic assessment identifies severity, associated injuries, and urgency in orthopaedic surgical approaches and anatomy."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_orthopaedic_surgical_approaches_anatomy",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_orthopaedic_surgical_approaches_anatomy_core_principles"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Evaluation and Diagnosis",
+            "relevance": "ABOS Part I anatomy section; prerequisite for all operative subspecialties.",
+            "applications": [
+              "Approach selection",
+              "Neurovascular protection",
+              "Extensile exposure for trauma"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Anatomy and Approaches",
+            "topic": "Orthopaedic Surgical Approaches and Anatomy",
+            "subtopic": "Evaluation and Diagnosis"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_orthopaedic_surgical_approaches_anatomy_core_principles"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Orthopaedic Surgical Approaches and Anatomy",
+            "chapter": "NBK551582",
+            "section": "Surgical Approaches"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_orthopaedic_surgical_approaches_anatomy_management_principle",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_orthopaedic_surgical_approaches_anatomy",
+      "content": {
+        "title": "Management Principles",
+        "definition": "Nonoperative and operative treatment algorithms for orthopaedic surgical approaches and anatomy.",
+        "summary": "Approaches respect neurovascular bundles and internervous planes."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_orthopaedic_surgical_approaches_anatomy",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_orthopaedic_surgical_approaches_anatomy_evaluation_and_diagn"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Management Principles",
+            "relevance": "ABOS Part I anatomy section; prerequisite for all operative subspecialties.",
+            "applications": [
+              "Approach selection",
+              "Neurovascular protection",
+              "Extensile exposure for trauma"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Anatomy and Approaches",
+            "topic": "Orthopaedic Surgical Approaches and Anatomy",
+            "subtopic": "Management Principles"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_orthopaedic_surgical_approaches_anatomy_evaluation_and_diagn"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Orthopaedic Surgical Approaches and Anatomy",
+            "chapter": "NBK551582",
+            "section": "Surgical Approaches"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_orthopaedic_surgical_approaches_anatomy_approach_selection",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_orthopaedic_surgical_approaches_anatomy",
+      "content": {
+        "title": "Approach selection",
+        "definition": "Focused assessment and management of approach selection in the context of orthopaedic surgical approaches and anatomy.",
+        "summary": "Approach selection — key decision points from Basic Science practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_orthopaedic_surgical_approaches_anatomy",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_orthopaedic_surgical_approaches_anatomy_management_principle"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Approach selection",
+            "relevance": "ABOS Part I anatomy section; prerequisite for all operative subspecialties.",
+            "applications": [
+              "Approach selection",
+              "Neurovascular protection",
+              "Extensile exposure for trauma"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Anatomy and Approaches",
+            "topic": "Orthopaedic Surgical Approaches and Anatomy",
+            "subtopic": "Approach selection"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_orthopaedic_surgical_approaches_anatomy_management_principle"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Orthopaedic Surgical Approaches and Anatomy",
+            "chapter": "NBK551582",
+            "section": "Surgical Approaches"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_orthopaedic_surgical_approaches_anatomy_neurovascular_protec",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_orthopaedic_surgical_approaches_anatomy",
+      "content": {
+        "title": "Neurovascular protection",
+        "definition": "Focused assessment and management of neurovascular protection in the context of orthopaedic surgical approaches and anatomy.",
+        "summary": "Neurovascular protection — key decision points from Basic Science practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_orthopaedic_surgical_approaches_anatomy",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_orthopaedic_surgical_approaches_anatomy_approach_selection"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Neurovascular protection",
+            "relevance": "ABOS Part I anatomy section; prerequisite for all operative subspecialties.",
+            "applications": [
+              "Approach selection",
+              "Neurovascular protection",
+              "Extensile exposure for trauma"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Anatomy and Approaches",
+            "topic": "Orthopaedic Surgical Approaches and Anatomy",
+            "subtopic": "Neurovascular protection"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_orthopaedic_surgical_approaches_anatomy_approach_selection"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Orthopaedic Surgical Approaches and Anatomy",
+            "chapter": "NBK551582",
+            "section": "Surgical Approaches"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_orthopaedic_surgical_approaches_anatomy_extensile_exposure_f",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_orthopaedic_surgical_approaches_anatomy",
+      "content": {
+        "title": "Extensile exposure for trauma",
+        "definition": "Focused assessment and management of extensile exposure for trauma in the context of orthopaedic surgical approaches and anatomy.",
+        "summary": "Extensile exposure for trauma — key decision points from Basic Science practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_orthopaedic_surgical_approaches_anatomy",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_orthopaedic_surgical_approaches_anatomy_neurovascular_protec"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Extensile exposure for trauma",
+            "relevance": "ABOS Part I anatomy section; prerequisite for all operative subspecialties.",
+            "applications": [
+              "Approach selection",
+              "Neurovascular protection",
+              "Extensile exposure for trauma"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Anatomy and Approaches",
+            "topic": "Orthopaedic Surgical Approaches and Anatomy",
+            "subtopic": "Extensile exposure for trauma"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_orthopaedic_surgical_approaches_anatomy_neurovascular_protec"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Orthopaedic Surgical Approaches and Anatomy",
+            "chapter": "NBK551582",
+            "section": "Surgical Approaches"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_orthopaedic_surgical_approaches_anatomy_complications_and_ou",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_orthopaedic_surgical_approaches_anatomy",
+      "content": {
+        "title": "Complications and Outcomes",
+        "definition": "Recognized complications, failure modes, and expected recovery after treatment of orthopaedic surgical approaches and anatomy.",
+        "summary": "Anticipate, diagnose, and manage complications; counsel on prognosis and rehabilitation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_orthopaedic_surgical_approaches_anatomy",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_orthopaedic_surgical_approaches_anatomy_extensile_exposure_f"
+        ],
+        "unlocks": [
+          "spine_medicine_clinical_l5_orthopaedic_surgical_approaches_anatomy_salvage_and_revision"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Complications and Outcomes",
+            "relevance": "ABOS Part I anatomy section; prerequisite for all operative subspecialties.",
+            "applications": [
+              "Approach selection",
+              "Neurovascular protection",
+              "Extensile exposure for trauma"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Anatomy and Approaches",
+            "topic": "Orthopaedic Surgical Approaches and Anatomy",
+            "subtopic": "Complications and Outcomes"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_orthopaedic_surgical_approaches_anatomy_extensile_exposure_f"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_clinical_l5_orthopaedic_surgical_approaches_anatomy_salvage_and_revision"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Orthopaedic Surgical Approaches and Anatomy",
+            "chapter": "NBK551582",
+            "section": "Surgical Approaches"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l5_orthopaedic_surgical_approaches_anatomy_salvage_and_revision",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_clinical_l3_orthopaedic_surgical_approaches_anatomy",
+      "content": {
+        "title": "Salvage and Revision Strategies",
+        "definition": "Revision and salvage options when initial management of orthopaedic surgical approaches and anatomy fails.",
+        "summary": "Staged revision and alternative strategies when primary treatment fails or complications develop."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l4_orthopaedic_surgical_approaches_anatomy_complications_and_ou",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_orthopaedic_surgical_approaches_anatomy_complications_and_ou"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Salvage and Revision Strategies",
+            "relevance": "ABOS Part I anatomy section; prerequisite for all operative subspecialties.",
+            "applications": [
+              "Approach selection",
+              "Neurovascular protection",
+              "Extensile exposure for trauma"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Anatomy and Approaches",
+            "topic": "Orthopaedic Surgical Approaches and Anatomy",
+            "subtopic": "Salvage and Revision Strategies"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_orthopaedic_surgical_approaches_anatomy_complications_and_ou"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Orthopaedic Surgical Approaches and Anatomy",
+            "chapter": "NBK551582",
+            "section": "Surgical Approaches"
+          }
+        ]
+      }
+    }
+  ]
+}

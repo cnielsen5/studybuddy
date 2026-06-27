@@ -1,0 +1,280 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_preoperative_assessment",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "Orthopaedic preoperative optimization L4 cluster on existing preoperative_assessment node."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_ortho_preop_risk_assessment",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_preoperative_assessment",
+      "content": {
+        "title": "Orthopaedic Preoperative Risk Assessment",
+        "definition": "Frailty, anemia, glycemic control, and cardiopulmonary risk stratification before elective arthroplasty and major orthopaedic surgery.",
+        "summary": "ASA class and frailty indices predict complications; anemia optimization reduces transfusion."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_preoperative_assessment",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Orthopaedic Preoperative Risk Assessment",
+            "relevance": "Orthopaedic perioperative context deferred from merged L3 orthopaedic_preoperative_optimization. (orthopaedic perioperative context on existing clinical node)",
+            "applications": [
+              "Arthroplasty",
+              "Fracture surgery",
+              "Perioperative bundles"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Perioperative Medicine",
+            "topic": "orthopaedic preoperative optimization",
+            "subtopic": "Orthopaedic Preoperative Risk Assessment"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — orthopaedic preoperative optimization",
+            "chapter": "NBK557519",
+            "section": "Preoperative Optimization"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_ortho_preop_nutrition_and_smoking",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_preoperative_assessment",
+      "content": {
+        "title": "Nutrition and Smoking Cessation in Orthopaedic Surgery",
+        "definition": "Prehabilitation including protein repletion, vitamin D correction, and smoking cessation to improve union and wound healing.",
+        "summary": "Smoking doubles nonunion and SSI rates; nutrition support before complex reconstruction."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_preoperative_assessment",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_ortho_preop_risk_assessment"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Nutrition and Smoking Cessation in Orthopaedic Surgery",
+            "relevance": "Orthopaedic perioperative context deferred from merged L3 orthopaedic_preoperative_optimization. (orthopaedic perioperative context on existing clinical node)",
+            "applications": [
+              "Arthroplasty",
+              "Fracture surgery",
+              "Perioperative bundles"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Perioperative Medicine",
+            "topic": "orthopaedic preoperative optimization",
+            "subtopic": "Nutrition and Smoking Cessation in Orthopaedic Surgery"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_ortho_preop_risk_assessment"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — orthopaedic preoperative optimization",
+            "chapter": "NBK557519",
+            "section": "Preoperative Optimization"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_ortho_preop_inflammatory_arthritis",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_preoperative_assessment",
+      "content": {
+        "title": "Perioperative Management of Inflammatory Arthritis",
+        "definition": "DMARD and biologic hold protocols balancing flare risk against infection and wound complications.",
+        "summary": "Coordinate with rheumatology; timing of biologic interruption follows ACR/AAOS guidance."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_preoperative_assessment",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_ortho_preop_nutrition_and_smoking"
+        ],
+        "unlocks": [
+          "spine_medicine_clinical_l5_ortho_preop_biologic_timing"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Perioperative Management of Inflammatory Arthritis",
+            "relevance": "Orthopaedic perioperative context deferred from merged L3 orthopaedic_preoperative_optimization. (orthopaedic perioperative context on existing clinical node)",
+            "applications": [
+              "Arthroplasty",
+              "Fracture surgery",
+              "Perioperative bundles"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Perioperative Medicine",
+            "topic": "orthopaedic preoperative optimization",
+            "subtopic": "Perioperative Management of Inflammatory Arthritis"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_ortho_preop_nutrition_and_smoking"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_clinical_l5_ortho_preop_biologic_timing"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — orthopaedic preoperative optimization",
+            "chapter": "NBK557519",
+            "section": "Inflammatory Arthritis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l5_ortho_preop_biologic_timing",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_clinical_l3_preoperative_assessment",
+      "content": {
+        "title": "Biologic Agent Timing Before Arthroplasty",
+        "definition": "Evidence-based intervals for holding TNF inhibitors and other biologics before elective joint replacement.",
+        "summary": "Schedule surgery after washout interval; resume when wound healed and no infection."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l4_ortho_preop_inflammatory_arthritis",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_ortho_preop_inflammatory_arthritis"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Biologic Agent Timing Before Arthroplasty",
+            "relevance": "Orthopaedic perioperative context deferred from merged L3 orthopaedic_preoperative_optimization. (orthopaedic perioperative context on existing clinical node)",
+            "applications": [
+              "Arthroplasty",
+              "Fracture surgery",
+              "Perioperative bundles"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Perioperative Medicine",
+            "topic": "orthopaedic preoperative optimization",
+            "subtopic": "Biologic Agent Timing Before Arthroplasty"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_ortho_preop_inflammatory_arthritis"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — orthopaedic preoperative optimization",
+            "chapter": "NBK557519",
+            "section": "Biologics"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_mathematics_l3_line_integrals",
+    "anchor_primary_domain": "mathematics",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_mathematics_l3_line_integrals.mathematics.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "4 per-context concepts merged into 4 universal concepts (4 L4 + 0 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_mathematics_l4_path_independence",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_line_integrals",
+      "content": {
+        "title": "Path Independence and Conservative Fields",
+        "definition": "A line integral is path-independent if it depends only on endpoints; equivalent to F being a gradient field on a simply connected domain.",
+        "summary": "Conservative fields simplify work calculations to potential difference: ∫_C F·dr = f(B) − f(A)."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Multivariable Analysis",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_line_integrals",
+        "prerequisites": [
+          "spine_mathematics_l4_vector_line_integrals"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Line integrals accumulate quantities along curves in vector fields.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Multivariable Calculus",
+            "topic": "Line Integrals",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_vector_line_integrals"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 3",
+            "chapter": "6",
+            "section": "Path Independence and Conservative Fields"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_scalar_line_integrals",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_line_integrals",
+      "content": {
+        "title": "Scalar Line Integrals",
+        "definition": "Integration of a scalar function f along curve C: ∫_C f ds, computing mass of a wire with density f.",
+        "summary": "Scalar line integrals generalize arc length to weighted accumulation along curves."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Multivariable Analysis",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_line_integrals",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_mathematics_l4_vector_line_integrals"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Line integrals accumulate quantities along curves in vector fields.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Multivariable Calculus",
+            "topic": "Line Integrals",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_vector_line_integrals"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 3",
+            "chapter": "6",
+            "section": "Scalar Line Integrals"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_vector_line_integrals",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_line_integrals",
+      "content": {
+        "title": "Vector Line Integrals",
+        "definition": "Work integral ∫_C F · dr = ∫_C P dx + Q dy + R dz computing work done by force field F along path C.",
+        "summary": "Vector line integrals measure circulation and work and depend on path unless the field is conservative."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Multivariable Analysis",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_line_integrals",
+        "prerequisites": [
+          "spine_mathematics_l4_scalar_line_integrals"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_path_independence",
+          "spine_mathematics_l4_work_by_force_field"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Line integrals accumulate quantities along curves in vector fields.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Multivariable Calculus",
+            "topic": "Line Integrals",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_scalar_line_integrals"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_path_independence",
+              "spine_mathematics_l4_work_by_force_field"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 3",
+            "chapter": "6",
+            "section": "Vector Line Integrals"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_work_by_force_field",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_line_integrals",
+      "content": {
+        "title": "Work Done by a Force Field",
+        "definition": "Work W = ∫_C F · dr along a path C under force F, positive when force has component along motion.",
+        "summary": "Work integrals connect vector calculus to physics problems involving variable forces along curved paths."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Multivariable Analysis",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_line_integrals",
+        "prerequisites": [
+          "spine_mathematics_l4_vector_line_integrals"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Line integrals accumulate quantities along curves in vector fields.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Multivariable Calculus",
+            "topic": "Line Integrals",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_vector_line_integrals"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 3",
+            "chapter": "6",
+            "section": "Work Done by a Force Field"
+          }
+        ]
+      }
+    }
+  ]
+}

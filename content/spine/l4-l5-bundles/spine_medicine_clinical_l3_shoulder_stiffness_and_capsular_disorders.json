@@ -1,0 +1,548 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_shoulder_stiffness_and_capsular_disorders",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "ABOS-aligned scaffold for abos_p2_shoulder_elbow."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_shoulder_stiffness_and_capsular_disorders_core_principles",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_shoulder_stiffness_and_capsular_disorders",
+      "content": {
+        "title": "Shoulder Stiffness and Capsular Disorders — Core Principles",
+        "definition": "Limited glenohumeral motion from adhesive capsulitis, postoperative or post-traumatic stiffness, and calcific tendinopathy.",
+        "summary": "Adhesive capsulitis progresses through freezing and thawing phases. Manipulation under anesthesia and capsular release are options for refractory stiffness."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Shoulder and Elbow",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_shoulder_stiffness_and_capsular_disorders",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Shoulder Stiffness and Capsular Disorders — Core Principles",
+            "relevance": "ABOS shoulder other conditions section.",
+            "applications": [
+              "Adhesive capsulitis phases",
+              "MUA indications",
+              "Post-traumatic stiffness"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Shoulder Stiffness",
+            "topic": "Shoulder Stiffness and Capsular Disorders",
+            "subtopic": "Shoulder Stiffness and Capsular Disorders — Core Principles"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Shoulder Stiffness and Capsular Disorders",
+            "chapter": "NBK551582",
+            "section": "Shoulder Stiffness"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_shoulder_stiffness_and_capsular_disorders_evaluation_and_dia",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_shoulder_stiffness_and_capsular_disorders",
+      "content": {
+        "title": "Evaluation and Diagnosis",
+        "definition": "History, physical examination, and initial imaging for shoulder stiffness and capsular disorders.",
+        "summary": "Systematic assessment identifies severity, associated injuries, and urgency in shoulder stiffness and capsular disorders."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Shoulder and Elbow",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_shoulder_stiffness_and_capsular_disorders",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_shoulder_stiffness_and_capsular_disorders_core_principles"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Evaluation and Diagnosis",
+            "relevance": "ABOS shoulder other conditions section.",
+            "applications": [
+              "Adhesive capsulitis phases",
+              "MUA indications",
+              "Post-traumatic stiffness"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Shoulder Stiffness",
+            "topic": "Shoulder Stiffness and Capsular Disorders",
+            "subtopic": "Evaluation and Diagnosis"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_shoulder_stiffness_and_capsular_disorders_core_principles"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Shoulder Stiffness and Capsular Disorders",
+            "chapter": "NBK551582",
+            "section": "Shoulder Stiffness"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_shoulder_stiffness_and_capsular_disorders_management_princip",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_shoulder_stiffness_and_capsular_disorders",
+      "content": {
+        "title": "Management Principles",
+        "definition": "Nonoperative and operative treatment algorithms for shoulder stiffness and capsular disorders.",
+        "summary": "Adhesive capsulitis progresses through freezing and thawing phases."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Shoulder and Elbow",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_shoulder_stiffness_and_capsular_disorders",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_shoulder_stiffness_and_capsular_disorders_evaluation_and_dia"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Management Principles",
+            "relevance": "ABOS shoulder other conditions section.",
+            "applications": [
+              "Adhesive capsulitis phases",
+              "MUA indications",
+              "Post-traumatic stiffness"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Shoulder Stiffness",
+            "topic": "Shoulder Stiffness and Capsular Disorders",
+            "subtopic": "Management Principles"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_shoulder_stiffness_and_capsular_disorders_evaluation_and_dia"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Shoulder Stiffness and Capsular Disorders",
+            "chapter": "NBK551582",
+            "section": "Shoulder Stiffness"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_shoulder_stiffness_and_capsular_disorders_adhesive_capsuliti",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_shoulder_stiffness_and_capsular_disorders",
+      "content": {
+        "title": "Adhesive capsulitis phases",
+        "definition": "Focused assessment and management of adhesive capsulitis phases in the context of shoulder stiffness and capsular disorders.",
+        "summary": "Adhesive capsulitis phases — key decision points from Shoulder and Elbow practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Shoulder and Elbow",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_shoulder_stiffness_and_capsular_disorders",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_shoulder_stiffness_and_capsular_disorders_management_princip"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Adhesive capsulitis phases",
+            "relevance": "ABOS shoulder other conditions section.",
+            "applications": [
+              "Adhesive capsulitis phases",
+              "MUA indications",
+              "Post-traumatic stiffness"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Shoulder Stiffness",
+            "topic": "Shoulder Stiffness and Capsular Disorders",
+            "subtopic": "Adhesive capsulitis phases"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_shoulder_stiffness_and_capsular_disorders_management_princip"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Shoulder Stiffness and Capsular Disorders",
+            "chapter": "NBK551582",
+            "section": "Shoulder Stiffness"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_shoulder_stiffness_and_capsular_disorders_mua_indications",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_shoulder_stiffness_and_capsular_disorders",
+      "content": {
+        "title": "MUA indications",
+        "definition": "Focused assessment and management of mua indications in the context of shoulder stiffness and capsular disorders.",
+        "summary": "MUA indications — key decision points from Shoulder and Elbow practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Shoulder and Elbow",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_shoulder_stiffness_and_capsular_disorders",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_shoulder_stiffness_and_capsular_disorders_adhesive_capsuliti"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "MUA indications",
+            "relevance": "ABOS shoulder other conditions section.",
+            "applications": [
+              "Adhesive capsulitis phases",
+              "MUA indications",
+              "Post-traumatic stiffness"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Shoulder Stiffness",
+            "topic": "Shoulder Stiffness and Capsular Disorders",
+            "subtopic": "MUA indications"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_shoulder_stiffness_and_capsular_disorders_adhesive_capsuliti"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Shoulder Stiffness and Capsular Disorders",
+            "chapter": "NBK551582",
+            "section": "Shoulder Stiffness"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_shoulder_stiffness_and_capsular_disorders_post_traumatic_sti",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_shoulder_stiffness_and_capsular_disorders",
+      "content": {
+        "title": "Post-traumatic stiffness",
+        "definition": "Focused assessment and management of post-traumatic stiffness in the context of shoulder stiffness and capsular disorders.",
+        "summary": "Post-traumatic stiffness — key decision points from Shoulder and Elbow practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Shoulder and Elbow",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_shoulder_stiffness_and_capsular_disorders",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_shoulder_stiffness_and_capsular_disorders_mua_indications"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Post-traumatic stiffness",
+            "relevance": "ABOS shoulder other conditions section.",
+            "applications": [
+              "Adhesive capsulitis phases",
+              "MUA indications",
+              "Post-traumatic stiffness"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Shoulder Stiffness",
+            "topic": "Shoulder Stiffness and Capsular Disorders",
+            "subtopic": "Post-traumatic stiffness"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_shoulder_stiffness_and_capsular_disorders_mua_indications"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Shoulder Stiffness and Capsular Disorders",
+            "chapter": "NBK551582",
+            "section": "Shoulder Stiffness"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_shoulder_stiffness_and_capsular_disorders_complications_and_",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_shoulder_stiffness_and_capsular_disorders",
+      "content": {
+        "title": "Complications and Outcomes",
+        "definition": "Recognized complications, failure modes, and expected recovery after treatment of shoulder stiffness and capsular disorders.",
+        "summary": "Anticipate, diagnose, and manage complications; counsel on prognosis and rehabilitation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Shoulder and Elbow",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_shoulder_stiffness_and_capsular_disorders",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_shoulder_stiffness_and_capsular_disorders_post_traumatic_sti"
+        ],
+        "unlocks": [
+          "spine_medicine_clinical_l5_shoulder_stiffness_and_capsular_disorders_salvage_and_revisi"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Complications and Outcomes",
+            "relevance": "ABOS shoulder other conditions section.",
+            "applications": [
+              "Adhesive capsulitis phases",
+              "MUA indications",
+              "Post-traumatic stiffness"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Shoulder Stiffness",
+            "topic": "Shoulder Stiffness and Capsular Disorders",
+            "subtopic": "Complications and Outcomes"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_shoulder_stiffness_and_capsular_disorders_post_traumatic_sti"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_clinical_l5_shoulder_stiffness_and_capsular_disorders_salvage_and_revisi"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Shoulder Stiffness and Capsular Disorders",
+            "chapter": "NBK551582",
+            "section": "Shoulder Stiffness"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l5_shoulder_stiffness_and_capsular_disorders_salvage_and_revisi",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_clinical_l3_shoulder_stiffness_and_capsular_disorders",
+      "content": {
+        "title": "Salvage and Revision Strategies",
+        "definition": "Revision and salvage options when initial management of shoulder stiffness and capsular disorders fails.",
+        "summary": "Staged revision and alternative strategies when primary treatment fails or complications develop."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Shoulder and Elbow",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l4_shoulder_stiffness_and_capsular_disorders_complications_and_",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_shoulder_stiffness_and_capsular_disorders_complications_and_"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Salvage and Revision Strategies",
+            "relevance": "ABOS shoulder other conditions section.",
+            "applications": [
+              "Adhesive capsulitis phases",
+              "MUA indications",
+              "Post-traumatic stiffness"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Shoulder Stiffness",
+            "topic": "Shoulder Stiffness and Capsular Disorders",
+            "subtopic": "Salvage and Revision Strategies"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_shoulder_stiffness_and_capsular_disorders_complications_and_"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Shoulder Stiffness and Capsular Disorders",
+            "chapter": "NBK551582",
+            "section": "Shoulder Stiffness"
+          }
+        ]
+      }
+    }
+  ]
+}

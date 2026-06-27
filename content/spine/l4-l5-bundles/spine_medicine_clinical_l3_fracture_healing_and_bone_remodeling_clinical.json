@@ -1,0 +1,347 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_fracture_healing_and_bone_remodeling_clinical",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "Orthopaedic L4/L5 expansion for Fracture Healing and Bone Remodeling — Clinical Application. 4 L4, 1 L5."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_fracture_healing_phases",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_fracture_healing_and_bone_remodeling_clinical",
+      "content": {
+        "title": "Fracture Healing Phases",
+        "definition": "Hematoma, inflammation, soft callus, hard callus, and remodeling phases of secondary bone healing.",
+        "summary": "Primary healing requires rigid fixation; secondary healing proceeds through visible callus formation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_fracture_healing_and_bone_remodeling_clinical",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Fracture Healing Phases",
+            "relevance": "Clinical counterpart to preclinical wound healing; core Part I basic science.",
+            "applications": [
+              "Union assessment",
+              "Nonunion risk factors",
+              "NSAID effect on healing"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Bone Biology",
+            "topic": "Fracture Healing and Bone Remodeling — Clinical Application",
+            "subtopic": "Fracture Healing Phases"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Fracture Healing and Bone Remodeling — Clinical Application",
+            "chapter": "NBK482316",
+            "section": "Fracture Healing"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_factors_affecting_union",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_fracture_healing_and_bone_remodeling_clinical",
+      "content": {
+        "title": "Factors Affecting Fracture Union",
+        "definition": "Biologic and mechanical factors including nicotine, diabetes, NSAIDs, infection, and fixation stability.",
+        "summary": "Smoking and NSAIDs impair union; unstable fixation causes delayed healing or nonunion."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_fracture_healing_and_bone_remodeling_clinical",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_fracture_healing_phases"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Factors Affecting Fracture Union",
+            "relevance": "Clinical counterpart to preclinical wound healing; core Part I basic science.",
+            "applications": [
+              "Union assessment",
+              "Nonunion risk factors",
+              "NSAID effect on healing"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Bone Biology",
+            "topic": "Fracture Healing and Bone Remodeling — Clinical Application",
+            "subtopic": "Factors Affecting Fracture Union"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_fracture_healing_phases"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Fracture Healing and Bone Remodeling — Clinical Application",
+            "chapter": "NBK482316",
+            "section": "Fracture Healing"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_clinical_assessment_of_union",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_fracture_healing_and_bone_remodeling_clinical",
+      "content": {
+        "title": "Clinical and Radiographic Assessment of Union",
+        "definition": "Physical examination, pain with stress, and radiographic bridging trabeculae defining clinical union.",
+        "summary": "Serial radiographs at 6–12 weeks; CT for doubtful union before revision."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_fracture_healing_and_bone_remodeling_clinical",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_factors_affecting_union"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Clinical and Radiographic Assessment of Union",
+            "relevance": "Clinical counterpart to preclinical wound healing; core Part I basic science.",
+            "applications": [
+              "Union assessment",
+              "Nonunion risk factors",
+              "NSAID effect on healing"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Bone Biology",
+            "topic": "Fracture Healing and Bone Remodeling — Clinical Application",
+            "subtopic": "Clinical and Radiographic Assessment of Union"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_factors_affecting_union"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Fracture Healing and Bone Remodeling — Clinical Application",
+            "chapter": "NBK482316",
+            "section": "Fracture Healing"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_nonunion_and_delayed_union_management",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_fracture_healing_and_bone_remodeling_clinical",
+      "content": {
+        "title": "Nonunion and Delayed Union Management",
+        "definition": "Hypertrophic versus atrophic nonunion biology and revision strategies including reaming, graft, and exchange nailing.",
+        "summary": "Hypertrophic nonunion needs stability; atrophic nonunion needs biologic augmentation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_fracture_healing_and_bone_remodeling_clinical",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_clinical_assessment_of_union"
+        ],
+        "unlocks": [
+          "spine_medicine_clinical_l5_exchange_nailing_nonunion"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Nonunion and Delayed Union Management",
+            "relevance": "Clinical counterpart to preclinical wound healing; core Part I basic science.",
+            "applications": [
+              "Union assessment",
+              "Nonunion risk factors",
+              "NSAID effect on healing"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Bone Biology",
+            "topic": "Fracture Healing and Bone Remodeling — Clinical Application",
+            "subtopic": "Nonunion and Delayed Union Management"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_clinical_assessment_of_union"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_clinical_l5_exchange_nailing_nonunion"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Fracture Healing and Bone Remodeling — Clinical Application",
+            "chapter": "NBK482316",
+            "section": "Fracture Healing"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l5_exchange_nailing_nonunion",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_clinical_l3_fracture_healing_and_bone_remodeling_clinical",
+      "content": {
+        "title": "Exchange Nailing for Femoral Nonunion",
+        "definition": "Reamed exchange intramedullary nailing with larger diameter nail for femoral shaft nonunion.",
+        "summary": "Dynamization alone may suffice for hypertrophic tibial nonunion; femoral atrophic often needs graft."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l4_nonunion_and_delayed_union_management",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_nonunion_and_delayed_union_management"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Exchange Nailing for Femoral Nonunion",
+            "relevance": "Clinical counterpart to preclinical wound healing; core Part I basic science.",
+            "applications": [
+              "Union assessment",
+              "Nonunion risk factors",
+              "NSAID effect on healing"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Bone Biology",
+            "topic": "Fracture Healing and Bone Remodeling — Clinical Application",
+            "subtopic": "Exchange Nailing for Femoral Nonunion"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_nonunion_and_delayed_union_management"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Fracture Healing and Bone Remodeling — Clinical Application",
+            "chapter": "NBK482316",
+            "section": "Fracture Healing"
+          }
+        ]
+      }
+    }
+  ]
+}

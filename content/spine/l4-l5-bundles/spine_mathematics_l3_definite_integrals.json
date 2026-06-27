@@ -1,0 +1,333 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_mathematics_l3_definite_integrals",
+    "anchor_primary_domain": "mathematics",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_mathematics_l3_definite_integrals.mathematics.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "5 per-context concepts merged into 5 universal concepts (5 L4 + 0 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_mathematics_l4_average_value_function",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_definite_integrals",
+      "content": {
+        "title": "Average Value of a Function",
+        "definition": "The average value of f on [a, b] is (1/(b−a))∫_a^b f(x) dx, the height of a rectangle with the same area as the region under f.",
+        "summary": "Average value connects integration to mean output over an interval, used in physics and economics for time-averaged quantities."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_definite_integrals",
+        "prerequisites": [
+          "spine_mathematics_l4_definite_integral_definition"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Integration accumulates rates into totals for area, volume, and work problems.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Single-Variable Calculus",
+            "topic": "Definite Integrals",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_definite_integral_definition"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 1",
+            "chapter": "5",
+            "section": "Average Value of a Function"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_definite_integral_definition",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_definite_integrals",
+      "content": {
+        "title": "Definite Integral Definition",
+        "definition": "The definite integral ∫_a^b f(x) dx is the limit of Riemann sums as partition norm approaches zero, representing signed net area under f from a to b.",
+        "summary": "When the limit exists, f is integrable on [a, b] and the integral accumulates signed area, accounting for regions below the axis."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_definite_integrals",
+        "prerequisites": [
+          "spine_mathematics_l4_riemann_sums"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_definite_integral_properties"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Integration accumulates rates into totals for area, volume, and work problems.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Single-Variable Calculus",
+            "topic": "Definite Integrals",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_riemann_sums"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_definite_integral_properties"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 1",
+            "chapter": "5",
+            "section": "Definite Integral Definition"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_definite_integral_properties",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_definite_integrals",
+      "content": {
+        "title": "Properties of Definite Integrals",
+        "definition": "Linearity, additivity over intervals, reversal of limits changing sign, and comparison properties governing manipulation of ∫_a^b f(x) dx.",
+        "summary": "Integral properties allow splitting domains, combining integrands, and estimating values without explicit antiderivatives."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_definite_integrals",
+        "prerequisites": [
+          "spine_mathematics_l4_definite_integral_definition"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_substitution_definite_integrals"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Integration accumulates rates into totals for area, volume, and work problems.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Single-Variable Calculus",
+            "topic": "Definite Integrals",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_definite_integral_definition"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_substitution_definite_integrals"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 1",
+            "chapter": "5",
+            "section": "Properties of Definite Integrals"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_riemann_sums",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_definite_integrals",
+      "content": {
+        "title": "Riemann Sums and Area Approximation",
+        "definition": "Approximations of signed area under a curve by summing f(xᵢ*)Δx over subintervals of a partition, with left, right, and midpoint variants.",
+        "summary": "Riemann sums motivate the definite integral as a limit of better and better area approximations."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_definite_integrals",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_mathematics_l4_definite_integral_definition"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Integration accumulates rates into totals for area, volume, and work problems.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Single-Variable Calculus",
+            "topic": "Definite Integrals",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_definite_integral_definition"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 1",
+            "chapter": "5",
+            "section": "Riemann Sums and Area Approximation"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_substitution_definite_integrals",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_definite_integrals",
+      "content": {
+        "title": "Substitution in Definite Integrals",
+        "definition": "Change of variable u = g(x) transforms ∫_a^b f(g(x))g′(x) dx to ∫_{g(a)}^{g(b)} f(u) du with updated limits.",
+        "summary": "u-substitution evaluates definite integrals by reversing the chain rule, requiring limit transformation when bounds change."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_definite_integrals",
+        "prerequisites": [
+          "spine_mathematics_l4_definite_integral_properties"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Integration accumulates rates into totals for area, volume, and work problems.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Single-Variable Calculus",
+            "topic": "Definite Integrals",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_definite_integral_properties"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 1",
+            "chapter": "5",
+            "section": "Substitution in Definite Integrals"
+          }
+        ]
+      }
+    }
+  ]
+}

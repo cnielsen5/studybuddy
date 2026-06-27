@@ -1,0 +1,276 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_hip_fractures_and_dislocations",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "Orthopaedic L4/L5 expansion for Hip Fractures and Dislocations. 4 L4, 0 L5."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_femoral_neck_fracture_classification",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_hip_fractures_and_dislocations",
+      "content": {
+        "title": "Femoral Neck Fracture Classification",
+        "definition": "Garden and Pauwels classifications describing displacement and shear angle of femoral neck fractures.",
+        "summary": "Displaced fractures in elderly often treated with arthroplasty; young patients need anatomic fixation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Trauma",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_hip_fractures_and_dislocations",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Femoral Neck Fracture Classification",
+            "relevance": "Common fragility fracture with significant morbidity and mortality.",
+            "applications": [
+              "Garden classification",
+              "Fixation vs arthroplasty",
+              "Hip dislocation reduction urgency"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Lower Extremity Trauma",
+            "topic": "Hip Fractures and Dislocations",
+            "subtopic": "Femoral Neck Fracture Classification"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Hip Fractures and Dislocations",
+            "chapter": "NBK482316",
+            "section": "Hip Fractures"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_intertrochanteric_and_subtrochanteric_fractures",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_hip_fractures_and_dislocations",
+      "content": {
+        "title": "Intertrochanteric and Subtrochanteric Fractures",
+        "definition": "Extracapsular hip fractures managed with cephalomedullary nail or sliding hip screw.",
+        "summary": "Reverse obliquity patterns need intramedullary fixation; subtrochanteric may need long cephalomedullary nail."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Trauma",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_hip_fractures_and_dislocations",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_femoral_neck_fracture_classification"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Intertrochanteric and Subtrochanteric Fractures",
+            "relevance": "Common fragility fracture with significant morbidity and mortality.",
+            "applications": [
+              "Garden classification",
+              "Fixation vs arthroplasty",
+              "Hip dislocation reduction urgency"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Lower Extremity Trauma",
+            "topic": "Hip Fractures and Dislocations",
+            "subtopic": "Intertrochanteric and Subtrochanteric Fractures"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_femoral_neck_fracture_classification"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Hip Fractures and Dislocations",
+            "chapter": "NBK482316",
+            "section": "Hip Fractures"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_hip_fracture_arthroplasty_vs_orif",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_hip_fractures_and_dislocations",
+      "content": {
+        "title": "Hip Fracture — Arthroplasty vs ORIF",
+        "definition": "Hemiarthroplasty, total hip arthroplasty, and cannulated screw fixation based on age, activity, and displacement.",
+        "summary": "Active elderly with displaced intracapsular fractures may benefit from THA over hemiarthroplasty."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Trauma",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_hip_fractures_and_dislocations",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_intertrochanteric_and_subtrochanteric_fractures"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Hip Fracture — Arthroplasty vs ORIF",
+            "relevance": "Common fragility fracture with significant morbidity and mortality.",
+            "applications": [
+              "Garden classification",
+              "Fixation vs arthroplasty",
+              "Hip dislocation reduction urgency"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Lower Extremity Trauma",
+            "topic": "Hip Fractures and Dislocations",
+            "subtopic": "Hip Fracture — Arthroplasty vs ORIF"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_intertrochanteric_and_subtrochanteric_fractures"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Hip Fractures and Dislocations",
+            "chapter": "NBK482316",
+            "section": "Hip Fractures"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_traumatic_hip_dislocation",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_hip_fractures_and_dislocations",
+      "content": {
+        "title": "Traumatic Hip Dislocation",
+        "definition": "Posterior and anterior hip dislocations requiring urgent closed reduction within six hours to protect femoral head.",
+        "summary": "Sciatic nerve injury complicates posterior dislocation; post-reduction CT assesses acetabular and head injury."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Trauma",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_hip_fractures_and_dislocations",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_hip_fracture_arthroplasty_vs_orif"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Traumatic Hip Dislocation",
+            "relevance": "Common fragility fracture with significant morbidity and mortality.",
+            "applications": [
+              "Garden classification",
+              "Fixation vs arthroplasty",
+              "Hip dislocation reduction urgency"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Lower Extremity Trauma",
+            "topic": "Hip Fractures and Dislocations",
+            "subtopic": "Traumatic Hip Dislocation"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_hip_fracture_arthroplasty_vs_orif"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Hip Fractures and Dislocations",
+            "chapter": "NBK482316",
+            "section": "Hip Fractures"
+          }
+        ]
+      }
+    }
+  ]
+}

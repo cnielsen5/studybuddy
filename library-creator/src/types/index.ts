@@ -6,3 +6,4 @@ export * from "./draftCardQuestion.js";
 export * from "./draftRelationship.js";
 export * from "./libraryBundle.js";
 export * from "./pipeline.js";
+export * from "./curriculumLens.js";
