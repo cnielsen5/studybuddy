@@ -25,6 +25,8 @@ Socrates Structure and Organizer
             Questions
     2.2 User State (Private)
             Card scheduling state
+            Cross-library transfer state (CLKT — see §15)
+                transfer_state on CardScheduleView when a card is stability-seeded at import
             Misconception edges
             Fatigue and capacity metrics
             Goals and plans
@@ -147,8 +149,19 @@ Socrates Structure and Organizer
                 "description": "Shared content library for cardiovascular pathology.",
                 "domain": "Medicine",
                 "status": "published",
-                "tags": ["usmle", "pathology", "cardiovascular"]
+                "tags": ["usmle", "pathology", "cardiovascular"],
+                "audience": {
+                    "level": "professional",
+                    "targetDepth": "mastery",
+                    "resolutionRange": { "min": 3, "max": 5 }
                 }
+                }
+
+            Canonical reference templates
+                content/templates/universal-concept.master.json — spine-build master (no cards yet)
+                content/LIBRARY_FORMAT.md — bundle export spec and validation rules
+                content/spine/socrates-spine-l1-l5.draft.json — universal spine merged index
+                content/lenses/*.json — curriculum lens definitions (see §5.2)
 
             Graph consistency rule
                 Learning order is expressed in two places that must agree:
@@ -160,9 +173,125 @@ Socrates Structure and Organizer
                 from-concept must include the to-concept.
 
     5.2 Concepts
-            The most basic unit of the concept map, houses multiple cards 
+            The most basic unit of the concept map. One universal concept node may appear
+            in multiple domain lenses via domain_contexts[] — it is not owned by a single
+            domain hierarchy field.
+
+            Architectural principles (2026-03)
+                Location vs resolution are orthogonal
+                    hierarchy_location (per domain context) = stable address in that domain's taxonomy
+                    resolution_level (1–5) = granularity of the universal node itself
+                Universal concept identity
+                    concept_* id is shared across libraries; CLKT aligns on exact id match first
+                Domain lenses
+                    domain_contexts[] holds per-domain framing, taxonomy placement, context-specific
+                    prerequisites, and linked cards/questions for that lens
+                Linked content lifecycle
+                    Spine build: domain_contexts[].linked_content is empty (expected)
+                    Library creation: library-creator writes card/question ids back into the
+                    active domain context (writeLinkedContentToDomainContext); aggregate mirror
+                    at top-level linked_content for conformance tooling
+
+            Universal spine graph (L1–L5)
+                Shared repository of universal concept nodes — the structural backbone before any
+                library bundles attach cards and questions.
+
+                Canonical files
+                    content/spine/socrates-spine-l1-l5.draft.json — merged L1–L5 index (authoritative)
+                    content/spine/socrates-spine-l1-l3.draft.json — L1–L3 skeleton only
+                    content/spine/l4-l5-bundles/<l3-anchor-id>.json — L4/L5 children per L3 anchor
+                    content/templates/universal-concept.master.json — reference shape (no cards)
+                    content/spine/spine-growth-queue.json — pending structural growth proposals
+
+                Scale (2026-06, post orthopaedic consolidation)
+                    L1: 7 · L2: 69 · L3: 626 · L4: 1002 · L5: 176 · total: 1880 concepts
+                    L1–L3-only graph: 702 concepts
+                    L4/L5 anchor bundles: 166 (one bundle per L3 anchor with max_resolution ≥ 4)
+
+                Build pipeline (library-creator/)
+                    npm run build:spine — assemble L1–L3 from domain data modules
+                    npm run build:spine-l4-l5 — expand anchor bundles into L4/L5 child concepts
+                    npm run build:spine-l1-l5 — merge L1–L3 + L4/L5 into socrates-spine-l1-l5.draft.json
+                    Domain extension (orthopaedic): build:orthopaedic-l2-l3 → build:orthopaedic-l4-l5
+                    Consolidation: consolidate:orthopaedic-spine — merge domain draft into main spine
+                    Placement check: check:spine-placement — heuristic match + optional growth-queue append
+                    See docs/design/spine-growth-and-placement.md · spine-l4-l5-generation-prompt.md
+
+                L4/L5 generation model
+                    Each L3 anchor whose domain_context.framing.max_resolution_in_context ≥ 4 may have
+                    a bundle JSON listing L4 specs (and optional L5 children). Generation priority:
+                        1. Hand-crafted overrides (orthopaedicL4L5Overrides.ts)
+                        2. ABOS high-yield specs (orthopaedicL4L5AbosHighYield.ts)
+                        3. Default ABOS-aligned scaffold (generateAbosAlignedAnchorSpec)
+                    Editorial high-yield scores belong on curriculum lens mappings only — not on spine
+                    concept JSON (G60). Lens depth overrides use depth_in_lens on each mapping.
+
+                Hub hierarchy (domain extension — Orthopaedic Surgery under medicine_clinical)
+                    Some L2 domains use a three-level L3 tree instead of flat L3 children:
+                        L2 major subdivision
+                          → hub L3 (subspecialty cluster; isHub: true)
+                            → topic L3 (board- or workflow-sized working concepts)
+                    spine_medicine_clinical_l2_orthopaedic_surgery (L2)
+                        → 11 hub L3s (Basic Science, Trauma, Adult Reconstruction, Spine, Sports Medicine, …)
+                        → 113 topic L3s (e.g. fracture fixation principles, total hip arthroplasty)
+                        → 124 L3 nodes total under orthopaedic L2
+                    Sibling of spine_medicine_clinical_l2_musculoskeletal_and_rheumatology — shared MSK
+                    conditions, distinct surgical subspecialty pathway.
+                    Perioperative orthopaedic topics merged into existing clinical L3 nodes (not duplicated):
+                        preoperative assessment, anesthesia basics, DVT/PE prophylaxis, wound healing.
+                    Shared preclinical/biology spine nodes receive medicine_clinical orthopaedic domain_context
+                    during build via applyOrthopaedicExistingNodeContexts() (21 existing-node references).
+                    Review-only orthopaedic drafts live under content/spine/drafts/orthopaedic-* (merged-into-main-spine).
+
+            Curriculum lenses (exam / board views over the spine)
+                Orthogonal to domain_contexts[] — same universal concept ids; a lens defines navigation
+                scaffold, section grouping, order_in_section, depth_in_lens, and high_yield_in_lens.
+
+                Layer stack
+                    Spine concept (universal node, resolution_level 1–5)
+                    domain_contexts[] — subject framing (mathematics vs medicine_clinical vs …)
+                    Curriculum lens — exam outline (ABOS, Orthobullets, future USMLE views)
+
+                Storage and code
+                    content/lenses/*.json — one file per lens
+                    library-creator/src/types/curriculumLens.ts — schema
+                    library-creator/src/lens/applyLens.ts — LensView runtime
+                    npm run validate:lenses — schema, section graph, duplicate mappings, spine id checks
+                    Full spec: docs/design/curriculum-lenses.md
+
+                Active orthopaedic lenses (2026-06)
+                    lens_abos_orthopaedic_2025.json — ABOS blueprint 2025 (137 concept mappings)
+                    lens_orthobullets_orthopaedic_2026.json — Orthobullets subspecialty nav (136 mappings)
+                Cross-section mappings (same spine id appears in multiple lens sections):
+                    compartment syndrome — trauma hub + basic science
+                    stress fractures — foot/ankle + metabolic bone / osteoporosis context
+                Stub / archived: lens_abos_blueprint_2024.stub.json (outline only);
+                    lens_orthobullets_topic_taxonomy.stub.archived.json (superseded by 2026 lens)
+
+                Library creation with a lens
+                    Use lens sections as organizational scaffold (not raw spine hierarchy)
+                    Generate cards to depth_in_lens per mapping; set editorial.high_yield_score from
+                    high_yield_in_lens + section weight; order by order_in_section
+
+            Resolution levels (resolution_level on concept)
+                1 = domain overview          ("Cardiovascular System")
+                2 = major subdivision        ("Cardiac Physiology")
+                3 = working concept          ("Cardiac Preload") — spine ↔ library overlap zone
+                4 = mechanistic detail       ("Frank-Starling Mechanism")
+                5 = granular / specialist    ("Titin passive tension")
+
+            Audience resolution window (manifest.audience.resolutionRange)
+                Controls which resolution levels are in scope when creating or viewing a library
+                Examples: highschool 2–3, undergrad 2–4, USMLE Step 1 3–4, fellowship 3–5
+                Per-domain cap: domain_contexts[].framing.max_resolution_in_context
+
             Source
-                AI-generated
+                AI-generated (library-creator pipeline)
+                Spine authoring:
+                    L1–L3 domain modules → build:spine
+                    L4/L5 anchor bundles + spec generators → build:spine-l4-l5 → build:spine-l1-l5
+                    Domain context patches on existing universal nodes during domain consolidation
+                Curriculum lens mapping — manual / semi-automated after L3 placement stabilizes
             Qualities
                 Centroid Vector
                     Average of all semantic vectors of cards contained within this concept
@@ -214,11 +343,86 @@ Socrates Structure and Organizer
                 Remedial Cards
                     Targeted repair cards for weak or misconception-prone areas
                     Tagged via config.card_tier: "remedial"
-            JSON (Master Template)
+            JSON (Master Template — universal concept with domain lenses)
+                See content/templates/universal-concept.master.json for the full reference
+                (concept_exponential_decay with mathematics, chemistry, medicine_preclinical contexts).
+
+                {
+                "id": "concept_exponential_decay",
+                "resolution_level": 3,
+                "_comment": "Universal Golden Master. Domain-neutral core; lenses in domain_contexts.",
+
+                "content": {
+                    "title": "Exponential Decay",
+                    "definition": "Quantity decreases at a rate proportional to its current value.",
+                    "summary": "Same mathematics across math, chemistry, biology, and medicine."
+                },
+
+                "knowledge_graph": {
+                    "_comment": "Universal graph position — NOT domain ownership.",
+                    "knowledge_area": "Quantitative Reasoning",
+                    "knowledge_cluster": "Change & Rate",
+                    "primary_domain": "mathematics"
+                },
+
+                "dependency_graph": {
+                    "_comment": "Universal learning order across domains.",
+                    "parent_concept_id": "spine_mathematics_precalculus",
+                    "prerequisites": ["concept_exponential_functions", "concept_derivatives"],
+                    "unlocks": ["concept_half_life", "concept_first_order_kinetics"]
+                },
+
+                "domain_contexts": [
+                    {
+                    "domain_id": "mathematics",
+                    "framing": {
+                        "title_in_context": "Exponential Decay",
+                        "relevance": "Core differential equation example.",
+                        "applications": ["Population decline", "Cooling curves"],
+                        "max_resolution_in_context": 4
+                    },
+                    "hierarchy_location": {
+                        "category": "Pre-Calculus & Functions",
+                        "subcategory": "Function Families",
+                        "topic": "Exponential & Logarithmic Functions",
+                        "subtopic": null
+                    },
+                    "dependency_graph": {
+                        "prerequisites_in_context": ["concept_exponential_functions"],
+                        "unlocks_in_context": ["concept_differential_equations_first_order"]
+                    },
+                    "linked_content": {
+                        "_comment": "Empty at spine-build; populated by library-creator write-back.",
+                        "card_ids": [],
+                        "question_ids": []
+                    }
+                    }
+                ],
+
+                "metadata": {
+                    "created_at": "2025-01-01T00:00:00Z",
+                    "updated_at": "2025-01-01T00:00:00Z",
+                    "created_by": "system_admin",
+                    "version": "1.0",
+                    "status": "published",
+                    "source_references": [
+                    { "source": "OpenStax Calculus Volume 1", "chapter": "6", "section": "6.8" }
+                    ]
+                },
+
+                "mastery_config": { "threshold": 0.8, "decay_rate": "standard", "min_questions_correct": 1 },
+                "linked_content": { "_comment": "Aggregate mirror after library creation", "card_ids": [], "question_ids": [] }
+                }
+
+            Legacy concept shape (deprecated — migration only)
+                Top-level hierarchy { domain, category, ... } encoded single-domain ownership.
+                New spine and library content must use domain_contexts[] instead.
+
+            JSON (Legacy single-domain example — do not use for new content)
                 {
                 "id": "concept_0001",
                 "type": "concept",
-                "_comment": "Static, read-only Golden Master record shared by all users. Contains only semantic, structural, and editorial intent.",
+                "_comment": "DEPRECATED pattern. Use universal template above.",
 
                 "metadata": {
                     "created_at": "2025-11-03T00:00:00Z",
@@ -421,10 +625,11 @@ Socrates Structure and Organizer
                     "_comment": "Static, read-only Golden Master card. Shared across all users.",
 
                     "relations": {
-                        "_comment": "Defines semantic ownership and assessment linkage.",
-                        "concept_id": "concept_0001",
+                        "_comment": "Universal concept + domain context ownership.",
+                        "concept_id": "concept_exponential_decay",
+                        "domain_id": "mathematics",
                         "related_question_ids": [
-                        "q_uuid_001_fatty_streak_mcq"
+                        "q_exp_01"
                         ]
                     },
 
@@ -1630,57 +1835,228 @@ Socrates Structure and Organizer
             Skill scores
             Confidence calibration metrics
 
-13. Mastery Certification
-    11.1 Purpose
-            Detect pre-existing mastery
-            Prevent redundant learning
-    11.2 Trigger
-            Before unlocking a new concept chunk
-    11.3 Flow
-            Short diagnostic probe (2–4 items)
-                Types:
-                    Application in novel context
-                    Contrast with sibling concept
-                    Directionality / dependency check
-                    One transfer question
-                These can be:
-                    AI-generated
-                    Pre-authored certification questions
-            Evaluate correctness, reasoning, confidence
-            Outcome:
-                Full certification
-                Partial certification
-                No certification
-    11.4 Effects
-            Suppress redundant cards
-            Accelerate initial scheduling
-            Faster decay
-            Immediate revocation on error
-    11.5 Certification Criteria
-            Certification passes if all are true:
-                ≥80% correct
-                Correct reasoning, not lucky guessing
-                No confidence mismatch
-                No misconception pattern detected
-                Response times reasonable
-            A. Full Certification
-                Concept marked as pre-mastered
-                Most core cards suppressed
-                Only minimal review cards scheduled
-            B. Partial Certification (Most Common)
-                Skip introductory cards
-                Learn relationship / nuance cards only
-                Concept learning chunk reduced
-            C. No Certification
-                Learn concept normally
-    11.6 Other 
-        Caps
+13. Mastery Certification (Revised)
+
+    13.1 Purpose
+            Detect pre-existing mastery before introducing new concept chunks.
+            Prevent redundant learning by identifying and targeting only the cards
+            a user genuinely does not need to relearn.
+            Suppression and acceleration are never applied arbitrarily — they are
+            gated by semantic coverage, response quality, multi-component scoring,
+            and AI verification.
+
+    13.2 Trigger
+            Before unlocking a new concept chunk.
+            At least one existing library has cards in Review or Mastered stage,
+            OR CLKT seeded stability exists for cards in this concept (see §15).
+
+    13.3 Certification Question Design Standard
+
+        13.3a Purpose of the Question
+                Certification questions are not simply hard questions.
+                They are semantic coverage instruments — designed to activate
+                and reveal knowledge across as many cards in the concept as
+                possible within a single response.
+
+                The ideal certification question cannot be answered correctly
+                without knowing the content of most core cards in the concept.
+                If a question can be answered from a single card's content alone,
+                it is not a valid certification question.
+
+        13.3b Coverage Score Requirement
+                Before a question is approved for use (authored or AI-generated),
+                it must pass a coverage check:
+
+                coverage_score(question) =
+                    count of concept cards with sim(card, question_vector) > 0.85
+                    divided by total core cards in concept
+
+                Minimum required coverage score: 0.65
+                (question must semantically cover at least 65% of core cards)
+
+        13.3c Multi-Component Answer Scoring
+                Each certification question must have 10 or more discrete answer
+                components drawn from across the concept's card set.
+
+                Components are derived by:
+                    Mapping the question's semantic vector against all cards
+                    in the concept and selecting the top N scorers as the
+                    expected informational nodes the question should surface.
+
+                Components are tiered:
+
+                    Foundational Components (sim 0.85–0.92)
+                        Core mechanisms, definitions, basic relationships
+                        These are the minimum needed to show any prior knowledge
+
+                    Intermediate Components (sim 0.92–0.96)
+                        Applied reasoning, clinical context, conditional logic
+                        These indicate solid working knowledge
+
+                    Advanced Components (sim > 0.96)
+                        Synthesis, edge cases, nuance, transfer to novel contexts
+                        These indicate robust mastery
+
+                Scoring outcome per component tier:
+                    Foundational components met:   Acceleration eligible
+                    Intermediate components met:   Partial certification eligible
+                    Advanced components met:       Full certification eligible
+
+                This means a user who knows the core foundations but not the
+                high-level synthesis will receive acceleration on foundational
+                cards only — not suppression of content they haven't actually
+                demonstrated knowledge of.
+
+        13.3d Question Types
+                Application in novel context
+                Contrast with sibling concept
+                Directionality / dependency check
+                Transfer question (cross-domain if CLKT is active)
+                Multi-step clinical or reasoning scenario
+                    (preferred — maximizes component surfacing)
+
+    13.4 Flow
+
+        Step 1: Written / Selected Response
+                User answers the certification question in open-ended format
+                OR selects from structured response options.
+                Response is evaluated against all 10+ answer components.
+                Each component scored: present / partial / absent.
+
+        Step 2: Component Mapping
+                System maps which components were demonstrated.
+                Assigns each card in the concept a provisional action:
+                    suppress_eligible    (card sim > 0.90, advanced component met)
+                    accelerate_eligible  (card sim > 0.85, foundational/intermediate met)
+                    no_action            (card not covered or component not demonstrated)
+
+        Step 3: AI Verification Probe
+                Before any suppression or acceleration is applied, an AI-driven
+                conversational probe is conducted targeting the cards flagged as
+                suppress_eligible or accelerate_eligible.
+
+                Purpose:
+                    Confirm the written response reflected genuine prior knowledge
+                    and not lucky guessing, pattern recognition, or recency effect.
+                    Identify any misconception masked by a correct surface answer.
+                    Distinguish conceptual understanding from test-taking skill.
+
+                Probe format:
+                    2–4 follow-up questions, conversational, adaptive
+                    AI selects probe targets from the highest-similarity cards
+                    flagged for suppression
+                    Probes deliberately vary surface form from the original question
+                    to prevent recency advantage
+                    At least one probe must require explanation of mechanism
+                    or reasoning, not just recall of a fact
+
+                Probe outcome scoring:
+                    CONFIRMED:
+                        Correct reasoning across probe questions
+                        No confidence mismatch
+                        No misconception detected
+                        Response times reasonable
+                        --> Suppression and acceleration proceed as mapped
+
+                    PARTIAL:
+                        Correct on some probes, gaps on others
+                        --> Suppress_eligible cards downgraded to accelerate_eligible
+                        --> Cards with gaps flagged as no_action
+                        --> Acceleration proceeds only for confirmed components
+
+                    UNCONFIRMED:
+                        Probe reveals reasoning gap, misconception, or
+                        confidence mismatch inconsistent with the written response
+                        --> All suppression revoked
+                        --> Acceleration revoked
+                        --> Cards learn normally
+                        --> Misconception flagged for targeted remediation
+
+    13.5 Coverage-Gated Suppression and Acceleration
+
+            For each card c in concept, after AI probe confirmation:
+
+            coverage_score(c) = sim(c, cert_question_vector)
+
+            if coverage_score < 0.85:
+                --> no action (question did not cover this card)
+
+            if coverage_score 0.85–0.92 AND foundational component confirmed
+            AND probe outcome CONFIRMED or PARTIAL:
+                --> accelerate only
+                --> mandatory first review within 3–5 days
+                --> stability boost proportional to coverage_score
+
+            if coverage_score > 0.92 AND intermediate/advanced component confirmed
+            AND probe outcome CONFIRMED:
+                --> suppress eligible
+                --> apply suppression only if evidence floor passed (see 13.6)
+
+            if probe outcome UNCONFIRMED:
+                --> no action regardless of coverage score
+
+    13.6 Evidence Floor for Suppression
+            Suppression is never applied to a card unless at least one of the
+            following is true:
+
+                card.stage is not New
+                    (card has been seen at least once in a prior session)
+
+                OR
+
+                CLKT seeded_stability exists for this card
+                    (cross-library transfer established prior exposure)
+
+            A card the user has never encountered cannot be suppressed,
+            only accelerated, regardless of certification outcome.
+
+    13.7 Certification Outcomes
+
+        A. Full Certification
+                Advanced components confirmed across probe
+                Coverage score > 0.92 on majority of core cards
+                Evidence floor passed
+                --> Most core cards suppressed (coverage-gated)
+                --> Minimal review cards scheduled
+                --> Concept marked pre-mastered (dashed node on concept map)
+
+        B. Partial Certification (Most Common)
+                Foundational and intermediate components confirmed
+                Advanced components not fully demonstrated
+                --> Introductory / foundational cards accelerated
+                --> Intermediate and advanced cards learned normally
+                --> Concept learning chunk reduced, not eliminated
+
+        C. No Certification
+                Probe outcome UNCONFIRMED, or coverage score insufficient,
+                or evidence floor not met
+                --> Learn concept normally
+                --> If misconception detected, flag for remediation
+                   before or during learning sequence
+
+    13.8 Revocation
+            Suppressed cards resurface immediately if:
+                User fails a related card during normal review
+                Misconception is detected in a later probe session
+                Semantic neighbor lapse triggers erosion below threshold
+
+            On revocation:
+                Card returns to Learning stage (not reset to New)
+                Seeded or suppressed stability is cleared
+                Normal FSRS scheduling resumes
+
+    13.9 Caps and Safety
             Max 1 certification gate per concept
-        Safety
-            Suspended cards resurface if errors occur
-        User Prompt
-            "Let's check what you already know (2-3 minutes) to skip cards you don't need"
-            Opt-out option
+            Max 1 certification attempt per concept (no retries to game outcome)
+            AI probe capped at 4 follow-up questions
+            Opt-out available — user can skip certification and learn normally
+            All certification outcomes logged for review
+
+    13.10 User Prompt
+            "Before we start, let's check what you already know.
+             This takes 3–5 minutes and can skip cards you don't need.
+             There are no wrong answers — this just helps us find where to begin."
+            Opt-out: "Start from the beginning instead"
 
 14. Propagation, Modifiers & Caps
     12.1 Propagation
@@ -1694,7 +2070,123 @@ Socrates Structure and Organizer
     12.4 Central Safety Configuration
             Single config for all limits
 
-15. Explainability & Trust
+15. Cross-Library Knowledge Transfer (CLKT)
+    15.1 Purpose
+            Prevent redundant relearning when a new content library shares semantic
+            overlap with previously mastered content. Seeds initial stability of new
+            cards proportionally to their relatedness to already-learned cards,
+            reflecting real cognitive transfer.
+
+    15.2 Trigger
+            User adds a new content library
+            At least one existing library has cards in Review or Mastered stage
+            User explicitly opts in during library import flow
+
+    15.3 Alignment (before seeding)
+            Step 1 — Universal concept match (exact)
+                If imported library shares concept_exponential_decay with an existing library,
+                treat as the same node. Full transfer confidence at concept level; no cosine needed.
+
+            Step 2 — Spine match (exact)
+                If spine_concept_id matches across libraries, align at spine level.
+
+            Step 3 — Leaf refinement (graded)
+                For cards within aligned concepts, apply cosine similarity (> 0.90) and
+                seeded_stability formula below. Universal/spine alignment dominates confidence;
+                leaf similarity refines within the matched concept.
+
+    15.4 Seeding Formula
+            For each new card c_new in the imported library:
+
+            seeded_stability(c_new) =
+                SUM [ sim(c_new, c_i) x stability(c_i) x w_i ] / SUM [ w_i ]
+
+            Where:
+                sim(c_new, c_i)  = cosine similarity of semantic vectors
+                                   (only included if > 0.90)
+                stability(c_i)   = current FSRS stability of existing card c_i
+                w_i              = pedagogical_weight of existing card c_i
+
+            Applied only to existing cards in stage: Review or Mastered
+            Capped at: min(seeded_stability, 30 days)
+
+    15.5 First Review Rule
+            Despite high seeded stability, all transfer-seeded cards are scheduled
+            for a mandatory first review within 3-5 days of library import.
+
+            On that first review:
+                Pass: FSRS takes over using seeded stability as the base value.
+                      Next interval will reflect the full seeded stability.
+                Fail: Seeded stability is fully revoked. Card resets to normal
+                      FSRS scheduling from zero as a New card.
+
+            This ensures the user confirms transfer before benefiting from it.
+
+    15.6 Data Model Fields (User Card State)
+            {
+                "transfer_state": {
+                    "seeded_stability": 28.0,
+                    "seed_sources": ["card_0042", "card_0107"],
+                    "seed_applied_at": "2025-06-01T00:00:00Z",
+                    "seed_library": "cardiovascular_v2",
+                    "earned_stability": 0,
+                    "reviewed_directly": false,
+                    "first_review_due": "2025-06-04T00:00:00Z"
+                }
+            }
+
+            Lives on CardScheduleView (User State layer), not on Golden Master content.
+
+    15.7 Behavioral Rules
+            Seeding is a one-time event at import. It does not update as source
+            cards are later reviewed.
+
+            Seeded stability decays at 1.3x the normal FSRS decay rate until the
+            card has been directly reviewed at least once (reviewed_directly = true),
+            after which normal decay resumes.
+
+            A card with only seeded stability cannot advance past Learning stage.
+            Direct review is required to enter Review or Mastered.
+
+            If any seed source card lapses after seeding, reduce seeded_stability by:
+                sim(c_new, c_lapsed) x lapse_penalty_factor (suggested 0.5x)
+            Floored at 0.
+
+            Seeded cards are flagged visually in the concept map and card queue
+            until directly reviewed at least once.
+
+    15.8 Caps and Safety
+            Minimum similarity to qualify:     0.90 cosine
+            Maximum seeded stability:          30 days
+            Max source cards per new card:     5 (highest similarity only)
+            Stage ceiling before direct review: Learning
+            Decay multiplier before direct review: 1.3x
+            Mandatory first review window:     3-5 days from import
+
+    15.9 User Flow
+            1. User initiates library import.
+            2. System computes CLKT preview:
+               "X cards in this library overlap with things you already know.
+                Seeding their stability could reduce early repetition."
+            3. User can review the list of affected cards and their projected
+               seed values before confirming.
+            4. User accepts, declines, or accepts with modifications
+               (e.g., apply only to cards above a higher similarity threshold).
+            5. On acceptance: seeded stability applied, cards flagged as
+               transfer_seeded in queue, first reviews scheduled within 3-5 days.
+
+    15.10 Concept Map Integration
+            Transfer-seeded cards render with a distinct visual indicator on the
+            concept map (e.g., dashed node border) until directly reviewed.
+
+            Node color (ConceptState) is computed normally from stability, but
+            seeded stability is weighted at 0.5x earned stability in the
+            ConceptState formula until reviewed_directly = true.
+
+            This keeps the concept map honest — seeded knowledge is represented
+            as potential, not confirmed mastery, until the user has verified it.
+
+16. Explainability & Trust
     13.1 Primary Reason Contract
             Each scheduled card has exactly one dominant reason
                 Data Model
@@ -1727,7 +2219,7 @@ Socrates Structure and Organizer
             Accept / reject interventions
             “Move on” always available
 
-16. Analytics & Health Metrics
+17. Analytics & Health Metrics
         Content Metrics
             Adaptive Restructuring
                 Track semantic degree over time to detect drift of content libraries
@@ -1829,13 +2321,13 @@ Socrates Structure and Organizer
             Goal-level
                 Track across large time periods based on goal allocation
 
-17. Offline Support
+18. Offline Support
         Learning & Review Queue
         Pre-bundled diagnostic questions
         Certification cards
         Probing templates
 
-18. System Infrastructure (Internal Only)
+19. System Infrastructure (Internal Only)
         Observability & Internal Diagnostics (Internal Only)
             Scheduler Telemetry
                 - FSRS input/output snapshots
@@ -1855,17 +2347,32 @@ Socrates Structure and Organizer
                 - Schedule drift detection
                 - Unexpected stability inflation
 
-19. Future Work (Explicitly Deferred)
-        AI-assisted library creation
-        External deck imports
+20. Future Work (Explicitly Deferred)
+        External deck imports (Anki, etc.)
         Auto-refactoring of concept graphs
+        Full CLKT import flow UI — alignment module implemented (§15.3); seeding at import not yet wired
+        Multi-domain context review tooling (Phase 4 spine build)
+        OpenStax/LibreTexts automated L4–5 expansion beyond orthopaedic high-yield anchors (Phase 3)
+        Deepen non-high-yield L4/L5 scaffolds across remaining orthopaedic topic anchors
+        Biostatistics / PROMs L4 under ABOS Part I (deferred from orthopaedic review)
+
+        Implemented (library-creator package — spine & content)
+            CLI pipeline: ingest → intent → domain profile → concept graph → cards/questions → export
+            Google Sheets import (OrthoBullets)
+            Universal concept schema with domain_contexts and resolution windows
+            Linked content write-back into domain contexts during card generation
+            Universal spine L1–L5 build — 1880 concepts, 166 L4/L5 anchor bundles (see §5.2)
+            Orthopaedic surgery under medicine_clinical — 124 L3 (11 hubs + 113 topics), consolidated into main spine
+            Curriculum lens schema, validation, applyLens runtime; ABOS + Orthobullets orthopaedic lenses populated
+            Spine placement heuristic (placeOnSpine) + spine-growth-queue.json workflow
+            Domain consolidation script (consolidate:orthopaedic-spine) with existing-node context patches
                   
-20. Files
+21. Files
        /Users/colbynielsen/Documents/StudyBuddy
         - TypeScriptDefinitions
             - Contains the definitions to allow cross-talk between firebase and my frontend
 
-21. Tests
+22. Tests
         Invariants
             Primary Reason
                 Test 1: Exactly one reason
@@ -1913,7 +2420,7 @@ Socrates Structure and Organizer
                     expect(reasons.length).toBeLessThanOrEqual(1);
                     });
 
-22. Development Checklist
+23. Development Checklist
         Layers
             1. Domain Models (schemas, types)
             2. Core Engines (scheduler, queue builder)

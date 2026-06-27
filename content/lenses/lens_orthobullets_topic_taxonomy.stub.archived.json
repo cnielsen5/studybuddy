@@ -1,0 +1,46 @@
+{
+  "id": "lens_orthobullets_topic_taxonomy",
+  "name": "Orthobullets Topic Taxonomy",
+  "source": "Orthobullets",
+  "domain_id": "medicine_clinical",
+  "version": "2026-stub",
+  "description": "Case-oriented topic clusters reflecting how residents search during training. Same spine concepts as ABOS lens may appear under different sections with different order and high-yield flags.",
+  "intended_audience": "Orthopaedic surgery residents using topic-based study workflows",
+  "sections": [
+    {
+      "id": "lens_section_ob_trauma",
+      "title": "Trauma",
+      "parent_section_id": null,
+      "order": 0
+    },
+    {
+      "id": "lens_section_ob_trauma_bone_biology",
+      "title": "Trauma → Bone Biology",
+      "parent_section_id": "lens_section_ob_trauma",
+      "order": 0
+    },
+    {
+      "id": "lens_section_ob_recon",
+      "title": "Adult Reconstruction (Hip & Knee)",
+      "parent_section_id": null,
+      "order": 1
+    },
+    {
+      "id": "lens_section_ob_spine",
+      "title": "Spine",
+      "parent_section_id": null,
+      "order": 2
+    },
+    {
+      "id": "lens_section_ob_sports",
+      "title": "Sports Medicine",
+      "parent_section_id": null,
+      "order": 3
+    }
+  ],
+  "concept_mappings": [],
+  "metadata": {
+    "created_at": "2026-06-27T00:00:00Z",
+    "status": "active"
+  }
+}

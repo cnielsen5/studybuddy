@@ -1,0 +1,624 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_psychology_neuroscience_l3_substance_use_disorders",
+    "anchor_primary_domain": "psychology_neuroscience",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_psychology_neuroscience_l3_substance_use_disorders.medicine_clinical.json",
+      "content/spine/l4-l5-bundles/spine_psychology_neuroscience_l3_substance_use_disorders.psychology_neuroscience.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "9 per-context concepts merged into 9 universal concepts (8 L4 + 1 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_psychology_neuroscience_l4_behavioral_addictions_overview",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_substance_use_disorders",
+      "content": {
+        "title": "Behavioral Addictions Overview",
+        "definition": "Gambling and other compulsive behaviors sharing reinforcement circuitry with substances.",
+        "summary": "Behavioral addictions lack classic withdrawal but show impaired control patterns."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Addiction",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing ."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_substance_use_disorders",
+        "prerequisites": [
+          "spine_psychology_neuroscience_l4_tolerance_withdrawal"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Behavioral Addictions Overview",
+            "relevance": "DSM-based psychopathology classification and behavioral mechanisms.",
+            "applications": [
+              "Behavioral"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Psychology & Neuroscience",
+            "subcategory": "Abnormal Psychology & Psychopathology",
+            "topic": "Substance Use Disorders",
+            "subtopic": "Behavioral"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_psychology_neuroscience_l4_tolerance_withdrawal"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Psychology 2e",
+            "chapter": "15",
+            "section": "15.7.3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l4_motivational_interviewing_substance_care",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_substance_use_disorders",
+      "content": {
+        "title": "Motivational Interviewing in Substance Care",
+        "definition": "Patient-centered counseling resolving ambivalence about change.",
+        "summary": "MI complements contingency management and community supports."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Addiction",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing ."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_substance_use_disorders",
+        "prerequisites": [
+          "spine_psychology_neuroscience_l4_opioid_use_disorder_mat"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Motivational Interviewing in Substance Care",
+            "relevance": "Withdrawal management and maintenance therapies in clinical practice.",
+            "applications": [
+              "Opioid MAT",
+              "Alcohol use disorder pharmacotherapy"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Medicine (Clinical)",
+            "subcategory": "Psychiatry & Behavioral Health",
+            "topic": "Substance Use Disorders",
+            "subtopic": "Motivational"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_psychology_neuroscience_l4_opioid_use_disorder_mat"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Substance Use Disorder",
+            "section": "Motivational Interviewing",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l4_opioid_use_disorder_mat",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_substance_use_disorders",
+      "content": {
+        "title": "Medication-Assisted Treatment for Opioid Use Disorder",
+        "definition": "Buprenorphine, methadone, and naltrexone reducing relapse and overdose mortality.",
+        "summary": "Harm reduction including naloxone distribution is standard of care."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Addiction",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing ."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_substance_use_disorders",
+        "prerequisites": [
+          "spine_psychology_neuroscience_l4_withdrawal_management_alcohol_benzo"
+        ],
+        "unlocks": [
+          "spine_psychology_neuroscience_l4_motivational_interviewing_substance_care",
+          "spine_psychology_neuroscience_l5_opioid_overdose_naloxone"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Medication-Assisted Treatment for Opioid Use Disorder",
+            "relevance": "Withdrawal management and maintenance therapies in clinical practice.",
+            "applications": [
+              "Opioid MAT",
+              "Alcohol use disorder pharmacotherapy"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Medicine (Clinical)",
+            "subcategory": "Psychiatry & Behavioral Health",
+            "topic": "Substance Use Disorders",
+            "subtopic": "MAT"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_psychology_neuroscience_l4_withdrawal_management_alcohol_benzo"
+            ],
+            "unlocks_in_context": [
+              "spine_psychology_neuroscience_l4_motivational_interviewing_substance_care",
+              "spine_psychology_neuroscience_l5_opioid_overdose_naloxone"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Opioid Use Disorder",
+            "section": "Medication-Assisted Treatment",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l4_reward_pathways_addiction",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_substance_use_disorders",
+      "content": {
+        "title": "Reward Pathways and Incentive Sensitization",
+        "definition": "Mesolimbic dopamine, learning of drug cues, and craving after abstinence.",
+        "summary": "Cue reactivity explains relapse vulnerability in conditioned environments."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Addiction",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing ."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_substance_use_disorders",
+        "prerequisites": [
+          "spine_psychology_neuroscience_l4_sud_diagnostic_criteria"
+        ],
+        "unlocks": [
+          "spine_psychology_neuroscience_l4_tolerance_withdrawal"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Reward Pathways and Incentive Sensitization",
+            "relevance": "DSM-based psychopathology classification and behavioral mechanisms.",
+            "applications": [
+              "Reward"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Psychology & Neuroscience",
+            "subcategory": "Abnormal Psychology & Psychopathology",
+            "topic": "Substance Use Disorders",
+            "subtopic": "Reward"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_psychology_neuroscience_l4_sud_diagnostic_criteria"
+            ],
+            "unlocks_in_context": [
+              "spine_psychology_neuroscience_l4_tolerance_withdrawal"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Psychology 2e",
+            "chapter": "15",
+            "section": "15.7.1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l4_substance_screening_brief_intervention",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_substance_use_disorders",
+      "content": {
+        "title": "Screening and Brief Intervention",
+        "definition": "Validated screens (AUDIT, DAST) and brief motivational counseling in primary care.",
+        "summary": "SBIRT models identify risky use before dependence develops."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Addiction",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing ."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_substance_use_disorders",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_psychology_neuroscience_l4_withdrawal_management_alcohol_benzo"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Screening and Brief Intervention",
+            "relevance": "Withdrawal management and maintenance therapies in clinical practice.",
+            "applications": [
+              "Opioid MAT",
+              "Alcohol use disorder pharmacotherapy"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Medicine (Clinical)",
+            "subcategory": "Psychiatry & Behavioral Health",
+            "topic": "Substance Use Disorders",
+            "subtopic": "Screening"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_psychology_neuroscience_l4_withdrawal_management_alcohol_benzo"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Substance Use Disorder",
+            "section": "Screening",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l4_sud_diagnostic_criteria",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_substance_use_disorders",
+      "content": {
+        "title": "Substance Use Disorder Diagnostic Criteria",
+        "definition": "Impaired control, social impairment, risky use, and pharmacologic criteria in DSM.",
+        "summary": "Severity specifiers count criteria endorsed in the past year."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Addiction",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing ."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_substance_use_disorders",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_psychology_neuroscience_l4_reward_pathways_addiction"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Substance Use Disorder Diagnostic Criteria",
+            "relevance": "DSM-based psychopathology classification and behavioral mechanisms.",
+            "applications": [
+              "Diagnosis"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Psychology & Neuroscience",
+            "subcategory": "Abnormal Psychology & Psychopathology",
+            "topic": "Substance Use Disorders",
+            "subtopic": "Diagnosis"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_psychology_neuroscience_l4_reward_pathways_addiction"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Psychology 2e",
+            "chapter": "15",
+            "section": "15.7"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l4_tolerance_withdrawal",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_substance_use_disorders",
+      "content": {
+        "title": "Tolerance and Withdrawal",
+        "definition": "Pharmacodynamic and metabolic tolerance with withdrawal syndromes upon cessation.",
+        "summary": "Withdrawal severity guides medical detoxification needs."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Addiction",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing ."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_substance_use_disorders",
+        "prerequisites": [
+          "spine_psychology_neuroscience_l4_reward_pathways_addiction"
+        ],
+        "unlocks": [
+          "spine_psychology_neuroscience_l4_behavioral_addictions_overview"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Tolerance and Withdrawal",
+            "relevance": "DSM-based psychopathology classification and behavioral mechanisms.",
+            "applications": [
+              "Withdrawal"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Psychology & Neuroscience",
+            "subcategory": "Abnormal Psychology & Psychopathology",
+            "topic": "Substance Use Disorders",
+            "subtopic": "Withdrawal"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_psychology_neuroscience_l4_reward_pathways_addiction"
+            ],
+            "unlocks_in_context": [
+              "spine_psychology_neuroscience_l4_behavioral_addictions_overview"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Psychology 2e",
+            "chapter": "15",
+            "section": "15.7.2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l4_withdrawal_management_alcohol_benzo",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_substance_use_disorders",
+      "content": {
+        "title": "Withdrawal Management: Alcohol and Benzodiazepines",
+        "definition": "CIWA-guided benzodiazepine protocols preventing seizures and delirium tremens.",
+        "summary": "Alcohol withdrawal can be fatal without medical monitoring."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Addiction",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing ."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_substance_use_disorders",
+        "prerequisites": [
+          "spine_psychology_neuroscience_l4_substance_screening_brief_intervention"
+        ],
+        "unlocks": [
+          "spine_psychology_neuroscience_l4_opioid_use_disorder_mat"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Withdrawal Management: Alcohol and Benzodiazepines",
+            "relevance": "Withdrawal management and maintenance therapies in clinical practice.",
+            "applications": [
+              "Opioid MAT",
+              "Alcohol use disorder pharmacotherapy"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Medicine (Clinical)",
+            "subcategory": "Psychiatry & Behavioral Health",
+            "topic": "Substance Use Disorders",
+            "subtopic": "Withdrawal"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_psychology_neuroscience_l4_substance_screening_brief_intervention"
+            ],
+            "unlocks_in_context": [
+              "spine_psychology_neuroscience_l4_opioid_use_disorder_mat"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Alcohol Withdrawal",
+            "section": "Management",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l5_opioid_overdose_naloxone",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_substance_use_disorders",
+      "content": {
+        "title": "Opioid Overdose and Naloxone Rescue",
+        "definition": "Recognition of respiratory depression and intranasal or IM naloxone administration.",
+        "summary": "Repeat dosing may be needed with long-acting opioids."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Addiction",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing ."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l4_opioid_use_disorder_mat",
+        "prerequisites": [
+          "spine_psychology_neuroscience_l4_opioid_use_disorder_mat"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Opioid Overdose and Naloxone Rescue",
+            "relevance": "Withdrawal management and maintenance therapies in clinical practice.",
+            "applications": [
+              "Opioid MAT",
+              "Alcohol use disorder pharmacotherapy"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Medicine (Clinical)",
+            "subcategory": "Psychiatry & Behavioral Health",
+            "topic": "Substance Use Disorders",
+            "subtopic": "Overdose"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_psychology_neuroscience_l4_opioid_use_disorder_mat"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Opioid Overdose",
+            "section": "Naloxone",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,507 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_preclinical_l3_cardiac_physiology",
+    "anchor_primary_domain": "medicine_preclinical",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_medicine_preclinical_l3_cardiac_physiology.medicine_preclinical.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "7 per-context concepts merged into 7 universal concepts (4 L4 + 3 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_preclinical_l4_cardiac_cycle_phases",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_preclinical_l3_cardiac_physiology",
+      "content": {
+        "title": "Cardiac Cycle Phases",
+        "definition": "Sequence of systole (isovolumetric contraction, ejection) and diastole (isovolumetric relaxation, filling) governing valve opening and pressure-volume relationships.",
+        "summary": "Understanding the cardiac cycle links heart sounds, murmurs, and pressure tracings to mechanical events."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Cardiovascular Physiology",
+        "primary_domain": "medicine_preclinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_preclinical_l3_cardiac_physiology",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_medicine_preclinical_l4_preload_afterload_concepts",
+          "spine_medicine_preclinical_l4_cardiac_output_determinants"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Cardiac Cycle Phases",
+            "relevance": "S1/S2 timing and murmur timing.",
+            "applications": [
+              "Isovolumetric contraction",
+              "Rapid ejection phase"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Cardiovascular Physiology",
+            "topic": "Cardiac Physiology",
+            "subtopic": "Cardiac Cycle"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_medicine_preclinical_l4_preload_afterload_concepts",
+              "spine_medicine_preclinical_l4_cardiac_output_determinants"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "19",
+            "section": "19.3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_preclinical_l4_cardiac_output_determinants",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_preclinical_l3_cardiac_physiology",
+      "content": {
+        "title": "Cardiac Output Determinants",
+        "definition": "Cardiac output (CO = HR × SV) determined by heart rate, preload, afterload, and contractility, modulated by autonomic and hormonal influences.",
+        "summary": "Sympathetic stimulation increases HR and contractility. CO adapts to metabolic demand during exercise."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Cardiovascular Physiology",
+        "primary_domain": "medicine_preclinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_preclinical_l3_cardiac_physiology",
+        "prerequisites": [
+          "spine_medicine_preclinical_l4_frank_starling_mechanism"
+        ],
+        "unlocks": [
+          {
+            "concept_id": "spine_medicine_preclinical_l3_cardiac_membrane_potential",
+            "_forward_reference": true
+          },
+          {
+            "concept_id": "spine_medicine_preclinical_l3_cardiac_output_and_starling_law",
+            "_forward_reference": true
+          }
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Cardiac Output Determinants",
+            "relevance": "Shock states and CO measurement.",
+            "applications": [
+              "CO = HR × SV",
+              "Sympathetic positive inotropy"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Cardiovascular Physiology",
+            "topic": "Cardiac Physiology",
+            "subtopic": "Cardiac Output"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_preclinical_l4_frank_starling_mechanism"
+            ],
+            "unlocks_in_context": [
+              {
+                "concept_id": "spine_medicine_preclinical_l3_cardiac_membrane_potential",
+                "_forward_reference": true
+              },
+              {
+                "concept_id": "spine_medicine_preclinical_l3_cardiac_output_and_starling_law",
+                "_forward_reference": true
+              }
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "19",
+            "section": "19.5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_preclinical_l4_frank_starling_mechanism",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_preclinical_l3_cardiac_physiology",
+      "content": {
+        "title": "Frank-Starling Mechanism",
+        "definition": "Intrinsic ability of the heart to increase stroke volume in response to increased venous return and end-diastolic fiber stretch up to a physiologic limit.",
+        "summary": "Greater stretch produces stronger contraction via optimal actin-myosin overlap. Beyond the limit, output plateaus then declines."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Cardiovascular Physiology",
+        "primary_domain": "medicine_preclinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_preclinical_l3_cardiac_physiology",
+        "prerequisites": [
+          "spine_medicine_preclinical_l4_preload_afterload_concepts"
+        ],
+        "unlocks": [
+          "spine_medicine_preclinical_l4_cardiac_output_determinants",
+          "spine_medicine_preclinical_l5_starling_curve_failure"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Frank-Starling Mechanism",
+            "relevance": "Volume status and cardiac performance.",
+            "applications": [
+              "Increased EDV increases SV",
+              "Starling curve plateau"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Cardiovascular Physiology",
+            "topic": "Cardiac Physiology",
+            "subtopic": "Frank-Starling"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_preclinical_l4_preload_afterload_concepts"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_preclinical_l4_cardiac_output_determinants",
+              "spine_medicine_preclinical_l5_starling_curve_failure"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "19",
+            "section": "19.4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_preclinical_l4_preload_afterload_concepts",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_preclinical_l3_cardiac_physiology",
+      "content": {
+        "title": "Preload and Afterload",
+        "definition": "Preload is ventricular end-diastolic volume (stretch); afterload is resistance the ventricle must overcome to eject blood, primarily aortic pressure for the left ventricle.",
+        "summary": "Frank-Starling mechanism links preload to stroke volume. Afterload reduction improves output in heart failure."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Cardiovascular Physiology",
+        "primary_domain": "medicine_preclinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_preclinical_l3_cardiac_physiology",
+        "prerequisites": [
+          "spine_medicine_preclinical_l4_cardiac_cycle_phases"
+        ],
+        "unlocks": [
+          "spine_medicine_preclinical_l4_frank_starling_mechanism"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Preload and Afterload",
+            "relevance": "Heart failure and vasodilator therapy.",
+            "applications": [
+              "End-diastolic volume",
+              "Aortic pressure as LV afterload"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Cardiovascular Physiology",
+            "topic": "Cardiac Physiology",
+            "subtopic": "Preload/Afterload"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_preclinical_l4_cardiac_cycle_phases"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_preclinical_l4_frank_starling_mechanism"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "19",
+            "section": "19.4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_preclinical_l5_baroreceptor_reflex_cardiac",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_preclinical_l3_cardiac_physiology",
+      "content": {
+        "title": "Baroreceptor Reflex and Cardiac Output",
+        "definition": "Negative feedback via carotid and aortic baroreceptors adjusting heart rate and vascular tone to maintain arterial blood pressure.",
+        "summary": "Hypotension triggers sympathetic increase in HR and contractility. Hypertension activates parasympathetic slowing."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Cardiovascular Physiology",
+        "primary_domain": "medicine_preclinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_preclinical_l4_cardiac_output_determinants",
+        "prerequisites": [
+          "spine_medicine_preclinical_l4_cardiac_output_determinants"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Baroreceptor Reflex and Cardiac Output",
+            "relevance": "Orthostatic hypotension and autonomic failure.",
+            "applications": [
+              "Carotid sinus baroreceptors",
+              "Reflex tachycardia"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Cardiovascular Physiology",
+            "topic": "Cardiac Physiology",
+            "subtopic": "Baroreceptors"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_preclinical_l4_cardiac_output_determinants"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "19",
+            "section": "19.6"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_preclinical_l5_murmur_timing_cardiac_cycle",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_preclinical_l3_cardiac_physiology",
+      "content": {
+        "title": "Murmur Timing in the Cardiac Cycle",
+        "definition": "Association of heart murmurs with specific cycle phases: systolic (aortic stenosis, mitral regurgitation) vs diastolic (aortic regurgitation, mitral stenosis).",
+        "summary": "Timing narrows differential diagnosis before echocardiography. Systolic murmurs occur between S1 and S2."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Cardiovascular Physiology",
+        "primary_domain": "medicine_preclinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_preclinical_l4_cardiac_cycle_phases",
+        "prerequisites": [
+          "spine_medicine_preclinical_l4_cardiac_cycle_phases"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Murmur Timing in the Cardiac Cycle",
+            "relevance": "Physical exam correlation.",
+            "applications": [
+              "Systolic ejection murmur",
+              "Diastolic filling murmur"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Cardiovascular Physiology",
+            "topic": "Cardiac Physiology",
+            "subtopic": "Murmurs"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_preclinical_l4_cardiac_cycle_phases"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "section": "Heart Murmurs",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_preclinical_l5_starling_curve_failure",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_preclinical_l3_cardiac_physiology",
+      "content": {
+        "title": "Starling Curve in Heart Failure",
+        "definition": "Shift of the Frank-Starling curve downward and flattening in systolic heart failure, reducing stroke volume at any given preload.",
+        "summary": "Compensatory fluid retention initially supports preload but eventually worsens congestion without improving output."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Cardiovascular Physiology",
+        "primary_domain": "medicine_preclinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_preclinical_l4_frank_starling_mechanism",
+        "prerequisites": [
+          "spine_medicine_preclinical_l4_frank_starling_mechanism"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Starling Curve in Heart Failure",
+            "relevance": "Decompensated heart failure pathophysiology.",
+            "applications": [
+              "Flattened Starling relationship",
+              "Volume overload congestion"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Cardiovascular Physiology",
+            "topic": "Cardiac Physiology",
+            "subtopic": "HF Starling"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_preclinical_l4_frank_starling_mechanism"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "section": "Heart Failure — Pathophysiology",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    }
+  ]
+}

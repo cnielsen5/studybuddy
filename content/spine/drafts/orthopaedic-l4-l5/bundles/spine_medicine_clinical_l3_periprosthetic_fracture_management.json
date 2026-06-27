@@ -1,0 +1,548 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_periprosthetic_fracture_management",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "ABOS-aligned scaffold for abos_p2_adult_reconstruction."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_periprosthetic_fracture_management_core_principles",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_periprosthetic_fracture_management",
+      "content": {
+        "title": "Periprosthetic Fracture Management — Core Principles",
+        "definition": "Fractures adjacent to or involving joint replacement components classified by location, stability, and bone stock.",
+        "summary": "Vancouver classification guides hip periprosthetic fracture management. Intraoperative versus postoperative fractures differ in treatment options."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Adult Reconstruction",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_periprosthetic_fracture_management",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Periprosthetic Fracture Management — Core Principles",
+            "relevance": "ABOS femur subsection; increasing incidence with aging population.",
+            "applications": [
+              "Vancouver classification",
+              "Cable plate and stem revision",
+              "Intraoperative fracture prevention"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Arthroplasty Complications",
+            "topic": "Periprosthetic Fracture Management",
+            "subtopic": "Periprosthetic Fracture Management — Core Principles"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Periprosthetic Fracture Management",
+            "chapter": "NBK441999",
+            "section": "Periprosthetic Fracture"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_periprosthetic_fracture_management_evaluation_and_diagnosis",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_periprosthetic_fracture_management",
+      "content": {
+        "title": "Evaluation and Diagnosis",
+        "definition": "History, physical examination, and initial imaging for periprosthetic fracture management.",
+        "summary": "Systematic assessment identifies severity, associated injuries, and urgency in periprosthetic fracture management."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Adult Reconstruction",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_periprosthetic_fracture_management",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_periprosthetic_fracture_management_core_principles"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Evaluation and Diagnosis",
+            "relevance": "ABOS femur subsection; increasing incidence with aging population.",
+            "applications": [
+              "Vancouver classification",
+              "Cable plate and stem revision",
+              "Intraoperative fracture prevention"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Arthroplasty Complications",
+            "topic": "Periprosthetic Fracture Management",
+            "subtopic": "Evaluation and Diagnosis"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_periprosthetic_fracture_management_core_principles"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Periprosthetic Fracture Management",
+            "chapter": "NBK441999",
+            "section": "Periprosthetic Fracture"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_periprosthetic_fracture_management_management_principles",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_periprosthetic_fracture_management",
+      "content": {
+        "title": "Management Principles",
+        "definition": "Nonoperative and operative treatment algorithms for periprosthetic fracture management.",
+        "summary": "Vancouver classification guides hip periprosthetic fracture management."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Adult Reconstruction",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_periprosthetic_fracture_management",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_periprosthetic_fracture_management_evaluation_and_diagnosis"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Management Principles",
+            "relevance": "ABOS femur subsection; increasing incidence with aging population.",
+            "applications": [
+              "Vancouver classification",
+              "Cable plate and stem revision",
+              "Intraoperative fracture prevention"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Arthroplasty Complications",
+            "topic": "Periprosthetic Fracture Management",
+            "subtopic": "Management Principles"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_periprosthetic_fracture_management_evaluation_and_diagnosis"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Periprosthetic Fracture Management",
+            "chapter": "NBK441999",
+            "section": "Periprosthetic Fracture"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_periprosthetic_fracture_management_vancouver_classification",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_periprosthetic_fracture_management",
+      "content": {
+        "title": "Vancouver classification",
+        "definition": "Focused assessment and management of vancouver classification in the context of periprosthetic fracture management.",
+        "summary": "Vancouver classification — key decision points from Adult Reconstruction practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Adult Reconstruction",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_periprosthetic_fracture_management",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_periprosthetic_fracture_management_management_principles"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Vancouver classification",
+            "relevance": "ABOS femur subsection; increasing incidence with aging population.",
+            "applications": [
+              "Vancouver classification",
+              "Cable plate and stem revision",
+              "Intraoperative fracture prevention"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Arthroplasty Complications",
+            "topic": "Periprosthetic Fracture Management",
+            "subtopic": "Vancouver classification"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_periprosthetic_fracture_management_management_principles"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Periprosthetic Fracture Management",
+            "chapter": "NBK441999",
+            "section": "Periprosthetic Fracture"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_periprosthetic_fracture_management_cable_plate_and_stem_revi",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_periprosthetic_fracture_management",
+      "content": {
+        "title": "Cable plate and stem revision",
+        "definition": "Focused assessment and management of cable plate and stem revision in the context of periprosthetic fracture management.",
+        "summary": "Cable plate and stem revision — key decision points from Adult Reconstruction practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Adult Reconstruction",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_periprosthetic_fracture_management",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_periprosthetic_fracture_management_vancouver_classification"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Cable plate and stem revision",
+            "relevance": "ABOS femur subsection; increasing incidence with aging population.",
+            "applications": [
+              "Vancouver classification",
+              "Cable plate and stem revision",
+              "Intraoperative fracture prevention"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Arthroplasty Complications",
+            "topic": "Periprosthetic Fracture Management",
+            "subtopic": "Cable plate and stem revision"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_periprosthetic_fracture_management_vancouver_classification"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Periprosthetic Fracture Management",
+            "chapter": "NBK441999",
+            "section": "Periprosthetic Fracture"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_periprosthetic_fracture_management_intraoperative_fracture_p",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_periprosthetic_fracture_management",
+      "content": {
+        "title": "Intraoperative fracture prevention",
+        "definition": "Focused assessment and management of intraoperative fracture prevention in the context of periprosthetic fracture management.",
+        "summary": "Intraoperative fracture prevention — key decision points from Adult Reconstruction practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Adult Reconstruction",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_periprosthetic_fracture_management",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_periprosthetic_fracture_management_cable_plate_and_stem_revi"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Intraoperative fracture prevention",
+            "relevance": "ABOS femur subsection; increasing incidence with aging population.",
+            "applications": [
+              "Vancouver classification",
+              "Cable plate and stem revision",
+              "Intraoperative fracture prevention"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Arthroplasty Complications",
+            "topic": "Periprosthetic Fracture Management",
+            "subtopic": "Intraoperative fracture prevention"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_periprosthetic_fracture_management_cable_plate_and_stem_revi"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Periprosthetic Fracture Management",
+            "chapter": "NBK441999",
+            "section": "Periprosthetic Fracture"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_periprosthetic_fracture_management_complications_and_outcome",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_periprosthetic_fracture_management",
+      "content": {
+        "title": "Complications and Outcomes",
+        "definition": "Recognized complications, failure modes, and expected recovery after treatment of periprosthetic fracture management.",
+        "summary": "Anticipate, diagnose, and manage complications; counsel on prognosis and rehabilitation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Adult Reconstruction",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_periprosthetic_fracture_management",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_periprosthetic_fracture_management_intraoperative_fracture_p"
+        ],
+        "unlocks": [
+          "spine_medicine_clinical_l5_periprosthetic_fracture_management_salvage_and_revision"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Complications and Outcomes",
+            "relevance": "ABOS femur subsection; increasing incidence with aging population.",
+            "applications": [
+              "Vancouver classification",
+              "Cable plate and stem revision",
+              "Intraoperative fracture prevention"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Arthroplasty Complications",
+            "topic": "Periprosthetic Fracture Management",
+            "subtopic": "Complications and Outcomes"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_periprosthetic_fracture_management_intraoperative_fracture_p"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_clinical_l5_periprosthetic_fracture_management_salvage_and_revision"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Periprosthetic Fracture Management",
+            "chapter": "NBK441999",
+            "section": "Periprosthetic Fracture"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l5_periprosthetic_fracture_management_salvage_and_revision",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_clinical_l3_periprosthetic_fracture_management",
+      "content": {
+        "title": "Salvage and Revision Strategies",
+        "definition": "Revision and salvage options when initial management of periprosthetic fracture management fails.",
+        "summary": "Staged revision and alternative strategies when primary treatment fails or complications develop."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Adult Reconstruction",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l4_periprosthetic_fracture_management_complications_and_outcome",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_periprosthetic_fracture_management_complications_and_outcome"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Salvage and Revision Strategies",
+            "relevance": "ABOS femur subsection; increasing incidence with aging population.",
+            "applications": [
+              "Vancouver classification",
+              "Cable plate and stem revision",
+              "Intraoperative fracture prevention"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Arthroplasty Complications",
+            "topic": "Periprosthetic Fracture Management",
+            "subtopic": "Salvage and Revision Strategies"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_periprosthetic_fracture_management_complications_and_outcome"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Periprosthetic Fracture Management",
+            "chapter": "NBK441999",
+            "section": "Periprosthetic Fracture"
+          }
+        ]
+      }
+    }
+  ]
+}

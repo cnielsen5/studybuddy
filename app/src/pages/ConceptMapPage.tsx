@@ -118,6 +118,9 @@ export function ConceptMapPage() {
           <p className="subtitle">
             {bundle.manifest.name} · {stats?.domains ?? 0} domains · {stats?.categories ?? 0}{" "}
             categories · {stats?.concepts ?? 0} concepts
+            {stats?.resolutionRange && (
+              <> · resolution {stats.resolutionRange.min}–{stats.resolutionRange.max}</>
+            )}
           </p>
         </div>
         <div className="header-actions">

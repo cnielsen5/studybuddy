@@ -1,0 +1,925 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_biology_l3_innate_immunity",
+    "anchor_primary_domain": "biology",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_biology_l3_innate_immunity.biology.json",
+      "content/spine/l4-l5-bundles/spine_biology_l3_innate_immunity.medicine_preclinical.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "15 per-context concepts merged into 12 universal concepts (8 L4 + 4 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_biology_l4_complement_system",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_innate_immunity",
+      "content": {
+        "title": "Complement System",
+        "definition": "Cascade of plasma proteins activated by classical, alternative, or lectin pathways to opsonize pathogens, recruit inflammatory cells, and form membrane attack complexes.",
+        "summary": "Complement bridges innate recognition and effector functions. C3 convertase is the central amplification step; terminal components can lyse susceptible microbes."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Immune Defense",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_innate_immunity",
+        "prerequisites": [
+          "spine_biology_l4_pattern_recognition_receptors"
+        ],
+        "unlocks": [
+          "spine_biology_l4_phagocytosis",
+          "spine_biology_l5_complement_anaphylatoxins",
+          "spine_biology_l5_membrane_attack_complex"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Complement System",
+            "relevance": "Humoral innate effector cascade enhancing pathogen clearance.",
+            "applications": [
+              "C3 opsonization",
+              "Membrane attack complex"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Immune Defense",
+            "topic": "Innate Immunity",
+            "subtopic": "Complement"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_pattern_recognition_receptors"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_phagocytosis"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Complement System Activation",
+            "relevance": "C3/C5 deficiency and hereditary angioedema are board-relevant.",
+            "applications": [
+              "C3b opsonization",
+              "Alternative pathway amplification"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Innate Immunity",
+            "topic": "Pattern Recognition",
+            "subtopic": "Complement"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_pattern_recognition_receptors"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_phagocytosis",
+              "spine_biology_l5_complement_anaphylatoxins",
+              "spine_biology_l5_membrane_attack_complex"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-26T05:54:17.139Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "44",
+            "section": "44.12"
+          },
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "42",
+            "section": "42.3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_inflammatory_mediators_innate",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_innate_immunity",
+      "content": {
+        "title": "Inflammatory Mediator Release",
+        "definition": "Soluble mediators including cytokines, prostaglandins, bradykinin, and histamine that mediate vasodilation, permeability, pain, and leukocyte recruitment in acute inflammation.",
+        "summary": "Innate activation produces a coordinated mediator profile causing cardinal signs of inflammation. Dysregulated release contributes to sepsis and tissue injury."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Immunology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_innate_immunity",
+        "prerequisites": [
+          "spine_biology_l4_tlr_signaling_mydd88"
+        ],
+        "unlocks": [
+          {
+            "concept_id": "spine_biology_l3_adaptive_immunity_overview",
+            "_forward_reference": true
+          }
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Inflammatory Mediator Release",
+            "relevance": "Cytokine storm and NSAID targets connect innate mediators to therapeutics.",
+            "applications": [
+              "TNF and IL-1 in sepsis",
+              "Prostaglandin-mediated fever"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Innate Immunity",
+            "topic": "Pattern Recognition",
+            "subtopic": "Inflammatory Mediators"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_tlr_signaling_mydd88"
+            ],
+            "unlocks_in_context": [
+              {
+                "concept_id": "spine_biology_l3_adaptive_immunity_overview",
+                "_forward_reference": true
+              }
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "21",
+            "section": "21.1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_inflammatory_response",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_innate_immunity",
+      "content": {
+        "title": "Inflammatory Response",
+        "definition": "Local tissue response to injury or infection characterized by redness, heat, swelling, and pain mediated by cytokines, histamine, prostaglandins, and recruited leukocytes.",
+        "summary": "Inflammation confines infection and initiates repair. Acute inflammation recruits neutrophils; chronic inflammation can cause tissue damage if unresolved."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Immune Defense",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_innate_immunity",
+        "prerequisites": [
+          "spine_biology_l4_pattern_recognition_receptors"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Inflammatory Response",
+            "relevance": "Coordinated innate response to tissue injury and infection.",
+            "applications": [
+              "Cytokine release",
+              "Vasodilation"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Immune Defense",
+            "topic": "Innate Immunity",
+            "subtopic": "Inflammation"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_pattern_recognition_receptors"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "44",
+            "section": "44.13"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_pattern_recognition_receptors",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_innate_immunity",
+      "content": {
+        "title": "Pattern-Recognition Receptors",
+        "definition": "Innate immune receptors detecting conserved pathogen-associated molecular patterns (PAMPs) and damage-associated molecular patterns (DAMPs) to initiate inflammatory responses.",
+        "summary": "TLRs, NLRs, and RLRs distinguish self from non-self at the molecular level. PRR engagement triggers cytokine production and phagocyte activation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Immune Defense",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_innate_immunity",
+        "prerequisites": [
+          "spine_biology_l4_physical_barriers"
+        ],
+        "unlocks": [
+          "spine_biology_l4_inflammatory_response",
+          "spine_biology_l4_complement_system",
+          "spine_biology_l4_tlr_signaling_mydd88"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Pattern-Recognition Receptors",
+            "relevance": "Molecular sensors linking pathogen detection to innate effector functions.",
+            "applications": [
+              "TLRs",
+              "PAMP recognition"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Immune Defense",
+            "topic": "Innate Immunity",
+            "subtopic": "PRRs"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_physical_barriers"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_inflammatory_response",
+              "spine_biology_l4_complement_system"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Pattern-Recognition Receptors (PRRs)",
+            "relevance": "TLR defects and hyperactivation underpin sepsis and autoinflammatory disease.",
+            "applications": [
+              "TLR4 and LPS",
+              "DAMP sensing after tissue injury"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Innate Immunity",
+            "topic": "Pattern Recognition",
+            "subtopic": "PRRs"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_physical_barriers"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_tlr_signaling_mydd88",
+              "spine_biology_l4_complement_system"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "44",
+            "section": "44.1.2"
+          },
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "42",
+            "section": "42.2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_phagocytosis",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_innate_immunity",
+      "content": {
+        "title": "Phagocytosis and Opsonization",
+        "definition": "Engulfment and destruction of pathogens by neutrophils and macrophages, enhanced when particles are coated with opsonins such as complement C3b or antibodies.",
+        "summary": "Phagocytes internalize microbes into phagolysosomes for enzymatic killing. Opsonization marks pathogens for efficient recognition and uptake."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Immune Defense",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_innate_immunity",
+        "prerequisites": [
+          "spine_biology_l4_pattern_recognition_receptors",
+          "spine_biology_l4_complement_system",
+          "spine_biology_l4_complement_system"
+        ],
+        "unlocks": [
+          {
+            "concept_id": "spine_biology_l3_adaptive_immunity_overview",
+            "_forward_reference": true
+          }
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Phagocytosis and Opsonization",
+            "relevance": "Cellular elimination of pathogens by innate leukocytes.",
+            "applications": [
+              "Neutrophil killing",
+              "Opsonization"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Immune Defense",
+            "topic": "Innate Immunity",
+            "subtopic": "Phagocytosis"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_pattern_recognition_receptors",
+              "spine_biology_l4_complement_system"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Phagocytosis and Opsonization",
+            "relevance": "Chronic granulomatous disease and leukocyte adhesion defects impair this step.",
+            "applications": [
+              "Neutrophil respiratory burst",
+              "Macrophage clearance"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Innate Immunity",
+            "topic": "Pattern Recognition",
+            "subtopic": "Phagocytosis"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_complement_system",
+              "spine_biology_l4_pattern_recognition_receptors"
+            ],
+            "unlocks_in_context": [
+              {
+                "concept_id": "spine_biology_l3_adaptive_immunity_overview",
+                "_forward_reference": true
+              }
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "44",
+            "section": "44.11"
+          },
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "42",
+            "section": "42.3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_physical_barriers",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_innate_immunity",
+      "content": {
+        "title": "Physical and Anatomic Barriers",
+        "definition": "First-line innate defenses including intact skin, mucous membranes, cilia, lysozyme, and low gastric pH that prevent pathogen entry.",
+        "summary": "Physical barriers exclude most microbes before immune recognition occurs. Mucociliary clearance and chemical secretions provide additional non-specific protection."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Immune Defense",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_innate_immunity",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_biology_l4_pattern_recognition_receptors",
+          "spine_biology_l4_complement_system"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Physical and Anatomic Barriers",
+            "relevance": "First line of host defense before cellular immunity.",
+            "applications": [
+              "Skin barrier",
+              "Mucociliary clearance"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Immune Defense",
+            "topic": "Innate Immunity",
+            "subtopic": "Barriers"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_biology_l4_pattern_recognition_receptors",
+              "spine_biology_l4_complement_system"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Physical and Anatomic Barriers",
+            "relevance": "First-line defense in sepsis risk and mucosal immunity.",
+            "applications": [
+              "Skin barrier disruption",
+              "Gastric acid sterilization"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Innate Immunity",
+            "topic": "Pattern Recognition",
+            "subtopic": "Anatomic Barriers"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_biology_l4_pattern_recognition_receptors",
+              "spine_biology_l4_complement_system"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "44",
+            "section": "44.1"
+          },
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "42",
+            "section": "42.2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_tlr_signaling_mydd88",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_innate_immunity",
+      "content": {
+        "title": "TLR Signaling and MyD88 Pathway",
+        "definition": "Adaptor-dependent signaling downstream of Toll-like receptors, prominently through MyD88, leading to NF-κB and MAPK activation and pro-inflammatory cytokine transcription.",
+        "summary": "MyD88-dependent TLR signaling drives rapid cytokine release in bacterial infection. Alternative adaptors mediate type I interferon responses for endosomal TLRs."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Immunology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_innate_immunity",
+        "prerequisites": [
+          "spine_biology_l4_pattern_recognition_receptors"
+        ],
+        "unlocks": [
+          "spine_biology_l4_inflammatory_mediators_innate",
+          "spine_biology_l5_lps_tlr4_endotoxin",
+          "spine_biology_l5_tlr_localization"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "TLR Signaling and MyD88 Pathway",
+            "relevance": "MyD88 pathway is high-yield for endotoxin shock and immunodeficiency.",
+            "applications": [
+              "LPS-induced TNF release",
+              "MyD88 deficiency"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Innate Immunity",
+            "topic": "Pattern Recognition",
+            "subtopic": "TLR Signaling"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_pattern_recognition_receptors"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_inflammatory_mediators_innate",
+              "spine_biology_l5_lps_tlr4_endotoxin",
+              "spine_biology_l5_tlr_localization"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "section": "Innate Immunity — Toll-Like Receptors",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l5_complement_anaphylatoxins",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_biology_l3_innate_immunity",
+      "content": {
+        "title": "C5a and C3a Anaphylatoxins",
+        "definition": "Complement cleavage fragments C3a and C5a that act as chemotactic and pro-inflammatory mediators promoting mast cell degranulation and neutrophil recruitment.",
+        "summary": "Anaphylatoxins link complement activation to rapid inflammatory cell influx. C5a is among the most potent neutrophil chemoattractants in acute inflammation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Immunology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l4_complement_system",
+        "prerequisites": [
+          "spine_biology_l4_complement_system"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "C5a and C3a Anaphylatoxins",
+            "relevance": "Connects complement to hypersensitivity and sepsis.",
+            "applications": [
+              "Neutrophil chemotaxis",
+              "Mast cell activation"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Innate Immunity",
+            "topic": "Pattern Recognition",
+            "subtopic": "Anaphylatoxins"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_complement_system"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "42",
+            "section": "42.3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l5_lps_tlr4_endotoxin",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_biology_l3_innate_immunity",
+      "content": {
+        "title": "LPS–TLR4–MD2 Complex (Endotoxin)",
+        "definition": "Gram-negative lipopolysaccharide recognition by the TLR4–MD2–CD14 complex on innate cells triggering systemic inflammatory responses in endotoxemia.",
+        "summary": "Endotoxin is the canonical TLR4 ligand driving septic shock physiology. LPS structure and lipid A moiety determine immunostimulatory potency."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Immunology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l4_tlr_signaling_mydd88",
+        "prerequisites": [
+          "spine_biology_l4_tlr_signaling_mydd88"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "LPS–TLR4–MD2 Complex (Endotoxin)",
+            "relevance": "Gram-negative sepsis mechanism — high-yield Step 1.",
+            "applications": [
+              "Septic shock cytokine release",
+              "Lipid A immunogenicity"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Innate Immunity",
+            "topic": "Pattern Recognition",
+            "subtopic": "Endotoxin"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_tlr_signaling_mydd88"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "section": "Sepsis — Pathophysiology",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l5_membrane_attack_complex",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_biology_l3_innate_immunity",
+      "content": {
+        "title": "MAC (C5b-9) and Cell Lysis",
+        "definition": "Terminal complement assembly of C5b-9 forming a membrane attack complex that inserts into target membranes and causes osmotic lysis of susceptible microbes.",
+        "summary": "MAC provides direct bactericidal activity especially against Neisseria. Defects in terminal complement components increase risk of recurrent meningococcal infection."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Immunology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l4_complement_system",
+        "prerequisites": [
+          "spine_biology_l4_complement_system"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "MAC (C5b-9) and Cell Lysis",
+            "relevance": "C5–C9 deficiency and Neisseria susceptibility.",
+            "applications": [
+              "Neisseria killing",
+              "Terminal complement defects"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Innate Immunity",
+            "topic": "Pattern Recognition",
+            "subtopic": "Membrane Attack Complex"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_complement_system"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "42",
+            "section": "42.3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l5_tlr_localization",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_biology_l3_innate_immunity",
+      "content": {
+        "title": "TLR Location: Cell Surface vs Endosomal",
+        "definition": "Compartmental distribution of Toll-like receptors with cell-surface TLRs detecting microbial surface ligands and endosomal TLRs sensing nucleic acids from internalized pathogens.",
+        "summary": "TLR4 and TLR5 localize to the plasma membrane, whereas TLR3, TLR7, TLR8, and TLR9 signal from endosomes after ligand internalization. Localization determines which PAMPs each TLR detects."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Immunology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l4_tlr_signaling_mydd88",
+        "prerequisites": [
+          "spine_biology_l4_tlr_signaling_mydd88"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "TLR Location: Cell Surface vs Endosomal",
+            "relevance": "Explains viral nucleic acid sensing vs bacterial cell-wall sensing.",
+            "applications": [
+              "TLR9 and CpG DNA",
+              "TLR3 and dsRNA"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Innate Immunity",
+            "topic": "Pattern Recognition",
+            "subtopic": "TLR Localization"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_tlr_signaling_mydd88"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "42",
+            "section": "42.2"
+          }
+        ]
+      }
+    }
+  ]
+}

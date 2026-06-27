@@ -1,0 +1,64 @@
+{
+  "id": "concept_lib_step1_pharmacokinetics_001",
+  "anchor_concept_id": "spine_mathematics_l3_exponential_decay",
+  "resolution_level": 4,
+  "content": {
+    "title": "First-Order Drug Elimination — Clinical Application",
+    "definition": "Application of first-order elimination kinetics to predict drug half-life, clearance, and steady-state concentrations in clinical dosing.",
+    "summary": "Library-level extension of the universal exponential decay spine node, framed for Step 1 pharmacokinetics with worked dosing examples."
+  },
+  "knowledge_graph": {
+    "knowledge_area": "Clinical Sciences",
+    "knowledge_cluster": "Pharmacokinetics",
+    "primary_domain": "medicine_preclinical",
+    "library_id": "lib_step1_usmle"
+  },
+  "dependency_graph": {
+    "parent_concept_id": "spine_mathematics_l3_exponential_decay",
+    "prerequisites": [
+      "spine_mathematics_l3_exponential_decay",
+      "spine_medicine_preclinical_l3_volume_of_distribution"
+    ],
+    "unlocks": [
+      "concept_lib_step1_pharmacokinetics_002"
+    ]
+  },
+  "domain_contexts": [
+    {
+      "domain_id": "medicine_preclinical",
+      "framing": {
+        "title_in_context": "First-Order Elimination in Clinical Pharmacology",
+        "relevance": "Step 1 application layer for dosing interval and steady-state reasoning.",
+        "applications": [
+          "Maintenance dose calculation",
+          "Loading dose design",
+          "Renal/hepatic clearance adjustment"
+        ],
+        "max_resolution_in_context": 5
+      },
+      "hierarchy_location": {
+        "category": "Medicine (Pre-Clinical)",
+        "subcategory": "Pharmacology",
+        "topic": "Drug Elimination",
+        "subtopic": "Clinical PK Application"
+      },
+      "dependency_graph": {
+        "prerequisites_in_context": [
+          "spine_mathematics_l3_exponential_decay"
+        ],
+        "unlocks_in_context": []
+      },
+      "linked_content": {
+        "card_ids": [],
+        "question_ids": []
+      }
+    }
+  ],
+  "metadata": {
+    "created_at": "2025-01-01T00:00:00Z",
+    "updated_at": "2025-01-01T00:00:00Z",
+    "created_by": "library_creator",
+    "version": "0.1-draft",
+    "status": "draft"
+  }
+}

@@ -1,0 +1,589 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_psychology_neuroscience_l3_schizophrenia_spectrum",
+    "anchor_primary_domain": "psychology_neuroscience",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_psychology_neuroscience_l3_schizophrenia_spectrum.medicine_clinical.json",
+      "content/spine/l4-l5-bundles/spine_psychology_neuroscience_l3_schizophrenia_spectrum.psychology_neuroscience.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "9 per-context concepts merged into 9 universal concepts (8 L4 + 1 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_psychology_neuroscience_l4_acute_psychosis_management",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_schizophrenia_spectrum",
+      "content": {
+        "title": "Acute Psychosis Evaluation and Management",
+        "definition": "Safety assessment, rule out delirium and substances, and initiate antipsychotic therapy.",
+        "summary": "Agitation may require IM agents while oral adherence is established."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Psychotic Disorders",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing ."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_schizophrenia_spectrum",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_psychology_neuroscience_l4_antipsychotic_generation_selection"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Acute Psychosis Evaluation and Management",
+            "relevance": "Antipsychotic pharmacotherapy and psychosocial rehabilitation.",
+            "applications": [
+              "First-episode psychosis workup",
+              "Clozapine for treatment resistance"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Medicine (Clinical)",
+            "subcategory": "Psychiatry & Behavioral Health",
+            "topic": "Schizophrenia Spectrum Disorders",
+            "subtopic": "Acute"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_psychology_neuroscience_l4_antipsychotic_generation_selection"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Schizophrenia",
+            "section": "Acute Psychosis",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l4_antipsychotic_generation_selection",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_schizophrenia_spectrum",
+      "content": {
+        "title": "First- vs Second-Generation Antipsychotics",
+        "definition": "Efficacy similarities with differing extrapyramidal and metabolic side-effect profiles.",
+        "summary": "Clozapine reserved for treatment-resistant cases with monitoring requirements."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Psychotic Disorders",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing ."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_schizophrenia_spectrum",
+        "prerequisites": [
+          "spine_psychology_neuroscience_l4_acute_psychosis_management"
+        ],
+        "unlocks": [
+          "spine_psychology_neuroscience_l4_negative_cognitive_symptoms",
+          "spine_psychology_neuroscience_l4_long_acting_injectable_antipsychotics",
+          "spine_psychology_neuroscience_l5_neuroleptic_malignant_syndrome"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "First- vs Second-Generation Antipsychotics",
+            "relevance": "Antipsychotic pharmacotherapy and psychosocial rehabilitation.",
+            "applications": [
+              "First-episode psychosis workup",
+              "Clozapine for treatment resistance"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Medicine (Clinical)",
+            "subcategory": "Psychiatry & Behavioral Health",
+            "topic": "Schizophrenia Spectrum Disorders",
+            "subtopic": "Antipsychotics"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_psychology_neuroscience_l4_acute_psychosis_management"
+            ],
+            "unlocks_in_context": [
+              "spine_psychology_neuroscience_l4_negative_cognitive_symptoms",
+              "spine_psychology_neuroscience_l4_long_acting_injectable_antipsychotics",
+              "spine_psychology_neuroscience_l5_neuroleptic_malignant_syndrome"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Schizophrenia",
+            "section": "Antipsychotics",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l4_long_acting_injectable_antipsychotics",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_schizophrenia_spectrum",
+      "content": {
+        "title": "Long-Acting Injectable Antipsychotics",
+        "definition": "Depot formulations improving adherence in recurrent relapse.",
+        "summary": "Shared decision-making weighs injection burden against relapse prevention."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Psychotic Disorders",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing ."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_schizophrenia_spectrum",
+        "prerequisites": [
+          "spine_psychology_neuroscience_l4_antipsychotic_generation_selection"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Long-Acting Injectable Antipsychotics",
+            "relevance": "Antipsychotic pharmacotherapy and psychosocial rehabilitation.",
+            "applications": [
+              "First-episode psychosis workup",
+              "Clozapine for treatment resistance"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Medicine (Clinical)",
+            "subcategory": "Psychiatry & Behavioral Health",
+            "topic": "Schizophrenia Spectrum Disorders",
+            "subtopic": "LAI"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_psychology_neuroscience_l4_antipsychotic_generation_selection"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Schizophrenia",
+            "section": "Long-Acting Injectables",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l4_negative_cognitive_symptoms",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_schizophrenia_spectrum",
+      "content": {
+        "title": "Negative and Cognitive Symptoms",
+        "definition": "Avolition, alogia, anhedonia, and cognitive deficits driving functional impairment.",
+        "summary": "Cognitive symptoms predict vocational outcomes more than positive features alone."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Psychotic Disorders",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing ."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_schizophrenia_spectrum",
+        "prerequisites": [
+          "spine_psychology_neuroscience_l4_positive_symptoms_psychosis",
+          "spine_psychology_neuroscience_l4_antipsychotic_generation_selection"
+        ],
+        "unlocks": [
+          "spine_psychology_neuroscience_l4_neurodevelopmental_dopamine_models"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Psychosocial Rehabilitation for Negative Symptoms",
+            "relevance": "Antipsychotic pharmacotherapy and psychosocial rehabilitation.",
+            "applications": [
+              "First-episode psychosis workup",
+              "Clozapine for treatment resistance"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Medicine (Clinical)",
+            "subcategory": "Psychiatry & Behavioral Health",
+            "topic": "Schizophrenia Spectrum Disorders",
+            "subtopic": "Rehabilitation"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_psychology_neuroscience_l4_antipsychotic_generation_selection"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Negative and Cognitive Symptoms",
+            "relevance": "DSM-based psychopathology classification and behavioral mechanisms.",
+            "applications": [
+              "Negative"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Psychology & Neuroscience",
+            "subcategory": "Abnormal Psychology & Psychopathology",
+            "topic": "Schizophrenia Spectrum Disorders",
+            "subtopic": "Negative"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_psychology_neuroscience_l4_positive_symptoms_psychosis"
+            ],
+            "unlocks_in_context": [
+              "spine_psychology_neuroscience_l4_neurodevelopmental_dopamine_models"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-26T05:54:17.140Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Psychology 2e",
+            "chapter": "15",
+            "section": "15.6.1"
+          },
+          {
+            "source": "StatPearls — Schizophrenia",
+            "section": "Psychosocial Rehabilitation",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l4_neurodevelopmental_dopamine_models",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_schizophrenia_spectrum",
+      "content": {
+        "title": "Neurodevelopmental and Dopamine Models",
+        "definition": "Prodromal neurodevelopmental insults and mesolimbic hyperdopaminergia hypotheses.",
+        "summary": "Stress-diathesis frameworks integrate genetic risk with environmental triggers."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Psychotic Disorders",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing ."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_schizophrenia_spectrum",
+        "prerequisites": [
+          "spine_psychology_neuroscience_l4_negative_cognitive_symptoms"
+        ],
+        "unlocks": [
+          "spine_psychology_neuroscience_l4_schizophrenia_treatment_overview"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Neurodevelopmental and Dopamine Models",
+            "relevance": "DSM-based psychopathology classification and behavioral mechanisms.",
+            "applications": [
+              "Models"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Psychology & Neuroscience",
+            "subcategory": "Abnormal Psychology & Psychopathology",
+            "topic": "Schizophrenia Spectrum Disorders",
+            "subtopic": "Models"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_psychology_neuroscience_l4_negative_cognitive_symptoms"
+            ],
+            "unlocks_in_context": [
+              "spine_psychology_neuroscience_l4_schizophrenia_treatment_overview"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Psychology 2e",
+            "chapter": "15",
+            "section": "15.6.2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l4_positive_symptoms_psychosis",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_schizophrenia_spectrum",
+      "content": {
+        "title": "Positive Symptoms and Psychosis",
+        "definition": "Hallucinations, delusions, and disorganized speech reflecting reality distortion.",
+        "summary": "Positive symptoms often respond better to dopamine antagonism than negative symptoms."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Psychotic Disorders",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing ."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_schizophrenia_spectrum",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_psychology_neuroscience_l4_negative_cognitive_symptoms"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Positive Symptoms and Psychosis",
+            "relevance": "DSM-based psychopathology classification and behavioral mechanisms.",
+            "applications": [
+              "Positive"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Psychology & Neuroscience",
+            "subcategory": "Abnormal Psychology & Psychopathology",
+            "topic": "Schizophrenia Spectrum Disorders",
+            "subtopic": "Positive"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_psychology_neuroscience_l4_negative_cognitive_symptoms"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Psychology 2e",
+            "chapter": "15",
+            "section": "15.6"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l4_schizophrenia_treatment_overview",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_schizophrenia_spectrum",
+      "content": {
+        "title": "Antipsychotic and Psychosocial Treatment Overview",
+        "definition": "Dopamine-blocking medications plus skills training and family psychoeducation.",
+        "summary": "Adherence and metabolic monitoring are long-term management challenges."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Psychotic Disorders",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing ."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_schizophrenia_spectrum",
+        "prerequisites": [
+          "spine_psychology_neuroscience_l4_neurodevelopmental_dopamine_models"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Antipsychotic and Psychosocial Treatment Overview",
+            "relevance": "DSM-based psychopathology classification and behavioral mechanisms.",
+            "applications": [
+              "Treatment"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Psychology & Neuroscience",
+            "subcategory": "Abnormal Psychology & Psychopathology",
+            "topic": "Schizophrenia Spectrum Disorders",
+            "subtopic": "Treatment"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_psychology_neuroscience_l4_neurodevelopmental_dopamine_models"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Psychology 2e",
+            "chapter": "15",
+            "section": "15.6.3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l5_neuroleptic_malignant_syndrome",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_schizophrenia_spectrum",
+      "content": {
+        "title": "Neuroleptic Malignant Syndrome",
+        "definition": "Life-threatening rigidity, hyperthermia, and autonomic instability from dopamine blockade.",
+        "summary": "Immediate cessation of antipsychotic and supportive care in ICU settings."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Psychotic Disorders",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing ."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l4_antipsychotic_generation_selection",
+        "prerequisites": [
+          "spine_psychology_neuroscience_l4_antipsychotic_generation_selection"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Neuroleptic Malignant Syndrome",
+            "relevance": "Antipsychotic pharmacotherapy and psychosocial rehabilitation.",
+            "applications": [
+              "First-episode psychosis workup",
+              "Clozapine for treatment resistance"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Medicine (Clinical)",
+            "subcategory": "Psychiatry & Behavioral Health",
+            "topic": "Schizophrenia Spectrum Disorders",
+            "subtopic": "NMS"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_psychology_neuroscience_l4_antipsychotic_generation_selection"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Neuroleptic Malignant Syndrome",
+            "section": "Diagnosis",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    }
+  ]
+}

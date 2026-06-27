@@ -1,0 +1,338 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_mathematics_l3_vector_fields",
+    "anchor_primary_domain": "mathematics",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_mathematics_l3_vector_fields.mathematics.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "5 per-context concepts merged into 5 universal concepts (5 L4 + 0 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_mathematics_l4_curl",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_vector_fields",
+      "content": {
+        "title": "Curl of a Vector Field",
+        "definition": "Curl F = ∇ × F measures local rotation tendency of the field; zero curl in simply connected domains implies conservativity.",
+        "summary": "Curl identifies rotational components in fluid and electromagnetic fields."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Multivariable Analysis",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_vector_fields",
+        "prerequisites": [
+          "spine_mathematics_l4_vector_field_definition"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Vector fields assign vectors to points in space, modeling flows and forces.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Multivariable Calculus",
+            "topic": "Vector Fields",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_vector_field_definition"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 3",
+            "chapter": "6",
+            "section": "Curl of a Vector Field"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_divergence",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_vector_fields",
+      "content": {
+        "title": "Divergence of a Vector Field",
+        "definition": "In 3D, div F = ∂P/∂x + ∂Q/∂y + ∂R/∂z measures net outflow per unit volume at a point.",
+        "summary": "Positive divergence indicates source behavior; negative divergence indicates sink behavior in fluid flow models."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Multivariable Analysis",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_vector_fields",
+        "prerequisites": [
+          "spine_mathematics_l4_vector_field_definition"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Vector fields assign vectors to points in space, modeling flows and forces.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Multivariable Calculus",
+            "topic": "Vector Fields",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_vector_field_definition"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 3",
+            "chapter": "6",
+            "section": "Divergence of a Vector Field"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_flow_lines",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_vector_fields",
+      "content": {
+        "title": "Flow Lines and Streamlines",
+        "definition": "Curves r(t) satisfying r′(t) = F(r(t)), tracing paths of particles advected by velocity field F.",
+        "summary": "Flow lines visualize field direction and are used to interpret physical motion without solving full PDEs."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Multivariable Analysis",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_vector_fields",
+        "prerequisites": [
+          "spine_mathematics_l4_vector_field_definition"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Vector fields assign vectors to points in space, modeling flows and forces.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Multivariable Calculus",
+            "topic": "Vector Fields",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_vector_field_definition"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 3",
+            "chapter": "6",
+            "section": "Flow Lines and Streamlines"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_gradient_fields",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_vector_fields",
+      "content": {
+        "title": "Gradient Fields and Potential Functions",
+        "definition": "A field F is a gradient field if F = ∇f for some scalar potential f; such fields are conservative when domain is simply connected.",
+        "summary": "Gradient fields connect scalar potentials to vector fields and enable path-independent line integrals."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Multivariable Analysis",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_vector_fields",
+        "prerequisites": [
+          "spine_mathematics_l4_vector_field_definition"
+        ],
+        "unlocks": [
+          {
+            "concept_id": "spine_mathematics_l3_line_integrals",
+            "_forward_reference": true
+          }
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Vector fields assign vectors to points in space, modeling flows and forces.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Multivariable Calculus",
+            "topic": "Vector Fields",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_vector_field_definition"
+            ],
+            "unlocks_in_context": [
+              {
+                "concept_id": "spine_mathematics_l3_line_integrals",
+                "_forward_reference": true
+              }
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 3",
+            "chapter": "6",
+            "section": "Gradient Fields and Potential Functions"
+          }
+        ]
+      },
+      "_reviewer_note": "Contains forward reference to existing L3 node — verify target exists in spine."
+    },
+    {
+      "id": "spine_mathematics_l4_vector_field_definition",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_vector_fields",
+      "content": {
+        "title": "Vector Field Definition",
+        "definition": "A vector field F assigns a vector F(x, y) or F(x, y, z) to each point in a domain, visualized as directed arrows.",
+        "summary": "Vector fields represent velocity flows, gravitational forces, and electromagnetic fields."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Multivariable Analysis",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_vector_fields",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_mathematics_l4_gradient_fields",
+          "spine_mathematics_l4_flow_lines"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Vector fields assign vectors to points in space, modeling flows and forces.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Multivariable Calculus",
+            "topic": "Vector Fields",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_gradient_fields",
+              "spine_mathematics_l4_flow_lines"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 3",
+            "chapter": "6",
+            "section": "Vector Field Definition"
+          }
+        ]
+      }
+    }
+  ]
+}

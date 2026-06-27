@@ -1,0 +1,678 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_mathematics_l3_descriptive_statistics",
+    "anchor_primary_domain": "mathematics",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_mathematics_l3_descriptive_statistics.mathematics.json",
+      "content/spine/l4-l5-bundles/spine_mathematics_l3_descriptive_statistics.psychology_neuroscience.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "10 per-context concepts merged into 9 universal concepts (9 L4 + 0 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_mathematics_l4_correlation_descriptive_association",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_descriptive_statistics",
+      "content": {
+        "title": "Correlation as Descriptive Association",
+        "definition": "Pearson and Spearman correlation coefficients describing linear or monotonic relationships.",
+        "summary": "Correlation does not imply causation; confounds and directionality require experimental design."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Data Analysis",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_descriptive_statistics",
+        "prerequisites": [
+          "spine_mathematics_l4_distribution_shape_normality"
+        ],
+        "unlocks": [
+          {
+            "concept_id": "spine_mathematics_l3_hypothesis_testing",
+            "_forward_reference": true
+          }
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Correlation as Descriptive Association",
+            "relevance": "Summarize behavioral research data before hypothesis testing.",
+            "applications": [
+              "Survey data",
+              "Reaction time distributions"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Research Methods & Statistics",
+            "subcategory": "Descriptive Statistics",
+            "topic": "Descriptive Statistics",
+            "subtopic": "Correlation"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_distribution_shape_normality"
+            ],
+            "unlocks_in_context": [
+              {
+                "concept_id": "spine_mathematics_l3_hypothesis_testing",
+                "_forward_reference": true
+              }
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Psychology 2e",
+            "chapter": "2",
+            "section": "2.3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_data_visualization",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_descriptive_statistics",
+      "content": {
+        "title": "Data Visualization",
+        "definition": "Graphical displays including histograms, stem-and-leaf plots, and bar charts for summarizing frequency and distribution shape.",
+        "summary": "Visual inspection reveals modality, skew, gaps, and outliers before formal inference."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Data Analysis",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_descriptive_statistics",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_mathematics_l4_five_number_summary"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Foundation for probability and inference.",
+            "applications": [
+              "Data visualization",
+              "Summary measures"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Statistics & Probability",
+            "subcategory": "Data Analysis",
+            "topic": "Descriptive Statistics",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_five_number_summary"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Introductory Statistics",
+            "chapter": "2",
+            "section": "Data Visualization"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_distribution_shape",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_descriptive_statistics",
+      "content": {
+        "title": "Distribution Shape and Skewness",
+        "definition": "Classification of distributions as symmetric, right-skewed (positive skew), or left-skewed (negative skew) based on tail length.",
+        "summary": "Skewness affects interpretation of mean vs median and informs choice of inferential methods."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Data Analysis",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_descriptive_statistics",
+        "prerequisites": [
+          "spine_mathematics_l4_measures_central_tendency"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Foundation for probability and inference.",
+            "applications": [
+              "Data visualization",
+              "Summary measures"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Statistics & Probability",
+            "subcategory": "Data Analysis",
+            "topic": "Descriptive Statistics",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_measures_central_tendency"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Introductory Statistics",
+            "chapter": "2",
+            "section": "Distribution Shape and Skewness"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_distribution_shape_normality",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_descriptive_statistics",
+      "content": {
+        "title": "Distribution Shape and Normality",
+        "definition": "Skew, kurtosis, and visual diagnostics for departures from normality.",
+        "summary": "Psychology data are often skewed; recognizing shape guides analysis choices."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Data Analysis",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_descriptive_statistics",
+        "prerequisites": [
+          "spine_mathematics_l4_variability_standard_deviation"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_correlation_descriptive_association"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Distribution Shape and Normality",
+            "relevance": "Summarize behavioral research data before hypothesis testing.",
+            "applications": [
+              "Survey data",
+              "Reaction time distributions"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Research Methods & Statistics",
+            "subcategory": "Descriptive Statistics",
+            "topic": "Descriptive Statistics",
+            "subtopic": "Shape"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_variability_standard_deviation"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_correlation_descriptive_association"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Introductory Statistics 2e",
+            "chapter": "2",
+            "section": "2.5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_five_number_summary",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_descriptive_statistics",
+      "content": {
+        "title": "Five-Number Summary and Box Plots",
+        "definition": "Summary consisting of minimum, Q1, median, Q3, and maximum, displayed as a box plot with whiskers and outlier points.",
+        "summary": "Box plots compactly show center, spread, and outliers and enable comparison across groups."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Data Analysis",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_descriptive_statistics",
+        "prerequisites": [
+          "spine_mathematics_l4_measures_spread",
+          "spine_mathematics_l4_data_visualization"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_outliers_robust_statistics"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Foundation for probability and inference.",
+            "applications": [
+              "Data visualization",
+              "Summary measures"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Statistics & Probability",
+            "subcategory": "Data Analysis",
+            "topic": "Descriptive Statistics",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_measures_spread",
+              "spine_mathematics_l4_data_visualization"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_outliers_robust_statistics"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Introductory Statistics",
+            "chapter": "2",
+            "section": "Five-Number Summary and Box Plots"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_measures_central_tendency",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_descriptive_statistics",
+      "content": {
+        "title": "Measures of Central Tendency",
+        "definition": "Summary statistics locating the center of a dataset: mean (arithmetic average), median (middle value), and mode (most frequent value).",
+        "summary": "Choice of center measure depends on distribution shape and outliers; median resists skew influence better than mean."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Data Analysis",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_descriptive_statistics",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_mathematics_l4_measures_spread",
+          "spine_mathematics_l4_distribution_shape",
+          "spine_mathematics_l4_variability_standard_deviation"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Foundation for probability and inference.",
+            "applications": [
+              "Data visualization",
+              "Summary measures"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Statistics & Probability",
+            "subcategory": "Data Analysis",
+            "topic": "Descriptive Statistics",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_measures_spread",
+              "spine_mathematics_l4_distribution_shape"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Measures of Central Tendency",
+            "relevance": "Summarize behavioral research data before hypothesis testing.",
+            "applications": [
+              "Survey data",
+              "Reaction time distributions"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Research Methods & Statistics",
+            "subcategory": "Descriptive Statistics",
+            "topic": "Descriptive Statistics",
+            "subtopic": "Central Tendency"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_variability_standard_deviation"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Introductory Statistics",
+            "chapter": "2",
+            "section": "Measures of Central Tendency"
+          },
+          {
+            "source": "OpenStax Introductory Statistics 2e",
+            "chapter": "2",
+            "section": "2.3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_measures_spread",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_descriptive_statistics",
+      "content": {
+        "title": "Measures of Spread",
+        "definition": "Quantities describing variability: range, interquartile range (IQR), variance, and standard deviation.",
+        "summary": "Spread measures quantify dispersion around center; standard deviation is the most common metric for symmetric distributions."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Data Analysis",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_descriptive_statistics",
+        "prerequisites": [
+          "spine_mathematics_l4_measures_central_tendency"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_five_number_summary"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Foundation for probability and inference.",
+            "applications": [
+              "Data visualization",
+              "Summary measures"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Statistics & Probability",
+            "subcategory": "Data Analysis",
+            "topic": "Descriptive Statistics",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_measures_central_tendency"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_five_number_summary"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Introductory Statistics",
+            "chapter": "2",
+            "section": "Measures of Spread"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_outliers_robust_statistics",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_descriptive_statistics",
+      "content": {
+        "title": "Outliers and Robust Statistics",
+        "definition": "Outliers are values far from the bulk of data, often identified by IQR rule; robust statistics like median and IQR resist outlier influence.",
+        "summary": "Outlier detection and robust summaries prevent misleading descriptions when data contain extreme values."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Data Analysis",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_descriptive_statistics",
+        "prerequisites": [
+          "spine_mathematics_l4_five_number_summary"
+        ],
+        "unlocks": [
+          {
+            "concept_id": "spine_mathematics_l3_hypothesis_testing",
+            "_forward_reference": true
+          }
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Foundation for probability and inference.",
+            "applications": [
+              "Data visualization",
+              "Summary measures"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Statistics & Probability",
+            "subcategory": "Data Analysis",
+            "topic": "Descriptive Statistics",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_five_number_summary"
+            ],
+            "unlocks_in_context": [
+              {
+                "concept_id": "spine_mathematics_l3_hypothesis_testing",
+                "_forward_reference": true
+              }
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Introductory Statistics",
+            "chapter": "2",
+            "section": "Outliers and Robust Statistics"
+          }
+        ]
+      },
+      "_reviewer_note": "Contains forward reference to existing L3 node — verify target exists in spine."
+    },
+    {
+      "id": "spine_mathematics_l4_variability_standard_deviation",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_descriptive_statistics",
+      "content": {
+        "title": "Variability and Standard Deviation",
+        "definition": "Range, interquartile range, variance, and standard deviation quantifying dispersion.",
+        "summary": "SD links to normal models and z-scores used throughout inferential testing."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Data Analysis",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_descriptive_statistics",
+        "prerequisites": [
+          "spine_mathematics_l4_measures_central_tendency"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_distribution_shape_normality"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Variability and Standard Deviation",
+            "relevance": "Summarize behavioral research data before hypothesis testing.",
+            "applications": [
+              "Survey data",
+              "Reaction time distributions"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Research Methods & Statistics",
+            "subcategory": "Descriptive Statistics",
+            "topic": "Descriptive Statistics",
+            "subtopic": "Variability"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_measures_central_tendency"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_distribution_shape_normality"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Introductory Statistics 2e",
+            "chapter": "2",
+            "section": "2.4"
+          }
+        ]
+      }
+    }
+  ]
+}

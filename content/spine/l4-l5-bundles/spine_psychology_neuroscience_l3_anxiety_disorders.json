@@ -1,0 +1,787 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_psychology_neuroscience_l3_anxiety_disorders",
+    "anchor_primary_domain": "psychology_neuroscience",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-samples/spine_psychology_neuroscience_l3_anxiety_disorders.medicine_clinical.json",
+      "content/spine/l4-l5-bundles/spine_psychology_neuroscience_l3_anxiety_disorders.psychology_neuroscience.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "12 per-context concepts merged into 12 universal concepts (9 L4 + 3 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_psychology_neuroscience_l4_anxiety_biopsychosocial_etiology",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_anxiety_disorders",
+      "content": {
+        "title": "Biopsychosocial Etiology of Anxiety",
+        "definition": "Genetic vulnerability, limbic hyperactivity, learning history, and stress interplay.",
+        "summary": "Amygdala and prefrontal regulation models connect biology to CBT targets."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Anxiety Disorders",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing ."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_anxiety_disorders",
+        "prerequisites": [
+          "spine_psychology_neuroscience_l4_generalized_anxiety_disorder"
+        ],
+        "unlocks": [
+          "spine_psychology_neuroscience_l4_anxiety_treatment_overview"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Biopsychosocial Etiology of Anxiety",
+            "relevance": "DSM-based psychopathology classification and behavioral mechanisms.",
+            "applications": [
+              "Etiology"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Psychology & Neuroscience",
+            "subcategory": "Abnormal Psychology & Psychopathology",
+            "topic": "Anxiety Disorders",
+            "subtopic": "Etiology"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_psychology_neuroscience_l4_generalized_anxiety_disorder"
+            ],
+            "unlocks_in_context": [
+              "spine_psychology_neuroscience_l4_anxiety_treatment_overview"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Psychology 2e",
+            "chapter": "15",
+            "section": "15.4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l4_anxiety_cbt_exposure_therapy",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_anxiety_disorders",
+      "content": {
+        "title": "Psychotherapy for Anxiety (CBT and Exposure)",
+        "definition": "Evidence-based psychological treatments for anxiety disorders using cognitive restructuring to modify catastrophic beliefs and graded exposure to reduce avoidance of feared stimuli.",
+        "summary": "CBT addresses maladaptive cognitions and behavioral avoidance. Exposure therapy is particularly effective for phobias, panic, and social anxiety when hierarchies are constructed and practiced systematically."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Anxiety Disorders",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_anxiety_disorders",
+        "prerequisites": [
+          "spine_psychology_neuroscience_l4_phobia_social_anxiety"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Psychotherapy for Anxiety (CBT and Exposure)",
+            "relevance": "First-line or combined modality with pharmacotherapy for durable anxiety reduction.",
+            "applications": [
+              "Interoceptive exposure for panic",
+              "Graded exposure hierarchies"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Medicine (Clinical)",
+            "subcategory": "Psychiatry & Behavioral Health",
+            "topic": "Anxiety Disorders",
+            "subtopic": "Psychotherapy"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_psychology_neuroscience_l4_phobia_social_anxiety"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Cognitive Behavioral Therapy",
+            "section": "Anxiety Disorders",
+            "url": "https://www.ncbi.nlm.nih.gov/books/NBK470579/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l4_anxiety_first_line_pharmacotherapy",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_anxiety_disorders",
+      "content": {
+        "title": "First-Line Pharmacotherapy for Anxiety",
+        "definition": "Initial medication approaches for anxiety disorders, primarily selective serotonin reuptake inhibitors and serotonin-norepinephrine reuptake inhibitors, with buspirone for generalized anxiety and cautious short-term benzodiazepine use when indicated.",
+        "summary": "SSRIs and SNRIs are first-line for most chronic anxiety disorders. Benzodiazepines provide rapid relief but carry dependence and cognitive risks and are not preferred for long-term monotherapy."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Anxiety Disorders",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_anxiety_disorders",
+        "prerequisites": [
+          "spine_psychology_neuroscience_l4_generalized_anxiety_disorder",
+          "spine_psychology_neuroscience_l4_panic_disorder_agoraphobia"
+        ],
+        "unlocks": [
+          "spine_psychology_neuroscience_l5_ssri_anxiety_titration",
+          "spine_psychology_neuroscience_l5_benzodiazepine_risks_anxiety"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "First-Line Pharmacotherapy for Anxiety",
+            "relevance": "Shared downstream treatment node for GAD and panic disorder after parallel diagnosis concepts.",
+            "applications": [
+              "SSRI/SNRI selection",
+              "Buspirone for GAD"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Medicine (Clinical)",
+            "subcategory": "Psychiatry & Behavioral Health",
+            "topic": "Anxiety Disorders",
+            "subtopic": "Pharmacotherapy"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_psychology_neuroscience_l4_generalized_anxiety_disorder",
+              "spine_psychology_neuroscience_l4_panic_disorder_agoraphobia"
+            ],
+            "unlocks_in_context": [
+              "spine_psychology_neuroscience_l5_ssri_anxiety_titration",
+              "spine_psychology_neuroscience_l5_benzodiazepine_risks_anxiety"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Anxiety Disorders",
+            "section": "Treatment",
+            "url": "https://www.ncbi.nlm.nih.gov/books/NBK470361/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l4_anxiety_treatment_overview",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_anxiety_disorders",
+      "content": {
+        "title": "Evidence-Based Anxiety Treatment Overview",
+        "definition": "CBT, exposure, and first-line medications as complementary approaches.",
+        "summary": "Combined treatment often outperforms monotherapy for severe or chronic anxiety."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Anxiety Disorders",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing ."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_anxiety_disorders",
+        "prerequisites": [
+          "spine_psychology_neuroscience_l4_anxiety_biopsychosocial_etiology"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Evidence-Based Anxiety Treatment Overview",
+            "relevance": "DSM-based psychopathology classification and behavioral mechanisms.",
+            "applications": [
+              "Treatment"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Psychology & Neuroscience",
+            "subcategory": "Abnormal Psychology & Psychopathology",
+            "topic": "Anxiety Disorders",
+            "subtopic": "Treatment"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_psychology_neuroscience_l4_anxiety_biopsychosocial_etiology"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Psychology 2e",
+            "chapter": "15",
+            "section": "15.5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l4_generalized_anxiety_disorder",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_anxiety_disorders",
+      "content": {
+        "title": "Generalized Anxiety Disorder Diagnosis",
+        "definition": "A condition characterized by excessive, difficult-to-control worry about multiple domains occurring more days than not for at least six months, accompanied by associated somatic or cognitive symptoms.",
+        "summary": "GAD is defined by persistent generalized worry rather than discrete panic episodes or specific phobic triggers. Diagnosis requires duration, functional impairment, and exclusion of attributable medical or substance causes."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Anxiety Disorders",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing ."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_anxiety_disorders",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_psychology_neuroscience_l4_anxiety_first_line_pharmacotherapy",
+          "spine_psychology_neuroscience_l4_panic_phobia_presentation",
+          "spine_psychology_neuroscience_l4_anxiety_biopsychosocial_etiology"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Generalized Anxiety Disorder Diagnosis",
+            "relevance": "DSM criteria and clinical distinction from normal worry and other anxiety disorders.",
+            "applications": [
+              "Six-month duration criterion",
+              "Somatic symptom checklist"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Medicine (Clinical)",
+            "subcategory": "Psychiatry & Behavioral Health",
+            "topic": "Anxiety Disorders",
+            "subtopic": "GAD"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_psychology_neuroscience_l4_anxiety_first_line_pharmacotherapy"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Generalized Anxiety Features",
+            "relevance": "DSM-based psychopathology classification and behavioral mechanisms.",
+            "applications": [
+              "GAD"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Psychology & Neuroscience",
+            "subcategory": "Abnormal Psychology & Psychopathology",
+            "topic": "Anxiety Disorders",
+            "subtopic": "GAD"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_psychology_neuroscience_l4_panic_phobia_presentation",
+              "spine_psychology_neuroscience_l4_anxiety_biopsychosocial_etiology"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-26T05:54:17.140Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Anxiety Disorders",
+            "section": "Generalized Anxiety Disorder",
+            "url": "https://www.ncbi.nlm.nih.gov/books/NBK470361/"
+          },
+          {
+            "source": "OpenStax Psychology 2e",
+            "chapter": "15",
+            "section": "15.2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l4_panic_disorder_agoraphobia",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_anxiety_disorders",
+      "content": {
+        "title": "Panic Disorder and Agoraphobia",
+        "definition": "Recurrent unexpected panic attacks followed by persistent concern about future attacks or maladaptive avoidance, with agoraphobia defined by fear of situations where escape or help may be difficult.",
+        "summary": "Panic disorder centers on discrete surges of intense fear peaking within minutes. Agoraphobia may co-occur when patients avoid places associated with prior attacks or feared incapacitation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Anxiety Disorders",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_anxiety_disorders",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_psychology_neuroscience_l4_anxiety_first_line_pharmacotherapy",
+          "spine_psychology_neuroscience_l5_acute_panic_management"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Panic Disorder and Agoraphobia",
+            "relevance": "Parallel diagnostic category to GAD — not a sequential prerequisite.",
+            "applications": [
+              "Unexpected panic attack criterion",
+              "Agoraphobic avoidance patterns"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Medicine (Clinical)",
+            "subcategory": "Psychiatry & Behavioral Health",
+            "topic": "Anxiety Disorders",
+            "subtopic": "Panic Disorder"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_psychology_neuroscience_l4_anxiety_first_line_pharmacotherapy",
+              "spine_psychology_neuroscience_l5_acute_panic_management"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Anxiety Disorders",
+            "section": "Panic Disorder",
+            "url": "https://www.ncbi.nlm.nih.gov/books/NBK470361/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l4_panic_phobia_presentation",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_anxiety_disorders",
+      "content": {
+        "title": "Panic, Phobic, and Social Anxiety Presentations",
+        "definition": "Unexpected panic surges versus cue-triggered specific and social fears.",
+        "summary": "Avoidance maintains anxiety through negative reinforcement learning loops."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Anxiety Disorders",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Psychopathology classification owned by psychology_neuroscience; medicine_clinical adds management framing ."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_anxiety_disorders",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_psychology_neuroscience_l4_anxiety_biopsychosocial_etiology"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Panic, Phobic, and Social Anxiety Presentations",
+            "relevance": "DSM-based psychopathology classification and behavioral mechanisms.",
+            "applications": [
+              "Panic/Phobia"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Psychology & Neuroscience",
+            "subcategory": "Abnormal Psychology & Psychopathology",
+            "topic": "Anxiety Disorders",
+            "subtopic": "Panic/Phobia"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_psychology_neuroscience_l4_anxiety_biopsychosocial_etiology"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Psychology 2e",
+            "chapter": "15",
+            "section": "15.3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l4_phobia_social_anxiety",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_anxiety_disorders",
+      "content": {
+        "title": "Specific Phobia and Social Anxiety Disorder",
+        "definition": "Anxiety disorders defined by marked fear triggered by specific objects or situations (specific phobia) or by social or performance situations where scrutiny is possible (social anxiety disorder).",
+        "summary": "Both disorders involve cue-triggered fear distinct from generalized worry. Avoidance or endurance with distress is central to diagnosis and drives exposure-based treatment selection."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Anxiety Disorders",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_anxiety_disorders",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_psychology_neuroscience_l4_anxiety_cbt_exposure_therapy"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Specific Phobia and Social Anxiety Disorder",
+            "relevance": "Cue-specific anxiety treated primarily with exposure therapy.",
+            "applications": [
+              "Performance-only social anxiety",
+              "Animal/natural environment phobias"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Medicine (Clinical)",
+            "subcategory": "Psychiatry & Behavioral Health",
+            "topic": "Anxiety Disorders",
+            "subtopic": "Phobias"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_psychology_neuroscience_l4_anxiety_cbt_exposure_therapy"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Anxiety Disorders",
+            "section": "Specific Phobia",
+            "url": "https://www.ncbi.nlm.nih.gov/books/NBK470361/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l5_acute_panic_management",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_anxiety_disorders",
+      "content": {
+        "title": "Acute Panic Attack Management",
+        "definition": "Immediate clinical approach to a panic attack including reassurance, breathing techniques, ruling out medical emergencies, and judicious short-acting anxiolytic use when appropriate.",
+        "summary": "Acute management focuses on safety, reassurance, and exclusion of cardiac or metabolic mimics. Long-term treatment targets panic disorder prevention rather than repeated rescue sedation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Anxiety Disorders",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l4_panic_disorder_agoraphobia",
+        "prerequisites": [
+          "spine_psychology_neuroscience_l4_panic_disorder_agoraphobia"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Acute Panic Attack Management",
+            "relevance": "ED and primary care management of acute panic presentations.",
+            "applications": [
+              "Rule out MI",
+              "Breathing retraining"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Medicine (Clinical)",
+            "subcategory": "Psychiatry & Behavioral Health",
+            "topic": "Anxiety Disorders",
+            "subtopic": "Acute Panic"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_psychology_neuroscience_l4_panic_disorder_agoraphobia"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Panic Disorder",
+            "section": "Acute Management",
+            "url": "https://www.ncbi.nlm.nih.gov/books/NBK470361/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l5_benzodiazepine_risks_anxiety",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_anxiety_disorders",
+      "content": {
+        "title": "Benzodiazepine Risks and Dependence",
+        "definition": "Adverse effects of benzodiazepine use including sedation, cognitive impairment, fall risk, tolerance, dependence, and withdrawal syndromes with prolonged or high-dose use.",
+        "summary": "Benzodiazepines are effective for acute anxiety but carry significant long-term risks. They are generally avoided as monotherapy for chronic anxiety disorders."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Anxiety Disorders",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l4_anxiety_first_line_pharmacotherapy",
+        "prerequisites": [
+          "spine_psychology_neuroscience_l4_anxiety_first_line_pharmacotherapy"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Benzodiazepine Risks and Dependence",
+            "relevance": "Fall risk in elderly and dependence limit long-term use.",
+            "applications": [
+              "Short-term bridge during SSRI onset",
+              "Withdrawal seizures"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Medicine (Clinical)",
+            "subcategory": "Psychiatry & Behavioral Health",
+            "topic": "Anxiety Disorders",
+            "subtopic": "Benzodiazepines"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_psychology_neuroscience_l4_anxiety_first_line_pharmacotherapy"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Benzodiazepines",
+            "section": "Adverse Effects",
+            "url": "https://www.ncbi.nlm.nih.gov/books/NBK470351/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l5_ssri_anxiety_titration",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_anxiety_disorders",
+      "content": {
+        "title": "SSRI Onset and Partial Response Management",
+        "definition": "The delayed therapeutic onset of selective serotonin reuptake inhibitors in anxiety disorders and strategies for dose optimization, duration of trial, and augmentation when partial response occurs.",
+        "summary": "SSRIs require several weeks for full anxiolytic effect. Partial response may warrant dose increase, switch within class, or combination with CBT before moving to augmentation agents."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Anxiety Disorders",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l4_anxiety_first_line_pharmacotherapy",
+        "prerequisites": [
+          "spine_psychology_neuroscience_l4_anxiety_first_line_pharmacotherapy"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "SSRI Onset and Partial Response Management",
+            "relevance": "Explains delayed benefit and when to escalate therapy.",
+            "applications": [
+              "4–6 week trial duration",
+              "Dose titration"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Medicine (Clinical)",
+            "subcategory": "Psychiatry & Behavioral Health",
+            "topic": "Anxiety Disorders",
+            "subtopic": "SSRI Management"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_psychology_neuroscience_l4_anxiety_first_line_pharmacotherapy"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Anxiety Disorders",
+            "section": "SSRIs",
+            "url": "https://www.ncbi.nlm.nih.gov/books/NBK470361/"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,276 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_lumbar_disc_herniation_and_radiculopathy",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "Orthopaedic L4/L5 expansion for Lumbar Disc Herniation and Radiculopathy. 4 L4, 0 L5."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_lumbar_disc_anatomy_and_pathophysiology",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_lumbar_disc_herniation_and_radiculopathy",
+      "content": {
+        "title": "Lumbar Disc Anatomy and Pathophysiology",
+        "definition": "Nucleus pulposus herniation through annulus causing nerve root compression at L4-L5 and L5-S1.",
+        "summary": "Central herniation causes cauda equina; lateral herniation causes radiculopathy."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Spine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_lumbar_disc_herniation_and_radiculopathy",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Lumbar Disc Anatomy and Pathophysiology",
+            "relevance": "Common clinical presentation; overlaps general back pain red flags.",
+            "applications": [
+              "Conservative vs surgical timing",
+              "Cauda equina recognition",
+              "Microdiscectomy outcomes"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Lumbar Spine",
+            "topic": "Lumbar Disc Herniation and Radiculopathy",
+            "subtopic": "Lumbar Disc Anatomy and Pathophysiology"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Lumbar Disc Herniation and Radiculopathy",
+            "chapter": "NBK448124",
+            "section": "Lumbar Disc Herniation"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_lumbar_radiculopathy_evaluation",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_lumbar_disc_herniation_and_radiculopathy",
+      "content": {
+        "title": "Lumbar Radiculopathy Evaluation",
+        "definition": "Straight-leg raise, crossed SLR, motor/sensory level mapping, and MRI correlation.",
+        "summary": "L5 radiculopathy weakens EHL; S1 affects gastrocsoleus and ankle reflex."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Spine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_lumbar_disc_herniation_and_radiculopathy",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_lumbar_disc_anatomy_and_pathophysiology"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Lumbar Radiculopathy Evaluation",
+            "relevance": "Common clinical presentation; overlaps general back pain red flags.",
+            "applications": [
+              "Conservative vs surgical timing",
+              "Cauda equina recognition",
+              "Microdiscectomy outcomes"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Lumbar Spine",
+            "topic": "Lumbar Disc Herniation and Radiculopathy",
+            "subtopic": "Lumbar Radiculopathy Evaluation"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_lumbar_disc_anatomy_and_pathophysiology"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Lumbar Disc Herniation and Radiculopathy",
+            "chapter": "NBK448124",
+            "section": "Lumbar Disc Herniation"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_lumbar_disc_conservative_care",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_lumbar_disc_herniation_and_radiculopathy",
+      "content": {
+        "title": "Lumbar Disc Conservative Care",
+        "definition": "Activity modification, NSAIDs, epidural steroid injection, and physical therapy.",
+        "summary": "Most improve within 6–12 weeks; surgery for progressive deficit or cauda equina."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Spine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_lumbar_disc_herniation_and_radiculopathy",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_lumbar_radiculopathy_evaluation"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Lumbar Disc Conservative Care",
+            "relevance": "Common clinical presentation; overlaps general back pain red flags.",
+            "applications": [
+              "Conservative vs surgical timing",
+              "Cauda equina recognition",
+              "Microdiscectomy outcomes"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Lumbar Spine",
+            "topic": "Lumbar Disc Herniation and Radiculopathy",
+            "subtopic": "Lumbar Disc Conservative Care"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_lumbar_radiculopathy_evaluation"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Lumbar Disc Herniation and Radiculopathy",
+            "chapter": "NBK448124",
+            "section": "Lumbar Disc Herniation"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_lumbar_discectomy_indications",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_lumbar_disc_herniation_and_radiculopathy",
+      "content": {
+        "title": "Lumbar Discectomy Indications",
+        "definition": "Microdiscectomy and minimally invasive techniques for persistent radiculopathy with correlating imaging.",
+        "summary": "Emergent surgery for cauda equina syndrome with urinary retention."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Spine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_lumbar_disc_herniation_and_radiculopathy",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_lumbar_disc_conservative_care"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Lumbar Discectomy Indications",
+            "relevance": "Common clinical presentation; overlaps general back pain red flags.",
+            "applications": [
+              "Conservative vs surgical timing",
+              "Cauda equina recognition",
+              "Microdiscectomy outcomes"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Lumbar Spine",
+            "topic": "Lumbar Disc Herniation and Radiculopathy",
+            "subtopic": "Lumbar Discectomy Indications"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_lumbar_disc_conservative_care"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Lumbar Disc Herniation and Radiculopathy",
+            "chapter": "NBK448124",
+            "section": "Lumbar Disc Herniation"
+          }
+        ]
+      }
+    }
+  ]
+}

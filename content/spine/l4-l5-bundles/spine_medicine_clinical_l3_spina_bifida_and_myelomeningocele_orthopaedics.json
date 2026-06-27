@@ -1,0 +1,548 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_spina_bifida_and_myelomeningocele_orthopaedics",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "ABOS-aligned scaffold for abos_p2_pediatrics."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_spina_bifida_and_myelomeningocele_orthopaedics_core_principl",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_spina_bifida_and_myelomeningocele_orthopaedics",
+      "content": {
+        "title": "Spina Bifida and Myelomeningocele — Orthopaedic Management — Core Principles",
+        "definition": "Congenital neural tube defects causing paralytic deformities of the lower extremities requiring bracing and corrective surgery.",
+        "summary": "Hip dislocation and equinovarus foot are common. Ambulatory potential depends on neurologic level. Late spinal deformity requires fusion."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_spina_bifida_and_myelomeningocele_orthopaedics",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Spina Bifida and Myelomeningocele — Orthopaedic Management — Core Principles",
+            "relevance": "ABOS paediatric neuromuscular section.",
+            "applications": [
+              "Ambulation prognosis",
+              "Foot deformity correction",
+              "Spinal deformity fusion"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Neuromuscular Paeds",
+            "topic": "Spina Bifida and Myelomeningocele — Orthopaedic Management",
+            "subtopic": "Spina Bifida and Myelomeningocele — Orthopaedic Management — Core Principles"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Spina Bifida and Myelomeningocele — Orthopaedic Management",
+            "chapter": "NBK557519",
+            "section": "Spina Bifida"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_spina_bifida_and_myelomeningocele_orthopaedics_evaluation_an",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_spina_bifida_and_myelomeningocele_orthopaedics",
+      "content": {
+        "title": "Evaluation and Diagnosis",
+        "definition": "History, physical examination, and initial imaging for spina bifida and myelomeningocele — orthopaedic management.",
+        "summary": "Systematic assessment identifies severity, associated injuries, and urgency in spina bifida and myelomeningocele — orthopaedic management."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_spina_bifida_and_myelomeningocele_orthopaedics",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_spina_bifida_and_myelomeningocele_orthopaedics_core_principl"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Evaluation and Diagnosis",
+            "relevance": "ABOS paediatric neuromuscular section.",
+            "applications": [
+              "Ambulation prognosis",
+              "Foot deformity correction",
+              "Spinal deformity fusion"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Neuromuscular Paeds",
+            "topic": "Spina Bifida and Myelomeningocele — Orthopaedic Management",
+            "subtopic": "Evaluation and Diagnosis"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_spina_bifida_and_myelomeningocele_orthopaedics_core_principl"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Spina Bifida and Myelomeningocele — Orthopaedic Management",
+            "chapter": "NBK557519",
+            "section": "Spina Bifida"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_spina_bifida_and_myelomeningocele_orthopaedics_management_pr",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_spina_bifida_and_myelomeningocele_orthopaedics",
+      "content": {
+        "title": "Management Principles",
+        "definition": "Nonoperative and operative treatment algorithms for spina bifida and myelomeningocele — orthopaedic management.",
+        "summary": "Hip dislocation and equinovarus foot are common."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_spina_bifida_and_myelomeningocele_orthopaedics",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_spina_bifida_and_myelomeningocele_orthopaedics_evaluation_an"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Management Principles",
+            "relevance": "ABOS paediatric neuromuscular section.",
+            "applications": [
+              "Ambulation prognosis",
+              "Foot deformity correction",
+              "Spinal deformity fusion"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Neuromuscular Paeds",
+            "topic": "Spina Bifida and Myelomeningocele — Orthopaedic Management",
+            "subtopic": "Management Principles"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_spina_bifida_and_myelomeningocele_orthopaedics_evaluation_an"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Spina Bifida and Myelomeningocele — Orthopaedic Management",
+            "chapter": "NBK557519",
+            "section": "Spina Bifida"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_spina_bifida_and_myelomeningocele_orthopaedics_ambulation_pr",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_spina_bifida_and_myelomeningocele_orthopaedics",
+      "content": {
+        "title": "Ambulation prognosis",
+        "definition": "Focused assessment and management of ambulation prognosis in the context of spina bifida and myelomeningocele — orthopaedic management.",
+        "summary": "Ambulation prognosis — key decision points from Paediatric Orthopaedics practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_spina_bifida_and_myelomeningocele_orthopaedics",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_spina_bifida_and_myelomeningocele_orthopaedics_management_pr"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Ambulation prognosis",
+            "relevance": "ABOS paediatric neuromuscular section.",
+            "applications": [
+              "Ambulation prognosis",
+              "Foot deformity correction",
+              "Spinal deformity fusion"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Neuromuscular Paeds",
+            "topic": "Spina Bifida and Myelomeningocele — Orthopaedic Management",
+            "subtopic": "Ambulation prognosis"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_spina_bifida_and_myelomeningocele_orthopaedics_management_pr"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Spina Bifida and Myelomeningocele — Orthopaedic Management",
+            "chapter": "NBK557519",
+            "section": "Spina Bifida"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_spina_bifida_and_myelomeningocele_orthopaedics_foot_deformit",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_spina_bifida_and_myelomeningocele_orthopaedics",
+      "content": {
+        "title": "Foot deformity correction",
+        "definition": "Focused assessment and management of foot deformity correction in the context of spina bifida and myelomeningocele — orthopaedic management.",
+        "summary": "Foot deformity correction — key decision points from Paediatric Orthopaedics practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_spina_bifida_and_myelomeningocele_orthopaedics",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_spina_bifida_and_myelomeningocele_orthopaedics_ambulation_pr"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Foot deformity correction",
+            "relevance": "ABOS paediatric neuromuscular section.",
+            "applications": [
+              "Ambulation prognosis",
+              "Foot deformity correction",
+              "Spinal deformity fusion"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Neuromuscular Paeds",
+            "topic": "Spina Bifida and Myelomeningocele — Orthopaedic Management",
+            "subtopic": "Foot deformity correction"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_spina_bifida_and_myelomeningocele_orthopaedics_ambulation_pr"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Spina Bifida and Myelomeningocele — Orthopaedic Management",
+            "chapter": "NBK557519",
+            "section": "Spina Bifida"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_spina_bifida_and_myelomeningocele_orthopaedics_spinal_deform",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_spina_bifida_and_myelomeningocele_orthopaedics",
+      "content": {
+        "title": "Spinal deformity fusion",
+        "definition": "Focused assessment and management of spinal deformity fusion in the context of spina bifida and myelomeningocele — orthopaedic management.",
+        "summary": "Spinal deformity fusion — key decision points from Paediatric Orthopaedics practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_spina_bifida_and_myelomeningocele_orthopaedics",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_spina_bifida_and_myelomeningocele_orthopaedics_foot_deformit"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Spinal deformity fusion",
+            "relevance": "ABOS paediatric neuromuscular section.",
+            "applications": [
+              "Ambulation prognosis",
+              "Foot deformity correction",
+              "Spinal deformity fusion"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Neuromuscular Paeds",
+            "topic": "Spina Bifida and Myelomeningocele — Orthopaedic Management",
+            "subtopic": "Spinal deformity fusion"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_spina_bifida_and_myelomeningocele_orthopaedics_foot_deformit"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Spina Bifida and Myelomeningocele — Orthopaedic Management",
+            "chapter": "NBK557519",
+            "section": "Spina Bifida"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_spina_bifida_and_myelomeningocele_orthopaedics_complications",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_spina_bifida_and_myelomeningocele_orthopaedics",
+      "content": {
+        "title": "Complications and Outcomes",
+        "definition": "Recognized complications, failure modes, and expected recovery after treatment of spina bifida and myelomeningocele — orthopaedic management.",
+        "summary": "Anticipate, diagnose, and manage complications; counsel on prognosis and rehabilitation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_spina_bifida_and_myelomeningocele_orthopaedics",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_spina_bifida_and_myelomeningocele_orthopaedics_spinal_deform"
+        ],
+        "unlocks": [
+          "spine_medicine_clinical_l5_spina_bifida_and_myelomeningocele_orthopaedics_salvage_and_r"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Complications and Outcomes",
+            "relevance": "ABOS paediatric neuromuscular section.",
+            "applications": [
+              "Ambulation prognosis",
+              "Foot deformity correction",
+              "Spinal deformity fusion"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Neuromuscular Paeds",
+            "topic": "Spina Bifida and Myelomeningocele — Orthopaedic Management",
+            "subtopic": "Complications and Outcomes"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_spina_bifida_and_myelomeningocele_orthopaedics_spinal_deform"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_clinical_l5_spina_bifida_and_myelomeningocele_orthopaedics_salvage_and_r"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Spina Bifida and Myelomeningocele — Orthopaedic Management",
+            "chapter": "NBK557519",
+            "section": "Spina Bifida"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l5_spina_bifida_and_myelomeningocele_orthopaedics_salvage_and_r",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_clinical_l3_spina_bifida_and_myelomeningocele_orthopaedics",
+      "content": {
+        "title": "Salvage and Revision Strategies",
+        "definition": "Revision and salvage options when initial management of spina bifida and myelomeningocele — orthopaedic management fails.",
+        "summary": "Staged revision and alternative strategies when primary treatment fails or complications develop."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l4_spina_bifida_and_myelomeningocele_orthopaedics_complications",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_spina_bifida_and_myelomeningocele_orthopaedics_complications"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Salvage and Revision Strategies",
+            "relevance": "ABOS paediatric neuromuscular section.",
+            "applications": [
+              "Ambulation prognosis",
+              "Foot deformity correction",
+              "Spinal deformity fusion"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Neuromuscular Paeds",
+            "topic": "Spina Bifida and Myelomeningocele — Orthopaedic Management",
+            "subtopic": "Salvage and Revision Strategies"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_spina_bifida_and_myelomeningocele_orthopaedics_complications"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Spina Bifida and Myelomeningocele — Orthopaedic Management",
+            "chapter": "NBK557519",
+            "section": "Spina Bifida"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,548 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_muscular_dystrophy_and_neuropathy_orthopaedic",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "ABOS-aligned scaffold for abos_p2_neuromuscular."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_muscular_dystrophy_and_neuropathy_orthopaedic_core_principle",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_muscular_dystrophy_and_neuropathy_orthopaedic",
+      "content": {
+        "title": "Muscular Dystrophy and Neuropathy — Orthopaedic Management — Core Principles",
+        "definition": "Progressive neuromuscular disorders including Duchenne muscular dystrophy and Charcot-Marie-Tooth disease with orthopaedic deformities.",
+        "summary": "DMD patients develop contractures and scoliosis; steroid therapy slows decline. CMT causes cavovarus foot requiring bracing or osteotomy."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Neuromuscular and Rehabilitation",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_muscular_dystrophy_and_neuropathy_orthopaedic",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Muscular Dystrophy and Neuropathy — Orthopaedic Management — Core Principles",
+            "relevance": "ABOS paediatric neuromuscular 1%.",
+            "applications": [
+              "DMD contracture management",
+              "Scoliosis fusion in DMD",
+              "CMT foot reconstruction"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Neuromuscular Disease",
+            "topic": "Muscular Dystrophy and Neuropathy — Orthopaedic Management",
+            "subtopic": "Muscular Dystrophy and Neuropathy — Orthopaedic Management — Core Principles"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Muscular Dystrophy and Neuropathy — Orthopaedic Management",
+            "chapter": "NBK557519",
+            "section": "Muscular Dystrophy"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_muscular_dystrophy_and_neuropathy_orthopaedic_evaluation_and",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_muscular_dystrophy_and_neuropathy_orthopaedic",
+      "content": {
+        "title": "Evaluation and Diagnosis",
+        "definition": "History, physical examination, and initial imaging for muscular dystrophy and neuropathy — orthopaedic management.",
+        "summary": "Systematic assessment identifies severity, associated injuries, and urgency in muscular dystrophy and neuropathy — orthopaedic management."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Neuromuscular and Rehabilitation",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_muscular_dystrophy_and_neuropathy_orthopaedic",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_muscular_dystrophy_and_neuropathy_orthopaedic_core_principle"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Evaluation and Diagnosis",
+            "relevance": "ABOS paediatric neuromuscular 1%.",
+            "applications": [
+              "DMD contracture management",
+              "Scoliosis fusion in DMD",
+              "CMT foot reconstruction"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Neuromuscular Disease",
+            "topic": "Muscular Dystrophy and Neuropathy — Orthopaedic Management",
+            "subtopic": "Evaluation and Diagnosis"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_muscular_dystrophy_and_neuropathy_orthopaedic_core_principle"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Muscular Dystrophy and Neuropathy — Orthopaedic Management",
+            "chapter": "NBK557519",
+            "section": "Muscular Dystrophy"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_muscular_dystrophy_and_neuropathy_orthopaedic_management_pri",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_muscular_dystrophy_and_neuropathy_orthopaedic",
+      "content": {
+        "title": "Management Principles",
+        "definition": "Nonoperative and operative treatment algorithms for muscular dystrophy and neuropathy — orthopaedic management.",
+        "summary": "DMD patients develop contractures and scoliosis; steroid therapy slows decline."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Neuromuscular and Rehabilitation",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_muscular_dystrophy_and_neuropathy_orthopaedic",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_muscular_dystrophy_and_neuropathy_orthopaedic_evaluation_and"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Management Principles",
+            "relevance": "ABOS paediatric neuromuscular 1%.",
+            "applications": [
+              "DMD contracture management",
+              "Scoliosis fusion in DMD",
+              "CMT foot reconstruction"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Neuromuscular Disease",
+            "topic": "Muscular Dystrophy and Neuropathy — Orthopaedic Management",
+            "subtopic": "Management Principles"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_muscular_dystrophy_and_neuropathy_orthopaedic_evaluation_and"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Muscular Dystrophy and Neuropathy — Orthopaedic Management",
+            "chapter": "NBK557519",
+            "section": "Muscular Dystrophy"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_muscular_dystrophy_and_neuropathy_orthopaedic_dmd_contractur",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_muscular_dystrophy_and_neuropathy_orthopaedic",
+      "content": {
+        "title": "DMD contracture management",
+        "definition": "Focused assessment and management of dmd contracture management in the context of muscular dystrophy and neuropathy — orthopaedic management.",
+        "summary": "DMD contracture management — key decision points from Neuromuscular and Rehabilitation practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Neuromuscular and Rehabilitation",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_muscular_dystrophy_and_neuropathy_orthopaedic",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_muscular_dystrophy_and_neuropathy_orthopaedic_management_pri"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "DMD contracture management",
+            "relevance": "ABOS paediatric neuromuscular 1%.",
+            "applications": [
+              "DMD contracture management",
+              "Scoliosis fusion in DMD",
+              "CMT foot reconstruction"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Neuromuscular Disease",
+            "topic": "Muscular Dystrophy and Neuropathy — Orthopaedic Management",
+            "subtopic": "DMD contracture management"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_muscular_dystrophy_and_neuropathy_orthopaedic_management_pri"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Muscular Dystrophy and Neuropathy — Orthopaedic Management",
+            "chapter": "NBK557519",
+            "section": "Muscular Dystrophy"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_muscular_dystrophy_and_neuropathy_orthopaedic_scoliosis_fusi",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_muscular_dystrophy_and_neuropathy_orthopaedic",
+      "content": {
+        "title": "Scoliosis fusion in DMD",
+        "definition": "Focused assessment and management of scoliosis fusion in dmd in the context of muscular dystrophy and neuropathy — orthopaedic management.",
+        "summary": "Scoliosis fusion in DMD — key decision points from Neuromuscular and Rehabilitation practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Neuromuscular and Rehabilitation",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_muscular_dystrophy_and_neuropathy_orthopaedic",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_muscular_dystrophy_and_neuropathy_orthopaedic_dmd_contractur"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Scoliosis fusion in DMD",
+            "relevance": "ABOS paediatric neuromuscular 1%.",
+            "applications": [
+              "DMD contracture management",
+              "Scoliosis fusion in DMD",
+              "CMT foot reconstruction"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Neuromuscular Disease",
+            "topic": "Muscular Dystrophy and Neuropathy — Orthopaedic Management",
+            "subtopic": "Scoliosis fusion in DMD"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_muscular_dystrophy_and_neuropathy_orthopaedic_dmd_contractur"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Muscular Dystrophy and Neuropathy — Orthopaedic Management",
+            "chapter": "NBK557519",
+            "section": "Muscular Dystrophy"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_muscular_dystrophy_and_neuropathy_orthopaedic_cmt_foot_recon",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_muscular_dystrophy_and_neuropathy_orthopaedic",
+      "content": {
+        "title": "CMT foot reconstruction",
+        "definition": "Focused assessment and management of cmt foot reconstruction in the context of muscular dystrophy and neuropathy — orthopaedic management.",
+        "summary": "CMT foot reconstruction — key decision points from Neuromuscular and Rehabilitation practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Neuromuscular and Rehabilitation",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_muscular_dystrophy_and_neuropathy_orthopaedic",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_muscular_dystrophy_and_neuropathy_orthopaedic_scoliosis_fusi"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "CMT foot reconstruction",
+            "relevance": "ABOS paediatric neuromuscular 1%.",
+            "applications": [
+              "DMD contracture management",
+              "Scoliosis fusion in DMD",
+              "CMT foot reconstruction"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Neuromuscular Disease",
+            "topic": "Muscular Dystrophy and Neuropathy — Orthopaedic Management",
+            "subtopic": "CMT foot reconstruction"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_muscular_dystrophy_and_neuropathy_orthopaedic_scoliosis_fusi"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Muscular Dystrophy and Neuropathy — Orthopaedic Management",
+            "chapter": "NBK557519",
+            "section": "Muscular Dystrophy"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_muscular_dystrophy_and_neuropathy_orthopaedic_complications_",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_muscular_dystrophy_and_neuropathy_orthopaedic",
+      "content": {
+        "title": "Complications and Outcomes",
+        "definition": "Recognized complications, failure modes, and expected recovery after treatment of muscular dystrophy and neuropathy — orthopaedic management.",
+        "summary": "Anticipate, diagnose, and manage complications; counsel on prognosis and rehabilitation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Neuromuscular and Rehabilitation",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_muscular_dystrophy_and_neuropathy_orthopaedic",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_muscular_dystrophy_and_neuropathy_orthopaedic_cmt_foot_recon"
+        ],
+        "unlocks": [
+          "spine_medicine_clinical_l5_muscular_dystrophy_and_neuropathy_orthopaedic_salvage_and_re"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Complications and Outcomes",
+            "relevance": "ABOS paediatric neuromuscular 1%.",
+            "applications": [
+              "DMD contracture management",
+              "Scoliosis fusion in DMD",
+              "CMT foot reconstruction"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Neuromuscular Disease",
+            "topic": "Muscular Dystrophy and Neuropathy — Orthopaedic Management",
+            "subtopic": "Complications and Outcomes"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_muscular_dystrophy_and_neuropathy_orthopaedic_cmt_foot_recon"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_clinical_l5_muscular_dystrophy_and_neuropathy_orthopaedic_salvage_and_re"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Muscular Dystrophy and Neuropathy — Orthopaedic Management",
+            "chapter": "NBK557519",
+            "section": "Muscular Dystrophy"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l5_muscular_dystrophy_and_neuropathy_orthopaedic_salvage_and_re",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_clinical_l3_muscular_dystrophy_and_neuropathy_orthopaedic",
+      "content": {
+        "title": "Salvage and Revision Strategies",
+        "definition": "Revision and salvage options when initial management of muscular dystrophy and neuropathy — orthopaedic management fails.",
+        "summary": "Staged revision and alternative strategies when primary treatment fails or complications develop."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Neuromuscular and Rehabilitation",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l4_muscular_dystrophy_and_neuropathy_orthopaedic_complications_",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_muscular_dystrophy_and_neuropathy_orthopaedic_complications_"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Salvage and Revision Strategies",
+            "relevance": "ABOS paediatric neuromuscular 1%.",
+            "applications": [
+              "DMD contracture management",
+              "Scoliosis fusion in DMD",
+              "CMT foot reconstruction"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Neuromuscular Disease",
+            "topic": "Muscular Dystrophy and Neuropathy — Orthopaedic Management",
+            "subtopic": "Salvage and Revision Strategies"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_muscular_dystrophy_and_neuropathy_orthopaedic_complications_"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Muscular Dystrophy and Neuropathy — Orthopaedic Management",
+            "chapter": "NBK557519",
+            "section": "Muscular Dystrophy"
+          }
+        ]
+      }
+    }
+  ]
+}

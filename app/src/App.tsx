@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { AuthProvider } from "./lib/auth";
 import { LibraryProvider } from "./lib/libraryContext";
 import { CertificationPage } from "./pages/CertificationPage";
+import { CreateLibraryPage } from "./pages/CreateLibraryPage";
 import { ConceptMapPage } from "./pages/ConceptMapPage";
 import { HomePage } from "./pages/HomePage";
 import { LibraryPage } from "./pages/LibraryPage";
@@ -22,6 +23,7 @@ function App() {
               <Route path="/library" element={<LibraryPage />} />
               <Route path="/concept-map" element={<ConceptMapPage />} />
               <Route path="/certify" element={<CertificationPage />} />
+              <Route path="/create-library" element={<CreateLibraryPage />} />
             </Routes>
           </main>
         </BrowserRouter>

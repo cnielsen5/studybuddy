@@ -1,0 +1,485 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_spine_trauma_fractures_and_instability",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "A1: Cervical and thoracolumbar trauma as distinct L4 clusters per resident review."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_spinal_cord_injury_acute_management",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_spine_trauma_fractures_and_instability",
+      "content": {
+        "title": "Spinal Cord Injury — Acute Management",
+        "definition": "Hemodynamic support, spinal precautions, methylprednisolone no longer standard, and early decompression when indicated for neurologic deficit.",
+        "summary": "Mean arterial pressure goals and avoidance of hypotension protect spinal cord perfusion after injury."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Trauma",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_spine_trauma_fractures_and_instability",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Spinal Cord Injury — Acute Management",
+            "relevance": "Overlaps spine subspecialty; distinct trauma management algorithms.",
+            "applications": [
+              "TLICS scoring",
+              "Spinal cord injury management",
+              "Operative stabilization timing"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Spine Trauma",
+            "topic": "Spine Trauma — Fractures and Instability",
+            "subtopic": "Spinal Cord Injury — Acute Management"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Spine Trauma — Fractures and Instability",
+            "chapter": "NBK448124",
+            "section": "Spinal Cord Injury"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_cervical_spine_trauma_injuries",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_spine_trauma_fractures_and_instability",
+      "content": {
+        "title": "Cervical Spine Trauma Injuries",
+        "definition": "Subaxial cervical fracture-dislocations, facet injuries, and occipitocervical dissociation classified and managed with SLIC and stability assessment.",
+        "summary": "Occipitocervical dissociation is highly unstable. SLIC ≥5 favors surgery for subaxial injuries. Maintain cervical spine precautions until cleared."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Trauma",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_spine_trauma_fractures_and_instability",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_spinal_cord_injury_acute_management"
+        ],
+        "unlocks": [
+          "spine_medicine_clinical_l5_occipitocervical_dissociation_management"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Cervical Spine Trauma Injuries",
+            "relevance": "Overlaps spine subspecialty; distinct trauma management algorithms.",
+            "applications": [
+              "TLICS scoring",
+              "Spinal cord injury management",
+              "Operative stabilization timing"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Spine Trauma",
+            "topic": "Spine Trauma — Fractures and Instability",
+            "subtopic": "Cervical Spine Trauma Injuries"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_spinal_cord_injury_acute_management"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_clinical_l5_occipitocervical_dissociation_management"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Spine Trauma — Fractures and Instability",
+            "chapter": "NBK448124",
+            "section": "Cervical Trauma"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l5_occipitocervical_dissociation_management",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_clinical_l3_spine_trauma_fractures_and_instability",
+      "content": {
+        "title": "Occipitocervical Dissociation Management",
+        "definition": "Recognition of craniocervical dissociation on imaging and urgent occiput-to-C2 stabilization.",
+        "summary": "Power's ratio and CT findings prompt emergent fusion; high mortality without stabilization."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Trauma",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l4_cervical_spine_trauma_injuries",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_cervical_spine_trauma_injuries"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Occipitocervical Dissociation Management",
+            "relevance": "Overlaps spine subspecialty; distinct trauma management algorithms.",
+            "applications": [
+              "TLICS scoring",
+              "Spinal cord injury management",
+              "Operative stabilization timing"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Spine Trauma",
+            "topic": "Spine Trauma — Fractures and Instability",
+            "subtopic": "Occipitocervical Dissociation Management"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_cervical_spine_trauma_injuries"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Spine Trauma — Fractures and Instability",
+            "chapter": "NBK448124",
+            "section": "Occipitocervical"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_thoracolumbar_spine_trauma_injuries",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_spine_trauma_fractures_and_instability",
+      "content": {
+        "title": "Thoracolumbar Spine Trauma Injuries",
+        "definition": "Burst fractures, compression injuries, flexion-distraction (Chance), and fracture-dislocations of the thoracic and lumbar spine.",
+        "summary": "TLICS guides operative versus nonoperative management. Posterior ligamentous complex integrity determines stability."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Trauma",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_spine_trauma_fractures_and_instability",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_cervical_spine_trauma_injuries"
+        ],
+        "unlocks": [
+          "spine_medicine_clinical_l5_tlics_operative_indications"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Thoracolumbar Spine Trauma Injuries",
+            "relevance": "Overlaps spine subspecialty; distinct trauma management algorithms.",
+            "applications": [
+              "TLICS scoring",
+              "Spinal cord injury management",
+              "Operative stabilization timing"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Spine Trauma",
+            "topic": "Spine Trauma — Fractures and Instability",
+            "subtopic": "Thoracolumbar Spine Trauma Injuries"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_cervical_spine_trauma_injuries"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_clinical_l5_tlics_operative_indications"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Spine Trauma — Fractures and Instability",
+            "chapter": "NBK448124",
+            "section": "Thoracolumbar Trauma"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l5_tlics_operative_indications",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_clinical_l3_spine_trauma_fractures_and_instability",
+      "content": {
+        "title": "TLICS Operative Indications",
+        "definition": "Thoracolumbar Injury Classification and Severity Score application for surgical decision-making.",
+        "summary": "TLICS ≥4 typically warrants operative stabilization; neurologic deficit and PLC disruption drive urgency."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Trauma",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l4_thoracolumbar_spine_trauma_injuries",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_thoracolumbar_spine_trauma_injuries"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "TLICS Operative Indications",
+            "relevance": "Overlaps spine subspecialty; distinct trauma management algorithms.",
+            "applications": [
+              "TLICS scoring",
+              "Spinal cord injury management",
+              "Operative stabilization timing"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Spine Trauma",
+            "topic": "Spine Trauma — Fractures and Instability",
+            "subtopic": "TLICS Operative Indications"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_thoracolumbar_spine_trauma_injuries"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Spine Trauma — Fractures and Instability",
+            "chapter": "NBK448124",
+            "section": "TLICS"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_spine_trauma_operative_stabilization",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_spine_trauma_fractures_and_instability",
+      "content": {
+        "title": "Spine Trauma Operative Stabilization",
+        "definition": "Posterior instrumentation, anterior corpectomy and fusion, and combined approaches for unstable spinal column injuries.",
+        "summary": "Short-segment versus long-segment constructs depend on fracture pattern and bone quality."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Trauma",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_spine_trauma_fractures_and_instability",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_thoracolumbar_spine_trauma_injuries"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Spine Trauma Operative Stabilization",
+            "relevance": "Overlaps spine subspecialty; distinct trauma management algorithms.",
+            "applications": [
+              "TLICS scoring",
+              "Spinal cord injury management",
+              "Operative stabilization timing"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Spine Trauma",
+            "topic": "Spine Trauma — Fractures and Instability",
+            "subtopic": "Spine Trauma Operative Stabilization"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_thoracolumbar_spine_trauma_injuries"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Spine Trauma — Fractures and Instability",
+            "chapter": "NBK448124",
+            "section": "Operative Stabilization"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_spine_trauma_clearance_and_secondary_survey",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_spine_trauma_fractures_and_instability",
+      "content": {
+        "title": "Spine Clearance and Secondary Survey",
+        "definition": "Clinical clearance criteria, CT imaging, and collar removal protocols in awake alert trauma patients.",
+        "summary": "NEXUS and Canadian C-spine rules reduce unnecessary imaging in low-risk patients."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Trauma",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_spine_trauma_fractures_and_instability",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_spine_trauma_operative_stabilization"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Spine Clearance and Secondary Survey",
+            "relevance": "Overlaps spine subspecialty; distinct trauma management algorithms.",
+            "applications": [
+              "TLICS scoring",
+              "Spinal cord injury management",
+              "Operative stabilization timing"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Spine Trauma",
+            "topic": "Spine Trauma — Fractures and Instability",
+            "subtopic": "Spine Clearance and Secondary Survey"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_spine_trauma_operative_stabilization"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Spine Trauma — Fractures and Instability",
+            "chapter": "NBK448124",
+            "section": "Clearance"
+          }
+        ]
+      }
+    }
+  ]
+}

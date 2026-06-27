@@ -1,0 +1,548 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_paediatric_sports_and_overuse_injuries",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "ABOS-aligned scaffold for abos_p2_pediatrics."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_paediatric_sports_and_overuse_injuries_core_principles",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_paediatric_sports_and_overuse_injuries",
+      "content": {
+        "title": "Paediatric Sports and Overuse Injuries — Core Principles",
+        "definition": "Apophysitis, stress fractures, and osteochondritis dissecans in skeletally immature athletes including Little Leaguer elbow.",
+        "summary": "Osgood-Schlatter and Sever disease are traction apophysitis. Little Leaguer elbow involves medial epicondyle apophysitis. OCD may need drilling or fixation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_paediatric_sports_and_overuse_injuries",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Paediatric Sports and Overuse Injuries — Core Principles",
+            "relevance": "ABOS paediatric sports 1.5%.",
+            "applications": [
+              "Apophysitis management",
+              "OCD in immature skeleton",
+              "Pitch count guidelines"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Paediatric Sports",
+            "topic": "Paediatric Sports and Overuse Injuries",
+            "subtopic": "Paediatric Sports and Overuse Injuries — Core Principles"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Paediatric Sports and Overuse Injuries",
+            "chapter": "NBK557519",
+            "section": "Paediatric Sports"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_paediatric_sports_and_overuse_injuries_evaluation_and_diagno",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_paediatric_sports_and_overuse_injuries",
+      "content": {
+        "title": "Evaluation and Diagnosis",
+        "definition": "History, physical examination, and initial imaging for paediatric sports and overuse injuries.",
+        "summary": "Systematic assessment identifies severity, associated injuries, and urgency in paediatric sports and overuse injuries."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_paediatric_sports_and_overuse_injuries",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_paediatric_sports_and_overuse_injuries_core_principles"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Evaluation and Diagnosis",
+            "relevance": "ABOS paediatric sports 1.5%.",
+            "applications": [
+              "Apophysitis management",
+              "OCD in immature skeleton",
+              "Pitch count guidelines"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Paediatric Sports",
+            "topic": "Paediatric Sports and Overuse Injuries",
+            "subtopic": "Evaluation and Diagnosis"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_paediatric_sports_and_overuse_injuries_core_principles"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Paediatric Sports and Overuse Injuries",
+            "chapter": "NBK557519",
+            "section": "Paediatric Sports"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_paediatric_sports_and_overuse_injuries_management_principles",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_paediatric_sports_and_overuse_injuries",
+      "content": {
+        "title": "Management Principles",
+        "definition": "Nonoperative and operative treatment algorithms for paediatric sports and overuse injuries.",
+        "summary": "Osgood-Schlatter and Sever disease are traction apophysitis."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_paediatric_sports_and_overuse_injuries",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_paediatric_sports_and_overuse_injuries_evaluation_and_diagno"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Management Principles",
+            "relevance": "ABOS paediatric sports 1.5%.",
+            "applications": [
+              "Apophysitis management",
+              "OCD in immature skeleton",
+              "Pitch count guidelines"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Paediatric Sports",
+            "topic": "Paediatric Sports and Overuse Injuries",
+            "subtopic": "Management Principles"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_paediatric_sports_and_overuse_injuries_evaluation_and_diagno"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Paediatric Sports and Overuse Injuries",
+            "chapter": "NBK557519",
+            "section": "Paediatric Sports"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_paediatric_sports_and_overuse_injuries_apophysitis_managemen",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_paediatric_sports_and_overuse_injuries",
+      "content": {
+        "title": "Apophysitis management",
+        "definition": "Focused assessment and management of apophysitis management in the context of paediatric sports and overuse injuries.",
+        "summary": "Apophysitis management — key decision points from Paediatric Orthopaedics practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_paediatric_sports_and_overuse_injuries",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_paediatric_sports_and_overuse_injuries_management_principles"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Apophysitis management",
+            "relevance": "ABOS paediatric sports 1.5%.",
+            "applications": [
+              "Apophysitis management",
+              "OCD in immature skeleton",
+              "Pitch count guidelines"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Paediatric Sports",
+            "topic": "Paediatric Sports and Overuse Injuries",
+            "subtopic": "Apophysitis management"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_paediatric_sports_and_overuse_injuries_management_principles"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Paediatric Sports and Overuse Injuries",
+            "chapter": "NBK557519",
+            "section": "Paediatric Sports"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_paediatric_sports_and_overuse_injuries_ocd_in_immature_skele",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_paediatric_sports_and_overuse_injuries",
+      "content": {
+        "title": "OCD in immature skeleton",
+        "definition": "Focused assessment and management of ocd in immature skeleton in the context of paediatric sports and overuse injuries.",
+        "summary": "OCD in immature skeleton — key decision points from Paediatric Orthopaedics practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_paediatric_sports_and_overuse_injuries",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_paediatric_sports_and_overuse_injuries_apophysitis_managemen"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "OCD in immature skeleton",
+            "relevance": "ABOS paediatric sports 1.5%.",
+            "applications": [
+              "Apophysitis management",
+              "OCD in immature skeleton",
+              "Pitch count guidelines"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Paediatric Sports",
+            "topic": "Paediatric Sports and Overuse Injuries",
+            "subtopic": "OCD in immature skeleton"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_paediatric_sports_and_overuse_injuries_apophysitis_managemen"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Paediatric Sports and Overuse Injuries",
+            "chapter": "NBK557519",
+            "section": "Paediatric Sports"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_paediatric_sports_and_overuse_injuries_pitch_count_guideline",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_paediatric_sports_and_overuse_injuries",
+      "content": {
+        "title": "Pitch count guidelines",
+        "definition": "Focused assessment and management of pitch count guidelines in the context of paediatric sports and overuse injuries.",
+        "summary": "Pitch count guidelines — key decision points from Paediatric Orthopaedics practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_paediatric_sports_and_overuse_injuries",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_paediatric_sports_and_overuse_injuries_ocd_in_immature_skele"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Pitch count guidelines",
+            "relevance": "ABOS paediatric sports 1.5%.",
+            "applications": [
+              "Apophysitis management",
+              "OCD in immature skeleton",
+              "Pitch count guidelines"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Paediatric Sports",
+            "topic": "Paediatric Sports and Overuse Injuries",
+            "subtopic": "Pitch count guidelines"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_paediatric_sports_and_overuse_injuries_ocd_in_immature_skele"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Paediatric Sports and Overuse Injuries",
+            "chapter": "NBK557519",
+            "section": "Paediatric Sports"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_paediatric_sports_and_overuse_injuries_complications_and_out",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_paediatric_sports_and_overuse_injuries",
+      "content": {
+        "title": "Complications and Outcomes",
+        "definition": "Recognized complications, failure modes, and expected recovery after treatment of paediatric sports and overuse injuries.",
+        "summary": "Anticipate, diagnose, and manage complications; counsel on prognosis and rehabilitation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_paediatric_sports_and_overuse_injuries",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_paediatric_sports_and_overuse_injuries_pitch_count_guideline"
+        ],
+        "unlocks": [
+          "spine_medicine_clinical_l5_paediatric_sports_and_overuse_injuries_salvage_and_revision"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Complications and Outcomes",
+            "relevance": "ABOS paediatric sports 1.5%.",
+            "applications": [
+              "Apophysitis management",
+              "OCD in immature skeleton",
+              "Pitch count guidelines"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Paediatric Sports",
+            "topic": "Paediatric Sports and Overuse Injuries",
+            "subtopic": "Complications and Outcomes"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_paediatric_sports_and_overuse_injuries_pitch_count_guideline"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_clinical_l5_paediatric_sports_and_overuse_injuries_salvage_and_revision"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Paediatric Sports and Overuse Injuries",
+            "chapter": "NBK557519",
+            "section": "Paediatric Sports"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l5_paediatric_sports_and_overuse_injuries_salvage_and_revision",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_clinical_l3_paediatric_sports_and_overuse_injuries",
+      "content": {
+        "title": "Salvage and Revision Strategies",
+        "definition": "Revision and salvage options when initial management of paediatric sports and overuse injuries fails.",
+        "summary": "Staged revision and alternative strategies when primary treatment fails or complications develop."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l4_paediatric_sports_and_overuse_injuries_complications_and_out",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_paediatric_sports_and_overuse_injuries_complications_and_out"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Salvage and Revision Strategies",
+            "relevance": "ABOS paediatric sports 1.5%.",
+            "applications": [
+              "Apophysitis management",
+              "OCD in immature skeleton",
+              "Pitch count guidelines"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Paediatric Sports",
+            "topic": "Paediatric Sports and Overuse Injuries",
+            "subtopic": "Salvage and Revision Strategies"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_paediatric_sports_and_overuse_injuries_complications_and_out"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Paediatric Sports and Overuse Injuries",
+            "chapter": "NBK557519",
+            "section": "Paediatric Sports"
+          }
+        ]
+      }
+    }
+  ]
+}

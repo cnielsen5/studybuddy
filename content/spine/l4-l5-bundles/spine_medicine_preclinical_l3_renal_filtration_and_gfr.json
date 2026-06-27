@@ -1,0 +1,578 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_preclinical_l3_renal_filtration_and_gfr",
+    "anchor_primary_domain": "medicine_preclinical",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-samples/spine_medicine_preclinical_l3_renal_filtration_and_gfr.medicine_preclinical.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "8 per-context concepts merged into 8 universal concepts (5 L4 + 3 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_preclinical_l4_filtration_fraction",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_preclinical_l3_renal_filtration_and_gfr",
+      "content": {
+        "title": "Renal Blood Flow and Filtration Fraction",
+        "definition": "Filtration fraction is the ratio of glomerular filtration rate to renal plasma flow, expressing the fraction of plasma passing through the glomerulus that is filtered.",
+        "summary": "Normal filtration fraction is about 20%. Changes in GFR or renal plasma flow alter FF independently, reflecting afferent/efferent tone and hemodynamic status."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Renal Physiology",
+        "primary_domain": "medicine_preclinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_preclinical_l3_renal_filtration_and_gfr",
+        "prerequisites": [
+          "spine_medicine_preclinical_l4_gfr_measurement_estimation"
+        ],
+        "unlocks": [
+          "spine_medicine_preclinical_l4_gfr_autoregulation"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Renal Blood Flow and Filtration Fraction",
+            "relevance": "FF = GFR/RPF links filtration to renal hemodynamics.",
+            "applications": [
+              "ACE inhibitor effect on efferent tone"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Renal Physiology",
+            "topic": "Glomerular Filtration",
+            "subtopic": "Filtration Fraction"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_preclinical_l4_gfr_measurement_estimation"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_preclinical_l4_gfr_autoregulation"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "25",
+            "section": "25.3 — Filtration Fraction"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_preclinical_l4_gfr_autoregulation",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_preclinical_l3_renal_filtration_and_gfr",
+      "content": {
+        "title": "Autoregulation of GFR (Myogenic and TGF)",
+        "definition": "Intrinsic renal mechanisms that maintain relatively stable glomerular filtration rate across a range of systemic arterial pressures through myogenic arteriolar responses and tubuloglomerular feedback.",
+        "summary": "Autoregulation protects GFR when blood pressure fluctuates within normal limits. Myogenic constriction of afferent arterioles and macula densa-mediated feedback adjust resistance to stabilize filtration."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Renal Physiology",
+        "primary_domain": "medicine_preclinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_preclinical_l3_renal_filtration_and_gfr",
+        "prerequisites": [
+          "spine_medicine_preclinical_l4_filtration_fraction"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Autoregulation of GFR (Myogenic and TGF)",
+            "relevance": "Explains preserved GFR until late hypotension; TGF and RAAS interactions.",
+            "applications": [
+              "Tubuloglomerular feedback",
+              "Afferent myogenic response"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Renal Physiology",
+            "topic": "Glomerular Filtration",
+            "subtopic": "Autoregulation"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_preclinical_l4_filtration_fraction"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "25",
+            "section": "25.3 — Renal Autoregulation"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_preclinical_l4_gfr_measurement_estimation",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_preclinical_l3_renal_filtration_and_gfr",
+      "content": {
+        "title": "GFR Measurement and Estimation",
+        "definition": "Quantification of glomerular filtration rate using clearance of an ideal filtration marker such as inulin, or estimation from serum creatinine-based equations in clinical practice.",
+        "summary": "Inulin clearance is the gold standard for GFR. Creatinine-based eGFR equations provide practical estimates but carry assumptions and limitations that affect interpretation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Renal Physiology",
+        "primary_domain": "medicine_preclinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_preclinical_l3_renal_filtration_and_gfr",
+        "prerequisites": [
+          "spine_medicine_preclinical_l4_glomerular_starling_forces"
+        ],
+        "unlocks": [
+          "spine_medicine_preclinical_l4_filtration_fraction",
+          "spine_medicine_preclinical_l5_creatinine_clearance_caveats",
+          {
+            "concept_id": "spine_medicine_clinical_l3_chronic_kidney_disease_staging",
+            "_forward_reference": true
+          }
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "GFR Measurement and Estimation",
+            "relevance": "eGFR is the clinical index of kidney function — staging belongs under clinical CKD L3.",
+            "applications": [
+              "MDRD/CKD-EPI equations",
+              "Drug dosing in reduced GFR"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Renal Physiology",
+            "topic": "Glomerular Filtration",
+            "subtopic": "GFR Measurement"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_preclinical_l4_glomerular_starling_forces"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_preclinical_l4_filtration_fraction",
+              {
+                "concept_id": "spine_medicine_clinical_l3_chronic_kidney_disease_staging",
+                "_forward_reference": true
+              },
+              "spine_medicine_preclinical_l5_creatinine_clearance_caveats"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "25",
+            "section": "25.3 — GFR Measurement"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_preclinical_l4_glomerular_filtration_barrier",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_preclinical_l3_renal_filtration_and_gfr",
+      "content": {
+        "title": "Glomerular Filtration Barrier",
+        "definition": "A selective filter composed of fenestrated capillary endothelium, glomerular basement membrane, and podocyte foot processes that permits water and small solutes to pass while restricting large proteins and cells.",
+        "summary": "The filtration barrier determines what enters the glomerular filtrate. Damage to podocytes or the basement membrane increases protein permeability and reduces selectivity."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Renal Physiology",
+        "primary_domain": "medicine_preclinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_preclinical_l3_renal_filtration_and_gfr",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_medicine_preclinical_l4_glomerular_starling_forces"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Glomerular Filtration Barrier",
+            "relevance": "Structural basis for proteinuria when the barrier is damaged.",
+            "applications": [
+              "Minimal change disease",
+              "Diabetic glomerulosclerosis"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Renal Physiology",
+            "topic": "Glomerular Filtration",
+            "subtopic": "Filtration Barrier"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_medicine_preclinical_l4_glomerular_starling_forces"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "25",
+            "section": "25.3 — Glomerular Filtration Barrier"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_preclinical_l4_glomerular_starling_forces",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_preclinical_l3_renal_filtration_and_gfr",
+      "content": {
+        "title": "Starling Forces Across the Glomerulus",
+        "definition": "The balance of hydrostatic and oncotic pressures across the glomerular capillary wall that drives ultrafiltration of plasma into Bowman's space.",
+        "summary": "Net filtration pressure is the sum of favoring and opposing forces across the capillary. Changes in afferent or efferent tone, plasma oncotic pressure, or Bowman's space pressure alter GFR."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Renal Physiology",
+        "primary_domain": "medicine_preclinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_preclinical_l3_renal_filtration_and_gfr",
+        "prerequisites": [
+          "spine_medicine_preclinical_l4_glomerular_filtration_barrier"
+        ],
+        "unlocks": [
+          "spine_medicine_preclinical_l4_gfr_measurement_estimation",
+          "spine_medicine_preclinical_l5_net_filtration_pressure",
+          "spine_medicine_preclinical_l5_afferent_efferent_gfr"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Starling Forces Across the Glomerulus",
+            "relevance": "Explains how angiotensin II and plasma protein affect GFR.",
+            "applications": [
+              "Efferent arteriole constriction",
+              "Hypoproteinemia and edema"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Renal Physiology",
+            "topic": "Glomerular Filtration",
+            "subtopic": "Starling Forces"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_preclinical_l4_glomerular_filtration_barrier"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_preclinical_l4_gfr_measurement_estimation",
+              "spine_medicine_preclinical_l5_net_filtration_pressure",
+              "spine_medicine_preclinical_l5_afferent_efferent_gfr"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "25",
+            "section": "25.3 — Net Filtration Pressure"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_preclinical_l5_afferent_efferent_gfr",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_preclinical_l3_renal_filtration_and_gfr",
+      "content": {
+        "title": "Afferent vs Efferent Arteriolar Effects on GFR",
+        "definition": "Differential effects of constriction or dilation of afferent versus efferent glomerular arterioles on glomerular capillary pressure and glomerular filtration rate.",
+        "summary": "Afferent constriction lowers GFR; efferent constriction raises GFR initially by increasing glomerular pressure. Angiotensin II preferentially constricts the efferent arteriole."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Renal Physiology",
+        "primary_domain": "medicine_preclinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_preclinical_l4_glomerular_starling_forces",
+        "prerequisites": [
+          "spine_medicine_preclinical_l4_glomerular_starling_forces"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Afferent vs Efferent Arteriolar Effects on GFR",
+            "relevance": "ACE inhibitor/NSAID effects on GFR explained by arteriolar tone.",
+            "applications": [
+              "NSAID afferent constriction",
+              "ACEi efferent dilation"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Renal Physiology",
+            "topic": "Glomerular Filtration",
+            "subtopic": "Arteriolar Tone"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_preclinical_l4_glomerular_starling_forces"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "25",
+            "section": "25.3 — Afferent and Efferent Arterioles"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_preclinical_l5_creatinine_clearance_caveats",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_preclinical_l3_renal_filtration_and_gfr",
+      "content": {
+        "title": "Creatinine Clearance Limitations",
+        "definition": "Sources of error in using serum creatinine and creatinine-based equations to estimate glomerular filtration rate, including tubular secretion, muscle mass variation, and non-GFR determinants of creatinine.",
+        "summary": "Creatinine is not a perfect GFR marker because it is secreted by tubules and produced proportionally to muscle mass. eGFR equations correct some but not all of these limitations."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Renal Physiology",
+        "primary_domain": "medicine_preclinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_preclinical_l4_gfr_measurement_estimation",
+        "prerequisites": [
+          "spine_medicine_preclinical_l4_gfr_measurement_estimation"
+        ],
+        "unlocks": [
+          {
+            "concept_id": "spine_medicine_clinical_l3_chronic_kidney_disease_staging",
+            "_forward_reference": true
+          }
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Creatinine Clearance Limitations",
+            "relevance": "Preclinical scope stops at measurement limitations; CKD staging is clinical L3.",
+            "applications": [
+              "Cimetidine blocks secretion",
+              "Low muscle mass in elderly"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Renal Physiology",
+            "topic": "Glomerular Filtration",
+            "subtopic": "Creatinine Limitations"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_preclinical_l4_gfr_measurement_estimation"
+            ],
+            "unlocks_in_context": [
+              {
+                "concept_id": "spine_medicine_clinical_l3_chronic_kidney_disease_staging",
+                "_forward_reference": true
+              }
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Glomerular Filtration Rate",
+            "section": "Creatinine Clearance Limitations",
+            "url": "https://www.ncbi.nlm.nih.gov/books/NBK545226/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_preclinical_l5_net_filtration_pressure",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_preclinical_l3_renal_filtration_and_gfr",
+      "content": {
+        "title": "Net Filtration Pressure Equation",
+        "definition": "The algebraic sum of glomerular capillary hydrostatic pressure, Bowman's capsule hydrostatic pressure, and glomerular oncotic pressure that determines the driving force for ultrafiltration.",
+        "summary": "Net filtration pressure = PGC − PBS − πGC. Each term's direction and typical magnitude are high-yield for understanding GFR changes."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Renal Physiology",
+        "primary_domain": "medicine_preclinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_preclinical_l4_glomerular_starling_forces",
+        "prerequisites": [
+          "spine_medicine_preclinical_l4_glomerular_starling_forces"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Net Filtration Pressure Equation",
+            "relevance": "Sign conventions and component directions on Step 1.",
+            "applications": [
+              "Urinary tract obstruction raising PBS",
+              "Dehydration raising πGC"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Renal Physiology",
+            "topic": "Glomerular Filtration",
+            "subtopic": "Net Filtration Pressure"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_preclinical_l4_glomerular_starling_forces"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "25",
+            "section": "25.3 — Net Filtration Pressure Equation"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,495 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_chemistry_l3_nucleic_acid_structure",
+    "anchor_primary_domain": "chemistry",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-samples/spine_chemistry_l3_nucleic_acid_structure.chemistry.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "7 per-context concepts merged into 7 universal concepts (5 L4 + 2 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_chemistry_l4_dna_double_helix_base_pairing",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_chemistry_l3_nucleic_acid_structure",
+      "content": {
+        "title": "DNA Double Helix and Base Pairing",
+        "definition": "A double-stranded helical structure in which antiparallel polynucleotide chains are held together by complementary hydrogen bonding between adenine–thymine and guanine–cytosine base pairs.",
+        "summary": "Watson–Crick base pairing specifies complementary strands and underlies replication fidelity. The antiparallel orientation defines 5′→3′ directionality on each strand."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Nucleic Acids",
+        "primary_domain": "chemistry",
+        "_shared_concept_note": "Biology process of replication covered under spine_biology_l3_dna_structure_replication."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_chemistry_l3_nucleic_acid_structure",
+        "prerequisites": [
+          "spine_chemistry_l4_nucleotide_structure"
+        ],
+        "unlocks": [
+          "spine_chemistry_l4_dna_melting_temperature",
+          "spine_chemistry_l4_dna_grooves",
+          "spine_chemistry_l5_base_mismatch_stability",
+          {
+            "concept_id": "spine_biology_l3_dna_structure_replication",
+            "_forward_reference": true
+          }
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "chemistry",
+          "framing": {
+            "title_in_context": "DNA Double Helix and Base Pairing",
+            "relevance": "Structural basis for hybridization, PCR, and replication chemistry.",
+            "applications": [
+              "Complementary strands",
+              "Chargaff's rules"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Nucleic Acids",
+            "topic": "Nucleic Acid Structure",
+            "subtopic": "DNA Helix"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_chemistry_l4_nucleotide_structure"
+            ],
+            "unlocks_in_context": [
+              "spine_chemistry_l4_dna_melting_temperature",
+              "spine_chemistry_l5_base_mismatch_stability",
+              "spine_chemistry_l4_dna_grooves"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "16",
+            "section": "16.2 — DNA Double-Helix Structure"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_chemistry_l4_dna_grooves",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_chemistry_l3_nucleic_acid_structure",
+      "content": {
+        "title": "Major and Minor Grooves",
+        "definition": "Shallow indentations on the surface of the DNA double helix created by the geometry of base-pair stacking, providing sites for sequence-specific protein and small-molecule binding.",
+        "summary": "The major groove exposes distinct hydrogen-bond patterns for each base pair, enabling proteins to read DNA sequence. The minor groove is narrower but also participates in molecular recognition."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Nucleic Acids",
+        "primary_domain": "chemistry",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_chemistry_l3_nucleic_acid_structure",
+        "prerequisites": [
+          "spine_chemistry_l4_dna_double_helix_base_pairing"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "chemistry",
+          "framing": {
+            "title_in_context": "Major and Minor Grooves",
+            "relevance": "Protein–DNA interaction surfaces in gene regulation.",
+            "applications": [
+              "Transcription factor binding",
+              "Minor groove binders"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Nucleic Acids",
+            "topic": "Nucleic Acid Structure",
+            "subtopic": "DNA Grooves"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_chemistry_l4_dna_double_helix_base_pairing"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "16",
+            "section": "16.2 — DNA Double-Helix Structure"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_chemistry_l4_dna_melting_temperature",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_chemistry_l3_nucleic_acid_structure",
+      "content": {
+        "title": "DNA Melting Temperature and Stability",
+        "definition": "The temperature at which half of the base pairs in a double-stranded DNA helix are disrupted, influenced by GC content, strand length, and ionic strength.",
+        "summary": "Higher GC content increases helix stability and melting temperature because G–C pairs form three hydrogen bonds. Tm is central to PCR annealing and hybridization assays."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Nucleic Acids",
+        "primary_domain": "chemistry",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_chemistry_l3_nucleic_acid_structure",
+        "prerequisites": [
+          "spine_chemistry_l4_dna_double_helix_base_pairing"
+        ],
+        "unlocks": [
+          "spine_chemistry_l5_hybridization_stringency"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "chemistry",
+          "framing": {
+            "title_in_context": "DNA Melting Temperature and Stability",
+            "relevance": "Tm guides PCR primer design and blot hybridization.",
+            "applications": [
+              "GC content effect",
+              "Melting curves"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Nucleic Acids",
+            "topic": "Nucleic Acid Structure",
+            "subtopic": "Melting Temperature"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_chemistry_l4_dna_double_helix_base_pairing"
+            ],
+            "unlocks_in_context": [
+              "spine_chemistry_l5_hybridization_stringency"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "16",
+            "section": "16.2 — DNA Double-Helix Structure"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_chemistry_l4_nucleotide_structure",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_chemistry_l3_nucleic_acid_structure",
+      "content": {
+        "title": "Nucleotide Components and Linkage",
+        "definition": "Monomeric units of nucleic acids consisting of a nitrogenous base, a pentose sugar, and one or more phosphate groups linked by 3′–5′ phosphodiester bonds in polynucleotide chains.",
+        "summary": "Nucleotides are the building blocks of DNA and RNA. Phosphodiester linkages connect the 3′ carbon of one sugar to the 5′ carbon of the next, defining strand polarity."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Nucleic Acids",
+        "primary_domain": "chemistry",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_chemistry_l3_nucleic_acid_structure",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_chemistry_l4_dna_double_helix_base_pairing",
+          "spine_chemistry_l4_rna_structure"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "chemistry",
+          "framing": {
+            "title_in_context": "Nucleotide Components and Linkage",
+            "relevance": "Foundation for polymer structure and enzymatic synthesis.",
+            "applications": [
+              "Phosphodiester bond",
+              "5′ and 3′ ends"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Nucleic Acids",
+            "topic": "Nucleic Acid Structure",
+            "subtopic": "Nucleotides"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_chemistry_l4_dna_double_helix_base_pairing",
+              "spine_chemistry_l4_rna_structure"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "16",
+            "section": "16.1 — DNA Structure and Nucleotides"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_chemistry_l4_rna_structure",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_chemistry_l3_nucleic_acid_structure",
+      "content": {
+        "title": "RNA Structure and Single-Stranded Conformation",
+        "definition": "RNA as a typically single-stranded polynucleotide with a 2′ hydroxyl group on ribose, uracil replacing thymine, and intramolecular base pairing forming hairpins and other secondary structures.",
+        "summary": "RNA's 2′-OH increases reactivity and enables diverse folding. Secondary structure through local base pairing is essential for tRNA, rRNA, and regulatory RNAs."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Nucleic Acids",
+        "primary_domain": "chemistry",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_chemistry_l3_nucleic_acid_structure",
+        "prerequisites": [
+          "spine_chemistry_l4_nucleotide_structure"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "chemistry",
+          "framing": {
+            "title_in_context": "RNA Structure and Single-Stranded Conformation",
+            "relevance": "2′-OH and uracil distinguish RNA chemical properties from DNA.",
+            "applications": [
+              "Hairpin loops",
+              "tRNA cloverleaf"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Nucleic Acids",
+            "topic": "Nucleic Acid Structure",
+            "subtopic": "RNA Structure"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_chemistry_l4_nucleotide_structure"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "16",
+            "section": "16.3 — RNA Structure"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_chemistry_l5_base_mismatch_stability",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_chemistry_l3_nucleic_acid_structure",
+      "content": {
+        "title": "Mismatch Effects on Helix Stability",
+        "definition": "Reduction in double-helix stability caused by non-Watson–Crick base pairing or bulges, including wobble pairs such as G–U, which destabilize the helix relative to perfect complementarity.",
+        "summary": "Mismatches lower melting temperature and can trigger repair or translational ambiguity. Wobble pairing in RNA accepts G–U at the third codon position without changing the encoded amino acid."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Nucleic Acids",
+        "primary_domain": "chemistry",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_chemistry_l4_dna_double_helix_base_pairing",
+        "prerequisites": [
+          "spine_chemistry_l4_dna_double_helix_base_pairing"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "chemistry",
+          "framing": {
+            "title_in_context": "Mismatch Effects on Helix Stability",
+            "relevance": "Mutation, mismatch repair, and RNA wobble at codon third position.",
+            "applications": [
+              "G–U wobble pair",
+              "Bulge loops"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Nucleic Acids",
+            "topic": "Nucleic Acid Structure",
+            "subtopic": "Mismatches"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_chemistry_l4_dna_double_helix_base_pairing"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "16",
+            "section": "16.2 — Base Pairing Specificity"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_chemistry_l5_hybridization_stringency",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_chemistry_l3_nucleic_acid_structure",
+      "content": {
+        "title": "Factors Affecting Hybridization Stringency",
+        "definition": "Experimental variables including temperature, salt concentration, and denaturants that control the specificity of complementary nucleic acid strand reannealing during hybridization.",
+        "summary": "Higher stringency favors perfect matches over partial complementarity. Stringency is tuned in PCR annealing steps, Southern/Northern blots, and microarray hybridizations."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Nucleic Acids",
+        "primary_domain": "chemistry",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_chemistry_l4_dna_melting_temperature",
+        "prerequisites": [
+          "spine_chemistry_l4_dna_melting_temperature"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "chemistry",
+          "framing": {
+            "title_in_context": "Factors Affecting Hybridization Stringency",
+            "relevance": "PCR annealing temperature and blot wash conditions.",
+            "applications": [
+              "Salt concentration",
+              "Formamide denaturation"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biochemistry",
+            "subcategory": "Nucleic Acids",
+            "topic": "Nucleic Acid Structure",
+            "subtopic": "Hybridization Stringency"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_chemistry_l4_dna_melting_temperature"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "17",
+            "section": "17.1 — Nucleic Acid Hybridization"
+          }
+        ]
+      }
+    }
+  ]
+}

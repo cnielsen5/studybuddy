@@ -1,0 +1,276 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_rotator_cuff_pathology",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "Orthopaedic L4/L5 expansion for Rotator Cuff Pathology. 4 L4, 0 L5."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_cuff_anatomy_and_impingement",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_rotator_cuff_pathology",
+      "content": {
+        "title": "Rotator Cuff Anatomy and Impingement",
+        "definition": "Supraspinatus, infraspinatus, subscapularis, teres minor roles and subacromial impingement.",
+        "summary": "Neer and Hawkins tests suggest impingement; cuff tear causes weakness not just pain."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Shoulder and Elbow",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_rotator_cuff_pathology",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Rotator Cuff Anatomy and Impingement",
+            "relevance": "Heavily tested; MOON cohort informs repair decisions.",
+            "applications": [
+              "Repair indications",
+              "Massive irreparable cuff options",
+              "Rehabilitation protocols"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Rotator Cuff",
+            "topic": "Rotator Cuff Pathology",
+            "subtopic": "Rotator Cuff Anatomy and Impingement"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Rotator Cuff Pathology",
+            "chapter": "NBK551582",
+            "section": "Rotator Cuff"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_cuff_tear_classification",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_rotator_cuff_pathology",
+      "content": {
+        "title": "Cuff Tear Classification",
+        "definition": "Partial versus full-thickness, size (small/medium/large/massive), and fatty infiltration (Goutallier).",
+        "summary": "Fatty infiltration stage 3–4 predicts poor repair healing."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Shoulder and Elbow",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_rotator_cuff_pathology",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_cuff_anatomy_and_impingement"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Cuff Tear Classification",
+            "relevance": "Heavily tested; MOON cohort informs repair decisions.",
+            "applications": [
+              "Repair indications",
+              "Massive irreparable cuff options",
+              "Rehabilitation protocols"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Rotator Cuff",
+            "topic": "Rotator Cuff Pathology",
+            "subtopic": "Cuff Tear Classification"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_cuff_anatomy_and_impingement"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Rotator Cuff Pathology",
+            "chapter": "NBK551582",
+            "section": "Rotator Cuff"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_cuff_nonoperative_management",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_rotator_cuff_pathology",
+      "content": {
+        "title": "Cuff Nonoperative Management",
+        "definition": "Physical therapy, injections, and activity modification for partial tears and low demand.",
+        "summary": "Subacromial injection provides diagnostic and therapeutic value."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Shoulder and Elbow",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_rotator_cuff_pathology",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_cuff_tear_classification"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Cuff Nonoperative Management",
+            "relevance": "Heavily tested; MOON cohort informs repair decisions.",
+            "applications": [
+              "Repair indications",
+              "Massive irreparable cuff options",
+              "Rehabilitation protocols"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Rotator Cuff",
+            "topic": "Rotator Cuff Pathology",
+            "subtopic": "Cuff Nonoperative Management"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_cuff_tear_classification"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Rotator Cuff Pathology",
+            "chapter": "NBK551582",
+            "section": "Rotator Cuff"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_cuff_repair_and_arthritis",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_rotator_cuff_pathology",
+      "content": {
+        "title": "Cuff Repair and Cuff Tear Arthropathy",
+        "definition": "Arthroscopic repair, superior capsular reconstruction, reverse shoulder arthroplasty for pseudoparalysis.",
+        "summary": "Irreparable massive tear in elderly may need reverse TSA rather than debridement alone."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Shoulder and Elbow",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_rotator_cuff_pathology",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_cuff_nonoperative_management"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Cuff Repair and Cuff Tear Arthropathy",
+            "relevance": "Heavily tested; MOON cohort informs repair decisions.",
+            "applications": [
+              "Repair indications",
+              "Massive irreparable cuff options",
+              "Rehabilitation protocols"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Rotator Cuff",
+            "topic": "Rotator Cuff Pathology",
+            "subtopic": "Cuff Repair and Cuff Tear Arthropathy"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_cuff_nonoperative_management"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Rotator Cuff Pathology",
+            "chapter": "NBK551582",
+            "section": "Rotator Cuff"
+          }
+        ]
+      }
+    }
+  ]
+}

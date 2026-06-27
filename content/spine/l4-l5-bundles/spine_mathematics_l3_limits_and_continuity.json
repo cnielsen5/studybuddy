@@ -1,0 +1,401 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_mathematics_l3_limits_and_continuity",
+    "anchor_primary_domain": "mathematics",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_mathematics_l3_limits_and_continuity.mathematics.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "6 per-context concepts merged into 6 universal concepts (6 L4 + 0 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_mathematics_l4_continuity_definition",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_limits_and_continuity",
+      "content": {
+        "title": "Continuity at a Point",
+        "definition": "A function f is continuous at x = a if lim_{x→a} f(x) = f(a), requiring the limit to exist, f(a) to be defined, and the two to be equal.",
+        "summary": "Continuity means no breaks, jumps, or holes at a point; continuous functions preserve limit structure under composition and algebraic operations."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_limits_and_continuity",
+        "prerequisites": [
+          "spine_mathematics_l4_one_sided_limits"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_intermediate_value_theorem"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Limits formalize approaching behavior and define continuity and derivatives.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Single-Variable Calculus",
+            "topic": "Limits and Continuity",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_one_sided_limits"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_intermediate_value_theorem"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 1",
+            "chapter": "2",
+            "section": "Continuity at a Point"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_intermediate_value_theorem",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_limits_and_continuity",
+      "content": {
+        "title": "Intermediate Value Theorem",
+        "definition": "If f is continuous on [a, b] and N is any value between f(a) and f(b), then there exists c in (a, b) with f(c) = N.",
+        "summary": "The IVT guarantees that continuous functions take every intermediate value, enabling root-finding arguments and existence proofs."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_limits_and_continuity",
+        "prerequisites": [
+          "spine_mathematics_l4_continuity_definition"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Limits formalize approaching behavior and define continuity and derivatives.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Single-Variable Calculus",
+            "topic": "Limits and Continuity",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_continuity_definition"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 1",
+            "chapter": "2",
+            "section": "Intermediate Value Theorem"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_limit_definition",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_limits_and_continuity",
+      "content": {
+        "title": "Limit Definition and Notation",
+        "definition": "The limit of f(x) as x approaches a is L if f(x) can be made arbitrarily close to L by taking x sufficiently close to a (but not equal to a).",
+        "summary": "Limits describe intended output value as input approaches a point, even when the function is undefined or discontinuous at that point."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_limits_and_continuity",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_mathematics_l4_one_sided_limits",
+          "spine_mathematics_l4_limit_laws"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Limits formalize approaching behavior and define continuity and derivatives.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Single-Variable Calculus",
+            "topic": "Limits and Continuity",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_one_sided_limits",
+              "spine_mathematics_l4_limit_laws"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 1",
+            "chapter": "2",
+            "section": "Limit Definition and Notation"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_limit_laws",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_limits_and_continuity",
+      "content": {
+        "title": "Limit Laws",
+        "definition": "Algebraic rules allowing limits of sums, products, quotients, and compositions to be computed from limits of constituent functions when those limits exist.",
+        "summary": "Limit laws reduce complex limit calculations to simpler component limits, analogous to derivative rules."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_limits_and_continuity",
+        "prerequisites": [
+          "spine_mathematics_l4_limit_definition"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_limits_at_infinity"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Limits formalize approaching behavior and define continuity and derivatives.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Single-Variable Calculus",
+            "topic": "Limits and Continuity",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_limit_definition"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_limits_at_infinity"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 1",
+            "chapter": "2",
+            "section": "Limit Laws"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_limits_at_infinity",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_limits_and_continuity",
+      "content": {
+        "title": "Limits at Infinity and Horizontal Asymptotes",
+        "definition": "Limits as x → ±∞ describe end behavior of functions; horizontal asymptotes occur at y = L when lim_{x→±∞} f(x) = L.",
+        "summary": "End-behavior limits classify long-term growth or decay and identify horizontal asymptotes for rational and transcendental functions."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_limits_and_continuity",
+        "prerequisites": [
+          "spine_mathematics_l4_limit_laws"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Limits formalize approaching behavior and define continuity and derivatives.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Single-Variable Calculus",
+            "topic": "Limits and Continuity",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_limit_laws"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 1",
+            "chapter": "4",
+            "section": "Limits at Infinity and Horizontal Asymptotes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_one_sided_limits",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_limits_and_continuity",
+      "content": {
+        "title": "One-Sided Limits",
+        "definition": "Left-hand limit (x → a⁻) and right-hand limit (x → a⁺) describe approach from one side; the two-sided limit exists only when both one-sided limits agree.",
+        "summary": "One-sided limits resolve piecewise behavior and are essential for defining continuity at endpoints and analyzing jump discontinuities."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_limits_and_continuity",
+        "prerequisites": [
+          "spine_mathematics_l4_limit_definition"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_continuity_definition"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Limits formalize approaching behavior and define continuity and derivatives.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Single-Variable Calculus",
+            "topic": "Limits and Continuity",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_limit_definition"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_continuity_definition"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 1",
+            "chapter": "2",
+            "section": "One-Sided Limits"
+          }
+        ]
+      }
+    }
+  ]
+}

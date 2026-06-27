@@ -1,0 +1,548 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_ankle_sprains_and_chronic_instability",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "ABOS-aligned scaffold for abos_p2_foot_ankle."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_ankle_sprains_and_chronic_instability_core_principles",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_ankle_sprains_and_chronic_instability",
+      "content": {
+        "title": "Ankle Sprains and Chronic Instability — Core Principles",
+        "definition": "Lateral and medial ligament sprains of the ankle and chronic functional or mechanical instability after incomplete healing.",
+        "summary": "ATFL and CFL are commonly injured in inversion. Chronic instability may require Broström repair or ligament reconstruction."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Foot and Ankle",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_ankle_sprains_and_chronic_instability",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Ankle Sprains and Chronic Instability — Core Principles",
+            "relevance": "ABOS ankle sprain section 1%.",
+            "applications": [
+              "Acute sprain rehabilitation",
+              "Broström repair",
+              "Chronic instability assessment"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Ankle Instability",
+            "topic": "Ankle Sprains and Chronic Instability",
+            "subtopic": "Ankle Sprains and Chronic Instability — Core Principles"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Ankle Sprains and Chronic Instability",
+            "chapter": "NBK557386",
+            "section": "Ankle Sprains"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_ankle_sprains_and_chronic_instability_evaluation_and_diagnos",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_ankle_sprains_and_chronic_instability",
+      "content": {
+        "title": "Evaluation and Diagnosis",
+        "definition": "History, physical examination, and initial imaging for ankle sprains and chronic instability.",
+        "summary": "Systematic assessment identifies severity, associated injuries, and urgency in ankle sprains and chronic instability."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Foot and Ankle",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_ankle_sprains_and_chronic_instability",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_ankle_sprains_and_chronic_instability_core_principles"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Evaluation and Diagnosis",
+            "relevance": "ABOS ankle sprain section 1%.",
+            "applications": [
+              "Acute sprain rehabilitation",
+              "Broström repair",
+              "Chronic instability assessment"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Ankle Instability",
+            "topic": "Ankle Sprains and Chronic Instability",
+            "subtopic": "Evaluation and Diagnosis"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_ankle_sprains_and_chronic_instability_core_principles"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Ankle Sprains and Chronic Instability",
+            "chapter": "NBK557386",
+            "section": "Ankle Sprains"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_ankle_sprains_and_chronic_instability_management_principles",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_ankle_sprains_and_chronic_instability",
+      "content": {
+        "title": "Management Principles",
+        "definition": "Nonoperative and operative treatment algorithms for ankle sprains and chronic instability.",
+        "summary": "ATFL and CFL are commonly injured in inversion."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Foot and Ankle",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_ankle_sprains_and_chronic_instability",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_ankle_sprains_and_chronic_instability_evaluation_and_diagnos"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Management Principles",
+            "relevance": "ABOS ankle sprain section 1%.",
+            "applications": [
+              "Acute sprain rehabilitation",
+              "Broström repair",
+              "Chronic instability assessment"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Ankle Instability",
+            "topic": "Ankle Sprains and Chronic Instability",
+            "subtopic": "Management Principles"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_ankle_sprains_and_chronic_instability_evaluation_and_diagnos"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Ankle Sprains and Chronic Instability",
+            "chapter": "NBK557386",
+            "section": "Ankle Sprains"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_ankle_sprains_and_chronic_instability_acute_sprain_rehabilit",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_ankle_sprains_and_chronic_instability",
+      "content": {
+        "title": "Acute sprain rehabilitation",
+        "definition": "Focused assessment and management of acute sprain rehabilitation in the context of ankle sprains and chronic instability.",
+        "summary": "Acute sprain rehabilitation — key decision points from Foot and Ankle practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Foot and Ankle",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_ankle_sprains_and_chronic_instability",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_ankle_sprains_and_chronic_instability_management_principles"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Acute sprain rehabilitation",
+            "relevance": "ABOS ankle sprain section 1%.",
+            "applications": [
+              "Acute sprain rehabilitation",
+              "Broström repair",
+              "Chronic instability assessment"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Ankle Instability",
+            "topic": "Ankle Sprains and Chronic Instability",
+            "subtopic": "Acute sprain rehabilitation"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_ankle_sprains_and_chronic_instability_management_principles"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Ankle Sprains and Chronic Instability",
+            "chapter": "NBK557386",
+            "section": "Ankle Sprains"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_ankle_sprains_and_chronic_instability_brostr_m_repair",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_ankle_sprains_and_chronic_instability",
+      "content": {
+        "title": "Broström repair",
+        "definition": "Focused assessment and management of broström repair in the context of ankle sprains and chronic instability.",
+        "summary": "Broström repair — key decision points from Foot and Ankle practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Foot and Ankle",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_ankle_sprains_and_chronic_instability",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_ankle_sprains_and_chronic_instability_acute_sprain_rehabilit"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Broström repair",
+            "relevance": "ABOS ankle sprain section 1%.",
+            "applications": [
+              "Acute sprain rehabilitation",
+              "Broström repair",
+              "Chronic instability assessment"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Ankle Instability",
+            "topic": "Ankle Sprains and Chronic Instability",
+            "subtopic": "Broström repair"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_ankle_sprains_and_chronic_instability_acute_sprain_rehabilit"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Ankle Sprains and Chronic Instability",
+            "chapter": "NBK557386",
+            "section": "Ankle Sprains"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_ankle_sprains_and_chronic_instability_chronic_instability_as",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_ankle_sprains_and_chronic_instability",
+      "content": {
+        "title": "Chronic instability assessment",
+        "definition": "Focused assessment and management of chronic instability assessment in the context of ankle sprains and chronic instability.",
+        "summary": "Chronic instability assessment — key decision points from Foot and Ankle practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Foot and Ankle",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_ankle_sprains_and_chronic_instability",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_ankle_sprains_and_chronic_instability_brostr_m_repair"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Chronic instability assessment",
+            "relevance": "ABOS ankle sprain section 1%.",
+            "applications": [
+              "Acute sprain rehabilitation",
+              "Broström repair",
+              "Chronic instability assessment"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Ankle Instability",
+            "topic": "Ankle Sprains and Chronic Instability",
+            "subtopic": "Chronic instability assessment"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_ankle_sprains_and_chronic_instability_brostr_m_repair"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Ankle Sprains and Chronic Instability",
+            "chapter": "NBK557386",
+            "section": "Ankle Sprains"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_ankle_sprains_and_chronic_instability_complications_and_outc",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_ankle_sprains_and_chronic_instability",
+      "content": {
+        "title": "Complications and Outcomes",
+        "definition": "Recognized complications, failure modes, and expected recovery after treatment of ankle sprains and chronic instability.",
+        "summary": "Anticipate, diagnose, and manage complications; counsel on prognosis and rehabilitation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Foot and Ankle",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_ankle_sprains_and_chronic_instability",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_ankle_sprains_and_chronic_instability_chronic_instability_as"
+        ],
+        "unlocks": [
+          "spine_medicine_clinical_l5_ankle_sprains_and_chronic_instability_salvage_and_revision"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Complications and Outcomes",
+            "relevance": "ABOS ankle sprain section 1%.",
+            "applications": [
+              "Acute sprain rehabilitation",
+              "Broström repair",
+              "Chronic instability assessment"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Ankle Instability",
+            "topic": "Ankle Sprains and Chronic Instability",
+            "subtopic": "Complications and Outcomes"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_ankle_sprains_and_chronic_instability_chronic_instability_as"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_clinical_l5_ankle_sprains_and_chronic_instability_salvage_and_revision"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Ankle Sprains and Chronic Instability",
+            "chapter": "NBK557386",
+            "section": "Ankle Sprains"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l5_ankle_sprains_and_chronic_instability_salvage_and_revision",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_clinical_l3_ankle_sprains_and_chronic_instability",
+      "content": {
+        "title": "Salvage and Revision Strategies",
+        "definition": "Revision and salvage options when initial management of ankle sprains and chronic instability fails.",
+        "summary": "Staged revision and alternative strategies when primary treatment fails or complications develop."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Foot and Ankle",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l4_ankle_sprains_and_chronic_instability_complications_and_outc",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_ankle_sprains_and_chronic_instability_complications_and_outc"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Salvage and Revision Strategies",
+            "relevance": "ABOS ankle sprain section 1%.",
+            "applications": [
+              "Acute sprain rehabilitation",
+              "Broström repair",
+              "Chronic instability assessment"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Ankle Instability",
+            "topic": "Ankle Sprains and Chronic Instability",
+            "subtopic": "Salvage and Revision Strategies"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_ankle_sprains_and_chronic_instability_complications_and_outc"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Ankle Sprains and Chronic Instability",
+            "chapter": "NBK557386",
+            "section": "Ankle Sprains"
+          }
+        ]
+      }
+    }
+  ]
+}

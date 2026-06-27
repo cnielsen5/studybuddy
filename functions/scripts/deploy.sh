@@ -53,7 +53,7 @@ fi
 # Check current project (macOS-compatible)
 # firebase use outputs the project ID directly when a project is selected
 # First line is usually the project ID or "Using <alias> (<project-id>)"
-FIREBASE_OUTPUT=$(npx firebase use 2>&1 | head -1 | xargs)
+FIREBASE_OUTPUT=$(npx firebase use 2>&1 | grep -E '^[a-zA-Z0-9-]+$' | tail -1 | xargs)
 CURRENT_PROJECT="none"
 
 # Check if output contains project ID pattern (alphanumeric with hyphens)

@@ -1,0 +1,209 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_deep_vein_thrombosis_pe",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "Orthopaedic domain_context L4/L5 on existing node; deferred from orthopaedic_postoperative_thromboembolism_prophylaxis."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_ortho_vte_risk_after_arthroplasty",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_deep_vein_thrombosis_pe",
+      "content": {
+        "title": "VTE Risk After Hip and Knee Arthroplasty",
+        "definition": "Elevated venous thromboembolism risk after total joint arthroplasty requiring risk-stratified prophylaxis.",
+        "summary": "Mechanical and pharmacologic prophylaxis reduce symptomatic VTE; balance bleeding risk."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_deep_vein_thrombosis_pe",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "VTE Risk After Hip and Knee Arthroplasty",
+            "relevance": "Orthopaedic perioperative context deferred from merged L3 orthopaedic_postoperative_thromboembolism_prophylaxis. (orthopaedic perioperative context on existing clinical node)",
+            "applications": [
+              "Arthroplasty",
+              "Fracture surgery",
+              "Perioperative bundles"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Perioperative Medicine",
+            "topic": "orthopaedic postoperative thromboembolism prophylaxis",
+            "subtopic": "VTE Risk After Hip and Knee Arthroplasty"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — orthopaedic postoperative thromboembolism prophylaxis",
+            "chapter": "NBK557519",
+            "section": "VTE Prophylaxis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_ortho_vte_prophylaxis_regimens",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_deep_vein_thrombosis_pe",
+      "content": {
+        "title": "Orthopaedic VTE Prophylaxis Regimens",
+        "definition": "Aspirin, LMWH, warfarin, and DOAC options with duration guidelines after arthroplasty and hip fracture surgery.",
+        "summary": "AAOS and CHEST guidelines inform agent selection; aspirin acceptable in selected TJA patients."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_deep_vein_thrombosis_pe",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_ortho_vte_risk_after_arthroplasty"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Orthopaedic VTE Prophylaxis Regimens",
+            "relevance": "Orthopaedic perioperative context deferred from merged L3 orthopaedic_postoperative_thromboembolism_prophylaxis. (orthopaedic perioperative context on existing clinical node)",
+            "applications": [
+              "Arthroplasty",
+              "Fracture surgery",
+              "Perioperative bundles"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Perioperative Medicine",
+            "topic": "orthopaedic postoperative thromboembolism prophylaxis",
+            "subtopic": "Orthopaedic VTE Prophylaxis Regimens"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_ortho_vte_risk_after_arthroplasty"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — orthopaedic postoperative thromboembolism prophylaxis",
+            "chapter": "NBK557519",
+            "section": "Prophylaxis Regimens"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_ortho_hip_fracture_vte",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_deep_vein_thrombosis_pe",
+      "content": {
+        "title": "VTE Prophylaxis After Hip Fracture Surgery",
+        "definition": "Extended prophylaxis considerations in elderly hip fracture patients with prolonged immobility.",
+        "summary": "Higher baseline VTE risk; combine mechanical and pharmacologic prophylaxis when not contraindicated."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_deep_vein_thrombosis_pe",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_ortho_vte_prophylaxis_regimens"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "VTE Prophylaxis After Hip Fracture Surgery",
+            "relevance": "Orthopaedic perioperative context deferred from merged L3 orthopaedic_postoperative_thromboembolism_prophylaxis. (orthopaedic perioperative context on existing clinical node)",
+            "applications": [
+              "Arthroplasty",
+              "Fracture surgery",
+              "Perioperative bundles"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Perioperative Medicine",
+            "topic": "orthopaedic postoperative thromboembolism prophylaxis",
+            "subtopic": "VTE Prophylaxis After Hip Fracture Surgery"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_ortho_vte_prophylaxis_regimens"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — orthopaedic postoperative thromboembolism prophylaxis",
+            "chapter": "NBK557519",
+            "section": "Hip Fracture"
+          }
+        ]
+      }
+    }
+  ]
+}

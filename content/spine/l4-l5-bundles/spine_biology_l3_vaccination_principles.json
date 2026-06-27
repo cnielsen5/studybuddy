@@ -1,0 +1,829 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_biology_l3_vaccination_principles",
+    "anchor_primary_domain": "biology",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_biology_l3_vaccination_principles.biology.json",
+      "content/spine/l4-l5-bundles/spine_biology_l3_vaccination_principles.medicine_preclinical.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "13 per-context concepts merged into 13 universal concepts (10 L4 + 3 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_biology_l4_active_immunization_principle",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_vaccination_principles",
+      "content": {
+        "title": "Active Immunization Principle",
+        "definition": "Deliberate antigen exposure inducing adaptive immune memory without causing significant disease, priming B and T cells for rapid recall upon natural exposure.",
+        "summary": "Active immunization generates endogenous immunity. Booster doses enhance memory magnitude and affinity."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Immunology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_vaccination_principles",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_biology_l4_live_attenuated_vs_inactivated",
+          "spine_biology_l4_subunit_conjugate_vaccines",
+          "spine_biology_l4_vaccine_types",
+          "spine_biology_l4_booster_immunization"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Active Immunization",
+            "relevance": "Core principle of preventive vaccination.",
+            "applications": [
+              "Memory induction",
+              "Antigen exposure"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Immune Applications",
+            "topic": "Vaccination",
+            "subtopic": "Active Immunization"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_biology_l4_vaccine_types",
+              "spine_biology_l4_booster_immunization"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Active Immunization Principle",
+            "relevance": "Primary immunization series design.",
+            "applications": [
+              "Antigen presentation to lymphocytes",
+              "Memory cell generation"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Vaccination",
+            "topic": "Vaccine Principles",
+            "subtopic": "Active Immunization"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_biology_l4_live_attenuated_vs_inactivated",
+              "spine_biology_l4_subunit_conjugate_vaccines"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-26T05:54:17.140Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "44",
+            "section": "44.7"
+          },
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "44",
+            "section": "44.14"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_booster_immunization",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_vaccination_principles",
+      "content": {
+        "title": "Booster Immunization",
+        "definition": "Additional vaccine doses administered after the primary series to maintain or enhance immunologic memory and protective antibody levels.",
+        "summary": "Boosters exploit secondary immune responses for rapid, high-titer antibody production. They are essential when primary responses wane or when facing variant antigens."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Immune Applications",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_vaccination_principles",
+        "prerequisites": [
+          "spine_biology_l4_active_immunization_principle"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Booster Immunization",
+            "relevance": "Sustains long-term vaccine protection.",
+            "applications": [
+              "Secondary response",
+              "Schedule design"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Immune Applications",
+            "topic": "Vaccination",
+            "subtopic": "Boosters"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_active_immunization_principle"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "chapter": "Vaccines",
+            "section": "Booster Doses"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_herd_immunity_threshold",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_vaccination_principles",
+      "content": {
+        "title": "Herd Immunity and Coverage Thresholds",
+        "definition": "Population-level protection when sufficient immunized individuals interrupt pathogen transmission, protecting unvaccinated vulnerable members.",
+        "summary": "Threshold depends on R0: higher transmissibility requires higher coverage. Herd immunity reduces outbreak size."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Immunology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_vaccination_principles",
+        "prerequisites": [
+          "spine_biology_l4_subunit_conjugate_vaccines",
+          "spine_biology_l4_active_immunization_principle"
+        ],
+        "unlocks": [
+          "spine_biology_l4_vaccine_adverse_events_contraindications"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Herd Immunity",
+            "relevance": "Population-level protection from vaccination.",
+            "applications": [
+              "Transmission reduction",
+              "Coverage thresholds"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Immune Applications",
+            "topic": "Vaccination",
+            "subtopic": "Herd Immunity"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_active_immunization_principle"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Herd Immunity and Coverage Thresholds",
+            "relevance": "Public health vaccination targets.",
+            "applications": [
+              "R0 and coverage threshold",
+              "Protection of immunocompromised"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Vaccination",
+            "topic": "Vaccine Principles",
+            "subtopic": "Herd Immunity"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_subunit_conjugate_vaccines",
+              "spine_biology_l4_active_immunization_principle"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_vaccine_adverse_events_contraindications"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-27T03:29:52.593Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "section": "Herd Immunity",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          },
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "44",
+            "section": "44.16"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_live_attenuated_vs_inactivated",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_vaccination_principles",
+      "content": {
+        "title": "Live Attenuated vs Inactivated Vaccines",
+        "definition": "Live attenuated vaccines use weakened pathogens replicating to mimic natural infection; inactivated vaccines use killed organisms or fractions unable to replicate.",
+        "summary": "Live vaccines generally produce stronger, longer-lasting immunity but carry contraindications in immunocompromised hosts. Inactivated vaccines often require adjuvants and boosters."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Immunology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_vaccination_principles",
+        "prerequisites": [
+          "spine_biology_l4_active_immunization_principle"
+        ],
+        "unlocks": [
+          "spine_biology_l5_pregnancy_live_vaccine_contraindication"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Live Attenuated vs Inactivated Vaccines",
+            "relevance": "MMR (live) vs flu shot (inactivated) contraindications.",
+            "applications": [
+              "MMR live attenuated",
+              "Influenza inactivated"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Vaccination",
+            "topic": "Vaccine Principles",
+            "subtopic": "Live vs Killed"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_active_immunization_principle"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l5_pregnancy_live_vaccine_contraindication"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "section": "Vaccines — Live Attenuated",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_passive_immunization",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_vaccination_principles",
+      "content": {
+        "title": "Passive Immunization",
+        "definition": "Administration of pre-formed antibodies (immune globulins or antitoxins) providing immediate but temporary protection without generating host memory.",
+        "summary": "Passive immunization is used for post-exposure prophylaxis and toxin neutralization. Protection wanes as administered antibodies are degraded."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Immune Applications",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_vaccination_principles",
+        "prerequisites": [
+          "spine_biology_l4_vaccine_types"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Passive Immunization",
+            "relevance": "Immediate antibody protection without adaptive memory.",
+            "applications": [
+              "Immune globulin",
+              "Antitoxin"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Immune Applications",
+            "topic": "Vaccination",
+            "subtopic": "Passive Immunization"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_vaccine_types"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "chapter": "Vaccines",
+            "section": "Passive Immunization"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_subunit_conjugate_vaccines",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_vaccination_principles",
+      "content": {
+        "title": "Subunit, Conjugate, and Nucleic Acid Vaccines",
+        "definition": "Vaccine platforms using purified antigens, polysaccharide-protein conjugates, or nucleic acids encoding immunogens to induce targeted adaptive responses.",
+        "summary": "Conjugate vaccines improve T-dependent responses to polysaccharides. mRNA vaccines deliver genetic instructions for antigen expression."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Immunology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_vaccination_principles",
+        "prerequisites": [
+          "spine_biology_l4_active_immunization_principle"
+        ],
+        "unlocks": [
+          "spine_biology_l4_herd_immunity_threshold"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Subunit, Conjugate, and Nucleic Acid Vaccines",
+            "relevance": "Hib conjugate and mRNA COVID vaccines.",
+            "applications": [
+              "Hib conjugate vaccine",
+              "mRNA lipid nanoparticle delivery"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Vaccination",
+            "topic": "Vaccine Principles",
+            "subtopic": "Subunit Platforms"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_active_immunization_principle"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_herd_immunity_threshold"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "44",
+            "section": "44.7"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_vaccine_adverse_events_contraindications",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_vaccination_principles",
+      "content": {
+        "title": "Vaccine Adverse Events and Contraindications",
+        "definition": "Expected local and systemic reactogenicity versus rare serious adverse events, with absolute and relative contraindications guiding safe immunization.",
+        "summary": "Most reactions are mild (soreness, fever). Anaphylaxis is rare. Live vaccines avoided in severe immunodeficiency and pregnancy."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Immunology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_vaccination_principles",
+        "prerequisites": [
+          "spine_biology_l4_herd_immunity_threshold"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Vaccine Adverse Events and Contraindications",
+            "relevance": "Step 1 contraindication scenarios.",
+            "applications": [
+              "Anaphylaxis to vaccine component",
+              "Immunocompromised live vaccine avoidance"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Vaccination",
+            "topic": "Vaccine Principles",
+            "subtopic": "Safety"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_herd_immunity_threshold"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "section": "Vaccine Adverse Reactions",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_vaccine_types",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_vaccination_principles",
+      "content": {
+        "title": "Vaccine Types",
+        "definition": "Classification of vaccines including live attenuated, inactivated, subunit, conjugate, and nucleic acid platforms differing in immunogenicity and safety profiles.",
+        "summary": "Live attenuated vaccines mimic natural infection with strong memory but contraindications in immunocompromised hosts. Inactivated and subunit vaccines are safer but often require adjuvants and boosters."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Immune Applications",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_vaccination_principles",
+        "prerequisites": [
+          "spine_biology_l4_active_immunization_principle"
+        ],
+        "unlocks": [
+          "spine_biology_l4_passive_immunization"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Vaccine Types",
+            "relevance": "Platform selection balances efficacy and safety.",
+            "applications": [
+              "Live attenuated",
+              "mRNA vaccines"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Immune Applications",
+            "topic": "Vaccination",
+            "subtopic": "Vaccine Types"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_active_immunization_principle"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_passive_immunization"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "44",
+            "section": "44.15"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l5_booster_dose_rationale",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_biology_l3_vaccination_principles",
+      "content": {
+        "title": "Booster Dose Rationale",
+        "definition": "Additional vaccine doses re-stimulating memory lymphocytes to increase antibody titer, affinity, and duration of protection.",
+        "summary": "Primary series establishes memory; boosters expand clone size and drive affinity maturation. Waning immunity necessitates periodic boosters."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Immunology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l4_active_immunization_principle",
+        "prerequisites": [
+          "spine_biology_l4_active_immunization_principle"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Booster Dose Rationale",
+            "relevance": "Tetanus and pertussis booster schedules.",
+            "applications": [
+              "Tdap adult booster",
+              "Waning antibody titers"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Vaccination",
+            "topic": "Vaccine Principles",
+            "subtopic": "Boosters"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_active_immunization_principle"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "44",
+            "section": "44.7"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l5_mrna_vaccine_mechanism",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_biology_l3_vaccination_principles",
+      "content": {
+        "title": "mRNA Vaccine Mechanism",
+        "definition": "Lipid nanoparticle-encapsulated mRNA delivered to cells for transient antigen expression, processed through MHC pathways to induce humoral and cellular immunity.",
+        "summary": "mRNA does not integrate into genome. Platform enables rapid design against emerging pathogens."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Immunology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l4_subunit_conjugate_vaccines",
+        "prerequisites": [
+          "spine_biology_l4_subunit_conjugate_vaccines"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "mRNA Vaccine Mechanism",
+            "relevance": "Modern vaccine platform understanding.",
+            "applications": [
+              "Lipid nanoparticle delivery",
+              "Spike protein expression"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Vaccination",
+            "topic": "Vaccine Principles",
+            "subtopic": "mRNA"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_subunit_conjugate_vaccines"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "section": "mRNA Vaccines",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l5_pregnancy_live_vaccine_contraindication",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_biology_l3_vaccination_principles",
+      "content": {
+        "title": "Pregnancy and Live Vaccine Contraindication",
+        "definition": "Live attenuated vaccines (MMR, varicella) contraindicated in pregnancy due to theoretical fetal infection risk; inactivated vaccines generally preferred.",
+        "summary": "Rubella vaccination prevents congenital rubella syndrome but must be given pre-conception or postpartum, not during pregnancy."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Immunology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l4_live_attenuated_vs_inactivated",
+        "prerequisites": [
+          "spine_biology_l4_live_attenuated_vs_inactivated"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Pregnancy and Live Vaccine Contraindication",
+            "relevance": "Obstetric immunization guidelines.",
+            "applications": [
+              "MMR contraindicated in pregnancy",
+              "Tdap recommended in pregnancy"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Vaccination",
+            "topic": "Vaccine Principles",
+            "subtopic": "Pregnancy"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_live_attenuated_vs_inactivated"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "section": "Vaccination in Pregnancy",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    }
+  ]
+}

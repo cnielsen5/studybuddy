@@ -1,0 +1,276 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_spinal_cord_injury_syndromes",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "Orthopaedic L4/L5 expansion for Spinal Cord Injury Syndromes. 4 L4, 0 L5."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_complete_vs_incomplete_sci",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_spinal_cord_injury_syndromes",
+      "content": {
+        "title": "Complete vs Incomplete SCI",
+        "definition": "ASIA Impairment Scale grading motor and sensory function below injury level.",
+        "summary": "Incomplete injuries have better recovery potential; zone of partial preservation matters."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Spine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_spinal_cord_injury_syndromes",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Complete vs Incomplete SCI",
+            "relevance": "ABOS nonspecific spine section; critical for trauma and degenerative emergencies.",
+            "applications": [
+              "ASIA examination",
+              "Syndrome pattern recognition",
+              "Steroid protocol knowledge"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Spinal Cord Injury",
+            "topic": "Spinal Cord Injury Syndromes",
+            "subtopic": "Complete vs Incomplete SCI"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Spinal Cord Injury Syndromes",
+            "chapter": "NBK448124",
+            "section": "Spinal Cord Injury"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_central_cord_anterior_posterior_syndromes",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_spinal_cord_injury_syndromes",
+      "content": {
+        "title": "Central Cord, Anterior Cord, and Brown-Séquard Syndromes",
+        "definition": "Incomplete injury patterns with characteristic motor and sensory deficits by tract involvement.",
+        "summary": "Central cord: upper extremity weakness greater than lower in hyperextension injury."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Spine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_spinal_cord_injury_syndromes",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_complete_vs_incomplete_sci"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Central Cord, Anterior Cord, and Brown-Séquard Syndromes",
+            "relevance": "ABOS nonspecific spine section; critical for trauma and degenerative emergencies.",
+            "applications": [
+              "ASIA examination",
+              "Syndrome pattern recognition",
+              "Steroid protocol knowledge"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Spinal Cord Injury",
+            "topic": "Spinal Cord Injury Syndromes",
+            "subtopic": "Central Cord, Anterior Cord, and Brown-Séquard Syndromes"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_complete_vs_incomplete_sci"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Spinal Cord Injury Syndromes",
+            "chapter": "NBK448124",
+            "section": "Spinal Cord Injury"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_autonomic_dysreflexia_and_complications",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_spinal_cord_injury_syndromes",
+      "content": {
+        "title": "Autonomic Dysreflexia and Chronic SCI Complications",
+        "definition": "Hypertensive crisis from noxious stimulus below T6 lesion; pressure injuries and spasticity.",
+        "summary": "Remove stimulus first; sit patient up; nitroglycerin if severe."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Spine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_spinal_cord_injury_syndromes",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_central_cord_anterior_posterior_syndromes"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Autonomic Dysreflexia and Chronic SCI Complications",
+            "relevance": "ABOS nonspecific spine section; critical for trauma and degenerative emergencies.",
+            "applications": [
+              "ASIA examination",
+              "Syndrome pattern recognition",
+              "Steroid protocol knowledge"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Spinal Cord Injury",
+            "topic": "Spinal Cord Injury Syndromes",
+            "subtopic": "Autonomic Dysreflexia and Chronic SCI Complications"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_central_cord_anterior_posterior_syndromes"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Spinal Cord Injury Syndromes",
+            "chapter": "NBK448124",
+            "section": "Spinal Cord Injury"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_sci_rehabilitation_and_prognosis",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_spinal_cord_injury_syndromes",
+      "content": {
+        "title": "SCI Rehabilitation and Prognosis",
+        "definition": "Multidisciplinary rehab, bladder-bowel management, and functional goals by injury level.",
+        "summary": "C6 independence in ADLs; T12 community ambulation with bracing in complete injury."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Spine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_spinal_cord_injury_syndromes",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_autonomic_dysreflexia_and_complications"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "SCI Rehabilitation and Prognosis",
+            "relevance": "ABOS nonspecific spine section; critical for trauma and degenerative emergencies.",
+            "applications": [
+              "ASIA examination",
+              "Syndrome pattern recognition",
+              "Steroid protocol knowledge"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Spinal Cord Injury",
+            "topic": "Spinal Cord Injury Syndromes",
+            "subtopic": "SCI Rehabilitation and Prognosis"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_autonomic_dysreflexia_and_complications"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Spinal Cord Injury Syndromes",
+            "chapter": "NBK448124",
+            "section": "Spinal Cord Injury"
+          }
+        ]
+      }
+    }
+  ]
+}

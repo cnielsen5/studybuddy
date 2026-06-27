@@ -1,0 +1,352 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_general_paediatric_trauma",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "A2: Child abuse and NAT live here — not under physeal injuries L3."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_paediatric_trauma_assessment",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_general_paediatric_trauma",
+      "content": {
+        "title": "Paediatric Trauma Assessment",
+        "definition": "Age-specific injury patterns, skeletal immaturity, and higher ligamentous-to-bone injury ratio in children.",
+        "summary": "Children tolerate blood loss poorly; prioritize ATLS pediatric resuscitation before fracture fixation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_general_paediatric_trauma",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Paediatric Trauma Assessment",
+            "relevance": "ABOS paediatric trauma and child protection content; home for NAT recognition per resident review.",
+            "applications": [
+              "Non-accidental trauma recognition",
+              "Skeletal survey indications",
+              "High-energy paediatric polytrauma",
+              "Mandatory reporting"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Paediatric Trauma",
+            "topic": "General Paediatric Trauma",
+            "subtopic": "Paediatric Trauma Assessment"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — General Paediatric Trauma",
+            "chapter": "NBK557519",
+            "section": "Paediatric Trauma"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_non_accidental_trauma_recognition",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_general_paediatric_trauma",
+      "content": {
+        "title": "Non-Accidental Trauma and Child Abuse Recognition",
+        "definition": "Suspicious injury patterns including metaphyseal corner fractures, posterior rib fractures, and inconsistent history requiring mandatory reporting.",
+        "summary": "Ten-four-fifty rule and multiple injuries at different stages raise concern. Skeletal survey in infants."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_general_paediatric_trauma",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_paediatric_trauma_assessment"
+        ],
+        "unlocks": [
+          "spine_medicine_clinical_l5_nat_reporting_and_team_approach"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Non-Accidental Trauma and Child Abuse Recognition",
+            "relevance": "ABOS paediatric trauma and child protection content; home for NAT recognition per resident review.",
+            "applications": [
+              "Non-accidental trauma recognition",
+              "Skeletal survey indications",
+              "High-energy paediatric polytrauma",
+              "Mandatory reporting"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Paediatric Trauma",
+            "topic": "General Paediatric Trauma",
+            "subtopic": "Non-Accidental Trauma and Child Abuse Recognition"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_paediatric_trauma_assessment"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_clinical_l5_nat_reporting_and_team_approach"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — General Paediatric Trauma",
+            "chapter": "NBK557519",
+            "section": "Child Abuse"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l5_nat_reporting_and_team_approach",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_clinical_l3_general_paediatric_trauma",
+      "content": {
+        "title": "NAT Reporting and Multidisciplinary Team Approach",
+        "definition": "Legal reporting obligations, child protection team coordination, and safe discharge planning.",
+        "summary": "Document meticulously; involve social work and pediatric specialists before orthopaedic discharge."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l4_non_accidental_trauma_recognition",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_non_accidental_trauma_recognition"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "NAT Reporting and Multidisciplinary Team Approach",
+            "relevance": "ABOS paediatric trauma and child protection content; home for NAT recognition per resident review.",
+            "applications": [
+              "Non-accidental trauma recognition",
+              "Skeletal survey indications",
+              "High-energy paediatric polytrauma",
+              "Mandatory reporting"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Paediatric Trauma",
+            "topic": "General Paediatric Trauma",
+            "subtopic": "NAT Reporting and Multidisciplinary Team Approach"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_non_accidental_trauma_recognition"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — General Paediatric Trauma",
+            "chapter": "NBK557519",
+            "section": "Child Protection"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_high_energy_paediatric_fractures",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_general_paediatric_trauma",
+      "content": {
+        "title": "High-Energy Paediatric Fractures",
+        "definition": "Polytrauma, open fractures, and floating knee patterns in children with growth plate and vascular considerations.",
+        "summary": "Vascular injury risk in supracondylar and femoral fractures requires serial neurovascular exams."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_general_paediatric_trauma",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_non_accidental_trauma_recognition"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "High-Energy Paediatric Fractures",
+            "relevance": "ABOS paediatric trauma and child protection content; home for NAT recognition per resident review.",
+            "applications": [
+              "Non-accidental trauma recognition",
+              "Skeletal survey indications",
+              "High-energy paediatric polytrauma",
+              "Mandatory reporting"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Paediatric Trauma",
+            "topic": "General Paediatric Trauma",
+            "subtopic": "High-Energy Paediatric Fractures"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_non_accidental_trauma_recognition"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — General Paediatric Trauma",
+            "chapter": "NBK557519",
+            "section": "High-Energy Trauma"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_paediatric_trauma_imaging",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_general_paediatric_trauma",
+      "content": {
+        "title": "Paediatric Trauma Imaging",
+        "definition": "Radiographic protocols including skeletal survey, CT sparingly, and MRI for occult injury and NAT evaluation.",
+        "summary": "Low-dose CT when needed; compare with skeletal maturity and ossification centers."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_general_paediatric_trauma",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_high_energy_paediatric_fractures"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Paediatric Trauma Imaging",
+            "relevance": "ABOS paediatric trauma and child protection content; home for NAT recognition per resident review.",
+            "applications": [
+              "Non-accidental trauma recognition",
+              "Skeletal survey indications",
+              "High-energy paediatric polytrauma",
+              "Mandatory reporting"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Paediatric Trauma",
+            "topic": "General Paediatric Trauma",
+            "subtopic": "Paediatric Trauma Imaging"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_high_energy_paediatric_fractures"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — General Paediatric Trauma",
+            "chapter": "NBK557519",
+            "section": "Imaging"
+          }
+        ]
+      }
+    }
+  ]
+}

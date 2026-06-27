@@ -1,0 +1,346 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_mathematics_l3_first_order_odes",
+    "anchor_primary_domain": "mathematics",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_mathematics_l3_first_order_odes.mathematics.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "5 per-context concepts merged into 5 universal concepts (5 L4 + 0 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_mathematics_l4_direction_fields",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_first_order_odes",
+      "content": {
+        "title": "Direction Fields and Slope Visualization",
+        "definition": "Graphical display of short slope segments at grid points for y′ = f(x, y), revealing solution curve behavior qualitatively.",
+        "summary": "Direction fields preview equilibria, stability, and asymptotic behavior without explicit solutions."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Dynamical Systems",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_first_order_odes",
+        "prerequisites": [
+          "spine_mathematics_l4_ode_classification"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_eulers_method"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "First-order ODEs model single-step dynamics and growth-decay processes.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Differential Equations",
+            "topic": "First-Order Ordinary Differential Equations",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_ode_classification"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_eulers_method"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 2",
+            "chapter": "4",
+            "section": "Direction Fields and Slope Visualization"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_eulers_method",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_first_order_odes",
+      "content": {
+        "title": "Euler's Method",
+        "definition": "Numerical approximation y_{n+1} = y_n + h·f(x_n, y_n) stepping along the direction field with step size h.",
+        "summary": "Euler's method provides numerical solutions when analytic methods fail and introduces numerical error concepts."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Dynamical Systems",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_first_order_odes",
+        "prerequisites": [
+          "spine_mathematics_l4_direction_fields"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "First-order ODEs model single-step dynamics and growth-decay processes.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Differential Equations",
+            "topic": "First-Order Ordinary Differential Equations",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_direction_fields"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 2",
+            "chapter": "4",
+            "section": "Euler's Method"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_integrating_factor_method",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_first_order_odes",
+      "content": {
+        "title": "Integrating Factor Method",
+        "definition": "Procedure: compute μ, multiply ODE by μ, recognize (μy)′ = μQ, integrate to find y.",
+        "summary": "Integrating factors extend beyond ODEs to exact equations and appear in standard form derivations."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Dynamical Systems",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_first_order_odes",
+        "prerequisites": [
+          "spine_mathematics_l4_linear_first_order_odes"
+        ],
+        "unlocks": [
+          {
+            "concept_id": "spine_mathematics_l3_separable_differential_equations",
+            "_forward_reference": true
+          }
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "First-order ODEs model single-step dynamics and growth-decay processes.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Differential Equations",
+            "topic": "First-Order Ordinary Differential Equations",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_linear_first_order_odes"
+            ],
+            "unlocks_in_context": [
+              {
+                "concept_id": "spine_mathematics_l3_separable_differential_equations",
+                "_forward_reference": true
+              }
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 2",
+            "chapter": "4",
+            "section": "Integrating Factor Method"
+          }
+        ]
+      },
+      "_reviewer_note": "Contains forward reference to existing L3 node — verify target exists in spine."
+    },
+    {
+      "id": "spine_mathematics_l4_linear_first_order_odes",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_first_order_odes",
+      "content": {
+        "title": "Linear First-Order ODEs",
+        "definition": "Equations y′ + P(x)y = Q(x) solved by integrating factor μ(x) = e^{∫P(x)dx} multiplying both sides.",
+        "summary": "The integrating factor method converts linear first-order ODEs to integrable total derivatives."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Dynamical Systems",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_first_order_odes",
+        "prerequisites": [
+          "spine_mathematics_l4_ode_classification"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_integrating_factor_method"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "First-order ODEs model single-step dynamics and growth-decay processes.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Differential Equations",
+            "topic": "First-Order Ordinary Differential Equations",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_ode_classification"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_integrating_factor_method"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 2",
+            "chapter": "4",
+            "section": "Linear First-Order ODEs"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_ode_classification",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_first_order_odes",
+      "content": {
+        "title": "ODE Classification and Order",
+        "definition": "Ordinary differential equations relate a function to its derivatives; first-order ODEs involve only the first derivative y′.",
+        "summary": "Classification by order and linearity determines which solution technique applies."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Dynamical Systems",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_first_order_odes",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_mathematics_l4_direction_fields",
+          "spine_mathematics_l4_linear_first_order_odes"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "First-order ODEs model single-step dynamics and growth-decay processes.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Differential Equations",
+            "topic": "First-Order Ordinary Differential Equations",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_direction_fields",
+              "spine_mathematics_l4_linear_first_order_odes"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 2",
+            "chapter": "4",
+            "section": "ODE Classification and Order"
+          }
+        ]
+      }
+    }
+  ]
+}

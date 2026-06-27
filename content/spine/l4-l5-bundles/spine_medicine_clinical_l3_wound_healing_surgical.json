@@ -1,0 +1,213 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_wound_healing_surgical",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "Orthopaedic domain_context L4/L5 on existing node; deferred from orthopaedic_perioperative_infection_prevention."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_ortho_surgical_site_infection_prevention",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_wound_healing_surgical",
+      "content": {
+        "title": "Surgical Site Infection Prevention in Orthopaedics",
+        "definition": "Bundle elements including skin prep, antibiotic timing, glucose control, and normothermia to reduce SSI after arthroplasty and trauma.",
+        "summary": "Cefazolin within 60 minutes of incision; redose for prolonged cases."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_wound_healing_surgical",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Surgical Site Infection Prevention in Orthopaedics",
+            "relevance": "Orthopaedic perioperative context deferred from merged L3 orthopaedic_perioperative_infection_prevention. (orthopaedic perioperative context on existing clinical node)",
+            "applications": [
+              "Arthroplasty",
+              "Fracture surgery",
+              "Perioperative bundles"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Perioperative Medicine",
+            "topic": "orthopaedic perioperative infection prevention",
+            "subtopic": "Surgical Site Infection Prevention in Orthopaedics"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — orthopaedic perioperative infection prevention",
+            "chapter": "NBK557519",
+            "section": "Infection Prevention"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_ortho_periprosthetic_infection_prevention",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_wound_healing_surgical",
+      "content": {
+        "title": "Periprosthetic Joint Infection Prevention",
+        "definition": "Modifiable risk factor optimization and prophylactic antibiotic selection for MRSA-colonized patients before arthroplasty.",
+        "summary": "Decolonization protocols and vancomycin addition for high-risk patients."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_wound_healing_surgical",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_ortho_surgical_site_infection_prevention"
+        ],
+        "unlocks": [
+          "spine_medicine_clinical_l5_ortho_laminar_airflow_and_bundles"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Periprosthetic Joint Infection Prevention",
+            "relevance": "Orthopaedic perioperative context deferred from merged L3 orthopaedic_perioperative_infection_prevention. (orthopaedic perioperative context on existing clinical node)",
+            "applications": [
+              "Arthroplasty",
+              "Fracture surgery",
+              "Perioperative bundles"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Perioperative Medicine",
+            "topic": "orthopaedic perioperative infection prevention",
+            "subtopic": "Periprosthetic Joint Infection Prevention"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_ortho_surgical_site_infection_prevention"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_clinical_l5_ortho_laminar_airflow_and_bundles"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — orthopaedic perioperative infection prevention",
+            "chapter": "NBK557519",
+            "section": "PJI Prevention"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l5_ortho_laminar_airflow_and_bundles",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_clinical_l3_wound_healing_surgical",
+      "content": {
+        "title": "Laminar Airflow and SSI Bundles in Arthroplasty",
+        "definition": "Operating-room environmental controls and checklist bundles for joint replacement.",
+        "summary": "Combined interventions reduce deep infection rates in registry data."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l4_ortho_periprosthetic_infection_prevention",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_ortho_periprosthetic_infection_prevention"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Laminar Airflow and SSI Bundles in Arthroplasty",
+            "relevance": "Orthopaedic perioperative context deferred from merged L3 orthopaedic_perioperative_infection_prevention. (orthopaedic perioperative context on existing clinical node)",
+            "applications": [
+              "Arthroplasty",
+              "Fracture surgery",
+              "Perioperative bundles"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Perioperative Medicine",
+            "topic": "orthopaedic perioperative infection prevention",
+            "subtopic": "Laminar Airflow and SSI Bundles in Arthroplasty"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_ortho_periprosthetic_infection_prevention"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — orthopaedic perioperative infection prevention",
+            "chapter": "NBK557519",
+            "section": "SSI Bundles"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -24,6 +24,7 @@ import {
   nodeRadius,
 } from "../lib/conceptMapForceLayout";
 import { computeConceptGraphMetrics } from "../lib/conceptMapMetrics";
+import { libraryBundleAtResolution, resolutionRangeFromManifest } from "../lib/resolution";
 
 interface ConceptMapGraphProps {
   bundle: LibraryBundle;
@@ -53,13 +54,28 @@ export function ConceptMapGraph({
   const [hoveredId, setHoveredId] = useState<string | null>(null);
   const dragRef = useRef<{ x: number; y: number; panX: number; panY: number } | null>(null);
 
-  const taxonomyTree = useMemo(() => buildTaxonomyTree(bundle), [bundle]);
-  const conceptPositions = useMemo(() => layoutConceptPositions(bundle), [bundle]);
+  const resolutionRange = useMemo(
+    () => resolutionRangeFromManifest(bundle.manifest),
+    [bundle.manifest]
+  );
+  const scopedBundle = useMemo(
+    () => libraryBundleAtResolution(bundle, resolutionRange),
+    [bundle, resolutionRange]
+  );
+
+  const taxonomyTree = useMemo(
+    () => buildTaxonomyTree(scopedBundle, resolutionRange),
+    [scopedBundle, resolutionRange]
+  );
+  const conceptPositions = useMemo(
+    () => layoutConceptPositions(scopedBundle),
+    [scopedBundle]
+  );
   const allPositions = useMemo(
     () => layoutTaxonomyNodes(taxonomyTree, conceptPositions),
     [taxonomyTree, conceptPositions]
   );
-  const metrics = useMemo(() => computeConceptGraphMetrics(bundle), [bundle]);
+  const metrics = useMemo(() => computeConceptGraphMetrics(scopedBundle), [scopedBundle]);
 
   const activeLevel = zoomScaleToLevel(scale);
   const visibleNodes = useMemo(
@@ -88,7 +104,7 @@ export function ConceptMapGraph({
 
   const conceptEdges = useMemo(() => {
     if (activeLevel !== "concept") return [];
-    return getStructuralEdges(buildConceptMapEdges(bundle));
+    return getStructuralEdges(buildConceptMapEdges(scopedBundle));
   }, [bundle, activeLevel]);
 
   const conceptNodeByConceptId = useMemo(() => {
@@ -241,11 +257,12 @@ export function ConceptMapGraph({
               node.level === "concept" && node.conceptIds[0]
                 ? certifications.get(node.conceptIds[0])
                 : undefined;
+            const isPreMastered = certification?.certification_result === "full";
 
             return (
               <g
                 key={node.id}
-                className={`map-node${isSelected ? " is-selected" : ""}${isHovered ? " is-hovered" : ""}`}
+                className={`map-node${isSelected ? " is-selected" : ""}${isHovered ? " is-hovered" : ""}${isPreMastered ? " is-pre-mastered" : ""}`}
                 transform={`translate(${pos.x} ${pos.y})`}
                 onClick={() => onSelect(isSelected ? null : node.id, isSelected ? null : node)}
                 onMouseEnter={() => setHoveredId(node.id)}
@@ -260,6 +277,7 @@ export function ConceptMapGraph({
                   fill={conceptStateColor(derived.conceptState)}
                   stroke={conceptStateStroke(derived.conceptState)}
                   strokeWidth={isSelected ? 3 : isHovered ? 2.5 : 1.5}
+                  strokeDasharray={isPreMastered ? "5 3" : undefined}
                   className="map-node-circle"
                   opacity={0.55 + derived.retentionScore * 0.45}
                 />
@@ -306,6 +324,7 @@ export function ConceptMapGraph({
             ))}
           </div>
           <p className="hint legend-note">Opacity reflects retention (recall likelihood now)</p>
+          <p className="hint legend-note">Dashed node border = pre-mastered (full certification)</p>
         </div>
         {showDomainBorders && (
           <span className="hint domain-border-hint">Dashed borders = domain regions</span>
@@ -378,10 +397,13 @@ function truncate(text: string, max: number): string {
 }
 
 export function conceptMapStats(bundle: LibraryBundle) {
-  const tree = buildTaxonomyTree(bundle);
+  const resolutionRange = resolutionRangeFromManifest(bundle.manifest);
+  const scopedBundle = libraryBundleAtResolution(bundle, resolutionRange);
+  const tree = buildTaxonomyTree(scopedBundle, resolutionRange);
   return {
     domains: nodesAtLevel(tree, "domain").length,
     categories: nodesAtLevel(tree, "category").length,
-    concepts: bundle.concepts.length,
+    concepts: scopedBundle.concepts.length,
+    resolutionRange,
   };
 }

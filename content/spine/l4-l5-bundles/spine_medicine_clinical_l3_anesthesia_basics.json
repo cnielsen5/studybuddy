@@ -1,0 +1,213 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_anesthesia_basics",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "Orthopaedic domain_context L4/L5 on existing node; deferred from orthopaedic_multimodal_pain_management."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_ortho_multimodal_analgesia",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_anesthesia_basics",
+      "content": {
+        "title": "Multimodal Analgesia in Orthopaedic Surgery",
+        "definition": "Combination of acetaminophen, NSAIDs (when safe), gabapentinoids, and regional techniques to reduce opioid consumption.",
+        "summary": "ERAS protocols improve recovery after arthroplasty; avoid NSAIDs when union risk is paramount."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_anesthesia_basics",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Multimodal Analgesia in Orthopaedic Surgery",
+            "relevance": "Orthopaedic perioperative context deferred from merged L3 orthopaedic_multimodal_pain_management. (orthopaedic perioperative context on existing clinical node)",
+            "applications": [
+              "Arthroplasty",
+              "Fracture surgery",
+              "Perioperative bundles"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Perioperative Medicine",
+            "topic": "orthopaedic multimodal pain management",
+            "subtopic": "Multimodal Analgesia in Orthopaedic Surgery"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — orthopaedic multimodal pain management",
+            "chapter": "NBK557519",
+            "section": "Pain Management"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_ortho_regional_anesthesia_blocks",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_anesthesia_basics",
+      "content": {
+        "title": "Regional Anesthesia for Orthopaedic Procedures",
+        "definition": "Neuraxial and peripheral nerve blocks for hip and knee arthroplasty, extremity trauma, and ambulatory hand surgery.",
+        "summary": "Adductor canal block preserves quadriceps strength after TKA; femoral block causes more weakness."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_anesthesia_basics",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_ortho_multimodal_analgesia"
+        ],
+        "unlocks": [
+          "spine_medicine_clinical_l5_ortho_eras_arthroplasty"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Regional Anesthesia for Orthopaedic Procedures",
+            "relevance": "Orthopaedic perioperative context deferred from merged L3 orthopaedic_multimodal_pain_management. (orthopaedic perioperative context on existing clinical node)",
+            "applications": [
+              "Arthroplasty",
+              "Fracture surgery",
+              "Perioperative bundles"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Perioperative Medicine",
+            "topic": "orthopaedic multimodal pain management",
+            "subtopic": "Regional Anesthesia for Orthopaedic Procedures"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_ortho_multimodal_analgesia"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_clinical_l5_ortho_eras_arthroplasty"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — orthopaedic multimodal pain management",
+            "chapter": "NBK557519",
+            "section": "Regional Anesthesia"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l5_ortho_eras_arthroplasty",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_clinical_l3_anesthesia_basics",
+      "content": {
+        "title": "ERAS Pathways in Arthroplasty",
+        "definition": "Enhanced recovery after surgery bundles for hip and knee replacement.",
+        "summary": "Early mobilization, thromboprophylaxis, and discharge planning integrated with analgesia."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l4_ortho_regional_anesthesia_blocks",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_ortho_regional_anesthesia_blocks"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "ERAS Pathways in Arthroplasty",
+            "relevance": "Orthopaedic perioperative context deferred from merged L3 orthopaedic_multimodal_pain_management. (orthopaedic perioperative context on existing clinical node)",
+            "applications": [
+              "Arthroplasty",
+              "Fracture surgery",
+              "Perioperative bundles"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Perioperative Medicine",
+            "topic": "orthopaedic multimodal pain management",
+            "subtopic": "ERAS Pathways in Arthroplasty"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_ortho_regional_anesthesia_blocks"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — orthopaedic multimodal pain management",
+            "chapter": "NBK557519",
+            "section": "ERAS"
+          }
+        ]
+      }
+    }
+  ]
+}

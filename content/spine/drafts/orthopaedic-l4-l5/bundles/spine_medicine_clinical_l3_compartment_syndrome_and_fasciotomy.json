@@ -1,0 +1,347 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_compartment_syndrome_and_fasciotomy",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "Orthopaedic L4/L5 expansion for Compartment Syndrome and Fasciotomy. 4 L4, 1 L5."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_compartment_syndrome_pathophysiology",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_compartment_syndrome_and_fasciotomy",
+      "content": {
+        "title": "Compartment Syndrome Pathophysiology",
+        "definition": "Elevated intracompartmental pressure reducing capillary perfusion below critical threshold.",
+        "summary": "Ischemia-reperfusion causes irreversible muscle and nerve damage within hours."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_compartment_syndrome_and_fasciotomy",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Compartment Syndrome Pathophysiology",
+            "relevance": "Time-critical diagnosis in trauma and reperfusion injury.",
+            "applications": [
+              "Clinical diagnosis",
+              "Fasciotomy technique",
+              "Post-fracture monitoring"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Soft Tissue Biology",
+            "topic": "Compartment Syndrome and Fasciotomy",
+            "subtopic": "Compartment Syndrome Pathophysiology"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Compartment Syndrome and Fasciotomy",
+            "chapter": "NBK448124",
+            "section": "Compartment Syndrome"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_compartment_syndrome_clinical_diagnosis",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_compartment_syndrome_and_fasciotomy",
+      "content": {
+        "title": "Compartment Syndrome Clinical Diagnosis",
+        "definition": "Pain out of proportion, pain with passive stretch, paresthesias, pallor, pulselessness, paralysis.",
+        "summary": "Clinical diagnosis in awake patients; do not wait for compartment pressure if exam is convincing."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_compartment_syndrome_and_fasciotomy",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_compartment_syndrome_pathophysiology"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Compartment Syndrome Clinical Diagnosis",
+            "relevance": "Time-critical diagnosis in trauma and reperfusion injury.",
+            "applications": [
+              "Clinical diagnosis",
+              "Fasciotomy technique",
+              "Post-fracture monitoring"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Soft Tissue Biology",
+            "topic": "Compartment Syndrome and Fasciotomy",
+            "subtopic": "Compartment Syndrome Clinical Diagnosis"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_compartment_syndrome_pathophysiology"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Compartment Syndrome and Fasciotomy",
+            "chapter": "NBK448124",
+            "section": "Compartment Syndrome"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_compartment_pressure_measurement",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_compartment_syndrome_and_fasciotomy",
+      "content": {
+        "title": "Compartment Pressure Measurement",
+        "definition": "Intracompartmental pressure monitoring when clinical exam is unreliable (sedation, intubation, children).",
+        "summary": "Delta pressure (diastolic BP minus compartment pressure) ≤30 mmHg indicates syndrome."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_compartment_syndrome_and_fasciotomy",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_compartment_syndrome_clinical_diagnosis"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Compartment Pressure Measurement",
+            "relevance": "Time-critical diagnosis in trauma and reperfusion injury.",
+            "applications": [
+              "Clinical diagnosis",
+              "Fasciotomy technique",
+              "Post-fracture monitoring"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Soft Tissue Biology",
+            "topic": "Compartment Syndrome and Fasciotomy",
+            "subtopic": "Compartment Pressure Measurement"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_compartment_syndrome_clinical_diagnosis"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Compartment Syndrome and Fasciotomy",
+            "chapter": "NBK448124",
+            "section": "Compartment Syndrome"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_fasciotomy_technique_and_complications",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_compartment_syndrome_and_fasciotomy",
+      "content": {
+        "title": "Fasciotomy Technique and Complications",
+        "definition": "Two-incision leg fasciotomy and forearm volar-dorsal release with wound management.",
+        "summary": "Delayed fasciotomy risks Volkmann contracture; skin grafting often required for wound closure."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_compartment_syndrome_and_fasciotomy",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_compartment_pressure_measurement"
+        ],
+        "unlocks": [
+          "spine_medicine_clinical_l5_volkmann_ischemic_contracture"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Fasciotomy Technique and Complications",
+            "relevance": "Time-critical diagnosis in trauma and reperfusion injury.",
+            "applications": [
+              "Clinical diagnosis",
+              "Fasciotomy technique",
+              "Post-fracture monitoring"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Soft Tissue Biology",
+            "topic": "Compartment Syndrome and Fasciotomy",
+            "subtopic": "Fasciotomy Technique and Complications"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_compartment_pressure_measurement"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_clinical_l5_volkmann_ischemic_contracture"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Compartment Syndrome and Fasciotomy",
+            "chapter": "NBK448124",
+            "section": "Compartment Syndrome"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l5_volkmann_ischemic_contracture",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_clinical_l3_compartment_syndrome_and_fasciotomy",
+      "content": {
+        "title": "Volkmann Ischemic Contracture",
+        "definition": "Fixed flexion deformity of forearm and hand after untreated forearm compartment syndrome.",
+        "summary": "Prevention is emergent fasciotomy; late treatment includes tendon lengthening and free muscle transfer."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l4_fasciotomy_technique_and_complications",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_fasciotomy_technique_and_complications"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Volkmann Ischemic Contracture",
+            "relevance": "Time-critical diagnosis in trauma and reperfusion injury.",
+            "applications": [
+              "Clinical diagnosis",
+              "Fasciotomy technique",
+              "Post-fracture monitoring"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Soft Tissue Biology",
+            "topic": "Compartment Syndrome and Fasciotomy",
+            "subtopic": "Volkmann Ischemic Contracture"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_fasciotomy_technique_and_complications"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Compartment Syndrome and Fasciotomy",
+            "chapter": "NBK448124",
+            "section": "Compartment Syndrome"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "id": "lens_abos_blueprint_2024",
+  "name": "ABOS Board Certification Blueprint 2024",
+  "source": "American Board of Orthopaedic Surgery",
+  "domain_id": "medicine_clinical",
+  "version": "2024",
+  "description": "Exam-domain organization for orthopaedic surgery board preparation. Section weights mirror ABOS blueprint percentages. Mappings are stubs until orthopaedic spine nodes are authored.",
+  "intended_audience": "Orthopaedic surgery residents preparing for ABOS Part I and II",
+  "sections": [
+    {
+      "id": "lens_section_abos_basic_science",
+      "title": "Basic Science",
+      "parent_section_id": null,
+      "order": 0,
+      "weight": 15
+    },
+    {
+      "id": "lens_section_abos_adult_reconstruction",
+      "title": "Adult Reconstruction",
+      "parent_section_id": null,
+      "order": 1,
+      "weight": 12
+    },
+    {
+      "id": "lens_section_abos_spine",
+      "title": "Spine",
+      "parent_section_id": null,
+      "order": 2,
+      "weight": 10
+    },
+    {
+      "id": "lens_section_abos_sports",
+      "title": "Sports Medicine",
+      "parent_section_id": null,
+      "order": 3,
+      "weight": 12
+    },
+    {
+      "id": "lens_section_abos_trauma",
+      "title": "Trauma",
+      "parent_section_id": null,
+      "order": 4,
+      "weight": 20
+    },
+    {
+      "id": "lens_section_abos_trauma_bone_biology",
+      "title": "Bone Biology & Healing",
+      "parent_section_id": "lens_section_abos_trauma",
+      "order": 0
+    },
+    {
+      "id": "lens_section_abos_pediatrics",
+      "title": "Pediatrics",
+      "parent_section_id": null,
+      "order": 5,
+      "weight": 8
+    },
+    {
+      "id": "lens_section_abos_hand",
+      "title": "Hand & Upper Extremity",
+      "parent_section_id": null,
+      "order": 6,
+      "weight": 8
+    },
+    {
+      "id": "lens_section_abos_foot_ankle",
+      "title": "Foot & Ankle",
+      "parent_section_id": null,
+      "order": 7,
+      "weight": 7
+    },
+    {
+      "id": "lens_section_abos_oncology",
+      "title": "Orthopaedic Oncology",
+      "parent_section_id": null,
+      "order": 8,
+      "weight": 8
+    }
+  ],
+  "concept_mappings": [],
+  "metadata": {
+    "created_at": "2026-06-27T00:00:00Z",
+    "status": "active",
+    "source_url": "https://www.abos.org/"
+  }
+}

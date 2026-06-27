@@ -1,0 +1,370 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_psychology_neuroscience_l3_operant_conditioning",
+    "anchor_primary_domain": "psychology_neuroscience",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_psychology_neuroscience_l3_operant_conditioning.psychology_neuroscience.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "4 per-context concepts merged into 4 universal concepts (4 L4 + 0 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_psychology_neuroscience_l4_operant_applications_behavior_mod",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_operant_conditioning",
+      "content": {
+        "title": "Applications in Behavior Modification",
+        "definition": "Applied behavior analysis principles for skill acquisition and problem behavior reduction.",
+        "summary": "Functional analysis identifies reinforcers maintaining maladaptive behavior."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Associative Learning",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Medicine preclinical behavioral science (reinforcement in adherence) is a domain context — not a separate L3."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_operant_conditioning",
+        "prerequisites": [
+          "spine_psychology_neuroscience_l4_shaping_chaining"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Applications in Behavior Modification",
+            "relevance": "Voluntary behavior shaped by reinforcement and punishment.",
+            "applications": [
+              "Skinner box paradigms",
+              "Behavior modification"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Psychology & Neuroscience",
+            "subcategory": "Learning & Conditioning",
+            "topic": "Operant Conditioning",
+            "subtopic": "Applications"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_psychology_neuroscience_l4_shaping_chaining"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Psychology 2e",
+            "chapter": "6",
+            "section": "6.6.2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l4_reinforcement_punishment",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_operant_conditioning",
+      "content": {
+        "title": "Reinforcement and Punishment",
+        "definition": "Consequences that increase or decrease future response probability.",
+        "summary": "Positive and negative reinforcement both strengthen behavior via different mechanisms."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Associative Learning",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Medicine preclinical behavioral science (reinforcement in adherence) is a domain context — not a separate L3."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_operant_conditioning",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_psychology_neuroscience_l4_schedules_of_reinforcement"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Reinforcement and Punishment",
+            "relevance": "Behavioral medicine applications including patient adherence, aversive conditioning, and reinforcement in clinical settings.",
+            "applications": [
+              "Patient adherence",
+              "Behavioral change protocols"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Behavioral Science",
+            "subcategory": "Learning & Conditioning",
+            "topic": "Operant Conditioning",
+            "subtopic": "Reinforcement"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_psychology_neuroscience_l4_schedules_of_reinforcement"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Reinforcement and Punishment",
+            "relevance": "Voluntary behavior shaped by reinforcement and punishment.",
+            "applications": [
+              "Skinner box paradigms",
+              "Behavior modification"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Psychology & Neuroscience",
+            "subcategory": "Learning & Conditioning",
+            "topic": "Operant Conditioning",
+            "subtopic": "Reinforcement"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_psychology_neuroscience_l4_schedules_of_reinforcement"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Psychology 2e",
+            "chapter": "6",
+            "section": "6.5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l4_schedules_of_reinforcement",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_operant_conditioning",
+      "content": {
+        "title": "Schedules of Reinforcement",
+        "definition": "Fixed and variable ratio/interval patterns producing characteristic response rates.",
+        "summary": "Variable ratio schedules generate high, persistent responding."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Associative Learning",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Medicine preclinical behavioral science (reinforcement in adherence) is a domain context — not a separate L3."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_operant_conditioning",
+        "prerequisites": [
+          "spine_psychology_neuroscience_l4_reinforcement_punishment"
+        ],
+        "unlocks": [
+          "spine_psychology_neuroscience_l4_shaping_chaining"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Schedules of Reinforcement",
+            "relevance": "Behavioral medicine applications including patient adherence, aversive conditioning, and reinforcement in clinical settings.",
+            "applications": [
+              "Patient adherence",
+              "Behavioral change protocols"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Behavioral Science",
+            "subcategory": "Learning & Conditioning",
+            "topic": "Operant Conditioning",
+            "subtopic": "Schedules"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_psychology_neuroscience_l4_reinforcement_punishment"
+            ],
+            "unlocks_in_context": [
+              "spine_psychology_neuroscience_l4_shaping_chaining"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Schedules of Reinforcement",
+            "relevance": "Voluntary behavior shaped by reinforcement and punishment.",
+            "applications": [
+              "Skinner box paradigms",
+              "Behavior modification"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Psychology & Neuroscience",
+            "subcategory": "Learning & Conditioning",
+            "topic": "Operant Conditioning",
+            "subtopic": "Schedules"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_psychology_neuroscience_l4_reinforcement_punishment"
+            ],
+            "unlocks_in_context": [
+              "spine_psychology_neuroscience_l4_shaping_chaining"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Psychology 2e",
+            "chapter": "6",
+            "section": "6.6"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_psychology_neuroscience_l4_shaping_chaining",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_psychology_neuroscience_l3_operant_conditioning",
+      "content": {
+        "title": "Shaping and Behavior Chaining",
+        "definition": "Successive approximation toward target behavior and linked response sequences.",
+        "summary": "Token economies apply shaping in educational and clinical settings."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Behavioral & Cognitive Sciences",
+        "knowledge_cluster": "Associative Learning",
+        "primary_domain": "psychology_neuroscience",
+        "_shared_concept_note": "Medicine preclinical behavioral science (reinforcement in adherence) is a domain context — not a separate L3."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_psychology_neuroscience_l3_operant_conditioning",
+        "prerequisites": [
+          "spine_psychology_neuroscience_l4_schedules_of_reinforcement"
+        ],
+        "unlocks": [
+          "spine_psychology_neuroscience_l4_operant_applications_behavior_mod"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Shaping and Behavior Chaining",
+            "relevance": "Behavioral medicine applications including patient adherence, aversive conditioning, and reinforcement in clinical settings.",
+            "applications": [
+              "Patient adherence",
+              "Behavioral change protocols"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Behavioral Science",
+            "subcategory": "Learning & Conditioning",
+            "topic": "Operant Conditioning",
+            "subtopic": "Shaping"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_psychology_neuroscience_l4_schedules_of_reinforcement"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Shaping and Behavior Chaining",
+            "relevance": "Voluntary behavior shaped by reinforcement and punishment.",
+            "applications": [
+              "Skinner box paradigms",
+              "Behavior modification"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Psychology & Neuroscience",
+            "subcategory": "Learning & Conditioning",
+            "topic": "Operant Conditioning",
+            "subtopic": "Shaping"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_psychology_neuroscience_l4_schedules_of_reinforcement"
+            ],
+            "unlocks_in_context": [
+              "spine_psychology_neuroscience_l4_operant_applications_behavior_mod"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Psychology 2e",
+            "chapter": "6",
+            "section": "6.6.1"
+          }
+        ]
+      }
+    }
+  ]
+}

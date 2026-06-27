@@ -1,0 +1,276 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_shoulder_periprosthetic_joint_infection",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "Orthopaedic L4/L5 expansion for Shoulder Periprosthetic Joint Infection. 4 L4, 0 L5."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_shoulder_pji_diagnosis",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_shoulder_periprosthetic_joint_infection",
+      "content": {
+        "title": "Shoulder PJI Diagnosis",
+        "definition": "MSIS criteria adapted for shoulder with synovial fluid and tissue culture.",
+        "summary": "Propionibacterium acnes indolent infection common; hold antibiotics before culture."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Shoulder and Elbow",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_shoulder_periprosthetic_joint_infection",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Shoulder PJI Diagnosis",
+            "relevance": "Shoulder PJI biology and management differ from lower-extremity PJI.",
+            "applications": [
+              "P. acnes culture techniques",
+              "Shoulder spacer placement",
+              "DAIR in acute shoulder PJI"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Shoulder Arthroplasty",
+            "topic": "Shoulder Periprosthetic Joint Infection",
+            "subtopic": "Shoulder PJI Diagnosis"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Shoulder Periprosthetic Joint Infection",
+            "chapter": "NBK551582",
+            "section": "Shoulder PJI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_shoulder_pji_dair_and_debridement",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_shoulder_periprosthetic_joint_infection",
+      "content": {
+        "title": "Shoulder PJI DAIR and Debridement",
+        "definition": "Acute infection management with polyethylene exchange when modular components allow.",
+        "summary": "Chronic P. acnes often needs implant removal given biofilm on glenoid."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Shoulder and Elbow",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_shoulder_periprosthetic_joint_infection",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_shoulder_pji_diagnosis"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Shoulder PJI DAIR and Debridement",
+            "relevance": "Shoulder PJI biology and management differ from lower-extremity PJI.",
+            "applications": [
+              "P. acnes culture techniques",
+              "Shoulder spacer placement",
+              "DAIR in acute shoulder PJI"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Shoulder Arthroplasty",
+            "topic": "Shoulder Periprosthetic Joint Infection",
+            "subtopic": "Shoulder PJI DAIR and Debridement"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_shoulder_pji_diagnosis"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Shoulder Periprosthetic Joint Infection",
+            "chapter": "NBK551582",
+            "section": "Shoulder PJI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_shoulder_pji_resection_and_exchange",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_shoulder_periprosthetic_joint_infection",
+      "content": {
+        "title": "Shoulder PJI Resection and Exchange",
+        "definition": "One- and two-stage exchange; permanent resection for salvage.",
+        "summary": "Antibiotic spacer maintains soft-tissue envelope for reimplantation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Shoulder and Elbow",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_shoulder_periprosthetic_joint_infection",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_shoulder_pji_dair_and_debridement"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Shoulder PJI Resection and Exchange",
+            "relevance": "Shoulder PJI biology and management differ from lower-extremity PJI.",
+            "applications": [
+              "P. acnes culture techniques",
+              "Shoulder spacer placement",
+              "DAIR in acute shoulder PJI"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Shoulder Arthroplasty",
+            "topic": "Shoulder Periprosthetic Joint Infection",
+            "subtopic": "Shoulder PJI Resection and Exchange"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_shoulder_pji_dair_and_debridement"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Shoulder Periprosthetic Joint Infection",
+            "chapter": "NBK551582",
+            "section": "Shoulder PJI"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_shoulder_pji_prevention",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_shoulder_periprosthetic_joint_infection",
+      "content": {
+        "title": "Shoulder PJI Prevention",
+        "definition": "Skin prep, prophylaxis, and management of prior injection before arthroplasty.",
+        "summary": "Delay elective arthroplasty after shoulder injection to reduce infection risk."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Shoulder and Elbow",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_shoulder_periprosthetic_joint_infection",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_shoulder_pji_resection_and_exchange"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Shoulder PJI Prevention",
+            "relevance": "Shoulder PJI biology and management differ from lower-extremity PJI.",
+            "applications": [
+              "P. acnes culture techniques",
+              "Shoulder spacer placement",
+              "DAIR in acute shoulder PJI"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Shoulder Arthroplasty",
+            "topic": "Shoulder Periprosthetic Joint Infection",
+            "subtopic": "Shoulder PJI Prevention"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_shoulder_pji_resection_and_exchange"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Shoulder Periprosthetic Joint Infection",
+            "chapter": "NBK551582",
+            "section": "Shoulder PJI"
+          }
+        ]
+      }
+    }
+  ]
+}

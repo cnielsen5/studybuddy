@@ -1,0 +1,548 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_paediatric_spine_spondylolysis_listhesis",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "ABOS-aligned scaffold for abos_p2_pediatrics."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_paediatric_spine_spondylolysis_listhesis_core_principles",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_paediatric_spine_spondylolysis_listhesis",
+      "content": {
+        "title": "Paediatric Spondylolysis and Spondylolisthesis — Core Principles",
+        "definition": "Pars interarticularis defects and vertebral slippage in children and adolescents, often in athletic populations.",
+        "summary": "Activity modification and bracing treat low-grade isthmic slips in adolescents. High-grade slips may require fusion in situ or reduction."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_paediatric_spine_spondylolysis_listhesis",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Paediatric Spondylolysis and Spondylolisthesis — Core Principles",
+            "relevance": "Sports and paediatric spine crossover.",
+            "applications": [
+              "Pars defect imaging",
+              "Slip grading",
+              "Fusion indications in adolescents"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Paediatric Spine",
+            "topic": "Paediatric Spondylolysis and Spondylolisthesis",
+            "subtopic": "Paediatric Spondylolysis and Spondylolisthesis — Core Principles"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Paediatric Spondylolysis and Spondylolisthesis",
+            "chapter": "NBK557519",
+            "section": "Paediatric Spondylolisthesis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_paediatric_spine_spondylolysis_listhesis_evaluation_and_diag",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_paediatric_spine_spondylolysis_listhesis",
+      "content": {
+        "title": "Evaluation and Diagnosis",
+        "definition": "History, physical examination, and initial imaging for paediatric spondylolysis and spondylolisthesis.",
+        "summary": "Systematic assessment identifies severity, associated injuries, and urgency in paediatric spondylolysis and spondylolisthesis."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_paediatric_spine_spondylolysis_listhesis",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_paediatric_spine_spondylolysis_listhesis_core_principles"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Evaluation and Diagnosis",
+            "relevance": "Sports and paediatric spine crossover.",
+            "applications": [
+              "Pars defect imaging",
+              "Slip grading",
+              "Fusion indications in adolescents"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Paediatric Spine",
+            "topic": "Paediatric Spondylolysis and Spondylolisthesis",
+            "subtopic": "Evaluation and Diagnosis"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_paediatric_spine_spondylolysis_listhesis_core_principles"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Paediatric Spondylolysis and Spondylolisthesis",
+            "chapter": "NBK557519",
+            "section": "Paediatric Spondylolisthesis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_paediatric_spine_spondylolysis_listhesis_management_principl",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_paediatric_spine_spondylolysis_listhesis",
+      "content": {
+        "title": "Management Principles",
+        "definition": "Nonoperative and operative treatment algorithms for paediatric spondylolysis and spondylolisthesis.",
+        "summary": "Activity modification and bracing treat low-grade isthmic slips in adolescents."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_paediatric_spine_spondylolysis_listhesis",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_paediatric_spine_spondylolysis_listhesis_evaluation_and_diag"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Management Principles",
+            "relevance": "Sports and paediatric spine crossover.",
+            "applications": [
+              "Pars defect imaging",
+              "Slip grading",
+              "Fusion indications in adolescents"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Paediatric Spine",
+            "topic": "Paediatric Spondylolysis and Spondylolisthesis",
+            "subtopic": "Management Principles"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_paediatric_spine_spondylolysis_listhesis_evaluation_and_diag"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Paediatric Spondylolysis and Spondylolisthesis",
+            "chapter": "NBK557519",
+            "section": "Paediatric Spondylolisthesis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_paediatric_spine_spondylolysis_listhesis_pars_defect_imaging",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_paediatric_spine_spondylolysis_listhesis",
+      "content": {
+        "title": "Pars defect imaging",
+        "definition": "Focused assessment and management of pars defect imaging in the context of paediatric spondylolysis and spondylolisthesis.",
+        "summary": "Pars defect imaging — key decision points from Paediatric Orthopaedics practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_paediatric_spine_spondylolysis_listhesis",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_paediatric_spine_spondylolysis_listhesis_management_principl"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Pars defect imaging",
+            "relevance": "Sports and paediatric spine crossover.",
+            "applications": [
+              "Pars defect imaging",
+              "Slip grading",
+              "Fusion indications in adolescents"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Paediatric Spine",
+            "topic": "Paediatric Spondylolysis and Spondylolisthesis",
+            "subtopic": "Pars defect imaging"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_paediatric_spine_spondylolysis_listhesis_management_principl"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Paediatric Spondylolysis and Spondylolisthesis",
+            "chapter": "NBK557519",
+            "section": "Paediatric Spondylolisthesis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_paediatric_spine_spondylolysis_listhesis_slip_grading",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_paediatric_spine_spondylolysis_listhesis",
+      "content": {
+        "title": "Slip grading",
+        "definition": "Focused assessment and management of slip grading in the context of paediatric spondylolysis and spondylolisthesis.",
+        "summary": "Slip grading — key decision points from Paediatric Orthopaedics practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_paediatric_spine_spondylolysis_listhesis",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_paediatric_spine_spondylolysis_listhesis_pars_defect_imaging"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Slip grading",
+            "relevance": "Sports and paediatric spine crossover.",
+            "applications": [
+              "Pars defect imaging",
+              "Slip grading",
+              "Fusion indications in adolescents"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Paediatric Spine",
+            "topic": "Paediatric Spondylolysis and Spondylolisthesis",
+            "subtopic": "Slip grading"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_paediatric_spine_spondylolysis_listhesis_pars_defect_imaging"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Paediatric Spondylolysis and Spondylolisthesis",
+            "chapter": "NBK557519",
+            "section": "Paediatric Spondylolisthesis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_paediatric_spine_spondylolysis_listhesis_fusion_indications_",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_paediatric_spine_spondylolysis_listhesis",
+      "content": {
+        "title": "Fusion indications in adolescents",
+        "definition": "Focused assessment and management of fusion indications in adolescents in the context of paediatric spondylolysis and spondylolisthesis.",
+        "summary": "Fusion indications in adolescents — key decision points from Paediatric Orthopaedics practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_paediatric_spine_spondylolysis_listhesis",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_paediatric_spine_spondylolysis_listhesis_slip_grading"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Fusion indications in adolescents",
+            "relevance": "Sports and paediatric spine crossover.",
+            "applications": [
+              "Pars defect imaging",
+              "Slip grading",
+              "Fusion indications in adolescents"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Paediatric Spine",
+            "topic": "Paediatric Spondylolysis and Spondylolisthesis",
+            "subtopic": "Fusion indications in adolescents"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_paediatric_spine_spondylolysis_listhesis_slip_grading"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Paediatric Spondylolysis and Spondylolisthesis",
+            "chapter": "NBK557519",
+            "section": "Paediatric Spondylolisthesis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_paediatric_spine_spondylolysis_listhesis_complications_and_o",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_paediatric_spine_spondylolysis_listhesis",
+      "content": {
+        "title": "Complications and Outcomes",
+        "definition": "Recognized complications, failure modes, and expected recovery after treatment of paediatric spondylolysis and spondylolisthesis.",
+        "summary": "Anticipate, diagnose, and manage complications; counsel on prognosis and rehabilitation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_paediatric_spine_spondylolysis_listhesis",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_paediatric_spine_spondylolysis_listhesis_fusion_indications_"
+        ],
+        "unlocks": [
+          "spine_medicine_clinical_l5_paediatric_spine_spondylolysis_listhesis_salvage_and_revisio"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Complications and Outcomes",
+            "relevance": "Sports and paediatric spine crossover.",
+            "applications": [
+              "Pars defect imaging",
+              "Slip grading",
+              "Fusion indications in adolescents"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Paediatric Spine",
+            "topic": "Paediatric Spondylolysis and Spondylolisthesis",
+            "subtopic": "Complications and Outcomes"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_paediatric_spine_spondylolysis_listhesis_fusion_indications_"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_clinical_l5_paediatric_spine_spondylolysis_listhesis_salvage_and_revisio"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Paediatric Spondylolysis and Spondylolisthesis",
+            "chapter": "NBK557519",
+            "section": "Paediatric Spondylolisthesis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l5_paediatric_spine_spondylolysis_listhesis_salvage_and_revisio",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_clinical_l3_paediatric_spine_spondylolysis_listhesis",
+      "content": {
+        "title": "Salvage and Revision Strategies",
+        "definition": "Revision and salvage options when initial management of paediatric spondylolysis and spondylolisthesis fails.",
+        "summary": "Staged revision and alternative strategies when primary treatment fails or complications develop."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l4_paediatric_spine_spondylolysis_listhesis_complications_and_o",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_paediatric_spine_spondylolysis_listhesis_complications_and_o"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Salvage and Revision Strategies",
+            "relevance": "Sports and paediatric spine crossover.",
+            "applications": [
+              "Pars defect imaging",
+              "Slip grading",
+              "Fusion indications in adolescents"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Paediatric Spine",
+            "topic": "Paediatric Spondylolysis and Spondylolisthesis",
+            "subtopic": "Salvage and Revision Strategies"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_paediatric_spine_spondylolysis_listhesis_complications_and_o"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Paediatric Spondylolysis and Spondylolisthesis",
+            "chapter": "NBK557519",
+            "section": "Paediatric Spondylolisthesis"
+          }
+        ]
+      }
+    }
+  ]
+}

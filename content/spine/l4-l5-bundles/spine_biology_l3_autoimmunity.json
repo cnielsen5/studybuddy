@@ -1,0 +1,836 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_biology_l3_autoimmunity",
+    "anchor_primary_domain": "biology",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_biology_l3_autoimmunity.biology.json",
+      "content/spine/l4-l5-bundles/spine_biology_l3_autoimmunity.medicine_preclinical.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "13 per-context concepts merged into 12 universal concepts (9 L4 + 3 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_biology_l4_autoantibody_effector_mechanisms",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_autoimmunity",
+      "content": {
+        "title": "Autoantibody Effector Mechanisms",
+        "definition": "Pathogenic mechanisms of self-directed antibodies including type II cytotoxicity, immune complex deposition, and receptor stimulation or blockade.",
+        "summary": "Autoantibodies cause disease through complement-mediated lysis, opsonization, immune complex inflammation, or functional receptor modulation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Immunology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_autoimmunity",
+        "prerequisites": [
+          "spine_biology_l4_molecular_mimicry",
+          "spine_biology_l4_epitope_spreading"
+        ],
+        "unlocks": [
+          "spine_biology_l4_hla_genetic_susceptibility"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Autoantibody Effector Mechanisms",
+            "relevance": "Graves disease (stimulating Ab) vs myasthenia gravis (blocking Ab).",
+            "applications": [
+              "Anti-dsDNA in SLE",
+              "Rheumatoid factor"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Autoimmunity",
+            "topic": "Autoimmunity Mechanisms",
+            "subtopic": "Autoantibodies"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_molecular_mimicry",
+              "spine_biology_l4_epitope_spreading"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_hla_genetic_susceptibility"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "section": "Autoimmunity — Autoantibodies",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_autoimmune_disease_examples",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_autoimmunity",
+      "content": {
+        "title": "Representative Autoimmune Diseases",
+        "definition": "Organ-specific and systemic autoimmune conditions including type 1 diabetes, rheumatoid arthritis, and systemic lupus erythematosus arising from tolerance failure.",
+        "summary": "Autoimmune diseases reflect which self antigens are targeted. Organ-specific diseases attack one tissue type; systemic diseases involve multiple organs and autoantibodies."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Immune Pathology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_autoimmunity",
+        "prerequisites": [
+          "spine_biology_l4_molecular_mimicry"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Representative Autoimmune Diseases",
+            "relevance": "Connects tolerance mechanisms to clinical autoimmune pathology.",
+            "applications": [
+              "Type 1 diabetes",
+              "Rheumatoid arthritis"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Immune Pathology",
+            "topic": "Autoimmunity",
+            "subtopic": "Disease Examples"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_molecular_mimicry"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "chapter": "Autoimmunity",
+            "section": "Disease Examples"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_central_peripheral_tolerance",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_autoimmunity",
+      "content": {
+        "title": "Central and Peripheral Tolerance",
+        "definition": "Mechanisms eliminating or inactivating self-reactive lymphocytes during development in primary lymphoid organs and in peripheral tissues through deletion, anergy, and regulatory T cells.",
+        "summary": "Central tolerance removes strongly autoreactive clones in thymus and bone marrow. Peripheral tolerance restrains low-avidity or tissue-restricted autoreactivity."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Immunology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_autoimmunity",
+        "prerequisites": [
+          "spine_biology_l4_self_tolerance"
+        ],
+        "unlocks": [
+          "spine_biology_l4_molecular_mimicry",
+          "spine_biology_l4_epitope_spreading"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Peripheral Tolerance",
+            "relevance": "Backup mechanisms when central tolerance is incomplete.",
+            "applications": [
+              "Regulatory T cells",
+              "Anergy"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Immune Pathology",
+            "topic": "Autoimmunity",
+            "subtopic": "Peripheral Tolerance"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_self_tolerance"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_molecular_mimicry"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Central and Peripheral Tolerance",
+            "relevance": "AIRE deficiency and autoimmune polyendocrinopathy.",
+            "applications": [
+              "Negative selection in thymus",
+              "Treg suppression"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Autoimmunity",
+            "topic": "Autoimmunity Mechanisms",
+            "subtopic": "Tolerance"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_biology_l4_molecular_mimicry",
+              "spine_biology_l4_epitope_spreading"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-26T05:54:17.138Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "44",
+            "section": "44.6"
+          },
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "44",
+            "section": "44.8"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_central_tolerance",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_autoimmunity",
+      "content": {
+        "title": "Central Tolerance",
+        "definition": "Deletion or inactivation of self-reactive lymphocytes during development in primary lymphoid organs (thymus for T cells, bone marrow for B cells).",
+        "summary": "Negative selection in the thymus eliminates most autoreactive T cells. B cell central tolerance removes self-reactive clones before they enter circulation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Immune Pathology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_autoimmunity",
+        "prerequisites": [
+          "spine_biology_l4_self_tolerance"
+        ],
+        "unlocks": [
+          "spine_biology_l4_molecular_mimicry"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Central Tolerance",
+            "relevance": "Primary checkpoint preventing autoreactive lymphocyte maturation.",
+            "applications": [
+              "Thymic negative selection",
+              "B cell deletion"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Immune Pathology",
+            "topic": "Autoimmunity",
+            "subtopic": "Central Tolerance"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_self_tolerance"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_molecular_mimicry"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "44",
+            "section": "44.6.1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_epitope_spreading",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_autoimmunity",
+      "content": {
+        "title": "Epitope Spreading",
+        "definition": "Progressive broadening of the autoimmune response to additional self-epitopes beyond the initiating antigen during chronic inflammation.",
+        "summary": "Initial tissue damage releases cryptic self-antigens. Spreading amplifies and diversifies autoreactivity, worsening disease course."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Immunology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_autoimmunity",
+        "prerequisites": [
+          "spine_biology_l4_central_peripheral_tolerance"
+        ],
+        "unlocks": [
+          "spine_biology_l4_autoantibody_effector_mechanisms"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Epitope Spreading",
+            "relevance": "Explains chronicity in MS and type 1 diabetes.",
+            "applications": [
+              "Cryptic epitope exposure",
+              "Bystander activation"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Autoimmunity",
+            "topic": "Autoimmunity Mechanisms",
+            "subtopic": "Epitope Spreading"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_central_peripheral_tolerance"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_autoantibody_effector_mechanisms"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "44",
+            "section": "44.6"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_hla_genetic_susceptibility",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_autoimmunity",
+      "content": {
+        "title": "HLA and Genetic Susceptibility",
+        "definition": "Association between specific HLA alleles and autoimmune disease risk reflecting altered thymic selection and antigen presentation of self-peptides.",
+        "summary": "HLA-DR4 links to RA; HLA-B27 to spondyloarthropathies. Polygenic risk combines with environmental triggers."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Immunology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_autoimmunity",
+        "prerequisites": [
+          "spine_biology_l4_autoantibody_effector_mechanisms"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "HLA and Genetic Susceptibility",
+            "relevance": "HLA typing in transplant and disease association.",
+            "applications": [
+              "HLA-DR4 and RA",
+              "HLA-B27 and ankylosing spondylitis"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Autoimmunity",
+            "topic": "Autoimmunity Mechanisms",
+            "subtopic": "Genetics"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_autoantibody_effector_mechanisms"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "44",
+            "section": "44.6"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_molecular_mimicry",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_autoimmunity",
+      "content": {
+        "title": "Molecular Mimicry and Epitope Spreading",
+        "definition": "Autoimmune triggers including pathogen antigens resembling self epitopes (molecular mimicry) and immune responses spreading from initial to additional self epitopes (epitope spreading).",
+        "summary": "Molecular mimicry links infection to autoimmunity when cross-reactive antibodies attack host tissues. Epitope spreading broadens the autoimmune attack over time."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Immune Pathology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_autoimmunity",
+        "prerequisites": [
+          "spine_biology_l4_central_tolerance",
+          "spine_biology_l4_central_peripheral_tolerance"
+        ],
+        "unlocks": [
+          "spine_biology_l4_autoimmune_disease_examples",
+          "spine_biology_l4_autoantibody_effector_mechanisms"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Molecular Mimicry and Epitope Spreading",
+            "relevance": "Environmental triggers that break tolerance.",
+            "applications": [
+              "Cross-reactive antibodies",
+              "Epitope spreading"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Immune Pathology",
+            "topic": "Autoimmunity",
+            "subtopic": "Triggers"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_central_tolerance",
+              "spine_biology_l4_central_peripheral_tolerance"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_autoimmune_disease_examples"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Molecular Mimicry",
+            "relevance": "Post-streptococcal glomerulonephritis and rheumatic fever.",
+            "applications": [
+              "Group A strep M protein",
+              "Cross-reactive antibodies"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Autoimmunity",
+            "topic": "Autoimmunity Mechanisms",
+            "subtopic": "Molecular Mimicry"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_central_peripheral_tolerance"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_autoantibody_effector_mechanisms"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "chapter": "Autoimmunity",
+            "section": "Molecular Mimicry"
+          },
+          {
+            "source": "NCBI StatPearls",
+            "section": "Autoimmunity — Molecular Mimicry",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_self_tolerance",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_autoimmunity",
+      "content": {
+        "title": "Self-Tolerance Overview",
+        "definition": "Mechanisms ensuring lymphocytes do not mount adaptive responses against host antigens, including deletion of self-reactive clones and suppression of autoreactive cells.",
+        "summary": "Self-tolerance prevents autoimmunity under normal conditions. Failure at central or peripheral checkpoints permits immune attack on self tissues."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Immune Pathology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_autoimmunity",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_biology_l4_central_tolerance",
+          "spine_biology_l4_central_peripheral_tolerance"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Self-Tolerance Overview",
+            "relevance": "Foundation for understanding why autoimmunity is pathological.",
+            "applications": [
+              "Tolerance checkpoints"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Immune Pathology",
+            "topic": "Autoimmunity",
+            "subtopic": "Self-Tolerance"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_biology_l4_central_tolerance",
+              "spine_biology_l4_central_peripheral_tolerance"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "44",
+            "section": "44.6"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l5_rheumatoid_arthritis_mechanism",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_biology_l3_autoimmunity",
+      "content": {
+        "title": "Rheumatoid Arthritis Pathogenesis",
+        "definition": "Chronic symmetric polyarthritis driven by autoantibodies (RF, anti-CCP), T-cell activation, and cytokine-mediated synovial inflammation with pannus formation.",
+        "summary": "Anti-CCP antibodies are highly specific for RA. TNF and IL-6 drive synovitis and joint destruction."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Immunology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l4_hla_genetic_susceptibility",
+        "prerequisites": [
+          "spine_biology_l4_hla_genetic_susceptibility"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Rheumatoid Arthritis Pathogenesis",
+            "relevance": "Biologic therapy targets (TNF inhibitors).",
+            "applications": [
+              "Anti-CCP specificity",
+              "Pannus and joint erosion"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Autoimmunity",
+            "topic": "Autoimmunity Mechanisms",
+            "subtopic": "RA"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_hla_genetic_susceptibility"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "section": "Rheumatoid Arthritis",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l5_sle_anti_dsdna",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_biology_l3_autoimmunity",
+      "content": {
+        "title": "SLE and Anti-dsDNA Antibodies",
+        "definition": "Systemic lupus erythematosus characterized by anti-dsDNA and anti-nuclear antibodies causing immune complex glomerulonephritis and multisystem inflammation.",
+        "summary": "Anti-dsDNA correlates with disease activity and lupus nephritis. Immune complex deposition in glomeruli drives renal injury."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Immunology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l4_autoantibody_effector_mechanisms",
+        "prerequisites": [
+          "spine_biology_l4_autoantibody_effector_mechanisms"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "SLE and Anti-dsDNA Antibodies",
+            "relevance": "Classic Step 1 autoimmune disease.",
+            "applications": [
+              "Wire-loop glomerular lesions",
+              "ANA and anti-dsDNA serology"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Autoimmunity",
+            "topic": "Autoimmunity Mechanisms",
+            "subtopic": "SLE"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_autoantibody_effector_mechanisms"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "section": "Systemic Lupus Erythematosus",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l5_type_1_diabetes_autoimmunity",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_biology_l3_autoimmunity",
+      "content": {
+        "title": "Type 1 Diabetes Autoimmunity",
+        "definition": "T-cell-mediated destruction of pancreatic beta cells with autoantibodies against insulin, GAD65, and IA-2 marking preclinical autoimmune diabetes.",
+        "summary": "Insulitis reflects autoreactive T-cell attack on islets. Progressive beta-cell loss causes insulin deficiency."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Immunology",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l4_central_peripheral_tolerance",
+        "prerequisites": [
+          "spine_biology_l4_central_peripheral_tolerance"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Type 1 Diabetes Autoimmunity",
+            "relevance": "HLA-DR3/DR4 association and islet autoantibodies.",
+            "applications": [
+              "Anti-GAD antibodies",
+              "Insulitis histology"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Immunology",
+            "subcategory": "Autoimmunity",
+            "topic": "Autoimmunity Mechanisms",
+            "subtopic": "T1DM"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_central_peripheral_tolerance"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "section": "Type 1 Diabetes Mellitus",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
   "name": "functions",
   "scripts": {
-    "prebuild": "node -e \"const v=process.versions.node.split('.')[0]; if(v!=='20'){console.error('❌ Use Node 20 for functions. Current: Node ' + v + '. Run: nvm use 20'); process.exit(1)}\"",
-    "build": "tsc",
+    "prebuild": "node -e \"const v=process.versions.node.split('.')[0]; if(v!=='20'){console.error('❌ Use Node 20 for functions. Current: Node ' + v + '. Run: nvm use 20'); process.exit(1)}\" && node scripts/copy-runtime-content.mjs && node scripts/bundle-library-creator.mjs",
+    "build": "tsc -p tsconfig.build.json",
     "build:watch": "tsc --watch",
     "serve": "npm run build && firebase emulators:start --only functions",
     "shell": "npm run build && firebase functions:shell",
@@ -22,15 +22,16 @@
     "test:rules:manual": "jest tests/integration/firestoreRules.integration.test.ts",
     "test:rules:programmatic": "jest tests/integration/securityRules.test.ts",
     "test:all": "npm test && npm run test:rules",
-    "test:projection": "npm run build && node lib/scripts/test-event-projection.js",
-    "create-dev-user": "npm run build && node lib/scripts/create-dev-user.js",
+    "test:projection": "npm run build && npx tsc -p tsconfig.json && node lib/scripts/test-event-projection.js",
+    "create-dev-user": "npm run build && npx tsc -p tsconfig.json && node lib/scripts/create-dev-user.js",
+    "smoke:library-creation": "node scripts/smoke-library-creation-callable.mjs",
     "emulators:start": "firebase emulators:start --only firestore",
     "emulators:exec": "firebase emulators:exec --only firestore"
   },
   "engines": {
     "node": "20"
   },
-  "main": "lib/src/index.js",
+  "main": "lib/index.js",
   "dependencies": {
     "@google-cloud/firestore": "^8.0.0",
     "firebase-admin": "^13.6.0",
@@ -42,6 +43,7 @@
     "@jest/test-sequencer": "^30.2.0",
     "@types/handlebars": "^4.1.0",
     "@types/jest": "^30.0.0",
+    "esbuild": "^0.25.12",
     "firebase-functions-test": "^3.4.1",
     "firebase-tools": "^13.35.1",
     "jest": "^30.2.0",

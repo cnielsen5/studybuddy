@@ -1,0 +1,342 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_mathematics_l3_normal_distribution",
+    "anchor_primary_domain": "mathematics",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_mathematics_l3_normal_distribution.mathematics.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "5 per-context concepts merged into 5 universal concepts (5 L4 + 0 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_mathematics_l4_central_limit_theorem_intro",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_normal_distribution",
+      "content": {
+        "title": "Central Limit Theorem (Introduction)",
+        "definition": "The sampling distribution of the sample mean approaches normal as sample size increases, regardless of population shape (under finite variance).",
+        "summary": "The CLT justifies normal approximations for sample means and is the bridge from descriptive statistics to inference."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Data & Uncertainty",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_normal_distribution",
+        "prerequisites": [
+          "spine_mathematics_l4_normal_curve_properties"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "The normal distribution underlies statistical inference and measurement error models.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Statistics & Probability",
+            "topic": "Normal Distribution",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_normal_curve_properties"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Introductory Statistics",
+            "chapter": "7",
+            "section": "Central Limit Theorem (Introduction)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_empirical_rule",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_normal_distribution",
+      "content": {
+        "title": "Empirical Rule (68–95–99.7)",
+        "definition": "For normal data, approximately 68% fall within 1σ of μ, 95% within 2σ, and 99.7% within 3σ.",
+        "summary": "The empirical rule provides quick probability estimates without tables for roughly normal datasets."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Data & Uncertainty",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_normal_distribution",
+        "prerequisites": [
+          "spine_mathematics_l4_normal_curve_properties"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "The normal distribution underlies statistical inference and measurement error models.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Statistics & Probability",
+            "topic": "Normal Distribution",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_normal_curve_properties"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Introductory Statistics",
+            "chapter": "6",
+            "section": "Empirical Rule (68–95–99.7)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_normal_curve_properties",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_normal_distribution",
+      "content": {
+        "title": "Normal Curve Properties",
+        "definition": "The normal (Gaussian) distribution is bell-shaped, symmetric about its mean μ, with spread determined by standard deviation σ.",
+        "summary": "Normal curves model many natural and measurement phenomena and are fully characterized by μ and σ."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Data & Uncertainty",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_normal_distribution",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_mathematics_l4_standard_normal_z",
+          "spine_mathematics_l4_empirical_rule"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "The normal distribution underlies statistical inference and measurement error models.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Statistics & Probability",
+            "topic": "Normal Distribution",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_standard_normal_z",
+              "spine_mathematics_l4_empirical_rule"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Introductory Statistics",
+            "chapter": "6",
+            "section": "Normal Curve Properties"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_normal_probability_calculation",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_normal_distribution",
+      "content": {
+        "title": "Normal Probability Calculation",
+        "definition": "Finding P(a < X < b) for normal X using z-scores and standard normal cumulative distribution tables or technology.",
+        "summary": "Probability calculation connects normal models to hypothesis tests and confidence intervals."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Data & Uncertainty",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_normal_distribution",
+        "prerequisites": [
+          "spine_mathematics_l4_standard_normal_z"
+        ],
+        "unlocks": [
+          {
+            "concept_id": "spine_mathematics_l3_hypothesis_testing",
+            "_forward_reference": true
+          }
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "The normal distribution underlies statistical inference and measurement error models.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Statistics & Probability",
+            "topic": "Normal Distribution",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_standard_normal_z"
+            ],
+            "unlocks_in_context": [
+              {
+                "concept_id": "spine_mathematics_l3_hypothesis_testing",
+                "_forward_reference": true
+              }
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Introductory Statistics",
+            "chapter": "6",
+            "section": "Normal Probability Calculation"
+          }
+        ]
+      },
+      "_reviewer_note": "Contains forward reference to existing L3 node — verify target exists in spine."
+    },
+    {
+      "id": "spine_mathematics_l4_standard_normal_z",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_normal_distribution",
+      "content": {
+        "title": "Standard Normal and Z-Scores",
+        "definition": "Z-score z = (x − μ)/σ standardizes any normal variable to mean 0, standard deviation 1 for table lookup.",
+        "summary": "Z-scores express how many standard deviations a value lies from the mean, enabling probability calculations."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Data & Uncertainty",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_normal_distribution",
+        "prerequisites": [
+          "spine_mathematics_l4_normal_curve_properties"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_normal_probability_calculation"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "The normal distribution underlies statistical inference and measurement error models.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Statistics & Probability",
+            "topic": "Normal Distribution",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_normal_curve_properties"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_normal_probability_calculation"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Introductory Statistics",
+            "chapter": "6",
+            "section": "Standard Normal and Z-Scores"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,347 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_pelvic_and_acetabular_fractures",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "Orthopaedic L4/L5 expansion for Pelvic and Acetabular Fractures. 4 L4, 1 L5."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_pelvic_ring_classification",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_pelvic_and_acetabular_fractures",
+      "content": {
+        "title": "Pelvic Ring Classification",
+        "definition": "Young-Burgess and Tile systems describing pelvic ring stability and injury mechanism.",
+        "summary": "LC, AP, and VS patterns predict hemorrhage source and fixation strategy."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Trauma",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_pelvic_and_acetabular_fractures",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Pelvic Ring Classification",
+            "relevance": "High-energy trauma with multidisciplinary management.",
+            "applications": [
+              "Pelvic binder application",
+              "Acetabular approach selection",
+              "Post-traumatic arthritis"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Pelvic Trauma",
+            "topic": "Pelvic and Acetabular Fractures",
+            "subtopic": "Pelvic Ring Classification"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Pelvic and Acetabular Fractures",
+            "chapter": "NBK482316",
+            "section": "Pelvic Fractures"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_pelvic_hemorrhage_control",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_pelvic_and_acetabular_fractures",
+      "content": {
+        "title": "Pelvic Hemorrhage Control",
+        "definition": "Pelvic binder, angiographic embolization, and preperitoneal packing for hemodynamic instability.",
+        "summary": "Binder placement at greater trochanters; avoid definitive fixation before resuscitation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Trauma",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_pelvic_and_acetabular_fractures",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_pelvic_ring_classification"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Pelvic Hemorrhage Control",
+            "relevance": "High-energy trauma with multidisciplinary management.",
+            "applications": [
+              "Pelvic binder application",
+              "Acetabular approach selection",
+              "Post-traumatic arthritis"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Pelvic Trauma",
+            "topic": "Pelvic and Acetabular Fractures",
+            "subtopic": "Pelvic Hemorrhage Control"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_pelvic_ring_classification"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Pelvic and Acetabular Fractures",
+            "chapter": "NBK482316",
+            "section": "Pelvic Fractures"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_acetabular_fracture_classification",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_pelvic_and_acetabular_fractures",
+      "content": {
+        "title": "Acetabular Fracture Classification",
+        "definition": "Letournel and Judet classification by column and wall involvement.",
+        "summary": "Both-column fractures may be managed nonoperatively if congruent hip; displaced fractures need ORIF."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Trauma",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_pelvic_and_acetabular_fractures",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_pelvic_hemorrhage_control"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Acetabular Fracture Classification",
+            "relevance": "High-energy trauma with multidisciplinary management.",
+            "applications": [
+              "Pelvic binder application",
+              "Acetabular approach selection",
+              "Post-traumatic arthritis"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Pelvic Trauma",
+            "topic": "Pelvic and Acetabular Fractures",
+            "subtopic": "Acetabular Fracture Classification"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_pelvic_hemorrhage_control"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Pelvic and Acetabular Fractures",
+            "chapter": "NBK482316",
+            "section": "Pelvic Fractures"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_acetabular_surgical_approaches",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_pelvic_and_acetabular_fractures",
+      "content": {
+        "title": "Acetabular Surgical Approaches",
+        "definition": "Kocher-Langenbeck, ilioinguinal, and Stoppa approaches matched to fracture pattern.",
+        "summary": "Approach selection balances exposure with sciatic and vascular risk."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Trauma",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_pelvic_and_acetabular_fractures",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_acetabular_fracture_classification"
+        ],
+        "unlocks": [
+          "spine_medicine_clinical_l5_post_traumatic_hip_arthritis"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Acetabular Surgical Approaches",
+            "relevance": "High-energy trauma with multidisciplinary management.",
+            "applications": [
+              "Pelvic binder application",
+              "Acetabular approach selection",
+              "Post-traumatic arthritis"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Pelvic Trauma",
+            "topic": "Pelvic and Acetabular Fractures",
+            "subtopic": "Acetabular Surgical Approaches"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_acetabular_fracture_classification"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_clinical_l5_post_traumatic_hip_arthritis"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Pelvic and Acetabular Fractures",
+            "chapter": "NBK482316",
+            "section": "Pelvic Fractures"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l5_post_traumatic_hip_arthritis",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_clinical_l3_pelvic_and_acetabular_fractures",
+      "content": {
+        "title": "Post-Traumatic Hip Arthritis After Acetabular Fracture",
+        "definition": "Joint degeneration following malreduction or articular cartilage injury.",
+        "summary": "THA after acetabular ORIF requires specialized revision techniques and prior hardware management."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Trauma",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l4_acetabular_surgical_approaches",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_acetabular_surgical_approaches"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Post-Traumatic Hip Arthritis After Acetabular Fracture",
+            "relevance": "High-energy trauma with multidisciplinary management.",
+            "applications": [
+              "Pelvic binder application",
+              "Acetabular approach selection",
+              "Post-traumatic arthritis"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Pelvic Trauma",
+            "topic": "Pelvic and Acetabular Fractures",
+            "subtopic": "Post-Traumatic Hip Arthritis After Acetabular Fracture"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_acetabular_surgical_approaches"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Pelvic and Acetabular Fractures",
+            "chapter": "NBK482316",
+            "section": "Pelvic Fractures"
+          }
+        ]
+      }
+    }
+  ]
+}

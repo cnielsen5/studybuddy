@@ -1,0 +1,1034 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_biology_l3_action_potential",
+    "anchor_primary_domain": "biology",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_biology_l3_action_potential.biology.json",
+      "content/spine/l4-l5-bundles/spine_biology_l3_action_potential.psychology_neuroscience.json",
+      "content/spine/l4-l5-samples/spine_biology_l3_action_potential.medicine_preclinical.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "18 per-context concepts merged into 9 universal concepts (8 L4 + 1 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_biology_l4_action_potential_phases",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_action_potential",
+      "content": {
+        "title": "Action Potential Phases",
+        "definition": "The sequence of depolarization, repolarization, and afterhyperpolarization in excitable cells associated with membrane potential overshoot and return to resting state.",
+        "summary": "Depolarization follows rapid Na⁺ entry; repolarization results from Na⁺ inactivation and K⁺ efflux. Afterhyperpolarization briefly hyperpolarizes the membrane below resting potential."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Cell Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": "Also used in psychology_neuroscience (neural signaling) and medicine_preclinical (cardiac/neural electrophysiology)."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_action_potential",
+        "prerequisites": [
+          "spine_biology_l4_voltage_gated_ion_channels"
+        ],
+        "unlocks": [
+          "spine_biology_l4_refractory_periods",
+          "spine_biology_l4_signal_propagation",
+          "spine_biology_l5_saltatory_conduction",
+          "spine_biology_l4_local_anesthetic_na_blockade"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Action Potential Phases",
+            "relevance": "Links ion channel kinetics to the characteristic voltage trace of excitable cells.",
+            "applications": [
+              "Depolarization overshoot",
+              "Repolarization"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Cell Biology",
+            "subcategory": "Membrane Physiology",
+            "topic": "Electrical Signaling",
+            "subtopic": "AP Phases"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_voltage_gated_ion_channels"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_refractory_periods",
+              "spine_biology_l4_signal_propagation",
+              "spine_biology_l5_saltatory_conduction"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Neuronal Action Potential Phases",
+            "relevance": "Contrast with cardiac AP; basis for neural pharmacology.",
+            "applications": [
+              "Refractory periods",
+              "Axonal propagation"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Electrophysiology",
+            "topic": "Action Potential",
+            "subtopic": "Neuronal AP"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_voltage_gated_ion_channels"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_local_anesthetic_na_blockade",
+              "spine_biology_l4_refractory_periods",
+              "spine_biology_l5_saltatory_conduction"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Neuronal Action Potential Phases",
+            "relevance": "Foundation of information coding and transmission in the nervous system.",
+            "applications": [
+              "Spike timing",
+              "Neural encoding"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biological Psychology & Neuroscience",
+            "subcategory": "Cellular Neuroscience",
+            "topic": "Neuronal Excitability",
+            "subtopic": "AP Phases"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_voltage_gated_ion_channels"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_refractory_periods",
+              "spine_biology_l5_saltatory_conduction"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "33",
+            "section": "33.4"
+          },
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "12",
+            "section": "12.4.2"
+          },
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "12",
+            "section": "12.4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_action_potential_threshold",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_action_potential",
+      "content": {
+        "title": "Threshold and All-or-None Response",
+        "definition": "The membrane potential at which depolarization becomes self-sustaining and triggers a maximal action potential, with subthreshold stimuli producing graded but non-propagating responses.",
+        "summary": "Excitable cells integrate subthreshold inputs until threshold is reached, then fire an all-or-none action potential that propagates without decrement."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Cell Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": "Also used in psychology_neuroscience (neural signaling) and medicine_preclinical (cardiac/neural electrophysiology)."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_action_potential",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_biology_l4_voltage_gated_ion_channels"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Threshold and All-or-None Response",
+            "relevance": "Explains how neurons convert graded inputs into digital signals.",
+            "applications": [
+              "Subthreshold summation",
+              "All-or-none firing"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Cell Biology",
+            "subcategory": "Membrane Physiology",
+            "topic": "Electrical Signaling",
+            "subtopic": "Threshold"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_biology_l4_voltage_gated_ion_channels"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Threshold and All-or-None Response",
+            "relevance": "EPSP/IPSP summation and firing threshold on Step 1.",
+            "applications": [
+              "Temporal summation",
+              "Spatial summation"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Electrophysiology",
+            "topic": "Action Potential",
+            "subtopic": "Threshold"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_biology_l4_voltage_gated_ion_channels"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Threshold and All-or-None Firing",
+            "relevance": "Foundation of information coding and transmission in the nervous system.",
+            "applications": [
+              "Spike timing",
+              "Neural encoding"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biological Psychology & Neuroscience",
+            "subcategory": "Cellular Neuroscience",
+            "topic": "Neuronal Excitability",
+            "subtopic": "Threshold"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_biology_l4_voltage_gated_ion_channels"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "33",
+            "section": "33.2"
+          },
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "12",
+            "section": "12.4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_axonal_propagation",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_action_potential",
+      "content": {
+        "title": "Axonal Propagation and Conduction",
+        "definition": "Regenerative spread of action potentials along axons, accelerated by myelination and saltatory conduction at nodes.",
+        "summary": "Local current loops depolarize adjacent membrane; myelin reduces capacitance and metabolic load."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Cell Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": "Also used in psychology_neuroscience (neural signaling) and medicine_preclinical (cardiac/neural electrophysiology)."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_action_potential",
+        "prerequisites": [
+          "spine_biology_l4_voltage_gated_ion_channels"
+        ],
+        "unlocks": [
+          {
+            "concept_id": "spine_biology_l3_synaptic_transmission",
+            "_forward_reference": true
+          }
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Axonal Propagation and Conduction",
+            "relevance": "Links ion channel kinetics to signal propagation in excitable cells.",
+            "applications": [
+              "Axonal conduction",
+              "Myelin and nodes of Ranvier"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Cell Biology",
+            "subcategory": "Membrane Physiology",
+            "topic": "Electrical Signaling",
+            "subtopic": "and Conduction"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_voltage_gated_ion_channels"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Axonal Propagation and Conduction",
+            "relevance": "Neural and neuromuscular conduction; demyelination in disease.",
+            "applications": [
+              "Conduction velocity",
+              "Local anesthetic targets"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Electrophysiology",
+            "topic": "Action Potential",
+            "subtopic": "and Conduction"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_voltage_gated_ion_channels"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Axonal Propagation and Conduction",
+            "relevance": "Foundation of information coding and transmission in the nervous system.",
+            "applications": [
+              "Spike timing",
+              "Neural encoding"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biological Psychology & Neuroscience",
+            "subcategory": "Cellular Neuroscience",
+            "topic": "Neuronal Excitability",
+            "subtopic": "Conduction"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_voltage_gated_ion_channels"
+            ],
+            "unlocks_in_context": [
+              {
+                "concept_id": "spine_biology_l3_synaptic_transmission",
+                "_forward_reference": true
+              }
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "12",
+            "section": "12.4.3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_cardiac_ap_ventricular",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_action_potential",
+      "content": {
+        "title": "Cardiac Action Potential Overview (Non-Pacemaker)",
+        "definition": "A comparative overview of ventricular myocyte action potentials highlighting prolonged depolarization from calcium influx creating a plateau phase, distinct from brief neuronal action potentials.",
+        "summary": "Cardiac myocytes have a longer action potential due to L-type calcium channel-mediated plateau. Detailed phase 0–4 ionic currents belong under cardiac membrane potential L3; this node establishes contrast only."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Cell Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_action_potential",
+        "prerequisites": [
+          "spine_biology_l4_voltage_gated_ion_channels"
+        ],
+        "unlocks": [
+          {
+            "concept_id": "spine_medicine_preclinical_l3_antiarrhythmic_drug_classes",
+            "_forward_reference": true
+          },
+          {
+            "concept_id": "spine_medicine_preclinical_l3_cardiac_membrane_potential",
+            "_forward_reference": true
+          }
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Cardiac Action Potential Overview (Non-Pacemaker)",
+            "relevance": "Comparative only — phase detail and antiarrhythmic mechanisms live in dedicated L3 nodes.",
+            "applications": [
+              "Plateau phase concept",
+              "AP duration and QT"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Electrophysiology",
+            "topic": "Action Potential",
+            "subtopic": "Cardiac AP Overview"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_voltage_gated_ion_channels"
+            ],
+            "unlocks_in_context": [
+              {
+                "concept_id": "spine_medicine_preclinical_l3_antiarrhythmic_drug_classes",
+                "_forward_reference": true
+              },
+              {
+                "concept_id": "spine_medicine_preclinical_l3_cardiac_membrane_potential",
+                "_forward_reference": true
+              }
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "19",
+            "section": "19.2"
+          }
+        ]
+      },
+      "_reviewer_note": "Do not add L5 antiarrhythmic detail here — forward reference to antiarrhythmic_drug_classes L3."
+    },
+    {
+      "id": "spine_biology_l4_local_anesthetic_na_blockade",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_action_potential",
+      "content": {
+        "title": "Local Anesthetic Mechanism (Na⁺ Channel Blockade)",
+        "definition": "Use-dependent blockade of voltage-gated sodium channels by local anesthetic agents, preventing depolarization and action potential propagation in sensory neurons.",
+        "summary": "Local anesthetics bind sodium channels from the intracellular side preferentially in open or inactivated states, blocking propagation in high-frequency firing fibers first."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Cell Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_action_potential",
+        "prerequisites": [
+          "spine_biology_l4_action_potential_phases"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Local Anesthetic Mechanism (Na⁺ Channel Blockade)",
+            "relevance": "Links AP physiology to pharmacology — use dependence and pKa.",
+            "applications": [
+              "Procaine/lidocaine mechanism",
+              "Small myelinated fiber sensitivity"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Electrophysiology",
+            "topic": "Action Potential",
+            "subtopic": "Local Anesthetics"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_action_potential_phases"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Local Anesthetics",
+            "section": "Mechanism of Action",
+            "url": "https://www.ncbi.nlm.nih.gov/books/NBK549835/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_refractory_periods",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_action_potential",
+      "content": {
+        "title": "Absolute and Relative Refractory Periods",
+        "definition": "Intervals following an action potential during which a second stimulus cannot (absolute) or only with greater strength (relative) elicit another action potential due to Na⁺ channel inactivation and K⁺ channel activity.",
+        "summary": "The absolute refractory period enforces unidirectional propagation. The relative refractory period limits maximal firing frequency when stimuli arrive in rapid succession."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Cell Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": "Also used in psychology_neuroscience (neural signaling) and medicine_preclinical (cardiac/neural electrophysiology)."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_action_potential",
+        "prerequisites": [
+          "spine_biology_l4_action_potential_phases"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Absolute and Relative Refractory Periods",
+            "relevance": "Explains firing frequency limits and directionality of signal propagation.",
+            "applications": [
+              "Na⁺ inactivation gate",
+              "Firing frequency cap"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Cell Biology",
+            "subcategory": "Membrane Physiology",
+            "topic": "Electrical Signaling",
+            "subtopic": "Refractory Periods"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_action_potential_phases"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Absolute vs Relative Refractory Period",
+            "relevance": "Limits maximal firing frequency; explains directionality of AP propagation.",
+            "applications": [
+              "Inactivation gate logic",
+              "Frequency coding"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Electrophysiology",
+            "topic": "Action Potential",
+            "subtopic": "Refractory Periods"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_action_potential_phases"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Absolute vs Relative Refractory Period",
+            "relevance": "Foundation of information coding and transmission in the nervous system.",
+            "applications": [
+              "Spike timing",
+              "Neural encoding"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biological Psychology & Neuroscience",
+            "subcategory": "Cellular Neuroscience",
+            "topic": "Neuronal Excitability",
+            "subtopic": "Refractory"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_action_potential_phases"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "33",
+            "section": "33.5"
+          },
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "12",
+            "section": "12.4.4"
+          },
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "12",
+            "section": "12.4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_signal_propagation",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_action_potential",
+      "content": {
+        "title": "Continuous and Saltatory Conduction",
+        "definition": "Propagation of action potentials along unmyelinated axons by sequential depolarization of adjacent membrane regions, or along myelinated axons by jumping between nodes of Ranvier.",
+        "summary": "Myelin increases conduction velocity by insulating internodal regions and concentrating current at nodes. Saltatory conduction is energetically efficient for long-distance signaling."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Cell Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_action_potential",
+        "prerequisites": [
+          "spine_biology_l4_action_potential_phases"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Continuous and Saltatory Conduction",
+            "relevance": "How action potentials travel along axons to reach synaptic terminals.",
+            "applications": [
+              "Myelin sheath",
+              "Nodes of Ranvier"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Cell Biology",
+            "subcategory": "Membrane Physiology",
+            "topic": "Electrical Signaling",
+            "subtopic": "Conduction"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_action_potential_phases"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "33",
+            "section": "33.6"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l4_voltage_gated_ion_channels",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_biology_l3_action_potential",
+      "content": {
+        "title": "Voltage-Gated Na⁺ and K⁺ Channel Sequence",
+        "definition": "The ordered opening and inactivation of voltage-gated sodium channels followed by delayed opening of voltage-gated potassium channels that produce depolarization and repolarization of excitable membranes.",
+        "summary": "Sodium influx drives rapid depolarization; sodium inactivation and potassium efflux restore negative membrane potential and define action potential shape."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Cell Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": "Also used in psychology_neuroscience (neural signaling) and medicine_preclinical (cardiac/neural electrophysiology)."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l3_action_potential",
+        "prerequisites": [
+          "spine_biology_l4_action_potential_threshold"
+        ],
+        "unlocks": [
+          "spine_biology_l4_action_potential_phases",
+          "spine_biology_l4_axonal_propagation",
+          "spine_biology_l4_cardiac_ap_ventricular"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Voltage-Gated Na⁺ and K⁺ Channel Sequence",
+            "relevance": "Mechanistic basis for action potential generation in neurons and muscle.",
+            "applications": [
+              "Na⁺ channel activation",
+              "K⁺ repolarization"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Cell Biology",
+            "subcategory": "Membrane Physiology",
+            "topic": "Electrical Signaling",
+            "subtopic": "Ion Channel Gating"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_action_potential_threshold"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_action_potential_phases",
+              "spine_biology_l4_axonal_propagation"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Voltage-Gated Na⁺ and K⁺ Channel Sequence",
+            "relevance": "Mechanistic basis for local anesthetics and antiarrhythmics targeting Na⁺ channels.",
+            "applications": [
+              "Na⁺ channel blockade",
+              "K⁺ channel role in repolarization"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Electrophysiology",
+            "topic": "Action Potential",
+            "subtopic": "Ion Channel Gating"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_action_potential_threshold"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_action_potential_phases",
+              "spine_biology_l4_cardiac_ap_ventricular",
+              "spine_biology_l4_axonal_propagation"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Voltage-Gated Na⁺ and K⁺ Channel Sequence",
+            "relevance": "Foundation of information coding and transmission in the nervous system.",
+            "applications": [
+              "Spike timing",
+              "Neural encoding"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biological Psychology & Neuroscience",
+            "subcategory": "Cellular Neuroscience",
+            "topic": "Neuronal Excitability",
+            "subtopic": "Ion Channels"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_action_potential_threshold"
+            ],
+            "unlocks_in_context": [
+              "spine_biology_l4_action_potential_phases",
+              "spine_biology_l4_axonal_propagation"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Biology 2e",
+            "chapter": "33",
+            "section": "33.3"
+          },
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "12",
+            "section": "12.4.1"
+          },
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "12",
+            "section": "12.4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_biology_l5_saltatory_conduction",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_biology_l3_action_potential",
+      "content": {
+        "title": "Saltatory Conduction in Myelinated Axons",
+        "definition": "Rapid action potential propagation in myelinated axons where depolarization jumps between nodes of Ranvier, regenerating at each node while myelin insulates internodal segments.",
+        "summary": "Saltatory conduction increases conduction velocity and metabolic efficiency. Demyelination disrupts this mechanism and slows or blocks signal transmission."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Life Sciences",
+        "knowledge_cluster": "Cell Signaling",
+        "primary_domain": "biology",
+        "_shared_concept_note": "Also used in psychology_neuroscience (neural signaling) and medicine_preclinical (cardiac/neural electrophysiology)."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_biology_l4_action_potential_phases",
+        "prerequisites": [
+          "spine_biology_l4_action_potential_phases"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "biology",
+          "framing": {
+            "title_in_context": "Saltatory Conduction in Myelinated Axons",
+            "relevance": "Links ion channel kinetics to signal propagation in excitable cells.",
+            "applications": [
+              "Axonal conduction",
+              "Myelin and nodes of Ranvier"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Cell Biology",
+            "subcategory": "Membrane Physiology",
+            "topic": "Electrical Signaling",
+            "subtopic": "Myelinated Axons"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_action_potential_phases"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Saltatory Conduction in Myelinated Axons",
+            "relevance": "Explains MS demyelination conduction failure.",
+            "applications": [
+              "Nodes of Ranvier",
+              "Conduction velocity"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Electrophysiology",
+            "topic": "Action Potential",
+            "subtopic": "Saltatory Conduction"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_action_potential_phases"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "psychology_neuroscience",
+          "framing": {
+            "title_in_context": "Saltatory Conduction in Myelinated Axons",
+            "relevance": "Foundation of information coding and transmission in the nervous system.",
+            "applications": [
+              "Spike timing",
+              "Neural encoding"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Biological Psychology & Neuroscience",
+            "subcategory": "Cellular Neuroscience",
+            "topic": "Neuronal Excitability",
+            "subtopic": "Saltatory"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_biology_l4_action_potential_phases"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "12",
+            "section": "12.4.5"
+          },
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "12",
+            "section": "12.4"
+          }
+        ]
+      }
+    }
+  ]
+}

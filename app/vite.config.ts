@@ -13,6 +13,7 @@ export default defineConfig({
         __dirname,
         "../functions/src/core/concept/deriveConceptMetrics.ts"
       ),
+      "@lc": path.resolve(__dirname, "../library-creator/src"),
     },
   },
 });

@@ -1,0 +1,1927 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_mathematics_l3_exponential_decay",
+    "anchor_primary_domain": "mathematics",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_mathematics_l3_exponential_decay.chemistry.json",
+      "content/spine/l4-l5-bundles/spine_mathematics_l3_exponential_decay.mathematics.json",
+      "content/spine/l4-l5-bundles/spine_mathematics_l3_exponential_decay.physics.json",
+      "content/spine/l4-l5-samples/spine_mathematics_l3_exponential_decay.medicine_preclinical.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "27 per-context concepts merged into 26 universal concepts (20 L4 + 6 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_mathematics_l4_activity_and_decay_rate",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_exponential_decay",
+      "content": {
+        "title": "Activity and Decay Rate (Becquerels)",
+        "definition": "Decay rate or activity A = λN measured in becquerels (decays per second), proportional to number of undecayed nuclei at a given time.",
+        "summary": "Activity decreases exponentially alongside N. Curie is legacy unit (3.7×10¹⁰ Bq)."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Radioactivity",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_exponential_decay",
+        "prerequisites": [
+          "spine_mathematics_l4_half_life_decay_constant"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_mean_lifetime_radioactive"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "physics",
+          "framing": {
+            "title_in_context": "Activity and Decay Rate (Becquerels)",
+            "relevance": "Radiation safety and dosimetry.",
+            "applications": [
+              "A = λN",
+              "Becquerel definition"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Nuclear Physics",
+            "subcategory": "Radioactivity",
+            "topic": "Radioactive Decay",
+            "subtopic": "Activity"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_half_life_decay_constant"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_mean_lifetime_radioactive"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax University Physics Vol 3",
+            "chapter": "10",
+            "section": "10.4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_clearance_elimination_relationship",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_exponential_decay",
+      "content": {
+        "title": "Clearance and Elimination Relationship",
+        "definition": "The relationship between clearance (volume of fluid cleared of a substance per unit time) and elimination rate under first-order kinetics, expressed as clearance equals elimination rate constant multiplied by volume of distribution.",
+        "summary": "Clearance integrates elimination rate and distribution volume into a single measure of body capacity to remove a substance. It bridges exponential decay parameters to clinically reported clearance values."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_exponential_decay",
+        "prerequisites": [
+          "spine_mathematics_l4_elimination_rate_constant"
+        ],
+        "unlocks": [
+          {
+            "concept_id": "spine_medicine_preclinical_l3_steady_state_concentration",
+            "_forward_reference": true
+          }
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Clearance and Elimination Relationship",
+            "relevance": "CL = ke × Vd connects elimination kinetics to steady-state concentration calculations.",
+            "applications": [
+              "Relating clearance to half-life",
+              "Dose adjustment principles"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Pharmacology",
+            "subcategory": "Pharmacokinetics",
+            "topic": "Drug Elimination",
+            "subtopic": "Clearance"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_elimination_rate_constant"
+            ],
+            "unlocks_in_context": [
+              {
+                "concept_id": "spine_medicine_preclinical_l3_steady_state_concentration",
+                "_forward_reference": true
+              }
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Pharmacokinetics",
+            "section": "Clearance",
+            "url": "https://www.ncbi.nlm.nih.gov/books/NBK557744/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_decay_vs_growth_comparison",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_exponential_decay",
+      "content": {
+        "title": "Exponential Decay vs Growth Comparison",
+        "definition": "Growth uses N(t) = N₀e^{kt} with k > 0; decay uses k < 0 (or positive λ with negative exponent), mirroring sign of proportional rate.",
+        "summary": "Growth and decay share the same mathematical structure with opposite sign of rate constant, unifying population and financial models."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_exponential_decay",
+        "prerequisites": [
+          "spine_mathematics_l4_exponential_decay_law"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Core example of differential-equation solutions and the natural exponential function.",
+            "applications": [
+              "Cooling curves",
+              "Population decline models",
+              "Reverse compound growth"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Pre-Calculus & Functions",
+            "subcategory": "Function Families",
+            "topic": "Exponential & Logarithmic Functions",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_exponential_decay_law"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 1",
+            "chapter": "6",
+            "section": "Exponential Decay vs Growth Comparison"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_dosing_interval_accumulation",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_exponential_decay",
+      "content": {
+        "title": "Dosing Interval and Accumulation Principles",
+        "definition": "The relationship between dosing frequency, half-life, and progressive accumulation of a substance in a compartment during repeated administration before steady state is reached.",
+        "summary": "When doses are given repeatedly at intervals shorter than about five half-lives, accumulation occurs until input equals elimination. Dosing interval relative to half-life determines peak-trough fluctuation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_exponential_decay",
+        "prerequisites": [
+          "spine_mathematics_l4_drug_half_life"
+        ],
+        "unlocks": [
+          {
+            "concept_id": "spine_medicine_preclinical_l3_steady_state_concentration",
+            "_forward_reference": true
+          }
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Dosing Interval and Accumulation Principles",
+            "relevance": "Bridges half-life to steady-state concepts without duplicating the L3 steady-state node.",
+            "applications": [
+              "Loading dose rationale",
+              "Peak-trough design"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Pharmacology",
+            "subcategory": "Pharmacokinetics",
+            "topic": "Drug Elimination",
+            "subtopic": "Accumulation"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_drug_half_life"
+            ],
+            "unlocks_in_context": [
+              {
+                "concept_id": "spine_medicine_preclinical_l3_steady_state_concentration",
+                "_forward_reference": true
+              }
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Pharmacokinetics",
+            "section": "Steady State",
+            "url": "https://www.ncbi.nlm.nih.gov/books/NBK557744/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_drug_half_life",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_exponential_decay",
+      "content": {
+        "title": "Drug Half-Life (t½)",
+        "definition": "The time required for the concentration or amount of a substance in a compartment to decrease by one half under a given elimination model.",
+        "summary": "Under first-order elimination, half-life is constant and independent of starting concentration. It governs accumulation during repeated dosing and the time required to reach or leave steady state."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_exponential_decay",
+        "prerequisites": [
+          "spine_mathematics_l4_elimination_rate_constant"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_dosing_interval_accumulation",
+          "spine_mathematics_l5_time_to_steady_state",
+          "spine_mathematics_l5_half_life_organ_impairment"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Drug Half-Life (t½)",
+            "relevance": "Half-life drives dosing interval selection and time to steady state on Step 1.",
+            "applications": [
+              "Choosing dosing frequency",
+              "Estimating washout time",
+              "Comparing drug persistence"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Pharmacology",
+            "subcategory": "Pharmacokinetics",
+            "topic": "Drug Elimination",
+            "subtopic": "Half-Life"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_elimination_rate_constant"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_dosing_interval_accumulation",
+              "spine_mathematics_l5_time_to_steady_state",
+              "spine_mathematics_l5_half_life_organ_impairment"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Pharmacokinetics",
+            "section": "Half-Life",
+            "url": "https://www.ncbi.nlm.nih.gov/books/NBK557744/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_elimination_rate_constant",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_exponential_decay",
+      "content": {
+        "title": "Elimination Rate Constant (ke)",
+        "definition": "A proportionality constant describing the fraction of a substance eliminated per unit time under first-order kinetics, with units of inverse time (time⁻¹).",
+        "summary": "ke quantifies how rapidly a substance is cleared from a compartment under proportional elimination. It links exponential decay mathematics to measurable pharmacokinetic parameters and determines half-life."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": "Mathematically equivalent to decay constant λ in physics and rate constant k in first-order chemical reactions."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_exponential_decay",
+        "prerequisites": [
+          "spine_mathematics_l4_first_order_elimination_model"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_drug_half_life",
+          "spine_mathematics_l4_clearance_elimination_relationship",
+          "spine_mathematics_l5_ke_half_life_equation",
+          "spine_mathematics_l5_factors_altering_ke"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "chemistry",
+          "framing": {
+            "title_in_context": "First-Order Rate Constant (k)",
+            "relevance": "Quantitative measure of reaction speed.",
+            "applications": [
+              "k units (s⁻¹)",
+              "Arrhenius dependence"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physical Chemistry",
+            "subcategory": "Chemical Kinetics",
+            "topic": "Reaction Orders",
+            "subtopic": "Rate Constant"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Elimination Rate Constant (ke)",
+            "relevance": "ke = 0.693/t½ is high-yield for Step 1 dosing calculations.",
+            "applications": [
+              "Deriving half-life from ke",
+              "Predicting time to steady state",
+              "Adjusting dosing in organ impairment"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Pharmacology",
+            "subcategory": "Pharmacokinetics",
+            "topic": "Drug Elimination",
+            "subtopic": "Elimination Rate Constant"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_first_order_elimination_model"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_drug_half_life",
+              "spine_mathematics_l4_clearance_elimination_relationship",
+              "spine_mathematics_l5_ke_half_life_equation",
+              "spine_mathematics_l5_factors_altering_ke"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "physics",
+          "framing": {
+            "title_in_context": "Exponential Decay Law N(t) = N₀e^(−λt)",
+            "relevance": "Foundation for radiometric dating and dosimetry.",
+            "applications": [
+              "First-order proportional loss",
+              "Decay constant λ"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Nuclear Physics",
+            "subcategory": "Radioactivity",
+            "topic": "Radioactive Decay",
+            "subtopic": "Decay Law"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Pharmacokinetics",
+            "section": "Elimination Rate Constant",
+            "url": "https://www.ncbi.nlm.nih.gov/books/NBK557744/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_exponential_decay_law",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_exponential_decay",
+      "content": {
+        "title": "Exponential Decay Law N(t) = N₀e^(−λt)",
+        "definition": "Mathematical model describing quantity decreasing at a rate proportional to current amount, with solution N(t) = N₀e^(−λt) where λ is the decay constant.",
+        "summary": "Exponential decay predicts constant fractional loss per unit time. Applies to radioactive nuclei, unstable particles, and other first-order decay processes."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Radioactivity",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": "Also used in chemistry (first-order kinetics), medicine_preclinical (drug elimination), physics (radioactive decay)."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_exponential_decay",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_mathematics_l4_half_life_decay_constant",
+          "spine_mathematics_l4_activity_and_decay_rate",
+          "spine_mathematics_l4_half_life_decay_constant",
+          "spine_mathematics_l4_proportional_decay_rate"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "chemistry",
+          "framing": {
+            "title_in_context": "Exponential Decay Law N(t) = N₀e^(−λt)",
+            "relevance": "First-order kinetics: concentration decays exponentially with time.",
+            "applications": [
+              "Integrated rate law",
+              "Half-life calculations"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Physical Chemistry",
+            "subcategory": "Chemical Kinetics",
+            "topic": "Reaction Orders",
+            "subtopic": "Exponential Decay"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_half_life_decay_constant"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Core example of differential-equation solutions and the natural exponential function.",
+            "applications": [
+              "Cooling curves",
+              "Population decline models",
+              "Reverse compound growth"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Pre-Calculus & Functions",
+            "subcategory": "Function Families",
+            "topic": "Exponential & Logarithmic Functions",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_half_life_decay_constant",
+              "spine_mathematics_l4_proportional_decay_rate"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Exponential Decay Law N(t) = N₀e^(−λt)",
+            "relevance": "Drug elimination and washout follow first-order exponential decay.",
+            "applications": [
+              "Plasma concentration curves",
+              "Half-life and dosing intervals"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Pharmacology",
+            "subcategory": "Pharmacokinetics",
+            "topic": "Drug Elimination",
+            "subtopic": "Exponential Elimination"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "physics",
+          "framing": {
+            "title_in_context": "Exponential Decay Law N(t) = N₀e^(−λt)",
+            "relevance": "Foundation for radiometric dating and dosimetry.",
+            "applications": [
+              "First-order proportional loss",
+              "Decay constant λ"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Nuclear Physics",
+            "subcategory": "Radioactivity",
+            "topic": "Radioactive Decay",
+            "subtopic": "Decay Law"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_half_life_decay_constant",
+              "spine_mathematics_l4_activity_and_decay_rate"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-26T05:54:17.140Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax University Physics Vol 3",
+            "chapter": "10",
+            "section": "10.3"
+          },
+          {
+            "source": "OpenStax Calculus Volume 1",
+            "chapter": "6",
+            "section": "Exponential Decay Model N(t) = N₀e^{−λt}"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_first_order_elimination_model",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_exponential_decay",
+      "content": {
+        "title": "First-Order Elimination Model",
+        "definition": "A kinetic model in which the rate of removal of a substance from a compartment is directly proportional to the amount present in that compartment at a given time.",
+        "summary": "First-order elimination predicts that a constant fraction of remaining drug is cleared per unit time, producing exponential decline in concentration. It is the default pharmacokinetic assumption for most drugs and makes half-life a concentration-independent property under this model."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": "Mathematically identical to first-order reaction kinetics in chemistry (spine_chemistry_l3_integrated_rate_laws). Add chemistry domain context in consolidation pass."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_exponential_decay",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_mathematics_l4_elimination_rate_constant",
+          "spine_mathematics_l4_drug_half_life",
+          "spine_mathematics_l4_zero_order_vs_first_order_elimination",
+          {
+            "concept_id": "spine_chemistry_l3_integrated_rate_laws",
+            "_forward_reference": true
+          }
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "First-Order Elimination Model",
+            "relevance": "Foundation for half-life, steady-state, and dosing interval calculations on Step 1.",
+            "applications": [
+              "Predicting plasma concentration over time",
+              "Distinguishing first-order from zero-order elimination",
+              "Explaining concentration-independent half-life for most drugs"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Pharmacology",
+            "subcategory": "Pharmacokinetics",
+            "topic": "Drug Elimination",
+            "subtopic": "First-Order Model"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_elimination_rate_constant",
+              "spine_mathematics_l4_drug_half_life",
+              "spine_mathematics_l4_zero_order_vs_first_order_elimination"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Pharmacokinetics",
+            "section": "First-Order Kinetics",
+            "url": "https://www.ncbi.nlm.nih.gov/books/NBK557744/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_first_order_reaction_model",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_exponential_decay",
+      "content": {
+        "title": "First-Order Reaction Model",
+        "definition": "Kinetic model in which reaction rate is directly proportional to the concentration of a single reactant, producing exponential decline in concentration over time.",
+        "summary": "First-order reactions have a constant half-life independent of initial concentration. Radioactive decay and many unimolecular reactions follow this model."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": "Mathematically identical to exponential decay (spine_mathematics_l3_exponential_decay) and first-order drug elimination in pharmacokinetics."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_exponential_decay",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_mathematics_l4_rate_constant_first_order",
+          "spine_mathematics_l4_integrated_rate_law_first_order",
+          {
+            "concept_id": "spine_mathematics_l3_exponential_decay",
+            "_forward_reference": true
+          }
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "chemistry",
+          "framing": {
+            "title_in_context": "First-Order Reaction Model",
+            "relevance": "Foundation for half-life and integrated rate law calculations.",
+            "applications": [
+              "Exponential decay",
+              "Unimolecular reactions"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physical Chemistry",
+            "subcategory": "Chemical Kinetics",
+            "topic": "Reaction Orders",
+            "subtopic": "First-Order Model"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_rate_constant_first_order",
+              "spine_mathematics_l4_integrated_rate_law_first_order"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Chemistry 2e",
+            "chapter": "12",
+            "section": "12.4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_half_life_decay_constant",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_exponential_decay",
+      "content": {
+        "title": "Half-Life and Decay Constant Relationship",
+        "definition": "Time for half of a radioactive sample to decay, related to decay constant by t₁/₂ = ln(2)/λ, independent of initial quantity N₀.",
+        "summary": "Half-life is an intrinsic property of each radionuclide. After n half-lives, fraction remaining is (1/2)ⁿ."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Radioactivity",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_exponential_decay",
+        "prerequisites": [
+          "spine_mathematics_l4_rate_constant_first_order",
+          "spine_mathematics_l4_exponential_decay_law",
+          "spine_mathematics_l4_exponential_decay_law"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_activity_and_decay_rate",
+          "spine_mathematics_l4_solving_decay_problems"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "chemistry",
+          "framing": {
+            "title_in_context": "Half-Life and Rate Constant Relationship",
+            "relevance": "Essential calculation linking k and t½.",
+            "applications": [
+              "t½ = 0.693/k",
+              "Unit consistency"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physical Chemistry",
+            "subcategory": "Chemical Kinetics",
+            "topic": "Reaction Orders",
+            "subtopic": "t½-k Relationship"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_rate_constant_first_order",
+              "spine_mathematics_l4_exponential_decay_law"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Core example of differential-equation solutions and the natural exponential function.",
+            "applications": [
+              "Cooling curves",
+              "Population decline models",
+              "Reverse compound growth"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Pre-Calculus & Functions",
+            "subcategory": "Function Families",
+            "topic": "Exponential & Logarithmic Functions",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_exponential_decay_law"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_solving_decay_problems"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        },
+        {
+          "domain_id": "physics",
+          "framing": {
+            "title_in_context": "Half-Life and Decay Constant Relationship",
+            "relevance": "Nuclear medicine and dating calculations.",
+            "applications": [
+              "t½ = 0.693/λ",
+              "Fraction remaining (1/2)ⁿ"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Nuclear Physics",
+            "subcategory": "Radioactivity",
+            "topic": "Radioactive Decay",
+            "subtopic": "Half-Life"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_exponential_decay_law"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_activity_and_decay_rate"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-26T05:54:17.140Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "LibreTexts — Chemistry",
+            "chapter": "Kinetics",
+            "section": "Half-Life Calculations"
+          },
+          {
+            "source": "OpenStax University Physics Vol 3",
+            "chapter": "10",
+            "section": "10.3"
+          },
+          {
+            "source": "OpenStax Calculus Volume 1",
+            "chapter": "6",
+            "section": "Decay Constant and Half-Life"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_half_life_first_order",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_exponential_decay",
+      "content": {
+        "title": "First-Order Half-Life",
+        "definition": "Time required for reactant concentration to decrease to half its initial value in a first-order process, equal to 0.693/k and independent of starting concentration.",
+        "summary": "Constant half-life is the hallmark of first-order kinetics. Two half-lives reduce concentration to one quarter; three to one eighth."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_exponential_decay",
+        "prerequisites": [
+          "spine_mathematics_l4_rate_constant_first_order"
+        ],
+        "unlocks": [
+          "spine_mathematics_l5_radioactive_dating_half_life"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "chemistry",
+          "framing": {
+            "title_in_context": "First-Order Half-Life",
+            "relevance": "Practical parameter for comparing reaction and decay rates.",
+            "applications": [
+              "t½ = 0.693/k",
+              "Radioactive half-life"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physical Chemistry",
+            "subcategory": "Chemical Kinetics",
+            "topic": "Reaction Orders",
+            "subtopic": "Half-Life"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_rate_constant_first_order"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l5_radioactive_dating_half_life"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Chemistry 2e",
+            "chapter": "12",
+            "section": "12.6"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_integrated_rate_law_first_order",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_exponential_decay",
+      "content": {
+        "title": "Integrated First-Order Rate Law",
+        "definition": "Equation ln[A]₀/[A] = kt relating reactant concentration to time for first-order reactions, equivalent to exponential decay N(t) = N₀e^(−kt).",
+        "summary": "The integrated form enables calculation of concentration at any time or determination of k from experimental data. A plot of ln[A] vs t is linear with slope −k."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_exponential_decay",
+        "prerequisites": [
+          "spine_mathematics_l4_first_order_reaction_model"
+        ],
+        "unlocks": [
+          {
+            "concept_id": "spine_chemistry_l3_integrated_rate_laws",
+            "_forward_reference": true
+          }
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "chemistry",
+          "framing": {
+            "title_in_context": "Integrated First-Order Rate Law",
+            "relevance": "Connects concentration to elapsed time quantitatively.",
+            "applications": [
+              "ln[A] vs t plot",
+              "Exponential decay form"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physical Chemistry",
+            "subcategory": "Chemical Kinetics",
+            "topic": "Reaction Orders",
+            "subtopic": "Integrated Rate Law"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_first_order_reaction_model"
+            ],
+            "unlocks_in_context": [
+              {
+                "concept_id": "spine_chemistry_l3_integrated_rate_laws",
+                "_forward_reference": true
+              }
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Chemistry 2e",
+            "chapter": "12",
+            "section": "12.7"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_mean_lifetime_radioactive",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_exponential_decay",
+      "content": {
+        "title": "Mean Lifetime of Radioactive Nuclei",
+        "definition": "Average time before decay τ = 1/λ, related to half-life by τ = t₁/₂/ln(2), characterizing exponential distribution of decay times.",
+        "summary": "Mean lifetime exceeds half-life by factor 1/ln(2) ≈ 1.44. Useful in advanced decay statistics and particle physics."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Physical Sciences",
+        "knowledge_cluster": "Radioactivity",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_exponential_decay",
+        "prerequisites": [
+          "spine_mathematics_l4_activity_and_decay_rate"
+        ],
+        "unlocks": [
+          {
+            "concept_id": "spine_physics_l3_nuclear_decay_modes",
+            "_forward_reference": true
+          }
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "physics",
+          "framing": {
+            "title_in_context": "Mean Lifetime of Radioactive Nuclei",
+            "relevance": "Connects mathematics to nuclear physics.",
+            "applications": [
+              "τ = 1/λ",
+              "τ vs t½ relationship"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Nuclear Physics",
+            "subcategory": "Radioactivity",
+            "topic": "Radioactive Decay",
+            "subtopic": "Mean Lifetime"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_activity_and_decay_rate"
+            ],
+            "unlocks_in_context": [
+              {
+                "concept_id": "spine_physics_l3_nuclear_decay_modes",
+                "_forward_reference": true
+              }
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax University Physics Vol 3",
+            "chapter": "10",
+            "section": "10.3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_proportional_decay_rate",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_exponential_decay",
+      "content": {
+        "title": "Proportional Rate of Change",
+        "definition": "First-order decay occurs when dN/dt = −λN, meaning the instantaneous rate of loss is proportional to the amount present.",
+        "summary": "Proportionality is the defining differential-equation condition whose solution is exponential decay."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_exponential_decay",
+        "prerequisites": [
+          "spine_mathematics_l4_exponential_decay_law"
+        ],
+        "unlocks": [
+          {
+            "concept_id": "spine_mathematics_l3_first_order_odes",
+            "_forward_reference": true
+          }
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Core example of differential-equation solutions and the natural exponential function.",
+            "applications": [
+              "Cooling curves",
+              "Population decline models",
+              "Reverse compound growth"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Pre-Calculus & Functions",
+            "subcategory": "Function Families",
+            "topic": "Exponential & Logarithmic Functions",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_exponential_decay_law"
+            ],
+            "unlocks_in_context": [
+              {
+                "concept_id": "spine_mathematics_l3_first_order_odes",
+                "_forward_reference": true
+              }
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 1",
+            "chapter": "6",
+            "section": "Proportional Rate of Change"
+          }
+        ]
+      },
+      "_reviewer_note": "Contains forward reference to existing L3 node — verify target exists in spine."
+    },
+    {
+      "id": "spine_mathematics_l4_radioactive_decay_kinetics",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_exponential_decay",
+      "content": {
+        "title": "Radioactive Decay Kinetics",
+        "definition": "First-order nuclear disintegration of unstable isotopes characterized by a decay constant and half-life independent of physical or chemical state.",
+        "summary": "Radioactive decay follows first-order kinetics. Activity decreases exponentially; half-lives range from fractions of seconds to billions of years depending on the isotope."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_exponential_decay",
+        "prerequisites": [
+          "spine_mathematics_l4_first_order_reaction_model"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "chemistry",
+          "framing": {
+            "title_in_context": "Radioactive Decay Kinetics",
+            "relevance": "Nuclear application of first-order kinetics.",
+            "applications": [
+              "Decay constant",
+              "Isotope half-lives"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physical Chemistry",
+            "subcategory": "Chemical Kinetics",
+            "topic": "Reaction Orders",
+            "subtopic": "Radioactive Decay"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_first_order_reaction_model"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax University Physics Vol 3",
+            "chapter": "10",
+            "section": "10.3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_rate_constant_first_order",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_exponential_decay",
+      "content": {
+        "title": "First-Order Rate Constant (k)",
+        "definition": "Proportionality constant in the first-order rate law rate = k[A], with units of time⁻¹, characterizing how rapidly reactant concentration decreases.",
+        "summary": "A larger k means faster reaction. The rate constant is temperature-dependent and related to half-life by t½ = 0.693/k."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_exponential_decay",
+        "prerequisites": [
+          "spine_mathematics_l4_first_order_reaction_model"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_half_life_first_order",
+          "spine_mathematics_l4_half_life_decay_constant",
+          "spine_mathematics_l5_temperature_effect_rate_constant"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "chemistry",
+          "framing": {
+            "title_in_context": "First-Order Rate Constant (k)",
+            "relevance": "Quantitative measure of reaction speed.",
+            "applications": [
+              "k units (s⁻¹)",
+              "Arrhenius dependence"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physical Chemistry",
+            "subcategory": "Chemical Kinetics",
+            "topic": "Reaction Orders",
+            "subtopic": "Rate Constant"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_first_order_reaction_model"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_half_life_first_order",
+              "spine_mathematics_l4_half_life_decay_constant",
+              "spine_mathematics_l5_temperature_effect_rate_constant"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Chemistry 2e",
+            "chapter": "12",
+            "section": "12.5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_solving_decay_problems",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_exponential_decay",
+      "content": {
+        "title": "Solving Exponential Decay Problems",
+        "definition": "Using N(t) = N₀e^{−λt} and half-life relations to find remaining amount, elapsed time, or decay constant from given data.",
+        "summary": "Applied decay problems require translating context into N₀, λ, and t, then solving exponential or logarithmic equations."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_exponential_decay",
+        "prerequisites": [
+          "spine_mathematics_l4_half_life_decay_constant"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Core example of differential-equation solutions and the natural exponential function.",
+            "applications": [
+              "Cooling curves",
+              "Population decline models",
+              "Reverse compound growth"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Pre-Calculus & Functions",
+            "subcategory": "Function Families",
+            "topic": "Exponential & Logarithmic Functions",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_half_life_decay_constant"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Calculus Volume 1",
+            "chapter": "6",
+            "section": "Solving Exponential Decay Problems"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_zero_order_vs_first_order_elimination",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_exponential_decay",
+      "content": {
+        "title": "Zero-Order vs First-Order Elimination",
+        "definition": "A comparison of elimination models in which removal is either proportional to current amount (first-order) or proceeds at a constant rate independent of amount (zero-order) when elimination pathways are saturated.",
+        "summary": "Most drugs follow first-order kinetics at therapeutic concentrations. Zero-order kinetics appear when metabolic or transport capacity is saturated, producing linear decline and concentration-dependent half-life."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_exponential_decay",
+        "prerequisites": [
+          "spine_mathematics_l4_first_order_elimination_model"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Zero-Order vs First-Order Elimination",
+            "relevance": "Explains phenytoin and ethanol kinetics when pathways saturate — high-yield Step 1 contrast.",
+            "applications": [
+              "Phenytoin saturation",
+              "Ethanol elimination rate"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Pharmacology",
+            "subcategory": "Pharmacokinetics",
+            "topic": "Drug Elimination",
+            "subtopic": "Order of Kinetics"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_first_order_elimination_model"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Pharmacokinetics",
+            "section": "Zero-Order Kinetics",
+            "url": "https://www.ncbi.nlm.nih.gov/books/NBK557744/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l5_factors_altering_ke",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_mathematics_l3_exponential_decay",
+      "content": {
+        "title": "Factors That Alter ke",
+        "definition": "Physiologic and pathologic variables that change the elimination rate constant, including hepatic and renal function, enzyme induction or inhibition, age, and body composition.",
+        "summary": "Because ke determines half-life, any factor that accelerates or slows elimination directly shifts dosing requirements. Organ impairment and drug–drug interactions are the highest-yield clinical modifiers."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l4_elimination_rate_constant",
+        "prerequisites": [
+          "spine_mathematics_l4_elimination_rate_constant"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Factors That Alter ke",
+            "relevance": "Explains dose adjustment in liver and kidney disease.",
+            "applications": [
+              "CYP induction",
+              "Renal dose adjustment"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Pharmacology",
+            "subcategory": "Pharmacokinetics",
+            "topic": "Drug Elimination",
+            "subtopic": "ke Modifiers"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_elimination_rate_constant"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Pharmacokinetics",
+            "section": "Factors Affecting Elimination",
+            "url": "https://www.ncbi.nlm.nih.gov/books/NBK557744/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l5_half_life_organ_impairment",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_mathematics_l3_exponential_decay",
+      "content": {
+        "title": "Half-Life in Renal and Hepatic Impairment",
+        "definition": "Prolongation of half-life when elimination depends on renal excretion or hepatic metabolism and those organ systems are functionally impaired.",
+        "summary": "Drugs cleared primarily by the kidney or liver accumulate when GFR or metabolic capacity falls. Half-life prolongation guides interval extension and toxicity monitoring."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l4_drug_half_life",
+        "prerequisites": [
+          "spine_mathematics_l4_drug_half_life"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Half-Life in Renal and Hepatic Impairment",
+            "relevance": "Links organ physiology to pharmacokinetic dose adjustment.",
+            "applications": [
+              "Aminoglycoside dosing in CKD",
+              "Benzodiazepine caution in cirrhosis"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Pharmacology",
+            "subcategory": "Pharmacokinetics",
+            "topic": "Drug Elimination",
+            "subtopic": "Organ Impairment"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_drug_half_life"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Pharmacokinetics",
+            "section": "Dose Adjustment",
+            "url": "https://www.ncbi.nlm.nih.gov/books/NBK557744/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l5_ke_half_life_equation",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_mathematics_l3_exponential_decay",
+      "content": {
+        "title": "ke–t½ Relationship (0.693 Rule)",
+        "definition": "Under first-order elimination, the half-life equals the natural logarithm of 2 divided by the elimination rate constant, approximately 0.693 divided by ke.",
+        "summary": "This identity converts between ke and t½ for any first-order system. It is the most frequently tested quantitative link in pharmacokinetics on Step 1."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l4_elimination_rate_constant",
+        "prerequisites": [
+          "spine_mathematics_l4_elimination_rate_constant"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "ke–t½ Relationship (0.693 Rule)",
+            "relevance": "t½ = 0.693/ke — direct Step 1 calculation.",
+            "applications": [
+              "Half-life from ke",
+              "ke from half-life"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Pharmacology",
+            "subcategory": "Pharmacokinetics",
+            "topic": "Drug Elimination",
+            "subtopic": "ke–t½ Relationship"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_elimination_rate_constant"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Pharmacokinetics",
+            "section": "Half-Life Calculation",
+            "url": "https://www.ncbi.nlm.nih.gov/books/NBK557744/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l5_radioactive_dating_half_life",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_mathematics_l3_exponential_decay",
+      "content": {
+        "title": "Radiometric Dating Applications",
+        "definition": "Use of known isotope half-lives (e.g., carbon-14, uranium-238) to estimate the age of materials from remaining parent isotope fraction.",
+        "summary": "Carbon-14 dating covers archaeological timescales; uranium-lead dating covers geological timescales. Both rely on first-order decay mathematics."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l4_half_life_first_order",
+        "prerequisites": [
+          "spine_mathematics_l4_half_life_first_order"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "chemistry",
+          "framing": {
+            "title_in_context": "Radiometric Dating Applications",
+            "relevance": "Applied first-order kinetics in geochemistry and archaeology.",
+            "applications": [
+              "Carbon-14 dating",
+              "Uranium-lead dating"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physical Chemistry",
+            "subcategory": "Chemical Kinetics",
+            "topic": "Reaction Orders",
+            "subtopic": "Radiometric Dating"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_half_life_first_order"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax University Physics Vol 3",
+            "chapter": "10",
+            "section": "10.4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l5_temperature_effect_rate_constant",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_mathematics_l3_exponential_decay",
+      "content": {
+        "title": "Temperature Effect on Rate Constant",
+        "definition": "Exponential increase in rate constant with temperature described qualitatively by the Arrhenius equation k = Ae^(−Ea/RT).",
+        "summary": "Higher temperature provides more molecules with energy exceeding the activation barrier. The Arrhenius plot of ln k vs 1/T yields activation energy."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l4_rate_constant_first_order",
+        "prerequisites": [
+          "spine_mathematics_l4_rate_constant_first_order"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "chemistry",
+          "framing": {
+            "title_in_context": "Temperature Effect on Rate Constant",
+            "relevance": "Why reaction rates increase with temperature.",
+            "applications": [
+              "Activation energy",
+              "Arrhenius plot"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physical Chemistry",
+            "subcategory": "Chemical Kinetics",
+            "topic": "Reaction Orders",
+            "subtopic": "Arrhenius Equation"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_rate_constant_first_order"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Chemistry 2e",
+            "chapter": "12",
+            "section": "12.8"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l5_time_to_steady_state",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_mathematics_l3_exponential_decay",
+      "content": {
+        "title": "Time to Steady State (4–5 Half-Lives)",
+        "definition": "The approximate number of half-lives required for a substance to reach within about 94–97% of its ultimate steady-state concentration during continuous or repeated dosing under first-order kinetics.",
+        "summary": "Steady state is approached asymptotically; four to five half-lives is the practical rule for both accumulation and washout. This explains delayed onset of full drug effect with new regimens."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Change & Rate",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l4_drug_half_life",
+        "prerequisites": [
+          "spine_mathematics_l4_drug_half_life"
+        ],
+        "unlocks": [
+          {
+            "concept_id": "spine_medicine_preclinical_l3_steady_state_concentration",
+            "_forward_reference": true
+          }
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Time to Steady State (4–5 Half-Lives)",
+            "relevance": "Rule of thumb for when a new dose regimen reaches full effect.",
+            "applications": [
+              "SSRI onset delay",
+              "Washout before surgery"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Pharmacology",
+            "subcategory": "Pharmacokinetics",
+            "topic": "Drug Elimination",
+            "subtopic": "Time to Steady State"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_drug_half_life"
+            ],
+            "unlocks_in_context": [
+              {
+                "concept_id": "spine_medicine_preclinical_l3_steady_state_concentration",
+                "_forward_reference": true
+              }
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Pharmacokinetics",
+            "section": "Steady State",
+            "url": "https://www.ncbi.nlm.nih.gov/books/NBK557744/"
+          }
+        ]
+      }
+    }
+  ]
+}

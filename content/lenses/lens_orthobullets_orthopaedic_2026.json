@@ -1,0 +1,1579 @@
+{
+  "id": "lens_orthobullets_orthopaedic_2026",
+  "name": "Orthobullets Orthopaedic Topic Taxonomy",
+  "source": "Orthobullets",
+  "domain_id": "medicine_clinical",
+  "version": "2026-draft",
+  "description": "Case-oriented topic clusters mirroring subspecialty hub hierarchy (G58). Same spine concept IDs as ABOS lens with Orthobullets-style section navigation.",
+  "intended_audience": "Orthopaedic surgery residents using topic-based study workflows",
+  "sections": [
+    {
+      "id": "lens_section_ob_basic_science",
+      "title": "Orthopaedic Basic Science",
+      "parent_section_id": null,
+      "order": 0
+    },
+    {
+      "id": "lens_section_ob_trauma",
+      "title": "Orthopaedic Trauma",
+      "parent_section_id": null,
+      "order": 1
+    },
+    {
+      "id": "lens_section_ob_adult_reconstruction",
+      "title": "Adult Reconstruction",
+      "parent_section_id": null,
+      "order": 2
+    },
+    {
+      "id": "lens_section_ob_spine",
+      "title": "Orthopaedic Spine",
+      "parent_section_id": null,
+      "order": 3
+    },
+    {
+      "id": "lens_section_ob_sports_medicine",
+      "title": "Orthopaedic Sports Medicine",
+      "parent_section_id": null,
+      "order": 4
+    },
+    {
+      "id": "lens_section_ob_shoulder_and_elbow",
+      "title": "Shoulder and Elbow",
+      "parent_section_id": null,
+      "order": 5
+    },
+    {
+      "id": "lens_section_ob_hand_and_wrist",
+      "title": "Hand and Wrist",
+      "parent_section_id": null,
+      "order": 6
+    },
+    {
+      "id": "lens_section_ob_foot_and_ankle",
+      "title": "Foot and Ankle",
+      "parent_section_id": null,
+      "order": 7
+    },
+    {
+      "id": "lens_section_ob_pediatrics",
+      "title": "Paediatric Orthopaedics",
+      "parent_section_id": null,
+      "order": 8
+    },
+    {
+      "id": "lens_section_ob_oncology",
+      "title": "Orthopaedic Oncology",
+      "parent_section_id": null,
+      "order": 9
+    },
+    {
+      "id": "lens_section_ob_neuromuscular_rehabilitation",
+      "title": "Neuromuscular and Rehabilitation",
+      "parent_section_id": null,
+      "order": 10
+    }
+  ],
+  "concept_mappings": [
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_musculoskeletal_biomechanics_principles",
+      "section_id": "lens_section_ob_basic_science",
+      "lens_specific": {
+        "title_in_lens": "Musculoskeletal Biomechanics Principles",
+        "order_in_section": 0,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_basic_science; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_implant_materials_and_tribology",
+      "section_id": "lens_section_ob_basic_science",
+      "lens_specific": {
+        "title_in_lens": "Implant Materials and Tribology",
+        "order_in_section": 1,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_basic_science; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_gait_analysis_and_kinesiology",
+      "section_id": "lens_section_ob_basic_science",
+      "lens_specific": {
+        "title_in_lens": "Gait Analysis and Kinesiology",
+        "order_in_section": 2,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_basic_science; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_orthopaedic_radiographic_imaging",
+      "section_id": "lens_section_ob_basic_science",
+      "lens_specific": {
+        "title_in_lens": "Orthopaedic Radiographic Imaging",
+        "order_in_section": 3,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_basic_science; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_advanced_musculoskeletal_imaging",
+      "section_id": "lens_section_ob_basic_science",
+      "lens_specific": {
+        "title_in_lens": "Advanced Musculoskeletal Imaging",
+        "order_in_section": 4,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_basic_science; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_orthopaedic_surgical_approaches_anatomy",
+      "section_id": "lens_section_ob_basic_science",
+      "lens_specific": {
+        "title_in_lens": "Orthopaedic Surgical Approaches and Anatomy",
+        "order_in_section": 5,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_basic_science; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_soft_tissue_coverage_and_flaps",
+      "section_id": "lens_section_ob_basic_science",
+      "lens_specific": {
+        "title_in_lens": "Soft Tissue Coverage and Flaps",
+        "order_in_section": 6,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_basic_science; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_compartment_syndrome_and_fasciotomy",
+      "section_id": "lens_section_ob_basic_science",
+      "lens_specific": {
+        "title_in_lens": "Compartment Syndrome and Fasciotomy",
+        "order_in_section": 7,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_basic_science; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_fracture_healing_and_bone_remodeling_clinical",
+      "section_id": "lens_section_ob_basic_science",
+      "lens_specific": {
+        "title_in_lens": "Fracture Healing and Bone Remodeling — Clinical Application",
+        "order_in_section": 8,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_basic_science; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_muscle_contraction_orthopaedic",
+      "section_id": "lens_section_ob_basic_science",
+      "lens_specific": {
+        "title_in_lens": "Muscle Contraction — Orthopaedic Application",
+        "order_in_section": 9,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_basic_science; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_fracture_classification_systems",
+      "section_id": "lens_section_ob_trauma",
+      "lens_specific": {
+        "title_in_lens": "Fracture Classification Systems",
+        "order_in_section": 0,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_trauma; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_fracture_reduction_and_fixation_principles",
+      "section_id": "lens_section_ob_trauma",
+      "lens_specific": {
+        "title_in_lens": "Fracture Reduction and Fixation Principles",
+        "order_in_section": 1,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_trauma; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_open_fractures_and_mangled_extremity",
+      "section_id": "lens_section_ob_trauma",
+      "lens_specific": {
+        "title_in_lens": "Open Fractures and Mangled Extremity",
+        "order_in_section": 2,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_trauma; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_polytrauma_and_damage_control_orthopaedics",
+      "section_id": "lens_section_ob_trauma",
+      "lens_specific": {
+        "title_in_lens": "Polytrauma and Damage Control Orthopaedics",
+        "order_in_section": 3,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_trauma; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_clavicle_acromioclavicular_and_sternoclavicular_injuries",
+      "section_id": "lens_section_ob_trauma",
+      "lens_specific": {
+        "title_in_lens": "Clavicle, Acromioclavicular, and Sternoclavicular Injuries",
+        "order_in_section": 4,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_trauma; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_proximal_humerus_fractures",
+      "section_id": "lens_section_ob_trauma",
+      "lens_specific": {
+        "title_in_lens": "Proximal Humerus Fractures",
+        "order_in_section": 5,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_trauma; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_humerus_shaft_and_elbow_fractures",
+      "section_id": "lens_section_ob_trauma",
+      "lens_specific": {
+        "title_in_lens": "Humerus Shaft and Elbow Fractures",
+        "order_in_section": 6,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_trauma; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_forearm_fractures_and_monteggia",
+      "section_id": "lens_section_ob_trauma",
+      "lens_specific": {
+        "title_in_lens": "Forearm Fractures and Monteggia Injuries",
+        "order_in_section": 7,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_trauma; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_pelvic_and_acetabular_fractures",
+      "section_id": "lens_section_ob_trauma",
+      "lens_specific": {
+        "title_in_lens": "Pelvic and Acetabular Fractures",
+        "order_in_section": 8,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_trauma; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_hip_fractures_and_dislocations",
+      "section_id": "lens_section_ob_trauma",
+      "lens_specific": {
+        "title_in_lens": "Hip Fractures and Dislocations",
+        "order_in_section": 9,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_trauma; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_femoral_shaft_fractures",
+      "section_id": "lens_section_ob_trauma",
+      "lens_specific": {
+        "title_in_lens": "Femoral Shaft Fractures",
+        "order_in_section": 10,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_trauma; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_tibial_plateau_fractures",
+      "section_id": "lens_section_ob_trauma",
+      "lens_specific": {
+        "title_in_lens": "Tibial Plateau Fractures",
+        "order_in_section": 11,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_trauma; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_tibia_and_fibula_shaft_fractures",
+      "section_id": "lens_section_ob_trauma",
+      "lens_specific": {
+        "title_in_lens": "Tibia and Fibula Shaft Fractures",
+        "order_in_section": 12,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_trauma; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_pilon_and_ankle_fractures",
+      "section_id": "lens_section_ob_trauma",
+      "lens_specific": {
+        "title_in_lens": "Pilon and Ankle Fractures",
+        "order_in_section": 13,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_trauma; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_spine_trauma_fractures_and_instability",
+      "section_id": "lens_section_ob_trauma",
+      "lens_specific": {
+        "title_in_lens": "Spine Trauma — Fractures and Instability",
+        "order_in_section": 14,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_trauma; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_stress_fractures_and_insufficiency_fractures",
+      "section_id": "lens_section_ob_trauma",
+      "lens_specific": {
+        "title_in_lens": "Stress Fractures and Insufficiency Fractures",
+        "order_in_section": 15,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_trauma; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_malunion_nonunion_and_delayed_union",
+      "section_id": "lens_section_ob_trauma",
+      "lens_specific": {
+        "title_in_lens": "Malunion, Nonunion, and Delayed Union",
+        "order_in_section": 16,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_trauma; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_fat_embolism_and_trauma_complications",
+      "section_id": "lens_section_ob_trauma",
+      "lens_specific": {
+        "title_in_lens": "Fat Embolism and Trauma Complications",
+        "order_in_section": 17,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_trauma; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_primary_survey_orthopaedic_trauma",
+      "section_id": "lens_section_ob_trauma",
+      "lens_specific": {
+        "title_in_lens": "Primary Survey — Orthopaedic Trauma",
+        "order_in_section": 18,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_trauma; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_hip_joint_biomechanics_and_arthropathy",
+      "section_id": "lens_section_ob_adult_reconstruction",
+      "lens_specific": {
+        "title_in_lens": "Hip Joint Biomechanics and Arthropathy",
+        "order_in_section": 0,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_adult_reconstruction; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_knee_joint_biomechanics_and_arthropathy",
+      "section_id": "lens_section_ob_adult_reconstruction",
+      "lens_specific": {
+        "title_in_lens": "Knee Joint Biomechanics and Arthropathy",
+        "order_in_section": 1,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_adult_reconstruction; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_total_hip_arthroplasty",
+      "section_id": "lens_section_ob_adult_reconstruction",
+      "lens_specific": {
+        "title_in_lens": "Total Hip Arthroplasty",
+        "order_in_section": 2,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 5,
+        "notes": "hub=orthopaedic_adult_reconstruction; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_total_knee_arthroplasty",
+      "section_id": "lens_section_ob_adult_reconstruction",
+      "lens_specific": {
+        "title_in_lens": "Total Knee Arthroplasty",
+        "order_in_section": 3,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 5,
+        "notes": "hub=orthopaedic_adult_reconstruction; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_unicompartmental_and_partial_joint_replacement",
+      "section_id": "lens_section_ob_adult_reconstruction",
+      "lens_specific": {
+        "title_in_lens": "Unicompartmental and Partial Joint Replacement",
+        "order_in_section": 4,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_adult_reconstruction; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_revision_arthroplasty",
+      "section_id": "lens_section_ob_adult_reconstruction",
+      "lens_specific": {
+        "title_in_lens": "Revision Arthroplasty",
+        "order_in_section": 5,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_adult_reconstruction; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_bearing_surfaces_and_implant_tribology",
+      "section_id": "lens_section_ob_adult_reconstruction",
+      "lens_specific": {
+        "title_in_lens": "Bearing Surfaces and Implant Tribology",
+        "order_in_section": 6,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_adult_reconstruction; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_periprosthetic_joint_infection_hip_and_knee",
+      "section_id": "lens_section_ob_adult_reconstruction",
+      "lens_specific": {
+        "title_in_lens": "Periprosthetic Joint Infection — Hip and Knee",
+        "order_in_section": 7,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_adult_reconstruction; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_periprosthetic_fracture_management",
+      "section_id": "lens_section_ob_adult_reconstruction",
+      "lens_specific": {
+        "title_in_lens": "Periprosthetic Fracture Management",
+        "order_in_section": 8,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_adult_reconstruction; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_hip_and_knee_osteonecrosis",
+      "section_id": "lens_section_ob_adult_reconstruction",
+      "lens_specific": {
+        "title_in_lens": "Hip and Knee Osteonecrosis",
+        "order_in_section": 9,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_adult_reconstruction; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_cervical_spine_degenerative_disease",
+      "section_id": "lens_section_ob_spine",
+      "lens_specific": {
+        "title_in_lens": "Cervical Spine Degenerative Disease",
+        "order_in_section": 0,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_spine; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_craniocervical_junction_disorders",
+      "section_id": "lens_section_ob_spine",
+      "lens_specific": {
+        "title_in_lens": "Craniocervical Junction Disorders",
+        "order_in_section": 1,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_spine; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_thoracic_spine_disorders",
+      "section_id": "lens_section_ob_spine",
+      "lens_specific": {
+        "title_in_lens": "Thoracic Spine Disorders",
+        "order_in_section": 2,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_spine; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_lumbar_disc_herniation_and_radiculopathy",
+      "section_id": "lens_section_ob_spine",
+      "lens_specific": {
+        "title_in_lens": "Lumbar Disc Herniation and Radiculopathy",
+        "order_in_section": 3,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_spine; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_lumbar_spinal_stenosis",
+      "section_id": "lens_section_ob_spine",
+      "lens_specific": {
+        "title_in_lens": "Lumbar Spinal Stenosis",
+        "order_in_section": 4,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_spine; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_spondylolisthesis",
+      "section_id": "lens_section_ob_spine",
+      "lens_specific": {
+        "title_in_lens": "Spondylolisthesis",
+        "order_in_section": 5,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_spine; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_spinal_deformity_scoliosis_adult",
+      "section_id": "lens_section_ob_spine",
+      "lens_specific": {
+        "title_in_lens": "Adult Spinal Deformity",
+        "order_in_section": 6,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_spine; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_spinal_cord_injury_syndromes",
+      "section_id": "lens_section_ob_spine",
+      "lens_specific": {
+        "title_in_lens": "Spinal Cord Injury Syndromes",
+        "order_in_section": 7,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_spine; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_spinal_infections_and_inflammatory_disease",
+      "section_id": "lens_section_ob_spine",
+      "lens_specific": {
+        "title_in_lens": "Spinal Infections and Inflammatory Disease",
+        "order_in_section": 8,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_spine; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_spinal_fusion_and_instrumentation_principles",
+      "section_id": "lens_section_ob_spine",
+      "lens_specific": {
+        "title_in_lens": "Spinal Fusion and Instrumentation Principles",
+        "order_in_section": 9,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_spine; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_anterior_cruciate_ligament_injury",
+      "section_id": "lens_section_ob_sports_medicine",
+      "lens_specific": {
+        "title_in_lens": "Anterior Cruciate Ligament Injury",
+        "order_in_section": 0,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_sports_medicine; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_posterior_cruciate_and_collateral_ligament_injuries",
+      "section_id": "lens_section_ob_sports_medicine",
+      "lens_specific": {
+        "title_in_lens": "Posterior Cruciate and Collateral Ligament Injuries",
+        "order_in_section": 1,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_sports_medicine; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_meniscal_tears_and_management",
+      "section_id": "lens_section_ob_sports_medicine",
+      "lens_specific": {
+        "title_in_lens": "Meniscal Tears and Management",
+        "order_in_section": 2,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_sports_medicine; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_patellofemoral_instability_and_disorders",
+      "section_id": "lens_section_ob_sports_medicine",
+      "lens_specific": {
+        "title_in_lens": "Patellofemoral Instability and Disorders",
+        "order_in_section": 3,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_sports_medicine; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_extensor_mechanism_knee_injuries",
+      "section_id": "lens_section_ob_sports_medicine",
+      "lens_specific": {
+        "title_in_lens": "Extensor Mechanism Knee Injuries",
+        "order_in_section": 4,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_sports_medicine; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_cartilage_injuries_and_restoration",
+      "section_id": "lens_section_ob_sports_medicine",
+      "lens_specific": {
+        "title_in_lens": "Cartilage Injuries and Restoration",
+        "order_in_section": 5,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_sports_medicine; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_sports_medicine_medical_conditions",
+      "section_id": "lens_section_ob_sports_medicine",
+      "lens_specific": {
+        "title_in_lens": "Sports Medicine Medical Conditions",
+        "order_in_section": 6,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_sports_medicine; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_shoulder_instability_and_labral_injuries",
+      "section_id": "lens_section_ob_shoulder_and_elbow",
+      "lens_specific": {
+        "title_in_lens": "Shoulder Instability and Labral Injuries",
+        "order_in_section": 0,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_shoulder_and_elbow; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_rotator_cuff_pathology",
+      "section_id": "lens_section_ob_shoulder_and_elbow",
+      "lens_specific": {
+        "title_in_lens": "Rotator Cuff Pathology",
+        "order_in_section": 1,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_shoulder_and_elbow; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_glenohumeral_arthritis_non_arthroplasty",
+      "section_id": "lens_section_ob_shoulder_and_elbow",
+      "lens_specific": {
+        "title_in_lens": "Glenohumeral Arthritis — Non-Arthroplasty Management",
+        "order_in_section": 2,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_shoulder_and_elbow; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_primary_shoulder_arthroplasty",
+      "section_id": "lens_section_ob_shoulder_and_elbow",
+      "lens_specific": {
+        "title_in_lens": "Primary Shoulder Arthroplasty",
+        "order_in_section": 3,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_shoulder_and_elbow; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_revision_shoulder_arthroplasty",
+      "section_id": "lens_section_ob_shoulder_and_elbow",
+      "lens_specific": {
+        "title_in_lens": "Revision Shoulder Arthroplasty",
+        "order_in_section": 4,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_shoulder_and_elbow; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_shoulder_stiffness_and_capsular_disorders",
+      "section_id": "lens_section_ob_shoulder_and_elbow",
+      "lens_specific": {
+        "title_in_lens": "Shoulder Stiffness and Capsular Disorders",
+        "order_in_section": 5,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_shoulder_and_elbow; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_elbow_arthritis_and_arthroplasty",
+      "section_id": "lens_section_ob_shoulder_and_elbow",
+      "lens_specific": {
+        "title_in_lens": "Elbow Arthritis and Arthroplasty",
+        "order_in_section": 6,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_shoulder_and_elbow; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_elbow_instability_non_acute",
+      "section_id": "lens_section_ob_shoulder_and_elbow",
+      "lens_specific": {
+        "title_in_lens": "Elbow Instability — Chronic and Recurrent",
+        "order_in_section": 7,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_shoulder_and_elbow; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_proximal_biceps_and_throwing_shoulder",
+      "section_id": "lens_section_ob_shoulder_and_elbow",
+      "lens_specific": {
+        "title_in_lens": "Proximal Biceps and Throwing Shoulder",
+        "order_in_section": 8,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_shoulder_and_elbow; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_shoulder_periprosthetic_joint_infection",
+      "section_id": "lens_section_ob_shoulder_and_elbow",
+      "lens_specific": {
+        "title_in_lens": "Shoulder Periprosthetic Joint Infection",
+        "order_in_section": 9,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_shoulder_and_elbow; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_distal_radius_fractures",
+      "section_id": "lens_section_ob_hand_and_wrist",
+      "lens_specific": {
+        "title_in_lens": "Distal Radius Fractures",
+        "order_in_section": 0,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_hand_and_wrist; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_carpal_fractures_and_instability",
+      "section_id": "lens_section_ob_hand_and_wrist",
+      "lens_specific": {
+        "title_in_lens": "Carpal Fractures and Instability",
+        "order_in_section": 1,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_hand_and_wrist; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_wrist_arthritis_and_arthropathy",
+      "section_id": "lens_section_ob_hand_and_wrist",
+      "lens_specific": {
+        "title_in_lens": "Wrist Arthritis and Arthropathy",
+        "order_in_section": 2,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_hand_and_wrist; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_flexor_tendon_injuries_and_repair",
+      "section_id": "lens_section_ob_hand_and_wrist",
+      "lens_specific": {
+        "title_in_lens": "Flexor Tendon Injuries and Repair",
+        "order_in_section": 3,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_hand_and_wrist; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_extensor_tendon_injuries_and_repair",
+      "section_id": "lens_section_ob_hand_and_wrist",
+      "lens_specific": {
+        "title_in_lens": "Extensor Tendon Injuries and Repair",
+        "order_in_section": 4,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_hand_and_wrist; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_nerve_compression_syndromes_upper_extremity",
+      "section_id": "lens_section_ob_hand_and_wrist",
+      "lens_specific": {
+        "title_in_lens": "Nerve Compression Syndromes of the Upper Extremity",
+        "order_in_section": 5,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_hand_and_wrist; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_hand_fractures_and_dislocations",
+      "section_id": "lens_section_ob_hand_and_wrist",
+      "lens_specific": {
+        "title_in_lens": "Hand Fractures and Dislocations",
+        "order_in_section": 6,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_hand_and_wrist; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_dupuytren_and_hand_contractures",
+      "section_id": "lens_section_ob_hand_and_wrist",
+      "lens_specific": {
+        "title_in_lens": "Dupuytren Disease and Hand Contractures",
+        "order_in_section": 7,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_hand_and_wrist; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_wrist_ligament_and_tfcc_injuries",
+      "section_id": "lens_section_ob_hand_and_wrist",
+      "lens_specific": {
+        "title_in_lens": "Wrist Ligament and TFCC Injuries",
+        "order_in_section": 8,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_hand_and_wrist; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_wrist_and_hand_infections",
+      "section_id": "lens_section_ob_hand_and_wrist",
+      "lens_specific": {
+        "title_in_lens": "Wrist and Hand Infections",
+        "order_in_section": 9,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_hand_and_wrist; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_ankle_fractures_and_pilon_injuries",
+      "section_id": "lens_section_ob_foot_and_ankle",
+      "lens_specific": {
+        "title_in_lens": "Ankle Fractures and Pilon Injuries",
+        "order_in_section": 0,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_foot_and_ankle; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_ankle_sprains_and_chronic_instability",
+      "section_id": "lens_section_ob_foot_and_ankle",
+      "lens_specific": {
+        "title_in_lens": "Ankle Sprains and Chronic Instability",
+        "order_in_section": 1,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_foot_and_ankle; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_achilles_tendon_disorders",
+      "section_id": "lens_section_ob_foot_and_ankle",
+      "lens_specific": {
+        "title_in_lens": "Achilles Tendon Disorders",
+        "order_in_section": 2,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_foot_and_ankle; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_total_ankle_arthroplasty_and_arthrodesis",
+      "section_id": "lens_section_ob_foot_and_ankle",
+      "lens_specific": {
+        "title_in_lens": "Total Ankle Arthroplasty and Ankle Arthrodesis",
+        "order_in_section": 3,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_foot_and_ankle; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_hindfoot_fractures_and_disorders",
+      "section_id": "lens_section_ob_foot_and_ankle",
+      "lens_specific": {
+        "title_in_lens": "Hindfoot Fractures and Disorders",
+        "order_in_section": 4,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_foot_and_ankle; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_plantar_fasciitis_and_heel_pain",
+      "section_id": "lens_section_ob_foot_and_ankle",
+      "lens_specific": {
+        "title_in_lens": "Plantar Fasciitis and Heel Pain",
+        "order_in_section": 5,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_foot_and_ankle; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_adult_acquired_flatfoot_deformity",
+      "section_id": "lens_section_ob_foot_and_ankle",
+      "lens_specific": {
+        "title_in_lens": "Adult Acquired Flatfoot Deformity",
+        "order_in_section": 6,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_foot_and_ankle; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_forefoot_deformities_and_disorders",
+      "section_id": "lens_section_ob_foot_and_ankle",
+      "lens_specific": {
+        "title_in_lens": "Forefoot Deformities and Disorders",
+        "order_in_section": 7,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_foot_and_ankle; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_lisfranc_and_midfoot_injuries",
+      "section_id": "lens_section_ob_foot_and_ankle",
+      "lens_specific": {
+        "title_in_lens": "Lisfranc and Midfoot Injuries",
+        "order_in_section": 8,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_foot_and_ankle; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_charcot_neuroarthropathy",
+      "section_id": "lens_section_ob_foot_and_ankle",
+      "lens_specific": {
+        "title_in_lens": "Charcot Neuroarthropathy",
+        "order_in_section": 9,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_foot_and_ankle; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_diabetic_foot_ulcers_and_management",
+      "section_id": "lens_section_ob_foot_and_ankle",
+      "lens_specific": {
+        "title_in_lens": "Diabetic Foot Ulcers and Limb Salvage",
+        "order_in_section": 10,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_foot_and_ankle; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_developmental_dysplasia_of_the_hip",
+      "section_id": "lens_section_ob_pediatrics",
+      "lens_specific": {
+        "title_in_lens": "Developmental Dysplasia of the Hip",
+        "order_in_section": 0,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_pediatrics; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_legg_calve_perthes_disease",
+      "section_id": "lens_section_ob_pediatrics",
+      "lens_specific": {
+        "title_in_lens": "Legg-Calvé-Perthes Disease",
+        "order_in_section": 1,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_pediatrics; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_slipped_capital_femoral_epiphysis",
+      "section_id": "lens_section_ob_pediatrics",
+      "lens_specific": {
+        "title_in_lens": "Slipped Capital Femoral Epiphysis",
+        "order_in_section": 2,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_pediatrics; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_clubfoot_and_congenital_foot_deformities",
+      "section_id": "lens_section_ob_pediatrics",
+      "lens_specific": {
+        "title_in_lens": "Clubfoot and Congenital Foot Deformities",
+        "order_in_section": 3,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_pediatrics; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_paediatric_fractures_physeal_injuries",
+      "section_id": "lens_section_ob_pediatrics",
+      "lens_specific": {
+        "title_in_lens": "Paediatric Fractures and Physeal Injuries",
+        "order_in_section": 4,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_pediatrics; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_supracondylar_and_elbow_fractures_pediatric",
+      "section_id": "lens_section_ob_pediatrics",
+      "lens_specific": {
+        "title_in_lens": "Supracondylar and Elbow Fractures — Paediatric",
+        "order_in_section": 5,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_pediatrics; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_paediatric_spine_deformity_scoliosis",
+      "section_id": "lens_section_ob_pediatrics",
+      "lens_specific": {
+        "title_in_lens": "Paediatric Spine Deformity — Scoliosis",
+        "order_in_section": 6,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_pediatrics; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_paediatric_spine_spondylolysis_listhesis",
+      "section_id": "lens_section_ob_pediatrics",
+      "lens_specific": {
+        "title_in_lens": "Paediatric Spondylolysis and Spondylolisthesis",
+        "order_in_section": 7,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_pediatrics; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_spina_bifida_and_myelomeningocele_orthopaedics",
+      "section_id": "lens_section_ob_pediatrics",
+      "lens_specific": {
+        "title_in_lens": "Spina Bifida and Myelomeningocele — Orthopaedic Management",
+        "order_in_section": 8,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_pediatrics; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_limb_length_discrepancy_and_angular_deformity",
+      "section_id": "lens_section_ob_pediatrics",
+      "lens_specific": {
+        "title_in_lens": "Limb Length Discrepancy and Angular Deformity",
+        "order_in_section": 9,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_pediatrics; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_paediatric_sports_and_overuse_injuries",
+      "section_id": "lens_section_ob_pediatrics",
+      "lens_specific": {
+        "title_in_lens": "Paediatric Sports and Overuse Injuries",
+        "order_in_section": 10,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_pediatrics; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_osteogenesis_imperfecta_and_skeletal_dysplasias",
+      "section_id": "lens_section_ob_pediatrics",
+      "lens_specific": {
+        "title_in_lens": "Osteogenesis Imperfecta and Skeletal Dysplasias",
+        "order_in_section": 11,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_pediatrics; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_general_paediatric_trauma",
+      "section_id": "lens_section_ob_pediatrics",
+      "lens_specific": {
+        "title_in_lens": "General Paediatric Trauma",
+        "order_in_section": 12,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_pediatrics; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_cerebral_palsy_orthopaedic_management",
+      "section_id": "lens_section_ob_pediatrics",
+      "lens_specific": {
+        "title_in_lens": "Cerebral Palsy — Orthopaedic Management",
+        "order_in_section": 13,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_pediatrics; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_bone_tumor_evaluation_and_biopsy",
+      "section_id": "lens_section_ob_oncology",
+      "lens_specific": {
+        "title_in_lens": "Bone Tumor Evaluation and Biopsy",
+        "order_in_section": 0,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_oncology; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_benign_bone_tumors",
+      "section_id": "lens_section_ob_oncology",
+      "lens_specific": {
+        "title_in_lens": "Benign Bone Tumors",
+        "order_in_section": 1,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_oncology; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_primary_malignant_bone_tumors",
+      "section_id": "lens_section_ob_oncology",
+      "lens_specific": {
+        "title_in_lens": "Primary Malignant Bone Tumors",
+        "order_in_section": 2,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_oncology; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_soft_tissue_sarcoma",
+      "section_id": "lens_section_ob_oncology",
+      "lens_specific": {
+        "title_in_lens": "Soft Tissue Sarcoma",
+        "order_in_section": 3,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_oncology; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_benign_soft_tissue_tumors",
+      "section_id": "lens_section_ob_oncology",
+      "lens_specific": {
+        "title_in_lens": "Benign Soft Tissue Tumors",
+        "order_in_section": 4,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_oncology; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_metastatic_bone_disease",
+      "section_id": "lens_section_ob_oncology",
+      "lens_specific": {
+        "title_in_lens": "Metastatic Bone Disease",
+        "order_in_section": 5,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_oncology; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_limb_salvage_and_reconstruction_oncology",
+      "section_id": "lens_section_ob_oncology",
+      "lens_specific": {
+        "title_in_lens": "Limb Salvage and Reconstruction in Oncology",
+        "order_in_section": 6,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_oncology; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_oncologic_syndromes_and_staging",
+      "section_id": "lens_section_ob_oncology",
+      "lens_specific": {
+        "title_in_lens": "Oncologic Syndromes and Staging",
+        "order_in_section": 7,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_oncology; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_brachial_plexus_injuries",
+      "section_id": "lens_section_ob_neuromuscular_rehabilitation",
+      "lens_specific": {
+        "title_in_lens": "Brachial Plexus Injuries — Trauma and Reconstruction",
+        "order_in_section": 0,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_neuromuscular_rehabilitation; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_peripheral_neuropathy_and_nerve_entrapment_lower_extremity",
+      "section_id": "lens_section_ob_neuromuscular_rehabilitation",
+      "lens_specific": {
+        "title_in_lens": "Peripheral Neuropathy and Lower Extremity Nerve Entrapment",
+        "order_in_section": 1,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_neuromuscular_rehabilitation; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_muscular_dystrophy_and_neuropathy_orthopaedic",
+      "section_id": "lens_section_ob_neuromuscular_rehabilitation",
+      "lens_specific": {
+        "title_in_lens": "Muscular Dystrophy and Neuropathy — Orthopaedic Management",
+        "order_in_section": 2,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_neuromuscular_rehabilitation; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_orthopaedic_rehabilitation_principles",
+      "section_id": "lens_section_ob_neuromuscular_rehabilitation",
+      "lens_specific": {
+        "title_in_lens": "Orthopaedic Rehabilitation Principles",
+        "order_in_section": 3,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "hub=orthopaedic_neuromuscular_rehabilitation; orthobullets_topic_nav"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l2_musculoskeletal_and_rheumatology",
+      "section_id": "lens_section_ob_adult_reconstruction",
+      "lens_specific": {
+        "title_in_lens": "spine medicine clinical l2 musculoskeletal and rheumatology",
+        "order_in_section": 10,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 3,
+        "notes": "existing_spine_node"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_preclinical_l3_wound_healing_and_repair",
+      "section_id": "lens_section_ob_basic_science",
+      "lens_specific": {
+        "title_in_lens": "spine medicine preclinical l3 wound healing and repair",
+        "order_in_section": 10,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "existing_spine_node"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_preclinical_l3_inflammation_acute_and_chronic",
+      "section_id": "lens_section_ob_basic_science",
+      "lens_specific": {
+        "title_in_lens": "spine medicine preclinical l3 inflammation acute and chronic",
+        "order_in_section": 11,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 5,
+        "notes": "existing_spine_node"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_preclinical_l3_musculoskeletal_system_overview",
+      "section_id": "lens_section_ob_basic_science",
+      "lens_specific": {
+        "title_in_lens": "spine medicine preclinical l3 musculoskeletal system overview",
+        "order_in_section": 12,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 3,
+        "notes": "existing_spine_node"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_preclinical_l3_connective_tissue_matrix",
+      "section_id": "lens_section_ob_basic_science",
+      "lens_specific": {
+        "title_in_lens": "spine medicine preclinical l3 connective tissue matrix",
+        "order_in_section": 13,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 3,
+        "notes": "existing_spine_node"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_preclinical_l3_screening_test_characteristics",
+      "section_id": "lens_section_ob_basic_science",
+      "lens_specific": {
+        "title_in_lens": "spine medicine preclinical l3 screening test characteristics",
+        "order_in_section": 14,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "existing_spine_node"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_preclinical_l3_study_designs_clinical_research",
+      "section_id": "lens_section_ob_basic_science",
+      "lens_specific": {
+        "title_in_lens": "spine medicine preclinical l3 study designs clinical research",
+        "order_in_section": 15,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "existing_spine_node"
+      }
+    },
+    {
+      "spine_concept_id": "spine_biology_l3_action_potential",
+      "section_id": "lens_section_ob_basic_science",
+      "lens_specific": {
+        "title_in_lens": "action potential",
+        "order_in_section": 16,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 3,
+        "notes": "existing_spine_node"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_osteoarthritis",
+      "section_id": "lens_section_ob_adult_reconstruction",
+      "lens_specific": {
+        "title_in_lens": "spine medicine clinical l3 osteoarthritis",
+        "order_in_section": 11,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "existing_spine_node"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_osteoporosis_management",
+      "section_id": "lens_section_ob_basic_science",
+      "lens_specific": {
+        "title_in_lens": "spine medicine clinical l3 osteoporosis management",
+        "order_in_section": 17,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 5,
+        "notes": "existing_spine_node"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_rheumatoid_arthritis",
+      "section_id": "lens_section_ob_adult_reconstruction",
+      "lens_specific": {
+        "title_in_lens": "spine medicine clinical l3 rheumatoid arthritis",
+        "order_in_section": 12,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "existing_spine_node"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_back_pain_red_flags",
+      "section_id": "lens_section_ob_spine",
+      "lens_specific": {
+        "title_in_lens": "spine medicine clinical l3 back pain red flags",
+        "order_in_section": 10,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "existing_spine_node"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_preoperative_assessment",
+      "section_id": "lens_section_ob_basic_science",
+      "lens_specific": {
+        "title_in_lens": "spine medicine clinical l3 preoperative assessment",
+        "order_in_section": 18,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "existing_spine_node; l4_ortho_context_pending"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_anesthesia_basics",
+      "section_id": "lens_section_ob_basic_science",
+      "lens_specific": {
+        "title_in_lens": "spine medicine clinical l3 anesthesia basics",
+        "order_in_section": 19,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "existing_spine_node; l4_ortho_context_pending"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_wound_healing_surgical",
+      "section_id": "lens_section_ob_basic_science",
+      "lens_specific": {
+        "title_in_lens": "spine medicine clinical l3 wound healing surgical",
+        "order_in_section": 20,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 5,
+        "notes": "existing_spine_node; l4_ortho_context_pending"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_deep_vein_thrombosis_pe",
+      "section_id": "lens_section_ob_basic_science",
+      "lens_specific": {
+        "title_in_lens": "spine medicine clinical l3 deep vein thrombosis pe",
+        "order_in_section": 21,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 5,
+        "notes": "existing_spine_node; l4_ortho_context_pending"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_skin_soft_tissue_infections",
+      "section_id": "lens_section_ob_hand_and_wrist",
+      "lens_specific": {
+        "title_in_lens": "spine medicine clinical l3 skin soft tissue infections",
+        "order_in_section": 10,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 4,
+        "notes": "existing_spine_node"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_preclinical_l3_collagen_synthesis_and_disorders",
+      "section_id": "lens_section_ob_basic_science",
+      "lens_specific": {
+        "title_in_lens": "spine medicine preclinical l3 collagen synthesis and disorders",
+        "order_in_section": 22,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 3,
+        "notes": "existing_spine_node"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_gout_and_hyperuricemia",
+      "section_id": "lens_section_ob_foot_and_ankle",
+      "lens_specific": {
+        "title_in_lens": "spine medicine clinical l3 gout and hyperuricemia",
+        "order_in_section": 11,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 3,
+        "notes": "existing_spine_node"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_peripheral_neuropathy",
+      "section_id": "lens_section_ob_neuromuscular_rehabilitation",
+      "lens_specific": {
+        "title_in_lens": "spine medicine clinical l3 peripheral neuropathy",
+        "order_in_section": 4,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 3,
+        "notes": "existing_spine_node"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_compartment_syndrome_and_fasciotomy",
+      "section_id": "lens_section_ob_trauma",
+      "lens_specific": {
+        "title_in_lens": "Compartment Syndrome and Fasciotomy",
+        "order_in_section": 19,
+        "high_yield_in_lens": true,
+        "depth_in_lens": 5,
+        "notes": "cross_link_from=orthopaedic_trauma_hub; primary_anchor=orthopaedic_basic_science; primary_section=abos_p1_basic_science_principles"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_stress_fractures_and_insufficiency_fractures",
+      "section_id": "lens_section_ob_foot_and_ankle",
+      "lens_specific": {
+        "title_in_lens": "Stress Fractures — High-Risk Foot and Ankle Sites",
+        "order_in_section": 12,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 4,
+        "notes": "cross_link_from=orthopaedic_trauma_hub; primary_section=abos_p2_adult_trauma; shared=navicular_metatarsal_fifth"
+      }
+    },
+    {
+      "spine_concept_id": "spine_medicine_clinical_l3_stress_fractures_and_insufficiency_fractures",
+      "section_id": "lens_section_ob_basic_science",
+      "lens_specific": {
+        "title_in_lens": "Insufficiency Fractures and Osteoporosis",
+        "order_in_section": 23,
+        "high_yield_in_lens": false,
+        "depth_in_lens": 5,
+        "notes": "cross_link_from=orthopaedic_trauma_hub; primary_section=abos_p2_adult_trauma; existing_ref=spine_medicine_clinical_l3_osteoporosis_management"
+      }
+    }
+  ],
+  "metadata": {
+    "created_at": "2026-06-27T00:00:00Z",
+    "status": "active"
+  }
+}

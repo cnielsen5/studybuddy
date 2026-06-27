@@ -2,9 +2,9 @@
 
 > **Purpose:** Single source of truth for where Socrates is headed, what's done, and what's next.  
 > **Navigation:** See [`README.md`](README.md) for full repo map and where to go for each kind of work.  
-> **Last updated:** June 14, 2026  
+> **Last updated:** June 27, 2026  
 > **Repo:** [github.com/cnielsen5/studybuddy](https://github.com/cnielsen5/studybuddy)  
-> **Last code activity:** January 20, 2026
+> **Last code activity:** June 27, 2026
 
 ---
 
@@ -12,7 +12,7 @@
 
 | Metric | Value |
 |--------|-------|
-| **Overall progress** | **~42%** toward a fully functional, quality product |
+| **Overall progress** | **~43%** toward a fully functional, quality product |
 | **Current phase** | **Phase 6 — User-Facing App** (in progress) |
 | **Tests** | 846+ passing (incl. library validation) |
 | **Staging** | Verified June 2026 (`socrates-staging-eedc4`) |
@@ -33,17 +33,17 @@
 ## Where You Are — June 2026
 
 ```
-[████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░]  ~42%
+[████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░]  ~43%
 
 Phase 1  Vision & Design          ████████████████████  100%
 Phase 2  Domain Foundation        ██████████████████░░   90%
-Phase 3  Backend & Infrastructure ████████████░░░░░░░░   60%
+Phase 3  Backend & Infrastructure █████████████░░░░░░░   62%
 Phase 4  Core Learning Logic      ████████████░░░░░░░░   55%
 Phase 5  Client SDK & Sync        ██████████████░░░░░░   70%
-Phase 6  User-Facing App          ████████░░░░░░░░░░░░   35%  ← IN PROGRESS
+Phase 6  User-Facing App          █████████░░░░░░░░░░░   38%  ← IN PROGRESS
 Phase 7  Cloud Ops & Deployment   ████████░░░░░░░░░░░░   35%
 Phase 8  AI & Advanced Features   ██░░░░░░░░░░░░░░░░░░   10%
-Phase 9  Content & Libraries      ████████░░░░░░░░░░░░   35%  ← IN PROGRESS
+Phase 9  Content & Libraries      ████████████░░░░░░░░   60%  ← IN PROGRESS
 Phase 10 Quality & Launch         ████░░░░░░░░░░░░░░░░   20%
 ```
 
@@ -97,7 +97,7 @@ Work through phases in order where dependencies exist. Some items within a phase
 
 ### Phase 3 — Backend & Infrastructure
 **Goal:** Events flow from client → Firestore → projectors → views reliably.  
-**Phase progress:** 60% 🟡 ← **CURRENT PHASE**
+**Phase progress:** 62% 🟡 ← **CURRENT PHASE**
 
 | # | Step | Status | Notes |
 |---|------|--------|-------|
@@ -122,6 +122,7 @@ Work through phases in order where dependencies exist. Some items within a phase
 | 3.19 | Runtime validation at ingestion boundaries | 🟡 | Partial Zod coverage |
 | 3.20 | Projection monitoring & error alerting | ⬜ | No metrics/alerting yet |
 | 3.21 | Batch / high-volume projection optimization | ⬜ | Future scaling concern |
+| 3.22 | **Library creation callables** | ✅ | Deployed staging June 27 · `generateLibraryPreview` + `publishLibraryFromJob` · blank-paste path seeds existing spine concepts via `seedConceptGraphFromSpine` (broad domain → L2 chapter headings, named subcategory → L3 topics) with "found existing concepts" framing |
 
 **Remaining in this phase:** Verify staging end-to-end, finish certification side effects, complete runtime validation, add monitoring.
 
@@ -184,7 +185,7 @@ Work through phases in order where dependencies exist. Some items within a phase
 
 ### Phase 6 — User-Facing App
 **Goal:** A real application someone can open and study with.  
-**Phase progress:** 35% 🟡
+**Phase progress:** 38% 🟡
 
 | # | Step | Status | Notes |
 |---|------|--------|-------|
@@ -205,6 +206,7 @@ Work through phases in order where dependencies exist. Some items within a phase
 | 6.15 | Global AI assistant surface | ⬜ | Read-only unless invoked |
 | 6.16 | Mastery certification UI flow | ⬜ | |
 | 6.17 | Content flagging / feedback UI | ⬜ | |
+| 6.18 | **Create-library wizard** (`/create-library`) | 🟡 | Stage 3 callable live on staging · blank-paste seeds existing spine concepts (no fabricated concepts) · browser E2E pending |
 
 **This phase unlocks the product.** Recommended first milestone: **6.6 Study screen** with card review only.
 
@@ -257,7 +259,7 @@ Work through phases in order where dependencies exist. Some items within a phase
 
 ### Phase 9 — Content & Libraries
 **Goal:** Actual study material users can learn from.  
-**Phase progress:** 35% 🟡
+**Phase progress:** 60% 🟡
 
 | # | Step | Status | Notes |
 |---|------|--------|-------|
@@ -268,6 +270,17 @@ Work through phases in order where dependencies exist. Some items within a phase
 | 9.5 | Library version updates & sync | ⬜ | |
 | 9.6 | Content authoring workflow | ⏸️ | Explicit non-goal for v1 |
 | 9.7 | Community / shared libraries | ⏸️ | Future |
+| 9.8 | Universal spine L1–L3 concept graph | ✅ | **626 L3**, 69 L2 · orthopaedic merged · `socrates-spine-l1-l3.draft.json` |
+| 9.9 | L4/L5 child generation pipeline + prompt | ✅ | `library-creator` schema/units/bundler · `docs/design/spine-l4-l5-generation-prompt.md` |
+| 9.10 | **Universal L4/L5 model + migration** | ✅ | **166 anchors** · L1-L5: `socrates-spine-l1-l5.draft.json` (**1880 concepts**: L4=1002 L5=176) |
+| 9.11 | Align generation prompt to universal L4/L5 output | ✅ | `docs/design/spine-l4-l5-generation-prompt.md` — relevance + gap pass, `domain_contexts[]` |
+| 9.12 | Merge & consolidation review queue | ✅ | Rules applied + **psych R-MIG-F spot-check fixes** (anxiety/eating splits, borderline restored, schizophrenia med title) → **396 L4/L5** (973 L1–L5), 0 graph warnings |
+| 9.13 | **Incremental spine growth (placement)** | ✅ | `docs/design/spine-growth-and-placement.md` · `npm run check:spine-placement` · `content/spine/spine-growth-queue.json` |
+| 9.14 | **Curriculum lenses (schema + runtime)** | ✅ | ABOS + Orthobullets orthopaedic lenses in `content/lenses/` · `npm run validate:lenses` |
+| 9.15 | **Orthopaedic surgery L2/L3** | ✅ | Merged into main spine · L2 + 11 hubs + 113 topics · `npm run build:orthopaedic-l2-l3` |
+| 9.16 | **Orthopaedic L4/L5 + lenses** | ✅ | **117 anchor bundles** merged · `npm run consolidate:orthopaedic-spine` · `npm run build:spine-l1-l5` |
+| 9.17 | **Five-stage library creation pipeline** | ✅ | `library-creator` · `docs/design/library-creation-pipeline.md` · CLI `npm run pipeline:create` |
+| 9.18 | **Publish generated library to catalog** | ⬜ | `publishLibraryFromJob` stub · needs Storage/Firestore export path |
 
 ---
 
@@ -331,10 +344,11 @@ When you sit down to work, pick from the top of this list:
 | 🟠 4 | Fill `MESSAGING_SENDER_ID` + `APP_ID` in `.env.local` | 6.1 | 5 min |
 | 🟠 5 | ~~Show due cards from Firestore (not just sequential order)~~ | 6.6 | ✅ Due-card queue |
 | 🟠 6 | Set `VITE_LIBRARY_ID=lib_learning_science_v1` in `.env.local` | 9.4 | 1 min |
-| 🟡 7 | Finish Zod runtime validation schemas | 2.10 | 4–8 hrs |
-| 🟡 8 | Implement certification side effects (card suppression) | 3.11 | 2–4 hrs |
-| 🟡 9 | Build policies layer (AFI, cramming) | 4.10 | 1–2 weeks |
-| ⚪ 10 | Re-introduce AI / embeddings | 8.x | Later |
+| 🟠 7 | ~~Deploy library creation callables to staging~~ | 3.22, 6.18 | ✅ Done June 27, 2026 |
+| 🟠 8 | E2E test `/create-library` signed in on staging | 6.18 | 15 min |
+| 🟡 9 | Finish Zod runtime validation schemas | 2.10 | 4–8 hrs |
+| 🟡 10 | Implement certification side effects (card suppression) | 3.11 | 2–4 hrs |
+| ⚪ 12 | Re-introduce AI / embeddings | 8.x | Later |
 | ⚪ 11 | Production deployment | 7.11 | After app MVP |
 
 ---

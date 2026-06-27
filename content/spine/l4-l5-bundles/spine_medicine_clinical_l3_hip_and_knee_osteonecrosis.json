@@ -1,0 +1,548 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_hip_and_knee_osteonecrosis",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "ABOS-aligned scaffold for abos_p2_adult_reconstruction."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_hip_and_knee_osteonecrosis_core_principles",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_hip_and_knee_osteonecrosis",
+      "content": {
+        "title": "Hip and Knee Osteonecrosis — Core Principles",
+        "definition": "Ischemic death of subchondral bone leading to collapse and secondary arthritis, with etiologies including idiopathic, steroid, alcohol, and trauma.",
+        "summary": "Ficat and Steinberg staging guide hip ON treatment from core decompression to arthroplasty. Collapse predicts poor joint-preserving outcomes."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Adult Reconstruction",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_hip_and_knee_osteonecrosis",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Hip and Knee Osteonecrosis — Core Principles",
+            "relevance": "Common THA indication in younger patients.",
+            "applications": [
+              "Staging and prognosis",
+              "Core decompression",
+              "Arthroplasty timing"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Avascular Necrosis",
+            "topic": "Hip and Knee Osteonecrosis",
+            "subtopic": "Hip and Knee Osteonecrosis — Core Principles"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Hip and Knee Osteonecrosis",
+            "chapter": "NBK441999",
+            "section": "Osteonecrosis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_hip_and_knee_osteonecrosis_evaluation_and_diagnosis",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_hip_and_knee_osteonecrosis",
+      "content": {
+        "title": "Evaluation and Diagnosis",
+        "definition": "History, physical examination, and initial imaging for hip and knee osteonecrosis.",
+        "summary": "Systematic assessment identifies severity, associated injuries, and urgency in hip and knee osteonecrosis."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Adult Reconstruction",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_hip_and_knee_osteonecrosis",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_hip_and_knee_osteonecrosis_core_principles"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Evaluation and Diagnosis",
+            "relevance": "Common THA indication in younger patients.",
+            "applications": [
+              "Staging and prognosis",
+              "Core decompression",
+              "Arthroplasty timing"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Avascular Necrosis",
+            "topic": "Hip and Knee Osteonecrosis",
+            "subtopic": "Evaluation and Diagnosis"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_hip_and_knee_osteonecrosis_core_principles"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Hip and Knee Osteonecrosis",
+            "chapter": "NBK441999",
+            "section": "Osteonecrosis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_hip_and_knee_osteonecrosis_management_principles",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_hip_and_knee_osteonecrosis",
+      "content": {
+        "title": "Management Principles",
+        "definition": "Nonoperative and operative treatment algorithms for hip and knee osteonecrosis.",
+        "summary": "Ficat and Steinberg staging guide hip ON treatment from core decompression to arthroplasty."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Adult Reconstruction",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_hip_and_knee_osteonecrosis",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_hip_and_knee_osteonecrosis_evaluation_and_diagnosis"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Management Principles",
+            "relevance": "Common THA indication in younger patients.",
+            "applications": [
+              "Staging and prognosis",
+              "Core decompression",
+              "Arthroplasty timing"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Avascular Necrosis",
+            "topic": "Hip and Knee Osteonecrosis",
+            "subtopic": "Management Principles"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_hip_and_knee_osteonecrosis_evaluation_and_diagnosis"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Hip and Knee Osteonecrosis",
+            "chapter": "NBK441999",
+            "section": "Osteonecrosis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_hip_and_knee_osteonecrosis_staging_and_prognosis",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_hip_and_knee_osteonecrosis",
+      "content": {
+        "title": "Staging and prognosis",
+        "definition": "Focused assessment and management of staging and prognosis in the context of hip and knee osteonecrosis.",
+        "summary": "Staging and prognosis — key decision points from Adult Reconstruction practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Adult Reconstruction",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_hip_and_knee_osteonecrosis",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_hip_and_knee_osteonecrosis_management_principles"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Staging and prognosis",
+            "relevance": "Common THA indication in younger patients.",
+            "applications": [
+              "Staging and prognosis",
+              "Core decompression",
+              "Arthroplasty timing"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Avascular Necrosis",
+            "topic": "Hip and Knee Osteonecrosis",
+            "subtopic": "Staging and prognosis"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_hip_and_knee_osteonecrosis_management_principles"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Hip and Knee Osteonecrosis",
+            "chapter": "NBK441999",
+            "section": "Osteonecrosis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_hip_and_knee_osteonecrosis_core_decompression",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_hip_and_knee_osteonecrosis",
+      "content": {
+        "title": "Core decompression",
+        "definition": "Focused assessment and management of core decompression in the context of hip and knee osteonecrosis.",
+        "summary": "Core decompression — key decision points from Adult Reconstruction practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Adult Reconstruction",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_hip_and_knee_osteonecrosis",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_hip_and_knee_osteonecrosis_staging_and_prognosis"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Core decompression",
+            "relevance": "Common THA indication in younger patients.",
+            "applications": [
+              "Staging and prognosis",
+              "Core decompression",
+              "Arthroplasty timing"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Avascular Necrosis",
+            "topic": "Hip and Knee Osteonecrosis",
+            "subtopic": "Core decompression"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_hip_and_knee_osteonecrosis_staging_and_prognosis"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Hip and Knee Osteonecrosis",
+            "chapter": "NBK441999",
+            "section": "Osteonecrosis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_hip_and_knee_osteonecrosis_arthroplasty_timing",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_hip_and_knee_osteonecrosis",
+      "content": {
+        "title": "Arthroplasty timing",
+        "definition": "Focused assessment and management of arthroplasty timing in the context of hip and knee osteonecrosis.",
+        "summary": "Arthroplasty timing — key decision points from Adult Reconstruction practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Adult Reconstruction",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_hip_and_knee_osteonecrosis",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_hip_and_knee_osteonecrosis_core_decompression"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Arthroplasty timing",
+            "relevance": "Common THA indication in younger patients.",
+            "applications": [
+              "Staging and prognosis",
+              "Core decompression",
+              "Arthroplasty timing"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Avascular Necrosis",
+            "topic": "Hip and Knee Osteonecrosis",
+            "subtopic": "Arthroplasty timing"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_hip_and_knee_osteonecrosis_core_decompression"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Hip and Knee Osteonecrosis",
+            "chapter": "NBK441999",
+            "section": "Osteonecrosis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_hip_and_knee_osteonecrosis_complications_and_outcomes",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_hip_and_knee_osteonecrosis",
+      "content": {
+        "title": "Complications and Outcomes",
+        "definition": "Recognized complications, failure modes, and expected recovery after treatment of hip and knee osteonecrosis.",
+        "summary": "Anticipate, diagnose, and manage complications; counsel on prognosis and rehabilitation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Adult Reconstruction",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_hip_and_knee_osteonecrosis",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_hip_and_knee_osteonecrosis_arthroplasty_timing"
+        ],
+        "unlocks": [
+          "spine_medicine_clinical_l5_hip_and_knee_osteonecrosis_salvage_and_revision"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Complications and Outcomes",
+            "relevance": "Common THA indication in younger patients.",
+            "applications": [
+              "Staging and prognosis",
+              "Core decompression",
+              "Arthroplasty timing"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Avascular Necrosis",
+            "topic": "Hip and Knee Osteonecrosis",
+            "subtopic": "Complications and Outcomes"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_hip_and_knee_osteonecrosis_arthroplasty_timing"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_clinical_l5_hip_and_knee_osteonecrosis_salvage_and_revision"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Hip and Knee Osteonecrosis",
+            "chapter": "NBK441999",
+            "section": "Osteonecrosis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l5_hip_and_knee_osteonecrosis_salvage_and_revision",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_clinical_l3_hip_and_knee_osteonecrosis",
+      "content": {
+        "title": "Salvage and Revision Strategies",
+        "definition": "Revision and salvage options when initial management of hip and knee osteonecrosis fails.",
+        "summary": "Staged revision and alternative strategies when primary treatment fails or complications develop."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Adult Reconstruction",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l4_hip_and_knee_osteonecrosis_complications_and_outcomes",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_hip_and_knee_osteonecrosis_complications_and_outcomes"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Salvage and Revision Strategies",
+            "relevance": "Common THA indication in younger patients.",
+            "applications": [
+              "Staging and prognosis",
+              "Core decompression",
+              "Arthroplasty timing"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Avascular Necrosis",
+            "topic": "Hip and Knee Osteonecrosis",
+            "subtopic": "Salvage and Revision Strategies"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_hip_and_knee_osteonecrosis_complications_and_outcomes"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Hip and Knee Osteonecrosis",
+            "chapter": "NBK441999",
+            "section": "Osteonecrosis"
+          }
+        ]
+      }
+    }
+  ]
+}

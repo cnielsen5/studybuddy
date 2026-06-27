@@ -1,0 +1,548 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_limb_length_discrepancy_and_angular_deformity",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "ABOS-aligned scaffold for abos_p2_pediatrics."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_limb_length_discrepancy_and_angular_deformity_core_principle",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_limb_length_discrepancy_and_angular_deformity",
+      "content": {
+        "title": "Limb Length Discrepancy and Angular Deformity — Core Principles",
+        "definition": "Leg length inequality and coronal or sagittal angular deformities from congenital, developmental, or post-traumatic causes.",
+        "summary": "Moseley charting predicts growth remaining. Guided growth for angular correction; epiphysiodesis or lengthening for LLD."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_limb_length_discrepancy_and_angular_deformity",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Limb Length Discrepancy and Angular Deformity — Core Principles",
+            "relevance": "ABOS torsional and angular deformity section.",
+            "applications": [
+              "Growth remaining calculation",
+              "Guided growth plates",
+              "Lengthening principles"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Limb Deformity",
+            "topic": "Limb Length Discrepancy and Angular Deformity",
+            "subtopic": "Limb Length Discrepancy and Angular Deformity — Core Principles"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Limb Length Discrepancy and Angular Deformity",
+            "chapter": "NBK557519",
+            "section": "Limb Deformity"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_limb_length_discrepancy_and_angular_deformity_evaluation_and",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_limb_length_discrepancy_and_angular_deformity",
+      "content": {
+        "title": "Evaluation and Diagnosis",
+        "definition": "History, physical examination, and initial imaging for limb length discrepancy and angular deformity.",
+        "summary": "Systematic assessment identifies severity, associated injuries, and urgency in limb length discrepancy and angular deformity."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_limb_length_discrepancy_and_angular_deformity",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_limb_length_discrepancy_and_angular_deformity_core_principle"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Evaluation and Diagnosis",
+            "relevance": "ABOS torsional and angular deformity section.",
+            "applications": [
+              "Growth remaining calculation",
+              "Guided growth plates",
+              "Lengthening principles"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Limb Deformity",
+            "topic": "Limb Length Discrepancy and Angular Deformity",
+            "subtopic": "Evaluation and Diagnosis"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_limb_length_discrepancy_and_angular_deformity_core_principle"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Limb Length Discrepancy and Angular Deformity",
+            "chapter": "NBK557519",
+            "section": "Limb Deformity"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_limb_length_discrepancy_and_angular_deformity_management_pri",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_limb_length_discrepancy_and_angular_deformity",
+      "content": {
+        "title": "Management Principles",
+        "definition": "Nonoperative and operative treatment algorithms for limb length discrepancy and angular deformity.",
+        "summary": "Moseley charting predicts growth remaining."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_limb_length_discrepancy_and_angular_deformity",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_limb_length_discrepancy_and_angular_deformity_evaluation_and"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Management Principles",
+            "relevance": "ABOS torsional and angular deformity section.",
+            "applications": [
+              "Growth remaining calculation",
+              "Guided growth plates",
+              "Lengthening principles"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Limb Deformity",
+            "topic": "Limb Length Discrepancy and Angular Deformity",
+            "subtopic": "Management Principles"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_limb_length_discrepancy_and_angular_deformity_evaluation_and"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Limb Length Discrepancy and Angular Deformity",
+            "chapter": "NBK557519",
+            "section": "Limb Deformity"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_limb_length_discrepancy_and_angular_deformity_growth_remaini",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_limb_length_discrepancy_and_angular_deformity",
+      "content": {
+        "title": "Growth remaining calculation",
+        "definition": "Focused assessment and management of growth remaining calculation in the context of limb length discrepancy and angular deformity.",
+        "summary": "Growth remaining calculation — key decision points from Paediatric Orthopaedics practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_limb_length_discrepancy_and_angular_deformity",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_limb_length_discrepancy_and_angular_deformity_management_pri"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Growth remaining calculation",
+            "relevance": "ABOS torsional and angular deformity section.",
+            "applications": [
+              "Growth remaining calculation",
+              "Guided growth plates",
+              "Lengthening principles"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Limb Deformity",
+            "topic": "Limb Length Discrepancy and Angular Deformity",
+            "subtopic": "Growth remaining calculation"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_limb_length_discrepancy_and_angular_deformity_management_pri"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Limb Length Discrepancy and Angular Deformity",
+            "chapter": "NBK557519",
+            "section": "Limb Deformity"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_limb_length_discrepancy_and_angular_deformity_guided_growth_",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_limb_length_discrepancy_and_angular_deformity",
+      "content": {
+        "title": "Guided growth plates",
+        "definition": "Focused assessment and management of guided growth plates in the context of limb length discrepancy and angular deformity.",
+        "summary": "Guided growth plates — key decision points from Paediatric Orthopaedics practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_limb_length_discrepancy_and_angular_deformity",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_limb_length_discrepancy_and_angular_deformity_growth_remaini"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Guided growth plates",
+            "relevance": "ABOS torsional and angular deformity section.",
+            "applications": [
+              "Growth remaining calculation",
+              "Guided growth plates",
+              "Lengthening principles"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Limb Deformity",
+            "topic": "Limb Length Discrepancy and Angular Deformity",
+            "subtopic": "Guided growth plates"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_limb_length_discrepancy_and_angular_deformity_growth_remaini"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Limb Length Discrepancy and Angular Deformity",
+            "chapter": "NBK557519",
+            "section": "Limb Deformity"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_limb_length_discrepancy_and_angular_deformity_lengthening_pr",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_limb_length_discrepancy_and_angular_deformity",
+      "content": {
+        "title": "Lengthening principles",
+        "definition": "Focused assessment and management of lengthening principles in the context of limb length discrepancy and angular deformity.",
+        "summary": "Lengthening principles — key decision points from Paediatric Orthopaedics practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_limb_length_discrepancy_and_angular_deformity",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_limb_length_discrepancy_and_angular_deformity_guided_growth_"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Lengthening principles",
+            "relevance": "ABOS torsional and angular deformity section.",
+            "applications": [
+              "Growth remaining calculation",
+              "Guided growth plates",
+              "Lengthening principles"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Limb Deformity",
+            "topic": "Limb Length Discrepancy and Angular Deformity",
+            "subtopic": "Lengthening principles"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_limb_length_discrepancy_and_angular_deformity_guided_growth_"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Limb Length Discrepancy and Angular Deformity",
+            "chapter": "NBK557519",
+            "section": "Limb Deformity"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_limb_length_discrepancy_and_angular_deformity_complications_",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_limb_length_discrepancy_and_angular_deformity",
+      "content": {
+        "title": "Complications and Outcomes",
+        "definition": "Recognized complications, failure modes, and expected recovery after treatment of limb length discrepancy and angular deformity.",
+        "summary": "Anticipate, diagnose, and manage complications; counsel on prognosis and rehabilitation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_limb_length_discrepancy_and_angular_deformity",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_limb_length_discrepancy_and_angular_deformity_lengthening_pr"
+        ],
+        "unlocks": [
+          "spine_medicine_clinical_l5_limb_length_discrepancy_and_angular_deformity_salvage_and_re"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Complications and Outcomes",
+            "relevance": "ABOS torsional and angular deformity section.",
+            "applications": [
+              "Growth remaining calculation",
+              "Guided growth plates",
+              "Lengthening principles"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Limb Deformity",
+            "topic": "Limb Length Discrepancy and Angular Deformity",
+            "subtopic": "Complications and Outcomes"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_limb_length_discrepancy_and_angular_deformity_lengthening_pr"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_clinical_l5_limb_length_discrepancy_and_angular_deformity_salvage_and_re"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Limb Length Discrepancy and Angular Deformity",
+            "chapter": "NBK557519",
+            "section": "Limb Deformity"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l5_limb_length_discrepancy_and_angular_deformity_salvage_and_re",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_clinical_l3_limb_length_discrepancy_and_angular_deformity",
+      "content": {
+        "title": "Salvage and Revision Strategies",
+        "definition": "Revision and salvage options when initial management of limb length discrepancy and angular deformity fails.",
+        "summary": "Staged revision and alternative strategies when primary treatment fails or complications develop."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Paediatric Orthopaedics",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l4_limb_length_discrepancy_and_angular_deformity_complications_",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_limb_length_discrepancy_and_angular_deformity_complications_"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Salvage and Revision Strategies",
+            "relevance": "ABOS torsional and angular deformity section.",
+            "applications": [
+              "Growth remaining calculation",
+              "Guided growth plates",
+              "Lengthening principles"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Limb Deformity",
+            "topic": "Limb Length Discrepancy and Angular Deformity",
+            "subtopic": "Salvage and Revision Strategies"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_limb_length_discrepancy_and_angular_deformity_complications_"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Limb Length Discrepancy and Angular Deformity",
+            "chapter": "NBK557519",
+            "section": "Limb Deformity"
+          }
+        ]
+      }
+    }
+  ]
+}

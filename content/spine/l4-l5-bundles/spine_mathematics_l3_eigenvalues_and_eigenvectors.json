@@ -1,0 +1,346 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_mathematics_l3_eigenvalues_and_eigenvectors",
+    "anchor_primary_domain": "mathematics",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_mathematics_l3_eigenvalues_and_eigenvectors.mathematics.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "5 per-context concepts merged into 5 universal concepts (5 L4 + 0 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_mathematics_l4_characteristic_polynomial",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_eigenvalues_and_eigenvectors",
+      "content": {
+        "title": "Characteristic Polynomial",
+        "definition": "p(λ) = det(A − λI); eigenvalues are roots of p(λ) = 0.",
+        "summary": "The characteristic polynomial systematically finds all eigenvalues of a square matrix."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Linear Systems",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_eigenvalues_and_eigenvectors",
+        "prerequisites": [
+          "spine_mathematics_l4_eigenvector_definition"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_finding_eigenvectors"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Eigenanalysis decomposes linear transformations into invariant directions.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Linear Algebra",
+            "topic": "Eigenvalues and Eigenvectors",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_eigenvector_definition"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_finding_eigenvectors"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Linear Algebra",
+            "chapter": "5",
+            "section": "Characteristic Polynomial"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_diagonalization_concept",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_eigenvalues_and_eigenvectors",
+      "content": {
+        "title": "Matrix Diagonalization",
+        "definition": "A = PDP⁻¹ with D diagonal when A has enough linearly independent eigenvectors; simplifies Aⁿ and matrix functions.",
+        "summary": "Diagonalization decouples coupled linear dynamics into independent scalar modes."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Linear Systems",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_eigenvalues_and_eigenvectors",
+        "prerequisites": [
+          "spine_mathematics_l4_finding_eigenvectors"
+        ],
+        "unlocks": [
+          {
+            "concept_id": "spine_mathematics_l3_systems_of_odes",
+            "_forward_reference": true
+          }
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Eigenanalysis decomposes linear transformations into invariant directions.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Linear Algebra",
+            "topic": "Eigenvalues and Eigenvectors",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_finding_eigenvectors"
+            ],
+            "unlocks_in_context": [
+              {
+                "concept_id": "spine_mathematics_l3_systems_of_odes",
+                "_forward_reference": true
+              }
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Linear Algebra",
+            "chapter": "5",
+            "section": "Matrix Diagonalization"
+          }
+        ]
+      },
+      "_reviewer_note": "Contains forward reference to existing L3 node — verify target exists in spine."
+    },
+    {
+      "id": "spine_mathematics_l4_eigenvector_definition",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_eigenvalues_and_eigenvectors",
+      "content": {
+        "title": "Eigenvector and Eigenvalue Definition",
+        "definition": "Nonzero vector v is an eigenvector of A with eigenvalue λ if Av = λv, meaning v is scaled but not rotated by A.",
+        "summary": "Eigenvectors reveal directions preserved by a linear transformation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Linear Systems",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_eigenvalues_and_eigenvectors",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_mathematics_l4_characteristic_polynomial",
+          "spine_mathematics_l4_geometric_interpretation_eigen"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Eigenanalysis decomposes linear transformations into invariant directions.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Linear Algebra",
+            "topic": "Eigenvalues and Eigenvectors",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_characteristic_polynomial",
+              "spine_mathematics_l4_geometric_interpretation_eigen"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Linear Algebra",
+            "chapter": "5",
+            "section": "Eigenvector and Eigenvalue Definition"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_finding_eigenvectors",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_eigenvalues_and_eigenvectors",
+      "content": {
+        "title": "Finding Eigenvectors",
+        "definition": "For each eigenvalue λ, solve (A − λI)v = 0 to obtain eigenvectors in the null space of A − λI.",
+        "summary": "Eigenspace for λ is the set of all eigenvectors plus zero, forming a subspace."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Linear Systems",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_eigenvalues_and_eigenvectors",
+        "prerequisites": [
+          "spine_mathematics_l4_characteristic_polynomial"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_diagonalization_concept"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Eigenanalysis decomposes linear transformations into invariant directions.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Linear Algebra",
+            "topic": "Eigenvalues and Eigenvectors",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_characteristic_polynomial"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_diagonalization_concept"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Linear Algebra",
+            "chapter": "5",
+            "section": "Finding Eigenvectors"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_geometric_interpretation_eigen",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_eigenvalues_and_eigenvectors",
+      "content": {
+        "title": "Geometric Interpretation of Eigenvalues",
+        "definition": "Eigenvalue magnitude |λ| scales lengths; sign and complex eigenvalues indicate reflection or rotation components.",
+        "summary": "Geometric view connects eigenanalysis to transformation behavior in the plane and space."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Linear Systems",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_eigenvalues_and_eigenvectors",
+        "prerequisites": [
+          "spine_mathematics_l4_eigenvector_definition"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Eigenanalysis decomposes linear transformations into invariant directions.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Linear Algebra",
+            "topic": "Eigenvalues and Eigenvectors",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_eigenvector_definition"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Linear Algebra",
+            "chapter": "5",
+            "section": "Geometric Interpretation of Eigenvalues"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -750,3 +750,154 @@
   margin-top: 1rem;
   width: 100%;
 }
+
+.app-shell:has(.create-library-page) {
+  max-width: 1200px;
+}
+
+.create-library-page .wizard-progress {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.wizard-step {
+  font-size: 0.85rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  background: #eef2f8;
+  color: #5c6b8a;
+}
+
+.wizard-step.active {
+  background: #3d5a80;
+  color: #fff;
+}
+
+.wizard-step.done {
+  background: #e8f8f0;
+  color: #1e6f4a;
+}
+
+.create-step .step-hint {
+  color: #5c6b8a;
+  margin-top: 0;
+}
+
+.field {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.field-label,
+.field legend {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.field textarea,
+.field input[type="text"],
+.field input[type="url"],
+.field input[type="search"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.5rem 0.65rem;
+  border: 1px solid #dde3ef;
+  border-radius: 8px;
+  font: inherit;
+}
+
+.radio-row {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+  margin: 0.35rem 0;
+}
+
+.nested-fields {
+  margin: 0.5rem 0 0.75rem 1.5rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.lens-picks,
+.catalog-grid {
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.lens-tile,
+.catalog-tile {
+  text-align: left;
+  border: 1px solid #dde3ef;
+  border-radius: 10px;
+  padding: 0.65rem 0.75rem;
+  background: #fff;
+  cursor: pointer;
+}
+
+.lens-tile.selected,
+.catalog-tile.selected {
+  border-color: #3d5a80;
+  background: #f0f5fb;
+}
+
+.review-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr auto;
+  grid-template-rows: 1fr auto;
+  gap: 0.75rem;
+  min-height: 520px;
+}
+
+.review-footer {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-top: 1px solid #dde3ef;
+}
+
+.origin-note {
+  margin: 0.75rem 0 0;
+  padding: 0.6rem 0.7rem;
+  background: #eef4ff;
+  border: 1px solid #d4e0fb;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: #2b3a55;
+}
+
+.concept-tree {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0;
+}
+
+.concept-node {
+  width: 100%;
+  text-align: left;
+  border: none;
+  background: transparent;
+  padding: 0.35rem 0.25rem;
+  display: flex;
+  gap: 0.35rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.status-dot.clean { background: #1e6f4a; }
+.status-dot.flagged { background: #d4a017; }
+.status-dot { width: 8px; height: 8px; border-radius: 50%; }
+
+.wizard-actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}

@@ -1,0 +1,401 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_mathematics_l3_unit_circle_and_radians",
+    "anchor_primary_domain": "mathematics",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_mathematics_l3_unit_circle_and_radians.mathematics.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "6 per-context concepts merged into 6 universal concepts (6 L4 + 0 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_mathematics_l4_arc_length_radian_measure",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_unit_circle_and_radians",
+      "content": {
+        "title": "Arc Length and Radian Measure",
+        "definition": "Arc length s on a circle of radius r subtended by angle θ (in radians) is s = rθ.",
+        "summary": "Radian measure makes arc length proportional to angle, simplifying circular motion and integration over angular domains."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Spatial Reasoning",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_unit_circle_and_radians",
+        "prerequisites": [
+          "spine_mathematics_l4_degree_radian_conversion"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_unit_circle_coordinates"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Radians and the unit circle underpin trigonometric functions in calculus.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Geometry & Trigonometry",
+            "topic": "Unit Circle and Radian Measure",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_degree_radian_conversion"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_unit_circle_coordinates"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Precalculus 2e",
+            "chapter": "5",
+            "section": "Arc Length and Radian Measure"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_degree_radian_conversion",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_unit_circle_and_radians",
+      "content": {
+        "title": "Degree–Radian Conversion",
+        "definition": "Radians measure arc length per unit radius; 180° = π radians, so θ radians = (π/180) × degrees.",
+        "summary": "Calculus requires radian measure for correct derivative formulas of trigonometric functions."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Spatial Reasoning",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_unit_circle_and_radians",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_mathematics_l4_arc_length_radian_measure"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Radians and the unit circle underpin trigonometric functions in calculus.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Geometry & Trigonometry",
+            "topic": "Unit Circle and Radian Measure",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_arc_length_radian_measure"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Precalculus 2e",
+            "chapter": "5",
+            "section": "Degree–Radian Conversion"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_reference_angles",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_unit_circle_and_radians",
+      "content": {
+        "title": "Reference Angles",
+        "definition": "The acute angle between the terminal side of θ and the x-axis, used to evaluate trig functions in any quadrant by sign adjustment.",
+        "summary": "Reference angles reduce trigonometric evaluation to first-quadrant values while preserving correct signs."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Spatial Reasoning",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_unit_circle_and_radians",
+        "prerequisites": [
+          "spine_mathematics_l4_unit_circle_coordinates"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Radians and the unit circle underpin trigonometric functions in calculus.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Geometry & Trigonometry",
+            "topic": "Unit Circle and Radian Measure",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_unit_circle_coordinates"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Precalculus 2e",
+            "chapter": "5",
+            "section": "Reference Angles"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_trig_unit_circle",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_unit_circle_and_radians",
+      "content": {
+        "title": "Trigonometric Functions on the Unit Circle",
+        "definition": "Definitions cos θ = x, sin θ = y, tan θ = y/x, and reciprocals sec, csc, cot from unit-circle coordinates.",
+        "summary": "Unit-circle definitions unify all six trig functions and reveal periodicity and symmetry properties."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Spatial Reasoning",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_unit_circle_and_radians",
+        "prerequisites": [
+          "spine_mathematics_l4_unit_circle_coordinates"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_trigonometric_periodicity"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Radians and the unit circle underpin trigonometric functions in calculus.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Geometry & Trigonometry",
+            "topic": "Unit Circle and Radian Measure",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_unit_circle_coordinates"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_trigonometric_periodicity"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Precalculus 2e",
+            "chapter": "5",
+            "section": "Trigonometric Functions on the Unit Circle"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_trigonometric_periodicity",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_unit_circle_and_radians",
+      "content": {
+        "title": "Trigonometric Periodicity",
+        "definition": "Sine and cosine have period 2π; tangent has period π, reflecting repeating values as θ advances around the circle.",
+        "summary": "Periodicity explains oscillatory behavior in models of waves, seasons, and circular motion."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Spatial Reasoning",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_unit_circle_and_radians",
+        "prerequisites": [
+          "spine_mathematics_l4_trig_unit_circle"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Radians and the unit circle underpin trigonometric functions in calculus.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Geometry & Trigonometry",
+            "topic": "Unit Circle and Radian Measure",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_trig_unit_circle"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Precalculus 2e",
+            "chapter": "5",
+            "section": "Trigonometric Periodicity"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_mathematics_l4_unit_circle_coordinates",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_mathematics_l3_unit_circle_and_radians",
+      "content": {
+        "title": "Unit Circle Coordinates",
+        "definition": "On the unit circle, a point at angle θ has coordinates (cos θ, sin θ), defining sine and cosine for all real θ.",
+        "summary": "The unit circle extends trigonometry beyond right triangles to all angles and provides the domain for periodic functions."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Quantitative Reasoning",
+        "knowledge_cluster": "Spatial Reasoning",
+        "primary_domain": "mathematics",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_mathematics_l3_unit_circle_and_radians",
+        "prerequisites": [
+          "spine_mathematics_l4_arc_length_radian_measure"
+        ],
+        "unlocks": [
+          "spine_mathematics_l4_reference_angles",
+          "spine_mathematics_l4_trig_unit_circle"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "mathematics",
+          "framing": {
+            "relevance": "Radians and the unit circle underpin trigonometric functions in calculus.",
+            "applications": [],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Mathematics",
+            "subcategory": "Geometry & Trigonometry",
+            "topic": "Unit Circle and Radian Measure",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_mathematics_l4_arc_length_radian_measure"
+            ],
+            "unlocks_in_context": [
+              "spine_mathematics_l4_reference_angles",
+              "spine_mathematics_l4_trig_unit_circle"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Precalculus 2e",
+            "chapter": "5",
+            "section": "Unit Circle Coordinates"
+          }
+        ]
+      }
+    }
+  ]
+}

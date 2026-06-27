@@ -1,0 +1,623 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_fracture_reduction_and_fixation_principles",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "Bone grafts demoted from L3; L4 cluster under fixation principles per resident review."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_absolute_vs_relative_stability",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_fracture_reduction_and_fixation_principles",
+      "content": {
+        "title": "Absolute vs Relative Stability",
+        "definition": "Fixation constructs provide either absolute stability (anatomic reduction, primary bone healing) or relative stability (micro-motion, secondary healing with callus).",
+        "summary": "Lag screw and compression plating aim for absolute stability; bridge plating and intramedullary nails permit controlled motion for secondary healing."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Trauma",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_fracture_reduction_and_fixation_principles",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Absolute vs Relative Stability",
+            "relevance": "Core trauma knowledge integrating biomechanics and bone healing biology.",
+            "applications": [
+              "Fixation strategy selection",
+              "Reduction techniques",
+              "Hardware removal timing"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Fracture Principles",
+            "topic": "Fracture Reduction and Fixation Principles",
+            "subtopic": "Absolute vs Relative Stability"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Fracture Reduction and Fixation Principles",
+            "chapter": "NBK482316",
+            "section": "Fixation Principles"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_reduction_techniques_open_and_closed",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_fracture_reduction_and_fixation_principles",
+      "content": {
+        "title": "Reduction Techniques — Open and Closed",
+        "definition": "Methods to restore length, alignment, and rotation including closed manipulation, traction, and open direct reduction.",
+        "summary": "Malreduction in rotation or length causes functional deficit. Indirect reduction preserves soft-tissue attachments when possible."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Trauma",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_fracture_reduction_and_fixation_principles",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_absolute_vs_relative_stability"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Reduction Techniques — Open and Closed",
+            "relevance": "Core trauma knowledge integrating biomechanics and bone healing biology.",
+            "applications": [
+              "Fixation strategy selection",
+              "Reduction techniques",
+              "Hardware removal timing"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Fracture Principles",
+            "topic": "Fracture Reduction and Fixation Principles",
+            "subtopic": "Reduction Techniques — Open and Closed"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_absolute_vs_relative_stability"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Fracture Reduction and Fixation Principles",
+            "chapter": "NBK482316",
+            "section": "Reduction"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_plate_and_screw_fixation",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_fracture_reduction_and_fixation_principles",
+      "content": {
+        "title": "Plate and Screw Fixation",
+        "definition": "Application of plates and screws including lag screw technique, neutralization, compression, and bridge plating patterns.",
+        "summary": "Plate length and screw density distribute stress. Periosteum devascularization risk increases with extensive stripping."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Trauma",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_fracture_reduction_and_fixation_principles",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_reduction_techniques_open_and_closed"
+        ],
+        "unlocks": [
+          "spine_medicine_clinical_l5_locking_plate_biomechanics"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Plate and Screw Fixation",
+            "relevance": "Core trauma knowledge integrating biomechanics and bone healing biology.",
+            "applications": [
+              "Fixation strategy selection",
+              "Reduction techniques",
+              "Hardware removal timing"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Fracture Principles",
+            "topic": "Fracture Reduction and Fixation Principles",
+            "subtopic": "Plate and Screw Fixation"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_reduction_techniques_open_and_closed"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_clinical_l5_locking_plate_biomechanics"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Fracture Reduction and Fixation Principles",
+            "chapter": "NBK482316",
+            "section": "Plating"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l5_locking_plate_biomechanics",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_clinical_l3_fracture_reduction_and_fixation_principles",
+      "content": {
+        "title": "Locking Plate Biomechanics",
+        "definition": "Fixed-angle locking screw-plate constructs provide angular stability in osteoporotic or comminuted bone.",
+        "summary": "Locking plates function as internal fixators; avoid compression on poor-quality bone."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Trauma",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l4_plate_and_screw_fixation",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_plate_and_screw_fixation"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Locking Plate Biomechanics",
+            "relevance": "Core trauma knowledge integrating biomechanics and bone healing biology.",
+            "applications": [
+              "Fixation strategy selection",
+              "Reduction techniques",
+              "Hardware removal timing"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Fracture Principles",
+            "topic": "Fracture Reduction and Fixation Principles",
+            "subtopic": "Locking Plate Biomechanics"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_plate_and_screw_fixation"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Fracture Reduction and Fixation Principles",
+            "chapter": "NBK482316",
+            "section": "Locking Plates"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_intramedullary_nailing_and_external_fixation",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_fracture_reduction_and_fixation_principles",
+      "content": {
+        "title": "Intramedullary Nailing and External Fixation",
+        "definition": "Load-sharing intramedullary implants and external fixators for diaphyseal fractures, polytrauma, and soft-tissue compromise.",
+        "summary": "Reamed nailing is standard for closed femoral shaft fractures. External fixation temporizes in damage-control and open-fracture settings."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Trauma",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_fracture_reduction_and_fixation_principles",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_plate_and_screw_fixation"
+        ],
+        "unlocks": [
+          "spine_medicine_clinical_l5_damage_control_external_fixation"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Intramedullary Nailing and External Fixation",
+            "relevance": "Core trauma knowledge integrating biomechanics and bone healing biology.",
+            "applications": [
+              "Fixation strategy selection",
+              "Reduction techniques",
+              "Hardware removal timing"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Fracture Principles",
+            "topic": "Fracture Reduction and Fixation Principles",
+            "subtopic": "Intramedullary Nailing and External Fixation"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_plate_and_screw_fixation"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_clinical_l5_damage_control_external_fixation"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Fracture Reduction and Fixation Principles",
+            "chapter": "NBK482316",
+            "section": "Nailing and External Fixation"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l5_damage_control_external_fixation",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_clinical_l3_fracture_reduction_and_fixation_principles",
+      "content": {
+        "title": "Damage-Control External Fixation",
+        "definition": "Temporary spanning external fixation to stabilize long-bone fractures before physiologic resuscitation and definitive fixation.",
+        "summary": "Pin-site care and construct planning allow conversion to IM nail or plate when patient stabilizes."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Trauma",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l4_intramedullary_nailing_and_external_fixation",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_intramedullary_nailing_and_external_fixation"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Damage-Control External Fixation",
+            "relevance": "Core trauma knowledge integrating biomechanics and bone healing biology.",
+            "applications": [
+              "Fixation strategy selection",
+              "Reduction techniques",
+              "Hardware removal timing"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Fracture Principles",
+            "topic": "Fracture Reduction and Fixation Principles",
+            "subtopic": "Damage-Control External Fixation"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_intramedullary_nailing_and_external_fixation"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Fracture Reduction and Fixation Principles",
+            "chapter": "NBK482316",
+            "section": "Damage Control"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_bone_grafts_autograft_and_allograft",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_fracture_reduction_and_fixation_principles",
+      "content": {
+        "title": "Bone Grafts — Autograft and Allograft",
+        "definition": "Autograft provides osteogenic cells, osteoinductive factors, and osteoconductive scaffold; allograft supplies osteoconduction without living cells.",
+        "summary": "Iliac crest autograft remains gold standard for biologic augmentation; allograft avoids donor-site morbidity with slower incorporation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Trauma",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": "Demoted from L3 bone_grafts_and_substitutes; shared with spine fusion and oncology reconstruction."
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_fracture_reduction_and_fixation_principles",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_intramedullary_nailing_and_external_fixation"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Bone Grafts — Autograft and Allograft",
+            "relevance": "Core trauma knowledge integrating biomechanics and bone healing biology.",
+            "applications": [
+              "Fixation strategy selection",
+              "Reduction techniques",
+              "Hardware removal timing"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Fracture Principles",
+            "topic": "Fracture Reduction and Fixation Principles",
+            "subtopic": "Bone Grafts — Autograft and Allograft"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_intramedullary_nailing_and_external_fixation"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Fracture Reduction and Fixation Principles",
+            "chapter": "NBK482316",
+            "section": "Bone Grafting"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_bone_grafts_bmp_and_synthetic_substitutes",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_fracture_reduction_and_fixation_principles",
+      "content": {
+        "title": "Bone Grafts — BMP and Synthetic Substitutes",
+        "definition": "Demineralized bone matrix, bone morphogenetic proteins, and synthetic ceramics as adjuncts for defect filling and fusion enhancement.",
+        "summary": "rhBMP-2 indications include certain spinal fusions and tibial nonunions; cost, swelling, and heterotopic bone are considerations."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Trauma",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_fracture_reduction_and_fixation_principles",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_bone_grafts_autograft_and_allograft"
+        ],
+        "unlocks": [
+          "spine_medicine_clinical_l5_bmp_indications_and_complications"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Bone Grafts — BMP and Synthetic Substitutes",
+            "relevance": "Core trauma knowledge integrating biomechanics and bone healing biology.",
+            "applications": [
+              "Fixation strategy selection",
+              "Reduction techniques",
+              "Hardware removal timing"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Fracture Principles",
+            "topic": "Fracture Reduction and Fixation Principles",
+            "subtopic": "Bone Grafts — BMP and Synthetic Substitutes"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_bone_grafts_autograft_and_allograft"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_clinical_l5_bmp_indications_and_complications"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Fracture Reduction and Fixation Principles",
+            "chapter": "NBK482316",
+            "section": "Bone Grafting"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l5_bmp_indications_and_complications",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_clinical_l3_fracture_reduction_and_fixation_principles",
+      "content": {
+        "title": "BMP Indications and Complications",
+        "definition": "Evidence-based indications and known complications of recombinant BMP in orthopaedic fusion and nonunion.",
+        "summary": "Seroma, ectopic bone, and cancer risk debates inform shared decision-making and off-label restraint."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Trauma",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l4_bone_grafts_bmp_and_synthetic_substitutes",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_bone_grafts_bmp_and_synthetic_substitutes"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "BMP Indications and Complications",
+            "relevance": "Core trauma knowledge integrating biomechanics and bone healing biology.",
+            "applications": [
+              "Fixation strategy selection",
+              "Reduction techniques",
+              "Hardware removal timing"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Fracture Principles",
+            "topic": "Fracture Reduction and Fixation Principles",
+            "subtopic": "BMP Indications and Complications"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_bone_grafts_bmp_and_synthetic_substitutes"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Fracture Reduction and Fixation Principles",
+            "chapter": "NBK482316",
+            "section": "BMP"
+          }
+        ]
+      }
+    }
+  ]
+}

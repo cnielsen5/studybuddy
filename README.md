@@ -104,7 +104,10 @@ Use this table when you sit down to code. It tells you exactly which folder to o
 | **Write tests** | `functions/tests/` | `functions/tests/TESTING_GUIDE.md` |
 | **Deploy to staging** | `functions/scripts/` | `functions/docs/STAGING_QUICKSTART.md` |
 | **Build the actual app UI** | `app/` | `app/README.md` |
-| **Create study content** | *Does not exist yet — create `content/` at root* | `docs/design/technical-design-document.md` §5 |
+| **Create study content** | `content/` | `content/LIBRARY_FORMAT.md` |
+| **Create a personal library (5-stage wizard)** | `app/` → `/create-library` · `library-creator/` | `docs/design/library-creation-pipeline.md` |
+| **Work on universal spine (L1–L5 concept graph)** | `content/spine/` · `library-creator/src/spine/` | `docs/design/spine-l4-l5-generation-prompt.md` · `docs/design/spine-growth-and-placement.md` |
+| **Define exam / curriculum views over the spine** | `content/lenses/` · `library-creator/src/lens/` | `docs/design/curriculum-lenses.md` |
 
 ---
 

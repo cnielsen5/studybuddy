@@ -1,0 +1,24 @@
+{
+  "archetypeId": "anatomy",
+  "primaryLearningMode": "memorization",
+  "cardTierWeights": {
+    "core": 0.6,
+    "extension": 0.2,
+    "certification": 0.1,
+    "remedial": 0.1
+  },
+  "cardTypeWeights": {
+    "basic": 0.35,
+    "cloze": 0.25,
+    "imageOcclusion": 0.4
+  },
+  "pedagogicalRoleWeights": {
+    "recognition": 0.35,
+    "recall": 0.4,
+    "application": 0.15,
+    "integration": 0.1
+  },
+  "questionDensity": 2,
+  "relationshipDensity": 0.5,
+  "prefersDiagnosticQuestions": true
+}

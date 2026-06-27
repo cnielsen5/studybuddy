@@ -1,0 +1,489 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_preclinical_l3_muscle_contraction",
+    "anchor_primary_domain": "medicine_preclinical",
+    "model": "universal-l4-l5",
+    "migrated_from": [
+      "content/spine/l4-l5-bundles/spine_medicine_preclinical_l3_muscle_contraction.medicine_preclinical.json"
+    ],
+    "migration_date": "2026-06-25",
+    "status": "draft-rules-applied",
+    "dedup_summary": "7 per-context concepts merged into 7 universal concepts (4 L4 + 3 L5)."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_preclinical_l4_excitation_contraction_coupling",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_preclinical_l3_muscle_contraction",
+      "content": {
+        "title": "Excitation-Contraction Coupling",
+        "definition": "Link between sarcolemmal action potential and sarcoplasmic reticulum Ca2+ release via dihydropyridine–ryanodine receptor coupling at the T-tubule.",
+        "summary": "AP spreads along T-tubules; DHP receptors trigger RyR opening; Ca2+ floods cytosol initiating contraction."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Musculoskeletal Physiology",
+        "primary_domain": "medicine_preclinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_preclinical_l3_muscle_contraction",
+        "prerequisites": [
+          "spine_medicine_preclinical_l4_tropomyosin_troponin_regulation"
+        ],
+        "unlocks": [
+          "spine_medicine_preclinical_l4_motor_unit_recruitment",
+          "spine_medicine_preclinical_l5_malignant_hyperthermia_ryr"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Excitation-Contraction Coupling",
+            "relevance": "Malignant hyperthermia (RyR mutation).",
+            "applications": [
+              "T-tubule propagation",
+              "SR Ca2+ release"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Musculoskeletal Physiology",
+            "topic": "Muscle Contraction",
+            "subtopic": "E-C Coupling"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_preclinical_l4_tropomyosin_troponin_regulation"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_preclinical_l4_motor_unit_recruitment",
+              "spine_medicine_preclinical_l5_malignant_hyperthermia_ryr"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "10",
+            "section": "10.4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_preclinical_l4_motor_unit_recruitment",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_preclinical_l3_muscle_contraction",
+      "content": {
+        "title": "Motor Unit Recruitment and Force Grading",
+        "definition": "Progressive activation of motor units by size (Henneman size principle) to grade muscle force from small slow units to large fast units.",
+        "summary": "Recruitment and rate coding modulate tension. Type I fibers for endurance; type II for power."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Musculoskeletal Physiology",
+        "primary_domain": "medicine_preclinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_preclinical_l3_muscle_contraction",
+        "prerequisites": [
+          "spine_medicine_preclinical_l4_excitation_contraction_coupling"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Motor Unit Recruitment and Force Grading",
+            "relevance": "Neuromuscular weakness patterns.",
+            "applications": [
+              "Size principle recruitment",
+              "Type I vs II fibers"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Musculoskeletal Physiology",
+            "topic": "Muscle Contraction",
+            "subtopic": "Recruitment"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_preclinical_l4_excitation_contraction_coupling"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "10",
+            "section": "10.5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_preclinical_l4_sliding_filament_mechanism",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_preclinical_l3_muscle_contraction",
+      "content": {
+        "title": "Sliding Filament Mechanism",
+        "definition": "Sarcomere shortening by actin thin filaments sliding over myosin thick filaments via cross-bridge cycling powered by ATP hydrolysis without shortening of filaments themselves.",
+        "summary": "Cross-bridge cycling involves myosin head attachment, power stroke, detachment, and re-cocking. Titin provides passive elasticity."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Musculoskeletal Physiology",
+        "primary_domain": "medicine_preclinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_preclinical_l3_muscle_contraction",
+        "prerequisites": [],
+        "unlocks": [
+          "spine_medicine_preclinical_l4_excitation_contraction_coupling",
+          "spine_medicine_preclinical_l4_tropomyosin_troponin_regulation"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Sliding Filament Mechanism",
+            "relevance": "Basis for contractility and rigor mortis.",
+            "applications": [
+              "Actin-myosin cross-bridges",
+              "Sarcomere Z-line approximation"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Musculoskeletal Physiology",
+            "topic": "Muscle Contraction",
+            "subtopic": "Sliding Filament"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": [
+              "spine_medicine_preclinical_l4_excitation_contraction_coupling",
+              "spine_medicine_preclinical_l4_tropomyosin_troponin_regulation"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "10",
+            "section": "10.3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_preclinical_l4_tropomyosin_troponin_regulation",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_preclinical_l3_muscle_contraction",
+      "content": {
+        "title": "Tropomyosin-Troponin Calcium Regulation",
+        "definition": "Thin-filament regulation in which Ca2+ binding to troponin C shifts tropomyosin exposing myosin-binding sites on actin to initiate cross-bridge cycling.",
+        "summary": "At rest, tropomyosin blocks actin sites. Calcium is the essential trigger for skeletal and cardiac contraction."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Musculoskeletal Physiology",
+        "primary_domain": "medicine_preclinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_preclinical_l3_muscle_contraction",
+        "prerequisites": [
+          "spine_medicine_preclinical_l4_sliding_filament_mechanism"
+        ],
+        "unlocks": [
+          "spine_medicine_preclinical_l4_excitation_contraction_coupling"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Tropomyosin-Troponin Calcium Regulation",
+            "relevance": "Malignant hyperthermia and calcium dysregulation.",
+            "applications": [
+              "Troponin C Ca2+ binding",
+              "Tropomyosin shift"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Musculoskeletal Physiology",
+            "topic": "Muscle Contraction",
+            "subtopic": "Calcium Regulation"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_preclinical_l4_sliding_filament_mechanism"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_preclinical_l4_excitation_contraction_coupling"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "10",
+            "section": "10.3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_preclinical_l5_lambert_eaton_nm_junction",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_preclinical_l3_muscle_contraction",
+      "content": {
+        "title": "Lambert-Eaton Myasthenic Syndrome",
+        "definition": "Autoantibodies against presynaptic voltage-gated Ca2+ channels reducing ACh release, causing proximal weakness that improves with repeated use (opposite of myasthenia gravis).",
+        "summary": "LEMS associates with small cell lung cancer. Repetitive stimulation increases Ca2+ influx and improves release."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Musculoskeletal Physiology",
+        "primary_domain": "medicine_preclinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_preclinical_l4_motor_unit_recruitment",
+        "prerequisites": [
+          "spine_medicine_preclinical_l4_motor_unit_recruitment"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Lambert-Eaton Myasthenic Syndrome",
+            "relevance": "Paraneoplastic neuromuscular disorder.",
+            "applications": [
+              "Anti-VGCC antibodies",
+              "Improves with exercise"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Musculoskeletal Physiology",
+            "topic": "Muscle Contraction",
+            "subtopic": "LEMS"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_preclinical_l4_motor_unit_recruitment"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "section": "Lambert-Eaton Myasthenic Syndrome",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_preclinical_l5_malignant_hyperthermia_ryr",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_preclinical_l3_muscle_contraction",
+      "content": {
+        "title": "Malignant Hyperthermia (RyR1)",
+        "definition": "Autosomal dominant RyR1 mutation causing uncontrolled SR Ca2+ release upon volatile anesthetic or succinylcholine exposure, producing hypermetabolism and hyperthermia.",
+        "summary": "Treatment is dantrolene, which blocks RyR-mediated Ca2+ release. Crisis requires immediate recognition."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Musculoskeletal Physiology",
+        "primary_domain": "medicine_preclinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_preclinical_l4_excitation_contraction_coupling",
+        "prerequisites": [
+          "spine_medicine_preclinical_l4_excitation_contraction_coupling"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Malignant Hyperthermia (RyR1)",
+            "relevance": "Anesthesia emergency high-yield.",
+            "applications": [
+              "Dantrolene treatment",
+              "Volatile anesthetic trigger"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Musculoskeletal Physiology",
+            "topic": "Muscle Contraction",
+            "subtopic": "MH"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_preclinical_l4_excitation_contraction_coupling"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "NCBI StatPearls",
+            "section": "Malignant Hyperthermia",
+            "url": "https://www.ncbi.nlm.nih.gov/books/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_preclinical_l5_rigor_mortis_atp_depletion",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_preclinical_l3_muscle_contraction",
+      "content": {
+        "title": "Rigor Mortis and ATP Depletion",
+        "definition": "Persistent actin-myosin cross-bridge binding after death when ATP is depleted, preventing myosin detachment and producing muscle rigidity.",
+        "summary": "Rigor mortis onset reflects ATP loss. Resolution follows proteolytic degradation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Musculoskeletal Physiology",
+        "primary_domain": "medicine_preclinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_preclinical_l4_sliding_filament_mechanism",
+        "prerequisites": [
+          "spine_medicine_preclinical_l4_sliding_filament_mechanism"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_preclinical",
+          "framing": {
+            "title_in_context": "Rigor Mortis and ATP Depletion",
+            "relevance": "ATP requirement for detachment.",
+            "applications": [
+              "ATP required for cross-bridge release",
+              "Postmortem stiffness"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Physiology",
+            "subcategory": "Musculoskeletal Physiology",
+            "topic": "Muscle Contraction",
+            "subtopic": "Rigor Mortis"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_preclinical_l4_sliding_filament_mechanism"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2025-01-01T00:00:00Z",
+        "updated_at": "2026-06-25T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OpenStax Anatomy and Physiology 2e",
+            "chapter": "10",
+            "section": "10.3"
+          }
+        ]
+      }
+    }
+  ]
+}

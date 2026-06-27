@@ -1,0 +1,548 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_lumbar_spinal_stenosis",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "ABOS-aligned scaffold for abos_p2_adult_spine."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_lumbar_spinal_stenosis_core_principles",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_lumbar_spinal_stenosis",
+      "content": {
+        "title": "Lumbar Spinal Stenosis — Core Principles",
+        "definition": "Narrowing of the lumbar spinal canal or neural foramina causing neurogenic claudication and radiculopathy in older adults.",
+        "summary": "Neurogenic claudication improves with flexion (shopping cart sign). Decompression with or without fusion depends on spondylolisthesis and instability."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Spine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_lumbar_spinal_stenosis",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Lumbar Spinal Stenosis — Core Principles",
+            "relevance": "High-volume degenerative spine pathology.",
+            "applications": [
+              "Neurogenic vs vascular claudication",
+              "Decompression vs fusion",
+              "Outcome expectations"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Lumbar Spine",
+            "topic": "Lumbar Spinal Stenosis",
+            "subtopic": "Lumbar Spinal Stenosis — Core Principles"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Lumbar Spinal Stenosis",
+            "chapter": "NBK448124",
+            "section": "Spinal Stenosis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_lumbar_spinal_stenosis_evaluation_and_diagnosis",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_lumbar_spinal_stenosis",
+      "content": {
+        "title": "Evaluation and Diagnosis",
+        "definition": "History, physical examination, and initial imaging for lumbar spinal stenosis.",
+        "summary": "Systematic assessment identifies severity, associated injuries, and urgency in lumbar spinal stenosis."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Spine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_lumbar_spinal_stenosis",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_lumbar_spinal_stenosis_core_principles"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Evaluation and Diagnosis",
+            "relevance": "High-volume degenerative spine pathology.",
+            "applications": [
+              "Neurogenic vs vascular claudication",
+              "Decompression vs fusion",
+              "Outcome expectations"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Lumbar Spine",
+            "topic": "Lumbar Spinal Stenosis",
+            "subtopic": "Evaluation and Diagnosis"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_lumbar_spinal_stenosis_core_principles"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Lumbar Spinal Stenosis",
+            "chapter": "NBK448124",
+            "section": "Spinal Stenosis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_lumbar_spinal_stenosis_management_principles",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_lumbar_spinal_stenosis",
+      "content": {
+        "title": "Management Principles",
+        "definition": "Nonoperative and operative treatment algorithms for lumbar spinal stenosis.",
+        "summary": "Neurogenic claudication improves with flexion (shopping cart sign)."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Spine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_lumbar_spinal_stenosis",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_lumbar_spinal_stenosis_evaluation_and_diagnosis"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Management Principles",
+            "relevance": "High-volume degenerative spine pathology.",
+            "applications": [
+              "Neurogenic vs vascular claudication",
+              "Decompression vs fusion",
+              "Outcome expectations"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Lumbar Spine",
+            "topic": "Lumbar Spinal Stenosis",
+            "subtopic": "Management Principles"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_lumbar_spinal_stenosis_evaluation_and_diagnosis"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Lumbar Spinal Stenosis",
+            "chapter": "NBK448124",
+            "section": "Spinal Stenosis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_lumbar_spinal_stenosis_neurogenic_vs_vascular_claudication",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_lumbar_spinal_stenosis",
+      "content": {
+        "title": "Neurogenic vs vascular claudication",
+        "definition": "Focused assessment and management of neurogenic vs vascular claudication in the context of lumbar spinal stenosis.",
+        "summary": "Neurogenic vs vascular claudication — key decision points from Spine practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Spine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_lumbar_spinal_stenosis",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_lumbar_spinal_stenosis_management_principles"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Neurogenic vs vascular claudication",
+            "relevance": "High-volume degenerative spine pathology.",
+            "applications": [
+              "Neurogenic vs vascular claudication",
+              "Decompression vs fusion",
+              "Outcome expectations"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Lumbar Spine",
+            "topic": "Lumbar Spinal Stenosis",
+            "subtopic": "Neurogenic vs vascular claudication"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_lumbar_spinal_stenosis_management_principles"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Lumbar Spinal Stenosis",
+            "chapter": "NBK448124",
+            "section": "Spinal Stenosis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_lumbar_spinal_stenosis_decompression_vs_fusion",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_lumbar_spinal_stenosis",
+      "content": {
+        "title": "Decompression vs fusion",
+        "definition": "Focused assessment and management of decompression vs fusion in the context of lumbar spinal stenosis.",
+        "summary": "Decompression vs fusion — key decision points from Spine practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Spine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_lumbar_spinal_stenosis",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_lumbar_spinal_stenosis_neurogenic_vs_vascular_claudication"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Decompression vs fusion",
+            "relevance": "High-volume degenerative spine pathology.",
+            "applications": [
+              "Neurogenic vs vascular claudication",
+              "Decompression vs fusion",
+              "Outcome expectations"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Lumbar Spine",
+            "topic": "Lumbar Spinal Stenosis",
+            "subtopic": "Decompression vs fusion"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_lumbar_spinal_stenosis_neurogenic_vs_vascular_claudication"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Lumbar Spinal Stenosis",
+            "chapter": "NBK448124",
+            "section": "Spinal Stenosis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_lumbar_spinal_stenosis_outcome_expectations",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_lumbar_spinal_stenosis",
+      "content": {
+        "title": "Outcome expectations",
+        "definition": "Focused assessment and management of outcome expectations in the context of lumbar spinal stenosis.",
+        "summary": "Outcome expectations — key decision points from Spine practice."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Spine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_lumbar_spinal_stenosis",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_lumbar_spinal_stenosis_decompression_vs_fusion"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Outcome expectations",
+            "relevance": "High-volume degenerative spine pathology.",
+            "applications": [
+              "Neurogenic vs vascular claudication",
+              "Decompression vs fusion",
+              "Outcome expectations"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Lumbar Spine",
+            "topic": "Lumbar Spinal Stenosis",
+            "subtopic": "Outcome expectations"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_lumbar_spinal_stenosis_decompression_vs_fusion"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Lumbar Spinal Stenosis",
+            "chapter": "NBK448124",
+            "section": "Spinal Stenosis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_lumbar_spinal_stenosis_complications_and_outcomes",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_lumbar_spinal_stenosis",
+      "content": {
+        "title": "Complications and Outcomes",
+        "definition": "Recognized complications, failure modes, and expected recovery after treatment of lumbar spinal stenosis.",
+        "summary": "Anticipate, diagnose, and manage complications; counsel on prognosis and rehabilitation."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Spine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_lumbar_spinal_stenosis",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_lumbar_spinal_stenosis_outcome_expectations"
+        ],
+        "unlocks": [
+          "spine_medicine_clinical_l5_lumbar_spinal_stenosis_salvage_and_revision"
+        ]
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Complications and Outcomes",
+            "relevance": "High-volume degenerative spine pathology.",
+            "applications": [
+              "Neurogenic vs vascular claudication",
+              "Decompression vs fusion",
+              "Outcome expectations"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Lumbar Spine",
+            "topic": "Lumbar Spinal Stenosis",
+            "subtopic": "Complications and Outcomes"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_lumbar_spinal_stenosis_outcome_expectations"
+            ],
+            "unlocks_in_context": [
+              "spine_medicine_clinical_l5_lumbar_spinal_stenosis_salvage_and_revision"
+            ]
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Lumbar Spinal Stenosis",
+            "chapter": "NBK448124",
+            "section": "Spinal Stenosis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l5_lumbar_spinal_stenosis_salvage_and_revision",
+      "resolution_level": 5,
+      "anchor_concept_id": "spine_medicine_clinical_l3_lumbar_spinal_stenosis",
+      "content": {
+        "title": "Salvage and Revision Strategies",
+        "definition": "Revision and salvage options when initial management of lumbar spinal stenosis fails.",
+        "summary": "Staged revision and alternative strategies when primary treatment fails or complications develop."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Spine",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l4_lumbar_spinal_stenosis_complications_and_outcomes",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_lumbar_spinal_stenosis_complications_and_outcomes"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Salvage and Revision Strategies",
+            "relevance": "High-volume degenerative spine pathology.",
+            "applications": [
+              "Neurogenic vs vascular claudication",
+              "Decompression vs fusion",
+              "Outcome expectations"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Lumbar Spine",
+            "topic": "Lumbar Spinal Stenosis",
+            "subtopic": "Salvage and Revision Strategies"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_lumbar_spinal_stenosis_complications_and_outcomes"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Lumbar Spinal Stenosis",
+            "chapter": "NBK448124",
+            "section": "Spinal Stenosis"
+          }
+        ]
+      }
+    }
+  ]
+}

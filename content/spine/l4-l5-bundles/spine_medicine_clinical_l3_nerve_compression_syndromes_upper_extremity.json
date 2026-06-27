@@ -1,0 +1,276 @@
+{
+  "_meta": {
+    "anchor_l3_id": "spine_medicine_clinical_l3_nerve_compression_syndromes_upper_extremity",
+    "anchor_primary_domain": "medicine_clinical",
+    "model": "universal-l4-l5",
+    "generation_date": "2026-06-27",
+    "status": "draft",
+    "notes": "Orthopaedic L4/L5 expansion for Nerve Compression Syndromes of the Upper Extremity. 4 L4, 0 L5."
+  },
+  "concepts": [
+    {
+      "id": "spine_medicine_clinical_l4_carpal_tunnel_syndrome",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_nerve_compression_syndromes_upper_extremity",
+      "content": {
+        "title": "Carpal Tunnel Syndrome",
+        "definition": "Median nerve compression at wrist with nocturnal paresthesias and thenar weakness.",
+        "summary": "Phalen and Tinel positive; EMG confirms; release most common hand surgery."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Hand and Wrist",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_nerve_compression_syndromes_upper_extremity",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Carpal Tunnel Syndrome",
+            "relevance": "ABOS wrist and hand nerve section.",
+            "applications": [
+              "Carpal tunnel release",
+              "Cubital tunnel surgery",
+              "Conservative management"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Nerve Compression",
+            "topic": "Nerve Compression Syndromes of the Upper Extremity",
+            "subtopic": "Carpal Tunnel Syndrome"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Nerve Compression Syndromes of the Upper Extremity",
+            "chapter": "NBK551582",
+            "section": "Nerve Compression"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_cubital_tunnel_syndrome",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_nerve_compression_syndromes_upper_extremity",
+      "content": {
+        "title": "Cubital Tunnel Syndrome",
+        "definition": "Ulnar nerve compression at elbow with claw hand and interossei weakness.",
+        "summary": "In-situ release versus transposition based on subluxation and work demands."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Hand and Wrist",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_nerve_compression_syndromes_upper_extremity",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_carpal_tunnel_syndrome"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Cubital Tunnel Syndrome",
+            "relevance": "ABOS wrist and hand nerve section.",
+            "applications": [
+              "Carpal tunnel release",
+              "Cubital tunnel surgery",
+              "Conservative management"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Nerve Compression",
+            "topic": "Nerve Compression Syndromes of the Upper Extremity",
+            "subtopic": "Cubital Tunnel Syndrome"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_carpal_tunnel_syndrome"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Nerve Compression Syndromes of the Upper Extremity",
+            "chapter": "NBK551582",
+            "section": "Nerve Compression"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_radial_tunnel_and_pronator_syndrome",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_nerve_compression_syndromes_upper_extremity",
+      "content": {
+        "title": "Radial Tunnel and Pronator Syndrome",
+        "definition": "Posterior interosseous and median nerve compression proximally in forearm.",
+        "summary": "Pain without motor loss suggests radial tunnel; weakness in EPL suggests PIN compression."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Hand and Wrist",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_nerve_compression_syndromes_upper_extremity",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_cubital_tunnel_syndrome"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Radial Tunnel and Pronator Syndrome",
+            "relevance": "ABOS wrist and hand nerve section.",
+            "applications": [
+              "Carpal tunnel release",
+              "Cubital tunnel surgery",
+              "Conservative management"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Nerve Compression",
+            "topic": "Nerve Compression Syndromes of the Upper Extremity",
+            "subtopic": "Radial Tunnel and Pronator Syndrome"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_cubital_tunnel_syndrome"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Nerve Compression Syndromes of the Upper Extremity",
+            "chapter": "NBK551582",
+            "section": "Nerve Compression"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l4_upper_extremity_nerve_release_timing",
+      "resolution_level": 4,
+      "anchor_concept_id": "spine_medicine_clinical_l3_nerve_compression_syndromes_upper_extremity",
+      "content": {
+        "title": "Upper Extremity Nerve Release Timing",
+        "definition": "Conservative trial versus early surgery for progressive deficit or thenar atrophy.",
+        "summary": "Carpal tunnel with thenar atrophy needs prompt release; document EMG severity."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Hand and Wrist",
+        "primary_domain": "medicine_clinical",
+        "_shared_concept_note": null
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l3_nerve_compression_syndromes_upper_extremity",
+        "prerequisites": [
+          "spine_medicine_clinical_l4_radial_tunnel_and_pronator_syndrome"
+        ],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Upper Extremity Nerve Release Timing",
+            "relevance": "ABOS wrist and hand nerve section.",
+            "applications": [
+              "Carpal tunnel release",
+              "Cubital tunnel surgery",
+              "Conservative management"
+            ],
+            "max_resolution_in_context": 4
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Nerve Compression",
+            "topic": "Nerve Compression Syndromes of the Upper Extremity",
+            "subtopic": "Upper Extremity Nerve Release Timing"
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [
+              "spine_medicine_clinical_l4_radial_tunnel_and_pronator_syndrome"
+            ],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.2-draft",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "StatPearls — Nerve Compression Syndromes of the Upper Extremity",
+            "chapter": "NBK551582",
+            "section": "Nerve Compression"
+          }
+        ]
+      }
+    }
+  ]
+}
