@@ -1,0 +1,1321 @@
+{
+  "_meta": {
+    "source": "https://www.orthobullets.com/user/dashboard?id=all&specialty=2&menu=topic",
+    "generated_by": "scripts/scrape-orthobullets-taxonomy.ts",
+    "scraped_at": "2026-06-27T22:21:12.726Z",
+    "section": "spine",
+    "field_count": 6,
+    "chapter_count": 18,
+    "topic_count": 82,
+    "backfilled_at": "2026-06-28T19:13:11.674Z",
+    "backfilled_by": "scripts/backfill-orthobullets-topic-content.ts"
+  },
+  "taxonomy": {
+    "section": "spine",
+    "provenance": "orthobullets_site",
+    "obDataPending": false,
+    "notes": "Scraped from the OrthoBullets specialty dashboard (Field → Chapter → Topic). Fields collapsed into the section; chapters → L4, topics → L5.",
+    "chapters": [
+      {
+        "shortName": "ob_spine_anatomy",
+        "title": "Anatomy",
+        "field": "Spine Basic & Clinical Science",
+        "definition": "OrthoBullets chapter \"Anatomy\" (Spine Basic & Clinical Science): Nervous System Overview. Spinal Cord Overview Introduction: Functional spinal unit (FSU); Spinal stability. Embryology. Osteology",
+        "summary": "Nervous system Functional spinal unit (FSU) Spinal stability",
+        "topics": [
+          {
+            "shortName": "ob_spine_anatomy_spinal_cord_anatomy",
+            "title": "Spinal Cord Anatomy",
+            "definition": "Nervous System Overview. Spinal Cord Overview",
+            "summary": "Nervous system",
+            "obTopicId": "2004",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Anatomy",
+              "section": "Spinal Cord Anatomy",
+              "url": "https://www.orthobullets.com/spine/2004/spinal-cord-anatomy"
+            }
+          },
+          {
+            "shortName": "ob_spine_anatomy_spine_biomechanics",
+            "title": "Spine Biomechanics",
+            "definition": "Introduction: Functional spinal unit (FSU); Spinal stability.",
+            "summary": "Functional spinal unit (FSU) Spinal stability",
+            "obTopicId": "2003",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Anatomy",
+              "section": "Spine Biomechanics",
+              "url": "https://www.orthobullets.com/spine/2003/spine-biomechanics"
+            }
+          },
+          {
+            "shortName": "ob_spine_anatomy_cervical_spine_anatomy",
+            "title": "Cervical Spine Anatomy",
+            "definition": "Embryology. Osteology",
+            "summary": "Genetics",
+            "obTopicId": "2069",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Anatomy",
+              "section": "Cervical Spine Anatomy",
+              "url": "https://www.orthobullets.com/spine/2069/cervical-spine-anatomy"
+            }
+          },
+          {
+            "shortName": "ob_spine_anatomy_thoracic_spine_anatomy",
+            "title": "Thoracic Spine Anatomy",
+            "definition": "Alignment. Osteology",
+            "summary": "Sagittal plane alignment",
+            "obTopicId": "2070",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Anatomy",
+              "section": "Thoracic Spine Anatomy",
+              "url": "https://www.orthobullets.com/spine/2070/thoracic-spine-anatomy"
+            }
+          },
+          {
+            "shortName": "ob_spine_anatomy_lumbar_spine_anatomy",
+            "title": "Lumbar Spine Anatomy",
+            "definition": "Alignment. Lumbar Osteology",
+            "summary": "Sagittal plane",
+            "obTopicId": "2071",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Anatomy",
+              "section": "Lumbar Spine Anatomy",
+              "url": "https://www.orthobullets.com/spine/2071/lumbar-spine-anatomy"
+            }
+          },
+          {
+            "shortName": "ob_spine_anatomy_intervertebral_disc",
+            "title": "Intervertebral Disc",
+            "definition": "Anatomy: Function; Composition; Blood supply; Innervation; Fixation.",
+            "summary": "Function Composition",
+            "obTopicId": "9020",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Anatomy",
+              "section": "Intervertebral Disc",
+              "url": "https://www.orthobullets.com/spine/9020/intervertebral-disc"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Anatomy"
+        }
+      },
+      {
+        "shortName": "ob_spine_evaluation",
+        "title": "Evaluation",
+        "field": "Spine Basic & Clinical Science",
+        "definition": "OrthoBullets chapter \"Evaluation\" (Spine Basic & Clinical Science): Overview: Brachial plexus illustrations; Nerve root anatomy. Overview. History & Symptoms",
+        "summary": "Brachial plexus illustrations Nerve root anatomy Note: The table below is a simplification as muscles are often innervated by multiple nerve roots",
+        "topics": [
+          {
+            "shortName": "ob_spine_evaluation_neck_and_upper_extremity_spine_exam",
+            "title": "Neck & Upper Extremity Spine Exam",
+            "definition": "Overview: Brachial plexus illustrations; Nerve root anatomy.",
+            "summary": "Brachial plexus illustrations Nerve root anatomy",
+            "obTopicId": "2001",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Evaluation",
+              "section": "Neck & Upper Extremity Spine Exam",
+              "url": "https://www.orthobullets.com/spine/2001/neck-and-upper-extremity-spine-exam"
+            }
+          },
+          {
+            "shortName": "ob_spine_evaluation_lower_extremity_spine_exam",
+            "title": "Lower Extremity Spine Exam",
+            "definition": "Overview. History & Symptoms",
+            "summary": "Note: The table below is a simplification as muscles are often innervated by multiple nerve roots",
+            "obTopicId": "2002",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Evaluation",
+              "section": "Lower Extremity Spine Exam",
+              "url": "https://www.orthobullets.com/spine/2002/lower-extremity-spine-exam"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Evaluation"
+        }
+      },
+      {
+        "shortName": "ob_spine_intraoperative",
+        "title": "INTRAOPERATIVE",
+        "field": "Spine Basic & Clinical Science",
+        "definition": "OrthoBullets chapter \"INTRAOPERATIVE\" (Spine Basic & Clinical Science): PREOPERATIVE: Establish baseline laboratory studies; Preoperative blood loss estimation; Hemoglobin optimization; Discontinue anticoagulation medications. Forms. Anatomy",
+        "summary": "Establish baseline laboratory studies Preoperative blood loss estimation Spinal cord monitoring is a method to detect injury to the spinal cord during operative procedures",
+        "topics": [
+          {
+            "shortName": "ob_spine_intraoperative_blood_loss_management_in_spine_surgery",
+            "title": "Blood Loss Management in Spine Surgery",
+            "definition": "PREOPERATIVE: Establish baseline laboratory studies; Preoperative blood loss estimation; Hemoglobin optimization; Discontinue anticoagulation medications.",
+            "summary": "Establish baseline laboratory studies Preoperative blood loss estimation",
+            "obTopicId": "422819",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "INTRAOPERATIVE",
+              "section": "Blood Loss Management in Spine Surgery",
+              "url": "https://www.orthobullets.com/spine/422819/blood-loss-management-in-spine-surgery"
+            }
+          },
+          {
+            "shortName": "ob_spine_intraoperative_spinal_cord_monitoring",
+            "title": "Spinal Cord Monitoring",
+            "definition": "Forms. Anatomy",
+            "summary": "Spinal cord monitoring is a method to detect injury to the spinal cord during operative procedures",
+            "obTopicId": "9023",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "INTRAOPERATIVE",
+              "section": "Spinal Cord Monitoring",
+              "url": "https://www.orthobullets.com/spine/9023/spinal-cord-monitoring"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "INTRAOPERATIVE"
+        }
+      },
+      {
+        "shortName": "ob_spine_spinal_cord_injury",
+        "title": "Spinal Cord Injury",
+        "field": "Spine Trauma",
+        "definition": "OrthoBullets chapter \"Spinal Cord Injury\" (Spine Trauma): Introduction: All trauma patients have a cervical spine injury until proven otherwise; Cervical spine clearance defined as confirming the absence of cervical spine injury; Missed cervical spine injuries. Epidemiology: Incidence; Anatomic location. Epidemiology. Etiology",
+        "summary": "All trauma patients have a cervical spine injury until proven otherwise Cervical spine clearance defined as confirming the absence of cervical spine injury Incidence Anatomic location",
+        "topics": [
+          {
+            "shortName": "ob_spine_spinal_cord_injury_cervical_spine_trauma_evaluation",
+            "title": "Cervical Spine Trauma Evaluation",
+            "definition": "Introduction: All trauma patients have a cervical spine injury until proven otherwise; Cervical spine clearance defined as confirming the absence of cervical spine injury; Missed cervical spine injuries.",
+            "summary": "All trauma patients have a cervical spine injury until proven otherwise Cervical spine clearance defined as confirming the absence of cervical spine injury",
+            "obTopicId": "2012",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Spinal Cord Injury",
+              "section": "Cervical Spine Trauma Evaluation",
+              "url": "https://www.orthobullets.com/spine/2012/cervical-spine-trauma-evaluation"
+            }
+          },
+          {
+            "shortName": "ob_spine_spinal_cord_injury_pediatric_cervical_trauma_overview",
+            "title": "Pediatric Cervical Trauma Overview",
+            "definition": "Epidemiology: Incidence; Anatomic location.",
+            "summary": "Incidence Anatomic location",
+            "obTopicId": "2047",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Spinal Cord Injury",
+              "section": "Pediatric Cervical Trauma Overview",
+              "url": "https://www.orthobullets.com/spine/2047/pediatric-cervical-trauma-overview"
+            }
+          },
+          {
+            "shortName": "ob_spine_spinal_cord_injury_vertebral_artery_injury",
+            "title": "Vertebral Artery Injury",
+            "definition": "Epidemiology. Etiology",
+            "summary": "Incidence of vertebral artery injury (VAI)",
+            "obTopicId": "12785",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Spinal Cord Injury",
+              "section": "Vertebral Artery Injury",
+              "url": "https://www.orthobullets.com/spine/12785/vertebral-artery-injury"
+            }
+          },
+          {
+            "shortName": "ob_spine_spinal_cord_injury_spinal_cord_injuries",
+            "title": "Spinal Cord Injuries",
+            "definition": "Epidemiology: Incidence; Demographics; Anatomic location.",
+            "summary": "Incidence Demographics",
+            "obTopicId": "2006",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Spinal Cord Injury",
+              "section": "Spinal Cord Injuries",
+              "url": "https://www.orthobullets.com/spine/2006/spinal-cord-injuries"
+            }
+          },
+          {
+            "shortName": "ob_spine_spinal_cord_injury_incomplete_spinal_cord_injuries",
+            "title": "Incomplete Spinal Cord Injuries",
+            "definition": "Introduction. Epidemiology",
+            "summary": "Defined as spinal cord injury with some preserved motor or sensory function below the injury level including:",
+            "obTopicId": "2008",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Spinal Cord Injury",
+              "section": "Incomplete Spinal Cord Injuries",
+              "url": "https://www.orthobullets.com/spine/2008/incomplete-spinal-cord-injuries"
+            }
+          },
+          {
+            "shortName": "ob_spine_spinal_cord_injury_pediatric_spinal_cord_injury",
+            "title": "Pediatric Spinal Cord Injury",
+            "definition": "Epidemiology: Incidence; Demographics; Anatomic location.",
+            "summary": "Incidence Demographics",
+            "obTopicId": "2068",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Spinal Cord Injury",
+              "section": "Pediatric Spinal Cord Injury",
+              "url": "https://www.orthobullets.com/spine/2068/pediatric-spinal-cord-injury"
+            }
+          },
+          {
+            "shortName": "ob_spine_spinal_cord_injury_pseudosubluxation_of_the_cervical_spine",
+            "title": "Pseudosubluxation of the Cervical Spine",
+            "definition": "summary: Pseudosubluxation of the cervical spine is a physiologic radiographic variant due to the horizontal nature of the cervical facet joints found in young children; Diagnosis is made radiographically with a relative anterior translation of C2 on C3 (up to 4 mm) that resolves with cervical spine extension; Treatment is observation as the condition resolves when the cervical facet joints become more vertical with age.",
+            "summary": "Pseudosubluxation of the cervical spine is a physiologic radiographic variant due to the horizontal nature of the cervical facet joints found in young children Diagnosis is made radiographically with a relative anterior translation of C2 on C3 (up to 4 mm) that resolves with cervical spine extension",
+            "obTopicId": "2048",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Spinal Cord Injury",
+              "section": "Pseudosubluxation of the Cervical Spine",
+              "url": "https://www.orthobullets.com/spine/2048/pseudosubluxation-of-the-cervical-spine"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Spinal Cord Injury"
+        }
+      },
+      {
+        "shortName": "ob_spine_upper_cervical_trauma",
+        "title": "Upper Cervical Trauma",
+        "field": "Spine Trauma",
+        "definition": "OrthoBullets chapter \"Upper Cervical Trauma\" (Spine Trauma): Summary: Occipitocervical instability can be traumatic or acquired through a degenerative process such as rheumatoid arthritis or Down syndrome; Diagnosis is usually confirmed with a combination of CT scan, MRI, and lateral flexion-extension radiographs; Traumatic instability is treated with occipitocervical fusion. Acquired instability is treated with observation or occipitocervical fusion depending on the presence of neurologic deficits. Summary: Occipital condyle fractures are traumatic injur…",
+        "summary": "Occipitocervical instability can be traumatic or acquired through a degenerative process such as rheumatoid arthritis or Down syndrome Diagnosis is usually confirmed with a combination of CT scan, MRI, and lateral flexion-extension radiographs Occipital condyle fractures are traumatic injuries that involve the articulation between the base of the skull and the cervical spine Diagnosis is best made",
+        "topics": [
+          {
+            "shortName": "ob_spine_upper_cervical_trauma_occipitocervical_instability",
+            "title": "Occipitocervical Instability",
+            "definition": "Summary: Occipitocervical instability can be traumatic or acquired through a degenerative process such as rheumatoid arthritis or Down syndrome; Diagnosis is usually confirmed with a combination of CT scan, MRI, and lateral flexion-extension radiographs; Traumatic instability is treated with occipitocervical fusion. Acquired instability is treated with observation or occipitocervical fusion depending on the presence of neurologic deficits.",
+            "summary": "Occipitocervical instability can be traumatic or acquired through a degenerative process such as rheumatoid arthritis or Down syndrome Diagnosis is usually confirmed with a combination of CT scan, MRI, and lateral flexion-extension radiographs",
+            "obTopicId": "2014",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Upper Cervical Trauma",
+              "section": "Occipitocervical Instability",
+              "url": "https://www.orthobullets.com/spine/2014/occipitocervical-instability"
+            }
+          },
+          {
+            "shortName": "ob_spine_upper_cervical_trauma_occipital_condyle_fx",
+            "title": "Occipital Condyle FX",
+            "definition": "Summary: Occipital condyle fractures are traumatic injuries that involve the articulation between the base of the skull and the cervical spine; Diagnosis is best made with a CT scan. An MRI and/or flexion-extension radiographs are used to evaluate for associated occipitocervical instability; Most fractures are treated with immobilization using a cervical orthosis. Occipitocervical fusion is indicated in rare cases where occipitocervical instability is present.",
+            "summary": "Occipital condyle fractures are traumatic injuries that involve the articulation between the base of the skull and the cervical spine Diagnosis is best made with a CT scan. An MRI and/or flexion-extension radiographs are used to evaluate for associated occipitocervical instability",
+            "obTopicId": "2013",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Upper Cervical Trauma",
+              "section": "Occipital Condyle FX",
+              "url": "https://www.orthobullets.com/spine/2013/occipital-condyle-fractures"
+            }
+          },
+          {
+            "shortName": "ob_spine_upper_cervical_trauma_atlas_fx_and_transverse_ligament_injuries",
+            "title": "Atlas FX & Transverse Ligament Injuries",
+            "definition": "Summary: Atlas fractures and transverse ligament injuries are traumatic injuries usually caused by high-energy trauma with axial loading in young patients (Jefferson fracture) or low-energy falls in the elderly. Due to the capacious nature of the spinal canal at this level, these injuries usually present with neck pain without neurological deficits; Diagnosis is often missed with plain radiographs, so a CT scan may be required to make the diagnosis. An open-mouth odontoid radiograph is useful to evaluate for disruption of the transverse ligament, which leads to lateral displacement of the lateral masses relative to one another; Stable injuries can be treated with immobilization in a cervical collar. Unstable injuries require either halo-vest immobilization or surgical stabilization with fusion.",
+            "summary": "Atlas fractures and transverse ligament injuries are traumatic injuries usually caused by high-energy trauma with axial loading in young patients (Jefferson fracture) or low-energy falls in the elderly. Due to the capacious nature of the spinal canal at this level, these injuries usually present with neck pain without neurological deficits Diagnosis is often missed with plain radiographs, so a…",
+            "obTopicId": "2015",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Upper Cervical Trauma",
+              "section": "Atlas FX & Transverse Ligament Injuries",
+              "url": "https://www.orthobullets.com/spine/2015/atlas-fractures-and-transverse-ligament-injuries"
+            }
+          },
+          {
+            "shortName": "ob_spine_upper_cervical_trauma_atlantoaxial_instability",
+            "title": "Atlantoaxial Instability",
+            "definition": "etiology: The atlantoaxial joint is an important \"transitional zone\" in the cervical spine; Pathophysiology.",
+            "summary": "The atlantoaxial joint is an important \"transitional zone\" in the cervical spine Pathophysiology",
+            "obTopicId": "2049",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Upper Cervical Trauma",
+              "section": "Atlantoaxial Instability",
+              "url": "https://www.orthobullets.com/spine/2049/atlantoaxial-instability"
+            }
+          },
+          {
+            "shortName": "ob_spine_upper_cervical_trauma_odontoid_fracture",
+            "title": "Odontoid Fracture",
+            "definition": "Summary: Odontoid fractures are relatively common fractures of the C2 (axis) dens that can be seen in low energy falls in elderly patients and high energy traumatic injuries in younger patients; Diagnosis may be made with standard lateral and open-mouth odontoid radiographs; however, some fractures may be difficult to visualize on radiographs and require a CT scan to diagnose. MRI is rarely indicated, as these fractures are usually not associated with neurologic symptoms; Treatment may be nonoperative or operative depending on the Anderson and D'Alonzo type and risk factors for nonunion. Patients older than 80 have a high morbidity and mortality regardless of nonoperative or operative treatment.",
+            "summary": "Odontoid fractures are relatively common fractures of the C2 (axis) dens that can be seen in low energy falls in elderly patients and high energy traumatic injuries in younger patients Diagnosis may be made with standard lateral and open-mouth odontoid radiographs; however, some fractures may be difficult to visualize on radiographs and require a CT scan to diagnose. MRI is rarely indicated, as…",
+            "obTopicId": "2016",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Upper Cervical Trauma",
+              "section": "Odontoid Fracture",
+              "url": "https://www.orthobullets.com/spine/2016/odontoid-fracture"
+            }
+          },
+          {
+            "shortName": "ob_spine_upper_cervical_trauma_traumatic_spondylolisthesis_of_axis_hangman_s_fracture",
+            "title": "Traumatic Spondylolisthesis of Axis (Hangman's Fracture)",
+            "definition": "summary: Traumatic spondylolisthesis of the axis, also known as a Hangman's fracture, is a traumatic fracture of the bilateral pars interarticularis of C2; Diagnosis is made with CT of the cervical spine; Treatment may be C-collar immobilization, halo immobilization, or surgical stabilization depending on displacement, angulation, and fracture stability.",
+            "summary": "Traumatic spondylolisthesis of the axis, also known as a Hangman's fracture, is a traumatic fracture of the bilateral pars interarticularis of C2 Diagnosis is made with CT of the cervical spine",
+            "obTopicId": "2017",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Upper Cervical Trauma",
+              "section": "Traumatic Spondylolisthesis of Axis (Hangman's Fracture)",
+              "url": "https://www.orthobullets.com/spine/2017/traumatic-spondylolisthesis-of-axis-hangmans-fracture"
+            }
+          },
+          {
+            "shortName": "ob_spine_upper_cervical_trauma_halo_orthosis_immobilization",
+            "title": "Halo Orthosis Immobilization",
+            "definition": "Introduction: Fixes skull relative to the torso; Allows intercalated paradoxical motion in the subaxial cervical spine.",
+            "summary": "Fixes skull relative to the torso Allows intercalated paradoxical motion in the subaxial cervical spine",
+            "obTopicId": "2019",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Upper Cervical Trauma",
+              "section": "Halo Orthosis Immobilization",
+              "url": "https://www.orthobullets.com/spine/2019/halo-orthosis-immobilization"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Upper Cervical Trauma"
+        }
+      },
+      {
+        "shortName": "ob_spine_lower_cervical_trauma",
+        "title": "Lower Cervical Trauma",
+        "field": "Spine Trauma",
+        "definition": "OrthoBullets chapter \"Lower Cervical Trauma\" (Spine Trauma): Summary: Cervical facet dislocations and fractures represent a spectrum of traumatic injuries with varying degrees of cervical instability and risk of spinal cord injury; Diagnosis can be confirmed with radiographs or CT scan. An MRI should be performed before surgery to identify an associated disc herniation; Treatment usually involves closed or open reduction, followed by surgical stabilization. Summary: Cervical lateral mass fracture separations of the lateral mass-facet are uncommon cervical…",
+        "summary": "Cervical facet dislocations and fractures represent a spectrum of traumatic injuries with varying degrees of cervical instability and risk of spinal cord injury Diagnosis can be confirmed with radiographs or CT scan. An MRI should be performed before surgery to identify an associated disc herniation Cervical lateral mass fracture separations of the lateral mass-facet are uncommon cervical spine in",
+        "topics": [
+          {
+            "shortName": "ob_spine_lower_cervical_trauma_cervical_facet_dislocations_and_fx",
+            "title": "Cervical Facet Dislocations & FX",
+            "definition": "Summary: Cervical facet dislocations and fractures represent a spectrum of traumatic injuries with varying degrees of cervical instability and risk of spinal cord injury; Diagnosis can be confirmed with radiographs or CT scan. An MRI should be performed before surgery to identify an associated disc herniation; Treatment usually involves closed or open reduction, followed by surgical stabilization.",
+            "summary": "Cervical facet dislocations and fractures represent a spectrum of traumatic injuries with varying degrees of cervical instability and risk of spinal cord injury Diagnosis can be confirmed with radiographs or CT scan. An MRI should be performed before surgery to identify an associated disc herniation",
+            "obTopicId": "2064",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Lower Cervical Trauma",
+              "section": "Cervical Facet Dislocations & FX",
+              "url": "https://www.orthobullets.com/spine/2064/cervical-facet-dislocations-and-fractures"
+            }
+          },
+          {
+            "shortName": "ob_spine_lower_cervical_trauma_cervical_lateral_mass_fracture_separation",
+            "title": "Cervical Lateral Mass Fracture Separation",
+            "definition": "Summary: Cervical lateral mass fracture separations of the lateral mass-facet are uncommon cervical spine injuries characterized by a high degree of instability and neurologic deficits; Diagnosis is made using a CT scan of the cervical spine; Treatment usually involves posterior decompression and two-level instrumented fusion.",
+            "summary": "Cervical lateral mass fracture separations of the lateral mass-facet are uncommon cervical spine injuries characterized by a high degree of instability and neurologic deficits Diagnosis is made using a CT scan of the cervical spine",
+            "obTopicId": "2000",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Lower Cervical Trauma",
+              "section": "Cervical Lateral Mass Fracture Separation",
+              "url": "https://www.orthobullets.com/spine/2000/cervical-lateral-mass-fracture-separation"
+            }
+          },
+          {
+            "shortName": "ob_spine_lower_cervical_trauma_subaxial_cervical_vertebral_body_fx",
+            "title": "Subaxial Cervical Vertebral Body FX",
+            "definition": "Summary: Subaxial cervical vertebral body fractures are a subset of cervical spine injuries that consist of compression fractures, burst fractures, flexion teardrop fractures, and extension teardrop avulsion fractures; Diagnosis is made with radiographs of the cervical spine. CT scan can be helpful for fracture characterization and surgical planning; Treatment can be nonoperative or surgical stabilization depending on fracture pattern, mechanical stability, and the presence of neurologic deficits.",
+            "summary": "Subaxial cervical vertebral body fractures are a subset of cervical spine injuries that consist of compression fractures, burst fractures, flexion teardrop fractures, and extension teardrop avulsion fractures Diagnosis is made with radiographs of the cervical spine. CT scan can be helpful for fracture characterization and surgical planning",
+            "obTopicId": "2018",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Lower Cervical Trauma",
+              "section": "Subaxial Cervical Vertebral Body FX",
+              "url": "https://www.orthobullets.com/spine/2018/subaxial-cervical-vertebral-body-fractures"
+            }
+          },
+          {
+            "shortName": "ob_spine_lower_cervical_trauma_extension_teardrop_fracture_cervical_spine",
+            "title": "Extension Teardrop Fracture Cervical Spine",
+            "definition": "summary: Extension teardrop fractures of the cervical spine are subaxial cervical spine fractures caused by forced extension of the neck, resulting in avulsion of the anteroinferior corner of the vertebral body; Diagnosis can be made with lateral radiographs of the cervical spine; Treatment is usually immobilization in a hard collar, as the injury is mechanically stable.",
+            "summary": "Extension teardrop fractures of the cervical spine are subaxial cervical spine fractures caused by forced extension of the neck, resulting in avulsion of the anteroinferior corner of the vertebral body Diagnosis can be made with lateral radiographs of the cervical spine",
+            "obTopicId": "12102",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Lower Cervical Trauma",
+              "section": "Extension Teardrop Fracture Cervical Spine",
+              "url": "https://www.orthobullets.com/spine/12102/extension-teardrop-fracture-cervical-spine"
+            }
+          },
+          {
+            "shortName": "ob_spine_lower_cervical_trauma_clay_shoveler_fracture_cervical_spinous_process_fx",
+            "title": "Clay-Shoveler Fracture (Cervical Spinous Process FX)",
+            "definition": "summary: Clay-shoveler fractures are avulsion-type spinous process fractures in the lower cervical or upper thoracic spine; Diagnosis is made using lateral radiographs of the cervical spine; Treatment usually consists of rest and pain control, as the injuries are mechanically stable.",
+            "summary": "Clay-shoveler fractures are avulsion-type spinous process fractures in the lower cervical or upper thoracic spine Diagnosis is made using lateral radiographs of the cervical spine",
+            "obTopicId": "12284",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Lower Cervical Trauma",
+              "section": "Clay-Shoveler Fracture (Cervical Spinous Process FX)",
+              "url": "https://www.orthobullets.com/spine/12284/clay-shoveler-fracture-cervical-spinous-process-fractures"
+            }
+          },
+          {
+            "shortName": "ob_spine_lower_cervical_trauma_closed_cervical_traction",
+            "title": "Closed Cervical Traction",
+            "definition": "Indications: Indications; Contraindications.",
+            "summary": "Indications Contraindications",
+            "obTopicId": "2074",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Lower Cervical Trauma",
+              "section": "Closed Cervical Traction",
+              "url": "https://www.orthobullets.com/spine/2074/closed-cervical-traction"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Lower Cervical Trauma"
+        }
+      },
+      {
+        "shortName": "ob_spine_thoracic_and_lumbar_trauma",
+        "title": "Thoracic & Lumbar Trauma",
+        "field": "Spine Trauma",
+        "definition": "OrthoBullets chapter \"Thoracic & Lumbar Trauma\" (Spine Trauma): SUMMARY: Thoracolumbar burst fractures are common high-energy traumatic vertebral fractures caused by flexion of the spine, resulting in a compression force through the anterior and middle column of the vertebrae, leading to retropulsion of bone into the spinal canal and compression of the neural elements; Diagnosis is made with radiographs of the thoracolumbar spine. CT scan is useful for fracture characterization and surgical planning; Treatment varies from bracing to surgical decompression an…",
+        "summary": "Thoracolumbar burst fractures are common high-energy traumatic vertebral fractures caused by flexion of the spine, resulting in a compression force through the anterior and middle column of the vertebrae, leading to retropulsion of bone into the spinal canal and compression of the neural elements Diagnosis is made with radiographs of the thoracolumbar spine. CT scan is useful for fracture… Chance ",
+        "topics": [
+          {
+            "shortName": "ob_spine_thoracic_and_lumbar_trauma_thoracolumbar_burst_fx",
+            "title": "Thoracolumbar Burst FX",
+            "definition": "SUMMARY: Thoracolumbar burst fractures are common high-energy traumatic vertebral fractures caused by flexion of the spine, resulting in a compression force through the anterior and middle column of the vertebrae, leading to retropulsion of bone into the spinal canal and compression of the neural elements; Diagnosis is made with radiographs of the thoracolumbar spine. CT scan is useful for fracture characterization and surgical planning; Treatment varies from bracing to surgical decompression and stabilization depending on whether the patient has neurologic deficits or if the fracture being unstable with a risk of progressing into kyphosis.",
+            "summary": "Thoracolumbar burst fractures are common high-energy traumatic vertebral fractures caused by flexion of the spine, resulting in a compression force through the anterior and middle column of the vertebrae, leading to retropulsion of bone into the spinal canal and compression of the neural elements Diagnosis is made with radiographs of the thoracolumbar spine. CT scan is useful for fracture…",
+            "obTopicId": "2022",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Thoracic & Lumbar Trauma",
+              "section": "Thoracolumbar Burst FX",
+              "url": "https://www.orthobullets.com/spine/2022/thoracolumbar-burst-fractures"
+            }
+          },
+          {
+            "shortName": "ob_spine_thoracic_and_lumbar_trauma_chance_fracture_flexion_distraction_injury",
+            "title": "Chance Fracture (Flexion-Distraction Injury)",
+            "definition": "summary: Chance fractures are traumatic fractures of the thoracic and lumbar spine that occur via a flexion-distraction injury mechanism and are associated with high rates of mechanical instability and gastrointestinal injuries; Diagnosis of bony Chance fractures is made with radiographs or CT scan. An MRI may be necessary to identify a ligamentous Chance injury involving disruption of the PLC; Treatment can be nonoperative or involve surgical spinal stabilization, depending on the presence of mechanical instability and/or neurologic deficits.",
+            "summary": "Chance fractures are traumatic fractures of the thoracic and lumbar spine that occur via a flexion-distraction injury mechanism and are associated with high rates of mechanical instability and gastrointestinal injuries Diagnosis of bony Chance fractures is made with radiographs or CT scan. An MRI may be necessary to identify a ligamentous Chance injury involving disruption of the PLC",
+            "obTopicId": "2023",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Thoracic & Lumbar Trauma",
+              "section": "Chance Fracture (Flexion-Distraction Injury)",
+              "url": "https://www.orthobullets.com/spine/2023/chance-fracture-flexion-distraction-injury"
+            }
+          },
+          {
+            "shortName": "ob_spine_thoracic_and_lumbar_trauma_thoracolumbar_fracture_dislocation",
+            "title": "Thoracolumbar Fracture-Dislocation",
+            "definition": "summary: Thoracolumbar fracture-dislocations are rare injuries associated with a posterior facet dislocation occurring at the thoracolumbar junction; Diagnosis is made with radiographs of the thoracolumbar spine. CT scan is useful for fracture characterization and surgical planning; Treatment is usually posterior open reduction with instrumented fusion.",
+            "summary": "Thoracolumbar fracture-dislocations are rare injuries associated with a posterior facet dislocation occurring at the thoracolumbar junction Diagnosis is made with radiographs of the thoracolumbar spine. CT scan is useful for fracture characterization and surgical planning",
+            "obTopicId": "2024",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Thoracic & Lumbar Trauma",
+              "section": "Thoracolumbar Fracture-Dislocation",
+              "url": "https://www.orthobullets.com/spine/2024/thoracolumbar-fracture-dislocation"
+            }
+          },
+          {
+            "shortName": "ob_spine_thoracic_and_lumbar_trauma_osteoporotic_vertebral_compression_fracture",
+            "title": "Osteoporotic Vertebral Compression Fracture",
+            "definition": "summary: Osteoporotic vertebral compression fractures are very common fragility fractures of the spine that affect up to 50% of people >80 y/o; Diagnosis can be made with lateral radiographs. MRI or bone scan can help determine the acuity of a fracture; Treatment is usually observation and pain management. Kyphoplasty is reserved for patients with recalcitrant symptoms after failure of nonoperative treatment for 4-6 weeks. Assessment and management of osteoporosis are indicated in the presence of these injuries.",
+            "summary": "Osteoporotic vertebral compression fractures are very common fragility fractures of the spine that affect up to 50% of people >80 y/o Diagnosis can be made with lateral radiographs. MRI or bone scan can help determine the acuity of a fracture",
+            "obTopicId": "2021",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Thoracic & Lumbar Trauma",
+              "section": "Osteoporotic Vertebral Compression Fracture",
+              "url": "https://www.orthobullets.com/spine/2021/osteoporotic-vertebral-compression-fracture"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Thoracic & Lumbar Trauma"
+        }
+      },
+      {
+        "shortName": "ob_spine_cervical_conditions",
+        "title": "Cervical Conditions",
+        "field": "Spine Degenerative",
+        "definition": "OrthoBullets chapter \"Cervical Conditions\" (Spine Degenerative): summary: Cervical spondylosis represents the natural degenerative process of the cervical motion segment, which can lead to cervical radiculopathy, cervical myelopathy, and/or axial neck pain; Diagnosis can be made with plain radiographs of the cervical spine; Treatment can be observation, medical management, or surgical management depending on the severity and chronicity of pain, presence of instability, and/or presence of neurologic deficits. summary: Cervical myelopathy is a common form of ne…",
+        "summary": "Cervical spondylosis represents the natural degenerative process of the cervical motion segment, which can lead to cervical radiculopathy, cervical myelopathy, and/or axial neck pain Diagnosis can be made with plain radiographs of the cervical spine Cervical myelopathy is a common form of neurologic impairment caused by compression of the cervical spinal cord, most commonly due to degenerative cer",
+        "topics": [
+          {
+            "shortName": "ob_spine_cervical_conditions_cervical_spondylosis",
+            "title": "Cervical Spondylosis",
+            "definition": "summary: Cervical spondylosis represents the natural degenerative process of the cervical motion segment, which can lead to cervical radiculopathy, cervical myelopathy, and/or axial neck pain; Diagnosis can be made with plain radiographs of the cervical spine; Treatment can be observation, medical management, or surgical management depending on the severity and chronicity of pain, presence of instability, and/or presence of neurologic deficits.",
+            "summary": "Cervical spondylosis represents the natural degenerative process of the cervical motion segment, which can lead to cervical radiculopathy, cervical myelopathy, and/or axial neck pain Diagnosis can be made with plain radiographs of the cervical spine",
+            "obTopicId": "2029",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Cervical Conditions",
+              "section": "Cervical Spondylosis",
+              "url": "https://www.orthobullets.com/spine/2029/cervical-spondylosis"
+            }
+          },
+          {
+            "shortName": "ob_spine_cervical_conditions_cervical_myelopathy",
+            "title": "Cervical Myelopathy",
+            "definition": "summary: Cervical myelopathy is a common form of neurologic impairment caused by compression of the cervical spinal cord, most commonly due to degenerative cervical spondylosis; Most commonly presents in older patients with symmetric numbness and tingling in the extremities, hand clumsiness, and gait imbalance; Treatment is usually surgical decompression and stabilization, as the condition is associated with step-wise progression.",
+            "summary": "Cervical myelopathy is a common form of neurologic impairment caused by compression of the cervical spinal cord, most commonly due to degenerative cervical spondylosis Most commonly presents in older patients with symmetric numbness and tingling in the extremities, hand clumsiness, and gait imbalance",
+            "obTopicId": "2031",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Cervical Conditions",
+              "section": "Cervical Myelopathy",
+              "url": "https://www.orthobullets.com/spine/2031/cervical-myelopathy"
+            }
+          },
+          {
+            "shortName": "ob_spine_cervical_conditions_cervical_radiculopathy",
+            "title": "Cervical Radiculopathy",
+            "definition": "Summary: Cervical radiculopathy is characterized by unilateral arm pain, numbness and tingling in a dermatomal distribution in the upper extremity, and weakness in specific muscle groups; Evaluation consists of a thorough neurologic examination, cervical spine radiographs (including flexion-extension views), and MRI of the cervical spine; Nonoperative treatment is successful in 75-90% of patients. Surgical decompression is reserved for refractory cases or patients with progressive neurologic deficits.",
+            "summary": "Cervical radiculopathy is characterized by unilateral arm pain, numbness and tingling in a dermatomal distribution in the upper extremity, and weakness in specific muscle groups Evaluation consists of a thorough neurologic examination, cervical spine radiographs (including flexion-extension views), and MRI of the cervical spine",
+            "obTopicId": "2030",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Cervical Conditions",
+              "section": "Cervical Radiculopathy",
+              "url": "https://www.orthobullets.com/spine/2030/cervical-radiculopathy"
+            }
+          },
+          {
+            "shortName": "ob_spine_cervical_conditions_rheumatoid_cervical_spondylitis",
+            "title": "Rheumatoid Cervical Spondylitis",
+            "definition": "Summary: Rheumatoid cervical spondylitis is seen in patients with rheumatoid arthritis (RA) and comprises 3 specific patterns of cervical spine instability, including atlantoaxial subluxation, basilar invagination, and subaxial subluxation; Diagnosis is made radiographically with cervical spine flexion-extension radiographs and MRI studies to measure the degree of spinal cord compression; Treatment may involve observation or decompression with instrumentation depending on patient neurologic status, degree of mechanical instability, and severity of spinal cord compression.",
+            "summary": "Rheumatoid cervical spondylitis is seen in patients with rheumatoid arthritis (RA) and comprises 3 specific patterns of cervical spine instability, including atlantoaxial subluxation, basilar invagination, and subaxial subluxation Diagnosis is made radiographically with cervical spine flexion-extension radiographs and MRI studies to measure the degree of spinal cord compression",
+            "obTopicId": "2043",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Cervical Conditions",
+              "section": "Rheumatoid Cervical Spondylitis",
+              "url": "https://www.orthobullets.com/spine/2043/rheumatoid-cervical-spondylitis"
+            }
+          },
+          {
+            "shortName": "ob_spine_cervical_conditions_ossification_of_the_posterior_longitudinal_ligament",
+            "title": "Ossification of the Posterior Longitudinal Ligament",
+            "definition": "summary: Ossification of the posterior longitudinal ligament (OPLL) is an idiopathic cervical spine anomaly that is a common cause of cervical myelopathy in the Asian population; Diagnosis is made with lateral radiographs of the cervical spine. CT scan is the study of choice to determine the extent and thickness of the ossification; Treatment is observation in patients with minimal symptoms. Surgical decompression followed by stabilization is indicated for patients with myelopathy.",
+            "summary": "Ossification of the posterior longitudinal ligament (OPLL) is an idiopathic cervical spine anomaly that is a common cause of cervical myelopathy in the Asian population Diagnosis is made with lateral radiographs of the cervical spine. CT scan is the study of choice to determine the extent and thickness of the ossification",
+            "obTopicId": "2046",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Cervical Conditions",
+              "section": "Ossification of the Posterior Longitudinal Ligament",
+              "url": "https://www.orthobullets.com/spine/2046/ossification-of-the-posterior-longitudinal-ligament"
+            }
+          },
+          {
+            "shortName": "ob_spine_cervical_conditions_cervical_adjacent_segment_disease",
+            "title": "Cervical Adjacent Segment Disease",
+            "definition": "summary: Cervical adjacent segment disease refers to the radiographic degeneration of the disc or facets at the caudal or cephalad segment adjacent to a previous cervical surgical fusion construct; Diagnosis can be made with plain radiographs of the cervical spine; Treatment consists of observation and medical management for patients with mild symptoms. Surgical management is indicated in patients that have failed conservative treatment.",
+            "summary": "Cervical adjacent segment disease refers to the radiographic degeneration of the disc or facets at the caudal or cephalad segment adjacent to a previous cervical surgical fusion construct Diagnosis can be made with plain radiographs of the cervical spine",
+            "obTopicId": "322194",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Cervical Conditions",
+              "section": "Cervical Adjacent Segment Disease",
+              "url": "https://www.orthobullets.com/spine/322194/cervical-adjacent-segment-disease"
+            }
+          },
+          {
+            "shortName": "ob_spine_cervical_conditions_cervical_disc_arthroplasty",
+            "title": "Cervical Disc Arthroplasty",
+            "definition": "SUMMARY: Cervical disc arthroplasty (CDA) is a motion-preserving technique to replace a cervical disc; There is mounting evidence that using CDA to avoid a fusion decreases adjacent-level disease and subsequent reoperation rates; The primary contraindication to CDA is advanced degenerative disease of the facets with associated neck pain.",
+            "summary": "Cervical disc arthroplasty (CDA) is a motion-preserving technique to replace a cervical disc There is mounting evidence that using CDA to avoid a fusion decreases adjacent-level disease and subsequent reoperation rates",
+            "obTopicId": "12279",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Cervical Conditions",
+              "section": "Cervical Disc Arthroplasty",
+              "url": "https://www.orthobullets.com/spine/12279/cervical-disc-arthroplasty"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Cervical Conditions"
+        }
+      },
+      {
+        "shortName": "ob_spine_thoracic_and_lumbar_conditions",
+        "title": "Thoracic & Lumbar Conditions",
+        "field": "Spine Degenerative",
+        "definition": "OrthoBullets chapter \"Thoracic & Lumbar Conditions\" (Spine Degenerative): Epidemiology. Etiology summary: Discogenic back pain is a common etiology of axial low back pain without radicular symptoms and is caused by intervertebral disc degeneration; Diagnosis is made by a combination of history, physical examination, and MRI; Treatment is usually NSAIDs, physical therapy, cognitive therapy, and lifestyle modifications. summary: Thoracic disc herniations are rare causes of midline back pain and sensory changes around the rib cage; Diagnosis is made using MRI of the thor…",
+        "summary": "Low back pain affects 50-80% of the population during their lifetime Discogenic back pain is a common etiology of axial low back pain without radicular symptoms and is caused by intervertebral disc degeneration Diagnosis is made by a combination of history, physical examination, and MRI",
+        "topics": [
+          {
+            "shortName": "ob_spine_thoracic_and_lumbar_conditions_low_back_pain",
+            "title": "Low Back Pain",
+            "definition": "Epidemiology. Etiology",
+            "summary": "Low back pain affects 50-80% of the population during their lifetime",
+            "obTopicId": "2034",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Thoracic & Lumbar Conditions",
+              "section": "Low Back Pain",
+              "url": "https://www.orthobullets.com/spine/2034/low-back-pain"
+            }
+          },
+          {
+            "shortName": "ob_spine_thoracic_and_lumbar_conditions_discogenic_back_pain",
+            "title": "Discogenic Back Pain",
+            "definition": "summary: Discogenic back pain is a common etiology of axial low back pain without radicular symptoms and is caused by intervertebral disc degeneration; Diagnosis is made by a combination of history, physical examination, and MRI; Treatment is usually NSAIDs, physical therapy, cognitive therapy, and lifestyle modifications.",
+            "summary": "Discogenic back pain is a common etiology of axial low back pain without radicular symptoms and is caused by intervertebral disc degeneration Diagnosis is made by a combination of history, physical examination, and MRI",
+            "obTopicId": "2036",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Thoracic & Lumbar Conditions",
+              "section": "Discogenic Back Pain",
+              "url": "https://www.orthobullets.com/spine/2036/discogenic-back-pain"
+            }
+          },
+          {
+            "shortName": "ob_spine_thoracic_and_lumbar_conditions_thoracic_disc_herniation",
+            "title": "Thoracic Disc Herniation",
+            "definition": "summary: Thoracic disc herniations are rare causes of midline back pain and sensory changes around the rib cage; Diagnosis is made using MRI of the thoracic spine; Treatment is usually activity modification, physical therapy, and pain management. Surgical management is indicated in patients with persistent pain or progressive neurological symptoms.",
+            "summary": "Thoracic disc herniations are rare causes of midline back pain and sensory changes around the rib cage Diagnosis is made using MRI of the thoracic spine",
+            "obTopicId": "2033",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Thoracic & Lumbar Conditions",
+              "section": "Thoracic Disc Herniation",
+              "url": "https://www.orthobullets.com/spine/2033/thoracic-disc-herniation"
+            }
+          },
+          {
+            "shortName": "ob_spine_thoracic_and_lumbar_conditions_lumbar_disc_herniation",
+            "title": "Lumbar Disc Herniation",
+            "definition": "summary: Lumbar disc herniation is a very common cause of low back pain and unilateral leg pain (radiculopathy). In rare cases, a large disc herniation can lead to cauda equina syndrome, which requires emergent diagnosis and treatment; Diagnosis is made clinically and confirmed with MRI of the lumbar spine; Treatment for radicular leg pain is initially nonoperative with oral medications and physical therapy. Surgical microdiscectomy is only indicated for severe pain and/or motor deficits that have failed to respond to nonoperative management. Treatment for cauda equina syndrome is emergent microdiscectomy within 48 hours.",
+            "summary": "Lumbar disc herniation is a very common cause of low back pain and unilateral leg pain (radiculopathy). In rare cases, a large disc herniation can lead to cauda equina syndrome, which requires emergent diagnosis and treatment Diagnosis is made clinically and confirmed with MRI of the lumbar spine",
+            "obTopicId": "2035",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Thoracic & Lumbar Conditions",
+              "section": "Lumbar Disc Herniation",
+              "url": "https://www.orthobullets.com/spine/2035/lumbar-disc-herniation"
+            }
+          },
+          {
+            "shortName": "ob_spine_thoracic_and_lumbar_conditions_cauda_equina_syndrome",
+            "title": "Cauda Equina Syndrome",
+            "definition": "Summary: Cauda equina syndrome (CES) is caused by severe compression of nerve roots in the thecal sac of the lumbar spine, most commonly due to an acute lumbar disc herniation; Early diagnosis is critical and is made clinically by characteristic symptoms of saddle-like paresthesias combined with acute back and leg pain. The cause is confirmed by urgent MRI; Treatment is prompt surgical decompression that should be performed within 24 hours, and absolutely within 48 hours.",
+            "summary": "Cauda equina syndrome (CES) is caused by severe compression of nerve roots in the thecal sac of the lumbar spine, most commonly due to an acute lumbar disc herniation Early diagnosis is critical and is made clinically by characteristic symptoms of saddle-like paresthesias combined with acute back and leg pain. The cause is confirmed by urgent MRI",
+            "obTopicId": "2065",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Thoracic & Lumbar Conditions",
+              "section": "Cauda Equina Syndrome",
+              "url": "https://www.orthobullets.com/spine/2065/cauda-equina-syndrome"
+            }
+          },
+          {
+            "shortName": "ob_spine_thoracic_and_lumbar_conditions_lumbar_spinal_stenosis",
+            "title": "Lumbar Spinal Stenosis",
+            "definition": "summary: Lumbar spinal stenosis is a degenerative spinal condition characterized by the narrowing of the lumbar spinal canal due to a variety of bony or soft tissue structures; Diagnosis is made with MRI of the lumbar spine; Treatment is a trial of nonoperative management with NSAIDs and physical therapy. Surgical laminotomy and discectomy are indicated for progressive disabling pain and/or progressive neurological deficits that have failed nonoperative management.",
+            "summary": "Lumbar spinal stenosis is a degenerative spinal condition characterized by the narrowing of the lumbar spinal canal due to a variety of bony or soft tissue structures Diagnosis is made with MRI of the lumbar spine",
+            "obTopicId": "2037",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Thoracic & Lumbar Conditions",
+              "section": "Lumbar Spinal Stenosis",
+              "url": "https://www.orthobullets.com/spine/2037/lumbar-spinal-stenosis"
+            }
+          },
+          {
+            "shortName": "ob_spine_thoracic_and_lumbar_conditions_synovial_facet_cyst",
+            "title": "Synovial Facet Cyst",
+            "definition": "summary: Synovial facet cysts are degenerative lesions of the lumbar spine that can lead to lumbar spinal stenosis, resulting in low back pain and radicular symptoms; Diagnosis is made with MRI of the lumbar spine; Treatment is a trial of nonoperative management with NSAIDs and physical therapy. Surgical management is indicated for progressive disabling pain that has failed nonoperative management and/or the presence of progressive neurological deficits.",
+            "summary": "Synovial facet cysts are degenerative lesions of the lumbar spine that can lead to lumbar spinal stenosis, resulting in low back pain and radicular symptoms Diagnosis is made with MRI of the lumbar spine",
+            "obTopicId": "2066",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Thoracic & Lumbar Conditions",
+              "section": "Synovial Facet Cyst",
+              "url": "https://www.orthobullets.com/spine/2066/synovial-facet-cyst"
+            }
+          },
+          {
+            "shortName": "ob_spine_thoracic_and_lumbar_conditions_lumbar_adjacent_segment_disease",
+            "title": "Lumbar Adjacent Segment Disease",
+            "definition": "Summary: Lumbar adjacent segment degeneration (ASD) is a common condition caused by increased mechanical stress and altered biomechanics at adjacent segments following lumbar fusion surgery, leading to progressive disc degeneration, facet arthropathy, and spinal instability; The condition typically presents in adult and elderly patients with progressive low back pain, radicular symptoms, neurogenic claudication, and potential segmental instability; Treatment typically follows a conservative course initially with physical therapy, oral medications, and selective nerve root injections. In refractory cases, surgical treatment in the form of spinal fusion with or without revision of prior surgical levels may be indicated.",
+            "summary": "Lumbar adjacent segment degeneration (ASD) is a common condition caused by increased mechanical stress and altered biomechanics at adjacent segments following lumbar fusion surgery, leading to progressive disc degeneration, facet arthropathy, and spinal instability The condition typically presents in adult and elderly patients with progressive low back pain, radicular symptoms, neurogenic…",
+            "obTopicId": "423240",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Thoracic & Lumbar Conditions",
+              "section": "Lumbar Adjacent Segment Disease",
+              "url": "https://www.orthobullets.com/spine/423240/lumbar-adjacent-segment-disease"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Thoracic & Lumbar Conditions"
+        }
+      },
+      {
+        "shortName": "ob_spine_instability_and_deformity",
+        "title": "Instability & Deformity",
+        "field": "Spine Degenerative",
+        "definition": "OrthoBullets chapter \"Instability & Deformity\" (Spine Degenerative): summary: Degenerative spondylolisthesis is a common degenerative condition characterized by subluxation of one vertebral body anterior to the adjacent inferior vertebral body with an intact pars interarticularis; The condition most commonly occurs in females >40 y/o and most commonly at the L4-5 level; Diagnosis is typically made with lateral radiographs. Flexion and extension lateral lumbar radiographs can identify the degree of instability. MRI studies can be helpful for determining central or…",
+        "summary": "Degenerative spondylolisthesis is a common degenerative condition characterized by subluxation of one vertebral body anterior to the adjacent inferior vertebral body with an intact pars interarticularis The condition most commonly occurs in females >40 y/o and most commonly at the L4-5 level Adult isthmic spondylolisthesis is a common adult spinal condition characterized by subluxation of one vert",
+        "topics": [
+          {
+            "shortName": "ob_spine_instability_and_deformity_degenerative_spondylolisthesis",
+            "title": "Degenerative Spondylolisthesis",
+            "definition": "summary: Degenerative spondylolisthesis is a common degenerative condition characterized by subluxation of one vertebral body anterior to the adjacent inferior vertebral body with an intact pars interarticularis; The condition most commonly occurs in females >40 y/o and most commonly at the L4-5 level; Diagnosis is typically made with lateral radiographs. Flexion and extension lateral lumbar radiographs can identify the degree of instability. MRI studies can be helpful for determining central or foraminal stenosis; Treatment is a trial of nonoperative management with NSAIDs and physical therapy. Surgical management is indicated for progressive disabling pain that has failed nonoperative management and/or progressive neurological deficits.",
+            "summary": "Degenerative spondylolisthesis is a common degenerative condition characterized by subluxation of one vertebral body anterior to the adjacent inferior vertebral body with an intact pars interarticularis The condition most commonly occurs in females >40 y/o and most commonly at the L4-5 level",
+            "obTopicId": "2039",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Instability & Deformity",
+              "section": "Degenerative Spondylolisthesis",
+              "url": "https://www.orthobullets.com/spine/2039/degenerative-spondylolisthesis"
+            }
+          },
+          {
+            "shortName": "ob_spine_instability_and_deformity_adult_isthmic_spondylolisthesis",
+            "title": "Adult Isthmic Spondylolisthesis",
+            "definition": "summary: Adult isthmic spondylolisthesis is a common adult spinal condition characterized by subluxation of one vertebral body anterior to the adjacent inferior vertebral body, caused by a defect in the pars interarticularis; Diagnosis is made with lateral radiographs. Flexion and extension lateral lumbar radiographs can identify the degree of instability. MRI studies can be helpful for identification of central or foraminal stenosis; Nonoperative treatment includes a trial of NSAIDs and physical therapy. Surgical management is indicated for progressive disabling pain that has failed nonoperative management and/or progressive neurological deficits.",
+            "summary": "Adult isthmic spondylolisthesis is a common adult spinal condition characterized by subluxation of one vertebral body anterior to the adjacent inferior vertebral body, caused by a defect in the pars interarticularis Diagnosis is made with lateral radiographs. Flexion and extension lateral lumbar radiographs can identify the degree of instability. MRI studies can be helpful for identification of…",
+            "obTopicId": "2038",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Instability & Deformity",
+              "section": "Adult Isthmic Spondylolisthesis",
+              "url": "https://www.orthobullets.com/spine/2038/adult-isthmic-spondylolisthesis"
+            }
+          },
+          {
+            "shortName": "ob_spine_instability_and_deformity_adult_spinal_deformity",
+            "title": "Adult Spinal Deformity",
+            "definition": "summary: Adult spinal deformity is an idiopathic or degenerative condition of the adult spine that leads to deformity in the coronal or sagittal plane; Diagnosis is made with full-length spine radiographs; Nonoperative treatment is a trial of NSAIDs and physical therapy. Surgical deformity correction is indicated for progressive disabling pain that has failed nonoperative management and/or progressive neurological deficits.",
+            "summary": "Adult spinal deformity is an idiopathic or degenerative condition of the adult spine that leads to deformity in the coronal or sagittal plane Diagnosis is made with full-length spine radiographs",
+            "obTopicId": "2041",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Instability & Deformity",
+              "section": "Adult Spinal Deformity",
+              "url": "https://www.orthobullets.com/spine/2041/adult-spinal-deformity"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Instability & Deformity"
+        }
+      },
+      {
+        "shortName": "ob_spine_sacral_conditions",
+        "title": "Sacral Conditions",
+        "field": "Spine Degenerative",
+        "definition": "OrthoBullets chapter \"Sacral Conditions\" (Spine Degenerative): summary: Sacral insufficiency fractures are fragility fractures of the sacral spine that occur more commonly in elderly women with osteoporosis; Diagnosis can be made with inlet and outlet radiographs of the pelvis. CT or MRI may be helpful for fracture characterization and operative planning; Treatment is usually observation and pain control. Surgical management is indicated for patients with progressive pain and/or difficulty ambulating who fail nonoperative treatment. summary: Sacroiliac join…",
+        "summary": "Sacral insufficiency fractures are fragility fractures of the sacral spine that occur more commonly in elderly women with osteoporosis Diagnosis can be made with inlet and outlet radiographs of the pelvis. CT or MRI may be helpful for fracture characterization and operative planning Sacroiliac joint dysfunction is a degenerative condition of the sacroiliac joint resulting in low back pain Diagnosi",
+        "topics": [
+          {
+            "shortName": "ob_spine_sacral_conditions_sacral_insufficiency_fracture",
+            "title": "Sacral Insufficiency Fracture",
+            "definition": "summary: Sacral insufficiency fractures are fragility fractures of the sacral spine that occur more commonly in elderly women with osteoporosis; Diagnosis can be made with inlet and outlet radiographs of the pelvis. CT or MRI may be helpful for fracture characterization and operative planning; Treatment is usually observation and pain control. Surgical management is indicated for patients with progressive pain and/or difficulty ambulating who fail nonoperative treatment.",
+            "summary": "Sacral insufficiency fractures are fragility fractures of the sacral spine that occur more commonly in elderly women with osteoporosis Diagnosis can be made with inlet and outlet radiographs of the pelvis. CT or MRI may be helpful for fracture characterization and operative planning",
+            "obTopicId": "12297",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Sacral Conditions",
+              "section": "Sacral Insufficiency Fracture",
+              "url": "https://www.orthobullets.com/spine/12297/sacral-insufficiency-fracture"
+            }
+          },
+          {
+            "shortName": "ob_spine_sacral_conditions_sacroiliac_joint_dysfunction",
+            "title": "Sacroiliac Joint Dysfunction",
+            "definition": "summary: Sacroiliac joint dysfunction is a degenerative condition of the sacroiliac joint resulting in low back pain; Diagnosis is made clinically based on pain just inferior to the posterior superior iliac spine that is worsened with hip flexion, abduction, and external rotation; Treatment is usually conservative with pain management, physical therapy, and injections. Surgical management is indicated in patients with progressive symptoms who fail nonoperative management.",
+            "summary": "Sacroiliac joint dysfunction is a degenerative condition of the sacroiliac joint resulting in low back pain Diagnosis is made clinically based on pain just inferior to the posterior superior iliac spine that is worsened with hip flexion, abduction, and external rotation",
+            "obTopicId": "422812",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Sacral Conditions",
+              "section": "Sacroiliac Joint Dysfunction",
+              "url": "https://www.orthobullets.com/spine/422812/sacroiliac-joint-dysfunction"
+            }
+          },
+          {
+            "shortName": "ob_spine_sacral_conditions_sacroiliitis",
+            "title": "Sacroiliitis",
+            "definition": "summary: Sacroiliitis is an inflammatory condition of the sacroiliac joint that can cause persistent low back and posterior pelvic pain; Diagnosis is made with contrast-enhanced MRI demonstrating fluid/inflammation in the SI joint and possible abscess formation; Treatment is usually nonoperative, consisting of NSAIDs and rest, with IV antibiotics reserved for infection. Surgical debridement is indicated in the presence of an abscess.",
+            "summary": "Sacroiliitis is an inflammatory condition of the sacroiliac joint that can cause persistent low back and posterior pelvic pain Diagnosis is made with contrast-enhanced MRI demonstrating fluid/inflammation in the SI joint and possible abscess formation",
+            "obTopicId": "2040",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Sacral Conditions",
+              "section": "Sacroiliitis",
+              "url": "https://www.orthobullets.com/spine/2040/sacroiliitis"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Sacral Conditions"
+        }
+      },
+      {
+        "shortName": "ob_spine_spine_infections",
+        "title": "Spine Infections",
+        "field": "Spine Infections, Tumors, & Systemic Conditions",
+        "definition": "OrthoBullets chapter \"Spine Infections\" (Spine Infections, Tumors, & Systemic Conditions): summary: Adult pyogenic vertebral osteomyelitis, also known as spondylodiscitis, represents a spectrum of spinal infections, including discitis, vertebral osteomyelitis, and epidural abscess; Diagnosis is made with MRI with contrast; Treatment may consist of long-term targeted antibiotics alone or surgical decompression and stabilization depending on the extent and chronicity of infection, location, and pathogen identification and susceptibility to antimicrobials. summary: Spinal epidural absces…",
+        "summary": "Adult pyogenic vertebral osteomyelitis, also known as spondylodiscitis, represents a spectrum of spinal infections, including discitis, vertebral osteomyelitis, and epidural abscess Diagnosis is made with MRI with contrast Spinal epidural abscess is a spinal infection caused by a collection of pus or inflammatory granulation tissue between the dura mater and surrounding adipose tissue Early diagno",
+        "topics": [
+          {
+            "shortName": "ob_spine_spine_infections_adult_pyogenic_vertebral_osteomyelitis",
+            "title": "Adult Pyogenic Vertebral Osteomyelitis",
+            "definition": "summary: Adult pyogenic vertebral osteomyelitis, also known as spondylodiscitis, represents a spectrum of spinal infections, including discitis, vertebral osteomyelitis, and epidural abscess; Diagnosis is made with MRI with contrast; Treatment may consist of long-term targeted antibiotics alone or surgical decompression and stabilization depending on the extent and chronicity of infection, location, and pathogen identification and susceptibility to antimicrobials.",
+            "summary": "Adult pyogenic vertebral osteomyelitis, also known as spondylodiscitis, represents a spectrum of spinal infections, including discitis, vertebral osteomyelitis, and epidural abscess Diagnosis is made with MRI with contrast",
+            "obTopicId": "2025",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Spine Infections",
+              "section": "Adult Pyogenic Vertebral Osteomyelitis",
+              "url": "https://www.orthobullets.com/spine/2025/adult-pyogenic-vertebral-osteomyelitis"
+            }
+          },
+          {
+            "shortName": "ob_spine_spine_infections_spinal_epidural_abscess",
+            "title": "Spinal Epidural Abscess",
+            "definition": "summary: Spinal epidural abscess is a spinal infection caused by a collection of pus or inflammatory granulation tissue between the dura mater and surrounding adipose tissue; Early diagnosis is critical and is made with contrast-enhanced MRI; Treatment is usually prompt surgical decompression and long-term IV antibiotics.",
+            "summary": "Spinal epidural abscess is a spinal infection caused by a collection of pus or inflammatory granulation tissue between the dura mater and surrounding adipose tissue Early diagnosis is critical and is made with contrast-enhanced MRI",
+            "obTopicId": "2026",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Spine Infections",
+              "section": "Spinal Epidural Abscess",
+              "url": "https://www.orthobullets.com/spine/2026/spinal-epidural-abscess"
+            }
+          },
+          {
+            "shortName": "ob_spine_spine_infections_spinal_tuberculosis",
+            "title": "Spinal Tuberculosis",
+            "definition": "summary: Spinal tuberculosis, also known as Pott's disease, is a spinal infection caused by Mycobacterium tuberculosis that can lead to osteomyelitis, kyphotic deformity, and mechanical instability; Diagnosis is made with a CT-guided biopsy evaluated for acid-fast bacilli; Treatment is usually bracing and anti-tuberculosis antibiotics in the absence of neurological defects or mechanical instability. Surgical management is indicated in the presence of neurological deficits, progressive kyphosis, and/or mechanical instability.",
+            "summary": "Spinal tuberculosis, also known as Pott's disease, is a spinal infection caused by Mycobacterium tuberculosis that can lead to osteomyelitis, kyphotic deformity, and mechanical instability Diagnosis is made with a CT-guided biopsy evaluated for acid-fast bacilli",
+            "obTopicId": "2027",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Spine Infections",
+              "section": "Spinal Tuberculosis",
+              "url": "https://www.orthobullets.com/spine/2027/spinal-tuberculosis"
+            }
+          },
+          {
+            "shortName": "ob_spine_spine_infections_disc_space_infection_pediatric",
+            "title": "Disc Space Infection - Pediatric",
+            "definition": "summary: Disc space infections in the pediatric population are a common source of fever and low back pain and are caused by systemic infections; Diagnosis is made with blood cultures and MRI; Treatment includes bed rest, immobilization, and antibiotics for 4-6 weeks for early infection without abscess. Surgical debridement followed by antibiotic treatment is indicated in the presence of an abscess and/or lack of improvement with nonoperative treatment.",
+            "summary": "Disc space infections in the pediatric population are a common source of fever and low back pain and are caused by systemic infections Diagnosis is made with blood cultures and MRI",
+            "obTopicId": "2028",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Spine Infections",
+              "section": "Disc Space Infection - Pediatric",
+              "url": "https://www.orthobullets.com/spine/2028/disc-space-infection--pediatric"
+            }
+          },
+          {
+            "shortName": "ob_spine_spine_infections_spine_surgical_site_infections",
+            "title": "Spine Surgical Site Infections",
+            "definition": "Overview.. Epidemiology",
+            "summary": "Overview",
+            "obTopicId": "12737",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Spine Infections",
+              "section": "Spine Surgical Site Infections",
+              "url": "https://www.orthobullets.com/spine/12737/spine-surgical-site-infections"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Spine Infections"
+        }
+      },
+      {
+        "shortName": "ob_spine_systemic_conditions",
+        "title": "Systemic Conditions",
+        "field": "Spine Infections, Tumors, & Systemic Conditions",
+        "definition": "OrthoBullets chapter \"Systemic Conditions\" (Spine Infections, Tumors, & Systemic Conditions): summary: Ankylosing Spondylitis is a chronic seronegative autoimmune spondyloarthropathy characterized by bridging spinal osteophyte formation, enthesitis, sacroiliitis, and uveitis.; Diagnosis is made with the presence of HLA-B27 antigens, the presence of bilateral sacroiliitis, and ocular examination to assess for uveitis.; Treatment is observation, NSAIDs, and physical therapy for mild symptoms. Surgical management is indicated for unstable spinal fractures, progressive deformity, and the pre…",
+        "summary": "Ankylosing Spondylitis is a chronic seronegative autoimmune spondyloarthropathy characterized by bridging spinal osteophyte formation, enthesitis, sacroiliitis, and uveitis. Diagnosis is made with the presence of HLA-B27 antigens, the presence of bilateral sacroiliitis, and ocular examination to assess for uveitis. DISH, also known as Forestier disease, is a common disorder of unknown etiology cha",
+        "topics": [
+          {
+            "shortName": "ob_spine_systemic_conditions_ankylosing_spondylitis",
+            "title": "Ankylosing Spondylitis",
+            "definition": "summary: Ankylosing Spondylitis is a chronic seronegative autoimmune spondyloarthropathy characterized by bridging spinal osteophyte formation, enthesitis, sacroiliitis, and uveitis.; Diagnosis is made with the presence of HLA-B27 antigens, the presence of bilateral sacroiliitis, and ocular examination to assess for uveitis.; Treatment is observation, NSAIDs, and physical therapy for mild symptoms. Surgical management is indicated for unstable spinal fractures, progressive deformity, and the presence of neurological deficits..",
+            "summary": "Ankylosing Spondylitis is a chronic seronegative autoimmune spondyloarthropathy characterized by bridging spinal osteophyte formation, enthesitis, sacroiliitis, and uveitis. Diagnosis is made with the presence of HLA-B27 antigens, the presence of bilateral sacroiliitis, and ocular examination to assess for uveitis.",
+            "obTopicId": "2044",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Systemic Conditions",
+              "section": "Ankylosing Spondylitis",
+              "url": "https://www.orthobullets.com/spine/2044/ankylosing-spondylitis"
+            }
+          },
+          {
+            "shortName": "ob_spine_systemic_conditions_dish_diffuse_idiopathic_skeletal_hyperostosis",
+            "title": "DISH (Diffuse Idiopathic Skeletal Hyperostosis)",
+            "definition": "SUMMARY: DISH, also known as Forestier disease, is a common disorder of unknown etiology characterized by enthesopathy of the spine and extremities, that usually presents with back pain and spinal stiffness.; Diagnosis can be confirmed with radiographs of the cervical and thoracic spine. A CT scan should be performed whenever there is concern for a fracture following low energy trauma.; Treatment is usually activity modification, physical therapy, and bisphosphonate therapy. Associated spine fractures are treated with long spinal fusion..",
+            "summary": "DISH, also known as Forestier disease, is a common disorder of unknown etiology characterized by enthesopathy of the spine and extremities, that usually presents with back pain and spinal stiffness. Diagnosis can be confirmed with radiographs of the cervical and thoracic spine. A CT scan should be performed whenever there is concern for a fracture following low energy trauma.",
+            "obTopicId": "2045",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Systemic Conditions",
+              "section": "DISH (Diffuse Idiopathic Skeletal Hyperostosis)",
+              "url": "https://www.orthobullets.com/spine/2045/dish-diffuse-idiopathic-skeletal-hyperostosis"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Systemic Conditions"
+        }
+      },
+      {
+        "shortName": "ob_spine_spine_and_spinal_cord_tumors",
+        "title": "Spine & Spinal Cord Tumors",
+        "field": "Spine Infections, Tumors, & Systemic Conditions",
+        "definition": "OrthoBullets chapter \"Spine & Spinal Cord Tumors\" (Spine Infections, Tumors, & Systemic Conditions): Epidemiology: Primary central nervous system (CNS) tumor of the spine is classified as; Epidemiology. summary: Diastematomyelia is a congenital spinal condition caused by a fibrous, cartilaginous, or osseous bar creating a longitudinal cleft in the spinal cord.; Diagnosis is made with a prenatal ultrasound in the 3rd trimester.; Treatment is observation if patient is asymptomatic. Surgical resection is indicated if patient is symptomatic or has neurological deficits.. Definitions. Epidemiology",
+        "summary": "Primary central nervous system (CNS) tumor of the spine is classified as Epidemiology Diastematomyelia is a congenital spinal condition caused by a fibrous, cartilaginous, or osseous bar creating a longitudinal cleft in the spinal cord. Diagnosis is made with a prenatal ultrasound in the 3rd trimester.",
+        "topics": [
+          {
+            "shortName": "ob_spine_spine_and_spinal_cord_tumors_spinal_cord_tumors",
+            "title": "Spinal Cord Tumors",
+            "definition": "Epidemiology: Primary central nervous system (CNS) tumor of the spine is classified as; Epidemiology.",
+            "summary": "Primary central nervous system (CNS) tumor of the spine is classified as Epidemiology",
+            "obTopicId": "2072",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Spine & Spinal Cord Tumors",
+              "section": "Spinal Cord Tumors",
+              "url": "https://www.orthobullets.com/spine/2072/spinal-cord-tumors"
+            }
+          },
+          {
+            "shortName": "ob_spine_spine_and_spinal_cord_tumors_diastematomyelia",
+            "title": "Diastematomyelia",
+            "definition": "summary: Diastematomyelia is a congenital spinal condition caused by a fibrous, cartilaginous, or osseous bar creating a longitudinal cleft in the spinal cord.; Diagnosis is made with a prenatal ultrasound in the 3rd trimester.; Treatment is observation if patient is asymptomatic. Surgical resection is indicated if patient is symptomatic or has neurological deficits..",
+            "summary": "Diastematomyelia is a congenital spinal condition caused by a fibrous, cartilaginous, or osseous bar creating a longitudinal cleft in the spinal cord. Diagnosis is made with a prenatal ultrasound in the 3rd trimester.",
+            "obTopicId": "2062",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Spine & Spinal Cord Tumors",
+              "section": "Diastematomyelia",
+              "url": "https://www.orthobullets.com/spine/2062/diastematomyelia"
+            }
+          },
+          {
+            "shortName": "ob_spine_spine_and_spinal_cord_tumors_syrinx_and_syringomyelia",
+            "title": "Syrinx & Syringomyelia",
+            "definition": "Definitions. Epidemiology",
+            "summary": "Definitions",
+            "obTopicId": "2011",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Spine & Spinal Cord Tumors",
+              "section": "Syrinx & Syringomyelia",
+              "url": "https://www.orthobullets.com/spine/2011/syrinx-and-syringomyelia"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Spine & Spinal Cord Tumors"
+        }
+      },
+      {
+        "shortName": "ob_spine_pediatric_cervical_conditions",
+        "title": "Pediatric Cervical Conditions",
+        "field": "Pediatric Spine",
+        "definition": "OrthoBullets chapter \"Pediatric Cervical Conditions\" (Pediatric Spine): summary: Atlantoaxial Rotatory Displacement is a pediatric cervical spine rotatory instability caused by C1-C2 subluxation or facet dislocation; The most common presentation is a young child who presents with torticollis.; Diagnosis is made by dynamic CT scan of the cervical spine.; Treatment can be a soft collar, halter traction, halo traction, or surgical fusion depending on the chronicity of the condition.. SUMMARY: Congenital Muscular Torticollis is a musculoskeletal deformity caused by the …",
+        "summary": "Atlantoaxial Rotatory Displacement is a pediatric cervical spine rotatory instability caused by C1-C2 subluxation or facet dislocation The most common presentation is a young child who presents with torticollis. Congenital Muscular Torticollis is a musculoskeletal deformity caused by the abnormal contraction of the sternocleidomastoid muscle. The condition typically presents in infants and childre",
+        "topics": [
+          {
+            "shortName": "ob_spine_pediatric_cervical_conditions_atlantoaxial_rotatory_displacement_aard",
+            "title": "Atlantoaxial Rotatory Displacement (AARD)",
+            "definition": "summary: Atlantoaxial Rotatory Displacement is a pediatric cervical spine rotatory instability caused by C1-C2 subluxation or facet dislocation; The most common presentation is a young child who presents with torticollis.; Diagnosis is made by dynamic CT scan of the cervical spine.; Treatment can be a soft collar, halter traction, halo traction, or surgical fusion depending on the chronicity of the condition..",
+            "summary": "Atlantoaxial Rotatory Displacement is a pediatric cervical spine rotatory instability caused by C1-C2 subluxation or facet dislocation The most common presentation is a young child who presents with torticollis.",
+            "obTopicId": "2050",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Pediatric Cervical Conditions",
+              "section": "Atlantoaxial Rotatory Displacement (AARD)",
+              "url": "https://www.orthobullets.com/spine/2050/atlantoaxial-rotatory-displacement-aard"
+            }
+          },
+          {
+            "shortName": "ob_spine_pediatric_cervical_conditions_congenital_muscular_torticollis",
+            "title": "Congenital Muscular Torticollis",
+            "definition": "SUMMARY: Congenital Muscular Torticollis is a musculoskeletal deformity caused by the abnormal contraction of the sternocleidomastoid muscle.; The condition typically presents in infants and children with a persistent head tilt toward the involved side.; Diagnosis is made clinically with the presence of a palpable neck mass from a contracted sternocleidomastoid muscle with the chin rotated towards the contralateral side.; Treatment is typically passive stretching with the condition resolving within a year. Surgical lengthening of the SCM muscle is indicated with failed response to at least 1 year of stretching..",
+            "summary": "Congenital Muscular Torticollis is a musculoskeletal deformity caused by the abnormal contraction of the sternocleidomastoid muscle. The condition typically presents in infants and children with a persistent head tilt toward the involved side.",
+            "obTopicId": "2052",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Pediatric Cervical Conditions",
+              "section": "Congenital Muscular Torticollis",
+              "url": "https://www.orthobullets.com/spine/2052/congenital-muscular-torticollis"
+            }
+          },
+          {
+            "shortName": "ob_spine_pediatric_cervical_conditions_klippel_feil_syndrome",
+            "title": "Klippel-Feil Syndrome",
+            "definition": "Summary: Klippel-Feil Syndrome (KFS) is a rare congenital condition caused by failure of normal segmentation or formation of cervical somites during embryological development that leads to abnormalities in multiple cervical segments.; Diagnosis is made from physical examination, medical history and imaging findings including congenital fusion of 2 or more cervical vertebrae.; Treatment is usually observation with restriction of contact sports if the anomaly extends proximal to C2. Surgical management is indicated in the presence of myelopathy, basilar invagination, or atlantoaxial instability..",
+            "summary": "Klippel-Feil Syndrome (KFS) is a rare congenital condition caused by failure of normal segmentation or formation of cervical somites during embryological development that leads to abnormalities in multiple cervical segments. Diagnosis is made from physical examination, medical history and imaging findings including congenital fusion of 2 or more cervical vertebrae.",
+            "obTopicId": "2051",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Pediatric Cervical Conditions",
+              "section": "Klippel-Feil Syndrome",
+              "url": "https://www.orthobullets.com/spine/2051/klippel-feil-syndrome"
+            }
+          },
+          {
+            "shortName": "ob_spine_pediatric_cervical_conditions_pediatric_intervertebral_disc_calcification",
+            "title": "Pediatric Intervertebral Disc Calcification",
+            "definition": "Summary: Pediatric Intervertebral Disc Calcification is a very rare condition of unknown etiology.; Textbook presentation is child with neck pain, fever, malaise, and an elevated ESR and presumably CRP.; Treatment is typically conservative, and the disease is usually self-limiting with a favorable prognosis.",
+            "summary": "Pediatric Intervertebral Disc Calcification is a very rare condition of unknown etiology. Textbook presentation is child with neck pain, fever, malaise, and an elevated ESR and presumably CRP.",
+            "obTopicId": "423096",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Pediatric Cervical Conditions",
+              "section": "Pediatric Intervertebral Disc Calcification",
+              "url": "https://www.orthobullets.com/spine/423096/pediatric-intervertebral-disc-calcification"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Pediatric Cervical Conditions"
+        }
+      },
+      {
+        "shortName": "ob_spine_spondylolysis_and_adolescent_back_pain",
+        "title": "Spondylolysis & Adolescent Back Pain",
+        "field": "Pediatric Spine",
+        "definition": "OrthoBullets chapter \"Spondylolysis & Adolescent Back Pain\" (Pediatric Spine): Summary: Pediatric Spondylolysis & Spondylolisthesis represent a continuum of disease where there is a fracture of the pars interarticularis (spondylolysis) which may progress to anterior subluxation of one vertebral body anterior to the adjacent inferior vertebral body (spondylolisthesis).; Diagnosis of spondylolysis alone can be challenging on imaging and the ideal study is controversial. Radiographs, CT scan, and MRI may all play a role. Spondylolisthesis is diagnosed on a lateral radiograph.…",
+        "summary": "Pediatric Spondylolysis & Spondylolisthesis represent a continuum of disease where there is a fracture of the pars interarticularis (spondylolysis) which may progress to anterior subluxation of one vertebral body anterior to the adjacent inferior vertebral body (spondylolisthesis). Diagnosis of spondylolysis alone can be challenging on imaging and the ideal study is controversial. Radiographs,…",
+        "topics": [
+          {
+            "shortName": "ob_spine_spondylolysis_and_adolescent_back_pain_pediatric_spondylolysis_and_spondylolisthesis",
+            "title": "Pediatric Spondylolysis & Spondylolisthesis",
+            "definition": "Summary: Pediatric Spondylolysis & Spondylolisthesis represent a continuum of disease where there is a fracture of the pars interarticularis (spondylolysis) which may progress to anterior subluxation of one vertebral body anterior to the adjacent inferior vertebral body (spondylolisthesis).; Diagnosis of spondylolysis alone can be challenging on imaging and the ideal study is controversial. Radiographs, CT scan, and MRI may all play a role. Spondylolisthesis is diagnosed on a lateral radiograph.; Treatment may be nonoperative or surgical depending on the degree of back pain, malalignment of vertebral bodies, and neurological symptoms..",
+            "summary": "Pediatric Spondylolysis & Spondylolisthesis represent a continuum of disease where there is a fracture of the pars interarticularis (spondylolysis) which may progress to anterior subluxation of one vertebral body anterior to the adjacent inferior vertebral body (spondylolisthesis). Diagnosis of spondylolysis alone can be challenging on imaging and the ideal study is controversial. Radiographs,…",
+            "obTopicId": "2058",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Spondylolysis & Adolescent Back Pain",
+              "section": "Pediatric Spondylolysis & Spondylolisthesis",
+              "url": "https://www.orthobullets.com/spine/2058/pediatric-spondylolysis-and-spondylolisthesis"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Spondylolysis & Adolescent Back Pain"
+        }
+      },
+      {
+        "shortName": "ob_spine_pediatric_deformity",
+        "title": "Pediatric Deformity",
+        "field": "Pediatric Spine",
+        "definition": "OrthoBullets chapter \"Pediatric Deformity\" (Pediatric Spine): summary: Adolescent Idiopathic Scoliosis is a coronal plane spinal deformity which most commonly presents in adolescent girls from ages 10 to 18.; Diagnosis is made with full-length standing PA and lateral spine radiographs.; Treatment can be observation, bracing, or surgical management depending on the skeletal maturity of the patient, magnitude of deformity, and curve progression.. King Classification of AIS. Type I DESCRIPTION• S shaped or double curve in which both the thoracic and lumbar cu…",
+        "summary": "Adolescent Idiopathic Scoliosis is a coronal plane spinal deformity which most commonly presents in adolescent girls from ages 10 to 18. Diagnosis is made with full-length standing PA and lateral spine radiographs. Type I DESCRIPTION• S shaped or double curve in which both the thoracic and lumbar curve cross the midline • Lumbar curve larger and stiffer than the thoracic curve TREATMENT• this type",
+        "topics": [
+          {
+            "shortName": "ob_spine_pediatric_deformity_adolescent_idiopathic_scoliosis",
+            "title": "Adolescent Idiopathic Scoliosis",
+            "definition": "summary: Adolescent Idiopathic Scoliosis is a coronal plane spinal deformity which most commonly presents in adolescent girls from ages 10 to 18.; Diagnosis is made with full-length standing PA and lateral spine radiographs.; Treatment can be observation, bracing, or surgical management depending on the skeletal maturity of the patient, magnitude of deformity, and curve progression..",
+            "summary": "Adolescent Idiopathic Scoliosis is a coronal plane spinal deformity which most commonly presents in adolescent girls from ages 10 to 18. Diagnosis is made with full-length standing PA and lateral spine radiographs.",
+            "obTopicId": "2053",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Pediatric Deformity",
+              "section": "Adolescent Idiopathic Scoliosis",
+              "url": "https://www.orthobullets.com/spine/2053/adolescent-idiopathic-scoliosis"
+            }
+          },
+          {
+            "shortName": "ob_spine_pediatric_deformity_king_classification_of_ais",
+            "title": "King Classification of AIS",
+            "definition": "King Classification of AIS. Type I DESCRIPTION• S shaped or double curve in which both the thoracic and lumbar curve cross the midline • Lumbar curve larger and stiffer than the thoracic curve TREATMENT• this type of curve is usually fuse down to L4 (via a posterior approach) or down to L3 (anterior approach) Type II DESCRIPTION• S shaped or double curve in which both the thoracic and lumbar curve cross the midline • Thoracic curve larger and stiffer than the lumbar curves. TREATMENT• often a thoracic fusion will suffice for these patients (or down to L1) Type III DESCRIPTION• Thoracic curve crosses midline and lumbar curve does not cross midline TREATMENT• thoracic fusion Type IV DESCRIPTION• Long thoracic curve in which L5 is centered over sacrum but L4 tilts into long thoracic curve TREATMENT• fuse thru L4 Type V DESCRIPTIONThoracic curve and T1 tilts to upper curve TREATMENTUse thru T2; do not assume that the upper (left) thoracic curve is non-structural without proof, and if there is any question, fuse the upper thoracic spine as well as the lower thoracic spine;",
+            "summary": "Type I DESCRIPTION• S shaped or double curve in which both the thoracic and lumbar curve cross the midline • Lumbar curve larger and stiffer than the thoracic curve TREATMENT• this type of curve is usually fuse down to L4 (via a posterior approach) or down to L3 (anterior approach) Type II DESCRIPTION• S shaped or double curve in which both the thoracic and lumbar curve cross the midline •…",
+            "obTopicId": "2075",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Pediatric Deformity",
+              "section": "King Classification of AIS",
+              "url": "https://www.orthobullets.com/spine/2075/king-classification-of-ais"
+            }
+          },
+          {
+            "shortName": "ob_spine_pediatric_deformity_lenke_classification_of_ais",
+            "title": "Lenke Classification of AIS",
+            "definition": "Lenke Classification of AIS. Introduction Note: To our knowledge the Lenke classifcation has never appeared on the OITE or on the the ABOS Part I. The Lenke classication for adolescent idiopathic scoliosis has gained popularity and consists of three steps Label primary curve at Type 1-6 Assign lumbar modifier (A,B,C) Assign sagittal modifier (-,N,+) Step 1: Identification of primary curve (Type 1-6) Measure regional curves proximal thoracic (PT) main thoracic (MT) thoracolumbar/lumbar (TL/L) Identify major curve (biggest curve) always either MT (Type 1-4) or .MT/L (Type 4*,5,6) Determine if minor curve is structural or not definition of structural > 25° in coronal plane on standing AP and do not bend out to < 25° on bending films OR > 20° in sagital plane Assign Type 1-6 based on chart below Curve Type Curve Name PT** MT TL/L Type 1 MT - Structural (major*) - Type 2 Double thoracic (DT) Structural Structural (major*) - Type 3 Double major (DM) - Structural (major*) Structural Type 4 Triple major (TM) Structural Structural (major*) Structural (major*) Type 5 TL/L - - Structural (major*) Type 6 TL/L-MT - Structural Structural (major*) Structural (major*) - has largest cobb angle…",
+            "summary": "Introduction Note: To our knowledge the Lenke classifcation has never appeared on the OITE or on the the ABOS Part I. The Lenke classication for adolescent idiopathic scoliosis has gained popularity and consists of three steps Label primary curve at Type 1-6 Assign lumbar modifier (A,B,C) Assign sagittal modifier (-,N,+) Step 1: Identification of primary curve (Type 1-6) Measure regional curves…",
+            "obTopicId": "2076",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Pediatric Deformity",
+              "section": "Lenke Classification of AIS",
+              "url": "https://www.orthobullets.com/spine/2076/lenke-classification-of-ais"
+            }
+          },
+          {
+            "shortName": "ob_spine_pediatric_deformity_juvenile_idiopathic_scoliosis",
+            "title": "Juvenile Idiopathic Scoliosis",
+            "definition": "summary: Juvenile Idiopathic Scoliosis is a coronal plane spinal deformity which most commonly presents in children between ages 4 and 10.; Diagnosis is made with full-length standing PA and lateral spine radiographs. MRI studies are indicated in children <10 years old with a curve > 20°.; Treatment can be observation, bracing, or surgical management depending on the skeletal maturity of the patient, magnitude of deformity, and curve progression..",
+            "summary": "Juvenile Idiopathic Scoliosis is a coronal plane spinal deformity which most commonly presents in children between ages 4 and 10. Diagnosis is made with full-length standing PA and lateral spine radiographs. MRI studies are indicated in children <10 years old with a curve > 20°.",
+            "obTopicId": "2054",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Pediatric Deformity",
+              "section": "Juvenile Idiopathic Scoliosis",
+              "url": "https://www.orthobullets.com/spine/2054/juvenile-idiopathic-scoliosis"
+            }
+          },
+          {
+            "shortName": "ob_spine_pediatric_deformity_infantile_idiopathic_scoliosis",
+            "title": "Infantile Idiopathic Scoliosis",
+            "definition": "summary: Infantile Idiopathic Scoliosis is a coronal plane spinal deformity which most commonly presents in children ages 3 years or less.; Diagnosis is made with full-length PA and lateral spine radiographs. MRI studies are indicated to rule out syrinx, tumor, or tethered cord.; Treatment can be observation, bracing, or surgical management depending on the skeletal maturity of the patient, magnitude of deformity, and curve progression..",
+            "summary": "Infantile Idiopathic Scoliosis is a coronal plane spinal deformity which most commonly presents in children ages 3 years or less. Diagnosis is made with full-length PA and lateral spine radiographs. MRI studies are indicated to rule out syrinx, tumor, or tethered cord.",
+            "obTopicId": "2055",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Pediatric Deformity",
+              "section": "Infantile Idiopathic Scoliosis",
+              "url": "https://www.orthobullets.com/spine/2055/infantile-idiopathic-scoliosis"
+            }
+          },
+          {
+            "shortName": "ob_spine_pediatric_deformity_congenital_scoliosis",
+            "title": "Congenital Scoliosis",
+            "definition": "summary: Congenital Scoliosis is a congenital spinal deformity that occurs due to the failure of normal vertebral development during 4th to 6th week of gestation.; Diagnosis is made with AP and lateral full spine radiographs. MRI is required to assess for neural axis abnormalities.; Treatment can be observation or surgical management depending on the specific anatomical anomaly, and curve progression..",
+            "summary": "Congenital Scoliosis is a congenital spinal deformity that occurs due to the failure of normal vertebral development during 4th to 6th week of gestation. Diagnosis is made with AP and lateral full spine radiographs. MRI is required to assess for neural axis abnormalities.",
+            "obTopicId": "2060",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Pediatric Deformity",
+              "section": "Congenital Scoliosis",
+              "url": "https://www.orthobullets.com/spine/2060/congenital-scoliosis"
+            }
+          },
+          {
+            "shortName": "ob_spine_pediatric_deformity_neuromuscular_scoliosis",
+            "title": "Neuromuscular Scoliosis",
+            "definition": "Introduction: Defined as an irregular spinal curvature caused by disorders of the brain, spinal cord, and muscular system.; Neurogenic curves (relative to idiopathic curves) tend to be.",
+            "summary": "Defined as an irregular spinal curvature caused by disorders of the brain, spinal cord, and muscular system. Neurogenic curves (relative to idiopathic curves) tend to be",
+            "obTopicId": "2056",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Pediatric Deformity",
+              "section": "Neuromuscular Scoliosis",
+              "url": "https://www.orthobullets.com/spine/2056/neuromuscular-scoliosis"
+            }
+          },
+          {
+            "shortName": "ob_spine_pediatric_deformity_cerebral_palsy_spinal_disorders",
+            "title": "Cerebral Palsy - Spinal Disorders",
+            "definition": "summary: Spinal Disorders in Cerebral Palsy are thought to be caused by muscle weakness and truncal imbalance and most commonly present with progressive scoliosis.; Diagnosis is made with full-length spine radiographs.; Treatment can range from observation, bracing, or surgical management depending on the severity of underlying medical conditions, skeletal maturity of the patient, magnitude of deformity, and curve progression..",
+            "summary": "Spinal Disorders in Cerebral Palsy are thought to be caused by muscle weakness and truncal imbalance and most commonly present with progressive scoliosis. Diagnosis is made with full-length spine radiographs.",
+            "obTopicId": "2057",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Pediatric Deformity",
+              "section": "Cerebral Palsy - Spinal Disorders",
+              "url": "https://www.orthobullets.com/spine/2057/cerebral-palsy--spinal-disorders"
+            }
+          },
+          {
+            "shortName": "ob_spine_pediatric_deformity_pathologic_scoliosis",
+            "title": "Pathologic Scoliosis",
+            "definition": "summary: Pathologic Scoliosis is a form of scoliosis resulting from a benign bone tumor most commonly located in the posterior elements of the spine.; Diagnosis is made with full-length standing spine radiographs to determine the severity of the curve. A CT scan is useful to assess for the size and location of the underlying lesion.; Treatment is observation and NSAIDs for small and minimally symptomatic curves. Surgical resection of the lesion is indicated for painful, progressive scoliosis..",
+            "summary": "Pathologic Scoliosis is a form of scoliosis resulting from a benign bone tumor most commonly located in the posterior elements of the spine. Diagnosis is made with full-length standing spine radiographs to determine the severity of the curve. A CT scan is useful to assess for the size and location of the underlying lesion.",
+            "obTopicId": "2059",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Pediatric Deformity",
+              "section": "Pathologic Scoliosis",
+              "url": "https://www.orthobullets.com/spine/2059/pathologic-scoliosis"
+            }
+          },
+          {
+            "shortName": "ob_spine_pediatric_deformity_scheuermann_s_kyphosis",
+            "title": "Scheuermann's Kyphosis",
+            "definition": "summary: Scheuermann's Kyphosis is a rigid form of spinal kyphosis caused by anterior wedging of >5 degrees across three consecutive vertebrae, most commonly in the thoracic spine.; Diagnosis is made with standard and hyperextension lateral radiographs of the thoracic spine.; Treatment can be observation or surgical management depending on the severity of kyphosis, presence of neurological deficits, and/or persistent and progressive pain..",
+            "summary": "Scheuermann's Kyphosis is a rigid form of spinal kyphosis caused by anterior wedging of >5 degrees across three consecutive vertebrae, most commonly in the thoracic spine. Diagnosis is made with standard and hyperextension lateral radiographs of the thoracic spine.",
+            "obTopicId": "2061",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Pediatric Deformity",
+              "section": "Scheuermann's Kyphosis",
+              "url": "https://www.orthobullets.com/spine/2061/scheuermanns-kyphosis"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Pediatric Deformity"
+        }
+      },
+      {
+        "shortName": "ob_spine_emerging_technologies",
+        "title": "Emerging Technologies",
+        "field": "Spine Practice Management",
+        "definition": "OrthoBullets chapter \"Emerging Technologies\" (Spine Practice Management): Navigation and Robotics in Spine Surgery — OrthoBullets topic in Emerging Technologies (Spine). Biologics in Spine Surgery — OrthoBullets topic in Emerging Technologies (Spine).",
+        "summary": "OrthoBullets topic \"Navigation and Robotics in Spine Surgery\" under chapter \"Emerging Technologies\". OrthoBullets topic \"Biologics in Spine Surgery\" under chapter \"Emerging Technologies\".",
+        "topics": [
+          {
+            "shortName": "ob_spine_emerging_technologies_navigation_and_robotics_in_spine_surgery",
+            "title": "Navigation and Robotics in Spine Surgery",
+            "definition": "Navigation and Robotics in Spine Surgery — OrthoBullets topic in Emerging Technologies (Spine).",
+            "summary": "OrthoBullets topic \"Navigation and Robotics in Spine Surgery\" under chapter \"Emerging Technologies\".",
+            "obTopicId": "422940",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Emerging Technologies",
+              "section": "Navigation and Robotics in Spine Surgery",
+              "url": "https://www.orthobullets.com/spine/422940/navigation-and-robotics-in-spine-surgery"
+            }
+          },
+          {
+            "shortName": "ob_spine_emerging_technologies_biologics_in_spine_surgery",
+            "title": "Biologics in Spine Surgery",
+            "definition": "Biologics in Spine Surgery — OrthoBullets topic in Emerging Technologies (Spine).",
+            "summary": "OrthoBullets topic \"Biologics in Spine Surgery\" under chapter \"Emerging Technologies\".",
+            "obTopicId": "422938",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Emerging Technologies",
+              "section": "Biologics in Spine Surgery",
+              "url": "https://www.orthobullets.com/spine/422938/biologics-in-spine-surgery"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Emerging Technologies"
+        }
+      }
+    ]
+  }
+}

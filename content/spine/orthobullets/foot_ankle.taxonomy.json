@@ -1,0 +1,840 @@
+{
+  "_meta": {
+    "source": "https://www.orthobullets.com/user/dashboard?id=all&specialty=7&menu=topic",
+    "generated_by": "scripts/scrape-orthobullets-taxonomy.ts",
+    "scraped_at": "2026-06-27T22:21:18.590Z",
+    "section": "foot_ankle",
+    "field_count": 5,
+    "chapter_count": 13,
+    "topic_count": 50,
+    "backfilled_at": "2026-06-28T19:05:17.449Z",
+    "backfilled_by": "scripts/backfill-orthobullets-topic-content.ts"
+  },
+  "taxonomy": {
+    "section": "foot_ankle",
+    "provenance": "orthobullets_site",
+    "obDataPending": false,
+    "notes": "Scraped from the OrthoBullets specialty dashboard (Field → Chapter → Topic). Fields collapsed into the section; chapters → L4, topics → L5.",
+    "chapters": [
+      {
+        "shortName": "ob_foot_ankle_f_and_a_anatomy",
+        "title": "F&A Anatomy",
+        "field": "F&A Introduction",
+        "definition": "OrthoBullets chapter \"F&A Anatomy\" (F&A Introduction): Ankle Joint Osteology: Ankle Joint; Distal tibiofibular joint; Joint reaction force. Plantar fascia. Hindfoot Source Arteries. Peroneal (Fibular) Artery",
+        "summary": "Ankle Joint Distal tibiofibular joint Plantar fascia (windlass mechanism)",
+        "topics": [
+          {
+            "shortName": "ob_foot_ankle_f_and_a_anatomy_ankle_ligaments",
+            "title": "Ankle Ligaments",
+            "definition": "Ankle Joint Osteology: Ankle Joint; Distal tibiofibular joint; Joint reaction force.",
+            "summary": "Ankle Joint Distal tibiofibular joint",
+            "obTopicId": "7005",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "F&A Anatomy",
+              "section": "Ankle Ligaments",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7005/ankle-ligaments"
+            }
+          },
+          {
+            "shortName": "ob_foot_ankle_f_and_a_anatomy_foot_anatomy_and_biomechanics",
+            "title": "Foot Anatomy and Biomechanics",
+            "definition": "Plantar fascia. Hindfoot",
+            "summary": "Plantar fascia (windlass mechanism)",
+            "obTopicId": "7006",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "F&A Anatomy",
+              "section": "Foot Anatomy and Biomechanics",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7006/foot-anatomy-and-biomechanics"
+            }
+          },
+          {
+            "shortName": "ob_foot_ankle_f_and_a_anatomy_blood_supply_to_the_foot",
+            "title": "Blood Supply to the Foot",
+            "definition": "Source Arteries. Peroneal (Fibular) Artery",
+            "summary": "Blood supply of foot comes from three primary source arteries",
+            "obTopicId": "12114",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "F&A Anatomy",
+              "section": "Blood Supply to the Foot",
+              "url": "https://www.orthobullets.com/foot-and-ankle/12114/blood-supply-to-the-foot"
+            }
+          },
+          {
+            "shortName": "ob_foot_ankle_f_and_a_anatomy_layers_of_the_plantar_foot",
+            "title": "Layers of the Plantar Foot",
+            "definition": "Dorsal Layer. First Plantar Layer",
+            "summary": "Extensor digitorum brevis",
+            "obTopicId": "7003",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "F&A Anatomy",
+              "section": "Layers of the Plantar Foot",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7003/layers-of-the-plantar-foot"
+            }
+          },
+          {
+            "shortName": "ob_foot_ankle_f_and_a_anatomy_nerves_of_the_foot",
+            "title": "Nerves of the Foot",
+            "definition": "Branches of the: Medial calcaneal nerve; Medial plantar nerve; Lateral plantar nerve; Physical exam.",
+            "summary": "Medial calcaneal nerve Medial plantar nerve",
+            "obTopicId": "7004",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "F&A Anatomy",
+              "section": "Nerves of the Foot",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7004/nerves-of-the-foot"
+            }
+          },
+          {
+            "shortName": "ob_foot_ankle_f_and_a_anatomy_foot_muscle_forces_and_deformities",
+            "title": "Foot Muscle Forces & Deformities",
+            "definition": "Introduction. Introduction",
+            "summary": "Introduction",
+            "obTopicId": "7054",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "F&A Anatomy",
+              "section": "Foot Muscle Forces & Deformities",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7054/foot-muscle-forces-and-deformities"
+            }
+          },
+          {
+            "shortName": "ob_foot_ankle_f_and_a_anatomy_lower_extremity_os",
+            "title": "Lower Extremity Os",
+            "definition": "summary: Lower Extremity Os are secondary ossification centers that remain separated from the normal bone and may be confused with a fracture.; Diagnosis requires plain radiographs of the foot and ankle.; Treatment is generally observation as most are completely asymptomatic. In the event of symptoms, treatment depends on location of Os and chronicity of symptoms..",
+            "summary": "Lower Extremity Os are secondary ossification centers that remain separated from the normal bone and may be confused with a fracture. Diagnosis requires plain radiographs of the foot and ankle.",
+            "obTopicId": "7049",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "F&A Anatomy",
+              "section": "Lower Extremity Os",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7049/lower-extremity-os"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "F&A Anatomy"
+        }
+      },
+      {
+        "shortName": "ob_foot_ankle_f_and_a_evaluation",
+        "title": "F&A Evaluation",
+        "field": "F&A Introduction",
+        "definition": "OrthoBullets chapter \"F&A Evaluation\" (F&A Introduction): Overview: One gait cycle is measured from heel-strike to heel-strike; Stride; Step. Summary: Orthotics are lower extremity supportive apparel that provide soft tissue protection, bone/joint stability and control of body segment motion.; Orthotics play an important role in the nonoperative treatment of foot and ankle pathology.; The type of orthotic needs to be specific for the underlying bony or ligamentous pathology in order to provide appropriate functional support..",
+        "summary": "One gait cycle is measured from heel-strike to heel-strike Stride Orthotics are lower extremity supportive apparel that provide soft tissue protection, bone/joint stability and control of body segment motion. Orthotics play an important role in the nonoperative treatment of foot and ankle pathology.",
+        "topics": [
+          {
+            "shortName": "ob_foot_ankle_f_and_a_evaluation_gait_cycle",
+            "title": "Gait Cycle",
+            "definition": "Overview: One gait cycle is measured from heel-strike to heel-strike; Stride; Step.",
+            "summary": "One gait cycle is measured from heel-strike to heel-strike Stride",
+            "obTopicId": "7001",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "F&A Evaluation",
+              "section": "Gait Cycle",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7001/gait-cycle"
+            }
+          },
+          {
+            "shortName": "ob_foot_ankle_f_and_a_evaluation_orthotics",
+            "title": "Orthotics",
+            "definition": "Summary: Orthotics are lower extremity supportive apparel that provide soft tissue protection, bone/joint stability and control of body segment motion.; Orthotics play an important role in the nonoperative treatment of foot and ankle pathology.; The type of orthotic needs to be specific for the underlying bony or ligamentous pathology in order to provide appropriate functional support..",
+            "summary": "Orthotics are lower extremity supportive apparel that provide soft tissue protection, bone/joint stability and control of body segment motion. Orthotics play an important role in the nonoperative treatment of foot and ankle pathology.",
+            "obTopicId": "12278",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "F&A Evaluation",
+              "section": "Orthotics",
+              "url": "https://www.orthobullets.com/foot-and-ankle/12278/orthotics"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "F&A Evaluation"
+        }
+      },
+      {
+        "shortName": "ob_foot_ankle_ankle_sprains",
+        "title": "Ankle Sprains",
+        "field": "F&A Trauma",
+        "definition": "OrthoBullets chapter \"Ankle Sprains\" (F&A Trauma): summary: High Ankle Sprain & Syndesmosis Injuries are traumatic injuries that affect the distal tibiofibular ligaments and most commonly occur due to sudden external rotation of the ankle.; Diagnosis is suspected clinically with tenderness over the syndesmosis which worsens with squeezing of the tibia and fibula together at the midcalf. Plain stress radiographs of the ankle are required to diagnosis complete syndesmosis injuries with tibiofibular diastasis.; Treatment is nonoperative for syndesm…",
+        "summary": "High Ankle Sprain & Syndesmosis Injuries are traumatic injuries that affect the distal tibiofibular ligaments and most commonly occur due to sudden external rotation of the ankle. Diagnosis is suspected clinically with tenderness over the syndesmosis which worsens with squeezing of the tibia and fibula together at the midcalf. Plain stress radiographs of the ankle are required to diagnosis… Ankle ",
+        "topics": [
+          {
+            "shortName": "ob_foot_ankle_ankle_sprains_high_ankle_sprain_and_syndesmosis_injury",
+            "title": "High Ankle Sprain & Syndesmosis Injury",
+            "definition": "summary: High Ankle Sprain & Syndesmosis Injuries are traumatic injuries that affect the distal tibiofibular ligaments and most commonly occur due to sudden external rotation of the ankle.; Diagnosis is suspected clinically with tenderness over the syndesmosis which worsens with squeezing of the tibia and fibula together at the midcalf. Plain stress radiographs of the ankle are required to diagnosis complete syndesmosis injuries with tibiofibular diastasis.; Treatment is nonoperative for syndesmotic sprains without diastasis or ankle instability. Operative management is indicated for patients with diastasis of the tibiofibular joint or injuries with associated fractures..",
+            "summary": "High Ankle Sprain & Syndesmosis Injuries are traumatic injuries that affect the distal tibiofibular ligaments and most commonly occur due to sudden external rotation of the ankle. Diagnosis is suspected clinically with tenderness over the syndesmosis which worsens with squeezing of the tibia and fibula together at the midcalf. Plain stress radiographs of the ankle are required to diagnosis…",
+            "obTopicId": "7029",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Ankle Sprains",
+              "section": "High Ankle Sprain & Syndesmosis Injury",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7029/high-ankle-sprain-and-syndesmosis-injury"
+            }
+          },
+          {
+            "shortName": "ob_foot_ankle_ankle_sprains_ankle_sprain",
+            "title": "Ankle Sprain",
+            "definition": "summary: Ankle Sprains are very common twisting injuries to the ankle that are the most common reason for missed athletic participation.; Diagnosis can be made clinically with swelling and ecchymosis of the ankle and pain with range of motion. Radiographs are only indicated when clinical examination meets criteria (Ottawa ankle rules).; Treatment usually includes a brief period of immobilization followed by early functional physical therapy. Rarely, operative management is indicated in the setting of syndesmosis injury with tibiofibular diastasis or chronic ankle instability with recurrent sprains..",
+            "summary": "Ankle Sprains are very common twisting injuries to the ankle that are the most common reason for missed athletic participation. Diagnosis can be made clinically with swelling and ecchymosis of the ankle and pain with range of motion. Radiographs are only indicated when clinical examination meets criteria (Ottawa ankle rules).",
+            "obTopicId": "7028",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Ankle Sprains",
+              "section": "Ankle Sprain",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7028/ankle-sprain"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Ankle Sprains"
+        }
+      },
+      {
+        "shortName": "ob_foot_ankle_mid_and_forefoot_trauma",
+        "title": "Mid & Forefoot Trauma",
+        "field": "F&A Trauma",
+        "definition": "OrthoBullets chapter \"Mid & Forefoot Trauma\" (F&A Trauma): Summary: A Lisfranc injury is a tarsometatarsal fracture dislocation characterized by traumatic disruption between the articulation of the medial cuneiform and base of the second metatarsal.; Diagnosis is confirmed by radiographs which may show widening of the interval between the 1st and 2nd ray.; Treatment is generally operative with either ORIF or arthrodesis.. SUMMARY: 5th Metatarsal Base Fractures are among the most common fractures of the foot and are predisposed to poor healing due to the…",
+        "summary": "A Lisfranc injury is a tarsometatarsal fracture dislocation characterized by traumatic disruption between the articulation of the medial cuneiform and base of the second metatarsal. Diagnosis is confirmed by radiographs which may show widening of the interval between the 1st and 2nd ray. 5th Metatarsal Base Fractures are among the most common fractures of the foot and are predisposed to poor heali",
+        "topics": [
+          {
+            "shortName": "ob_foot_ankle_mid_and_forefoot_trauma_lisfranc_injury",
+            "title": "Lisfranc Injury",
+            "definition": "Summary: A Lisfranc injury is a tarsometatarsal fracture dislocation characterized by traumatic disruption between the articulation of the medial cuneiform and base of the second metatarsal.; Diagnosis is confirmed by radiographs which may show widening of the interval between the 1st and 2nd ray.; Treatment is generally operative with either ORIF or arthrodesis..",
+            "summary": "A Lisfranc injury is a tarsometatarsal fracture dislocation characterized by traumatic disruption between the articulation of the medial cuneiform and base of the second metatarsal. Diagnosis is confirmed by radiographs which may show widening of the interval between the 1st and 2nd ray.",
+            "obTopicId": "7030",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Mid & Forefoot Trauma",
+              "section": "Lisfranc Injury",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7030/lisfranc-injury"
+            }
+          },
+          {
+            "shortName": "ob_foot_ankle_mid_and_forefoot_trauma_5th_metatarsal_base_fracture",
+            "title": "5th Metatarsal Base Fracture",
+            "definition": "SUMMARY: 5th Metatarsal Base Fractures are among the most common fractures of the foot and are predisposed to poor healing due to the limited blood supply to the specific areas of the 5th metatarsal base.; Diagnosis is made with plain radiographs of the foot.; Treatment can include protected weight bearing, immobilization or surgery depending on location of fracture, degree of displacement, and athletic level of patient..",
+            "summary": "5th Metatarsal Base Fractures are among the most common fractures of the foot and are predisposed to poor healing due to the limited blood supply to the specific areas of the 5th metatarsal base. Diagnosis is made with plain radiographs of the foot.",
+            "obTopicId": "7031",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Mid & Forefoot Trauma",
+              "section": "5th Metatarsal Base Fracture",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7031/5th-metatarsal-base-fracture"
+            }
+          },
+          {
+            "shortName": "ob_foot_ankle_mid_and_forefoot_trauma_metatarsal_fx",
+            "title": "Metatarsal FX",
+            "definition": "summary: Metatarsal fractures are among the most common injuries of the foot that may occur due to trauma or repetitive microstress.; Diagnosis is made with plain radiographs of the foot.; Treatment may be nonoperative or operative depending on the specific metatarsal involved, number of metatarsals involved, and fracture displacement..",
+            "summary": "Metatarsal fractures are among the most common injuries of the foot that may occur due to trauma or repetitive microstress. Diagnosis is made with plain radiographs of the foot.",
+            "obTopicId": "7032",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Mid & Forefoot Trauma",
+              "section": "Metatarsal FX",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7032/metatarsal-fractures"
+            }
+          },
+          {
+            "shortName": "ob_foot_ankle_mid_and_forefoot_trauma_tarsal_navicular_fx",
+            "title": "Tarsal Navicular FX",
+            "definition": "Summary: Tarsal Navicular Fractures are rare fractures of the midfoot that may occur due to trauma or due to repetitive microstress.; Diagnosis can be made with plain radiographs of the foot.; Treatment is generally nonoperative with cast immobilization and non weight-bearing for the majority of fractures. Surgical management is indicated for nonunions, significantly displaced fractures, and for elite athletes..",
+            "summary": "Tarsal Navicular Fractures are rare fractures of the midfoot that may occur due to trauma or due to repetitive microstress. Diagnosis can be made with plain radiographs of the foot.",
+            "obTopicId": "7033",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Mid & Forefoot Trauma",
+              "section": "Tarsal Navicular FX",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7033/tarsal-navicular-fractures"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Mid & Forefoot Trauma"
+        }
+      },
+      {
+        "shortName": "ob_foot_ankle_tendon_injuries",
+        "title": "Tendon Injuries",
+        "field": "F&A Trauma",
+        "definition": "OrthoBullets chapter \"Tendon Injuries\" (F&A Trauma): summary: Achilles Tendon Ruptures are common tendon injuries that occur due to sudden dorsiflexion of a plantarflexed foot, most commonly associated with sporting events.; Diagnosis can be made clinically with weakness of plantarflexion with a positive Thompson's test. MRI studies may be indicated for surgical management of chronic injuries.; Treatment may be nonoperative or operative depending on patient age, patient activity demands and chronicity of injury.. Summary: Peroneal Tendon Tears and…",
+        "summary": "Achilles Tendon Ruptures are common tendon injuries that occur due to sudden dorsiflexion of a plantarflexed foot, most commonly associated with sporting events. Diagnosis can be made clinically with weakness of plantarflexion with a positive Thompson's test. MRI studies may be indicated for surgical management of chronic injuries. Peroneal Tendon Tears and Instability represent a spectrum of trau",
+        "topics": [
+          {
+            "shortName": "ob_foot_ankle_tendon_injuries_achilles_tendon_rupture",
+            "title": "Achilles Tendon Rupture",
+            "definition": "summary: Achilles Tendon Ruptures are common tendon injuries that occur due to sudden dorsiflexion of a plantarflexed foot, most commonly associated with sporting events.; Diagnosis can be made clinically with weakness of plantarflexion with a positive Thompson's test. MRI studies may be indicated for surgical management of chronic injuries.; Treatment may be nonoperative or operative depending on patient age, patient activity demands and chronicity of injury..",
+            "summary": "Achilles Tendon Ruptures are common tendon injuries that occur due to sudden dorsiflexion of a plantarflexed foot, most commonly associated with sporting events. Diagnosis can be made clinically with weakness of plantarflexion with a positive Thompson's test. MRI studies may be indicated for surgical management of chronic injuries.",
+            "obTopicId": "7021",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Tendon Injuries",
+              "section": "Achilles Tendon Rupture",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7021/achilles-tendon-rupture"
+            }
+          },
+          {
+            "shortName": "ob_foot_ankle_tendon_injuries_peroneal_tendon_tears_and_instability",
+            "title": "Peroneal Tendon Tears and Instability",
+            "definition": "Summary: Peroneal Tendon Tears and Instability represent a spectrum of traumatic injuries to the lateral ankle that include tenosynovitis, tendinopathy, tendon tears and/or tendon instability.; Diagnosis is made clinically with subfibular ankle pain with the sensation of apprehension or subluxation with active dorsiflexion and eversion against resistance. MRI studies can help identify the size of peroneal tendon tear and identify concomitant injuries to nearby structures.; Treatment may be nonoperative or operative depending on patient activity demands, chronicity of injury, and peroneal instability..",
+            "summary": "Peroneal Tendon Tears and Instability represent a spectrum of traumatic injuries to the lateral ankle that include tenosynovitis, tendinopathy, tendon tears and/or tendon instability. Diagnosis is made clinically with subfibular ankle pain with the sensation of apprehension or subluxation with active dorsiflexion and eversion against resistance. MRI studies can help identify the size of peroneal…",
+            "obTopicId": "7023",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Tendon Injuries",
+              "section": "Peroneal Tendon Tears and Instability",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7023/peroneal-tendon-tears-and-instability"
+            }
+          },
+          {
+            "shortName": "ob_foot_ankle_tendon_injuries_anterior_tibialis_tendon_rupture",
+            "title": "Anterior Tibialis Tendon Rupture",
+            "definition": "SUMMARY: Anterior Tibialis Tendon Ruptures are traumatic anterior ankle injuries that can present with foot drop and impaired gait.; Diagnosis is made clinically with presence of a painless mass at the anteromedial aspect of the ankle associated with weakness of dorsiflexion.; Treatment is generally direct surgical repair of the tendon to achieve optimal functional outcomes..",
+            "summary": "Anterior Tibialis Tendon Ruptures are traumatic anterior ankle injuries that can present with foot drop and impaired gait. Diagnosis is made clinically with presence of a painless mass at the anteromedial aspect of the ankle associated with weakness of dorsiflexion.",
+            "obTopicId": "7055",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Tendon Injuries",
+              "section": "Anterior Tibialis Tendon Rupture",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7055/anterior-tibialis-tendon-rupture"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Tendon Injuries"
+        }
+      },
+      {
+        "shortName": "ob_foot_ankle_infection",
+        "title": "Infection",
+        "field": "F&A Trauma",
+        "definition": "OrthoBullets chapter \"Infection\" (F&A Trauma): Summary: Foot Puncture Wounds are common work place injuries which are at high risk for soft tissue infection and development of osteomyelitis.; Diagnosis is clinical with inspection of the plantar foot for the puncture site as well as surrounding erythema and drainage. MRI studies are indicated when there is concern for osteomyelitis.; Treatment can be observation with antibiotics or surgical debridement depending on chronicity of wound, patient comorbidities and presence of soft tissue infecti…",
+        "summary": "Foot Puncture Wounds are common work place injuries which are at high risk for soft tissue infection and development of osteomyelitis. Diagnosis is clinical with inspection of the plantar foot for the puncture site as well as surrounding erythema and drainage. MRI studies are indicated when there is concern for osteomyelitis.",
+        "topics": [
+          {
+            "shortName": "ob_foot_ankle_infection_foot_puncture_wounds",
+            "title": "Foot Puncture Wounds",
+            "definition": "Summary: Foot Puncture Wounds are common work place injuries which are at high risk for soft tissue infection and development of osteomyelitis.; Diagnosis is clinical with inspection of the plantar foot for the puncture site as well as surrounding erythema and drainage. MRI studies are indicated when there is concern for osteomyelitis.; Treatment can be observation with antibiotics or surgical debridement depending on chronicity of wound, patient comorbidities and presence of soft tissue infection or osteomyelitis..",
+            "summary": "Foot Puncture Wounds are common work place injuries which are at high risk for soft tissue infection and development of osteomyelitis. Diagnosis is clinical with inspection of the plantar foot for the puncture site as well as surrounding erythema and drainage. MRI studies are indicated when there is concern for osteomyelitis.",
+            "obTopicId": "7026",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Infection",
+              "section": "Foot Puncture Wounds",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7026/foot-puncture-wounds"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Infection"
+        }
+      },
+      {
+        "shortName": "ob_foot_ankle_tendon_conditions",
+        "title": "Tendon Conditions",
+        "field": "Degenerative Conditions",
+        "definition": "OrthoBullets chapter \"Tendon Conditions\" (Degenerative Conditions): summary: Posterior Tibial Tendon Insufficiency is the most common cause of adult-acquired flatfoot deformity, caused by attenuation and tenosynovitis of the posterior tibial tendon leading to medial arch collapse.; Diagnosis can be made clinically with loss of medial arch of the foot which may progress to hindfoot valgus, forefoot abduction and subsequent development of midfoot osteoarthritis.; Treatment is nonoperative with orthotics and ankle braces in early stages. A variety of surgical optio…",
+        "summary": "Posterior Tibial Tendon Insufficiency is the most common cause of adult-acquired flatfoot deformity, caused by attenuation and tenosynovitis of the posterior tibial tendon leading to medial arch collapse. Diagnosis can be made clinically with loss of medial arch of the foot which may progress to hindfoot valgus, forefoot abduction and subsequent development of midfoot osteoarthritis. Achilles Tend",
+        "topics": [
+          {
+            "shortName": "ob_foot_ankle_tendon_conditions_posterior_tibial_tendon_insufficiency_ptti",
+            "title": "Posterior Tibial Tendon Insufficiency (PTTI)",
+            "definition": "summary: Posterior Tibial Tendon Insufficiency is the most common cause of adult-acquired flatfoot deformity, caused by attenuation and tenosynovitis of the posterior tibial tendon leading to medial arch collapse.; Diagnosis can be made clinically with loss of medial arch of the foot which may progress to hindfoot valgus, forefoot abduction and subsequent development of midfoot osteoarthritis.; Treatment is nonoperative with orthotics and ankle braces in early stages. A variety of surgical options are available and indicated for progressive and rigid deformities, subtalar or midfoot arthritis, and failure of nonoperative management..",
+            "summary": "Posterior Tibial Tendon Insufficiency is the most common cause of adult-acquired flatfoot deformity, caused by attenuation and tenosynovitis of the posterior tibial tendon leading to medial arch collapse. Diagnosis can be made clinically with loss of medial arch of the foot which may progress to hindfoot valgus, forefoot abduction and subsequent development of midfoot osteoarthritis.",
+            "obTopicId": "7020",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Tendon Conditions",
+              "section": "Posterior Tibial Tendon Insufficiency (PTTI)",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7020/posterior-tibial-tendon-insufficiency-ptti"
+            }
+          },
+          {
+            "shortName": "ob_foot_ankle_tendon_conditions_achilles_tendonitis",
+            "title": "Achilles Tendonitis",
+            "definition": "Summary: Achilles Tendonitis consists of a series of 3 conditions affecting the achilles tendon which include: insertional Achilles tendonitis, retrocalcaneal bursitis & Haglund deformity, and Achilles tendonitis.; Diagnosis can be made with radiographs showing spurs and intratendinous calcification and in the case of Haglund deformity, an enlargement of the posterosuperior tuberosity of the calcaneus.; Treatment is a trial of nonoperative management of NSAIDs, activity modification, shoe wear modifications, and physical therapy. Surgical management is indicated in patients with progressive symptoms who fail conservative management..",
+            "summary": "Achilles Tendonitis consists of a series of 3 conditions affecting the achilles tendon which include: insertional Achilles tendonitis, retrocalcaneal bursitis & Haglund deformity, and Achilles tendonitis. Diagnosis can be made with radiographs showing spurs and intratendinous calcification and in the case of Haglund deformity, an enlargement of the posterosuperior tuberosity of the calcaneus.",
+            "obTopicId": "7022",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Tendon Conditions",
+              "section": "Achilles Tendonitis",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7022/achilles-tendonitis"
+            }
+          },
+          {
+            "shortName": "ob_foot_ankle_tendon_conditions_fhl_tendonitis_and_injuries",
+            "title": "FHL Tendonitis & Injuries",
+            "definition": "summary: FHL Tendonitis & Injuries occur as a result of impingement of the flexor hallucis longus tendon with resultant tendonitis and even tendon rupture along the posterior ankle joint.; Diagnosis can be made clinically with posteromedial ankle pain and pain with resisted flexion of the hallux IP joint. MRI studies may show tenosynovitis of the tendon.; Treatment is generally rest, activity modifications and NSAIDs. Surgical management is indicated for acute FHL tendon laceration and progressive tendonitis that fails nonoperative management..",
+            "summary": "FHL Tendonitis & Injuries occur as a result of impingement of the flexor hallucis longus tendon with resultant tendonitis and even tendon rupture along the posterior ankle joint. Diagnosis can be made clinically with posteromedial ankle pain and pain with resisted flexion of the hallux IP joint. MRI studies may show tenosynovitis of the tendon.",
+            "obTopicId": "7024",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Tendon Conditions",
+              "section": "FHL Tendonitis & Injuries",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7024/fhl-tendonitis-and-injuries"
+            }
+          },
+          {
+            "shortName": "ob_foot_ankle_tendon_conditions_plantar_fasciitis",
+            "title": "Plantar Fasciitis",
+            "definition": "summary: Plantar Fasciitis is a painful heel condition caused by inflammation of the plantar fascia aponeurosis at its origin on the calcaneus.; Diagnosis is made clinically with tenderness to palpation at the medial tuberosity of the calcaneus that worsens with dorsiflexion of the toes and foot.; Treatment is a prolonged course of pain control, achilles/plantar fascia stretching, and orthotics. Rarely, surgical management is indicated in the case of progressive symptoms that fail nonoperative management..",
+            "summary": "Plantar Fasciitis is a painful heel condition caused by inflammation of the plantar fascia aponeurosis at its origin on the calcaneus. Diagnosis is made clinically with tenderness to palpation at the medial tuberosity of the calcaneus that worsens with dorsiflexion of the toes and foot.",
+            "obTopicId": "7025",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Tendon Conditions",
+              "section": "Plantar Fasciitis",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7025/plantar-fasciitis"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Tendon Conditions"
+        }
+      },
+      {
+        "shortName": "ob_foot_ankle_hallux_conditions",
+        "title": "Hallux Conditions",
+        "field": "Degenerative Conditions",
+        "definition": "OrthoBullets chapter \"Hallux Conditions\" (Degenerative Conditions): summary: Hallux Valgus, commonly referred to as a bunion, is a complex valgus deformity of the first ray that can cause medial big toe pain and difficulty with shoe wear.; Diagnosis is made clinically with presence of a hallux that rests in a valgus and pronated position. Radiographs of the foot are obtained to identify the severity of the disease and for surgical planning.; Treatment can be nonoperative with shoe modifications for mild and minimally symptomatic cases. Surgical management is ind…",
+        "summary": "Hallux Valgus, commonly referred to as a bunion, is a complex valgus deformity of the first ray that can cause medial big toe pain and difficulty with shoe wear. Diagnosis is made clinically with presence of a hallux that rests in a valgus and pronated position. Radiographs of the foot are obtained to identify the severity of the disease and for surgical planning. Hallux Varus is a condition chara",
+        "topics": [
+          {
+            "shortName": "ob_foot_ankle_hallux_conditions_hallux_valgus",
+            "title": "Hallux Valgus",
+            "definition": "summary: Hallux Valgus, commonly referred to as a bunion, is a complex valgus deformity of the first ray that can cause medial big toe pain and difficulty with shoe wear.; Diagnosis is made clinically with presence of a hallux that rests in a valgus and pronated position. Radiographs of the foot are obtained to identify the severity of the disease and for surgical planning.; Treatment can be nonoperative with shoe modifications for mild and minimally symptomatic cases. Surgical management is indicated for progressive deformity and difficulty with shoe wear..",
+            "summary": "Hallux Valgus, commonly referred to as a bunion, is a complex valgus deformity of the first ray that can cause medial big toe pain and difficulty with shoe wear. Diagnosis is made clinically with presence of a hallux that rests in a valgus and pronated position. Radiographs of the foot are obtained to identify the severity of the disease and for surgical planning.",
+            "obTopicId": "7008",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Hallux Conditions",
+              "section": "Hallux Valgus",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7008/hallux-valgus"
+            }
+          },
+          {
+            "shortName": "ob_foot_ankle_hallux_conditions_hallux_varus",
+            "title": "Hallux Varus",
+            "definition": "summary: Hallux Varus is a condition characterized by the medial deviation of the hallux relative to the 1st metatarsal bone, most often the result of overcorrection from prior bunion surgery.; Diagnosis is made clinically with varus angulation of the great toe.; Treatment may be observation or operative depending on severity of varus, prior surgeries to the hallux, and patient symptoms..",
+            "summary": "Hallux Varus is a condition characterized by the medial deviation of the hallux relative to the 1st metatarsal bone, most often the result of overcorrection from prior bunion surgery. Diagnosis is made clinically with varus angulation of the great toe.",
+            "obTopicId": "7012",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Hallux Conditions",
+              "section": "Hallux Varus",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7012/hallux-varus"
+            }
+          },
+          {
+            "shortName": "ob_foot_ankle_hallux_conditions_hallux_rigidus_mtp_joint_arthritis",
+            "title": "Hallux Rigidus (MTP joint arthritis)",
+            "definition": "summary: Hallux rigidus is a common foot condition characterized by pain and loss of motion of the 1st MTP joint in adults due to degenerative arthritis.; Diagnosis is made with orthogonal radiographs of the foot that may show joint space narrowing and dorsal osteophytes of the 1st MTP joint.; Treatment of early disease consists of a trial of nonoperative management with a Morton's extension orthotic. Operative management is indicated for higher grade disease and varies depending on chronicity of symptoms and severity of osteoarthritis..",
+            "summary": "Hallux rigidus is a common foot condition characterized by pain and loss of motion of the 1st MTP joint in adults due to degenerative arthritis. Diagnosis is made with orthogonal radiographs of the foot that may show joint space narrowing and dorsal osteophytes of the 1st MTP joint.",
+            "obTopicId": "7009",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Hallux Conditions",
+              "section": "Hallux Rigidus (MTP joint arthritis)",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7009/hallux-rigidus-mtp-joint-arthritis"
+            }
+          },
+          {
+            "shortName": "ob_foot_ankle_hallux_conditions_sesamoid_injuries_of_the_hallux",
+            "title": "Sesamoid Injuries of the Hallux",
+            "definition": "summary: Sesamoid injuries of the Hallux consist of a constellation of injuries to the sesamoid complex consisting of fractures, tendonitis, and ligamentous injuries.; Diagnosis is suspected with hallux pain that is worse with hyperextension and can be confirmed with MRI studies.; Treatment depends on the specific injury to the sesamoid complex, chronicity and patient activity demands..",
+            "summary": "Sesamoid injuries of the Hallux consist of a constellation of injuries to the sesamoid complex consisting of fractures, tendonitis, and ligamentous injuries. Diagnosis is suspected with hallux pain that is worse with hyperextension and can be confirmed with MRI studies.",
+            "obTopicId": "7010",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Hallux Conditions",
+              "section": "Sesamoid Injuries of the Hallux",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7010/sesamoid-injuries-of-the-hallux"
+            }
+          },
+          {
+            "shortName": "ob_foot_ankle_hallux_conditions_turf_toe",
+            "title": "Turf Toe",
+            "definition": "summary: Turf Toe is a hyperextension injury to the plantar plate and sesamoid complex of the big toe metatarsophalangeal joint that most commonly occurs in contact athletic sports.; Diagnosis is made clinically with the inability to hyperextend the hallux MTP joint without significant pain and the inability to push off with the big toe. A vertical Lachman test will show greater laxity compared to the contralateral side.; Treatment is rest, NSAIDs, taping, stiff-sole shoe, or walking boot in the majority of cases. Surgical repair is indicated for patients with progressive and persistent symptoms who fail nonoperative management..",
+            "summary": "Turf Toe is a hyperextension injury to the plantar plate and sesamoid complex of the big toe metatarsophalangeal joint that most commonly occurs in contact athletic sports. Diagnosis is made clinically with the inability to hyperextend the hallux MTP joint without significant pain and the inability to push off with the big toe. A vertical Lachman test will show greater laxity compared to the…",
+            "obTopicId": "7011",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Hallux Conditions",
+              "section": "Turf Toe",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7011/turf-toe"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Hallux Conditions"
+        }
+      },
+      {
+        "shortName": "ob_foot_ankle_lesser_toe_deformities",
+        "title": "Lesser Toe Deformities",
+        "field": "Degenerative Conditions",
+        "definition": "OrthoBullets chapter \"Lesser Toe Deformities\" (Degenerative Conditions): summary: Claw toe is a lesser toe deformity characterized by MTP hyperextension and resulting PIP and DIP flexion.; Diagnosis is made clinically with presence of MTP hyperextension, PIP flexion and DIP flexion of a lesser toe.; Treatment is a trial of nonoperative management with shoe modification and taping. Surgical management is indicated for progressive deformity, fixed contractures, and dorsal toe ulcerations.. summary: Hammer Toe is a lesser toe deformity characterized by PIP flexion, DIP …",
+        "summary": "Claw toe is a lesser toe deformity characterized by MTP hyperextension and resulting PIP and DIP flexion. Diagnosis is made clinically with presence of MTP hyperextension, PIP flexion and DIP flexion of a lesser toe. Hammer Toe is a lesser toe deformity characterized by PIP flexion, DIP extension and MTP slight extension. Diagnosis is made clinically with the presence of a rigid or flexible lesser",
+        "topics": [
+          {
+            "shortName": "ob_foot_ankle_lesser_toe_deformities_claw_toe",
+            "title": "Claw Toe",
+            "definition": "summary: Claw toe is a lesser toe deformity characterized by MTP hyperextension and resulting PIP and DIP flexion.; Diagnosis is made clinically with presence of MTP hyperextension, PIP flexion and DIP flexion of a lesser toe.; Treatment is a trial of nonoperative management with shoe modification and taping. Surgical management is indicated for progressive deformity, fixed contractures, and dorsal toe ulcerations..",
+            "summary": "Claw toe is a lesser toe deformity characterized by MTP hyperextension and resulting PIP and DIP flexion. Diagnosis is made clinically with presence of MTP hyperextension, PIP flexion and DIP flexion of a lesser toe.",
+            "obTopicId": "7013",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Lesser Toe Deformities",
+              "section": "Claw Toe",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7013/claw-toe"
+            }
+          },
+          {
+            "shortName": "ob_foot_ankle_lesser_toe_deformities_hammer_toe",
+            "title": "Hammer Toe",
+            "definition": "summary: Hammer Toe is a lesser toe deformity characterized by PIP flexion, DIP extension and MTP slight extension.; Diagnosis is made clinically with the presence of a rigid or flexible lesser toe with PIP flexion, DIP extension and MTP slight extension.; Treatment is a trial of nonoperative management with shoe modification. Surgical management is indicated for progressive deformity, fixed contractures, and dorsal toe ulcerations..",
+            "summary": "Hammer Toe is a lesser toe deformity characterized by PIP flexion, DIP extension and MTP slight extension. Diagnosis is made clinically with the presence of a rigid or flexible lesser toe with PIP flexion, DIP extension and MTP slight extension.",
+            "obTopicId": "7014",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Lesser Toe Deformities",
+              "section": "Hammer Toe",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7014/hammer-toe"
+            }
+          },
+          {
+            "shortName": "ob_foot_ankle_lesser_toe_deformities_mallet_toe",
+            "title": "Mallet Toe",
+            "definition": "summary: Mallet Toe is a lesser toe deformity characterized by hyperflexion of the DIP joint.; Diagnosis is made clinically with DIP joint hyperflexion with neutral PIP and MTP joints in a lesser toe.; Treatment is a trial of nonoperative management with shoe modification and toe sleeves. Surgical management is indicated for progressive deformity, fixed contractures, and dorsal toe ulcerations..",
+            "summary": "Mallet Toe is a lesser toe deformity characterized by hyperflexion of the DIP joint. Diagnosis is made clinically with DIP joint hyperflexion with neutral PIP and MTP joints in a lesser toe.",
+            "obTopicId": "7015",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Lesser Toe Deformities",
+              "section": "Mallet Toe",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7015/mallet-toe"
+            }
+          },
+          {
+            "shortName": "ob_foot_ankle_lesser_toe_deformities_synovitis_of_2nd_mtp",
+            "title": "Synovitis of 2nd MTP",
+            "definition": "summary: Synovitis of 2nd MTP is the most frequent monoarticular synovitis of the MTP joint frequently associated with elongated 2nd metatarsal or a hallux valgus deformity.; Diagnosis is made clinically with tenderness plantarly over 2nd MTP plantar plate or over dorsal capsule. MRI can be helpful in cases of unclear diagnosis.; Treatment is a trial of conservative management with shoe modifications and NSAIDs. Surgical management is indicated for patients with progressive symptoms who fail nonoperative management..",
+            "summary": "Synovitis of 2nd MTP is the most frequent monoarticular synovitis of the MTP joint frequently associated with elongated 2nd metatarsal or a hallux valgus deformity. Diagnosis is made clinically with tenderness plantarly over 2nd MTP plantar plate or over dorsal capsule. MRI can be helpful in cases of unclear diagnosis.",
+            "obTopicId": "7016",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Lesser Toe Deformities",
+              "section": "Synovitis of 2nd MTP",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7016/synovitis-of-2nd-mtp"
+            }
+          },
+          {
+            "shortName": "ob_foot_ankle_lesser_toe_deformities_mtp_dislocations",
+            "title": "MTP Dislocations",
+            "definition": "summary: MTP Dislocations are conditions characterized by multiplanar instability of the MTP joint which may present as as a \"crossover toe.\"; Diagnosis is made clinically with presence of dorsomedial deviation of the toe in relation to the metatarsal.; Treatment consists of a trial of shoe modifications, and taping. Operative management is indicated for patients with progressive pain and fixed deformities..",
+            "summary": "MTP Dislocations are conditions characterized by multiplanar instability of the MTP joint which may present as as a \"crossover toe.\" Diagnosis is made clinically with presence of dorsomedial deviation of the toe in relation to the metatarsal.",
+            "obTopicId": "7053",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Lesser Toe Deformities",
+              "section": "MTP Dislocations",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7053/mtp-dislocations"
+            }
+          },
+          {
+            "shortName": "ob_foot_ankle_lesser_toe_deformities_bunionette_deformity",
+            "title": "Bunionette Deformity",
+            "definition": "summary: Bunionette Deformities, commonly called tailor's bunion, are prominences on the lateral aspect of the 5th metatarsal head that most commonly occur as a result of compression of the forefoot.; Diagnosis is made clinically with presence of a prominence on the lateral aspect of the 5th metatarsal head, often associated with pain and callus formation.; Treatment can be nonoperative with shoe modifications for mild and minimally symptomatic cases. Surgical management is indicated for progressive deformity and difficulty with shoe wear.",
+            "summary": "Bunionette Deformities, commonly called tailor's bunion, are prominences on the lateral aspect of the 5th metatarsal head that most commonly occur as a result of compression of the forefoot. Diagnosis is made clinically with presence of a prominence on the lateral aspect of the 5th metatarsal head, often associated with pain and callus formation.",
+            "obTopicId": "7017",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Lesser Toe Deformities",
+              "section": "Bunionette Deformity",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7017/bunionette-deformity"
+            }
+          },
+          {
+            "shortName": "ob_foot_ankle_lesser_toe_deformities_freiberg_s_disease",
+            "title": "Freiberg's Disease",
+            "definition": "summary: Freiberg's Disease is a rare foot condition characterized by infarction and fracture of the metatarsal head.; Diagnosis is made radiographically with plain radiographs showing subchondral sclerosis, flattening of the involved MT head and eventual joint destruction in advance disease. MRI studies may be needed to detect early disease.; Treatment is activity modification and NSAIDs in early disease. Surgical management is indicated for progressive pain, joint destruction and joint deformity..",
+            "summary": "Freiberg's Disease is a rare foot condition characterized by infarction and fracture of the metatarsal head. Diagnosis is made radiographically with plain radiographs showing subchondral sclerosis, flattening of the involved MT head and eventual joint destruction in advance disease. MRI studies may be needed to detect early disease.",
+            "obTopicId": "7018",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Lesser Toe Deformities",
+              "section": "Freiberg's Disease",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7018/freibergs-disease"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Lesser Toe Deformities"
+        }
+      },
+      {
+        "shortName": "ob_foot_ankle_arthritic_conditions",
+        "title": "Arthritic Conditions",
+        "field": "Degenerative Conditions",
+        "definition": "OrthoBullets chapter \"Arthritic Conditions\" (Degenerative Conditions): summary: Osteochondral Lesions of the Talus are focal injuries to the talar dome with variable involvement of the subchondral bone and cartilage which may be caused by a traumatic event or repetitive microtrauma.; Diagnosis can be made with plain ankle radiographs. MRI studies are helpful in determining the size of the lesion, the extent of bony edema, and identify unstable lesions.; Treatment can be nonoperative or operative depending on patient age, patient activity demands, lesion size, and s…",
+        "summary": "Osteochondral Lesions of the Talus are focal injuries to the talar dome with variable involvement of the subchondral bone and cartilage which may be caused by a traumatic event or repetitive microtrauma. Diagnosis can be made with plain ankle radiographs. MRI studies are helpful in determining the size of the lesion, the extent of bony edema, and identify unstable lesions. Ankle Arthritis is a com",
+        "topics": [
+          {
+            "shortName": "ob_foot_ankle_arthritic_conditions_osteochondral_lesions_of_the_talus",
+            "title": "Osteochondral Lesions of the Talus",
+            "definition": "summary: Osteochondral Lesions of the Talus are focal injuries to the talar dome with variable involvement of the subchondral bone and cartilage which may be caused by a traumatic event or repetitive microtrauma.; Diagnosis can be made with plain ankle radiographs. MRI studies are helpful in determining the size of the lesion, the extent of bony edema, and identify unstable lesions.; Treatment can be nonoperative or operative depending on patient age, patient activity demands, lesion size, and stability of lesion..",
+            "summary": "Osteochondral Lesions of the Talus are focal injuries to the talar dome with variable involvement of the subchondral bone and cartilage which may be caused by a traumatic event or repetitive microtrauma. Diagnosis can be made with plain ankle radiographs. MRI studies are helpful in determining the size of the lesion, the extent of bony edema, and identify unstable lesions.",
+            "obTopicId": "7034",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Arthritic Conditions",
+              "section": "Osteochondral Lesions of the Talus",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7034/osteochondral-lesions-of-the-talus"
+            }
+          },
+          {
+            "shortName": "ob_foot_ankle_arthritic_conditions_ankle_arthritis",
+            "title": "Ankle Arthritis",
+            "definition": "Summary: Ankle Arthritis is a common degenerative joint disease of the tibiotalar joint that presents with pain, stiffness, and deformity of the ankle.; Most commonly caused by post-traumatic etiology but can also present as primary osteoarthritis or inflammatory arthritis.; Diagnosis is typically made with plain radiographs of the ankle.; Treatment can be nonoperative or operative depending on patient age, patient activity demands, severity of arthritis, and presence of tibiotalar deformity..",
+            "summary": "Ankle Arthritis is a common degenerative joint disease of the tibiotalar joint that presents with pain, stiffness, and deformity of the ankle. Most commonly caused by post-traumatic etiology but can also present as primary osteoarthritis or inflammatory arthritis.",
+            "obTopicId": "7037",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Arthritic Conditions",
+              "section": "Ankle Arthritis",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7037/ankle-arthritis"
+            }
+          },
+          {
+            "shortName": "ob_foot_ankle_arthritic_conditions_tibiotalar_impingement",
+            "title": "Tibiotalar Impingement",
+            "definition": "summary: Tibiotalar Impingement is a source of anterior ankle pain that is most often caused by osteophyte impingement in the anterior tibiotalar joint.; Diagnosis is made clinically with anterior ankle pain that worsens with forced dorsiflexion. Radiographs often show spurs in the anterior distal tibia or dorsal aspect of the talus.; Treatment is a trial of activity modifications, NSAIDs and corticosteroid injections. Surgical management is indicated in patients with progressive symptoms who fail nonoperative management..",
+            "summary": "Tibiotalar Impingement is a source of anterior ankle pain that is most often caused by osteophyte impingement in the anterior tibiotalar joint. Diagnosis is made clinically with anterior ankle pain that worsens with forced dorsiflexion. Radiographs often show spurs in the anterior distal tibia or dorsal aspect of the talus.",
+            "obTopicId": "7035",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Arthritic Conditions",
+              "section": "Tibiotalar Impingement",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7035/tibiotalar-impingement"
+            }
+          },
+          {
+            "shortName": "ob_foot_ankle_arthritic_conditions_midfoot_arthritis",
+            "title": "Midfoot Arthritis",
+            "definition": "summary: Midfoot Arthritis is defined as arthritis of the midfoot which includes the following joints: naviculocuneiform joint, intercuneiform joints, and metatarsal cuneiform joints.; Diagnosis is made with plain radiographs of the foot often showing joint space narrowing and dorsal osteophyte formation in the midfoot.; Treatment can be nonoperative or operative depending on patient age, patient activity demands, severity of arthritis, and presence of midfoot deformity..",
+            "summary": "Midfoot Arthritis is defined as arthritis of the midfoot which includes the following joints: naviculocuneiform joint, intercuneiform joints, and metatarsal cuneiform joints. Diagnosis is made with plain radiographs of the foot often showing joint space narrowing and dorsal osteophyte formation in the midfoot.",
+            "obTopicId": "7036",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Arthritic Conditions",
+              "section": "Midfoot Arthritis",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7036/midfoot-arthritis"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Arthritic Conditions"
+        }
+      },
+      {
+        "shortName": "ob_foot_ankle_diabetic_conditions",
+        "title": "Diabetic Conditions",
+        "field": "Neurologic Conditions",
+        "definition": "OrthoBullets chapter \"Diabetic Conditions\" (Neurologic Conditions): summary: Diabetic Foot Ulcers are very common lower extremity wounds that occur in diabetics with peripheral neuropathy and are responsible for 85% of lower extremity amputations.; Diagnosis is made clinically with presence of a plantar foot ulcer which may probe to bone. MRI studies are useful to assess for presence and extent of osteomyelitis.; Treatment depends on ulcer size, ulcer thickness, ulcer location and presence of concomitant infection.. Summary: Diabetic Charcot Neuropathy is a chro…",
+        "summary": "Diabetic Foot Ulcers are very common lower extremity wounds that occur in diabetics with peripheral neuropathy and are responsible for 85% of lower extremity amputations. Diagnosis is made clinically with presence of a plantar foot ulcer which may probe to bone. MRI studies are useful to assess for presence and extent of osteomyelitis. Diabetic Charcot Neuropathy is a chronic and progressive disea",
+        "topics": [
+          {
+            "shortName": "ob_foot_ankle_diabetic_conditions_diabetic_foot_ulcers",
+            "title": "Diabetic Foot Ulcers",
+            "definition": "summary: Diabetic Foot Ulcers are very common lower extremity wounds that occur in diabetics with peripheral neuropathy and are responsible for 85% of lower extremity amputations.; Diagnosis is made clinically with presence of a plantar foot ulcer which may probe to bone. MRI studies are useful to assess for presence and extent of osteomyelitis.; Treatment depends on ulcer size, ulcer thickness, ulcer location and presence of concomitant infection..",
+            "summary": "Diabetic Foot Ulcers are very common lower extremity wounds that occur in diabetics with peripheral neuropathy and are responsible for 85% of lower extremity amputations. Diagnosis is made clinically with presence of a plantar foot ulcer which may probe to bone. MRI studies are useful to assess for presence and extent of osteomyelitis.",
+            "obTopicId": "7046",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Diabetic Conditions",
+              "section": "Diabetic Foot Ulcers",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7046/diabetic-foot-ulcers"
+            }
+          },
+          {
+            "shortName": "ob_foot_ankle_diabetic_conditions_diabetic_charcot_neuropathy",
+            "title": "Diabetic Charcot Neuropathy",
+            "definition": "Summary: Diabetic Charcot Neuropathy is a chronic and progressive disease that occurs as a result of loss of protective sensation which leads to the destruction of foot and ankle joints and surrounding bony structures.; Diagnosis can be made clinically with a warm and erythematous foot with erythema that decreases with foot elevation. Radiographs often reveal obliteration of joint space and fragmentation of both articular surfaces of a joint leading to subluxation or dislocation.; Treatment is a trial of total contact casting for acute charcot deformities without skin breakdown. Operative management is indicated for recurrent infections, deformities, and severe skin breakdown..",
+            "summary": "Diabetic Charcot Neuropathy is a chronic and progressive disease that occurs as a result of loss of protective sensation which leads to the destruction of foot and ankle joints and surrounding bony structures. Diagnosis can be made clinically with a warm and erythematous foot with erythema that decreases with foot elevation. Radiographs often reveal obliteration of joint space and fragmentation…",
+            "obTopicId": "7047",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Diabetic Conditions",
+              "section": "Diabetic Charcot Neuropathy",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7047/diabetic-charcot-neuropathy"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Diabetic Conditions"
+        }
+      },
+      {
+        "shortName": "ob_foot_ankle_neurologic_conditions",
+        "title": "Neurologic Conditions",
+        "field": "Neurologic Conditions",
+        "definition": "OrthoBullets chapter \"Neurologic Conditions\" (Neurologic Conditions): summary: Acquired Spastic Equinovarus Deformity is a progressive foot deformity most commonly seen in patients following a cerebrovascular accident or traumatic brain injury.; Diagnosis is made clinically with presence of a spastic equinovarus foot deformity in a patient with a prior CVA or TBI.; Treatment is an initial trial of observation with bracing. Surgical management is indicated for fixed contractures that persist after the period of neurologic recovery and are not braceable.. summary: I…",
+        "summary": "Acquired Spastic Equinovarus Deformity is a progressive foot deformity most commonly seen in patients following a cerebrovascular accident or traumatic brain injury. Diagnosis is made clinically with presence of a spastic equinovarus foot deformity in a patient with a prior CVA or TBI. Interdigital Neuromas, also known as Morton's neuroma, is a compressive neuropathy of the interdigital nerve that",
+        "topics": [
+          {
+            "shortName": "ob_foot_ankle_neurologic_conditions_acquired_spastic_equinovarus_deformity",
+            "title": "Acquired Spastic Equinovarus Deformity",
+            "definition": "summary: Acquired Spastic Equinovarus Deformity is a progressive foot deformity most commonly seen in patients following a cerebrovascular accident or traumatic brain injury.; Diagnosis is made clinically with presence of a spastic equinovarus foot deformity in a patient with a prior CVA or TBI.; Treatment is an initial trial of observation with bracing. Surgical management is indicated for fixed contractures that persist after the period of neurologic recovery and are not braceable..",
+            "summary": "Acquired Spastic Equinovarus Deformity is a progressive foot deformity most commonly seen in patients following a cerebrovascular accident or traumatic brain injury. Diagnosis is made clinically with presence of a spastic equinovarus foot deformity in a patient with a prior CVA or TBI.",
+            "obTopicId": "7000",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Neurologic Conditions",
+              "section": "Acquired Spastic Equinovarus Deformity",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7000/acquired-spastic-equinovarus-deformity"
+            }
+          },
+          {
+            "shortName": "ob_foot_ankle_neurologic_conditions_interdigital_morton_s_neuroma",
+            "title": "Interdigital (Morton's) Neuroma",
+            "definition": "summary: Interdigital Neuromas, also known as Morton's neuroma, is a compressive neuropathy of the interdigital nerve that often leads to plantar forefoot pain.; Diagnosis is made clinically with tenderness over the plantar aspect of the involved webspace with a palpable neuroma and a positive Mulder's click on examination.; Treatment is a trial of nonoperative management with a wide shoe box with metatarsal pads. Operative management is indicated for patients with persistent symptoms who fail nonoperative management..",
+            "summary": "Interdigital Neuromas, also known as Morton's neuroma, is a compressive neuropathy of the interdigital nerve that often leads to plantar forefoot pain. Diagnosis is made clinically with tenderness over the plantar aspect of the involved webspace with a palpable neuroma and a positive Mulder's click on examination.",
+            "obTopicId": "7041",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Neurologic Conditions",
+              "section": "Interdigital (Morton's) Neuroma",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7041/interdigital-mortons-neuroma"
+            }
+          },
+          {
+            "shortName": "ob_foot_ankle_neurologic_conditions_tarsal_tunnel_syndrome",
+            "title": "Tarsal Tunnel Syndrome",
+            "definition": "Summary: Tarsal Tunnel Syndrome is a compressive neuropathy of the tibial nerve at the level of the tarsal tunnel which can lead to pain and paresthesias of the plantar foot.; Diagnosis can be suspected clinically with burning plantar foot pain with a positive Tinel's sign over the tibial nerve. EMG/NCS can help confirm the diagnosis.; Treatment is an initial trial of pain management and orthotics. Operative tarsal tunnel release is indicated in patients with persistent symptoms who fail nonoperative management..",
+            "summary": "Tarsal Tunnel Syndrome is a compressive neuropathy of the tibial nerve at the level of the tarsal tunnel which can lead to pain and paresthesias of the plantar foot. Diagnosis can be suspected clinically with burning plantar foot pain with a positive Tinel's sign over the tibial nerve. EMG/NCS can help confirm the diagnosis.",
+            "obTopicId": "7042",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Neurologic Conditions",
+              "section": "Tarsal Tunnel Syndrome",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7042/tarsal-tunnel-syndrome"
+            }
+          },
+          {
+            "shortName": "ob_foot_ankle_neurologic_conditions_deep_peroneal_nerve_entrapment",
+            "title": "Deep Peroneal Nerve Entrapment",
+            "definition": "summary: Deep Peroneal Nerve Entrapment, also called Anterior Tarsal Tunnel Syndrome, is a rare compression neuropathy affecting the deep peroneal nerve, most commonly at the fibro-osseous tunnel formed by the inferior extensor retinaculum.; Diagnosis can be suspected clinically with dorsal foot pain with radiation to the 1st webspace and a positive Tinel's sign over the DPN.; Treatment is a trial of nonoperative management with shoe modifications. Surgical anterior tarsal tunnel release is indicated in patients with persistent symptoms who fail nonoperative management..",
+            "summary": "Deep Peroneal Nerve Entrapment, also called Anterior Tarsal Tunnel Syndrome, is a rare compression neuropathy affecting the deep peroneal nerve, most commonly at the fibro-osseous tunnel formed by the inferior extensor retinaculum. Diagnosis can be suspected clinically with dorsal foot pain with radiation to the 1st webspace and a positive Tinel's sign over the DPN.",
+            "obTopicId": "7043",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Neurologic Conditions",
+              "section": "Deep Peroneal Nerve Entrapment",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7043/deep-peroneal-nerve-entrapment"
+            }
+          },
+          {
+            "shortName": "ob_foot_ankle_neurologic_conditions_leg_nerve_entrapment_syndromes",
+            "title": "Leg Nerve Entrapment Syndromes",
+            "definition": "Ilioinguinal nerve: Can be caused by hypertrophied abdominal muscles as a result of intensive training; Hyperesthesia is common; Pain worse with hyperextension of hip; Treatment.",
+            "summary": "Can be caused by hypertrophied abdominal muscles as a result of intensive training Hyperesthesia is common",
+            "obTopicId": "7044",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Neurologic Conditions",
+              "section": "Leg Nerve Entrapment Syndromes",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7044/leg-nerve-entrapment-syndromes"
+            }
+          },
+          {
+            "shortName": "ob_foot_ankle_neurologic_conditions_poliomyelitis",
+            "title": "Poliomyelitis",
+            "definition": "Summary: Poliomyelitis is a disease caused by viral destruction of the anterior horn cells in the spinal cord and brain stem motor nuclei.; Diagnosis is made clinically with presence of motor weakness with normal sensation in a patient with history of polio.; Treatment may be nonoperative or operative depending on degree of functional limitation and presence of secondary contractures..",
+            "summary": "Poliomyelitis is a disease caused by viral destruction of the anterior horn cells in the spinal cord and brain stem motor nuclei. Diagnosis is made clinically with presence of motor weakness with normal sensation in a patient with history of polio.",
+            "obTopicId": "7048",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Neurologic Conditions",
+              "section": "Poliomyelitis",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7048/poliomyelitis"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Neurologic Conditions"
+        }
+      },
+      {
+        "shortName": "ob_foot_ankle_tested_procedure_review",
+        "title": "Tested Procedure Review",
+        "field": "Procedures",
+        "definition": "OrthoBullets chapter \"Tested Procedure Review\" (Procedures): Indications. Positioning and Scope insertion summary: Ankle arthrodesis is the fusion of the tibiotalar joint most commonly performed for end-stage arthritis of the joint.; The procedure may be performed with an open approach or arthroscopically.; The most common complications are development of subtalar arthritis and nonunion.. summary: Total Ankle Arthroplasty is an alternative to ankle arthrodesis for the treatment of end-stage ankle osteoarthritis.; The procedure attempts to preserve functio…",
+        "summary": "Indications Ankle arthrodesis is the fusion of the tibiotalar joint most commonly performed for end-stage arthritis of the joint. The procedure may be performed with an open approach or arthroscopically.",
+        "topics": [
+          {
+            "shortName": "ob_foot_ankle_tested_procedure_review_ankle_arthroscopy",
+            "title": "Ankle Arthroscopy",
+            "definition": "Indications. Positioning and Scope insertion",
+            "summary": "Indications",
+            "obTopicId": "7007",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Tested Procedure Review",
+              "section": "Ankle Arthroscopy",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7007/ankle-arthroscopy"
+            }
+          },
+          {
+            "shortName": "ob_foot_ankle_tested_procedure_review_ankle_arthrodesis",
+            "title": "Ankle Arthrodesis",
+            "definition": "summary: Ankle arthrodesis is the fusion of the tibiotalar joint most commonly performed for end-stage arthritis of the joint.; The procedure may be performed with an open approach or arthroscopically.; The most common complications are development of subtalar arthritis and nonunion..",
+            "summary": "Ankle arthrodesis is the fusion of the tibiotalar joint most commonly performed for end-stage arthritis of the joint. The procedure may be performed with an open approach or arthroscopically.",
+            "obTopicId": "7052",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Tested Procedure Review",
+              "section": "Ankle Arthrodesis",
+              "url": "https://www.orthobullets.com/foot-and-ankle/7052/ankle-arthrodesis"
+            }
+          },
+          {
+            "shortName": "ob_foot_ankle_tested_procedure_review_total_ankle_arthroplasty",
+            "title": "Total Ankle Arthroplasty",
+            "definition": "summary: Total Ankle Arthroplasty is an alternative to ankle arthrodesis for the treatment of end-stage ankle osteoarthritis.; The procedure attempts to preserve functional range of motion, which would otherwise be sacrificed with ankle arthrodesis.; Contraindications include active infection, peripheral vascular disease, charcot arthropathy, severe osteoporosis, osteonecrosis of the talus, and peripheral neuropathy..",
+            "summary": "Total Ankle Arthroplasty is an alternative to ankle arthrodesis for the treatment of end-stage ankle osteoarthritis. The procedure attempts to preserve functional range of motion, which would otherwise be sacrificed with ankle arthrodesis.",
+            "obTopicId": "12133",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Tested Procedure Review",
+              "section": "Total Ankle Arthroplasty",
+              "url": "https://www.orthobullets.com/foot-and-ankle/12133/total-ankle-arthroplasty"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Tested Procedure Review"
+        }
+      }
+    ]
+  }
+}

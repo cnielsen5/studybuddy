@@ -1,0 +1,1256 @@
+{
+  "_meta": {
+    "source": "https://www.orthobullets.com/user/dashboard?id=all&specialty=8&menu=topic",
+    "generated_by": "scripts/scrape-orthobullets-taxonomy.ts",
+    "scraped_at": "2026-06-27T22:21:19.791Z",
+    "section": "pathology",
+    "field_count": 3,
+    "chapter_count": 19,
+    "topic_count": 76,
+    "backfilled_at": "2026-06-28T19:09:06.778Z",
+    "backfilled_by": "scripts/backfill-orthobullets-topic-content.ts"
+  },
+  "taxonomy": {
+    "section": "pathology",
+    "provenance": "orthobullets_site",
+    "obDataPending": false,
+    "notes": "Scraped from the OrthoBullets specialty dashboard (Field → Chapter → Topic). Fields collapsed into the section; chapters → L4, topics → L5.",
+    "chapters": [
+      {
+        "shortName": "ob_pathology_introduction",
+        "title": "Introduction",
+        "field": "Pathology",
+        "definition": "OrthoBullets chapter \"Introduction\" (Pathology): Introduction: Prognosis of bone cancer depends on the following variables overall stage of disease (incorporates all of the below) presence of metastasis skip (discontinous) lesions within the same bone histologic grade tumor size; The are two staging systems that are commonly used:. Criteria for prophylactic fixation: Several methods exist to predict the risk of pathologic fracture. These include; Prophylactic fixation is preferred to fixation of actual pathological fracture due to. Introductio…",
+        "summary": "Prognosis of bone cancer depends on the following variables overall stage of disease (incorporates all of the below) presence of metastasis skip (discontinous) lesions within the same bone histologic grade tumor size The are two staging systems that are commonly used: Several methods exist to predict the risk of pathologic fracture. These include Prophylactic fixation is preferred to fixation of a",
+        "topics": [
+          {
+            "shortName": "ob_pathology_introduction_bone_tumor_staging_systems",
+            "title": "Bone Tumor Staging Systems",
+            "definition": "Introduction: Prognosis of bone cancer depends on the following variables overall stage of disease (incorporates all of the below) presence of metastasis skip (discontinous) lesions within the same bone histologic grade tumor size; The are two staging systems that are commonly used:.",
+            "summary": "Prognosis of bone cancer depends on the following variables overall stage of disease (incorporates all of the below) presence of metastasis skip (discontinous) lesions within the same bone histologic grade tumor size The are two staging systems that are commonly used:",
+            "obTopicId": "8001",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Introduction",
+              "section": "Bone Tumor Staging Systems",
+              "url": "https://www.orthobullets.com/pathology/8001/bone-tumor-staging-systems"
+            }
+          },
+          {
+            "shortName": "ob_pathology_introduction_impending_fracture_and_prophylactic_fixation",
+            "title": "Impending Fracture & Prophylactic Fixation",
+            "definition": "Criteria for prophylactic fixation: Several methods exist to predict the risk of pathologic fracture. These include; Prophylactic fixation is preferred to fixation of actual pathological fracture due to.",
+            "summary": "Several methods exist to predict the risk of pathologic fracture. These include Prophylactic fixation is preferred to fixation of actual pathological fracture due to",
+            "obTopicId": "8002",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Introduction",
+              "section": "Impending Fracture & Prophylactic Fixation",
+              "url": "https://www.orthobullets.com/pathology/8002/impending-fracture-and-prophylactic-fixation"
+            }
+          },
+          {
+            "shortName": "ob_pathology_introduction_biopsy_principles",
+            "title": "Biopsy Principles",
+            "definition": "Introduction: Purpose of the biopsy is to confirm a suspected diagnosis; The biopsy is not a substitute for a thorough history, physical exam, and laboratory investigation.",
+            "summary": "Purpose of the biopsy is to confirm a suspected diagnosis The biopsy is not a substitute for a thorough history, physical exam, and laboratory investigation",
+            "obTopicId": "8082",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Introduction",
+              "section": "Biopsy Principles",
+              "url": "https://www.orthobullets.com/pathology/8082/biopsy-principles"
+            }
+          },
+          {
+            "shortName": "ob_pathology_introduction_chemotherapy",
+            "title": "Chemotherapy",
+            "definition": "Introduction: Mechanism; Resistance.",
+            "summary": "Mechanism Resistance",
+            "obTopicId": "8003",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Introduction",
+              "section": "Chemotherapy",
+              "url": "https://www.orthobullets.com/pathology/8003/chemotherapy"
+            }
+          },
+          {
+            "shortName": "ob_pathology_introduction_radiation_therapy",
+            "title": "Radiation Therapy",
+            "definition": "Introduction. Indications",
+            "summary": "Two mechanisms of action",
+            "obTopicId": "8004",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Introduction",
+              "section": "Radiation Therapy",
+              "url": "https://www.orthobullets.com/pathology/8004/radiation-therapy"
+            }
+          },
+          {
+            "shortName": "ob_pathology_introduction_differential_groups",
+            "title": "Differential Groups",
+            "definition": "Differential Groups. Introduction When answering questions with regard to orthopaedic pathology it is very useful to have an understanding of the different differential groups. This topic is broken down into the following differentials by Age Location Imaging Tumor Grade Histology Treatment Differentials by Age Age Benign Malignant Infants and childres(0 to 5 years) Osteomyelitis Osteofibrous dysplasia Metastatic rhabdomyosarcoma Metastatic rneuroblastoma Leukemia Young patient (10-40 years) NOFOsteoid osteomaGiant cell tumorABCUBCOsteochondroma & MHEChondroblastomaFibrous dysplasiaOsteomyelitisEosinophillic granuloma Osteosarcoma Ewing's Desmoplastic fibroma Leukemia Lymphoma Older patient (40-80 years) EnchondromaBone infarctBone islandPaget's diseaseHyperparathyroidism Metastatic bone disease Myeloma Lyphoma Chondrosarcoma MFH Secondary sarcoma (Paget's, irradiation) Differential by Location Location in Bone Multiple lesions in Young Patient EGFibrous dysplasiaLeukemiaLymphomaHemangioendotheliomaEnchondroma / Olliers / Marfucci'sOsteochondroma / MHENOF / Jaffe-Campanacci syndrome Multiple lesions in Older Patient Paget'sMetastatic bone diseaseMultiple myelomaLymphoma…",
+            "summary": "Introduction When answering questions with regard to orthopaedic pathology it is very useful to have an understanding of the different differential groups. This topic is broken down into the following differentials by Age Location Imaging Tumor Grade Histology Treatment Differentials by Age Age Benign Malignant Infants and childres(0 to 5 years) Osteomyelitis Osteofibrous dysplasia Metastatic…",
+            "obTopicId": "8006",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Introduction",
+              "section": "Differential Groups",
+              "url": "https://www.orthobullets.com/pathology/8006/differential-groups"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Introduction"
+        }
+      },
+      {
+        "shortName": "ob_pathology_osteogenic_tumors",
+        "title": "Osteogenic Tumors",
+        "field": "Bone Tumors",
+        "definition": "OrthoBullets chapter \"Osteogenic Tumors\" (Bone Tumors): Summary: Osteoid Osteomas are small, benign, osteogenic bone lesions most commonly found in the proximal femur. Patients typically present between ages 5 and 25 with regional pain that is worse at night and improves with NSAIDs.; Diagnosis is made radiographically by a characteristic lesion that is less than 1.5 cm in diameter with a sclerotic margin and radiolucent nidus.; High resolution CT scan distinguishes osteoid osteomas from other radiolucent bone lesions; Treatment is usually nonoperati…",
+        "summary": "Osteoid Osteomas are small, benign, osteogenic bone lesions most commonly found in the proximal femur. Patients typically present between ages 5 and 25 with regional pain that is worse at night and improves with NSAIDs. Diagnosis is made radiographically by a characteristic lesion that is less than 1.5 cm in diameter with a sclerotic margin and radiolucent nidus. Osteoblastomas are benign, aggress",
+        "topics": [
+          {
+            "shortName": "ob_pathology_osteogenic_tumors_osteoid_osteoma",
+            "title": "Osteoid Osteoma",
+            "definition": "Summary: Osteoid Osteomas are small, benign, osteogenic bone lesions most commonly found in the proximal femur. Patients typically present between ages 5 and 25 with regional pain that is worse at night and improves with NSAIDs.; Diagnosis is made radiographically by a characteristic lesion that is less than 1.5 cm in diameter with a sclerotic margin and radiolucent nidus.; High resolution CT scan distinguishes osteoid osteomas from other radiolucent bone lesions; Treatment is usually nonoperative with observation and NSAID for pain control. Radiofrequency ablation (RFA) or surgical resection may be indicated in patients with progressive and severe symptoms..",
+            "summary": "Osteoid Osteomas are small, benign, osteogenic bone lesions most commonly found in the proximal femur. Patients typically present between ages 5 and 25 with regional pain that is worse at night and improves with NSAIDs. Diagnosis is made radiographically by a characteristic lesion that is less than 1.5 cm in diameter with a sclerotic margin and radiolucent nidus.",
+            "obTopicId": "8012",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Osteogenic Tumors",
+              "section": "Osteoid Osteoma",
+              "url": "https://www.orthobullets.com/pathology/8012/osteoid-osteoma"
+            }
+          },
+          {
+            "shortName": "ob_pathology_osteogenic_tumors_osteoblastoma",
+            "title": "Osteoblastoma",
+            "definition": "Summary: Osteoblastomas are benign, aggressive osteogenic bone lesions commonly found in the posterior elements of the spine. Patients typically present between ages 10 and 30 with regional pain with only partial response from NSAIDs.; Diagnosis is made radiographically by a characteristic lesion that is > 2 cm in diameter with a sclerotic margin and radiolucent nidus.; Treatment is usually curettage or marginal excision with bone grafting..",
+            "summary": "Osteoblastomas are benign, aggressive osteogenic bone lesions commonly found in the posterior elements of the spine. Patients typically present between ages 10 and 30 with regional pain with only partial response from NSAIDs. Diagnosis is made radiographically by a characteristic lesion that is > 2 cm in diameter with a sclerotic margin and radiolucent nidus.",
+            "obTopicId": "8013",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Osteogenic Tumors",
+              "section": "Osteoblastoma",
+              "url": "https://www.orthobullets.com/pathology/8013/osteoblastoma"
+            }
+          },
+          {
+            "shortName": "ob_pathology_osteogenic_tumors_conventional_intramedullary_osteosarcoma",
+            "title": "Conventional Intramedullary Osteosarcoma",
+            "definition": "SUMMARY: Conventional intramedullary osteosarcomas are malignant, aggressive, osteogenic bone tumors most commonly found in the knee and shoulder regions. Patients are typically children, teenagers or young adults who present with rapidly progressive pain and swelling.; Diagnosis is made with a biopsy showing malignant-appearing mesenchymal spindle cells with significant atypia, pleomorphism and mitotic figures producing lace-like woven bone (osteoid).; Treatment is usually neo-adjuvant chemotherapy, limb sparing surgery (wide surgical resection and reconstruction), followed by adjuvant chemotherapy. Amputation may occasionally be required..",
+            "summary": "Conventional intramedullary osteosarcomas are malignant, aggressive, osteogenic bone tumors most commonly found in the knee and shoulder regions. Patients are typically children, teenagers or young adults who present with rapidly progressive pain and swelling. Diagnosis is made with a biopsy showing malignant-appearing mesenchymal spindle cells with significant atypia, pleomorphism and mitotic…",
+            "obTopicId": "8014",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Osteogenic Tumors",
+              "section": "Conventional Intramedullary Osteosarcoma",
+              "url": "https://www.orthobullets.com/pathology/8014/conventional-intramedullary-osteosarcoma"
+            }
+          },
+          {
+            "shortName": "ob_pathology_osteogenic_tumors_parosteal_osteosarcoma",
+            "title": "Parosteal Osteosarcoma",
+            "definition": "summary: Parosteal Osteosarcoma is a malignant, low-grade, osteosarcoma that occurs on the surface of the metaphysis of long bones. Patients typically present between ages 30 and 40 with a painless mass.; Diagnosis is made radiographically with a heavily ossified, lobulated mass arising from the cortex with biopsy showing cellular atypia seen between regularly arranged osseous trabeculae.; Treatment is generally wide surgical resection..",
+            "summary": "Parosteal Osteosarcoma is a malignant, low-grade, osteosarcoma that occurs on the surface of the metaphysis of long bones. Patients typically present between ages 30 and 40 with a painless mass. Diagnosis is made radiographically with a heavily ossified, lobulated mass arising from the cortex with biopsy showing cellular atypia seen between regularly arranged osseous trabeculae.",
+            "obTopicId": "8015",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Osteogenic Tumors",
+              "section": "Parosteal Osteosarcoma",
+              "url": "https://www.orthobullets.com/pathology/8015/parosteal-osteosarcoma"
+            }
+          },
+          {
+            "shortName": "ob_pathology_osteogenic_tumors_periosteal_osteosarcoma",
+            "title": "Periosteal Osteosarcoma",
+            "definition": "Summary: Periosteal Osteosarcomas are rare, malignant, intermediate-grade, surface osteosarcomas that occur most commonly on the diaphysis of the femur and tibia. Patients typically present between the ages of 15 to 25 years with regional pain and swelling.; Diagnosis is made with radiographs showing a lesion that has a classic \"sunburst or \"hair on end\" periosteal reaction with biopsy showing cellular atypia with areas of osteoid and chondroblastic matrix.; Treatment is usually neo-adjuvant chemotherapy, limb salvage surgical resection, followed by adjuvant chemotherapy..",
+            "summary": "Periosteal Osteosarcomas are rare, malignant, intermediate-grade, surface osteosarcomas that occur most commonly on the diaphysis of the femur and tibia. Patients typically present between the ages of 15 to 25 years with regional pain and swelling. Diagnosis is made with radiographs showing a lesion that has a classic \"sunburst or \"hair on end\" periosteal reaction with biopsy showing cellular…",
+            "obTopicId": "8016",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Osteogenic Tumors",
+              "section": "Periosteal Osteosarcoma",
+              "url": "https://www.orthobullets.com/pathology/8016/periosteal-osteosarcoma"
+            }
+          },
+          {
+            "shortName": "ob_pathology_osteogenic_tumors_telangiectatic_intramedullary_osteosarcoma",
+            "title": "Telangiectatic Intramedullary Osteosarcoma",
+            "definition": "summary: Telangiectatic Osteosarcomas are rare, malignant, high-grade osteosarcomas that occur most commonly in the proximal humerus, the femur, and proximal tibia. Patients typically present between the ages of 5 and 25 with regional pain and swelling.; Diagnosis is made with biopsy showing high-grade sarcoma with mitotic figures is seen in intervening cellular areas and lakes of blood mixed with malignant cells.; Treatment is usually neo-adjuvant chemotherapy, limb salvage surgical resection, followed by adjuvant chemotherapy..",
+            "summary": "Telangiectatic Osteosarcomas are rare, malignant, high-grade osteosarcomas that occur most commonly in the proximal humerus, the femur, and proximal tibia. Patients typically present between the ages of 5 and 25 with regional pain and swelling. Diagnosis is made with biopsy showing high-grade sarcoma with mitotic figures is seen in intervening cellular areas and lakes of blood mixed with…",
+            "obTopicId": "8017",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Osteogenic Tumors",
+              "section": "Telangiectatic Intramedullary Osteosarcoma",
+              "url": "https://www.orthobullets.com/pathology/8017/telangiectatic-intramedullary-osteosarcoma"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Osteogenic Tumors"
+        }
+      },
+      {
+        "shortName": "ob_pathology_chondrogenic_tumors",
+        "title": "Chondrogenic Tumors",
+        "field": "Bone Tumors",
+        "definition": "OrthoBullets chapter \"Chondrogenic Tumors\" (Bone Tumors): summary: Enchondromas are benign latent cartilaginous tumors composed of hyaline cartilage that typically occur in medullary cavity of the diaphysis or metaphysis. Patients typically present between the ages of 20-50 with an asymptomatic lesion, discovered incidentally on radiographs.; Diagnosis is made radiographically with the presence of a well-defined, lucent, central medullary lesion that is 1-10 cm, and often associated with \"pop-corn\" stippling, arcs, whorls, or rings.; Treatment is obser…",
+        "summary": "Enchondromas are benign latent cartilaginous tumors composed of hyaline cartilage that typically occur in medullary cavity of the diaphysis or metaphysis. Patients typically present between the ages of 20-50 with an asymptomatic lesion, discovered incidentally on radiographs. Diagnosis is made radiographically with the presence of a well-defined, lucent, central medullary lesion that is 1-10 cm,… ",
+        "topics": [
+          {
+            "shortName": "ob_pathology_chondrogenic_tumors_enchondromas",
+            "title": "Enchondromas",
+            "definition": "summary: Enchondromas are benign latent cartilaginous tumors composed of hyaline cartilage that typically occur in medullary cavity of the diaphysis or metaphysis. Patients typically present between the ages of 20-50 with an asymptomatic lesion, discovered incidentally on radiographs.; Diagnosis is made radiographically with the presence of a well-defined, lucent, central medullary lesion that is 1-10 cm, and often associated with \"pop-corn\" stippling, arcs, whorls, or rings.; Treatment is observation as most lesions are asymptomatic..",
+            "summary": "Enchondromas are benign latent cartilaginous tumors composed of hyaline cartilage that typically occur in medullary cavity of the diaphysis or metaphysis. Patients typically present between the ages of 20-50 with an asymptomatic lesion, discovered incidentally on radiographs. Diagnosis is made radiographically with the presence of a well-defined, lucent, central medullary lesion that is 1-10 cm,…",
+            "obTopicId": "8018",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Chondrogenic Tumors",
+              "section": "Enchondromas",
+              "url": "https://www.orthobullets.com/pathology/8018/enchondromas"
+            }
+          },
+          {
+            "shortName": "ob_pathology_chondrogenic_tumors_periosteal_chondromas",
+            "title": "Periosteal Chondromas",
+            "definition": "summary: Periosteal Chondromas are rare, benign, chondrogenic tumors that occur on the surface of long bones, most commonly the proximal humerus. Patients typically present between the ages of 10 and 20 years of age with regional pain secondary to irritation of overlying tendons.; Diagnosis is made with radiographs showing a well-demarcated, shallow cortical defect with saucerization of the underlying bone.; Treatment is usually observation. Marginal surgical excision of the lesion, including the underlying cortex, is indicated in patients with severe and progressive pain..",
+            "summary": "Periosteal Chondromas are rare, benign, chondrogenic tumors that occur on the surface of long bones, most commonly the proximal humerus. Patients typically present between the ages of 10 and 20 years of age with regional pain secondary to irritation of overlying tendons. Diagnosis is made with radiographs showing a well-demarcated, shallow cortical defect with saucerization of the underlying bone.",
+            "obTopicId": "8019",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Chondrogenic Tumors",
+              "section": "Periosteal Chondromas",
+              "url": "https://www.orthobullets.com/pathology/8019/periosteal-chondromas"
+            }
+          },
+          {
+            "shortName": "ob_pathology_chondrogenic_tumors_osteochondroma_and_multiple_hereditary_exostosis",
+            "title": "Osteochondroma & Multiple Hereditary Exostosis",
+            "definition": "Summary: Osteochondromas are benign chondrogenic lesions derived from aberrant cartilage from the perichondral ring that may take the form of solitary osteochondroma, or Multiple Hereditary Exostosis. Patients typically present between the ages of 10 and 30 with a painless mass.; Diagnosis is made with radiographs showing sessile or pedunculated lesions found on the surface of bones.; Treatment is observation for asymptomatic or minimally symptomatic cases. Surgical resection is indicated in cases of progressive and severe pain..",
+            "summary": "Osteochondromas are benign chondrogenic lesions derived from aberrant cartilage from the perichondral ring that may take the form of solitary osteochondroma, or Multiple Hereditary Exostosis. Patients typically present between the ages of 10 and 30 with a painless mass. Diagnosis is made with radiographs showing sessile or pedunculated lesions found on the surface of bones.",
+            "obTopicId": "8020",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Chondrogenic Tumors",
+              "section": "Osteochondroma & Multiple Hereditary Exostosis",
+              "url": "https://www.orthobullets.com/pathology/8020/osteochondroma-and-multiple-hereditary-exostosis"
+            }
+          },
+          {
+            "shortName": "ob_pathology_chondrogenic_tumors_chondroblastoma",
+            "title": "Chondroblastoma",
+            "definition": "summary: Chondroblastomas are rare, benign but locally destructive tumors of immature cartilage-forming cells (chondroblasts) that arise almost universally in the epiphysis of long bones.; Patients typically present between the ages in 3rd decade of life with regional pain and/or a limp.; Diagnosis is made with biopsy showing chondroblasts arranged in a \"chickenwire\" pattern with foci of chondroid matrix and scattered multinucleated osteoclast-type giant cells.; Treatment is usually intralesional resection, local adjuvant therapy (i.e. cryoablation), +/- bone graft.",
+            "summary": "Chondroblastomas are rare, benign but locally destructive tumors of immature cartilage-forming cells (chondroblasts) that arise almost universally in the epiphysis of long bones. Patients typically present between the ages in 3rd decade of life with regional pain and/or a limp.",
+            "obTopicId": "8021",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Chondrogenic Tumors",
+              "section": "Chondroblastoma",
+              "url": "https://www.orthobullets.com/pathology/8021/chondroblastoma"
+            }
+          },
+          {
+            "shortName": "ob_pathology_chondrogenic_tumors_chondromyxoid_fibroma",
+            "title": "Chondromyxoid Fibroma",
+            "definition": "summary: Chondromyxoid Fibromas are rare, benign, chondrogenic lesions characterized by variable amounts of chondroid, fibromatoid, and myxoid elements that are most commonly found in the metaphysis of long bones. Patients typically present between the ages of 10 and 30 with regional pain and swelling.; Diagnosis is made with biopsy showing hypercellular area with lobules of fibromyxoid tissue and myxoid stroma with stellate cells.; Treatment is usually intralesional curettage and bone grafting (or PMMA)..",
+            "summary": "Chondromyxoid Fibromas are rare, benign, chondrogenic lesions characterized by variable amounts of chondroid, fibromatoid, and myxoid elements that are most commonly found in the metaphysis of long bones. Patients typically present between the ages of 10 and 30 with regional pain and swelling. Diagnosis is made with biopsy showing hypercellular area with lobules of fibromyxoid tissue and myxoid…",
+            "obTopicId": "8022",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Chondrogenic Tumors",
+              "section": "Chondromyxoid Fibroma",
+              "url": "https://www.orthobullets.com/pathology/8022/chondromyxoid-fibroma"
+            }
+          },
+          {
+            "shortName": "ob_pathology_chondrogenic_tumors_chondrosarcoma",
+            "title": "Chondrosarcoma",
+            "definition": "summary: Chondrosarcoma is the second most common malignant primary bone tumor. These cancers are composed of malignant chondrocytes. There are various subtypes of chondrosarcoma, each with unique characteristics. \"Conventional\" chondrosarcoma accounts for >90% of chondrosarcomas and typically presents in adults over 40 with progressive pain; Diagnosis is made by correlating clinical and imaging (x-ray, CT, MRI) findings with lesional biopsy showing malignant cartilage that permeates and entraps pre-existing bone trabeculae; Treatment is usually wide surgical resection; conventional chondrosarcomas do not respond to chemotherapy or radiation.",
+            "summary": "Chondrosarcoma is the second most common malignant primary bone tumor. These cancers are composed of malignant chondrocytes. There are various subtypes of chondrosarcoma, each with unique characteristics. \"Conventional\" chondrosarcoma accounts for >90% of chondrosarcomas and typically presents in adults over 40 with progressive pain Diagnosis is made by correlating clinical and imaging (x-ray,…",
+            "obTopicId": "8023",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Chondrogenic Tumors",
+              "section": "Chondrosarcoma",
+              "url": "https://www.orthobullets.com/pathology/8023/chondrosarcoma"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Chondrogenic Tumors"
+        }
+      },
+      {
+        "shortName": "ob_pathology_hematopoietic",
+        "title": "Hematopoietic",
+        "field": "Bone Tumors",
+        "definition": "OrthoBullets chapter \"Hematopoietic\" (Bone Tumors): summary: Multiple Myeloma is neoplastic proliferation of plasma cells that commonly results in multiple skeletal lesions, hypercalcemia, renal insufficiency, and anemia. Patients typically present at ages > 40 with localized bone pain or a pathologic fracture.; Diagnosis is made with a bone marrow biopsy showing monoclonal plasma cells ≥10%.; Treatment is usually chemotherapy and radiation. Surgical management is indicated for associated fractures.. summary: Lymphoma is a malignant hematopoietic…",
+        "summary": "Multiple Myeloma is neoplastic proliferation of plasma cells that commonly results in multiple skeletal lesions, hypercalcemia, renal insufficiency, and anemia. Patients typically present at ages > 40 with localized bone pain or a pathologic fracture. Diagnosis is made with a bone marrow biopsy showing monoclonal plasma cells ≥10%. Lymphoma is a malignant hematopoietic tumor that occurs in three f",
+        "topics": [
+          {
+            "shortName": "ob_pathology_hematopoietic_multiple_myeloma",
+            "title": "Multiple Myeloma",
+            "definition": "summary: Multiple Myeloma is neoplastic proliferation of plasma cells that commonly results in multiple skeletal lesions, hypercalcemia, renal insufficiency, and anemia. Patients typically present at ages > 40 with localized bone pain or a pathologic fracture.; Diagnosis is made with a bone marrow biopsy showing monoclonal plasma cells ≥10%.; Treatment is usually chemotherapy and radiation. Surgical management is indicated for associated fractures..",
+            "summary": "Multiple Myeloma is neoplastic proliferation of plasma cells that commonly results in multiple skeletal lesions, hypercalcemia, renal insufficiency, and anemia. Patients typically present at ages > 40 with localized bone pain or a pathologic fracture. Diagnosis is made with a bone marrow biopsy showing monoclonal plasma cells ≥10%.",
+            "obTopicId": "8024",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Hematopoietic",
+              "section": "Multiple Myeloma",
+              "url": "https://www.orthobullets.com/pathology/8024/multiple-myeloma"
+            }
+          },
+          {
+            "shortName": "ob_pathology_hematopoietic_lymphoma",
+            "title": "Lymphoma",
+            "definition": "summary: Lymphoma is a malignant hematopoietic tumor that occurs in three forms: primary lymphoma of bone, multiple bony sites, or bone and soft tissue lymphoma. Patients typically present between ages 35 and 55 with regional pain associated with fever, night sweats, and weight loss.; Diagnosis is made with biopsy showing mixed small round blue cell infiltrate (different sizes and shapes) that are CD20 and CD45 positive on immunohistochemical stains.; Treatment is usually chemotherapy and radiation. Surgical management is indicated for associated fractures..",
+            "summary": "Lymphoma is a malignant hematopoietic tumor that occurs in three forms: primary lymphoma of bone, multiple bony sites, or bone and soft tissue lymphoma. Patients typically present between ages 35 and 55 with regional pain associated with fever, night sweats, and weight loss. Diagnosis is made with biopsy showing mixed small round blue cell infiltrate (different sizes and shapes) that are CD20…",
+            "obTopicId": "8025",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Hematopoietic",
+              "section": "Lymphoma",
+              "url": "https://www.orthobullets.com/pathology/8025/lymphoma"
+            }
+          },
+          {
+            "shortName": "ob_pathology_hematopoietic_leukemia",
+            "title": "Leukemia",
+            "definition": "summary: Leukemia is a malignant neoplastic proliferation of lymphocytes and lymphocyte precursors. Patients typically present before the age of 4 with recurrent infections, bleeding, fatigue, and lymphadenopathy.; Diagnosis is made with a bone marrow biopsy.; Treatment is usually chemotherapy..",
+            "summary": "Leukemia is a malignant neoplastic proliferation of lymphocytes and lymphocyte precursors. Patients typically present before the age of 4 with recurrent infections, bleeding, fatigue, and lymphadenopathy. Diagnosis is made with a bone marrow biopsy.",
+            "obTopicId": "8026",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Hematopoietic",
+              "section": "Leukemia",
+              "url": "https://www.orthobullets.com/pathology/8026/leukemia"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Hematopoietic"
+        }
+      },
+      {
+        "shortName": "ob_pathology_fibrogenic_and_histiocytic",
+        "title": "Fibrogenic & Histiocytic",
+        "field": "Bone Tumors",
+        "definition": "OrthoBullets chapter \"Fibrogenic & Histiocytic\" (Bone Tumors): summary: Non-Ossifying Fibromas are benign fibrogenic lesions that result from dysfunctional ossification that are most commonly found in the metaphysis of long bones. Patients typically present between the ages of 5 and 15 with an asymptomatic lesion discovered incidentally on radiographs.; Diagnosis is made on radiographs with a characteristic metaphyseal eccentric \"bubbly\" lytic lesion surrounded by a sclerotic rim.; Treatment is observation as most lesions resolve spontaneously.. summary: Hi…",
+        "summary": "Non-Ossifying Fibromas are benign fibrogenic lesions that result from dysfunctional ossification that are most commonly found in the metaphysis of long bones. Patients typically present between the ages of 5 and 15 with an asymptomatic lesion discovered incidentally on radiographs. Diagnosis is made on radiographs with a characteristic metaphyseal eccentric \"bubbly\" lytic lesion surrounded by a… H",
+        "topics": [
+          {
+            "shortName": "ob_pathology_fibrogenic_and_histiocytic_non_ossifying_fibroma",
+            "title": "Non-Ossifying Fibroma",
+            "definition": "summary: Non-Ossifying Fibromas are benign fibrogenic lesions that result from dysfunctional ossification that are most commonly found in the metaphysis of long bones. Patients typically present between the ages of 5 and 15 with an asymptomatic lesion discovered incidentally on radiographs.; Diagnosis is made on radiographs with a characteristic metaphyseal eccentric \"bubbly\" lytic lesion surrounded by a sclerotic rim.; Treatment is observation as most lesions resolve spontaneously..",
+            "summary": "Non-Ossifying Fibromas are benign fibrogenic lesions that result from dysfunctional ossification that are most commonly found in the metaphysis of long bones. Patients typically present between the ages of 5 and 15 with an asymptomatic lesion discovered incidentally on radiographs. Diagnosis is made on radiographs with a characteristic metaphyseal eccentric \"bubbly\" lytic lesion surrounded by a…",
+            "obTopicId": "8027",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Fibrogenic & Histiocytic",
+              "section": "Non-Ossifying Fibroma",
+              "url": "https://www.orthobullets.com/pathology/8027/non-ossifying-fibroma"
+            }
+          },
+          {
+            "shortName": "ob_pathology_fibrogenic_and_histiocytic_histiocytoma_benign_fibrous_histiocytoma",
+            "title": "Histiocytoma (Benign Fibrous Histiocytoma)",
+            "definition": "summary: Histiocytomas, also known as benign fibrous histiocytomas, are extremely rare, benign histiocytic lesions of bone. Patients typically present with regional pain and swelling.; Diagnosis is made with radiographs that show a characteristic lytic lesion with a sclerotic border and biopsy with histology showing spindle cells and foamy macrophages in storiform pattern.; Treatment is usually curettage and bone grafting..",
+            "summary": "Histiocytomas, also known as benign fibrous histiocytomas, are extremely rare, benign histiocytic lesions of bone. Patients typically present with regional pain and swelling. Diagnosis is made with radiographs that show a characteristic lytic lesion with a sclerotic border and biopsy with histology showing spindle cells and foamy macrophages in storiform pattern.",
+            "obTopicId": "8028",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Fibrogenic & Histiocytic",
+              "section": "Histiocytoma (Benign Fibrous Histiocytoma)",
+              "url": "https://www.orthobullets.com/pathology/8028/histiocytoma-benign-fibrous-histiocytoma"
+            }
+          },
+          {
+            "shortName": "ob_pathology_fibrogenic_and_histiocytic_desmoplastic_fibroma",
+            "title": "Desmoplastic Fibroma",
+            "definition": "summary: Desmoplastic Fibromas are low-grade malignant fibrogenic tumors of bone that are most commonly found in the metaphysis of long bones. Patients typically present between the ages of 15 and 25 with regional pain and swelling.; Diagnosis is made with a characteristic metaphyseal lytic lesion with soap bubble appearance on radiographs with biopsy showing fibrous spindle cells and mature fibroblasts without cellular atypia.; Treatment is usually wide surgical resection to prevent recurrence..",
+            "summary": "Desmoplastic Fibromas are low-grade malignant fibrogenic tumors of bone that are most commonly found in the metaphysis of long bones. Patients typically present between the ages of 15 and 25 with regional pain and swelling. Diagnosis is made with a characteristic metaphyseal lytic lesion with soap bubble appearance on radiographs with biopsy showing fibrous spindle cells and mature fibroblasts…",
+            "obTopicId": "8029",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Fibrogenic & Histiocytic",
+              "section": "Desmoplastic Fibroma",
+              "url": "https://www.orthobullets.com/pathology/8029/desmoplastic-fibroma"
+            }
+          },
+          {
+            "shortName": "ob_pathology_fibrogenic_and_histiocytic_pleomorphic_sarcoma_of_bone_malignant_fibrous_histiocytoma",
+            "title": "Pleomorphic Sarcoma of Bone (Malignant Fibrous Histiocytoma)",
+            "definition": "summary: Pleomorphic Sarcoma of Bone, formerly known as Malignant Fibrous Histiocytoma, are rare malignant histiocytic lesions of bone most commonly found in the metaphysis of long bones. Patients typically present between the ages of 20 to 80 with painful, regional masses.; Diagnosis is made with biopsy showing pleomorphic spindle cells and histiocytic cells in storiform pattern.; Treatment is usually neo-adjuvant chemotherapy, limb salvage surgical resection, followed by adjuvant chemotherapy.",
+            "summary": "Pleomorphic Sarcoma of Bone, formerly known as Malignant Fibrous Histiocytoma, are rare malignant histiocytic lesions of bone most commonly found in the metaphysis of long bones. Patients typically present between the ages of 20 to 80 with painful, regional masses. Diagnosis is made with biopsy showing pleomorphic spindle cells and histiocytic cells in storiform pattern.",
+            "obTopicId": "8030",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Fibrogenic & Histiocytic",
+              "section": "Pleomorphic Sarcoma of Bone (Malignant Fibrous Histiocytoma)",
+              "url": "https://www.orthobullets.com/pathology/8030/pleomorphic-sarcoma-of-bone-malignant-fibrous-histiocytoma"
+            }
+          },
+          {
+            "shortName": "ob_pathology_fibrogenic_and_histiocytic_fibrosarcoma_of_bone",
+            "title": "Fibrosarcoma of Bone",
+            "definition": "SUMMARY: Fibrosarcoma of Bone is a malignant, high-grade, fibrogenic tumor of bone that usually occurs in patients > 50 years of age who presents with regional pain and swelling.; Diagnosis is made with a biopsy and histology showing atypical spindle cells in a herringbone pattern.; Treatment is usually wide surgical resection and multiagent chemotherapy..",
+            "summary": "Fibrosarcoma of Bone is a malignant, high-grade, fibrogenic tumor of bone that usually occurs in patients > 50 years of age who presents with regional pain and swelling. Diagnosis is made with a biopsy and histology showing atypical spindle cells in a herringbone pattern.",
+            "obTopicId": "8031",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Fibrogenic & Histiocytic",
+              "section": "Fibrosarcoma of Bone",
+              "url": "https://www.orthobullets.com/pathology/8031/fibrosarcoma-of-bone"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Fibrogenic & Histiocytic"
+        }
+      },
+      {
+        "shortName": "ob_pathology_notochordal_and_vascular",
+        "title": "Notochordal & Vascular",
+        "field": "Bone Tumors",
+        "definition": "OrthoBullets chapter \"Notochordal & Vascular\" (Bone Tumors): summary: Chordomas are malignant tumors of primitive notochordal origin that most commonly occur in the sacrum and coccyx. The tumor typically presents in patients > 50 years of age with insidious low back pain with bowel or bladder dysfunction.; Diagnosis is made with biopsy showing foamy, vacuolated, physaliferous cells that are keratin positive on histochemical stains.; Treatment is usually wide margin surgical resection with or without radiation.. summary: Hemangiomas are benign vascular tum…",
+        "summary": "Chordomas are malignant tumors of primitive notochordal origin that most commonly occur in the sacrum and coccyx. The tumor typically presents in patients > 50 years of age with insidious low back pain with bowel or bladder dysfunction. Diagnosis is made with biopsy showing foamy, vacuolated, physaliferous cells that are keratin positive on histochemical stains. Hemangiomas are benign vascular tum",
+        "topics": [
+          {
+            "shortName": "ob_pathology_notochordal_and_vascular_chordoma",
+            "title": "Chordoma",
+            "definition": "summary: Chordomas are malignant tumors of primitive notochordal origin that most commonly occur in the sacrum and coccyx. The tumor typically presents in patients > 50 years of age with insidious low back pain with bowel or bladder dysfunction.; Diagnosis is made with biopsy showing foamy, vacuolated, physaliferous cells that are keratin positive on histochemical stains.; Treatment is usually wide margin surgical resection with or without radiation..",
+            "summary": "Chordomas are malignant tumors of primitive notochordal origin that most commonly occur in the sacrum and coccyx. The tumor typically presents in patients > 50 years of age with insidious low back pain with bowel or bladder dysfunction. Diagnosis is made with biopsy showing foamy, vacuolated, physaliferous cells that are keratin positive on histochemical stains.",
+            "obTopicId": "8032",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Notochordal & Vascular",
+              "section": "Chordoma",
+              "url": "https://www.orthobullets.com/pathology/8032/chordoma"
+            }
+          },
+          {
+            "shortName": "ob_pathology_notochordal_and_vascular_hemangioma",
+            "title": "Hemangioma",
+            "definition": "summary: Hemangiomas are benign vascular tumors of bone that most often occur in the vertebral bodies and craniofacial bones. Patients typically present with an asymptomatic lesion found incidentally on radiographs.; Diagnosis is made with radiographs showing lytic lesions with characteristic vertical striations and with biopsy showing cavernous lesions with numerous thin-walled blood vessels.; Treatment is observation for asymptomatic lesions. Surgical curettage and bone grafting is indicated in progressively painful lesions..",
+            "summary": "Hemangiomas are benign vascular tumors of bone that most often occur in the vertebral bodies and craniofacial bones. Patients typically present with an asymptomatic lesion found incidentally on radiographs. Diagnosis is made with radiographs showing lytic lesions with characteristic vertical striations and with biopsy showing cavernous lesions with numerous thin-walled blood vessels.",
+            "obTopicId": "8033",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Notochordal & Vascular",
+              "section": "Hemangioma",
+              "url": "https://www.orthobullets.com/pathology/8033/hemangioma"
+            }
+          },
+          {
+            "shortName": "ob_pathology_notochordal_and_vascular_hemangioendothelioma_hemangiosarcoma",
+            "title": "Hemangioendothelioma (hemangiosarcoma)",
+            "definition": "summary: Hemangioendothelioma, also known as hemangiosarcoma, is a rare, malignant, vascular tumor with endothelial differentiation that is more common in soft tissues than bone. The tumor typically presents in patients between ages 30 and 40 with regional pain.; Diagnosis is made with biopsy and histology showing angiocentric growth expanding the vessel wall with surrounding sclerosis.; Treatment is usually radiotherapy alone for low-grade lesions. Surgical resection with or without radiation is indicated for high-grade lesions..",
+            "summary": "Hemangioendothelioma, also known as hemangiosarcoma, is a rare, malignant, vascular tumor with endothelial differentiation that is more common in soft tissues than bone. The tumor typically presents in patients between ages 30 and 40 with regional pain. Diagnosis is made with biopsy and histology showing angiocentric growth expanding the vessel wall with surrounding sclerosis.",
+            "obTopicId": "8034",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Notochordal & Vascular",
+              "section": "Hemangioendothelioma (hemangiosarcoma)",
+              "url": "https://www.orthobullets.com/pathology/8034/hemangioendothelioma-hemangiosarcoma"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Notochordal & Vascular"
+        }
+      },
+      {
+        "shortName": "ob_pathology_reactive_lesions",
+        "title": "Reactive Lesions",
+        "field": "Bone Tumors",
+        "definition": "OrthoBullets chapter \"Reactive Lesions\" (Bone Tumors): Summary: Unicameral Bone Cysts, also known as simple bone cysts, are non-neoplastic, serous fluid-filled bone lesions most commonly found in the proximal humerus. The condition typically presents in patients <20 years of age with a pathological fracture through the lesion.; Diagnosis is made with radiographs showing a central, lytic, well-demarcated metaphyseal lesions with cystic expansion and a characteristic \"fallen leaf\" sign.; Treatment is usually immobilization for proximal humerus lesions…",
+        "summary": "Unicameral Bone Cysts, also known as simple bone cysts, are non-neoplastic, serous fluid-filled bone lesions most commonly found in the proximal humerus. The condition typically presents in patients <20 years of age with a pathological fracture through the lesion. Diagnosis is made with radiographs showing a central, lytic, well-demarcated metaphyseal lesions with cystic expansion and a… Aneurysma",
+        "topics": [
+          {
+            "shortName": "ob_pathology_reactive_lesions_unicameral_bone_cyst",
+            "title": "Unicameral Bone Cyst",
+            "definition": "Summary: Unicameral Bone Cysts, also known as simple bone cysts, are non-neoplastic, serous fluid-filled bone lesions most commonly found in the proximal humerus. The condition typically presents in patients <20 years of age with a pathological fracture through the lesion.; Diagnosis is made with radiographs showing a central, lytic, well-demarcated metaphyseal lesions with cystic expansion and a characteristic \"fallen leaf\" sign.; Treatment is usually immobilization for proximal humerus lesions with pathologic fracture. Surgical curettage and bone grafting is indicated for pathologic fractures that have a high rate of refracture and malunion..",
+            "summary": "Unicameral Bone Cysts, also known as simple bone cysts, are non-neoplastic, serous fluid-filled bone lesions most commonly found in the proximal humerus. The condition typically presents in patients <20 years of age with a pathological fracture through the lesion. Diagnosis is made with radiographs showing a central, lytic, well-demarcated metaphyseal lesions with cystic expansion and a…",
+            "obTopicId": "8035",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Reactive Lesions",
+              "section": "Unicameral Bone Cyst",
+              "url": "https://www.orthobullets.com/pathology/8035/unicameral-bone-cyst"
+            }
+          },
+          {
+            "shortName": "ob_pathology_reactive_lesions_aneurysmal_bone_cyst",
+            "title": "Aneurysmal Bone Cyst",
+            "definition": "summary: Aneurysmal Bone Cysts are benign, non-neoplastic, reactive bone lesions that most commonly occur in the femur and tibia. The condition typically presents in patients less than 20 years of age with focal pain and swelling.; Diagnosis is made with radiographs showing an expansile, eccentric, and lytic lesion with bony septae and a biopsy showing blood-filled spaces without endothelial lining.; Treatment is usually nonoperative for lesions associated with a fracture. Aggressive curettage, with adjuvant treatment and bone grafting, is indicated for symptomatic lesions without associated fracture..",
+            "summary": "Aneurysmal Bone Cysts are benign, non-neoplastic, reactive bone lesions that most commonly occur in the femur and tibia. The condition typically presents in patients less than 20 years of age with focal pain and swelling. Diagnosis is made with radiographs showing an expansile, eccentric, and lytic lesion with bony septae and a biopsy showing blood-filled spaces without endothelial lining.",
+            "obTopicId": "8036",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Reactive Lesions",
+              "section": "Aneurysmal Bone Cyst",
+              "url": "https://www.orthobullets.com/pathology/8036/aneurysmal-bone-cyst"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Reactive Lesions"
+        }
+      },
+      {
+        "shortName": "ob_pathology_tumor_like_lesions",
+        "title": "Tumor-like lesions",
+        "field": "Bone Tumors",
+        "definition": "OrthoBullets chapter \"Tumor-like lesions\" (Bone Tumors): summary: Fibrous dysplasia is a developmental abnormality caused by a Gs alpha protein mutation that leads to failure of the production of normal lamellar bone and arrest as woven bone.; The condition usually presents in patients who are less than 30 years of age with an asymptomatic lesion that is found incidentally on radiographs.; Diagnosis is made with radiographs showing a lesion with a ground glass appearance or a \"punched-out\" lytic lesion with a well-defined margin of sclerotic bone.; Tr…",
+        "summary": "Fibrous dysplasia is a developmental abnormality caused by a Gs alpha protein mutation that leads to failure of the production of normal lamellar bone and arrest as woven bone. The condition usually presents in patients who are less than 30 years of age with an asymptomatic lesion that is found incidentally on radiographs. Osteofibrous Dysplasia is a rare benign tumor-like condition that primarily",
+        "topics": [
+          {
+            "shortName": "ob_pathology_tumor_like_lesions_fibrous_dysplasia",
+            "title": "Fibrous Dysplasia",
+            "definition": "summary: Fibrous dysplasia is a developmental abnormality caused by a Gs alpha protein mutation that leads to failure of the production of normal lamellar bone and arrest as woven bone.; The condition usually presents in patients who are less than 30 years of age with an asymptomatic lesion that is found incidentally on radiographs.; Diagnosis is made with radiographs showing a lesion with a ground glass appearance or a \"punched-out\" lytic lesion with a well-defined margin of sclerotic bone.; Treatment is usually nonoperative with oral analgesics and bisphosphonates for pain control. Surgical management is indicated in the setting of pathologic fracture or impending pathologic fracture and lesions leading to bony deformities including coxa vara, scoliosis, and limb length discrepancy..",
+            "summary": "Fibrous dysplasia is a developmental abnormality caused by a Gs alpha protein mutation that leads to failure of the production of normal lamellar bone and arrest as woven bone. The condition usually presents in patients who are less than 30 years of age with an asymptomatic lesion that is found incidentally on radiographs.",
+            "obTopicId": "8038",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Tumor-like lesions",
+              "section": "Fibrous Dysplasia",
+              "url": "https://www.orthobullets.com/pathology/8038/fibrous-dysplasia"
+            }
+          },
+          {
+            "shortName": "ob_pathology_tumor_like_lesions_osteofibrous_dysplasia",
+            "title": "Osteofibrous Dysplasia",
+            "definition": "summary: Osteofibrous Dysplasia is a rare benign tumor-like condition that primarily affects the cortices of the tibia.; The condition typically presents in patients less than 10 years of age with painless anterior shin swelling.; Diagnosis is made by a combination of radiographs showing an anterior eccentric lytic tibial lesion and biopsy showing fibroblast proliferation surrounding islands of woven bone with osteoblastic rimming.; Treatment is usually observation alone as lesions usually regress and do not cause problems in adulthood..",
+            "summary": "Osteofibrous Dysplasia is a rare benign tumor-like condition that primarily affects the cortices of the tibia. The condition typically presents in patients less than 10 years of age with painless anterior shin swelling.",
+            "obTopicId": "8039",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Tumor-like lesions",
+              "section": "Osteofibrous Dysplasia",
+              "url": "https://www.orthobullets.com/pathology/8039/osteofibrous-dysplasia"
+            }
+          },
+          {
+            "shortName": "ob_pathology_tumor_like_lesions_paget_s_disease",
+            "title": "Paget's Disease",
+            "definition": "summary: Paget's Disease is an idiopathic condition of abnormal bone remodeling with normal bone being replaced through an active interplay between excessive bone resorption and abnormal new bone formation. The condition typically present in patients age > 40 with asymptomatic lesions discovered incidentally on radiographs.; Diagnosis is made with radiographs showing characteristic findings of lesions with diffuse blastic appearance and labs showing elevated serum ALP and elevated urinary collagen cross-links.; Treatment is observation for asymptomatic patients. Medical management with bisphosphonates is indicated in symptomatic patients..",
+            "summary": "Paget's Disease is an idiopathic condition of abnormal bone remodeling with normal bone being replaced through an active interplay between excessive bone resorption and abnormal new bone formation. The condition typically present in patients age > 40 with asymptomatic lesions discovered incidentally on radiographs. Diagnosis is made with radiographs showing characteristic findings of lesions…",
+            "obTopicId": "8040",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Tumor-like lesions",
+              "section": "Paget's Disease",
+              "url": "https://www.orthobullets.com/pathology/8040/pagets-disease"
+            }
+          },
+          {
+            "shortName": "ob_pathology_tumor_like_lesions_eosinophilic_granuloma",
+            "title": "Eosinophilic Granuloma",
+            "definition": "summary: Eosinophilic Granulomas are self-limiting benign histiocytic lesions that can occur in isolation or as a part of 2 systemic syndromes: Hand-Schuller-Christian (HSC) disease and Letterer-Siwe disease (LSD).; Isolated lesions typically present with pain in the thoracic spine or long bones in patients < 20 years of age. HSC presents with diabetes insipidus and exophthalmos, while LSD is fatal in early childhood.; Diagnosis is made with biopsy showing mononuclear histiocyte-like cells with oval nuclei with well-defined round cytoplasm with electron microscopy revealing Birbeck granules seen inside Langerhan's cells.; Treatment for isolated Eosinophilic Granulomasis is usually observation with pain management as the lesions typically resolve over time. Surgical management is indicated for lesions associated with impending fracture. Treatment for HSC and LSD is focused on the medical management of the syndrome..",
+            "summary": "Eosinophilic Granulomas are self-limiting benign histiocytic lesions that can occur in isolation or as a part of 2 systemic syndromes: Hand-Schuller-Christian (HSC) disease and Letterer-Siwe disease (LSD). Isolated lesions typically present with pain in the thoracic spine or long bones in patients < 20 years of age. HSC presents with diabetes insipidus and exophthalmos, while LSD is fatal in…",
+            "obTopicId": "8041",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Tumor-like lesions",
+              "section": "Eosinophilic Granuloma",
+              "url": "https://www.orthobullets.com/pathology/8041/eosinophilic-granuloma"
+            }
+          },
+          {
+            "shortName": "ob_pathology_tumor_like_lesions_myositis_ossificans",
+            "title": "Myositis Ossificans",
+            "definition": "summary: Myositis Ossificans is a reactive soft tissue bone-forming process that commonly occurs following a traumatic event to soft tissues.; The condition typically presents in patients between ages 15 and 35 who develop pain, tenderness, swelling, and decreased range of motion following localized trauma.; Diagnosis is made with radiographs showing peripheral bone formation with central lucent area within soft tissues.; Treatment is usually observation as lesions typically resolve over time. Surgical excision is indicated for lesions that remain persistently symptomatic..",
+            "summary": "Myositis Ossificans is a reactive soft tissue bone-forming process that commonly occurs following a traumatic event to soft tissues. The condition typically presents in patients between ages 15 and 35 who develop pain, tenderness, swelling, and decreased range of motion following localized trauma.",
+            "obTopicId": "8042",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Tumor-like lesions",
+              "section": "Myositis Ossificans",
+              "url": "https://www.orthobullets.com/pathology/8042/myositis-ossificans"
+            }
+          },
+          {
+            "shortName": "ob_pathology_tumor_like_lesions_melorheostosis",
+            "title": "Melorheostosis",
+            "definition": "summary: Melorheostosis is a rare benign painful disorder of the extremities characterized by formation of periosteal new bone. Patients typically present in the first 4 decades of life with localized pain and reduced range of motion.; Diagnosis is made radiographically with a \"dripping candle wax” appearance with dense hyperostosis that flows along the cortex of the bone.; Treatment is observation and medical management for those with mild symptoms and normal joint motion. Surgical bone resection and contracture release is indicated for those with severe symptoms and joint contractures..",
+            "summary": "Melorheostosis is a rare benign painful disorder of the extremities characterized by formation of periosteal new bone. Patients typically present in the first 4 decades of life with localized pain and reduced range of motion. Diagnosis is made radiographically with a \"dripping candle wax” appearance with dense hyperostosis that flows along the cortex of the bone.",
+            "obTopicId": "8043",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Tumor-like lesions",
+              "section": "Melorheostosis",
+              "url": "https://www.orthobullets.com/pathology/8043/melorheostosis"
+            }
+          },
+          {
+            "shortName": "ob_pathology_tumor_like_lesions_heterotopic_ossification",
+            "title": "Heterotopic Ossification",
+            "definition": "summary: Heterotopic Ossification is the formation of bone in atypical, extraskeletal tissues that may occur following localized trauma, following a neurological injury, or as a post-surgical complication. Patients typically present with painless loss of motion of the affected joint.; Diagnosis is made radiographically with soft tissue ossification with sharp demarcation from surrounding soft tissues.; Treatment is focused on prevention with oral indomethacin and perioperative radiation. Surgical excision is indicated in the presence of mature lesions associated with severe loss of motion and function..",
+            "summary": "Heterotopic Ossification is the formation of bone in atypical, extraskeletal tissues that may occur following localized trauma, following a neurological injury, or as a post-surgical complication. Patients typically present with painless loss of motion of the affected joint. Diagnosis is made radiographically with soft tissue ossification with sharp demarcation from surrounding soft tissues.",
+            "obTopicId": "8044",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Tumor-like lesions",
+              "section": "Heterotopic Ossification",
+              "url": "https://www.orthobullets.com/pathology/8044/heterotopic-ossification"
+            }
+          },
+          {
+            "shortName": "ob_pathology_tumor_like_lesions_tumoral_calcinosis",
+            "title": "Tumoral Calcinosis",
+            "definition": "summary: Tumoral Calcinosis is a rare, hereditary metabolic dysfunction of phosphate regulation associated with development of massive periarticular calcinosis in the extra-capsular soft tissues. Patients most commonly present with palpable lesions around the hip and shoulder.; Diagnosis is made radiographically with amorphous, cystic, circular, well-demarcated calcification in a periarticular location.; Treatment is observation for asymptomatic lesions. Surgical excision is indicated for symptomatic lesions associated with decreased function..",
+            "summary": "Tumoral Calcinosis is a rare, hereditary metabolic dysfunction of phosphate regulation associated with development of massive periarticular calcinosis in the extra-capsular soft tissues. Patients most commonly present with palpable lesions around the hip and shoulder. Diagnosis is made radiographically with amorphous, cystic, circular, well-demarcated calcification in a periarticular location.",
+            "obTopicId": "8077",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Tumor-like lesions",
+              "section": "Tumoral Calcinosis",
+              "url": "https://www.orthobullets.com/pathology/8077/tumoral-calcinosis"
+            }
+          },
+          {
+            "shortName": "ob_pathology_tumor_like_lesions_bone_infarct",
+            "title": "Bone Infarct",
+            "definition": "summary: Bone Infarcts are medullary bony lesions that are in the same spectrum of disease as osteonecrosis. Patients typically present with an asymptomatic lesion in the metaphysis or diaphysis of long bones, discovered incidentally on radiographs.; Diagnosis is made radiographically with the presence of a medullary lesion of sheet-like central lucency surrounded by sclerosis with a serpiginous border, commonly referred to as a \"smoke up the chimney\" lesion.; Treatment is observation as lesions are generally asymptomatic..",
+            "summary": "Bone Infarcts are medullary bony lesions that are in the same spectrum of disease as osteonecrosis. Patients typically present with an asymptomatic lesion in the metaphysis or diaphysis of long bones, discovered incidentally on radiographs. Diagnosis is made radiographically with the presence of a medullary lesion of sheet-like central lucency surrounded by sclerosis with a serpiginous border,…",
+            "obTopicId": "8078",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Tumor-like lesions",
+              "section": "Bone Infarct",
+              "url": "https://www.orthobullets.com/pathology/8078/bone-infarct"
+            }
+          },
+          {
+            "shortName": "ob_pathology_tumor_like_lesions_focal_fibrocartilaginous_dysplasia",
+            "title": "Focal Fibrocartilaginous Dysplasia",
+            "definition": "summary: Focal Fibrocartilaginous Dysplasia is a rare benign bone dysplasia that leads to unilateral varus of the tibia, most commonly seen in infants.; Diagnosis is made with radiographs showing an abrupt varus deformity at the metaphyseal–diaphyseal junction of the tibia with cortical sclerosis at the medial cortex.; Treatment is usually observation as the majority of lesions spontaneously correct with normal proximal tibial physeal growth. Rarely, surgical deformity correction is indicated in the presence of deformity progression..",
+            "summary": "Focal Fibrocartilaginous Dysplasia is a rare benign bone dysplasia that leads to unilateral varus of the tibia, most commonly seen in infants. Diagnosis is made with radiographs showing an abrupt varus deformity at the metaphyseal–diaphyseal junction of the tibia with cortical sclerosis at the medial cortex.",
+            "obTopicId": "8079",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Tumor-like lesions",
+              "section": "Focal Fibrocartilaginous Dysplasia",
+              "url": "https://www.orthobullets.com/pathology/8079/focal-fibrocartilaginous-dysplasia"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Tumor-like lesions"
+        }
+      },
+      {
+        "shortName": "ob_pathology_unknown_orign",
+        "title": "Unknown Orign",
+        "field": "Bone Tumors",
+        "definition": "OrthoBullets chapter \"Unknown Orign\" (Bone Tumors): Summary: Giant Cell Tumors are benign, aggressive tumors typically found in the epiphysis of long bones, most commonly at the distal femur and proximal tibia.; Patients typically present between ages 30 and 50 with insidious onset of pain of the involved extremity with activity, at night, or at rest.; Diagnosis is made with a biopsy showing mononuclear stromal cells that resemble interstitial fibroblasts with numerous giant cells dispersed throughout.; Treatment is generally curettage, adjuvant …",
+        "summary": "Giant Cell Tumors are benign, aggressive tumors typically found in the epiphysis of long bones, most commonly at the distal femur and proximal tibia. Patients typically present between ages 30 and 50 with insidious onset of pain of the involved extremity with activity, at night, or at rest. Ewing's Sarcoma is a malignant, distinctive small round cell sarcoma associated with a t(11:22) translocatio",
+        "topics": [
+          {
+            "shortName": "ob_pathology_unknown_orign_giant_cell_tumor",
+            "title": "Giant Cell Tumor",
+            "definition": "Summary: Giant Cell Tumors are benign, aggressive tumors typically found in the epiphysis of long bones, most commonly at the distal femur and proximal tibia.; Patients typically present between ages 30 and 50 with insidious onset of pain of the involved extremity with activity, at night, or at rest.; Diagnosis is made with a biopsy showing mononuclear stromal cells that resemble interstitial fibroblasts with numerous giant cells dispersed throughout.; Treatment is generally curettage, adjuvant treatment, and reconstruction as necessary depending on the location of the lesion..",
+            "summary": "Giant Cell Tumors are benign, aggressive tumors typically found in the epiphysis of long bones, most commonly at the distal femur and proximal tibia. Patients typically present between ages 30 and 50 with insidious onset of pain of the involved extremity with activity, at night, or at rest.",
+            "obTopicId": "8046",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Unknown Orign",
+              "section": "Giant Cell Tumor",
+              "url": "https://www.orthobullets.com/pathology/8046/giant-cell-tumor"
+            }
+          },
+          {
+            "shortName": "ob_pathology_unknown_orign_ewing_s_sarcoma",
+            "title": "Ewing's Sarcoma",
+            "definition": "summary: Ewing's Sarcoma is a malignant, distinctive small round cell sarcoma associated with a t(11:22) translocation which most commonly occurs in the diaphysis of long bones in patients <25 with regional pain, swelling and fevers.; Diagnosis is made with a biopsy showing sheets of monotonous small round blue cells with prominent nuclei and minimal cytoplasm and immunostaining positive for CD99.; Treatment is usually neo-adjuvant chemotherapy and limb salvage surgical resection, followed by adjuvant chemotherapy +/- radiation..",
+            "summary": "Ewing's Sarcoma is a malignant, distinctive small round cell sarcoma associated with a t(11:22) translocation which most commonly occurs in the diaphysis of long bones in patients <25 with regional pain, swelling and fevers. Diagnosis is made with a biopsy showing sheets of monotonous small round blue cells with prominent nuclei and minimal cytoplasm and immunostaining positive for CD99.",
+            "obTopicId": "8047",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Unknown Orign",
+              "section": "Ewing's Sarcoma",
+              "url": "https://www.orthobullets.com/pathology/8047/ewings-sarcoma"
+            }
+          },
+          {
+            "shortName": "ob_pathology_unknown_orign_adamantinoma",
+            "title": "Adamantinoma",
+            "definition": "summary: Adamantinomas are rare, low-grade malignant tumors of unknown etiology that are almost always located in the diaphysis of the mid-tibia.; The condition usually presents in patients who are between 20 and 40 years old with regional pain and a palpable mass.; Diagnosis is made with a biopsy showing nests of epithelial-like cells arranged in palisading or glandular pattern, in a background of fibrous stroma.; Treatment is usually wide-margin surgical resection..",
+            "summary": "Adamantinomas are rare, low-grade malignant tumors of unknown etiology that are almost always located in the diaphysis of the mid-tibia. The condition usually presents in patients who are between 20 and 40 years old with regional pain and a palpable mass.",
+            "obTopicId": "8048",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Unknown Orign",
+              "section": "Adamantinoma",
+              "url": "https://www.orthobullets.com/pathology/8048/adamantinoma"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Unknown Orign"
+        }
+      },
+      {
+        "shortName": "ob_pathology_metastatic_disease",
+        "title": "Metastatic disease",
+        "field": "Bone Tumors",
+        "definition": "OrthoBullets chapter \"Metastatic disease\" (Bone Tumors): Summary: Metastatic Disease of the Extremity is a malignant pathologic process that is the most common cause of destructive bone lesions in the extremities of adult patients.; Workup including history, physical, radiographs, and CT chest, abdomen, pelvis identifies the primary tumor in about 85% of cases. In patients where a primary carcinoma is not identified, obtaining a biopsy is necessary to rule out a primary bone lesion.; Treatment is aimed at controlling pain, maintaining patient independ…",
+        "summary": "Metastatic Disease of the Extremity is a malignant pathologic process that is the most common cause of destructive bone lesions in the extremities of adult patients. Workup including history, physical, radiographs, and CT chest, abdomen, pelvis identifies the primary tumor in about 85% of cases. In patients where a primary carcinoma is not identified, obtaining a biopsy is necessary to rule out… M",
+        "topics": [
+          {
+            "shortName": "ob_pathology_metastatic_disease_metastatic_disease_of_extremity",
+            "title": "Metastatic Disease of Extremity",
+            "definition": "Summary: Metastatic Disease of the Extremity is a malignant pathologic process that is the most common cause of destructive bone lesions in the extremities of adult patients.; Workup including history, physical, radiographs, and CT chest, abdomen, pelvis identifies the primary tumor in about 85% of cases. In patients where a primary carcinoma is not identified, obtaining a biopsy is necessary to rule out a primary bone lesion.; Treatment is aimed at controlling pain, maintaining patient independence, and preventing fractures..",
+            "summary": "Metastatic Disease of the Extremity is a malignant pathologic process that is the most common cause of destructive bone lesions in the extremities of adult patients. Workup including history, physical, radiographs, and CT chest, abdomen, pelvis identifies the primary tumor in about 85% of cases. In patients where a primary carcinoma is not identified, obtaining a biopsy is necessary to rule out…",
+            "obTopicId": "8045",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Metastatic disease",
+              "section": "Metastatic Disease of Extremity",
+              "url": "https://www.orthobullets.com/pathology/8045/metastatic-disease-of-extremity"
+            }
+          },
+          {
+            "shortName": "ob_pathology_metastatic_disease_metastatic_disease_of_spine",
+            "title": "Metastatic Disease of Spine",
+            "definition": "Summary: Metastatic disease to the spine the the most common location for metastases to bone that can lead to significant morbidity. This condition typically occurs in older cancer patients and presents with axial night pain and/or neurologic deficits.; Diagnosis is typically made with MRI with contrast which shows a soft tissue mass with possible cord compression or vertebral fractures; Treatment depends on the structural damage and symptoms caused by the lesion as well as patient prognosis (NOMS framework). Stable fractures in patients not able to undergo major surgery can be treated nonoperative or with minimally invasive techniques. Large lesions in patients with a good prognosis can be treated with laminectomy, fusion, and possibly corpectomy. Radiation therapy can be used as an adjunctive therapy.",
+            "summary": "Metastatic disease to the spine the the most common location for metastases to bone that can lead to significant morbidity. This condition typically occurs in older cancer patients and presents with axial night pain and/or neurologic deficits. Diagnosis is typically made with MRI with contrast which shows a soft tissue mass with possible cord compression or vertebral fractures",
+            "obTopicId": "2009",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Metastatic disease",
+              "section": "Metastatic Disease of Spine",
+              "url": "https://www.orthobullets.com/pathology/2009/metastatic-disease-of-spine"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Metastatic disease"
+        }
+      },
+      {
+        "shortName": "ob_pathology_soft_tissue_sarcoma",
+        "title": "Soft Tissue Sarcoma",
+        "field": "Soft Tissue Tumors",
+        "definition": "OrthoBullets chapter \"Soft Tissue Sarcoma\" (Soft Tissue Tumors): Summary: Soft tissue sarcomas are rare, malignant tumors comprising of a variety of subtypes distinguished by histological findings.; The condition usually presents in patients > 15 years old with a slow-growing, painless soft tissue mass.; Diagnosis is made by biopsy and histological findings.; Treatment usually involves mass excision and radiation therapy..",
+        "summary": "Soft tissue sarcomas are rare, malignant tumors comprising of a variety of subtypes distinguished by histological findings. The condition usually presents in patients > 15 years old with a slow-growing, painless soft tissue mass.",
+        "topics": [
+          {
+            "shortName": "ob_pathology_soft_tissue_sarcoma_soft_tissue_sarcoma",
+            "title": "Soft Tissue Sarcoma",
+            "definition": "Summary: Soft tissue sarcomas are rare, malignant tumors comprising of a variety of subtypes distinguished by histological findings.; The condition usually presents in patients > 15 years old with a slow-growing, painless soft tissue mass.; Diagnosis is made by biopsy and histological findings.; Treatment usually involves mass excision and radiation therapy..",
+            "summary": "Soft tissue sarcomas are rare, malignant tumors comprising of a variety of subtypes distinguished by histological findings. The condition usually presents in patients > 15 years old with a slow-growing, painless soft tissue mass.",
+            "obTopicId": "8049",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Soft Tissue Sarcoma",
+              "section": "Soft Tissue Sarcoma",
+              "url": "https://www.orthobullets.com/pathology/8049/soft-tissue-sarcoma"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Soft Tissue Sarcoma"
+        }
+      },
+      {
+        "shortName": "ob_pathology_synovial_tissue",
+        "title": "Synovial Tissue",
+        "field": "Soft Tissue Tumors",
+        "definition": "OrthoBullets chapter \"Synovial Tissue\" (Soft Tissue Tumors): Summary: Pigmented Villonodular Synovitis (more recently termed tenosynovial giant cell tumor) is a locally aggressive neoplastic synovial disease (not a true neoplasm) characterized by joint effusions, expansion of the synovium, and bony erosions.; The condition usually presents in patients between 30 and 40 years old with recurrent atraumatic knee hemarthrosis.; Diagnosis is multifaceted with clinical assessment for joint effusion (most commonly the knee), MRI studies showing synovial expansio…",
+        "summary": "Pigmented Villonodular Synovitis (more recently termed tenosynovial giant cell tumor) is a locally aggressive neoplastic synovial disease (not a true neoplasm) characterized by joint effusions, expansion of the synovium, and bony erosions. The condition usually presents in patients between 30 and 40 years old with recurrent atraumatic knee hemarthrosis. Synovial Chondromatosis is a proliferative d",
+        "topics": [
+          {
+            "shortName": "ob_pathology_synovial_tissue_pigmented_villonodular_synovitis",
+            "title": "Pigmented Villonodular Synovitis",
+            "definition": "Summary: Pigmented Villonodular Synovitis (more recently termed tenosynovial giant cell tumor) is a locally aggressive neoplastic synovial disease (not a true neoplasm) characterized by joint effusions, expansion of the synovium, and bony erosions.; The condition usually presents in patients between 30 and 40 years old with recurrent atraumatic knee hemarthrosis.; Diagnosis is multifaceted with clinical assessment for joint effusion (most commonly the knee), MRI studies showing synovial expansion, arthrocentesis revealing a brown fluid, and biopsy revealing hemosiderin-stained multinucleated giant cells.; Treatment generally consists of partial or total surgical synovectomy depending on presence of localized or diffuse PVNS..",
+            "summary": "Pigmented Villonodular Synovitis (more recently termed tenosynovial giant cell tumor) is a locally aggressive neoplastic synovial disease (not a true neoplasm) characterized by joint effusions, expansion of the synovium, and bony erosions. The condition usually presents in patients between 30 and 40 years old with recurrent atraumatic knee hemarthrosis.",
+            "obTopicId": "8050",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Synovial Tissue",
+              "section": "Pigmented Villonodular Synovitis",
+              "url": "https://www.orthobullets.com/pathology/8050/pigmented-villonodular-synovitis"
+            }
+          },
+          {
+            "shortName": "ob_pathology_synovial_tissue_synovial_chondromatosis",
+            "title": "Synovial Chondromatosis",
+            "definition": "summary: Synovial Chondromatosis is a proliferative disease of the synovium associated with cartilage metaplasia that results in multiple intra-articular loose bodies.; The condition usually presents in patients between 30 and 50 years of age with localized joint pain, stiffness, and swelling.; Diagnosis is made on radiographs in late disease but MRI studies may be required in early disease to show cartilage nodules throughout the joint space.; Treatment is usually observation for mild symptoms without restriction in motion. Open or arthroscopic synovectomy and loose body resection is indicated for patients with progressive pain, loss of motion, and reduced function..",
+            "summary": "Synovial Chondromatosis is a proliferative disease of the synovium associated with cartilage metaplasia that results in multiple intra-articular loose bodies. The condition usually presents in patients between 30 and 50 years of age with localized joint pain, stiffness, and swelling.",
+            "obTopicId": "8051",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Synovial Tissue",
+              "section": "Synovial Chondromatosis",
+              "url": "https://www.orthobullets.com/pathology/8051/synovial-chondromatosis"
+            }
+          },
+          {
+            "shortName": "ob_pathology_synovial_tissue_synovial_sarcoma",
+            "title": "Synovial Sarcoma",
+            "definition": "Summary: Synovial Sarcoma is a malignant, soft tissue sarcoma caused by a t(X;18) chromosomal translocation mutation ( SS18:SSX fusion protein) most commonly found near joints but rarely within the joint.; The condition usually presents in patients between 15 and 40 years old with a growing mass in proximity to a joint.; Diagnosis is made with a biopsy showing a classic mono/biphasic appearance with atypical spindle cells and epithelial cells. Immunostaining is positive for epithelial membrane antigen and vimentin.; Treatment is usually wide surgical excision with perioperative radiation..",
+            "summary": "Synovial Sarcoma is a malignant, soft tissue sarcoma caused by a t(X;18) chromosomal translocation mutation ( SS18:SSX fusion protein) most commonly found near joints but rarely within the joint. The condition usually presents in patients between 15 and 40 years old with a growing mass in proximity to a joint.",
+            "obTopicId": "8052",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Synovial Tissue",
+              "section": "Synovial Sarcoma",
+              "url": "https://www.orthobullets.com/pathology/8052/synovial-sarcoma"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Synovial Tissue"
+        }
+      },
+      {
+        "shortName": "ob_pathology_peripheral_nerves",
+        "title": "Peripheral Nerves",
+        "field": "Soft Tissue Tumors",
+        "definition": "OrthoBullets chapter \"Peripheral Nerves\" (Soft Tissue Tumors): summary: Neurilemmoma, also known as Schwannoma, are benign, encapsulated nerve sheath tumors composed of Schwann cells that occur on the surface of peripheral nerves.; The condition usually presents in patients in the 3rd to 6th decades of life with paresthesias in the distribution of the peripheral nerve.; Diagnosis is made with biopsy showing a lesion that is well encapsulated in a nerve sheath with histology showing verocay bodies. Immunostaining is positive for S100.; Treatment is usually o…",
+        "summary": "Neurilemmoma, also known as Schwannoma, are benign, encapsulated nerve sheath tumors composed of Schwann cells that occur on the surface of peripheral nerves. The condition usually presents in patients in the 3rd to 6th decades of life with paresthesias in the distribution of the peripheral nerve. Introduction Common neuromas include Interdigital (Morton's) Neuroma Postamputation Neuroma",
+        "topics": [
+          {
+            "shortName": "ob_pathology_peripheral_nerves_neurilemmoma",
+            "title": "Neurilemmoma",
+            "definition": "summary: Neurilemmoma, also known as Schwannoma, are benign, encapsulated nerve sheath tumors composed of Schwann cells that occur on the surface of peripheral nerves.; The condition usually presents in patients in the 3rd to 6th decades of life with paresthesias in the distribution of the peripheral nerve.; Diagnosis is made with biopsy showing a lesion that is well encapsulated in a nerve sheath with histology showing verocay bodies. Immunostaining is positive for S100.; Treatment is usually observation for asymptomatic lesions. Marginal resection is recommended in cases of progressive symptoms..",
+            "summary": "Neurilemmoma, also known as Schwannoma, are benign, encapsulated nerve sheath tumors composed of Schwann cells that occur on the surface of peripheral nerves. The condition usually presents in patients in the 3rd to 6th decades of life with paresthesias in the distribution of the peripheral nerve.",
+            "obTopicId": "8053",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Peripheral Nerves",
+              "section": "Neurilemmoma",
+              "url": "https://www.orthobullets.com/pathology/8053/neurilemmoma"
+            }
+          },
+          {
+            "shortName": "ob_pathology_peripheral_nerves_neuroma",
+            "title": "Neuroma",
+            "definition": "Neuroma. Introduction Common neuromas include Interdigital (Morton's) Neuroma Postamputation Neuroma",
+            "summary": "Introduction Common neuromas include Interdigital (Morton's) Neuroma Postamputation Neuroma",
+            "obTopicId": "8054",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Peripheral Nerves",
+              "section": "Neuroma",
+              "url": "https://www.orthobullets.com/pathology/8054/neuroma"
+            }
+          },
+          {
+            "shortName": "ob_pathology_peripheral_nerves_malignant_peripheral_nerve_sheath_tumor",
+            "title": "Malignant Peripheral Nerve Sheath Tumor",
+            "definition": "summary: Malignant Peripheral Nerve Sheath Tumors, also known as neurofibrosarcoma or malignant schwannoma, are malignant tumors that may occur as solitary lesions or be associated with neurofibromatosis.; The condition usually presents in patients between 20 and 50 years old with soft-tissue masses associated with a peripheral nerve or prior neurofibroma.; Diagnosis is made with a biopsy showing spindle cells with wavy nuclei resembling fibrosarcoma. Immunostaining is positive for S100.; Treatment is usually wide surgical resection and radiation..",
+            "summary": "Malignant Peripheral Nerve Sheath Tumors, also known as neurofibrosarcoma or malignant schwannoma, are malignant tumors that may occur as solitary lesions or be associated with neurofibromatosis. The condition usually presents in patients between 20 and 50 years old with soft-tissue masses associated with a peripheral nerve or prior neurofibroma.",
+            "obTopicId": "8055",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Peripheral Nerves",
+              "section": "Malignant Peripheral Nerve Sheath Tumor",
+              "url": "https://www.orthobullets.com/pathology/8055/malignant-peripheral-nerve-sheath-tumor"
+            }
+          },
+          {
+            "shortName": "ob_pathology_peripheral_nerves_neurofibroma",
+            "title": "Neurofibroma",
+            "definition": "summary: Neurofibromas are benign peripheral nerve sheath tumors most commonly associated with neurofibromatosis.; The condition usually presents in patients with neurofibromatosis with cutaneous lesions, as well as lesions near the brain, spinal cord and parotid glands.; Diagnosis is made with clinical history, physical exam, and MRI with and without contrast.; Treatment is observation for asymptomatic lesions. Surgical excision is indicated for symptomatic lesions..",
+            "summary": "Neurofibromas are benign peripheral nerve sheath tumors most commonly associated with neurofibromatosis. The condition usually presents in patients with neurofibromatosis with cutaneous lesions, as well as lesions near the brain, spinal cord and parotid glands.",
+            "obTopicId": "8056",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Peripheral Nerves",
+              "section": "Neurofibroma",
+              "url": "https://www.orthobullets.com/pathology/8056/neurofibroma"
+            }
+          },
+          {
+            "shortName": "ob_pathology_peripheral_nerves_neuroblastoma",
+            "title": "Neuroblastoma",
+            "definition": "summary: Neuroblastomas are malignant tumors that develop from sympathetic neural tissue with most cases arising near the adrenal gland or the spinal cord.; The condition usually presents in children younger than age 2 with fever, weight loss, and diarrhea.; Diagnosis is made with a biopsy showing small round blue cells forming rosette patterns.; Treatment may be observation or a combination of chemotherapy, stem cell transplantation, and surgical excision depending on the histological grade and location of the tumor..",
+            "summary": "Neuroblastomas are malignant tumors that develop from sympathetic neural tissue with most cases arising near the adrenal gland or the spinal cord. The condition usually presents in children younger than age 2 with fever, weight loss, and diarrhea.",
+            "obTopicId": "8081",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Peripheral Nerves",
+              "section": "Neuroblastoma",
+              "url": "https://www.orthobullets.com/pathology/8081/neuroblastoma"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Peripheral Nerves"
+        }
+      },
+      {
+        "shortName": "ob_pathology_muscle_tumors",
+        "title": "Muscle Tumors",
+        "field": "Soft Tissue Tumors",
+        "definition": "OrthoBullets chapter \"Muscle Tumors\" (Soft Tissue Tumors): Summary: Leiomyosarcoma is an aggressive sarcoma thought to arise from the smooth muscle cells lining small blood vessels.; The condition usually presents in patients in the 5th and 6th decades of life, with pain and a palpable mass.; Diagnosis is made with biopsy showing a spindle cell neoplasm with similar characteristics shared between the osseous and soft tissue forms of this disease. Immunostains are positive for actin and vimentin.; Treatment is generally wide surgical resection with radia…",
+        "summary": "Leiomyosarcoma is an aggressive sarcoma thought to arise from the smooth muscle cells lining small blood vessels. The condition usually presents in patients in the 5th and 6th decades of life, with pain and a palpable mass. Rhabdomyosarcomas are malignant tumors of the primitive mesenchyme that come in 4 sub-types: embryonal, alveolar, botryoid, and pleomorphic. The embryonal and botryoid sub-type",
+        "topics": [
+          {
+            "shortName": "ob_pathology_muscle_tumors_leiomyosarcoma",
+            "title": "Leiomyosarcoma",
+            "definition": "Summary: Leiomyosarcoma is an aggressive sarcoma thought to arise from the smooth muscle cells lining small blood vessels.; The condition usually presents in patients in the 5th and 6th decades of life, with pain and a palpable mass.; Diagnosis is made with biopsy showing a spindle cell neoplasm with similar characteristics shared between the osseous and soft tissue forms of this disease. Immunostains are positive for actin and vimentin.; Treatment is generally wide surgical resection with radiation..",
+            "summary": "Leiomyosarcoma is an aggressive sarcoma thought to arise from the smooth muscle cells lining small blood vessels. The condition usually presents in patients in the 5th and 6th decades of life, with pain and a palpable mass.",
+            "obTopicId": "8058",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Muscle Tumors",
+              "section": "Leiomyosarcoma",
+              "url": "https://www.orthobullets.com/pathology/8058/leiomyosarcoma"
+            }
+          },
+          {
+            "shortName": "ob_pathology_muscle_tumors_rhabdomyosarcoma",
+            "title": "Rhabdomyosarcoma",
+            "definition": "summary: Rhabdomyosarcomas are malignant tumors of the primitive mesenchyme that come in 4 sub-types: embryonal, alveolar, botryoid, and pleomorphic.; The embryonal and botryoid sub-types most commonly present in young children, the alveolar sub-type most commonly occurs in young adults, and the pleomorphic sub-type most commonly occurs in older patients.; Diagnosis is made with a biopsy. Immunostains are positive for desmin, myosin and vimentin.; Treatment is usually wide surgical excision with chemotherapy or radiation depending on the sub-type..",
+            "summary": "Rhabdomyosarcomas are malignant tumors of the primitive mesenchyme that come in 4 sub-types: embryonal, alveolar, botryoid, and pleomorphic. The embryonal and botryoid sub-types most commonly present in young children, the alveolar sub-type most commonly occurs in young adults, and the pleomorphic sub-type most commonly occurs in older patients.",
+            "obTopicId": "8059",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Muscle Tumors",
+              "section": "Rhabdomyosarcoma",
+              "url": "https://www.orthobullets.com/pathology/8059/rhabdomyosarcoma"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Muscle Tumors"
+        }
+      },
+      {
+        "shortName": "ob_pathology_fibrogenic",
+        "title": "Fibrogenic",
+        "field": "Soft Tissue Tumors",
+        "definition": "OrthoBullets chapter \"Fibrogenic\" (Soft Tissue Tumors): summary: Calcifying Aponeurotic Fibromas are benign fibrogenic masses that usually present as a painless mass in the hands and feet in children and young adults.; Diagnosis is made with a biopsy showing fibrous tissue with central region of calcification and cartilage formation; Treatment is generally observation as the lesion often resolves with maturity. summary: Plantar Fibromatosis, also known as Ledderhose disease, is a benign tumor of the foot plantar fascia that is characterized by myofib…",
+        "summary": "Calcifying Aponeurotic Fibromas are benign fibrogenic masses that usually present as a painless mass in the hands and feet in children and young adults. Diagnosis is made with a biopsy showing fibrous tissue with central region of calcification and cartilage formation Plantar Fibromatosis, also known as Ledderhose disease, is a benign tumor of the foot plantar fascia that is characterized by myofi",
+        "topics": [
+          {
+            "shortName": "ob_pathology_fibrogenic_calcifying_aponeurotic_fibroma",
+            "title": "Calcifying Aponeurotic Fibroma",
+            "definition": "summary: Calcifying Aponeurotic Fibromas are benign fibrogenic masses that usually present as a painless mass in the hands and feet in children and young adults.; Diagnosis is made with a biopsy showing fibrous tissue with central region of calcification and cartilage formation; Treatment is generally observation as the lesion often resolves with maturity.",
+            "summary": "Calcifying Aponeurotic Fibromas are benign fibrogenic masses that usually present as a painless mass in the hands and feet in children and young adults. Diagnosis is made with a biopsy showing fibrous tissue with central region of calcification and cartilage formation",
+            "obTopicId": "8060",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Fibrogenic",
+              "section": "Calcifying Aponeurotic Fibroma",
+              "url": "https://www.orthobullets.com/pathology/8060/calcifying-aponeurotic-fibroma"
+            }
+          },
+          {
+            "shortName": "ob_pathology_fibrogenic_plantar_fibromatosis_ledderhose_disease",
+            "title": "Plantar Fibromatosis (Ledderhose Disease)",
+            "definition": "summary: Plantar Fibromatosis, also known as Ledderhose disease, is a benign tumor of the foot plantar fascia that is characterized by myofibroblast and collagen proliferation.; The condition usually presents in elderly patients with subcutaneous thickening or nodules in the foot.; Diagnosis is made with a combination of physical examination and MRI studies.; Treatment is observation for minimally symptomatic lesions. Surgical excision is recommended for lesions that are large, painful, or activity-limiting..",
+            "summary": "Plantar Fibromatosis, also known as Ledderhose disease, is a benign tumor of the foot plantar fascia that is characterized by myofibroblast and collagen proliferation. The condition usually presents in elderly patients with subcutaneous thickening or nodules in the foot.",
+            "obTopicId": "8061",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Fibrogenic",
+              "section": "Plantar Fibromatosis (Ledderhose Disease)",
+              "url": "https://www.orthobullets.com/pathology/8061/plantar-fibromatosis-ledderhose-disease"
+            }
+          },
+          {
+            "shortName": "ob_pathology_fibrogenic_extra_abdominal_desmoid_tumor",
+            "title": "Extra-abdominal Desmoid Tumor",
+            "definition": "summary: Extra-abdominal Desmoid Tumors are benign, locally aggressive, fibrogenic lesions that are associated with familial adenomatous polyposis (FAP).; The condition usually presents in patients between the ages of 25 and 35 with a firm, enlarging soft tissue mass; Diagnosis is made with a biopsy showing well-differentiated fibroblasts with uniform spindle cells with elongated nuclei and occasional mitoses. Immunohistochemistry will show a positive stain for estrogen receptor-beta.; Treatment may be medical management with tamoxifen or wide surgical excision with radiotherapy depending on the size, grade and location of the lesion..",
+            "summary": "Extra-abdominal Desmoid Tumors are benign, locally aggressive, fibrogenic lesions that are associated with familial adenomatous polyposis (FAP). The condition usually presents in patients between the ages of 25 and 35 with a firm, enlarging soft tissue mass",
+            "obTopicId": "8062",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Fibrogenic",
+              "section": "Extra-abdominal Desmoid Tumor",
+              "url": "https://www.orthobullets.com/pathology/8062/extra-abdominal-desmoid-tumor"
+            }
+          },
+          {
+            "shortName": "ob_pathology_fibrogenic_nodular_fasciitis",
+            "title": "Nodular Fasciitis",
+            "definition": "summary: Nodular Fasciitis is a common, fibrous, soft tissue lesion that usually occurs in the upper extremities of young people.; Diagnosis is made with MRI studies showing a deep-seated inhomogeneous mass with nodularity along the fascial planes. Biopsy shows short irregular bundles and fascicles in a dense reticulum network.; Treatment is usually marginal surgical resection..",
+            "summary": "Nodular Fasciitis is a common, fibrous, soft tissue lesion that usually occurs in the upper extremities of young people. Diagnosis is made with MRI studies showing a deep-seated inhomogeneous mass with nodularity along the fascial planes. Biopsy shows short irregular bundles and fascicles in a dense reticulum network.",
+            "obTopicId": "8063",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Fibrogenic",
+              "section": "Nodular Fasciitis",
+              "url": "https://www.orthobullets.com/pathology/8063/nodular-fasciitis"
+            }
+          },
+          {
+            "shortName": "ob_pathology_fibrogenic_undifferentiated_pleomorphic_sarcoma",
+            "title": "Undifferentiated Pleomorphic Sarcoma",
+            "definition": "summary: Undifferentiated Pleomorphic Sarcoma, previously known as malignant fibrous histiocytoma, is a high-grade, aggressive, malignant fibrogenic tumor.; The condition is typically seen in patients 55-80 years of age who present with a slow-growing, painless mass.; Diagnosis is made with a biopsy showing spindled, histiocytic, and multinucleated eosinophilic giant cells arranged in a storiform pattern arranged around small vessels.; Treatment is usually wide-margin surgical excision with radiotherapy..",
+            "summary": "Undifferentiated Pleomorphic Sarcoma, previously known as malignant fibrous histiocytoma, is a high-grade, aggressive, malignant fibrogenic tumor. The condition is typically seen in patients 55-80 years of age who present with a slow-growing, painless mass.",
+            "obTopicId": "8064",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Fibrogenic",
+              "section": "Undifferentiated Pleomorphic Sarcoma",
+              "url": "https://www.orthobullets.com/pathology/8064/undifferentiated-pleomorphic-sarcoma"
+            }
+          },
+          {
+            "shortName": "ob_pathology_fibrogenic_fibrosarcoma_of_soft_tissue",
+            "title": "Fibrosarcoma of Soft Tissue",
+            "definition": "summary: Fibrosarcoma of Soft tissue is a malignant fibrogenic tumor that occurs in patients between 55-80 years of age.; Diagnosis is made with a biopsy showing spindle-shaped cells with scant cytoplasm and indistinct borders with tissue that is organized in herringbone fashion.; Treatment is usually wide local resection with radiation.",
+            "summary": "Fibrosarcoma of Soft tissue is a malignant fibrogenic tumor that occurs in patients between 55-80 years of age. Diagnosis is made with a biopsy showing spindle-shaped cells with scant cytoplasm and indistinct borders with tissue that is organized in herringbone fashion.",
+            "obTopicId": "8065",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Fibrogenic",
+              "section": "Fibrosarcoma of Soft Tissue",
+              "url": "https://www.orthobullets.com/pathology/8065/fibrosarcoma-of-soft-tissue"
+            }
+          },
+          {
+            "shortName": "ob_pathology_fibrogenic_dermatofibrosarcoma_protuberans",
+            "title": "Dermatofibrosarcoma Protuberans",
+            "definition": "summary: Dermatofibrosarcoma Protuberans are rare, low-grade fibrogenic cutaneous sarcomas that occur in early to mid-adult life.; Diagnosis is made with a biopsy showing uniform fibroblasts arranged in storiform pattern around an inconspicuous vasculature.; Treatment is usually wide surgical resection with radiation therapy..",
+            "summary": "Dermatofibrosarcoma Protuberans are rare, low-grade fibrogenic cutaneous sarcomas that occur in early to mid-adult life. Diagnosis is made with a biopsy showing uniform fibroblasts arranged in storiform pattern around an inconspicuous vasculature.",
+            "obTopicId": "8066",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Fibrogenic",
+              "section": "Dermatofibrosarcoma Protuberans",
+              "url": "https://www.orthobullets.com/pathology/8066/dermatofibrosarcoma-protuberans"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Fibrogenic"
+        }
+      },
+      {
+        "shortName": "ob_pathology_lipogenic",
+        "title": "Lipogenic",
+        "field": "Soft Tissue Tumors",
+        "definition": "OrthoBullets chapter \"Lipogenic\" (Soft Tissue Tumors): summary: Lipomas are common benign tumors of mature fat which may be subcutaneous, extramuscular, or intramuscular.; The condition is typically seen in patients 40-60 years of age who present with a stable, mobile, and painless mass.; Diagnosis is made with MRI studies showing a homogenous lesion with signal intensity matching adipose tissue on all image sequencing.; Treatment is observation for asymptomatic lesions. Marginal surgical resection is indicated for symptomatic lesions or lesions tha…",
+        "summary": "Lipomas are common benign tumors of mature fat which may be subcutaneous, extramuscular, or intramuscular. The condition is typically seen in patients 40-60 years of age who present with a stable, mobile, and painless mass. Liposarcomas are a heterogeneous class of sarcomas with differentiation towards adipose tissue that consist of 5 different sub-types: well-differentiated, myxoid, round cell, p",
+        "topics": [
+          {
+            "shortName": "ob_pathology_lipogenic_lipomas",
+            "title": "Lipomas",
+            "definition": "summary: Lipomas are common benign tumors of mature fat which may be subcutaneous, extramuscular, or intramuscular.; The condition is typically seen in patients 40-60 years of age who present with a stable, mobile, and painless mass.; Diagnosis is made with MRI studies showing a homogenous lesion with signal intensity matching adipose tissue on all image sequencing.; Treatment is observation for asymptomatic lesions. Marginal surgical resection is indicated for symptomatic lesions or lesions that are rapidly growing.",
+            "summary": "Lipomas are common benign tumors of mature fat which may be subcutaneous, extramuscular, or intramuscular. The condition is typically seen in patients 40-60 years of age who present with a stable, mobile, and painless mass.",
+            "obTopicId": "8067",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Lipogenic",
+              "section": "Lipomas",
+              "url": "https://www.orthobullets.com/pathology/8067/lipomas"
+            }
+          },
+          {
+            "shortName": "ob_pathology_lipogenic_liposarcoma",
+            "title": "Liposarcoma",
+            "definition": "Summary: Liposarcomas are a heterogeneous class of sarcomas with differentiation towards adipose tissue that consist of 5 different sub-types: well-differentiated, myxoid, round cell, pleomorphic, and dedifferentiated.; The condition is typically seen in patients 50-80 years of age who present with a slow-growing, painless mass.; Diagnosis is made with a biopsy showing immature lipoblasts with various cellular atypia depending on the sub-type.; Treatment may be marginal excision for a well-differentiated liposarcoma. Wide surgical resection with radiation is indicated for intermediate and high-grade liposarcomas..",
+            "summary": "Liposarcomas are a heterogeneous class of sarcomas with differentiation towards adipose tissue that consist of 5 different sub-types: well-differentiated, myxoid, round cell, pleomorphic, and dedifferentiated. The condition is typically seen in patients 50-80 years of age who present with a slow-growing, painless mass.",
+            "obTopicId": "8068",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Lipogenic",
+              "section": "Liposarcoma",
+              "url": "https://www.orthobullets.com/pathology/8068/liposarcoma"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Lipogenic"
+        }
+      },
+      {
+        "shortName": "ob_pathology_vascular_tissue",
+        "title": "Vascular Tissue",
+        "field": "Soft Tissue Tumors",
+        "definition": "OrthoBullets chapter \"Vascular Tissue\" (Soft Tissue Tumors): summary: Hemangioma of Soft Tissue is a benign vascular neoplasm that may be located in a cutaneous, subcutaneous, or intramuscular location.; The condition is typically seen in patients < 30 years of age who present with a painful mass of variable size depending on activity level.; Diagnosis is made with MRI with contrast.; Treatment is usually a trial of observation, NSAIDs, vascular stockings, and activity modification. Embolization, sclerotherapy, or surgical resection are indicated for lesi…",
+        "summary": "Hemangioma of Soft Tissue is a benign vascular neoplasm that may be located in a cutaneous, subcutaneous, or intramuscular location. The condition is typically seen in patients < 30 years of age who present with a painful mass of variable size depending on activity level. Angiosarcomas are malignant, aggressive tumors that derive from the endothelium of blood vessels. The condition is typically se",
+        "topics": [
+          {
+            "shortName": "ob_pathology_vascular_tissue_hemangioma_of_soft_tissue",
+            "title": "Hemangioma of Soft Tissue",
+            "definition": "summary: Hemangioma of Soft Tissue is a benign vascular neoplasm that may be located in a cutaneous, subcutaneous, or intramuscular location.; The condition is typically seen in patients < 30 years of age who present with a painful mass of variable size depending on activity level.; Diagnosis is made with MRI with contrast.; Treatment is usually a trial of observation, NSAIDs, vascular stockings, and activity modification. Embolization, sclerotherapy, or surgical resection are indicated for lesions associated with persistent symptoms not responsive to nonoperative management..",
+            "summary": "Hemangioma of Soft Tissue is a benign vascular neoplasm that may be located in a cutaneous, subcutaneous, or intramuscular location. The condition is typically seen in patients < 30 years of age who present with a painful mass of variable size depending on activity level.",
+            "obTopicId": "8069",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Vascular Tissue",
+              "section": "Hemangioma of Soft Tissue",
+              "url": "https://www.orthobullets.com/pathology/8069/hemangioma-of-soft-tissue"
+            }
+          },
+          {
+            "shortName": "ob_pathology_vascular_tissue_angiosarcoma",
+            "title": "Angiosarcoma",
+            "definition": "summary: Angiosarcomas are malignant, aggressive tumors that derive from the endothelium of blood vessels.; The condition is typically seen in elderly patients who present with regional pain and overlying skin changes.; Diagnosis is made with a biopsy showing malignant cells associated with vascular structures.; Treatment is usually wide surgical resection with radiation..",
+            "summary": "Angiosarcomas are malignant, aggressive tumors that derive from the endothelium of blood vessels. The condition is typically seen in elderly patients who present with regional pain and overlying skin changes.",
+            "obTopicId": "8070",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Vascular Tissue",
+              "section": "Angiosarcoma",
+              "url": "https://www.orthobullets.com/pathology/8070/angiosarcoma"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Vascular Tissue"
+        }
+      },
+      {
+        "shortName": "ob_pathology_dermatologic",
+        "title": "Dermatologic",
+        "field": "Soft Tissue Tumors",
+        "definition": "OrthoBullets chapter \"Dermatologic\" (Soft Tissue Tumors): summary: Squamous Cell Carcinoma is a malignant soft tissue tumor most commonly found in elderly patients.; Diagnosis is made with a biopsy.; Treatment is wide surgical resection with or without radiation and skin grafting.. summary: Glomus Tumors are rare benign tumors of the glomus body, often occurring in the subungual region.; The condition is typically seen in patients between the ages of 20 and 40 who present with a painful subungal mass with bluish discoloration.; Diagnosis is made with a…",
+        "summary": "Squamous Cell Carcinoma is a malignant soft tissue tumor most commonly found in elderly patients. Diagnosis is made with a biopsy. Glomus Tumors are rare benign tumors of the glomus body, often occurring in the subungual region. The condition is typically seen in patients between the ages of 20 and 40 who present with a painful subungal mass with bluish discoloration.",
+        "topics": [
+          {
+            "shortName": "ob_pathology_dermatologic_squamous_cell_carcinoma",
+            "title": "Squamous Cell Carcinoma",
+            "definition": "summary: Squamous Cell Carcinoma is a malignant soft tissue tumor most commonly found in elderly patients.; Diagnosis is made with a biopsy.; Treatment is wide surgical resection with or without radiation and skin grafting..",
+            "summary": "Squamous Cell Carcinoma is a malignant soft tissue tumor most commonly found in elderly patients. Diagnosis is made with a biopsy.",
+            "obTopicId": "8073",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Dermatologic",
+              "section": "Squamous Cell Carcinoma",
+              "url": "https://www.orthobullets.com/pathology/8073/squamous-cell-carcinoma"
+            }
+          },
+          {
+            "shortName": "ob_pathology_dermatologic_glomus_tumor",
+            "title": "Glomus Tumor",
+            "definition": "summary: Glomus Tumors are rare benign tumors of the glomus body, often occurring in the subungual region.; The condition is typically seen in patients between the ages of 20 and 40 who present with a painful subungal mass with bluish discoloration.; Diagnosis is made with a biopsy showing a well-defined lesion lacking cellular atypia or mitotic activity with the presence of small round cells with dark nuclei.; Treatment is usually marginal excision..",
+            "summary": "Glomus Tumors are rare benign tumors of the glomus body, often occurring in the subungual region. The condition is typically seen in patients between the ages of 20 and 40 who present with a painful subungal mass with bluish discoloration.",
+            "obTopicId": "8075",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Dermatologic",
+              "section": "Glomus Tumor",
+              "url": "https://www.orthobullets.com/pathology/8075/glomus-tumor"
+            }
+          },
+          {
+            "shortName": "ob_pathology_dermatologic_actinic_keratosis",
+            "title": "Actinic Keratosis",
+            "definition": "Summary: Actinic Keratosis is an epidermal pre-malignant lesion caused by sun exposure that may predispose to squamous cell carcinoma of the skin.; Diagnosis is made with a biopsy showing hyperkeratotic cells and lower epithelial cells showing loss of polarity and hyperchromatic nuclei; Treatment is usually cryotherapy..",
+            "summary": "Actinic Keratosis is an epidermal pre-malignant lesion caused by sun exposure that may predispose to squamous cell carcinoma of the skin. Diagnosis is made with a biopsy showing hyperkeratotic cells and lower epithelial cells showing loss of polarity and hyperchromatic nuclei",
+            "obTopicId": "12760",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Dermatologic",
+              "section": "Actinic Keratosis",
+              "url": "https://www.orthobullets.com/pathology/12760/actinic-keratosis"
+            }
+          },
+          {
+            "shortName": "ob_pathology_dermatologic_basal_cell_carcinoma",
+            "title": "Basal Cell Carcinoma",
+            "definition": "summary: Basal Cell Carcinoma is the most common skin malignancy that rarely, if ever, metastasizes.; The condition most commonly occurs in patients with significant sun exposure, who present with a pink, pearly-white, dome-shaped nodule.; Diagnosis is made with a biopsy showing basophilic palisading cells.; Treatment is usually wide surgical resection..",
+            "summary": "Basal Cell Carcinoma is the most common skin malignancy that rarely, if ever, metastasizes. The condition most commonly occurs in patients with significant sun exposure, who present with a pink, pearly-white, dome-shaped nodule.",
+            "obTopicId": "12761",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Dermatologic",
+              "section": "Basal Cell Carcinoma",
+              "url": "https://www.orthobullets.com/pathology/12761/basal-cell-carcinoma"
+            }
+          },
+          {
+            "shortName": "ob_pathology_dermatologic_melanoma",
+            "title": "Melanoma",
+            "definition": "summary: Melanomas are an aggressive skin malignancy of melanocytic origin.; The condition is typically seen in patients between 50 and 70 years old who present with a pigmented skin lesion with a recent change in shape or size.; Diagnosis is made with a biopsy showing melanocytes with marked cellular atypia with invasion into the dermis.; Treatment is usually wide surgical excision..",
+            "summary": "Melanomas are an aggressive skin malignancy of melanocytic origin. The condition is typically seen in patients between 50 and 70 years old who present with a pigmented skin lesion with a recent change in shape or size.",
+            "obTopicId": "6093",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Dermatologic",
+              "section": "Melanoma",
+              "url": "https://www.orthobullets.com/pathology/6093/melanoma"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Dermatologic"
+        }
+      },
+      {
+        "shortName": "ob_pathology_other",
+        "title": "Other",
+        "field": "Soft Tissue Tumors",
+        "definition": "OrthoBullets chapter \"Other\" (Soft Tissue Tumors): summary: Epitheliod Sarcomas are rare, slow-growing, malignant, nodular, soft tissue tumors that most commonly occur in the hand and wrist.; The condition is typically seen in patients between the ages of 10 and 35 who present with a small, firm, painless, mass in the upper extremity.; Diagnosis is made with a biopsy showing a characteristic nodular pattern with central necrosis within granulomatous areas.; Treatment is usually wide surgical excision with radiation.. summary: Intramuscular Myxom…",
+        "summary": "Epitheliod Sarcomas are rare, slow-growing, malignant, nodular, soft tissue tumors that most commonly occur in the hand and wrist. The condition is typically seen in patients between the ages of 10 and 35 who present with a small, firm, painless, mass in the upper extremity. Intramuscular Myxomas are benign soft tissue tumors that present as slow-growing deeply seated masses confined within the sk",
+        "topics": [
+          {
+            "shortName": "ob_pathology_other_epithelioid_sarcoma",
+            "title": "Epithelioid Sarcoma",
+            "definition": "summary: Epitheliod Sarcomas are rare, slow-growing, malignant, nodular, soft tissue tumors that most commonly occur in the hand and wrist.; The condition is typically seen in patients between the ages of 10 and 35 who present with a small, firm, painless, mass in the upper extremity.; Diagnosis is made with a biopsy showing a characteristic nodular pattern with central necrosis within granulomatous areas.; Treatment is usually wide surgical excision with radiation..",
+            "summary": "Epitheliod Sarcomas are rare, slow-growing, malignant, nodular, soft tissue tumors that most commonly occur in the hand and wrist. The condition is typically seen in patients between the ages of 10 and 35 who present with a small, firm, painless, mass in the upper extremity.",
+            "obTopicId": "8076",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Other",
+              "section": "Epithelioid Sarcoma",
+              "url": "https://www.orthobullets.com/pathology/8076/epithelioid-sarcoma"
+            }
+          },
+          {
+            "shortName": "ob_pathology_other_intramuscular_myxomas",
+            "title": "Intramuscular Myxomas",
+            "definition": "summary: Intramuscular Myxomas are benign soft tissue tumors that present as slow-growing deeply seated masses confined within the skeletal muscle.; The condition is typically seen in patients between 40 and 60 years of age who present with a slow-growing mass that may or may not be painful.; Diagnosis is made with MRI studies showing a homogenous mass with an intramuscular location.; Treatment is observation for asymptomatic lesions. Marginal surgical excision is indicated for symptomatic lesions that do not resolve with nonoperative management..",
+            "summary": "Intramuscular Myxomas are benign soft tissue tumors that present as slow-growing deeply seated masses confined within the skeletal muscle. The condition is typically seen in patients between 40 and 60 years of age who present with a slow-growing mass that may or may not be painful.",
+            "obTopicId": "8080",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Other",
+              "section": "Intramuscular Myxomas",
+              "url": "https://www.orthobullets.com/pathology/8080/intramuscular-myxomas"
+            }
+          },
+          {
+            "shortName": "ob_pathology_other_other_pathology_topics",
+            "title": "Other Pathology Topics",
+            "definition": "Other Pathology Topics — OrthoBullets topic in Other (Pathology).",
+            "summary": "OrthoBullets topic \"Other Pathology Topics\" under chapter \"Other\".",
+            "obTopicId": "8000",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Other",
+              "section": "Other Pathology Topics",
+              "url": "https://www.orthobullets.com/pathology/8000/other-pathology-topics"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Other"
+        }
+      }
+    ]
+  }
+}

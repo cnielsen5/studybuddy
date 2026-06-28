@@ -2,7 +2,7 @@
 
 > **Purpose:** Single source of truth for where Socrates is headed, what's done, and what's next.  
 > **Navigation:** See [`README.md`](README.md) for full repo map and where to go for each kind of work.  
-> **Last updated:** June 27, 2026  
+> **Last updated:** June 28, 2026  
 > **Repo:** [github.com/cnielsen5/studybuddy](https://github.com/cnielsen5/studybuddy)  
 > **Last code activity:** June 27, 2026
 
@@ -281,6 +281,8 @@ Work through phases in order where dependencies exist. Some items within a phase
 | 9.16 | **Orthopaedic L4/L5 + lenses** | ✅ | **117 anchor bundles** merged · `npm run consolidate:orthopaedic-spine` · `npm run build:spine-l1-l5` |
 | 9.17 | **Five-stage library creation pipeline** | ✅ | `library-creator` · `docs/design/library-creation-pipeline.md` · CLI `npm run pipeline:create` |
 | 9.18 | **Publish generated library to catalog** | ⬜ | `publishLibraryFromJob` stub · needs Storage/Firestore export path |
+| 9.19 | **OrthoBullets-native ortho restructure** | ✅ | L3 section → L4 chapter → L5 topic · 11 sections, **222 chapters / 962 topics** · taxonomy scraped from OrthoBullets dashboards + Recon from authored sheet · **886 topic definitions/summaries backfilled** from live OB pages · merged into master spine (`npm run consolidate:orthobullets-spine`) · master L1–L5: **2182 concepts** (547 L4, 1046 L5) · lens published |
+| 9.20 | **Structure-preserving concept extraction** | ✅ | Provided content's outline mirrored into L2–L5 layers (parent/child edges) · `structuredConceptExtractor.ts` · AI prompt detects/maps hierarchy · 74 tests pass |
 
 ---
 
@@ -348,8 +350,8 @@ When you sit down to work, pick from the top of this list:
 | 🟠 8 | E2E test `/create-library` signed in on staging | 6.18 | 15 min |
 | 🟡 9 | Finish Zod runtime validation schemas | 2.10 | 4–8 hrs |
 | 🟡 10 | Implement certification side effects (card suppression) | 3.11 | 2–4 hrs |
-| ⚪ 12 | Re-introduce AI / embeddings | 8.x | Later |
-| ⚪ 11 | Production deployment | 7.11 | After app MVP |
+| ⚪ 11 | Re-introduce AI / embeddings | 8.x | Later |
+| ⚪ 12 | Production deployment | 7.11 | After app MVP |
 
 ---
 

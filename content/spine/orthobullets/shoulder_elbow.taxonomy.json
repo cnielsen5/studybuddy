@@ -1,0 +1,1139 @@
+{
+  "_meta": {
+    "source": "https://www.orthobullets.com/user/dashboard?id=all&specialty=3&menu=topic",
+    "generated_by": "scripts/scrape-orthobullets-taxonomy.ts",
+    "scraped_at": "2026-06-27T22:21:13.771Z",
+    "section": "shoulder_elbow",
+    "field_count": 2,
+    "chapter_count": 16,
+    "topic_count": 70,
+    "backfilled_at": "2026-06-28T19:12:00.253Z",
+    "backfilled_by": "scripts/backfill-orthobullets-topic-content.ts"
+  },
+  "taxonomy": {
+    "section": "shoulder_elbow",
+    "provenance": "orthobullets_site",
+    "obDataPending": false,
+    "notes": "Scraped from the OrthoBullets specialty dashboard (Field → Chapter → Topic). Fields collapsed into the section; chapters → L4, topics → L5.",
+    "chapters": [
+      {
+        "shortName": "ob_shoulder_elbow_anatomy_and_evaluation",
+        "title": "Anatomy & Evaluation",
+        "field": "Shoulder",
+        "definition": "OrthoBullets chapter \"Anatomy & Evaluation\" (Shoulder): Planes of Motion: Reference; Abduction. AC joint: Osteology; Motion; Stability. Introduction: Diarthrodial saddle joint incongruous (~50% contact); Motion; Imaging.",
+        "summary": "Reference Abduction Osteology Motion",
+        "topics": [
+          {
+            "shortName": "ob_shoulder_elbow_anatomy_and_evaluation_glenohumeral_joint_anatomy_stabilizer_and_biomechanics",
+            "title": "Glenohumeral Joint Anatomy, Stabilizer, and Biomechanics",
+            "definition": "Planes of Motion: Reference; Abduction.",
+            "summary": "Reference Abduction",
+            "obTopicId": "3032",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Anatomy & Evaluation",
+              "section": "Glenohumeral Joint Anatomy, Stabilizer, and Biomechanics",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3032/glenohumeral-joint-anatomy-stabilizer-and-biomechanics"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_anatomy_and_evaluation_acromioclavicular_joint",
+            "title": "Acromioclavicular Joint",
+            "definition": "AC joint: Osteology; Motion; Stability.",
+            "summary": "Osteology Motion",
+            "obTopicId": "3033",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Anatomy & Evaluation",
+              "section": "Acromioclavicular Joint",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3033/acromioclavicular-joint"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_anatomy_and_evaluation_sternoclavicular_joint",
+            "title": "Sternoclavicular Joint",
+            "definition": "Introduction: Diarthrodial saddle joint incongruous (~50% contact); Motion; Imaging.",
+            "summary": "Diarthrodial saddle joint incongruous (~50% contact) Motion",
+            "obTopicId": "3034",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Anatomy & Evaluation",
+              "section": "Sternoclavicular Joint",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3034/sternoclavicular-joint"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_anatomy_and_evaluation_scapulothoracic_joint",
+            "title": "Scapulothoracic Joint",
+            "definition": "Introduction: Function; Osteology.",
+            "summary": "Function Osteology",
+            "obTopicId": "3035",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Anatomy & Evaluation",
+              "section": "Scapulothoracic Joint",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3035/scapulothoracic-joint"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_anatomy_and_evaluation_os_acromiale",
+            "title": "Os Acromiale",
+            "definition": "summary: An Os Acromiale is an unfused secondary ossification center of the acromion that can be associated with shoulder impingement and rotator cuff tendonitis.; Diagnosis is made with axillary lateral radiographs of the shoulder.; Treatment is observation in the majority of cases with operative management reserved for patients who have persistent shoulder impingement or rotator cuff disease that have failed nonoperative management..",
+            "summary": "An Os Acromiale is an unfused secondary ossification center of the acromion that can be associated with shoulder impingement and rotator cuff tendonitis. Diagnosis is made with axillary lateral radiographs of the shoulder.",
+            "obTopicId": "3036",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Anatomy & Evaluation",
+              "section": "Os Acromiale",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3036/os-acromiale"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_anatomy_and_evaluation_shoulder_exam",
+            "title": "Shoulder Exam",
+            "definition": "Physical exam components. Inspection",
+            "summary": "This topic is broken down into",
+            "obTopicId": "3037",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Anatomy & Evaluation",
+              "section": "Shoulder Exam",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3037/shoulder-exam"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_anatomy_and_evaluation_shoulder_imaging",
+            "title": "Shoulder Imaging",
+            "definition": "Radiographs. Computed Tomography",
+            "summary": "Radiographs",
+            "obTopicId": "3038",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Anatomy & Evaluation",
+              "section": "Shoulder Imaging",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3038/shoulder-imaging"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_anatomy_and_evaluation_phases_of_throwing",
+            "title": "Phases of Throwing",
+            "definition": "Phases of Throwing: There are 5 main phases of throwing; Biomechanics.",
+            "summary": "There are 5 main phases of throwing Biomechanics",
+            "obTopicId": "3039",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Anatomy & Evaluation",
+              "section": "Phases of Throwing",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3039/phases-of-throwing"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Anatomy & Evaluation"
+        }
+      },
+      {
+        "shortName": "ob_shoulder_elbow_impingement_and_rotator_cuff",
+        "title": "Impingement & Rotator Cuff",
+        "field": "Shoulder",
+        "definition": "OrthoBullets chapter \"Impingement & Rotator Cuff\" (Shoulder): Summary: Subacromial impingement is the most common cause of shoulder pain which occurs as a result of compression of the rotator cuff muscles by superior structures (AC joint, acromion, CA ligament) leading to inflammation and development of bursitis.; Diagnosis can be made on physical examination with a positive Neer and Hawkins tests, and can be supplemented with MRI studies.; Treatment is a trial of nonoperative measures including NSAIDs, physical therapy and corticosteroid injections. Arthr…",
+        "summary": "Subacromial impingement is the most common cause of shoulder pain which occurs as a result of compression of the rotator cuff muscles by superior structures (AC joint, acromion, CA ligament) leading to inflammation and development of bursitis. Diagnosis can be made on physical examination with a positive Neer and Hawkins tests, and can be supplemented with MRI studies. Subcoracoid impingement is t",
+        "topics": [
+          {
+            "shortName": "ob_shoulder_elbow_impingement_and_rotator_cuff_subacromial_impingement",
+            "title": "Subacromial Impingement",
+            "definition": "Summary: Subacromial impingement is the most common cause of shoulder pain which occurs as a result of compression of the rotator cuff muscles by superior structures (AC joint, acromion, CA ligament) leading to inflammation and development of bursitis.; Diagnosis can be made on physical examination with a positive Neer and Hawkins tests, and can be supplemented with MRI studies.; Treatment is a trial of nonoperative measures including NSAIDs, physical therapy and corticosteroid injections. Arthroscopic subacromial decompression with possible acromioplasty is indicated in patients who fail conservative measures..",
+            "summary": "Subacromial impingement is the most common cause of shoulder pain which occurs as a result of compression of the rotator cuff muscles by superior structures (AC joint, acromion, CA ligament) leading to inflammation and development of bursitis. Diagnosis can be made on physical examination with a positive Neer and Hawkins tests, and can be supplemented with MRI studies.",
+            "obTopicId": "3041",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Impingement & Rotator Cuff",
+              "section": "Subacromial Impingement",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3041/subacromial-impingement"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_impingement_and_rotator_cuff_subcoracoid_impingement",
+            "title": "Subcoracoid Impingement",
+            "definition": "summary: Subcoracoid impingement is the impingement of the subscapularis between the coracoid and lesser tuberosity which can lead to anterior shoulder pain and possibly tearing of the subscapularis.; Diagnosis can be made clinically with tenderness over the anterior coracoid which is made worse with shoulder flexion/internal rotation and supplemented with CT scan showing decreased coracohumeral interval.; Treatment is a course of conservative measures including NSAIDs, physical therapy and corticosteroid injections. Arthroscopic or open coracoplasty is indicated for patients with progressive symptoms having failed conservative measures..",
+            "summary": "Subcoracoid impingement is the impingement of the subscapularis between the coracoid and lesser tuberosity which can lead to anterior shoulder pain and possibly tearing of the subscapularis. Diagnosis can be made clinically with tenderness over the anterior coracoid which is made worse with shoulder flexion/internal rotation and supplemented with CT scan showing decreased coracohumeral interval.",
+            "obTopicId": "3040",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Impingement & Rotator Cuff",
+              "section": "Subcoracoid Impingement",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3040/subcoracoid-impingement"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_impingement_and_rotator_cuff_calcific_tendonitis",
+            "title": "Calcific Tendonitis",
+            "definition": "summary: Calcific tendonitis is the calcification and tendon degeneration near the rotator cuff insertion, most commonly leading to shoulder pain with decreased range of motion.; Diagnosis can be made radiographically with orthogonal radiographs of the shoulder showing calcium deposits overlying the rotator cuff insertion.; Treatment is a course of NSAIDs, physical therapy, corticosteroid injections and ultrasound-guided needle lavage. Arthroscopic decompression of the calcium deposit is indicated for patients with progressive symptoms having failed conservative measures..",
+            "summary": "Calcific tendonitis is the calcification and tendon degeneration near the rotator cuff insertion, most commonly leading to shoulder pain with decreased range of motion. Diagnosis can be made radiographically with orthogonal radiographs of the shoulder showing calcium deposits overlying the rotator cuff insertion.",
+            "obTopicId": "3042",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Impingement & Rotator Cuff",
+              "section": "Calcific Tendonitis",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3042/calcific-tendonitis"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_impingement_and_rotator_cuff_rotator_cuff_tears",
+            "title": "Rotator Cuff Tears",
+            "definition": "summary: Rotator cuff tears are a very common source of shoulder pain and decreased motion that can occur due to both traumatic injuries in young patients as well as degenerative disease in the elderly patient.; Diagnosis can be suspected clinically with provocative tests of the supraspinatous, infraspinatous, teres minor and subscapularis, but confirmation requires an MRI of the shoulder.; Treatment can be nonoperative or operative depending on the chronicity of symptoms, severity of the tear, degree of muscle fatty atrophy, patient age and patient activity demands..",
+            "summary": "Rotator cuff tears are a very common source of shoulder pain and decreased motion that can occur due to both traumatic injuries in young patients as well as degenerative disease in the elderly patient. Diagnosis can be suspected clinically with provocative tests of the supraspinatous, infraspinatous, teres minor and subscapularis, but confirmation requires an MRI of the shoulder.",
+            "obTopicId": "3043",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Impingement & Rotator Cuff",
+              "section": "Rotator Cuff Tears",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3043/rotator-cuff-tears"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_impingement_and_rotator_cuff_rotator_cuff_arthropathy",
+            "title": "Rotator Cuff Arthropathy",
+            "definition": "summary: Rotator cuff arthropathy is a specific pattern of shoulder degenerative joint disease that results from a rotator cuff tear leading to abnormal glenohumeral wear and subsequent superior migration of the humeral head.; Diagnosis can be made primarily with shoulder radiographs showing glenohumeral arthritis with a decreased acromiohumeral interval.; Treatment for minimally symptomatic patients involves activity modification, subacromial steroid injections, and physical therapy. Shoulder arthroplasty (most commonly reverse total shoulder arthroplasty) is indicated for patients with progressive pain and deterioration of shoulder function..",
+            "summary": "Rotator cuff arthropathy is a specific pattern of shoulder degenerative joint disease that results from a rotator cuff tear leading to abnormal glenohumeral wear and subsequent superior migration of the humeral head. Diagnosis can be made primarily with shoulder radiographs showing glenohumeral arthritis with a decreased acromiohumeral interval.",
+            "obTopicId": "3044",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Impingement & Rotator Cuff",
+              "section": "Rotator Cuff Arthropathy",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3044/rotator-cuff-arthropathy"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_impingement_and_rotator_cuff_biceps_subluxation",
+            "title": "Biceps Subluxation",
+            "definition": "summary: Biceps subluxation is a recognized cause of anterior shoulder pain usually associated with a subscapularis tear.; Diagnosis can be suspected clinically with anterior shoulder pain made worse with provocative tests and confirmed with MRI studies to evaluate for concurrent subscapularis tear.; Treatment involves an initial trial of NSAIDs, activity modification and physical therapy. Arthorscopic versus open biceps tenodesis/tenotomy with or without subscapularis repair is indicated for recurrent symptoms..",
+            "summary": "Biceps subluxation is a recognized cause of anterior shoulder pain usually associated with a subscapularis tear. Diagnosis can be suspected clinically with anterior shoulder pain made worse with provocative tests and confirmed with MRI studies to evaluate for concurrent subscapularis tear.",
+            "obTopicId": "3046",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Impingement & Rotator Cuff",
+              "section": "Biceps Subluxation",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3046/biceps-subluxation"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_impingement_and_rotator_cuff_biceps_tendonitis",
+            "title": "Biceps Tendonitis",
+            "definition": "summary: Biceps tendonitis is a well recognized source of anterior shoulder pain that may be associated with subscapularis tears and subacromial impingement.; Diagnosis can be suspected clinically with anterior shoulder pain made worse with provocative tests and confirmed with MRI studies to evaluate for concurrent pathology.; Treatment involves an initial trial of NSAIDs, activity modification and physical therapy. Arthorscopic versus open biceps tenodesis/tenotomy is indicated for recurrent symptoms..",
+            "summary": "Biceps tendonitis is a well recognized source of anterior shoulder pain that may be associated with subscapularis tears and subacromial impingement. Diagnosis can be suspected clinically with anterior shoulder pain made worse with provocative tests and confirmed with MRI studies to evaluate for concurrent pathology.",
+            "obTopicId": "3045",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Impingement & Rotator Cuff",
+              "section": "Biceps Tendonitis",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3045/biceps-tendonitis"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Impingement & Rotator Cuff"
+        }
+      },
+      {
+        "shortName": "ob_shoulder_elbow_ac_pathology",
+        "title": "AC Pathology",
+        "field": "Shoulder",
+        "definition": "OrthoBullets chapter \"AC Pathology\" (Shoulder): summary: An acromioclavicular joint injury, otherwise known as a shoulder separation, is a traumatic injury to the acromioclavicular (AC) joint with disruption of the acromioclavicular ligaments and/or coracoclavicular (CC) ligaments.; Diagnosis is made with bilateral focused shoulder radiographs to assess for AC and CC interval widening.; Treatment is immobilzation or surgical reconstruction depending on patient activity levels, degree of separation and degree of ligament injury.. Summary: Dist…",
+        "summary": "An acromioclavicular joint injury, otherwise known as a shoulder separation, is a traumatic injury to the acromioclavicular (AC) joint with disruption of the acromioclavicular ligaments and/or coracoclavicular (CC) ligaments. Diagnosis is made with bilateral focused shoulder radiographs to assess for AC and CC interval widening. Distal clavicle osteolysis is the painful development of bony erosion",
+        "topics": [
+          {
+            "shortName": "ob_shoulder_elbow_ac_pathology_acromioclavicular_joint_injury",
+            "title": "Acromioclavicular Joint Injury",
+            "definition": "summary: An acromioclavicular joint injury, otherwise known as a shoulder separation, is a traumatic injury to the acromioclavicular (AC) joint with disruption of the acromioclavicular ligaments and/or coracoclavicular (CC) ligaments.; Diagnosis is made with bilateral focused shoulder radiographs to assess for AC and CC interval widening.; Treatment is immobilzation or surgical reconstruction depending on patient activity levels, degree of separation and degree of ligament injury..",
+            "summary": "An acromioclavicular joint injury, otherwise known as a shoulder separation, is a traumatic injury to the acromioclavicular (AC) joint with disruption of the acromioclavicular ligaments and/or coracoclavicular (CC) ligaments. Diagnosis is made with bilateral focused shoulder radiographs to assess for AC and CC interval widening.",
+            "obTopicId": "3047",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "AC Pathology",
+              "section": "Acromioclavicular Joint Injury",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3047/acromioclavicular-joint-injury"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_ac_pathology_distal_clavicle_osteolysis",
+            "title": "Distal Clavicle Osteolysis",
+            "definition": "Summary: Distal clavicle osteolysis is the painful development of bony erosions and resorption of the distal clavicle caused by repetitive trauma to the AC joint.; Diagnosis is made with radiographs of the shoulder revealing osteolysis, cysts, erosions and resorption of the distal end of the clavicle.; Treatment is a trial of NSAIDs, activity modifications, and corticosteroid injections. Arthroscopic versus open distal clavicle excision is indicated for patients with persistent symptoms that have failed nonoperative treatment..",
+            "summary": "Distal clavicle osteolysis is the painful development of bony erosions and resorption of the distal clavicle caused by repetitive trauma to the AC joint. Diagnosis is made with radiographs of the shoulder revealing osteolysis, cysts, erosions and resorption of the distal end of the clavicle.",
+            "obTopicId": "3048",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "AC Pathology",
+              "section": "Distal Clavicle Osteolysis",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3048/distal-clavicle-osteolysis"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_ac_pathology_ac_arthritis",
+            "title": "AC Arthritis",
+            "definition": "Summary: AC arthritis is the most common cause of AC joint pain with repetitive microtrauma leading to the development of osteoarthritis in the AC joint.; Diagnosis is made with dedicated shoulder radiographs that reveal osteophytes and joint space narrowing in the AC joint.; Treatment is a trial of NSAIDs, activity modifications, and corticosteroid injections. Arthroscopic versus open distal clavicle excision is indicated for patients with persistent symptoms that have failed nonoperative treatment..",
+            "summary": "AC arthritis is the most common cause of AC joint pain with repetitive microtrauma leading to the development of osteoarthritis in the AC joint. Diagnosis is made with dedicated shoulder radiographs that reveal osteophytes and joint space narrowing in the AC joint.",
+            "obTopicId": "3049",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "AC Pathology",
+              "section": "AC Arthritis",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3049/ac-arthritis"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "AC Pathology"
+        }
+      },
+      {
+        "shortName": "ob_shoulder_elbow_instability",
+        "title": "Instability",
+        "field": "Shoulder",
+        "definition": "OrthoBullets chapter \"Instability\" (Shoulder): summary: Traumatic Anterior Shoulder Instability, also referred to as TUBS (Traumatic Unilateral dislocations with a Bankart lesion requiring Surgery), are traumatic shoulder injuries that generally occur as a result of an anterior force to the shoulder while its abducted and externally rotated and may lead to recurrent anterior shoulder instability.; Diagnosis is made clinically with the presence of positive anterior instability provocative tests and confirmed with MRI studies that may reveal l…",
+        "summary": "Traumatic Anterior Shoulder Instability, also referred to as TUBS (Traumatic Unilateral dislocations with a Bankart lesion requiring Surgery), are traumatic shoulder injuries that generally occur as a result of an anterior force to the shoulder while its abducted and externally rotated and may lead to recurrent anterior shoulder instability. Diagnosis is made clinically with the presence of… Humer",
+        "topics": [
+          {
+            "shortName": "ob_shoulder_elbow_instability_traumatic_anterior_shoulder_instability_tubs",
+            "title": "Traumatic Anterior Shoulder Instability (TUBS)",
+            "definition": "summary: Traumatic Anterior Shoulder Instability, also referred to as TUBS (Traumatic Unilateral dislocations with a Bankart lesion requiring Surgery), are traumatic shoulder injuries that generally occur as a result of an anterior force to the shoulder while its abducted and externally rotated and may lead to recurrent anterior shoulder instability.; Diagnosis is made clinically with the presence of positive anterior instability provocative tests and confirmed with MRI studies that may reveal labral and/or bony injuries of the glenoid and proximal humerus (Hill-Sachs lesion).; Treatment may be nonoperative or operative depending on the chronicity of symptoms, the presence of risk factors for recurrence, and the severity of labral and/or glenoid defects. In high-risk populations, surgery is often offered after a single dislocation event..",
+            "summary": "Traumatic Anterior Shoulder Instability, also referred to as TUBS (Traumatic Unilateral dislocations with a Bankart lesion requiring Surgery), are traumatic shoulder injuries that generally occur as a result of an anterior force to the shoulder while its abducted and externally rotated and may lead to recurrent anterior shoulder instability. Diagnosis is made clinically with the presence of…",
+            "obTopicId": "3050",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Instability",
+              "section": "Traumatic Anterior Shoulder Instability (TUBS)",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3050/traumatic-anterior-shoulder-instability-tubs"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_instability_humeral_avulsion_glenohumeral_ligament_hagl",
+            "title": "Humeral Avulsion Glenohumeral Ligament (HAGL)",
+            "definition": "Summary: Humeral Avulsion of the Glenohumeral Ligament (HAGL) is an injury to the inferior glenohumeral ligament causing instability and/or pain and a missed cause of recurrent shoulder instability.; Diagnosis requires suspicions of injury and can be noted as an inferior pouch irregularity on MRI.; Non-operative first-line treatment for acute presentation includes sling immobilization and physical therapy while operative treatment is recommended for recurrent instability..",
+            "summary": "Humeral Avulsion of the Glenohumeral Ligament (HAGL) is an injury to the inferior glenohumeral ligament causing instability and/or pain and a missed cause of recurrent shoulder instability. Diagnosis requires suspicions of injury and can be noted as an inferior pouch irregularity on MRI.",
+            "obTopicId": "322184",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Instability",
+              "section": "Humeral Avulsion Glenohumeral Ligament (HAGL)",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/322184/humeral-avulsion-glenohumeral-ligament-hagl"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_instability_posterior_shoulder_instability_and_dislocation",
+            "title": "Posterior Shoulder Instability & Dislocation",
+            "definition": "Summary: Posterior shoulder instability and dislocations are less common than anterior shoulder instability and dislocations, but are much more commonly missed.; Diagnosis is made radiographically in the setting of acute dislocations. Chronic instability can be diagnosed with presence of positive posterior instability provocative tests and confirmed with MRI studies showing posterior labral pathology.; Treatment may be nonoperative or operative depending on chronicity of symptoms, recurrence of instability, and the severity of labrum and/or glenoid defects..",
+            "summary": "Posterior shoulder instability and dislocations are less common than anterior shoulder instability and dislocations, but are much more commonly missed. Diagnosis is made radiographically in the setting of acute dislocations. Chronic instability can be diagnosed with presence of positive posterior instability provocative tests and confirmed with MRI studies showing posterior labral pathology.",
+            "obTopicId": "3051",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Instability",
+              "section": "Posterior Shoulder Instability & Dislocation",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3051/posterior-shoulder-instability-and-dislocation"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_instability_multidirectional_shoulder_instability_mdi",
+            "title": "Multidirectional Shoulder Instability (MDI)",
+            "definition": "summary: Multidirectional shoulder instability (MDI) is a condition characterized by generalized instability of the shoulder in at least 2 planes of motion (anterior, posterior, or inferior) due to capsular redundancy.; Diagnosis is made clinically with presence of increased anterior and posterior humeral translation, a sulcus sign, and overall increased external rotation.; Treatment is a trial of prolonged physical therapy focusing on dynamic stabilization and periscapular muscle training. Arthroscopic stabilization with capsular shift is indicated for patients with persistent instability who fail an extensive course of physical therapy..",
+            "summary": "Multidirectional shoulder instability (MDI) is a condition characterized by generalized instability of the shoulder in at least 2 planes of motion (anterior, posterior, or inferior) due to capsular redundancy. Diagnosis is made clinically with presence of increased anterior and posterior humeral translation, a sulcus sign, and overall increased external rotation.",
+            "obTopicId": "3052",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Instability",
+              "section": "Multidirectional Shoulder Instability (MDI)",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3052/multidirectional-shoulder-instability-mdi"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_instability_luxatio_erecta_inferior_glenohumeral_joint_dislocation",
+            "title": "Luxatio Erecta (Inferior Glenohumeral Joint Dislocation)",
+            "definition": "summary: Luxatio Erecta is the specific term for inferior dislocation of the glenohumeral joint trapped underneath the coracoid and glenoid, very commonly associated with neurovascular injury.; Diagnosis is made clinically with the presence of the shoulder in a fixed, abducted position and confirmed with radiographs of the shoulder.; Treatment is closed reduction and assessment of possible concomitant neurovascular injury..",
+            "summary": "Luxatio Erecta is the specific term for inferior dislocation of the glenohumeral joint trapped underneath the coracoid and glenoid, very commonly associated with neurovascular injury. Diagnosis is made clinically with the presence of the shoulder in a fixed, abducted position and confirmed with radiographs of the shoulder.",
+            "obTopicId": "3132",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Instability",
+              "section": "Luxatio Erecta (Inferior Glenohumeral Joint Dislocation)",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3132/luxatio-erecta-inferior-glenohumeral-joint-dislocation"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Instability"
+        }
+      },
+      {
+        "shortName": "ob_shoulder_elbow_shoulder_throwing_injuries",
+        "title": "Shoulder Throwing Injuries",
+        "field": "Shoulder",
+        "definition": "OrthoBullets chapter \"Shoulder Throwing Injuries\" (Shoulder): summary: A SLAP lesion (Superior Labrum from Anterior to Posterior tear) generally occurs as result of overuse injury to the shoulder in overhead athletes or traumatic falls in older patients and can result in deep shoulder pain and biceps tendonitis.; Diagnosis generally requires MRI studies to assess the superior labrum and the integrity of the biceps tendon.; Treatment may be nonoperative or operative depending on patient age, activity levels, severity of symptoms and associated instability..…",
+        "summary": "A SLAP lesion (Superior Labrum from Anterior to Posterior tear) generally occurs as result of overuse injury to the shoulder in overhead athletes or traumatic falls in older patients and can result in deep shoulder pain and biceps tendonitis. Diagnosis generally requires MRI studies to assess the superior labrum and the integrity of the biceps tendon. Internal impingement is a cause of shoulder pa",
+        "topics": [
+          {
+            "shortName": "ob_shoulder_elbow_shoulder_throwing_injuries_slap_lesion",
+            "title": "SLAP Lesion",
+            "definition": "summary: A SLAP lesion (Superior Labrum from Anterior to Posterior tear) generally occurs as result of overuse injury to the shoulder in overhead athletes or traumatic falls in older patients and can result in deep shoulder pain and biceps tendonitis.; Diagnosis generally requires MRI studies to assess the superior labrum and the integrity of the biceps tendon.; Treatment may be nonoperative or operative depending on patient age, activity levels, severity of symptoms and associated instability..",
+            "summary": "A SLAP lesion (Superior Labrum from Anterior to Posterior tear) generally occurs as result of overuse injury to the shoulder in overhead athletes or traumatic falls in older patients and can result in deep shoulder pain and biceps tendonitis. Diagnosis generally requires MRI studies to assess the superior labrum and the integrity of the biceps tendon.",
+            "obTopicId": "3053",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Shoulder Throwing Injuries",
+              "section": "SLAP Lesion",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3053/slap-lesion"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_shoulder_throwing_injuries_internal_impingement",
+            "title": "Internal Impingement",
+            "definition": "Summary: Internal impingement is a cause of shoulder pain in overhead athletes caused by repetitive impingement between the undersurface of the rotator cuff and the posterosuperior glenoid.; Diagnosis is made clinically with worsening posterior shoulder pain during maximal abduction and external rotation (position of late cocking) associated with decreased internal rotation and supplemented with MRI showing posterior rotator cuff and posterior labral pathology.; Treatment with physical therapy and posterior capsule stretching is effective for most patients. Arthroscopic surgery is indicated for patients who fail conservative management..",
+            "summary": "Internal impingement is a cause of shoulder pain in overhead athletes caused by repetitive impingement between the undersurface of the rotator cuff and the posterosuperior glenoid. Diagnosis is made clinically with worsening posterior shoulder pain during maximal abduction and external rotation (position of late cocking) associated with decreased internal rotation and supplemented with MRI…",
+            "obTopicId": "3054",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Shoulder Throwing Injuries",
+              "section": "Internal Impingement",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3054/internal-impingement"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_shoulder_throwing_injuries_glenohumeral_internal_rotation_deficit_gird",
+            "title": "Glenohumeral Internal Rotation Deficit (GIRD)",
+            "definition": "summary: Glenohumeral internal rotation deficit (GIRD) is a condition resulting in the loss of internal rotation of the glenohumeral joint as compared to the contralateral shoulder, most commonly seen in the throwing athlete.; Diagnosis is made clinically with a decrease in internal rotation, increase in external rotation, with a decrease in total arc of rotation compared to the contralateral shoulder.; Treatment consists of physical therapy with a focus on posteroinferior capsular stretching..",
+            "summary": "Glenohumeral internal rotation deficit (GIRD) is a condition resulting in the loss of internal rotation of the glenohumeral joint as compared to the contralateral shoulder, most commonly seen in the throwing athlete. Diagnosis is made clinically with a decrease in internal rotation, increase in external rotation, with a decrease in total arc of rotation compared to the contralateral shoulder.",
+            "obTopicId": "3055",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Shoulder Throwing Injuries",
+              "section": "Glenohumeral Internal Rotation Deficit (GIRD)",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3055/glenohumeral-internal-rotation-deficit-gird"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_shoulder_throwing_injuries_little_leaguer_s_shoulder",
+            "title": "Little Leaguer's Shoulder",
+            "definition": "summary: Little Leaguer's shoulder is an overuse injury occuring in young baseball pitchers resulting in epiphysiolysis of the proximal humerus (a Salter Harris Type 1 injury).; Diagnosis is made with radiographs of the shoulder showing a widened proximal humerus physis in comparison to contralateral shoulder.; Treatment is cessation of throwing, followed by PT and progressive throwing program after sufficient rest..",
+            "summary": "Little Leaguer's shoulder is an overuse injury occuring in young baseball pitchers resulting in epiphysiolysis of the proximal humerus (a Salter Harris Type 1 injury). Diagnosis is made with radiographs of the shoulder showing a widened proximal humerus physis in comparison to contralateral shoulder.",
+            "obTopicId": "3056",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Shoulder Throwing Injuries",
+              "section": "Little Leaguer's Shoulder",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3056/little-leaguers-shoulder"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_shoulder_throwing_injuries_posterior_labral_tear",
+            "title": "Posterior Labral Tear",
+            "definition": "summary: A posterior labral tear is referred to as a reverse Bankart lesion, or attenuation of the posterior capsulolabral complex, and commonly occurs due to repetitive microtrauma in athletes.; Diagnosis can be made clinically with positive posterior labral provocative tests and confirmed with MRI studies of the shoulder.; Treatment may be nonoperative or operative depending on chronicity of symptoms, degree of instability, and patient activity demands..",
+            "summary": "A posterior labral tear is referred to as a reverse Bankart lesion, or attenuation of the posterior capsulolabral complex, and commonly occurs due to repetitive microtrauma in athletes. Diagnosis can be made clinically with positive posterior labral provocative tests and confirmed with MRI studies of the shoulder.",
+            "obTopicId": "3057",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Shoulder Throwing Injuries",
+              "section": "Posterior Labral Tear",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3057/posterior-labral-tear"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Shoulder Throwing Injuries"
+        }
+      },
+      {
+        "shortName": "ob_shoulder_elbow_neurovascular_disorders",
+        "title": "Neurovascular Disorders",
+        "field": "Shoulder",
+        "definition": "OrthoBullets chapter \"Neurovascular Disorders\" (Shoulder): Summary: Suprascapular neuropathy is compression of the suprascapular nerve that most commonly occurs at the suprascapular notch or spinoglenoid notch by a mass (i.e cyst).; Diagnosis can be suspected clincally with weakness and atrophy of the infraspinatous or supraspinatous and confirmed with MRI studies showing cysts in the suprascapular notch or spinoglenoid notch.; Treatment of suprascapular nerve compression at the suprascapular notch requires decompression of a cyst when present. Treatmen…",
+        "summary": "Suprascapular neuropathy is compression of the suprascapular nerve that most commonly occurs at the suprascapular notch or spinoglenoid notch by a mass (i.e cyst). Diagnosis can be suspected clincally with weakness and atrophy of the infraspinatous or supraspinatous and confirmed with MRI studies showing cysts in the suprascapular notch or spinoglenoid notch. Scapular winging is a dysfunction invo",
+        "topics": [
+          {
+            "shortName": "ob_shoulder_elbow_neurovascular_disorders_suprascapular_neuropathy",
+            "title": "Suprascapular Neuropathy",
+            "definition": "Summary: Suprascapular neuropathy is compression of the suprascapular nerve that most commonly occurs at the suprascapular notch or spinoglenoid notch by a mass (i.e cyst).; Diagnosis can be suspected clincally with weakness and atrophy of the infraspinatous or supraspinatous and confirmed with MRI studies showing cysts in the suprascapular notch or spinoglenoid notch.; Treatment of suprascapular nerve compression at the suprascapular notch requires decompression of a cyst when present. Treatment of a spinoglenoid cyst requires either decompression or repair of an associated labral lesion (if present)..",
+            "summary": "Suprascapular neuropathy is compression of the suprascapular nerve that most commonly occurs at the suprascapular notch or spinoglenoid notch by a mass (i.e cyst). Diagnosis can be suspected clincally with weakness and atrophy of the infraspinatous or supraspinatous and confirmed with MRI studies showing cysts in the suprascapular notch or spinoglenoid notch.",
+            "obTopicId": "3063",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Neurovascular Disorders",
+              "section": "Suprascapular Neuropathy",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3063/suprascapular-neuropathy"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_neurovascular_disorders_scapular_winging",
+            "title": "Scapular Winging",
+            "definition": "summary: Scapular winging is a dysfunction involving the stabilizing muscles of the scapula resulting in imbalance and abnormal motion of the scapula.; Diagnosis is made clinically with the presence of excessive medializing scapular retraction (medial winging) or excessive lateralizing scapular protraction (lateral winging).; Treatment is generally observation, physical therapy and activity modification or operative depending on etiology of winging and presence of identifiable neurological lesion..",
+            "summary": "Scapular winging is a dysfunction involving the stabilizing muscles of the scapula resulting in imbalance and abnormal motion of the scapula. Diagnosis is made clinically with the presence of excessive medializing scapular retraction (medial winging) or excessive lateralizing scapular protraction (lateral winging).",
+            "obTopicId": "3062",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Neurovascular Disorders",
+              "section": "Scapular Winging",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3062/scapular-winging"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_neurovascular_disorders_brachial_neuritis_parsonage_turner_syndrome",
+            "title": "Brachial Neuritis (Parsonage-Turner Syndrome)",
+            "definition": "summary: Brachial neuritis (Parsonage-Turner syndrome) is an uncommon disorder characterized by severe shoulder pain followed by patchy muscle paralysis and sensory loss involving the shoulder girdle and upper extremity.; Diagnosis is made clinically with a through neurological exam that may vary from moderate motorsensory changes to flaccid paralysis of the upper extremity and can be confirmed by EMG/NCS.; Treatment is observation and pain control with recovery taking up to 3 years. Operative nerve exploration, neurolysis, nerve transfer or tendon transfer be be indicated if there is no evidence of EMG recovery by 9-12 months..",
+            "summary": "Brachial neuritis (Parsonage-Turner syndrome) is an uncommon disorder characterized by severe shoulder pain followed by patchy muscle paralysis and sensory loss involving the shoulder girdle and upper extremity. Diagnosis is made clinically with a through neurological exam that may vary from moderate motorsensory changes to flaccid paralysis of the upper extremity and can be confirmed by EMG/NCS.",
+            "obTopicId": "3065",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Neurovascular Disorders",
+              "section": "Brachial Neuritis (Parsonage-Turner Syndrome)",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3065/brachial-neuritis-parsonage-turner-syndrome"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_neurovascular_disorders_thoracic_outlet_syndrome",
+            "title": "Thoracic Outlet Syndrome",
+            "definition": "Summary: Thoracic outlet syndrome is a neurovascular disorder resulting from compression of the brachial plexus and/or subclavian vessels in the interval between the neck and axilla.; Diagnosis can be suspected clinically with specific provocative tests and supplemented with radiographs or vascular studies. showing anatomic causes of compression.; Treatment may be nonoperative or include surgical decompression or a vascular procedure depending on the specific etiology..",
+            "summary": "Thoracic outlet syndrome is a neurovascular disorder resulting from compression of the brachial plexus and/or subclavian vessels in the interval between the neck and axilla. Diagnosis can be suspected clinically with specific provocative tests and supplemented with radiographs or vascular studies. showing anatomic causes of compression.",
+            "obTopicId": "3064",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Neurovascular Disorders",
+              "section": "Thoracic Outlet Syndrome",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3064/thoracic-outlet-syndrome"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_neurovascular_disorders_quadrilateral_space_syndrome",
+            "title": "Quadrilateral Space Syndrome",
+            "definition": "summary: Quadilateral space syndrome is a rare source of posterolateral shoulder pain caused by the compression of the axillary nerve and posterior humeral circumflex artery in the quadrilateral space.; Diagnosis is clinical with point tenderness over the quadrilateral space and possible presence of teres minor atrophy. MRI studies may show axillary nerve compression.; Treatment involves a course of NSAIDs, activity modification and physical therapy with surgical decompression indicated in refectory cases..",
+            "summary": "Quadilateral space syndrome is a rare source of posterolateral shoulder pain caused by the compression of the axillary nerve and posterior humeral circumflex artery in the quadrilateral space. Diagnosis is clinical with point tenderness over the quadrilateral space and possible presence of teres minor atrophy. MRI studies may show axillary nerve compression.",
+            "obTopicId": "3066",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Neurovascular Disorders",
+              "section": "Quadrilateral Space Syndrome",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3066/quadrilateral-space-syndrome"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_neurovascular_disorders_scapulothoracic_dyskinesis",
+            "title": "Scapulothoracic Dyskinesis",
+            "definition": "summary: Scapulothoracic dyskinesis is a rare condition characterized by abnormal scapula motion leading to shoulder impingement and dysfunction.; Diagnosis is clinical with presence of scapulothoracic crepitus with a low and protracted scapulaand symptoms being relieved with scapula stabilization.; Treatment involves NSAIDs and physical therapy with emphasis on periscapular muscle and rotator cuff strengthening..",
+            "summary": "Scapulothoracic dyskinesis is a rare condition characterized by abnormal scapula motion leading to shoulder impingement and dysfunction. Diagnosis is clinical with presence of scapulothoracic crepitus with a low and protracted scapulaand symptoms being relieved with scapula stabilization.",
+            "obTopicId": "3134",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Neurovascular Disorders",
+              "section": "Scapulothoracic Dyskinesis",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3134/scapulothoracic-dyskinesis"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Neurovascular Disorders"
+        }
+      },
+      {
+        "shortName": "ob_shoulder_elbow_tendon_conditions_and_tears",
+        "title": "Tendon Conditions & Tears",
+        "field": "Shoulder",
+        "definition": "OrthoBullets chapter \"Tendon Conditions & Tears\" (Shoulder): SUMMARY: A rare acute injury caused by avulsion of the pectoralis major tendon and usually seen in weightlifters.; Diagnosis is generally made clinically and is confirmed with MRI studies.; Treatment is usually surgical repair when presenting acutely.. Summary: Deltoid ruptures are very rare injuries that generally occur secondary to massive rotator cuff tears, repeat corticosteroid injections into the deltoid, or acute trauma.; Diagnosis is made clinically with depression over the deltoid in ac…",
+        "summary": "A rare acute injury caused by avulsion of the pectoralis major tendon and usually seen in weightlifters. Diagnosis is generally made clinically and is confirmed with MRI studies. Deltoid ruptures are very rare injuries that generally occur secondary to massive rotator cuff tears, repeat corticosteroid injections into the deltoid, or acute trauma. Diagnosis is made clinically with depression over t",
+        "topics": [
+          {
+            "shortName": "ob_shoulder_elbow_tendon_conditions_and_tears_pectoralis_major_rupture",
+            "title": "Pectoralis Major Rupture",
+            "definition": "SUMMARY: A rare acute injury caused by avulsion of the pectoralis major tendon and usually seen in weightlifters.; Diagnosis is generally made clinically and is confirmed with MRI studies.; Treatment is usually surgical repair when presenting acutely..",
+            "summary": "A rare acute injury caused by avulsion of the pectoralis major tendon and usually seen in weightlifters. Diagnosis is generally made clinically and is confirmed with MRI studies.",
+            "obTopicId": "3069",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Tendon Conditions & Tears",
+              "section": "Pectoralis Major Rupture",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3069/pectoralis-major-rupture"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_tendon_conditions_and_tears_deltoid_rupture",
+            "title": "Deltoid Rupture",
+            "definition": "Summary: Deltoid ruptures are very rare injuries that generally occur secondary to massive rotator cuff tears, repeat corticosteroid injections into the deltoid, or acute trauma.; Diagnosis is made clinically with depression over the deltoid in acute ruptures with deltoid strains and partial ruptures presenting with localized tenderness and ecchymosis.; Treatment of partial tears is rest, NSAIDs and observation. Early surgical repair is indicated for complete tears..",
+            "summary": "Deltoid ruptures are very rare injuries that generally occur secondary to massive rotator cuff tears, repeat corticosteroid injections into the deltoid, or acute trauma. Diagnosis is made clinically with depression over the deltoid in acute ruptures with deltoid strains and partial ruptures presenting with localized tenderness and ecchymosis.",
+            "obTopicId": "3070",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Tendon Conditions & Tears",
+              "section": "Deltoid Rupture",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3070/deltoid-rupture"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_tendon_conditions_and_tears_latissimus_dorsi_rupture",
+            "title": "Latissimus Dorsi Rupture",
+            "definition": "Summary: Latissimus dorsi rupture is a very rare condition that has been reported as a cause of pain in the thrower’s shoulder.; Diagnosis is suspected with pain over the latissimus dorsi made worse with shoulder adduction/internal rotation and confirmed with an MRI.; Treatment is nonoperative for the majority of patients. Surgery is indicated in competitive athletes with completed tears..",
+            "summary": "Latissimus dorsi rupture is a very rare condition that has been reported as a cause of pain in the thrower’s shoulder. Diagnosis is suspected with pain over the latissimus dorsi made worse with shoulder adduction/internal rotation and confirmed with an MRI.",
+            "obTopicId": "3072",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Tendon Conditions & Tears",
+              "section": "Latissimus Dorsi Rupture",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3072/latissimus-dorsi-rupture"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Tendon Conditions & Tears"
+        }
+      },
+      {
+        "shortName": "ob_shoulder_elbow_arthritis_and_stiffness",
+        "title": "Arthritis & Stiffness",
+        "field": "Shoulder",
+        "definition": "OrthoBullets chapter \"Arthritis & Stiffness\" (Shoulder): Summary: Glenohumeral arthritis, or Shoulder Arthritis, is a degenerative joint disease of the shoulder characterized by damage to the articular surfaces of the humeral head and/or glenoid.; Diagnosis is made radiographically with true AP shoulder (\"Grashey\") and axillary lateral radiographs.; Treatment is observation, NSAIDs, and corticosteroids for minimally symptomatic patients. Shoulder arthroplasty is indicated for progressive symptoms with severe degenerative disease.. summary: Avascular n…",
+        "summary": "Glenohumeral arthritis, or Shoulder Arthritis, is a degenerative joint disease of the shoulder characterized by damage to the articular surfaces of the humeral head and/or glenoid. Diagnosis is made radiographically with true AP shoulder (\"Grashey\") and axillary lateral radiographs. Avascular necrosis of the shoulder is a condition characterized by interruption of blood supply to the humeral head ",
+        "topics": [
+          {
+            "shortName": "ob_shoulder_elbow_arthritis_and_stiffness_glenohumeral_arthritis_shoulder_arthritis",
+            "title": "Glenohumeral Arthritis (Shoulder Arthritis)",
+            "definition": "Summary: Glenohumeral arthritis, or Shoulder Arthritis, is a degenerative joint disease of the shoulder characterized by damage to the articular surfaces of the humeral head and/or glenoid.; Diagnosis is made radiographically with true AP shoulder (\"Grashey\") and axillary lateral radiographs.; Treatment is observation, NSAIDs, and corticosteroids for minimally symptomatic patients. Shoulder arthroplasty is indicated for progressive symptoms with severe degenerative disease..",
+            "summary": "Glenohumeral arthritis, or Shoulder Arthritis, is a degenerative joint disease of the shoulder characterized by damage to the articular surfaces of the humeral head and/or glenoid. Diagnosis is made radiographically with true AP shoulder (\"Grashey\") and axillary lateral radiographs.",
+            "obTopicId": "3058",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Arthritis & Stiffness",
+              "section": "Glenohumeral Arthritis (Shoulder Arthritis)",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3058/glenohumeral-arthritis-shoulder-arthritis"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_arthritis_and_stiffness_avascular_necrosis_of_the_shoulder",
+            "title": "Avascular Necrosis of the Shoulder",
+            "definition": "summary: Avascular necrosis of the shoulder is a condition characterized by interruption of blood supply to the humeral head which may lead to humeral head sclerosis and subchondral collapse.; Diagnosis is made radiographically with orthogonal radiographs of the shoulder in moderate/late disease. MRI may be needed for detection of early or subclinical avascular necrosis.; Treatment may be observation for very early and minimally symptomatic disease. Surgical management is indicated for progressive symptoms in the setting of moderate to advanced disease..",
+            "summary": "Avascular necrosis of the shoulder is a condition characterized by interruption of blood supply to the humeral head which may lead to humeral head sclerosis and subchondral collapse. Diagnosis is made radiographically with orthogonal radiographs of the shoulder in moderate/late disease. MRI may be needed for detection of early or subclinical avascular necrosis.",
+            "obTopicId": "3060",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Arthritis & Stiffness",
+              "section": "Avascular Necrosis of the Shoulder",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3060/avascular-necrosis-of-the-shoulder"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_arthritis_and_stiffness_neuropathic_charcot_joint_of_shoulder",
+            "title": "Neuropathic (Charcot) Joint of Shoulder",
+            "definition": "summary: Neuropathic (charcot) shoulder is a chronic and progressive joint disease most commonly caused by syringomyelia leading to the destruction of the shoulder joint and surrounding structures.; Diagnosis is made with radiographs of the shoulder and supplemented with cervical spine MRI to assess for a syrinx.; Treatment should be individualized based on degree of functional limitation and underlying neurological condition. Neurosurgical decompression is indicated in the presence of a syrinx..",
+            "summary": "Neuropathic (charcot) shoulder is a chronic and progressive joint disease most commonly caused by syringomyelia leading to the destruction of the shoulder joint and surrounding structures. Diagnosis is made with radiographs of the shoulder and supplemented with cervical spine MRI to assess for a syrinx.",
+            "obTopicId": "9044",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Arthritis & Stiffness",
+              "section": "Neuropathic (Charcot) Joint of Shoulder",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/9044/neuropathic-charcot-joint-of-shoulder"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_arthritis_and_stiffness_adhesive_capsulitis_frozen_shoulder",
+            "title": "Adhesive Capsulitis (Frozen Shoulder)",
+            "definition": "Summary: Adhesive capsulitis (also known as frozen shoulder) is a condition of the shoulder characterized by functional loss of both passive and active shoulder motion commonly associated with diabetes, and thyroid disease.; Diagnosis is made clinically with marked reduction of both active and passive range of motion of the shoulder.; Treatment is a prolonged course of aggressive physical therapy and medical management of underlying disease if present (i.e diabetes, thyroid disorder). Manipulation under anesthesia or arthroscopic capsular release is indicated in patients with progressive loss of motion having failed a prolonged course of physical therapy..",
+            "summary": "Adhesive capsulitis (also known as frozen shoulder) is a condition of the shoulder characterized by functional loss of both passive and active shoulder motion commonly associated with diabetes, and thyroid disease. Diagnosis is made clinically with marked reduction of both active and passive range of motion of the shoulder.",
+            "obTopicId": "3059",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Arthritis & Stiffness",
+              "section": "Adhesive Capsulitis (Frozen Shoulder)",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3059/adhesive-capsulitis-frozen-shoulder"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_arthritis_and_stiffness_scapulothoracic_crepitus",
+            "title": "Scapulothoracic Crepitus",
+            "definition": "summary: Scapulothoracic crepitus, or snapping scapula syndrome, manifests as pain at the scapulothoracic junction with overhead activity.; Diagnosis is made clinically with painful crepitus of the scapulothoracic joint with forward flexion and improvement of pain with stabilization of the scapula.; Treatment is mainly nonoperative with NSAIDs, scapular strenghthening exercises, postural training and activity modifications..",
+            "summary": "Scapulothoracic crepitus, or snapping scapula syndrome, manifests as pain at the scapulothoracic junction with overhead activity. Diagnosis is made clinically with painful crepitus of the scapulothoracic joint with forward flexion and improvement of pain with stabilization of the scapula.",
+            "obTopicId": "3061",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Arthritis & Stiffness",
+              "section": "Scapulothoracic Crepitus",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3061/scapulothoracic-crepitus"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Arthritis & Stiffness"
+        }
+      },
+      {
+        "shortName": "ob_shoulder_elbow_shoulder_arthroplasty",
+        "title": "Shoulder Arthroplasty",
+        "field": "Shoulder",
+        "definition": "OrthoBullets chapter \"Shoulder Arthroplasty\" (Shoulder): Introduction: Replacement of humeral head and glenoid resurfacing; Total shoulder arthroplasty unique from THA and TKA in that; Factors required for success of TSA; Outcomes. Summary: Reverse Shoulder Arthroplasty is a type of shoulder arthroplasty that uses a convex glenoid hemispheric ball and a concave humerus articulating cup to reconstruct the glenohumeral joint.; The center of rotation is moved inferiorly and medialized which allows the deltoid muscle to act on a longer fulcrum and have mo…",
+        "summary": "Replacement of humeral head and glenoid resurfacing Total shoulder arthroplasty unique from THA and TKA in that Reverse Shoulder Arthroplasty is a type of shoulder arthroplasty that uses a convex glenoid hemispheric ball and a concave humerus articulating cup to reconstruct the glenohumeral joint. The center of rotation is moved inferiorly and medialized which allows the deltoid muscle to act on a",
+        "topics": [
+          {
+            "shortName": "ob_shoulder_elbow_shoulder_arthroplasty_total_shoulder_arthroplasty",
+            "title": "Total Shoulder Arthroplasty",
+            "definition": "Introduction: Replacement of humeral head and glenoid resurfacing; Total shoulder arthroplasty unique from THA and TKA in that; Factors required for success of TSA; Outcomes.",
+            "summary": "Replacement of humeral head and glenoid resurfacing Total shoulder arthroplasty unique from THA and TKA in that",
+            "obTopicId": "3075",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Shoulder Arthroplasty",
+              "section": "Total Shoulder Arthroplasty",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3075/total-shoulder-arthroplasty"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_shoulder_arthroplasty_reverse_shoulder_arthroplasty",
+            "title": "Reverse Shoulder Arthroplasty",
+            "definition": "Summary: Reverse Shoulder Arthroplasty is a type of shoulder arthroplasty that uses a convex glenoid hemispheric ball and a concave humerus articulating cup to reconstruct the glenohumeral joint.; The center of rotation is moved inferiorly and medialized which allows the deltoid muscle to act on a longer fulcrum and have more mechanical advantage.; Reverse Shoulder Arthroplasty is indicated for conditions such as rotator cuff tear arthropathy, comminuted 4-part proximal humerus fractures and prior failed shoulder arthroplasty..",
+            "summary": "Reverse Shoulder Arthroplasty is a type of shoulder arthroplasty that uses a convex glenoid hemispheric ball and a concave humerus articulating cup to reconstruct the glenohumeral joint. The center of rotation is moved inferiorly and medialized which allows the deltoid muscle to act on a longer fulcrum and have more mechanical advantage.",
+            "obTopicId": "3076",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Shoulder Arthroplasty",
+              "section": "Reverse Shoulder Arthroplasty",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3076/reverse-shoulder-arthroplasty"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_shoulder_arthroplasty_shoulder_hemiarthroplasty",
+            "title": "Shoulder Hemiarthroplasty",
+            "definition": "summary: A shoulder hemiarthroplasty is a procedure in which the humeral articular surface is replaced with stemmed humeral component.; The most common indication is glenohumeral arthritis when the glenoid bone stock is inadequate for a total shoulder arthroplasty.; It is contraindicated in patients with coracoacromial ligament deficiency..",
+            "summary": "A shoulder hemiarthroplasty is a procedure in which the humeral articular surface is replaced with stemmed humeral component. The most common indication is glenohumeral arthritis when the glenoid bone stock is inadequate for a total shoulder arthroplasty.",
+            "obTopicId": "3074",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Shoulder Arthroplasty",
+              "section": "Shoulder Hemiarthroplasty",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3074/shoulder-hemiarthroplasty"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_shoulder_arthroplasty_shoulder_resurfacing",
+            "title": "Shoulder Resurfacing",
+            "definition": "Prosthetic Resurfacing: Definition; Advantages over conventional stemmed prosthesis; Indications; Outcomes; Complications.",
+            "summary": "Definition Advantages over conventional stemmed prosthesis",
+            "obTopicId": "3077",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Shoulder Arthroplasty",
+              "section": "Shoulder Resurfacing",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3077/shoulder-resurfacing"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_shoulder_arthroplasty_shoulder_prosthetic_joint_infection",
+            "title": "Shoulder Prosthetic Joint Infection",
+            "definition": "summary: Shoulder Prosthetic Joint infections are serious complications of shoulder arthroplasty and a major cause for revision within the first 2 years.; Diagnosis is multifaceted and involves a high index of suspicion given the indolent nature of the most common organism Cutibacterium acnes. Elevated inflammatory markers, radiographic changes around the prosthesis and aspiration results can all assist with diagnosis.; Treatment generally involves prolonged IV antibiotics and two-stage revision arthroplasty..",
+            "summary": "Shoulder Prosthetic Joint infections are serious complications of shoulder arthroplasty and a major cause for revision within the first 2 years. Diagnosis is multifaceted and involves a high index of suspicion given the indolent nature of the most common organism Cutibacterium acnes. Elevated inflammatory markers, radiographic changes around the prosthesis and aspiration results can all assist…",
+            "obTopicId": "12757",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Shoulder Arthroplasty",
+              "section": "Shoulder Prosthetic Joint Infection",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/12757/shoulder-prosthetic-joint-infection"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_shoulder_arthroplasty_shoulder_periprosthetic_fracture",
+            "title": "Shoulder Periprosthetic Fracture",
+            "definition": "summary: Shoulder Periprosthetic Fractures are intraoperative or postoperative complications associated with shoulder arthroplasty that can lead to loosening and migration of the prosthesis.; Diagnosis can be made with plain radiographs of the shoulder and humerus. CT scan can help identify loosening of the prosthesis.; Treatment involves ORIF or revision shoulder arthroplasty depending on location of the fracture and stability of the prosthesis..",
+            "summary": "Shoulder Periprosthetic Fractures are intraoperative or postoperative complications associated with shoulder arthroplasty that can lead to loosening and migration of the prosthesis. Diagnosis can be made with plain radiographs of the shoulder and humerus. CT scan can help identify loosening of the prosthesis.",
+            "obTopicId": "422742",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Shoulder Arthroplasty",
+              "section": "Shoulder Periprosthetic Fracture",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/422742/shoulder-periprosthetic-fracture"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_shoulder_arthroplasty_shoulder_arthrodesis",
+            "title": "Shoulder Arthrodesis",
+            "definition": "Introduction: The goal of shoulder arthrodesis is to provide a stable base for the upper extremity optimizing hand and elbow function; Indications; Contraindications.",
+            "summary": "The goal of shoulder arthrodesis is to provide a stable base for the upper extremity optimizing hand and elbow function Indications",
+            "obTopicId": "3128",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Shoulder Arthroplasty",
+              "section": "Shoulder Arthrodesis",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3128/shoulder-arthrodesis"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Shoulder Arthroplasty"
+        }
+      },
+      {
+        "shortName": "ob_shoulder_elbow_shoulder_arthroscopy",
+        "title": "Shoulder Arthroscopy",
+        "field": "Shoulder",
+        "definition": "OrthoBullets chapter \"Shoulder Arthroscopy\" (Shoulder): Indications pagebreak: Diagnostic surgery; Loose body removal; Rotator cuff repair or debridement; Labral/SLAP and instability repair; Subacromial decompression; AC joint pathology.",
+        "summary": "Diagnostic surgery Loose body removal",
+        "topics": [
+          {
+            "shortName": "ob_shoulder_elbow_shoulder_arthroscopy_shoulder_arthroscopy_indications_and_approach",
+            "title": "Shoulder Arthroscopy: Indications & Approach",
+            "definition": "Indications pagebreak: Diagnostic surgery; Loose body removal; Rotator cuff repair or debridement; Labral/SLAP and instability repair; Subacromial decompression; AC joint pathology.",
+            "summary": "Diagnostic surgery Loose body removal",
+            "obTopicId": "12064",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Shoulder Arthroscopy",
+              "section": "Shoulder Arthroscopy: Indications & Approach",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/12064/shoulder-arthroscopy-indications-and-approach"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Shoulder Arthroscopy"
+        }
+      },
+      {
+        "shortName": "ob_shoulder_elbow_anatomy_and_evaluation_2",
+        "title": "Anatomy and Evaluation",
+        "field": "Elbow",
+        "definition": "OrthoBullets chapter \"Anatomy and Evaluation\" (Elbow): Introduction: Joint includes; Elbow function. Introduction. Inspection",
+        "summary": "Joint includes Elbow function Steps to physical exam",
+        "topics": [
+          {
+            "shortName": "ob_shoulder_elbow_anatomy_and_evaluation_2_elbow_anatomy_and_biomechanics",
+            "title": "Elbow Anatomy & Biomechanics",
+            "definition": "Introduction: Joint includes; Elbow function.",
+            "summary": "Joint includes Elbow function",
+            "obTopicId": "3078",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Anatomy and Evaluation",
+              "section": "Elbow Anatomy & Biomechanics",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3078/elbow-anatomy-and-biomechanics"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_anatomy_and_evaluation_2_elbow_physical_exam",
+            "title": "Elbow Physical Exam",
+            "definition": "Introduction. Inspection",
+            "summary": "Steps to physical exam",
+            "obTopicId": "322131",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Anatomy and Evaluation",
+              "section": "Elbow Physical Exam",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/322131/elbow-physical-exam"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Anatomy and Evaluation"
+        }
+      },
+      {
+        "shortName": "ob_shoulder_elbow_instability_and_throwing_injuries",
+        "title": "Instability and throwing injuries",
+        "field": "Elbow",
+        "definition": "OrthoBullets chapter \"Instability and throwing injuries\" (Elbow): Summary: Medial Ulnar Collateral Ligament Injuries are characterized by attenuation or rupture of the ulnar collateral ligament of the elbow leading to valgus instability in overhead throwing athletes.; Diagnosis is usually made by a combination of physical exam and MRI studies.; Treatment for most individuals is rest and physical therapy. Surgery is reserved for high level overhead athletes such as pitchers.. summary: Valgus Extension Overload, also known as Pitcher's elbow, is a condition char…",
+        "summary": "Medial Ulnar Collateral Ligament Injuries are characterized by attenuation or rupture of the ulnar collateral ligament of the elbow leading to valgus instability in overhead throwing athletes. Diagnosis is usually made by a combination of physical exam and MRI studies. Valgus Extension Overload, also known as Pitcher's elbow, is a condition characterized by posteromedial elbow pain related to repe",
+        "topics": [
+          {
+            "shortName": "ob_shoulder_elbow_instability_and_throwing_injuries_medial_ulnar_collateral_ligament_injury",
+            "title": "Medial Ulnar Collateral Ligament Injury",
+            "definition": "Summary: Medial Ulnar Collateral Ligament Injuries are characterized by attenuation or rupture of the ulnar collateral ligament of the elbow leading to valgus instability in overhead throwing athletes.; Diagnosis is usually made by a combination of physical exam and MRI studies.; Treatment for most individuals is rest and physical therapy. Surgery is reserved for high level overhead athletes such as pitchers..",
+            "summary": "Medial Ulnar Collateral Ligament Injuries are characterized by attenuation or rupture of the ulnar collateral ligament of the elbow leading to valgus instability in overhead throwing athletes. Diagnosis is usually made by a combination of physical exam and MRI studies.",
+            "obTopicId": "3079",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Instability and throwing injuries",
+              "section": "Medial Ulnar Collateral Ligament Injury",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3079/medial-ulnar-collateral-ligament-injury"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_instability_and_throwing_injuries_valgus_extension_overload_pitcher_s_elbow",
+            "title": "Valgus Extension Overload (Pitcher's Elbow)",
+            "definition": "summary: Valgus Extension Overload, also known as Pitcher's elbow, is a condition characterized by posteromedial elbow pain related to repetitive microtrauma in throwing athletes.; Diagnosis is made clinically with posteromedial elbow pain that worsens with elbow extension, and confirmed with radiographs or advanced imaging showing osteophyte formation on the posteromedial olecranon.; First line treatment is nonoperative with rest, activity modifications, and injections. Operative resection of osteophytes and loose bodies are indicated in patients with persistent symptoms..",
+            "summary": "Valgus Extension Overload, also known as Pitcher's elbow, is a condition characterized by posteromedial elbow pain related to repetitive microtrauma in throwing athletes. Diagnosis is made clinically with posteromedial elbow pain that worsens with elbow extension, and confirmed with radiographs or advanced imaging showing osteophyte formation on the posteromedial olecranon.",
+            "obTopicId": "3080",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Instability and throwing injuries",
+              "section": "Valgus Extension Overload (Pitcher's Elbow)",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3080/valgus-extension-overload-pitchers-elbow"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_instability_and_throwing_injuries_little_league_elbow",
+            "title": "Little League Elbow",
+            "definition": "summary: Little league elbow refers to a continuous spectrum of injuries to the medial side of the elbow seen in adolescent pitchers, which includes: medial epicondyle stress fractures, ulnar collateral ligament (UCL) injuries and flexor-pronator mass strains.; Diagnosis is made clinically with tenderness over the medial elbow made worse with valgus stress and supplemented with MRI studies.; Treament is a trial of rest, activity modification, decrease in innings pitched, and physical therapy..",
+            "summary": "Little league elbow refers to a continuous spectrum of injuries to the medial side of the elbow seen in adolescent pitchers, which includes: medial epicondyle stress fractures, ulnar collateral ligament (UCL) injuries and flexor-pronator mass strains. Diagnosis is made clinically with tenderness over the medial elbow made worse with valgus stress and supplemented with MRI studies.",
+            "obTopicId": "3086",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Instability and throwing injuries",
+              "section": "Little League Elbow",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3086/little-league-elbow"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_instability_and_throwing_injuries_olecranon_stress_fracture",
+            "title": "Olecranon Stress Fracture",
+            "definition": "summary: Olecranon Stress Fractures are rare elbow injuries that predominately affects throwing athletes.; Diagnosis can usually be made with plain radiographs of the elbow but may require an MRI or CT scan to confirm the diagnosis in the early stages.; Treatment is generally rest from pitching, pain control, and brief period of immobilization..",
+            "summary": "Olecranon Stress Fractures are rare elbow injuries that predominately affects throwing athletes. Diagnosis can usually be made with plain radiographs of the elbow but may require an MRI or CT scan to confirm the diagnosis in the early stages.",
+            "obTopicId": "3127",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Instability and throwing injuries",
+              "section": "Olecranon Stress Fracture",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3127/olecranon-stress-fracture"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_instability_and_throwing_injuries_lateral_ulnar_collateral_ligament_injury_plri",
+            "title": "Lateral Ulnar Collateral Ligament Injury (PLRI)",
+            "definition": "summary: Lateral Ulnar Collateral Ligament Injury is a ligamentous elbow injury usually associated with a traumatic elbow dislocation, and characterized by posterolateral subluxation or dislocation of the radiocapitellar and ulnohumeral joints.; Diagnosis can be made with plain radiographs of the elbow which may show an isolated elbow dislocation or an elbow dislocation with a radial head and coronoid tip fracture.; Treatment may be nonoperative or operative depending on presence of concomitant elbow fractures, as well as elbow stability following reduction..",
+            "summary": "Lateral Ulnar Collateral Ligament Injury is a ligamentous elbow injury usually associated with a traumatic elbow dislocation, and characterized by posterolateral subluxation or dislocation of the radiocapitellar and ulnohumeral joints. Diagnosis can be made with plain radiographs of the elbow which may show an isolated elbow dislocation or an elbow dislocation with a radial head and coronoid tip…",
+            "obTopicId": "3129",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Instability and throwing injuries",
+              "section": "Lateral Ulnar Collateral Ligament Injury (PLRI)",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3129/lateral-ulnar-collateral-ligament-injury-plri"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Instability and throwing injuries"
+        }
+      },
+      {
+        "shortName": "ob_shoulder_elbow_tendon_conditions_and_tears_2",
+        "title": "Tendon Conditions & Tears",
+        "field": "Elbow",
+        "definition": "OrthoBullets chapter \"Tendon Conditions & Tears\" (Elbow): summary: Distal Biceps Avulsions are injuries to the biceps tendon at the radial tuberosity insertion that generally occurs due to a sudden excessive eccentric contraction of the biceps brachii.; Diagnosis can be made clinically in the setting of complete tears with a hook test. MRI studies can be used to discern between a complete tear and a partial tear.; Treatment can be nonoperative or operative depending on patient age, patient activity demands, chronicity of tear, and degree of tear.. summ…",
+        "summary": "Distal Biceps Avulsions are injuries to the biceps tendon at the radial tuberosity insertion that generally occurs due to a sudden excessive eccentric contraction of the biceps brachii. Diagnosis can be made clinically in the setting of complete tears with a hook test. MRI studies can be used to discern between a complete tear and a partial tear. Triceps Ruptures are rare injuries to the elbow ext",
+        "topics": [
+          {
+            "shortName": "ob_shoulder_elbow_tendon_conditions_and_tears_2_distal_biceps_avulsion",
+            "title": "Distal Biceps Avulsion",
+            "definition": "summary: Distal Biceps Avulsions are injuries to the biceps tendon at the radial tuberosity insertion that generally occurs due to a sudden excessive eccentric contraction of the biceps brachii.; Diagnosis can be made clinically in the setting of complete tears with a hook test. MRI studies can be used to discern between a complete tear and a partial tear.; Treatment can be nonoperative or operative depending on patient age, patient activity demands, chronicity of tear, and degree of tear..",
+            "summary": "Distal Biceps Avulsions are injuries to the biceps tendon at the radial tuberosity insertion that generally occurs due to a sudden excessive eccentric contraction of the biceps brachii. Diagnosis can be made clinically in the setting of complete tears with a hook test. MRI studies can be used to discern between a complete tear and a partial tear.",
+            "obTopicId": "3081",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Tendon Conditions & Tears",
+              "section": "Distal Biceps Avulsion",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3081/distal-biceps-avulsion"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_tendon_conditions_and_tears_2_triceps_rupture",
+            "title": "Triceps Rupture",
+            "definition": "summary: Triceps Ruptures are rare injuries to the elbow extensor mechanism that most commonly occurs as a result of a sudden forceful elbow contraction in weightlifters or older males with underlying systemic illness.; Diagnosis can be made clinically with the inability to extend the elbow against resistance. MRI studies can help discern between partial and complete tears.; Treatment is either immobilization or primary repair depending on patient age, patient underlying systemic disease, chronicity of injury and patient activity demands..",
+            "summary": "Triceps Ruptures are rare injuries to the elbow extensor mechanism that most commonly occurs as a result of a sudden forceful elbow contraction in weightlifters or older males with underlying systemic illness. Diagnosis can be made clinically with the inability to extend the elbow against resistance. MRI studies can help discern between partial and complete tears.",
+            "obTopicId": "3071",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Tendon Conditions & Tears",
+              "section": "Triceps Rupture",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3071/triceps-rupture"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_tendon_conditions_and_tears_2_lateral_epicondylitis_tennis_elbow",
+            "title": "Lateral Epicondylitis (Tennis Elbow)",
+            "definition": "Summary: Lateral Epicondylitis (also known as Tennis Elbow) is an overuse injury caused by eccentric overload at the origin of the common extensor tendon, leading to tendinosis and inflammation of the ECRB.; Diagnosis is made clinically with tenderness over the lateral epicondyle made worse with resisted wrist extension.; Treatment is primarily nonoperative with NSAIDs, activity modification, and bracing. Rarely, operative management is indicated for patients with persistent symptoms who fail nonoperative management..",
+            "summary": "Lateral Epicondylitis (also known as Tennis Elbow) is an overuse injury caused by eccentric overload at the origin of the common extensor tendon, leading to tendinosis and inflammation of the ECRB. Diagnosis is made clinically with tenderness over the lateral epicondyle made worse with resisted wrist extension.",
+            "obTopicId": "3082",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Tendon Conditions & Tears",
+              "section": "Lateral Epicondylitis (Tennis Elbow)",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3082/lateral-epicondylitis-tennis-elbow"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_tendon_conditions_and_tears_2_medial_epicondylitis_golfer_s_elbow",
+            "title": "Medial Epicondylitis (Golfer's Elbow)",
+            "definition": "summary: Medial Epicondylitis, also know as Golfer's elbow, is an overuse syndrome caused by eccentric overload of the flexor-pronator mass at the medial epicondyle.; Diagnosis is made clinically with tenderness around the medial epicondyle made worse with resisted forearm pronation and wrist flexion.; Treatment is generally nonoperative with rest, icing, activity modifications and bracing. Rarely, operative management is indicated for patients with persistent symptoms who fail nonoperative management..",
+            "summary": "Medial Epicondylitis, also know as Golfer's elbow, is an overuse syndrome caused by eccentric overload of the flexor-pronator mass at the medial epicondyle. Diagnosis is made clinically with tenderness around the medial epicondyle made worse with resisted forearm pronation and wrist flexion.",
+            "obTopicId": "3083",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Tendon Conditions & Tears",
+              "section": "Medial Epicondylitis (Golfer's Elbow)",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3083/medial-epicondylitis-golfers-elbow"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_tendon_conditions_and_tears_2_flexor_pronator_strain",
+            "title": "Flexor Pronator Strain",
+            "definition": "Summary: Flexor Pronator Strains are acute or chronic muscle strains of the flexor pronator mass, distal to its origin on the medial epicondyle.; Diagnosis is made clinically with medial elbow swelling and ecchymosis in acute strains withtenderness distal to the medial epicondyle. MRI studies can be used to help identify complete tears or UCL injuries.; Treatment is generally nonoperative with rest, activity modifications and physical therapy..",
+            "summary": "Flexor Pronator Strains are acute or chronic muscle strains of the flexor pronator mass, distal to its origin on the medial epicondyle. Diagnosis is made clinically with medial elbow swelling and ecchymosis in acute strains withtenderness distal to the medial epicondyle. MRI studies can be used to help identify complete tears or UCL injuries.",
+            "obTopicId": "12765",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Tendon Conditions & Tears",
+              "section": "Flexor Pronator Strain",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/12765/flexor-pronator-strain"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Tendon Conditions & Tears"
+        }
+      },
+      {
+        "shortName": "ob_shoulder_elbow_arthritis_and_stiffness_2",
+        "title": "Arthritis & Stiffness",
+        "field": "Elbow",
+        "definition": "OrthoBullets chapter \"Arthritis & Stiffness\" (Elbow): : Elbow Arthritis is degenerative joint disease of the elbow that can be broken into three main types: osteoarthritis, post-traumatic arthritis and inflammatory arthritis.; Diagnosis can be made with plain radiographs of the elbow.; Treatment can be nonoperative or operative depending on patient activity demands, severity of elbow pain and degree of elbow dysfunction.. summary: Neuropathic Charcot Joint of the Elbow is a chronic and progressive joint disease most commonly caused by syringomyelia…",
+        "summary": "Elbow Arthritis is degenerative joint disease of the elbow that can be broken into three main types: osteoarthritis, post-traumatic arthritis and inflammatory arthritis. Diagnosis can be made with plain radiographs of the elbow. Neuropathic Charcot Joint of the Elbow is a chronic and progressive joint disease most commonly caused by syringomyelia leading to the destruction of the elbow joint and s",
+        "topics": [
+          {
+            "shortName": "ob_shoulder_elbow_arthritis_and_stiffness_2_elbow_arthritis",
+            "title": "Elbow Arthritis",
+            "definition": ": Elbow Arthritis is degenerative joint disease of the elbow that can be broken into three main types: osteoarthritis, post-traumatic arthritis and inflammatory arthritis.; Diagnosis can be made with plain radiographs of the elbow.; Treatment can be nonoperative or operative depending on patient activity demands, severity of elbow pain and degree of elbow dysfunction..",
+            "summary": "Elbow Arthritis is degenerative joint disease of the elbow that can be broken into three main types: osteoarthritis, post-traumatic arthritis and inflammatory arthritis. Diagnosis can be made with plain radiographs of the elbow.",
+            "obTopicId": "3084",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Arthritis & Stiffness",
+              "section": "Elbow Arthritis",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3084/elbow-arthritis"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_arthritis_and_stiffness_2_neuropathic_charcot_joint_of_the_elbow",
+            "title": "Neuropathic (Charcot) Joint of the Elbow",
+            "definition": "summary: Neuropathic Charcot Joint of the Elbow is a chronic and progressive joint disease most commonly caused by syringomyelia leading to the destruction of the elbow joint and surrounding bony structures.; Diagnosis is made with radiographs of the elbow and supplemented with cervical spine MRI to assess for a syrinx.; Treatment should be individualized based on degree of functional limitation and underlying neurological condition. Neurosurgical decompression is indicated in the presence of a syrinx..",
+            "summary": "Neuropathic Charcot Joint of the Elbow is a chronic and progressive joint disease most commonly caused by syringomyelia leading to the destruction of the elbow joint and surrounding bony structures. Diagnosis is made with radiographs of the elbow and supplemented with cervical spine MRI to assess for a syrinx.",
+            "obTopicId": "422873",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Arthritis & Stiffness",
+              "section": "Neuropathic (Charcot) Joint of the Elbow",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/422873/neuropathic-charcot-joint-of-the-elbow"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_arthritis_and_stiffness_2_osteochondritis_dissecans_of_elbow",
+            "title": "Osteochondritis Dissecans of Elbow",
+            "definition": "summary: Osteochondritis Dissecans of Elbow is a localized injury and subsequent separation of articular cartilage and subchondral bone of the capitellum, most commonly seen in gymnasts and pitchers.; Diagnosis can be made with plane radiographs but MRI studies can be helpful to evaluate for the size of lesion and extent of bony edema.; Treatment can be nonoperative or operative depending on size of the lesion, stability of the lesion, and presence of loose bodies..",
+            "summary": "Osteochondritis Dissecans of Elbow is a localized injury and subsequent separation of articular cartilage and subchondral bone of the capitellum, most commonly seen in gymnasts and pitchers. Diagnosis can be made with plane radiographs but MRI studies can be helpful to evaluate for the size of lesion and extent of bony edema.",
+            "obTopicId": "3085",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Arthritis & Stiffness",
+              "section": "Osteochondritis Dissecans of Elbow",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3085/osteochondritis-dissecans-of-elbow"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_arthritis_and_stiffness_2_elbow_stiffness_and_contractures",
+            "title": "Elbow Stiffness and Contractures",
+            "definition": "Summary: Elbow Stiffness and Contractures of the elbow result in loss of motion and difficulty performing activities of daily living and may occur as a result of trauma, osteoarthritis, elbow surgery, or a congenital condition.; Diagnosis is made clinically with assessment of active and passive elbow range of motion with a comparison to the contralateral side.; Treatment is a trial of aggressive physical therapy to achieve functional range of motion. Operative management is indicated in the event of bony block to motion, congenital disease and lack of improvement with physical therapy..",
+            "summary": "Elbow Stiffness and Contractures of the elbow result in loss of motion and difficulty performing activities of daily living and may occur as a result of trauma, osteoarthritis, elbow surgery, or a congenital condition. Diagnosis is made clinically with assessment of active and passive elbow range of motion with a comparison to the contralateral side.",
+            "obTopicId": "3087",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Arthritis & Stiffness",
+              "section": "Elbow Stiffness and Contractures",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3087/elbow-stiffness-and-contractures"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Arthritis & Stiffness"
+        }
+      },
+      {
+        "shortName": "ob_shoulder_elbow_elbow_arthroplasty",
+        "title": "Elbow Arthroplasty",
+        "field": "Elbow",
+        "definition": "OrthoBullets chapter \"Elbow Arthroplasty\" (Elbow): Introduction. Elbow Hemiarthroplasty summary: Total Elbow Arthroplasty (TEA) is an increasingly used motion-preserving modality for the treatment of many debilitating elbow pathologies.; Primary indications include rheumatoid arthritis, post-traumatic arthritis, and intra-articular distal humeral fractures in the elderly with poor bony quality.; Semiconstrained implants have the best longevity and most optimal functional outcomes.. Summary: Revision Total Elbow Arthroplasty is most commonly perf…",
+        "summary": "Forms of elbow arthroplasty Total Elbow Arthroplasty (TEA) is an increasingly used motion-preserving modality for the treatment of many debilitating elbow pathologies. Primary indications include rheumatoid arthritis, post-traumatic arthritis, and intra-articular distal humeral fractures in the elderly with poor bony quality.",
+        "topics": [
+          {
+            "shortName": "ob_shoulder_elbow_elbow_arthroplasty_partial_elbow_arthroplasty",
+            "title": "Partial Elbow Arthroplasty",
+            "definition": "Introduction. Elbow Hemiarthroplasty",
+            "summary": "Forms of elbow arthroplasty",
+            "obTopicId": "12111",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Elbow Arthroplasty",
+              "section": "Partial Elbow Arthroplasty",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/12111/partial-elbow-arthroplasty"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_elbow_arthroplasty_total_elbow_arthroplasty",
+            "title": "Total Elbow Arthroplasty",
+            "definition": "summary: Total Elbow Arthroplasty (TEA) is an increasingly used motion-preserving modality for the treatment of many debilitating elbow pathologies.; Primary indications include rheumatoid arthritis, post-traumatic arthritis, and intra-articular distal humeral fractures in the elderly with poor bony quality.; Semiconstrained implants have the best longevity and most optimal functional outcomes..",
+            "summary": "Total Elbow Arthroplasty (TEA) is an increasingly used motion-preserving modality for the treatment of many debilitating elbow pathologies. Primary indications include rheumatoid arthritis, post-traumatic arthritis, and intra-articular distal humeral fractures in the elderly with poor bony quality.",
+            "obTopicId": "3089",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Elbow Arthroplasty",
+              "section": "Total Elbow Arthroplasty",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3089/total-elbow-arthroplasty"
+            }
+          },
+          {
+            "shortName": "ob_shoulder_elbow_elbow_arthroplasty_revision_total_elbow_arthroplasty",
+            "title": "Revision Total Elbow Arthroplasty",
+            "definition": "Summary: Revision Total Elbow Arthroplasty is most commonly performed due to aseptic loosening, periprosthetic infection, or periprosthetic fracture with loose implants.; Diagnosis is made with radiographs in the setting of periprosthetic fracture or implant loosening. Inflammatory markers and elbow aspiration can be helpful in diagnosis of periprosthetic infection.; The type of revision depends on etiology of failure, patient age and patient comorbidities..",
+            "summary": "Revision Total Elbow Arthroplasty is most commonly performed due to aseptic loosening, periprosthetic infection, or periprosthetic fracture with loose implants. Diagnosis is made with radiographs in the setting of periprosthetic fracture or implant loosening. Inflammatory markers and elbow aspiration can be helpful in diagnosis of periprosthetic infection.",
+            "obTopicId": "422838",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Elbow Arthroplasty",
+              "section": "Revision Total Elbow Arthroplasty",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/422838/revision-total-elbow-arthroplasty"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Elbow Arthroplasty"
+        }
+      },
+      {
+        "shortName": "ob_shoulder_elbow_elbow_arthroscopy",
+        "title": "Elbow Arthroscopy",
+        "field": "Elbow",
+        "definition": "OrthoBullets chapter \"Elbow Arthroscopy\" (Elbow): Introduction: Indications; Contraindications; Advantages; Disadvantages.",
+        "summary": "Indications Contraindications",
+        "topics": [
+          {
+            "shortName": "ob_shoulder_elbow_elbow_arthroscopy_elbow_arthroscopy_indications_and_approach",
+            "title": "Elbow Arthroscopy: Indications & Approach",
+            "definition": "Introduction: Indications; Contraindications; Advantages; Disadvantages.",
+            "summary": "Indications Contraindications",
+            "obTopicId": "3088",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Elbow Arthroscopy",
+              "section": "Elbow Arthroscopy: Indications & Approach",
+              "url": "https://www.orthobullets.com/shoulder-and-elbow/3088/elbow-arthroscopy-indications-and-approach"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Elbow Arthroscopy"
+        }
+      }
+    ]
+  }
+}

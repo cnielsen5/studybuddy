@@ -1,0 +1,1919 @@
+{
+  "_meta": {
+    "source": "https://www.orthobullets.com/user/dashboard?id=all&specialty=6&menu=topic",
+    "generated_by": "scripts/scrape-orthobullets-taxonomy.ts",
+    "scraped_at": "2026-06-27T22:21:17.283Z",
+    "section": "hand",
+    "field_count": 7,
+    "chapter_count": 26,
+    "topic_count": 120,
+    "backfilled_at": "2026-06-28T19:07:00.627Z",
+    "backfilled_by": "scripts/backfill-orthobullets-topic-content.ts"
+  },
+  "taxonomy": {
+    "section": "hand",
+    "provenance": "orthobullets_site",
+    "obDataPending": false,
+    "notes": "Scraped from the OrthoBullets specialty dashboard (Field → Chapter → Topic). Fields collapsed into the section; chapters → L4, topics → L5.",
+    "chapters": [
+      {
+        "shortName": "ob_hand_anatomy",
+        "title": "Anatomy",
+        "field": "Hand Introduction",
+        "definition": "OrthoBullets chapter \"Anatomy\" (Hand Introduction): Extensor Tendon Compartments. // <![CDATA[ function MM_swapImgRestore() { //v3.0 var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc; } function MM_preloadImages() { //v3.0 var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array(); var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++) if (a[i].indexOf(\"#\")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}} } function MM_findObj(n, d) { //v4.01 var p,i,x; if(!d) d=document; if((p=n.indexOf…",
+        "summary": "// <![CDATA[ function MM_swapImgRestore() { //v3.0 var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc; } function MM_preloadImages() { //v3.0 var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array(); var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++) if (a[i].indexOf(\"#\")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}} } function… L",
+        "topics": [
+          {
+            "shortName": "ob_hand_anatomy_extensor_tendon_compartments",
+            "title": "Extensor Tendon Compartments",
+            "definition": "Extensor Tendon Compartments. // <![CDATA[ function MM_swapImgRestore() { //v3.0 var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc; } function MM_preloadImages() { //v3.0 var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array(); var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++) if (a[i].indexOf(\"#\")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}} } function MM_findObj(n, d) { //v4.01 var p,i,x; if(!d) d=document; if((p=n.indexOf(\"?\"))>0&&parent.frames.length) { d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);} if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n]; for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); if(!x && d.getElementById) x=d.getElementById(n); return x; } function MM_swapImage() { //v3.0 var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3) if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];} } // ]]> Compartment Tendon Associated Pathology 1 EPB APL De Quervain's tenosynovitis 2 ECRL ECRB Intersection syndrome 3 EPL Drummer's wrist,…",
+            "summary": "// <![CDATA[ function MM_swapImgRestore() { //v3.0 var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc; } function MM_preloadImages() { //v3.0 var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array(); var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++) if (a[i].indexOf(\"#\")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}} } function…",
+            "obTopicId": "6006",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Anatomy",
+              "section": "Extensor Tendon Compartments",
+              "url": "https://www.orthobullets.com/hand/6006/extensor-tendon-compartments"
+            }
+          },
+          {
+            "shortName": "ob_hand_anatomy_ligaments_of_the_fingers",
+            "title": "Ligaments of the Fingers",
+            "definition": "Extensor Ligaments: Lumbrical tendon passes volar to transverse metacarpal ligament; Interossei tendon passes dorsal to transverse metacarpal ligament.",
+            "summary": "Lumbrical tendon passes volar to transverse metacarpal ligament Interossei tendon passes dorsal to transverse metacarpal ligament",
+            "obTopicId": "6003",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Anatomy",
+              "section": "Ligaments of the Fingers",
+              "url": "https://www.orthobullets.com/hand/6003/ligaments-of-the-fingers"
+            }
+          },
+          {
+            "shortName": "ob_hand_anatomy_flexor_pulley_system",
+            "title": "Flexor Pulley System",
+            "definition": "Flexor Pulley System-Fingers: Annular ligaments; Cruciate pulleys; Classification (Schoffl et al).",
+            "summary": "Annular ligaments Cruciate pulleys",
+            "obTopicId": "6004",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Anatomy",
+              "section": "Flexor Pulley System",
+              "url": "https://www.orthobullets.com/hand/6004/flexor-pulley-system"
+            }
+          },
+          {
+            "shortName": "ob_hand_anatomy_blood_supply_to_hand",
+            "title": "Blood Supply to Hand",
+            "definition": "Source Arteries: Radial artery; Ulnar artery; Supplemental arteries.",
+            "summary": "Radial artery Ulnar artery",
+            "obTopicId": "6007",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Anatomy",
+              "section": "Blood Supply to Hand",
+              "url": "https://www.orthobullets.com/hand/6007/blood-supply-to-hand"
+            }
+          },
+          {
+            "shortName": "ob_hand_anatomy_wrist_ligaments_and_biomechanics",
+            "title": "Wrist Ligaments & Biomechanics",
+            "definition": "Wrist: Joints involved; Three axes of motion; Normal and function motion.",
+            "summary": "Joints involved Three axes of motion",
+            "obTopicId": "6005",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Anatomy",
+              "section": "Wrist Ligaments & Biomechanics",
+              "url": "https://www.orthobullets.com/hand/6005/wrist-ligaments-and-biomechanics"
+            }
+          },
+          {
+            "shortName": "ob_hand_anatomy_motion_of_the_fingers",
+            "title": "Motion of the Fingers",
+            "definition": "Motion of the Fingers. v Flexion Extension MCP 70% Interosseous palmar adductors dorsal interosseous 30% lumbricals 2nd & 3rd digit by median n. 4th & 5th digit by ulnar n. EDC sagittal band PIP FDS FDP EDC central slip Lumbricals (via lateral bands) Dorsal interosseous DIP FDP EDC terminal tendon lumbricals via lateral bands",
+            "summary": "v Flexion Extension MCP 70% Interosseous palmar adductors dorsal interosseous 30% lumbricals 2nd & 3rd digit by median n. 4th & 5th digit by ulnar n. EDC sagittal band PIP FDS FDP EDC central slip Lumbricals (via lateral bands) Dorsal interosseous DIP FDP EDC terminal tendon lumbricals via lateral bands",
+            "obTopicId": "6001",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Anatomy",
+              "section": "Motion of the Fingers",
+              "url": "https://www.orthobullets.com/hand/6001/motion-of-the-fingers"
+            }
+          },
+          {
+            "shortName": "ob_hand_anatomy_thumb_motion",
+            "title": "Thumb Motion",
+            "definition": "Thumb Motion. Thumb Motion MCP IP Extension Extensor Pollicis Brevis (EPB) Extensor Pollicis Longus (EPL) Abductor Pollicis Longus (APL) EPL Flexion Flexor Pollicis Brevis (FPB) FPL Abduction APL Abductor Pollicis Brevis NA Adduction Adductor Pollicis NA Opposition Opponens Pollicis NA",
+            "summary": "Thumb Motion MCP IP Extension Extensor Pollicis Brevis (EPB) Extensor Pollicis Longus (EPL) Abductor Pollicis Longus (APL) EPL Flexion Flexor Pollicis Brevis (FPB) FPL Abduction APL Abductor Pollicis Brevis NA Adduction Adductor Pollicis NA Opposition Opponens Pollicis NA",
+            "obTopicId": "6002",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Anatomy",
+              "section": "Thumb Motion",
+              "url": "https://www.orthobullets.com/hand/6002/thumb-motion"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Anatomy"
+        }
+      },
+      {
+        "shortName": "ob_hand_clinical_evaluation",
+        "title": "Clinical Evaluation",
+        "field": "Hand Introduction",
+        "definition": "OrthoBullets chapter \"Clinical Evaluation\" (Hand Introduction): Overview. Inspection Vascular Evaluation of the Hand. Physical Exam Radial pulse Ulnar pulse Capillary refill Allen's test Patient asked to open and clench both fists tightly repeatedly several times Pressure is applied over radial arteries simultaneously to occlude Patient then opens the fingers of both hands rapidly, and examiner compares the color of both. The initial pallor should be replaced quickly by rubor. The test should then be repeated, this time occluding the ulnar arteries Imaging T…",
+        "summary": "An overview of some of the common physical exam maneuvers used to examine the hand and wrist Physical Exam Radial pulse Ulnar pulse Capillary refill Allen's test Patient asked to open and clench both fists tightly repeatedly several times Pressure is applied over radial arteries simultaneously to occlude Patient then opens the fingers of both hands rapidly, and examiner compares the color of both.",
+        "topics": [
+          {
+            "shortName": "ob_hand_clinical_evaluation_physical_exam_of_the_hand",
+            "title": "Physical Exam of the Hand",
+            "definition": "Overview. Inspection",
+            "summary": "An overview of some of the common physical exam maneuvers used to examine the hand and wrist",
+            "obTopicId": "6008",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Clinical Evaluation",
+              "section": "Physical Exam of the Hand",
+              "url": "https://www.orthobullets.com/hand/6008/physical-exam-of-the-hand"
+            }
+          },
+          {
+            "shortName": "ob_hand_clinical_evaluation_vascular_evaluation_of_the_hand",
+            "title": "Vascular Evaluation of the Hand",
+            "definition": "Vascular Evaluation of the Hand. Physical Exam Radial pulse Ulnar pulse Capillary refill Allen's test Patient asked to open and clench both fists tightly repeatedly several times Pressure is applied over radial arteries simultaneously to occlude Patient then opens the fingers of both hands rapidly, and examiner compares the color of both. The initial pallor should be replaced quickly by rubor. The test should then be repeated, this time occluding the ulnar arteries Imaging Three-phase bone scan Phase I (2 minutes) shows an extremity arteriogram Phase II (5-10 minutes) shows cellulits and synovial inflammation Phase III (2-3 hours) shows bone images RSD diagnosed with positive phase III that does not correlate with positive Phase I and Phase II Phase IV (24 hours) can differentiate osteomyelitis from adjacent cellulitis Duplex scan is helpful for arterial intimal lesions (true and false aneurysms) Arteriogram remains gold standard for embolic disease downside is it is invasive with risks Ultrasound duplex imaging is becoming more sensitive and specific Segmental limb pressures",
+            "summary": "Physical Exam Radial pulse Ulnar pulse Capillary refill Allen's test Patient asked to open and clench both fists tightly repeatedly several times Pressure is applied over radial arteries simultaneously to occlude Patient then opens the fingers of both hands rapidly, and examiner compares the color of both. The initial pallor should be replaced quickly by rubor. The test should then be repeated,…",
+            "obTopicId": "6094",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Clinical Evaluation",
+              "section": "Vascular Evaluation of the Hand",
+              "url": "https://www.orthobullets.com/hand/6094/vascular-evaluation-of-the-hand"
+            }
+          },
+          {
+            "shortName": "ob_hand_clinical_evaluation_nerve_conduction_studies",
+            "title": "Nerve Conduction Studies",
+            "definition": "Introduction: Definition; Indications.",
+            "summary": "Definition Indications",
+            "obTopicId": "6113",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Clinical Evaluation",
+              "section": "Nerve Conduction Studies",
+              "url": "https://www.orthobullets.com/hand/6113/nerve-conduction-studies"
+            }
+          },
+          {
+            "shortName": "ob_hand_clinical_evaluation_wrist_trauma_radiographic_evaluation",
+            "title": "Wrist Trauma Radiographic Evaluation",
+            "definition": "Ossification. Osteology",
+            "summary": "order of ossification (counterclockwise in a right hand starting at capitate): capitate, hamate, triquetrum, lunate, scaphoid, trapezium, trapezoid, pisiform",
+            "obTopicId": "322143",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Clinical Evaluation",
+              "section": "Wrist Trauma Radiographic Evaluation",
+              "url": "https://www.orthobullets.com/hand/322143/wrist-trauma-radiographic-evaluation"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Clinical Evaluation"
+        }
+      },
+      {
+        "shortName": "ob_hand_tendon_injuries",
+        "title": "Tendon Injuries",
+        "field": "Hand Trauma",
+        "definition": "OrthoBullets chapter \"Tendon Injuries\" (Hand Trauma): summary: Flexor Tendon Injuries are traumatic injuries to the flexor digitorum superficialis and flexor digitorum profundus tendons that can be caused by laceration or trauma.; Diagnosis is made clinically by observing the resting posture of the hand to assess the digital cascade and the absence of the tenodesis effect.; Treatment is usually direct end-to-end tendon repair.. summary: Jersey Finger is a traumatic flexor tendon injury caused by an avulsion injury of the FDP from the insertion at t…",
+        "summary": "Flexor Tendon Injuries are traumatic injuries to the flexor digitorum superficialis and flexor digitorum profundus tendons that can be caused by laceration or trauma. Diagnosis is made clinically by observing the resting posture of the hand to assess the digital cascade and the absence of the tenodesis effect. Jersey Finger is a traumatic flexor tendon injury caused by an avulsion injury of the FD",
+        "topics": [
+          {
+            "shortName": "ob_hand_tendon_injuries_flexor_tendon_injuries",
+            "title": "Flexor Tendon Injuries",
+            "definition": "summary: Flexor Tendon Injuries are traumatic injuries to the flexor digitorum superficialis and flexor digitorum profundus tendons that can be caused by laceration or trauma.; Diagnosis is made clinically by observing the resting posture of the hand to assess the digital cascade and the absence of the tenodesis effect.; Treatment is usually direct end-to-end tendon repair..",
+            "summary": "Flexor Tendon Injuries are traumatic injuries to the flexor digitorum superficialis and flexor digitorum profundus tendons that can be caused by laceration or trauma. Diagnosis is made clinically by observing the resting posture of the hand to assess the digital cascade and the absence of the tenodesis effect.",
+            "obTopicId": "6031",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Tendon Injuries",
+              "section": "Flexor Tendon Injuries",
+              "url": "https://www.orthobullets.com/hand/6031/flexor-tendon-injuries"
+            }
+          },
+          {
+            "shortName": "ob_hand_tendon_injuries_jersey_finger",
+            "title": "Jersey Finger",
+            "definition": "summary: Jersey Finger is a traumatic flexor tendon injury caused by an avulsion injury of the FDP from the insertion at the base of the distal phalanx.; Diagnosis is made clinically with a finger that lies in slight extension at the DIP relative to other fingers in the resting position. Radiographs may show a bony avulsion if present.; Treatment is usually direct tendon repair or open reduction and internal fixation depending on the presence and size of a bony avulsion..",
+            "summary": "Jersey Finger is a traumatic flexor tendon injury caused by an avulsion injury of the FDP from the insertion at the base of the distal phalanx. Diagnosis is made clinically with a finger that lies in slight extension at the DIP relative to other fingers in the resting position. Radiographs may show a bony avulsion if present.",
+            "obTopicId": "6015",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Tendon Injuries",
+              "section": "Jersey Finger",
+              "url": "https://www.orthobullets.com/hand/6015/jersey-finger"
+            }
+          },
+          {
+            "shortName": "ob_hand_tendon_injuries_extensor_tendon_injuries",
+            "title": "Extensor Tendon Injuries",
+            "definition": "summary: Extensor Tendon Injuries are traumatic injuries to the extensor tendons that can be caused by laceration, trauma, or overuse.; Diagnosis is made clinically by physical examination and performing various provocative tests depending on the location of the injury.; Treatment can be nonoperative or operative depending on the zone of injury..",
+            "summary": "Extensor Tendon Injuries are traumatic injuries to the extensor tendons that can be caused by laceration, trauma, or overuse. Diagnosis is made clinically by physical examination and performing various provocative tests depending on the location of the injury.",
+            "obTopicId": "6028",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Tendon Injuries",
+              "section": "Extensor Tendon Injuries",
+              "url": "https://www.orthobullets.com/hand/6028/extensor-tendon-injuries"
+            }
+          },
+          {
+            "shortName": "ob_hand_tendon_injuries_mallet_finger",
+            "title": "Mallet Finger",
+            "definition": "Summary: Mallet Finger is a finger deformity caused by disruption of the terminal extensor tendon distal to DIP joint; Diagnosis is made clinically when the distal phalanx rests at ~45° of flexion with lack of active DIP extension.; Treatment is usually extension splinting of DIP joint for 6-8 weeks. Surgical management is indicated for volar subluxation of the distal phalanx, chronic injuries, or significant arthritis..",
+            "summary": "Mallet Finger is a finger deformity caused by disruption of the terminal extensor tendon distal to DIP joint Diagnosis is made clinically when the distal phalanx rests at ~45° of flexion with lack of active DIP extension.",
+            "obTopicId": "6014",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Tendon Injuries",
+              "section": "Mallet Finger",
+              "url": "https://www.orthobullets.com/hand/6014/mallet-finger"
+            }
+          },
+          {
+            "shortName": "ob_hand_tendon_injuries_sagittal_band_rupture",
+            "title": "Sagittal Band Rupture",
+            "definition": "summary: Sagittal Band Ruptures lead to dislocation of the extensor tendons and may be caused by trauma or by a chronic inflammatory process such as rheumatoid arthritis.; Diagnosis is made clinically with the inability to initiate MCP extension but the ability to hold MCP in extension once passively extended.; Treatment of acute traumatic injuries is generally splinting where chronic injuries often require surgical reconstruction..",
+            "summary": "Sagittal Band Ruptures lead to dislocation of the extensor tendons and may be caused by trauma or by a chronic inflammatory process such as rheumatoid arthritis. Diagnosis is made clinically with the inability to initiate MCP extension but the ability to hold MCP in extension once passively extended.",
+            "obTopicId": "6029",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Tendon Injuries",
+              "section": "Sagittal Band Rupture",
+              "url": "https://www.orthobullets.com/hand/6029/sagittal-band-rupture"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Tendon Injuries"
+        }
+      },
+      {
+        "shortName": "ob_hand_carpal_trauma",
+        "title": "Carpal Trauma",
+        "field": "Hand Trauma",
+        "definition": "OrthoBullets chapter \"Carpal Trauma\" (Hand Trauma): Summary: A radiocarpal dislocation (RCD) is the total loss of contact between the carpus and the radius.; Diagnosis is confirmed by orthogonal radiographs of the wrist.; Treatment is usually internal fixation of the fractured bones, radiocarpal pinning and repair of the radiocarpal ligaments.. Summary: Scaphoid Fractures are the most common carpal bone fracture, often occurring after a fall onto an outstretched hand.; Diagnosis can generally be made by dedicated radiographs but CT or MRI may be …",
+        "summary": "A radiocarpal dislocation (RCD) is the total loss of contact between the carpus and the radius. Diagnosis is confirmed by orthogonal radiographs of the wrist. Scaphoid Fractures are the most common carpal bone fracture, often occurring after a fall onto an outstretched hand. Diagnosis can generally be made by dedicated radiographs but CT or MRI may be needed for confirmation.",
+        "topics": [
+          {
+            "shortName": "ob_hand_carpal_trauma_radiocarpal_fracture_dislocation",
+            "title": "Radiocarpal Fracture Dislocation",
+            "definition": "Summary: A radiocarpal dislocation (RCD) is the total loss of contact between the carpus and the radius.; Diagnosis is confirmed by orthogonal radiographs of the wrist.; Treatment is usually internal fixation of the fractured bones, radiocarpal pinning and repair of the radiocarpal ligaments..",
+            "summary": "A radiocarpal dislocation (RCD) is the total loss of contact between the carpus and the radius. Diagnosis is confirmed by orthogonal radiographs of the wrist.",
+            "obTopicId": "422863",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Carpal Trauma",
+              "section": "Radiocarpal Fracture Dislocation",
+              "url": "https://www.orthobullets.com/hand/422863/radiocarpal-fracture-dislocation"
+            }
+          },
+          {
+            "shortName": "ob_hand_carpal_trauma_scaphoid_fracture",
+            "title": "Scaphoid Fracture",
+            "definition": "Summary: Scaphoid Fractures are the most common carpal bone fracture, often occurring after a fall onto an outstretched hand.; Diagnosis can generally be made by dedicated radiographs but CT or MRI may be needed for confirmation.; Treatment may require a prolonged period of cast immobilization, percutaneous surgical fixation, or open reduction and internal fixation..",
+            "summary": "Scaphoid Fractures are the most common carpal bone fracture, often occurring after a fall onto an outstretched hand. Diagnosis can generally be made by dedicated radiographs but CT or MRI may be needed for confirmation.",
+            "obTopicId": "6034",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Carpal Trauma",
+              "section": "Scaphoid Fracture",
+              "url": "https://www.orthobullets.com/hand/6034/scaphoid-fracture"
+            }
+          },
+          {
+            "shortName": "ob_hand_carpal_trauma_scaphoid_fracture_nonunion",
+            "title": "Scaphoid Fracture Nonunion",
+            "definition": "Summary: Scaphoid Fracture Nonunion occur in 5-25% of scaphoid fractures following treatment, and are more common in older patients, smokers, and when there is a delay in the initial treatment of the fracture.; Diagnosis is made with a combination of radiographs and a CT scan. MRI studies may be used to assess for avascular necrosis.; Treatment is generally open reduction and internal fixation (ORIF) with bone grafting..",
+            "summary": "Scaphoid Fracture Nonunion occur in 5-25% of scaphoid fractures following treatment, and are more common in older patients, smokers, and when there is a delay in the initial treatment of the fracture. Diagnosis is made with a combination of radiographs and a CT scan. MRI studies may be used to assess for avascular necrosis.",
+            "obTopicId": "422868",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Carpal Trauma",
+              "section": "Scaphoid Fracture Nonunion",
+              "url": "https://www.orthobullets.com/hand/422868/scaphoid-fracture-nonunion"
+            }
+          },
+          {
+            "shortName": "ob_hand_carpal_trauma_lunate_dislocation_perilunate_dissociation",
+            "title": "Lunate Dislocation (Perilunate dissociation)",
+            "definition": "Summary: Lunate/perilunate dislocations are high energy injuries to the wrist associated with neurological injury and poor functional outcomes.; Diagnosis requires careful evaluation of plain radiographs.; Treatment requires urgent closed versus open reduction and stabilization..",
+            "summary": "Lunate/perilunate dislocations are high energy injuries to the wrist associated with neurological injury and poor functional outcomes. Diagnosis requires careful evaluation of plain radiographs.",
+            "obTopicId": "6045",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Carpal Trauma",
+              "section": "Lunate Dislocation (Perilunate dissociation)",
+              "url": "https://www.orthobullets.com/hand/6045/lunate-dislocation-perilunate-dissociation"
+            }
+          },
+          {
+            "shortName": "ob_hand_carpal_trauma_triquetrum_fracture",
+            "title": "Triquetrum Fracture",
+            "definition": "summary: Triquetrum fractures are common carpal fractures that are often associated with other injuries to the wrist.; Diagnosis is confirmed with orthogonal views of the wrist.; Treatment is generally nonoperative but injuries associated with wrist instability require surgical fixation..",
+            "summary": "Triquetrum fractures are common carpal fractures that are often associated with other injuries to the wrist. Diagnosis is confirmed with orthogonal views of the wrist.",
+            "obTopicId": "322147",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Carpal Trauma",
+              "section": "Triquetrum Fracture",
+              "url": "https://www.orthobullets.com/hand/322147/triquetrum-fracture"
+            }
+          },
+          {
+            "shortName": "ob_hand_carpal_trauma_trapezial_fracture",
+            "title": "Trapezial Fracture",
+            "definition": "Summary: Trapezial Fractures are carpal fractures that often result from axial compression to the wrist.; Diagnosis is confirmed with orthogonal radiographs of the wrist.; Treatment can be nonoperative, surgical excision or surgical fixation depend on fracture pattern and patient activity demands..",
+            "summary": "Trapezial Fractures are carpal fractures that often result from axial compression to the wrist. Diagnosis is confirmed with orthogonal radiographs of the wrist.",
+            "obTopicId": "422908",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Carpal Trauma",
+              "section": "Trapezial Fracture",
+              "url": "https://www.orthobullets.com/hand/422908/trapezial-fracture"
+            }
+          },
+          {
+            "shortName": "ob_hand_carpal_trauma_hook_of_hamate_fracture",
+            "title": "Hook of Hamate Fracture",
+            "definition": "Summary: Hook of hamate fractures are rare, often missed, injuries generally as a result of a direct blow to the hamate bone most commonly seen in athletes.; Diagnosis is confirmed with either a radiographic carpal tunnel view or CT scan.; Treatment is either observation, surgical excision, or surgical fixation depending on the severity of the symptoms and activity demands of the patient..",
+            "summary": "Hook of hamate fractures are rare, often missed, injuries generally as a result of a direct blow to the hamate bone most commonly seen in athletes. Diagnosis is confirmed with either a radiographic carpal tunnel view or CT scan.",
+            "obTopicId": "6035",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Carpal Trauma",
+              "section": "Hook of Hamate Fracture",
+              "url": "https://www.orthobullets.com/hand/6035/hook-of-hamate-fracture"
+            }
+          },
+          {
+            "shortName": "ob_hand_carpal_trauma_hamate_body_fracture",
+            "title": "Hamate Body Fracture",
+            "definition": "Summary: Hamate Body Fractures are rare carpal fractures that can be associated with 4th or 5th metacarpal fractures.; Diagnosis is generally made with radiographs of the wrist but may require CT for confirmation.; Treatment is nonoperative for non-displaced fractures but displaced or intra-articular fractures require ORIF..",
+            "summary": "Hamate Body Fractures are rare carpal fractures that can be associated with 4th or 5th metacarpal fractures. Diagnosis is generally made with radiographs of the wrist but may require CT for confirmation.",
+            "obTopicId": "12110",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Carpal Trauma",
+              "section": "Hamate Body Fracture",
+              "url": "https://www.orthobullets.com/hand/12110/hamate-body-fracture"
+            }
+          },
+          {
+            "shortName": "ob_hand_carpal_trauma_pisiform_fracture",
+            "title": "Pisiform Fracture",
+            "definition": "Summary: Pisiform Fractures are rare carpal fractures associated with falls on an outstretched hand.; Diagnosis is often made with orthogonal radiographs but may require CT for confirmation.; Treatment is primarily nonoperative with painful nonunions requiring surgical excision..",
+            "summary": "Pisiform Fractures are rare carpal fractures associated with falls on an outstretched hand. Diagnosis is often made with orthogonal radiographs but may require CT for confirmation.",
+            "obTopicId": "6112",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Carpal Trauma",
+              "section": "Pisiform Fracture",
+              "url": "https://www.orthobullets.com/hand/6112/pisiform-fracture"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Carpal Trauma"
+        }
+      },
+      {
+        "shortName": "ob_hand_finger_trauma",
+        "title": "Finger Trauma",
+        "field": "Hand Trauma",
+        "definition": "OrthoBullets chapter \"Finger Trauma\" (Hand Trauma): summary: Metacarpal Fractures are the most common hand injury and are divided into fractures of the head, neck, or shaft.; Diagnosis is made by orthogonal radiographs the hand.; Treatment is based on which metacarpal is involved, location of the fracture, and the rotation/angulation of the injury.. Summary: MCP Dislocations are a dislocation of the metacarpophalangeal joint, usually dorsal, caused by a fall and hyperextension of the MCP joint.; Diagnosis can be made clinically and is confirmed b…",
+        "summary": "Metacarpal Fractures are the most common hand injury and are divided into fractures of the head, neck, or shaft. Diagnosis is made by orthogonal radiographs the hand. MCP Dislocations are a dislocation of the metacarpophalangeal joint, usually dorsal, caused by a fall and hyperextension of the MCP joint. Diagnosis can be made clinically and is confirmed by orthogonal radiographs.",
+        "topics": [
+          {
+            "shortName": "ob_hand_finger_trauma_metacarpal_fx",
+            "title": "Metacarpal FX",
+            "definition": "summary: Metacarpal Fractures are the most common hand injury and are divided into fractures of the head, neck, or shaft.; Diagnosis is made by orthogonal radiographs the hand.; Treatment is based on which metacarpal is involved, location of the fracture, and the rotation/angulation of the injury..",
+            "summary": "Metacarpal Fractures are the most common hand injury and are divided into fractures of the head, neck, or shaft. Diagnosis is made by orthogonal radiographs the hand.",
+            "obTopicId": "6037",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Finger Trauma",
+              "section": "Metacarpal FX",
+              "url": "https://www.orthobullets.com/hand/6037/metacarpal-fractures"
+            }
+          },
+          {
+            "shortName": "ob_hand_finger_trauma_mcp_dislocations",
+            "title": "MCP Dislocations",
+            "definition": "Summary: MCP Dislocations are a dislocation of the metacarpophalangeal joint, usually dorsal, caused by a fall and hyperextension of the MCP joint.; Diagnosis can be made clinically and is confirmed by orthogonal radiographs.; Treatment is closed reduction unless soft tissue interposition blocks reduction, in which case open reduction is indicated..",
+            "summary": "MCP Dislocations are a dislocation of the metacarpophalangeal joint, usually dorsal, caused by a fall and hyperextension of the MCP joint. Diagnosis can be made clinically and is confirmed by orthogonal radiographs.",
+            "obTopicId": "6115",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Finger Trauma",
+              "section": "MCP Dislocations",
+              "url": "https://www.orthobullets.com/hand/6115/mcp-dislocations"
+            }
+          },
+          {
+            "shortName": "ob_hand_finger_trauma_phalanx_fx",
+            "title": "Phalanx FX",
+            "definition": "summary: Phalanx Fractures are common hand injuries that involve the proximal, middle or distal phalanx.; Diagnosis can be confirmed with orthogonal radiographs of the involve digit.; Treatment involves immobilization or surgical fixation depending on location, severity and alignment of injury..",
+            "summary": "Phalanx Fractures are common hand injuries that involve the proximal, middle or distal phalanx. Diagnosis can be confirmed with orthogonal radiographs of the involve digit.",
+            "obTopicId": "6114",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Finger Trauma",
+              "section": "Phalanx FX",
+              "url": "https://www.orthobullets.com/hand/6114/phalanx-fractures"
+            }
+          },
+          {
+            "shortName": "ob_hand_finger_trauma_phalanx_dislocations",
+            "title": "Phalanx Dislocations",
+            "definition": "Summary: Phalanx Dislocations are common traumatic injury of the hand involving the proximal interphalangeal joint (PIP) or distal interphalangeal joint (DIP).; Diagnosis can be made clinically and are confirmed with orthogonal radiographs.; Treatment is closed reduction and splinting unless volar plate entrapment blocks reduction or a concomitant fracture renders the joint unstable..",
+            "summary": "Phalanx Dislocations are common traumatic injury of the hand involving the proximal interphalangeal joint (PIP) or distal interphalangeal joint (DIP). Diagnosis can be made clinically and are confirmed with orthogonal radiographs.",
+            "obTopicId": "6038",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Finger Trauma",
+              "section": "Phalanx Dislocations",
+              "url": "https://www.orthobullets.com/hand/6038/phalanx-dislocations"
+            }
+          },
+          {
+            "shortName": "ob_hand_finger_trauma_seymour_fracture",
+            "title": "Seymour Fracture",
+            "definition": "summary: Seymour Fractures are displaced distal phalangeal physeal fractures with an associated nailbed injury.; Diagnosis is made clinically with the presence of nail plate lying superficial to the eponychial fold and radiographs potentially showing widened physis or displacement between the epiphysis and metaphysis.; Treatment is usually antibiotics, open reduction and pinning across DIPJ with nailbed repair..",
+            "summary": "Seymour Fractures are displaced distal phalangeal physeal fractures with an associated nailbed injury. Diagnosis is made clinically with the presence of nail plate lying superficial to the eponychial fold and radiographs potentially showing widened physis or displacement between the epiphysis and metaphysis.",
+            "obTopicId": "6000",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Finger Trauma",
+              "section": "Seymour Fracture",
+              "url": "https://www.orthobullets.com/hand/6000/seymour-fracture"
+            }
+          },
+          {
+            "shortName": "ob_hand_finger_trauma_digital_collateral_ligament_injury",
+            "title": "Digital Collateral Ligament Injury",
+            "definition": "summary: Digital Collateral Ligament Injuries result from direct trauma to the digit injuring the radial or ulnar collateral ligaments.; Diagnosis is made clinically and MRI may be required for confirmation.; Treatment is nonoperative with buddy splinting with the exception of radial collateral injury to the index finger which requires surgical repair..",
+            "summary": "Digital Collateral Ligament Injuries result from direct trauma to the digit injuring the radial or ulnar collateral ligaments. Diagnosis is made clinically and MRI may be required for confirmation.",
+            "obTopicId": "6039",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Finger Trauma",
+              "section": "Digital Collateral Ligament Injury",
+              "url": "https://www.orthobullets.com/hand/6039/digital-collateral-ligament-injury"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Finger Trauma"
+        }
+      },
+      {
+        "shortName": "ob_hand_thumb_trauma",
+        "title": "Thumb Trauma",
+        "field": "Hand Trauma",
+        "definition": "OrthoBullets chapter \"Thumb Trauma\" (Hand Trauma): summary: Base of Thumb metacarpal fractures can be extra-articular fractures, Bennett fractures (partial intra-articular), or Rolando fractures (complete intra-articular).; Diagnosis can be made by orthogonal radiographs of the thumb.; Treatment ranges from splint immobilization for certain extra-articular fractures to surgical fixation for displaced Bennett or Rolando fractures.. summary: Thumb CMC Dislocations are rare injuries that occur due to axial force on a flexed thumb.; Diagnosis is cli…",
+        "summary": "Base of Thumb metacarpal fractures can be extra-articular fractures, Bennett fractures (partial intra-articular), or Rolando fractures (complete intra-articular). Diagnosis can be made by orthogonal radiographs of the thumb. Thumb CMC Dislocations are rare injuries that occur due to axial force on a flexed thumb. Diagnosis is clinical and can be confirmed by orthogonal radiographs.",
+        "topics": [
+          {
+            "shortName": "ob_hand_thumb_trauma_base_of_thumb_fx",
+            "title": "Base of Thumb FX",
+            "definition": "summary: Base of Thumb metacarpal fractures can be extra-articular fractures, Bennett fractures (partial intra-articular), or Rolando fractures (complete intra-articular).; Diagnosis can be made by orthogonal radiographs of the thumb.; Treatment ranges from splint immobilization for certain extra-articular fractures to surgical fixation for displaced Bennett or Rolando fractures..",
+            "summary": "Base of Thumb metacarpal fractures can be extra-articular fractures, Bennett fractures (partial intra-articular), or Rolando fractures (complete intra-articular). Diagnosis can be made by orthogonal radiographs of the thumb.",
+            "obTopicId": "6036",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Thumb Trauma",
+              "section": "Base of Thumb FX",
+              "url": "https://www.orthobullets.com/hand/6036/base-of-thumb-fractures"
+            }
+          },
+          {
+            "shortName": "ob_hand_thumb_trauma_thumb_cmc_dislocation",
+            "title": "Thumb CMC Dislocation",
+            "definition": "summary: Thumb CMC Dislocations are rare injuries that occur due to axial force on a flexed thumb.; Diagnosis is clinical and can be confirmed by orthogonal radiographs.; Treatment is closed reduction and immobilization with unstable injuries requiring surgical stabilization..",
+            "summary": "Thumb CMC Dislocations are rare injuries that occur due to axial force on a flexed thumb. Diagnosis is clinical and can be confirmed by orthogonal radiographs.",
+            "obTopicId": "10119",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Thumb Trauma",
+              "section": "Thumb CMC Dislocation",
+              "url": "https://www.orthobullets.com/hand/10119/thumb-cmc-dislocation"
+            }
+          },
+          {
+            "shortName": "ob_hand_thumb_trauma_thumb_collateral_ligament_injury",
+            "title": "Thumb Collateral Ligament Injury",
+            "definition": "Summary: Thumb Collateral Ligament Injuries, most commonly ulnar collateral (UCL), are athletic injuries that lead to a decrease in effective thumb pinch and grasp.; Diagnosis relies upon thumb MCP radial-ulnar stress exam and MRI studies.; Treatment involves anatomic repair or reconstruction which reliably restores the essential function of the collateral ligament..",
+            "summary": "Thumb Collateral Ligament Injuries, most commonly ulnar collateral (UCL), are athletic injuries that lead to a decrease in effective thumb pinch and grasp. Diagnosis relies upon thumb MCP radial-ulnar stress exam and MRI studies.",
+            "obTopicId": "6040",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Thumb Trauma",
+              "section": "Thumb Collateral Ligament Injury",
+              "url": "https://www.orthobullets.com/hand/6040/thumb-collateral-ligament-injury"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Thumb Trauma"
+        }
+      },
+      {
+        "shortName": "ob_hand_infections",
+        "title": "Infections",
+        "field": "Hand Trauma",
+        "definition": "OrthoBullets chapter \"Infections\" (Hand Trauma): Summary: Paronychias are soft tissue infections of the proximal or lateral nail fold.; Diagnosis involves careful clinical examination assessing for erythema and fluctuance around the nail with discoloration/hypertrophic changes of the nail.; Treatment involves warm soaks and oral antibiotics and if fluctuance is present, debridement and partial/complete nail removal is warranted.. summary: Felons are subcutaneous abscesses of the fingertip pulp.; Diagnosis is made clinically by assessing for te…",
+        "summary": "Paronychias are soft tissue infections of the proximal or lateral nail fold. Diagnosis involves careful clinical examination assessing for erythema and fluctuance around the nail with discoloration/hypertrophic changes of the nail. Felons are subcutaneous abscesses of the fingertip pulp. Diagnosis is made clinically by assessing for tenderness, erythema and fluctuance of the fingertip pulp.",
+        "topics": [
+          {
+            "shortName": "ob_hand_infections_paronychia",
+            "title": "Paronychia",
+            "definition": "Summary: Paronychias are soft tissue infections of the proximal or lateral nail fold.; Diagnosis involves careful clinical examination assessing for erythema and fluctuance around the nail with discoloration/hypertrophic changes of the nail.; Treatment involves warm soaks and oral antibiotics and if fluctuance is present, debridement and partial/complete nail removal is warranted..",
+            "summary": "Paronychias are soft tissue infections of the proximal or lateral nail fold. Diagnosis involves careful clinical examination assessing for erythema and fluctuance around the nail with discoloration/hypertrophic changes of the nail.",
+            "obTopicId": "6101",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Infections",
+              "section": "Paronychia",
+              "url": "https://www.orthobullets.com/hand/6101/paronychia"
+            }
+          },
+          {
+            "shortName": "ob_hand_infections_felon",
+            "title": "Felon",
+            "definition": "summary: Felons are subcutaneous abscesses of the fingertip pulp.; Diagnosis is made clinically by assessing for tenderness, erythema and fluctuance of the fingertip pulp.; Treatment is usually I&D and IV antibiotics..",
+            "summary": "Felons are subcutaneous abscesses of the fingertip pulp. Diagnosis is made clinically by assessing for tenderness, erythema and fluctuance of the fingertip pulp.",
+            "obTopicId": "6102",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Infections",
+              "section": "Felon",
+              "url": "https://www.orthobullets.com/hand/6102/felon"
+            }
+          },
+          {
+            "shortName": "ob_hand_infections_pyogenic_flexor_tenosynovitis",
+            "title": "Pyogenic Flexor Tenosynovitis",
+            "definition": "summary: Pyogenic flexor tenosynovitis is an infection of the synovial sheath that surrounds the flexor tendon.; Diagnosis is made clinically with the presence of the 4 Kanavel signs.; Treatment is urgent irrigation and debridement of the flexor tendon sheath with IV antibiotics..",
+            "summary": "Pyogenic flexor tenosynovitis is an infection of the synovial sheath that surrounds the flexor tendon. Diagnosis is made clinically with the presence of the 4 Kanavel signs.",
+            "obTopicId": "6105",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Infections",
+              "section": "Pyogenic Flexor Tenosynovitis",
+              "url": "https://www.orthobullets.com/hand/6105/pyogenic-flexor-tenosynovitis"
+            }
+          },
+          {
+            "shortName": "ob_hand_infections_deep_space_and_collar_button_infections",
+            "title": "Deep Space & Collar Button Infections",
+            "definition": "Introduction: Deep space infections; Collar button abscess.",
+            "summary": "Deep space infections Collar button abscess",
+            "obTopicId": "6106",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Infections",
+              "section": "Deep Space & Collar Button Infections",
+              "url": "https://www.orthobullets.com/hand/6106/deep-space-and-collar-button-infections"
+            }
+          },
+          {
+            "shortName": "ob_hand_infections_herpetic_whitlow",
+            "title": "Herpetic Whitlow",
+            "definition": "Summary: Herpetic Whitlow is a viral infection of the hand caused by herpes simplex virus (HSV-1).; Diagnosis is made clinically by presence of a small, vesicular rash and confirmed with a Tzank smear.; Treatment is observation with a short course of antiviral antibiotics (acyclovir)..",
+            "summary": "Herpetic Whitlow is a viral infection of the hand caused by herpes simplex virus (HSV-1). Diagnosis is made clinically by presence of a small, vesicular rash and confirmed with a Tzank smear.",
+            "obTopicId": "6100",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Infections",
+              "section": "Herpetic Whitlow",
+              "url": "https://www.orthobullets.com/hand/6100/herpetic-whitlow"
+            }
+          },
+          {
+            "shortName": "ob_hand_infections_atypical_mycobacterium_infections",
+            "title": "Atypical Mycobacterium Infections",
+            "definition": "summary: Atypical Mycobacterial Infections of the hand are rare hand infections that are most commonly caused by M. marinum.; Diagnosis is made by clinical examination with presence papules, ulcers, and nodules and confirmed with cultures (Lowenstein-Jensen culture agar).; Treatment of early disease is oral antibiotics (antimycobacterials)..",
+            "summary": "Atypical Mycobacterial Infections of the hand are rare hand infections that are most commonly caused by M. marinum. Diagnosis is made by clinical examination with presence papules, ulcers, and nodules and confirmed with cultures (Lowenstein-Jensen culture agar).",
+            "obTopicId": "6107",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Infections",
+              "section": "Atypical Mycobacterium Infections",
+              "url": "https://www.orthobullets.com/hand/6107/atypical-mycobacterium-infections"
+            }
+          },
+          {
+            "shortName": "ob_hand_infections_fungal_infections",
+            "title": "Fungal Infections",
+            "definition": "summary: Cutaneous Fungal Infections of the hand are usually mild and are broken into 4 types: cutaneous, subcutaneous, deep and systemic.; Diagnosis is made by careful history and physical exam and confirmed with positive fungi cultures.; Treatment is generally oral antifungal antibiotics with deep infections requiring surgical debridement..",
+            "summary": "Cutaneous Fungal Infections of the hand are usually mild and are broken into 4 types: cutaneous, subcutaneous, deep and systemic. Diagnosis is made by careful history and physical exam and confirmed with positive fungi cultures.",
+            "obTopicId": "6108",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Infections",
+              "section": "Fungal Infections",
+              "url": "https://www.orthobullets.com/hand/6108/fungal-infections"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Infections"
+        }
+      },
+      {
+        "shortName": "ob_hand_hand_puncture_injuries",
+        "title": "Hand Puncture Injuries",
+        "field": "Hand Trauma",
+        "definition": "OrthoBullets chapter \"Hand Puncture Injuries\" (Hand Trauma): summary: Human Bite wounds are associated with infections of the hand due to presence of various aerobic and anerobic pathogens.; Diagnosis is made by history and presence of open wounds most commonly over the dorsal aspect of the 3rd or 4th MCP joint.; Treatment is generally surgical debridement and antibiotics (must protect against aerobic and anaerobic bacteria).. summary: Dog and Cat Bites to the hand are common and are associated with secondary infections due to a large number of animal ora…",
+        "summary": "Human Bite wounds are associated with infections of the hand due to presence of various aerobic and anerobic pathogens. Diagnosis is made by history and presence of open wounds most commonly over the dorsal aspect of the 3rd or 4th MCP joint. Dog and Cat Bites to the hand are common and are associated with secondary infections due to a large number of animal oral flora pathogens. Diagnosis is ofte",
+        "topics": [
+          {
+            "shortName": "ob_hand_hand_puncture_injuries_human_bite",
+            "title": "Human Bite",
+            "definition": "summary: Human Bite wounds are associated with infections of the hand due to presence of various aerobic and anerobic pathogens.; Diagnosis is made by history and presence of open wounds most commonly over the dorsal aspect of the 3rd or 4th MCP joint.; Treatment is generally surgical debridement and antibiotics (must protect against aerobic and anaerobic bacteria)..",
+            "summary": "Human Bite wounds are associated with infections of the hand due to presence of various aerobic and anerobic pathogens. Diagnosis is made by history and presence of open wounds most commonly over the dorsal aspect of the 3rd or 4th MCP joint.",
+            "obTopicId": "6104",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Hand Puncture Injuries",
+              "section": "Human Bite",
+              "url": "https://www.orthobullets.com/hand/6104/human-bite"
+            }
+          },
+          {
+            "shortName": "ob_hand_hand_puncture_injuries_dog_and_cat_bites",
+            "title": "Dog and Cat Bites",
+            "definition": "summary: Dog and Cat Bites to the hand are common and are associated with secondary infections due to a large number of animal oral flora pathogens.; Diagnosis is often delayed and is confirmed with a careful history and physical examination.; Treatment is generally oral antibiotics but presence of soft tissue infection, abscess or tenosynovitis requires urgent irrigation and debridement..",
+            "summary": "Dog and Cat Bites to the hand are common and are associated with secondary infections due to a large number of animal oral flora pathogens. Diagnosis is often delayed and is confirmed with a careful history and physical examination.",
+            "obTopicId": "6103",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Hand Puncture Injuries",
+              "section": "Dog and Cat Bites",
+              "url": "https://www.orthobullets.com/hand/6103/dog-and-cat-bites"
+            }
+          },
+          {
+            "shortName": "ob_hand_hand_puncture_injuries_nail_bed_injury",
+            "title": "Nail Bed Injury",
+            "definition": "summary: Nail Bed Injuries are the result of direct trauma to the fingertip and can be characterized into subungual hematoma, nail bed laceration, or nail bed avulsion.; Diagnosis is made by careful inspection of the nail bed integrity.; Treatment depends on severity and degree of nail bed injury but generally requires removal of the nail and nail bed repair..",
+            "summary": "Nail Bed Injuries are the result of direct trauma to the fingertip and can be characterized into subungual hematoma, nail bed laceration, or nail bed avulsion. Diagnosis is made by careful inspection of the nail bed integrity.",
+            "obTopicId": "6109",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Hand Puncture Injuries",
+              "section": "Nail Bed Injury",
+              "url": "https://www.orthobullets.com/hand/6109/nail-bed-injury"
+            }
+          },
+          {
+            "shortName": "ob_hand_hand_puncture_injuries_high_pressure_injection_injuries",
+            "title": "High-Pressure Injection Injuries",
+            "definition": "Summary: High-Pressure Injection Injuries are a traumatic condition characterized by extensive soft tissue damage associated with a benign high-pressure entry wound.; Diagnosis requires obtaining a careful history and inspection of the digit involved.; Treatment involves emergent surgical debridement..",
+            "summary": "High-Pressure Injection Injuries are a traumatic condition characterized by extensive soft tissue damage associated with a benign high-pressure entry wound. Diagnosis requires obtaining a careful history and inspection of the digit involved.",
+            "obTopicId": "12104",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Hand Puncture Injuries",
+              "section": "High-Pressure Injection Injuries",
+              "url": "https://www.orthobullets.com/hand/12104/high-pressure-injection-injuries"
+            }
+          },
+          {
+            "shortName": "ob_hand_hand_puncture_injuries_frostbite",
+            "title": "Frostbite",
+            "definition": "Summary: Frostbite is the extensive soft tissue damage associated with exposure to temperatures below freezing point.; Diagnosis is made clinically with the appearance of a central whitish area with surrounding erythema and subsequent clear/cloudy blisters within 24 hours.; Treatment involves prevention with prompt rewarming and potential surgical debridement depending on severity of soft tissue injury..",
+            "summary": "Frostbite is the extensive soft tissue damage associated with exposure to temperatures below freezing point. Diagnosis is made clinically with the appearance of a central whitish area with surrounding erythema and subsequent clear/cloudy blisters within 24 hours.",
+            "obTopicId": "12105",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Hand Puncture Injuries",
+              "section": "Frostbite",
+              "url": "https://www.orthobullets.com/hand/12105/frostbite"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Hand Puncture Injuries"
+        }
+      },
+      {
+        "shortName": "ob_hand_replantation",
+        "title": "Replantation",
+        "field": "Microsurgery",
+        "definition": "OrthoBullets chapter \"Replantation\" (Microsurgery): Introduction: Injury to the finger with variable involvement of soft tissue, bone, and tendon; Goals of treatment; Prognosis. Summary: Ring Avulsion Injuries occur secondary to a sudden pull on a finger and result in severe soft tissue injury ranging from circumferential soft tissue laceration to complete amputation.; Diagnosis is confirmed with physical examination most commonly showing degloving of a finger.; Treatment involves urgent repair or reconstruction depending on extend of soft tissue…",
+        "summary": "Injury to the finger with variable involvement of soft tissue, bone, and tendon Goals of treatment Ring Avulsion Injuries occur secondary to a sudden pull on a finger and result in severe soft tissue injury ranging from circumferential soft tissue laceration to complete amputation. Diagnosis is confirmed with physical examination most commonly showing degloving of a finger.",
+        "topics": [
+          {
+            "shortName": "ob_hand_replantation_fingertip_amputations_and_finger_flaps",
+            "title": "Fingertip Amputations & Finger Flaps",
+            "definition": "Introduction: Injury to the finger with variable involvement of soft tissue, bone, and tendon; Goals of treatment; Prognosis.",
+            "summary": "Injury to the finger with variable involvement of soft tissue, bone, and tendon Goals of treatment",
+            "obTopicId": "6060",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Replantation",
+              "section": "Fingertip Amputations & Finger Flaps",
+              "url": "https://www.orthobullets.com/hand/6060/fingertip-amputations-and-finger-flaps"
+            }
+          },
+          {
+            "shortName": "ob_hand_replantation_ring_avulsion_injuries",
+            "title": "Ring Avulsion Injuries",
+            "definition": "Summary: Ring Avulsion Injuries occur secondary to a sudden pull on a finger and result in severe soft tissue injury ranging from circumferential soft tissue laceration to complete amputation.; Diagnosis is confirmed with physical examination most commonly showing degloving of a finger.; Treatment involves urgent repair or reconstruction depending on extend of soft tissue and neurovascular injury to the digit..",
+            "summary": "Ring Avulsion Injuries occur secondary to a sudden pull on a finger and result in severe soft tissue injury ranging from circumferential soft tissue laceration to complete amputation. Diagnosis is confirmed with physical examination most commonly showing degloving of a finger.",
+            "obTopicId": "6061",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Replantation",
+              "section": "Ring Avulsion Injuries",
+              "url": "https://www.orthobullets.com/hand/6061/ring-avulsion-injuries"
+            }
+          },
+          {
+            "shortName": "ob_hand_replantation_replantation",
+            "title": "Replantation",
+            "definition": "Summary: Replantation is the reconstruction of an amputated portion of the upper extremity secondary to trauma.; Diagnosis of an amputated digit is contingent on absence of blood supply (cold, white digit, without soft tissue attachment).; Treatment involves prompt transportation of the amputated tissue and stepwise reconstruction prior to tissue ischemia and meticulous post-operative care..",
+            "summary": "Replantation is the reconstruction of an amputated portion of the upper extremity secondary to trauma. Diagnosis of an amputated digit is contingent on absence of blood supply (cold, white digit, without soft tissue attachment).",
+            "obTopicId": "6063",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Replantation",
+              "section": "Replantation",
+              "url": "https://www.orthobullets.com/hand/6063/replantation"
+            }
+          },
+          {
+            "shortName": "ob_hand_replantation_thumb_reconstruction",
+            "title": "Thumb Reconstruction",
+            "definition": "Thumb Reconstruction. Introduction Regions of Thumb Reconstruction Region A Primary closure Toe to Thumb (wrap around) Local flaps Region B Web deepening Metacarpal lengthening Toe to thumb Region C Toe to thumb Osteoplastic thumb reconstruction Dorsal rotational flap Region D Pollicization Reconstruction of the thumb requires an intact carpometarcarpal joint that not only is stable, but is appropriately functional. Treatment Toe to thumb procedure great toe receives blood supply from the first dorsal metatarsal artery and dorsalis pedis The Morrison/wrap around flap allow for maintenance of length of the hallux. Size and appearance are best replicated. second toe is not as stable for transfer Vascular pedicle can be based on dorsalis pedis /1st dorsal metatarsal artery 2nd dorsal metatarsal artery Web deepening Z plasty (2 or 4 flap) 2 flaps provide greater depth if completed at 45 degrees, relative length is increased by 50%; 60 degrees leads to an increase in length of 75% Brand flap index finger is used to provide a full thickness (dermoepidermal flap) can close the donor site primarily Dorsal rectangular flaps Take from dorsum of metacarpals May require skin grafting…",
+            "summary": "Introduction Regions of Thumb Reconstruction Region A Primary closure Toe to Thumb (wrap around) Local flaps Region B Web deepening Metacarpal lengthening Toe to thumb Region C Toe to thumb Osteoplastic thumb reconstruction Dorsal rotational flap Region D Pollicization Reconstruction of the thumb requires an intact carpometarcarpal joint that not only is stable, but is appropriately functional.…",
+            "obTopicId": "6062",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Replantation",
+              "section": "Thumb Reconstruction",
+              "url": "https://www.orthobullets.com/hand/6062/thumb-reconstruction"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Replantation"
+        }
+      },
+      {
+        "shortName": "ob_hand_reconstruction",
+        "title": "Reconstruction",
+        "field": "Microsurgery",
+        "definition": "OrthoBullets chapter \"Reconstruction\" (Microsurgery): Summary: Peripheral nerve injury is a relatively common condition that encompasses a range of reversible and irreversible impairments determined by injury level, axonal disruption, and time to treatment.; Diagnosis is typically clinical with a combination of known injury with a nerve deficit. Advanced imaging such as ultrasound or MRI may be used to characterize nerve morphology after injury; however, EMG/NCS is a mainstay of evaluating both nerve injury and nerve recovery. Surgical exploration …",
+        "summary": "Peripheral nerve injury is a relatively common condition that encompasses a range of reversible and irreversible impairments determined by injury level, axonal disruption, and time to treatment. Diagnosis is typically clinical with a combination of known injury with a nerve deficit. Advanced imaging such as ultrasound or MRI may be used to characterize nerve morphology after injury; however,… Defi",
+        "topics": [
+          {
+            "shortName": "ob_hand_reconstruction_peripheral_nerve_injury_and_repair",
+            "title": "Peripheral Nerve Injury & Repair",
+            "definition": "Summary: Peripheral nerve injury is a relatively common condition that encompasses a range of reversible and irreversible impairments determined by injury level, axonal disruption, and time to treatment.; Diagnosis is typically clinical with a combination of known injury with a nerve deficit. Advanced imaging such as ultrasound or MRI may be used to characterize nerve morphology after injury; however, EMG/NCS is a mainstay of evaluating both nerve injury and nerve recovery. Surgical exploration is confirmatory for traumatic nerve injuries.; Treatment may involve observation, primary repair, nerve reconstruction with grafting, tendon transfers, nerve transfers, or a combination thereof depending on acuity, degree of injury, nerve quality, and mechanism of injury..",
+            "summary": "Peripheral nerve injury is a relatively common condition that encompasses a range of reversible and irreversible impairments determined by injury level, axonal disruption, and time to treatment. Diagnosis is typically clinical with a combination of known injury with a nerve deficit. Advanced imaging such as ultrasound or MRI may be used to characterize nerve morphology after injury; however,…",
+            "obTopicId": "6066",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Reconstruction",
+              "section": "Peripheral Nerve Injury & Repair",
+              "url": "https://www.orthobullets.com/hand/6066/peripheral-nerve-injury-and-repair"
+            }
+          },
+          {
+            "shortName": "ob_hand_reconstruction_extremity_flap_reconstruction",
+            "title": "Extremity Flap Reconstruction",
+            "definition": "Introduction: Definition of flap; Definition of pedicle; Indications for flap coverage.",
+            "summary": "Definition of flap Definition of pedicle",
+            "obTopicId": "6059",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Reconstruction",
+              "section": "Extremity Flap Reconstruction",
+              "url": "https://www.orthobullets.com/hand/6059/extremity-flap-reconstruction"
+            }
+          },
+          {
+            "shortName": "ob_hand_reconstruction_skin_grafting",
+            "title": "Skin Grafting",
+            "definition": "Summary: A skin graft is an avascular dermal tissue used to cover well-perfused dermal defects.; The graft is most commonly autologous and can be either split-thickness or full-thickness.; Skin grafting donor sites are commonly the anterolateral thigh for STSG and the upper extremity for FTSG..",
+            "summary": "A skin graft is an avascular dermal tissue used to cover well-perfused dermal defects. The graft is most commonly autologous and can be either split-thickness or full-thickness.",
+            "obTopicId": "6064",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Reconstruction",
+              "section": "Skin Grafting",
+              "url": "https://www.orthobullets.com/hand/6064/skin-grafting"
+            }
+          },
+          {
+            "shortName": "ob_hand_reconstruction_tendon_transfer_principles",
+            "title": "Tendon Transfer Principles",
+            "definition": "Principles. Presentation",
+            "summary": "Principles of tendon transfers",
+            "obTopicId": "6065",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Reconstruction",
+              "section": "Tendon Transfer Principles",
+              "url": "https://www.orthobullets.com/hand/6065/tendon-transfer-principles"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Reconstruction"
+        }
+      },
+      {
+        "shortName": "ob_hand_median_neuropathies",
+        "title": "Median Neuropathies",
+        "field": "Neuropathies",
+        "definition": "OrthoBullets chapter \"Median Neuropathies\" (Neuropathies): Summary: Carpal Tunnel Syndrome (CTS) is a common acquired compressive neuropathy of the median nerve that presents with symptoms of numbness and tingling in the median nerve distribution of the hand.; Diagnosis is made clinically with primary symptoms of night pain, hand weakness/clumsiness, and numbness in median nerve distribution along with positive provocative tests and/or EMG/NCS studies; Treatment is usually conservative with night splints and corticosteroid injections. Operative treatmen…",
+        "summary": "Carpal Tunnel Syndrome (CTS) is a common acquired compressive neuropathy of the median nerve that presents with symptoms of numbness and tingling in the median nerve distribution of the hand. Diagnosis is made clinically with primary symptoms of night pain, hand weakness/clumsiness, and numbness in median nerve distribution along with positive provocative tests and/or EMG/NCS studies Compression o",
+        "topics": [
+          {
+            "shortName": "ob_hand_median_neuropathies_carpal_tunnel_syndrome",
+            "title": "Carpal Tunnel Syndrome",
+            "definition": "Summary: Carpal Tunnel Syndrome (CTS) is a common acquired compressive neuropathy of the median nerve that presents with symptoms of numbness and tingling in the median nerve distribution of the hand.; Diagnosis is made clinically with primary symptoms of night pain, hand weakness/clumsiness, and numbness in median nerve distribution along with positive provocative tests and/or EMG/NCS studies; Treatment is usually conservative with night splints and corticosteroid injections. Operative treatment in the form of carpal tunnel release is reserved for refractory cases..",
+            "summary": "Carpal Tunnel Syndrome (CTS) is a common acquired compressive neuropathy of the median nerve that presents with symptoms of numbness and tingling in the median nerve distribution of the hand. Diagnosis is made clinically with primary symptoms of night pain, hand weakness/clumsiness, and numbness in median nerve distribution along with positive provocative tests and/or EMG/NCS studies",
+            "obTopicId": "6018",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Median Neuropathies",
+              "section": "Carpal Tunnel Syndrome",
+              "url": "https://www.orthobullets.com/hand/6018/carpal-tunnel-syndrome"
+            }
+          },
+          {
+            "shortName": "ob_hand_median_neuropathies_ain_compressive_neuropathy",
+            "title": "AIN Compressive Neuropathy",
+            "definition": "Summary: Compression of the AIN nerve (also known as Kiloh-Nevin's syndrome) is a forearm compressive neuropathy that results in motor deficits of the AIN nerve.; Diagnosis can be made with a careful neurological exam (weakness of thumb, index and middle finger flexion) with inability to make OK sign and normal median nerve sensory exam.; Treatment involves a prolonged nonoperative course, and rarely, surgical decompression..",
+            "summary": "Compression of the AIN nerve (also known as Kiloh-Nevin's syndrome) is a forearm compressive neuropathy that results in motor deficits of the AIN nerve. Diagnosis can be made with a careful neurological exam (weakness of thumb, index and middle finger flexion) with inability to make OK sign and normal median nerve sensory exam.",
+            "obTopicId": "6019",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Median Neuropathies",
+              "section": "AIN Compressive Neuropathy",
+              "url": "https://www.orthobullets.com/hand/6019/ain-compressive-neuropathy"
+            }
+          },
+          {
+            "shortName": "ob_hand_median_neuropathies_pronator_syndrome",
+            "title": "Pronator Syndrome",
+            "definition": "Summary: Pronator Syndrome is a compressive neuropathy of the median nerve at the level of the elbow.; Diagnosis is made clinically with pain at the proximal volar forearm, sensory changes over the palmar cutaneous branch, and positive Tinel's over the proximal volar forearm.; Treatment involves a prolonged nonoperative course, and rarely, surgical decompression..",
+            "summary": "Pronator Syndrome is a compressive neuropathy of the median nerve at the level of the elbow. Diagnosis is made clinically with pain at the proximal volar forearm, sensory changes over the palmar cutaneous branch, and positive Tinel's over the proximal volar forearm.",
+            "obTopicId": "6020",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Median Neuropathies",
+              "section": "Pronator Syndrome",
+              "url": "https://www.orthobullets.com/hand/6020/pronator-syndrome"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Median Neuropathies"
+        }
+      },
+      {
+        "shortName": "ob_hand_ulnar_neuropathies",
+        "title": "Ulnar Neuropathies",
+        "field": "Neuropathies",
+        "definition": "OrthoBullets chapter \"Ulnar Neuropathies\" (Neuropathies): Summary: Cubital Tunnel Syndrome is a compressive neuropathy of the ulnar nerve caused by anatomic compression in the medial elbow.; Diagnosis is made clinically with presence of sensory changes to the ring and little finger, intrinsic muscle weakness and a positive tinel's sign over the cubital tunnel.; Treatment may be nonoperative modalities such as bracing or surgical decompression depending on the severity and duration of symptoms, and success of nonoperative treatment.. Summary: Ulnar Tunn…",
+        "summary": "Cubital Tunnel Syndrome is a compressive neuropathy of the ulnar nerve caused by anatomic compression in the medial elbow. Diagnosis is made clinically with presence of sensory changes to the ring and little finger, intrinsic muscle weakness and a positive tinel's sign over the cubital tunnel. Ulnar Tunnel Syndrome is a compressive neuropathy of the ulnar nerve at the level of the wrist (Guyon's c",
+        "topics": [
+          {
+            "shortName": "ob_hand_ulnar_neuropathies_cubital_tunnel_syndrome",
+            "title": "Cubital Tunnel Syndrome",
+            "definition": "Summary: Cubital Tunnel Syndrome is a compressive neuropathy of the ulnar nerve caused by anatomic compression in the medial elbow.; Diagnosis is made clinically with presence of sensory changes to the ring and little finger, intrinsic muscle weakness and a positive tinel's sign over the cubital tunnel.; Treatment may be nonoperative modalities such as bracing or surgical decompression depending on the severity and duration of symptoms, and success of nonoperative treatment..",
+            "summary": "Cubital Tunnel Syndrome is a compressive neuropathy of the ulnar nerve caused by anatomic compression in the medial elbow. Diagnosis is made clinically with presence of sensory changes to the ring and little finger, intrinsic muscle weakness and a positive tinel's sign over the cubital tunnel.",
+            "obTopicId": "6021",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Ulnar Neuropathies",
+              "section": "Cubital Tunnel Syndrome",
+              "url": "https://www.orthobullets.com/hand/6021/cubital-tunnel-syndrome"
+            }
+          },
+          {
+            "shortName": "ob_hand_ulnar_neuropathies_ulnar_tunnel_syndrome",
+            "title": "Ulnar Tunnel Syndrome",
+            "definition": "Summary: Ulnar Tunnel Syndrome is a compressive neuropathy of the ulnar nerve at the level of the wrist (Guyon's canal), most commonly due to a ganglion cyst.; Diagnosis can be made clinically with paresthesias of the small and ring finger with intrinsic weakness with a Tinel's sign over Guyon's canal.; Treatment involves a course of conservative management with splinting, and surgical decompression in the presence of a compressive lesion (i.e ganglion) or continued symptoms..",
+            "summary": "Ulnar Tunnel Syndrome is a compressive neuropathy of the ulnar nerve at the level of the wrist (Guyon's canal), most commonly due to a ganglion cyst. Diagnosis can be made clinically with paresthesias of the small and ring finger with intrinsic weakness with a Tinel's sign over Guyon's canal.",
+            "obTopicId": "6022",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Ulnar Neuropathies",
+              "section": "Ulnar Tunnel Syndrome",
+              "url": "https://www.orthobullets.com/hand/6022/ulnar-tunnel-syndrome"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Ulnar Neuropathies"
+        }
+      },
+      {
+        "shortName": "ob_hand_radial_neuropathies",
+        "title": "Radial Neuropathies",
+        "field": "Neuropathies",
+        "definition": "OrthoBullets chapter \"Radial Neuropathies\" (Neuropathies): Sumary: PIN compression syndrome is a compressive neuropathy of the PIN which affects the nerve supply of the forearm extensor compartment.; Diagnosis is made clinically with weakness of thumb and wrist extensors without sensory deficits.; Treatment is a course of conservative management with splinting and surgical decompression reserved for persistent cases lasting > 3 months.. Summary: Radial Tunnel Syndrome is a compressive neuropathy of the posterior interosseous nerve (PIN) at the level of …",
+        "summary": "PIN compression syndrome is a compressive neuropathy of the PIN which affects the nerve supply of the forearm extensor compartment. Diagnosis is made clinically with weakness of thumb and wrist extensors without sensory deficits. Radial Tunnel Syndrome is a compressive neuropathy of the posterior interosseous nerve (PIN) at the level of proximal forearm (radial tunnel). Diagnosis is made clinicall",
+        "topics": [
+          {
+            "shortName": "ob_hand_radial_neuropathies_pin_compression_syndrome",
+            "title": "PIN Compression Syndrome",
+            "definition": "Sumary: PIN compression syndrome is a compressive neuropathy of the PIN which affects the nerve supply of the forearm extensor compartment.; Diagnosis is made clinically with weakness of thumb and wrist extensors without sensory deficits.; Treatment is a course of conservative management with splinting and surgical decompression reserved for persistent cases lasting > 3 months..",
+            "summary": "PIN compression syndrome is a compressive neuropathy of the PIN which affects the nerve supply of the forearm extensor compartment. Diagnosis is made clinically with weakness of thumb and wrist extensors without sensory deficits.",
+            "obTopicId": "6023",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Radial Neuropathies",
+              "section": "PIN Compression Syndrome",
+              "url": "https://www.orthobullets.com/hand/6023/pin-compression-syndrome"
+            }
+          },
+          {
+            "shortName": "ob_hand_radial_neuropathies_radial_tunnel_syndrome",
+            "title": "Radial Tunnel Syndrome",
+            "definition": "Summary: Radial Tunnel Syndrome is a compressive neuropathy of the posterior interosseous nerve (PIN) at the level of proximal forearm (radial tunnel).; Diagnosis is made clinically with pain only (maximal tenderness 3-5 cm distal to lateral epicondyle) without any motor or sensory dysfunction.; Treatment is a prolonged course of conservative management with NSAIDs, temporary splinting and CSIs with radial tunnel decompression reserved for refractory cases..",
+            "summary": "Radial Tunnel Syndrome is a compressive neuropathy of the posterior interosseous nerve (PIN) at the level of proximal forearm (radial tunnel). Diagnosis is made clinically with pain only (maximal tenderness 3-5 cm distal to lateral epicondyle) without any motor or sensory dysfunction.",
+            "obTopicId": "6024",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Radial Neuropathies",
+              "section": "Radial Tunnel Syndrome",
+              "url": "https://www.orthobullets.com/hand/6024/radial-tunnel-syndrome"
+            }
+          },
+          {
+            "shortName": "ob_hand_radial_neuropathies_wartenberg_s_syndrome",
+            "title": "Wartenberg's Syndrome",
+            "definition": "Summary: Wartenberg's Syndrome, also called \"cheiralgia paresthetica,\" is a compressive neuropathy of the superficial sensory radial nerve at the wrist.; Diagnosis is made clinically with pain and paresthesias over the dorsoradial hand without any motor deficits.; Treatment is conservative with rest, wrist splints and CSIs with surgical decompression reserved for refractory cases..",
+            "summary": "Wartenberg's Syndrome, also called \"cheiralgia paresthetica,\" is a compressive neuropathy of the superficial sensory radial nerve at the wrist. Diagnosis is made clinically with pain and paresthesias over the dorsoradial hand without any motor deficits.",
+            "obTopicId": "6025",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Radial Neuropathies",
+              "section": "Wartenberg's Syndrome",
+              "url": "https://www.orthobullets.com/hand/6025/wartenbergs-syndrome"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Radial Neuropathies"
+        }
+      },
+      {
+        "shortName": "ob_hand_flexor_tendon_conditions",
+        "title": "Flexor Tendon Conditions",
+        "field": "Degenerative Conditions",
+        "definition": "OrthoBullets chapter \"Flexor Tendon Conditions\" (Degenerative Conditions): SUMMARY: Trigger Finger (trigger thumb when involving the thumb) is the inhibition of smooth tendon gliding due to mechanical impingement at the level of the A1 pulley that causes progressive pain, clicking, catching, and locking of the digit.; Diagnosis is made by physical examination with presence of active triggering and tenderness at the A1 pulley.; Treatment consists of splinting, anti-inflammatory medications, steroid injections, and surgical release.. Summary: Dupuytren's Disease is a ben…",
+        "summary": "Trigger Finger (trigger thumb when involving the thumb) is the inhibition of smooth tendon gliding due to mechanical impingement at the level of the A1 pulley that causes progressive pain, clicking, catching, and locking of the digit. Diagnosis is made by physical examination with presence of active triggering and tenderness at the A1 pulley. Dupuytren's Disease is a benign proliferative disorder ",
+        "topics": [
+          {
+            "shortName": "ob_hand_flexor_tendon_conditions_trigger_finger",
+            "title": "Trigger Finger",
+            "definition": "SUMMARY: Trigger Finger (trigger thumb when involving the thumb) is the inhibition of smooth tendon gliding due to mechanical impingement at the level of the A1 pulley that causes progressive pain, clicking, catching, and locking of the digit.; Diagnosis is made by physical examination with presence of active triggering and tenderness at the A1 pulley.; Treatment consists of splinting, anti-inflammatory medications, steroid injections, and surgical release..",
+            "summary": "Trigger Finger (trigger thumb when involving the thumb) is the inhibition of smooth tendon gliding due to mechanical impingement at the level of the A1 pulley that causes progressive pain, clicking, catching, and locking of the digit. Diagnosis is made by physical examination with presence of active triggering and tenderness at the A1 pulley.",
+            "obTopicId": "6027",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Flexor Tendon Conditions",
+              "section": "Trigger Finger",
+              "url": "https://www.orthobullets.com/hand/6027/trigger-finger"
+            }
+          },
+          {
+            "shortName": "ob_hand_flexor_tendon_conditions_dupuytren_s_disease",
+            "title": "Dupuytren's Disease",
+            "definition": "Summary: Dupuytren's Disease is a benign proliferative disorder characterized by decreased hand function that begins as a painless nodule and can progress to form diseased cords and contractures of the palm and fingers; Diagnosis can be made by physical examination which shows painless nodules in the palm with associated digital contracture, usually found at the MCP and PIP joints.; Treatment ranges from nonoperative through observation, collagenase injections, and needle aponeurotomy to operative open fasciectomy if the disease progresses or affects a patient's daily living..",
+            "summary": "Dupuytren's Disease is a benign proliferative disorder characterized by decreased hand function that begins as a painless nodule and can progress to form diseased cords and contractures of the palm and fingers Diagnosis can be made by physical examination which shows painless nodules in the palm with associated digital contracture, usually found at the MCP and PIP joints.",
+            "obTopicId": "6058",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Flexor Tendon Conditions",
+              "section": "Dupuytren's Disease",
+              "url": "https://www.orthobullets.com/hand/6058/dupuytrens-disease"
+            }
+          },
+          {
+            "shortName": "ob_hand_flexor_tendon_conditions_flexor_carpi_radialis_tendinitis",
+            "title": "Flexor Carpi Radialis Tendinitis",
+            "definition": "Summary: Flexor carpi radialis tendinitis is a condition characterized by pain over the volar radial wrist caused by inflammation of the FCR tendon sheath.; Diagnosis is made clinically with pain over the FCR tendon that worsens with resisted wrist flexion.; Treatment usually involves immobilization, NSAIDs and injections. In rare refractory cases operative release of the FCR tendon sheath may be indicated..",
+            "summary": "Flexor carpi radialis tendinitis is a condition characterized by pain over the volar radial wrist caused by inflammation of the FCR tendon sheath. Diagnosis is made clinically with pain over the FCR tendon that worsens with resisted wrist flexion.",
+            "obTopicId": "6033",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Flexor Tendon Conditions",
+              "section": "Flexor Carpi Radialis Tendinitis",
+              "url": "https://www.orthobullets.com/hand/6033/flexor-carpi-radialis-tendinitis"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Flexor Tendon Conditions"
+        }
+      },
+      {
+        "shortName": "ob_hand_extensor_tendon_conditions",
+        "title": "Extensor Tendon Conditions",
+        "field": "Degenerative Conditions",
+        "definition": "OrthoBullets chapter \"Extensor Tendon Conditions\" (Degenerative Conditions): summary: De Quervain's Tenosynovitis is a stenosing tenosynovial inflammation of the 1st dorsal compartment.; Diagnosis is made clinically with radial sided wrist pain made worse with the Finkelstein maneuver.; Treatment is generally conservative with thumb spica braces, injections and in refractory cases, 1st dorsal compartment surgical release.. Summary: Intersection syndrome is an inflammatory condition that occurs at the crossing point of the 1st dorsal compartment (APL and EPB ) and the 2nd…",
+        "summary": "De Quervain's Tenosynovitis is a stenosing tenosynovial inflammation of the 1st dorsal compartment. Diagnosis is made clinically with radial sided wrist pain made worse with the Finkelstein maneuver. Intersection syndrome is an inflammatory condition that occurs at the crossing point of the 1st dorsal compartment (APL and EPB ) and the 2nd dorsal compartment (ECRL, ECRB). Diagnosis is made clinica",
+        "topics": [
+          {
+            "shortName": "ob_hand_extensor_tendon_conditions_de_quervain_s_tenosynovitis",
+            "title": "De Quervain's Tenosynovitis",
+            "definition": "summary: De Quervain's Tenosynovitis is a stenosing tenosynovial inflammation of the 1st dorsal compartment.; Diagnosis is made clinically with radial sided wrist pain made worse with the Finkelstein maneuver.; Treatment is generally conservative with thumb spica braces, injections and in refractory cases, 1st dorsal compartment surgical release..",
+            "summary": "De Quervain's Tenosynovitis is a stenosing tenosynovial inflammation of the 1st dorsal compartment. Diagnosis is made clinically with radial sided wrist pain made worse with the Finkelstein maneuver.",
+            "obTopicId": "6026",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Extensor Tendon Conditions",
+              "section": "De Quervain's Tenosynovitis",
+              "url": "https://www.orthobullets.com/hand/6026/de-quervains-tenosynovitis"
+            }
+          },
+          {
+            "shortName": "ob_hand_extensor_tendon_conditions_intersection_syndrome",
+            "title": "Intersection Syndrome",
+            "definition": "Summary: Intersection syndrome is an inflammatory condition that occurs at the crossing point of the 1st dorsal compartment (APL and EPB ) and the 2nd dorsal compartment (ECRL, ECRB).; Diagnosis is made clinically with pain over the dorsoradial forearm (5 cm from wrist joint) made worse with resisted wrist extension and thumb extension.; Treatment is conservative with rest, wrist splinting and steroid injections..",
+            "summary": "Intersection syndrome is an inflammatory condition that occurs at the crossing point of the 1st dorsal compartment (APL and EPB ) and the 2nd dorsal compartment (ECRL, ECRB). Diagnosis is made clinically with pain over the dorsoradial forearm (5 cm from wrist joint) made worse with resisted wrist extension and thumb extension.",
+            "obTopicId": "6032",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Extensor Tendon Conditions",
+              "section": "Intersection Syndrome",
+              "url": "https://www.orthobullets.com/hand/6032/intersection-syndrome"
+            }
+          },
+          {
+            "shortName": "ob_hand_extensor_tendon_conditions_snapping_extensor_carpi_ulnaris_ecu",
+            "title": "Snapping Extensor Carpi Ulnaris (ECU)",
+            "definition": "Summary: Snapping ECU is a clinical condition characterized by pain over the ulnar wrist caused by instability and tendonitis of the ECU tendon secondary overuse.; Diagnosis is made with clinical examination with palpation of the ECU tendon and noting a painful snap while moving the wrist from pronation to supination.; Treatment is usually rest and wrist splinting. In refractory cases ECU subsheath reconstruction may be considered..",
+            "summary": "Snapping ECU is a clinical condition characterized by pain over the ulnar wrist caused by instability and tendonitis of the ECU tendon secondary overuse. Diagnosis is made with clinical examination with palpation of the ECU tendon and noting a painful snap while moving the wrist from pronation to supination.",
+            "obTopicId": "6030",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Extensor Tendon Conditions",
+              "section": "Snapping Extensor Carpi Ulnaris (ECU)",
+              "url": "https://www.orthobullets.com/hand/6030/snapping-extensor-carpi-ulnaris-ecu"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Extensor Tendon Conditions"
+        }
+      },
+      {
+        "shortName": "ob_hand_finger_deformities",
+        "title": "Finger Deformities",
+        "field": "Degenerative Conditions",
+        "definition": "OrthoBullets chapter \"Finger Deformities\" (Degenerative Conditions): Summary: Intrinsic Minus Hand is a hand deformity characterized by MCP joint hyperextension with PIP joint and DIP joint flexion caused by an imbalance between strong extrinsics and deficient intrinsics.; Diagnosis is made by clinical exam which shows MCP hyperextension and IP joint flexion which corrects when the MCP joint is brought out from hyperextension.; Treatment may be nonoperative or operative depending on the severity of the contracture and impact on quality of life.. Summary: Intrinsi…",
+        "summary": "Intrinsic Minus Hand is a hand deformity characterized by MCP joint hyperextension with PIP joint and DIP joint flexion caused by an imbalance between strong extrinsics and deficient intrinsics. Diagnosis is made by clinical exam which shows MCP hyperextension and IP joint flexion which corrects when the MCP joint is brought out from hyperextension. Intrinsic plus hand is a hand posture characteri",
+        "topics": [
+          {
+            "shortName": "ob_hand_finger_deformities_intrinsic_minus_hand_claw_hand",
+            "title": "Intrinsic Minus Hand (Claw Hand)",
+            "definition": "Summary: Intrinsic Minus Hand is a hand deformity characterized by MCP joint hyperextension with PIP joint and DIP joint flexion caused by an imbalance between strong extrinsics and deficient intrinsics.; Diagnosis is made by clinical exam which shows MCP hyperextension and IP joint flexion which corrects when the MCP joint is brought out from hyperextension.; Treatment may be nonoperative or operative depending on the severity of the contracture and impact on quality of life..",
+            "summary": "Intrinsic Minus Hand is a hand deformity characterized by MCP joint hyperextension with PIP joint and DIP joint flexion caused by an imbalance between strong extrinsics and deficient intrinsics. Diagnosis is made by clinical exam which shows MCP hyperextension and IP joint flexion which corrects when the MCP joint is brought out from hyperextension.",
+            "obTopicId": "6010",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Finger Deformities",
+              "section": "Intrinsic Minus Hand (Claw Hand)",
+              "url": "https://www.orthobullets.com/hand/6010/intrinsic-minus-hand-claw-hand"
+            }
+          },
+          {
+            "shortName": "ob_hand_finger_deformities_intrinsic_plus_hand",
+            "title": "Intrinsic Plus Hand",
+            "definition": "Summary: Intrinsic plus hand is a hand posture characterized by MCP flexion with PIP and DIP extension that is caused by an imbalance between spasic intrinsics and weak extrinsic muscles of the hand; Diagnosis is made by clinical exam which shows MCP flexion and IP joint extension; Treatment may be nonoperative or operative depending on the severity of the contracture and impact on quality of life..",
+            "summary": "Intrinsic plus hand is a hand posture characterized by MCP flexion with PIP and DIP extension that is caused by an imbalance between spasic intrinsics and weak extrinsic muscles of the hand Diagnosis is made by clinical exam which shows MCP flexion and IP joint extension",
+            "obTopicId": "6011",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Finger Deformities",
+              "section": "Intrinsic Plus Hand",
+              "url": "https://www.orthobullets.com/hand/6011/intrinsic-plus-hand"
+            }
+          },
+          {
+            "shortName": "ob_hand_finger_deformities_boutonniere_deformity",
+            "title": "Boutonniere Deformity",
+            "definition": "Summary: Boutonniere Deformities are Zone III extensor tendon injuries characterized by PIP flexion and DIP extension.; Diagnosis is made clinically with PIP flexion and DIP extension of a digit with presence of a positive Elson test.; Treatment of acute injuries involves splinting of the PIP joint with operative management reserved for chronic, symptomatic injuries..",
+            "summary": "Boutonniere Deformities are Zone III extensor tendon injuries characterized by PIP flexion and DIP extension. Diagnosis is made clinically with PIP flexion and DIP extension of a digit with presence of a positive Elson test.",
+            "obTopicId": "6012",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Finger Deformities",
+              "section": "Boutonniere Deformity",
+              "url": "https://www.orthobullets.com/hand/6012/boutonniere-deformity"
+            }
+          },
+          {
+            "shortName": "ob_hand_finger_deformities_swan_neck_deformity",
+            "title": "Swan Neck Deformity",
+            "definition": "Summary: Swan Neck Deformities are degenerative conditions, often seen with rheumatoid arthritis, characterized by hyperextension of the PIP joint and flexion of the DIP joint due to an imbalance of muscle forces on the PIP.; Diagnosis is made clinically with resting hyperextension of the PIP joint combined with resting flexion of the DIP joint of the involved digit.; Treatment is initially a course of PIP splinting to prevent hyperextension. In progressive cases, volar plate advancement with central slip tenotomy can be performed..",
+            "summary": "Swan Neck Deformities are degenerative conditions, often seen with rheumatoid arthritis, characterized by hyperextension of the PIP joint and flexion of the DIP joint due to an imbalance of muscle forces on the PIP. Diagnosis is made clinically with resting hyperextension of the PIP joint combined with resting flexion of the DIP joint of the involved digit.",
+            "obTopicId": "6013",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Finger Deformities",
+              "section": "Swan Neck Deformity",
+              "url": "https://www.orthobullets.com/hand/6013/swan-neck-deformity"
+            }
+          },
+          {
+            "shortName": "ob_hand_finger_deformities_quadriga_effect",
+            "title": "Quadriga Effect",
+            "definition": "Summary: Quadriga Effect is characterized by an active flexion lag in fingers adjacent to a digit with a previously injured or repaired flexor digitorum profundus tendon.; Diagnosis is made clinically with the inability to fully flex the fingers of the hand adjacent to the injured finger.; Treatment is observation if patient is minimally symptomatic but may involve release of FDP tendon of injured digit if symptoms impact patient's activity demands..",
+            "summary": "Quadriga Effect is characterized by an active flexion lag in fingers adjacent to a digit with a previously injured or repaired flexor digitorum profundus tendon. Diagnosis is made clinically with the inability to fully flex the fingers of the hand adjacent to the injured finger.",
+            "obTopicId": "6016",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Finger Deformities",
+              "section": "Quadriga Effect",
+              "url": "https://www.orthobullets.com/hand/6016/quadriga-effect"
+            }
+          },
+          {
+            "shortName": "ob_hand_finger_deformities_lumbrical_plus_finger",
+            "title": "Lumbrical Plus Finger",
+            "definition": "Summary: Lumbrical Plus Finger is characterized by paradoxical extension of the IP joints while attempting to flex the fingers.; Diagnosis is made clinically with extension of the IP joints of one digit with attempted flexion of all fingers (making a fist).; Treatment is observation if patient is minimally symptomatic. Operative tenodesis of FDP to terminal tendon or lumbrical release is indicated if symptoms affect patient's activity demands..",
+            "summary": "Lumbrical Plus Finger is characterized by paradoxical extension of the IP joints while attempting to flex the fingers. Diagnosis is made clinically with extension of the IP joints of one digit with attempted flexion of all fingers (making a fist).",
+            "obTopicId": "6017",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Finger Deformities",
+              "section": "Lumbrical Plus Finger",
+              "url": "https://www.orthobullets.com/hand/6017/lumbrical-plus-finger"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Finger Deformities"
+        }
+      },
+      {
+        "shortName": "ob_hand_finger_and_thumb_arthritis",
+        "title": "Finger & Thumb Arthritis",
+        "field": "Degenerative Conditions",
+        "definition": "OrthoBullets chapter \"Finger & Thumb Arthritis\" (Degenerative Conditions): Summary: Basilar Thumb Arthritis, also referred to as trapeziometacarpal (TMC) arthritis, is a common degenerative condition caused by attenuation of the volar beak and dorsoradial ligaments, leading to joint subluxation and cartilage degeneration of the trapeziometacarpal joint. This condition typically presents in elderly women with common symptoms of pain, crepitus, and loss of pinch/grip strength.; Diagnosis is made clinically with tenderness to palpation over the thumb CMC joint, a painful …",
+        "summary": "Basilar Thumb Arthritis, also referred to as trapeziometacarpal (TMC) arthritis, is a common degenerative condition caused by attenuation of the volar beak and dorsoradial ligaments, leading to joint subluxation and cartilage degeneration of the trapeziometacarpal joint. This condition typically presents in elderly women with common symptoms of pain, crepitus, and loss of pinch/grip strength.… Met",
+        "topics": [
+          {
+            "shortName": "ob_hand_finger_and_thumb_arthritis_basilar_thumb_arthritis",
+            "title": "Basilar Thumb Arthritis",
+            "definition": "Summary: Basilar Thumb Arthritis, also referred to as trapeziometacarpal (TMC) arthritis, is a common degenerative condition caused by attenuation of the volar beak and dorsoradial ligaments, leading to joint subluxation and cartilage degeneration of the trapeziometacarpal joint. This condition typically presents in elderly women with common symptoms of pain, crepitus, and loss of pinch/grip strength.; Diagnosis is made clinically with tenderness to palpation over the thumb CMC joint, a painful CMC grind test, and radiographs of the hand showing osteoarthritis of the 1st CMC joint.; Treatment can be conservative (therapybracing, injections) or operative, depending on the severity of symptoms and the stage of disease..",
+            "summary": "Basilar Thumb Arthritis, also referred to as trapeziometacarpal (TMC) arthritis, is a common degenerative condition caused by attenuation of the volar beak and dorsoradial ligaments, leading to joint subluxation and cartilage degeneration of the trapeziometacarpal joint. This condition typically presents in elderly women with common symptoms of pain, crepitus, and loss of pinch/grip strength.…",
+            "obTopicId": "6054",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Finger & Thumb Arthritis",
+              "section": "Basilar Thumb Arthritis",
+              "url": "https://www.orthobullets.com/hand/6054/basilar-thumb-arthritis"
+            }
+          },
+          {
+            "shortName": "ob_hand_finger_and_thumb_arthritis_mcp_joint_arthritis",
+            "title": "MCP Joint Arthritis",
+            "definition": "Summary: Metacarpophalangeal (MCP) Joint arthritis typically presents with pain, swelling, and limited motion. Inflammatory etiology is much more common than osteoarthritis; Diagnosis is made with a combination of physical exam and radiographs which may demonstrate ulnar deviation of the digits with possible volar subluxation of the proximal phalanx on the metacarpal head; Treatment occurs on a spectrum of non-operative and operative measures including observation, Disease-modifying antirheumatic drugs (DMARDs), silicone or pyrolytic carbon implants, and arthrodesis.",
+            "summary": "Metacarpophalangeal (MCP) Joint arthritis typically presents with pain, swelling, and limited motion. Inflammatory etiology is much more common than osteoarthritis Diagnosis is made with a combination of physical exam and radiographs which may demonstrate ulnar deviation of the digits with possible volar subluxation of the proximal phalanx on the metacarpal head",
+            "obTopicId": "423154",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Finger & Thumb Arthritis",
+              "section": "MCP Joint Arthritis",
+              "url": "https://www.orthobullets.com/hand/423154/mcp-joint-arthritis"
+            }
+          },
+          {
+            "shortName": "ob_hand_finger_and_thumb_arthritis_dip_and_pip_joint_arthritis",
+            "title": "DIP and PIP Joint Arthritis",
+            "definition": "Summary: Arthritis of the DIP and PIP joints are very common forms of osteoarthritis seen in the hand and can be associated with pain and deformity.; Diagnosis is made radiographically with joint space narrowing seen in the DIP and PIP joints of the fingers. Mucous cysts are often present on clinical inspection of the DIP joint.; Treatment is observation if patient is minimally symptomatic. Operative mucous cyst excision, osteophyte resection, or joint fusion may be indicated depending on severity of symptoms and the stage of disease..",
+            "summary": "Arthritis of the DIP and PIP joints are very common forms of osteoarthritis seen in the hand and can be associated with pain and deformity. Diagnosis is made radiographically with joint space narrowing seen in the DIP and PIP joints of the fingers. Mucous cysts are often present on clinical inspection of the DIP joint.",
+            "obTopicId": "6055",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Finger & Thumb Arthritis",
+              "section": "DIP and PIP Joint Arthritis",
+              "url": "https://www.orthobullets.com/hand/6055/dip-and-pip-joint-arthritis"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Finger & Thumb Arthritis"
+        }
+      },
+      {
+        "shortName": "ob_hand_ulnar_sided_wrist_pain",
+        "title": "Ulnar Sided Wrist Pain",
+        "field": "Degenerative Conditions",
+        "definition": "OrthoBullets chapter \"Ulnar Sided Wrist Pain\" (Degenerative Conditions): Summary: Triangular Fibrocartilage Complex (TFCC) Injuries, a common cause of ulnar-sided wrist pain, may result from trauma or due to degenerative changes.; Diagnosis is made clinically with ulnar sided wrist pain that is worse with ulnar deviation and a positive \"fovea\" sign. An MRI can help confirm diagnosis.; Treatment is generally conservative with NSAIDs and immobilization. Surgical debridement, TFCC repair or ulnar shortening procedures may be indicated depending on severity of symptoms a…",
+        "summary": "Triangular Fibrocartilage Complex (TFCC) Injuries, a common cause of ulnar-sided wrist pain, may result from trauma or due to degenerative changes. Diagnosis is made clinically with ulnar sided wrist pain that is worse with ulnar deviation and a positive \"fovea\" sign. An MRI can help confirm diagnosis. Gymnast's wrist is a distal radius physeal injury most commonly due to overuse of the wrist prim",
+        "topics": [
+          {
+            "shortName": "ob_hand_ulnar_sided_wrist_pain_triangular_fibrocartilage_complex_tfcc_injury",
+            "title": "Triangular Fibrocartilage Complex (TFCC) Injury",
+            "definition": "Summary: Triangular Fibrocartilage Complex (TFCC) Injuries, a common cause of ulnar-sided wrist pain, may result from trauma or due to degenerative changes.; Diagnosis is made clinically with ulnar sided wrist pain that is worse with ulnar deviation and a positive \"fovea\" sign. An MRI can help confirm diagnosis.; Treatment is generally conservative with NSAIDs and immobilization. Surgical debridement, TFCC repair or ulnar shortening procedures may be indicated depending on severity of symptoms and underlying cause..",
+            "summary": "Triangular Fibrocartilage Complex (TFCC) Injuries, a common cause of ulnar-sided wrist pain, may result from trauma or due to degenerative changes. Diagnosis is made clinically with ulnar sided wrist pain that is worse with ulnar deviation and a positive \"fovea\" sign. An MRI can help confirm diagnosis.",
+            "obTopicId": "6047",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Ulnar Sided Wrist Pain",
+              "section": "Triangular Fibrocartilage Complex (TFCC) Injury",
+              "url": "https://www.orthobullets.com/hand/6047/triangular-fibrocartilage-complex-tfcc-injury"
+            }
+          },
+          {
+            "shortName": "ob_hand_ulnar_sided_wrist_pain_gymnast_s_wrist_distal_radial_physeal_stress_syndrome",
+            "title": "Gymnast's Wrist (Distal Radial Physeal Stress Syndrome)",
+            "definition": "Summary: Gymnast's wrist is a distal radius physeal injury most commonly due to overuse of the wrist primarily affecting young gymnasts.; Diagnosis is made clinically with tenderness at the distal radius with radiographs showing widened distal radial growth plate with ill-defined borders.; Treatment involves rest, NSAIDs and immobilization for 3-6 weeks. Rarely, in the case of premature physeal closure, surgical treatment is indicated..",
+            "summary": "Gymnast's wrist is a distal radius physeal injury most commonly due to overuse of the wrist primarily affecting young gymnasts. Diagnosis is made clinically with tenderness at the distal radius with radiographs showing widened distal radial growth plate with ill-defined borders.",
+            "obTopicId": "6052",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Ulnar Sided Wrist Pain",
+              "section": "Gymnast's Wrist (Distal Radial Physeal Stress Syndrome)",
+              "url": "https://www.orthobullets.com/hand/6052/gymnasts-wrist-distal-radial-physeal-stress-syndrome"
+            }
+          },
+          {
+            "shortName": "ob_hand_ulnar_sided_wrist_pain_ulnar_variance",
+            "title": "Ulnar Variance",
+            "definition": "Summary: Ulnar Variance is the length of the ulna compared to the length of the radius at the wrist.; Diagnosis is made radiographically with PA wrist radiographs. Positive ulnar variance indicates a longer ulna compared to the radius and a negative ulnar variance indicates a shorter ulna.; Treatment depends on severity of symptoms and underlying condition..",
+            "summary": "Ulnar Variance is the length of the ulna compared to the length of the radius at the wrist. Diagnosis is made radiographically with PA wrist radiographs. Positive ulnar variance indicates a longer ulna compared to the radius and a negative ulnar variance indicates a shorter ulna.",
+            "obTopicId": "6046",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Ulnar Sided Wrist Pain",
+              "section": "Ulnar Variance",
+              "url": "https://www.orthobullets.com/hand/6046/ulnar-variance"
+            }
+          },
+          {
+            "shortName": "ob_hand_ulnar_sided_wrist_pain_ulnocarpal_abutment_syndrome",
+            "title": "Ulnocarpal Abutment Syndrome",
+            "definition": "Summary: Ulnocarpal Abutment Syndrome is a common source of ulnar sided wrist pain secondary to excessive impact stress between the ulna and the carpal bones (primarily lunate).; Diagnosis is made with PA wrist radiographs showing positive ulnar variance and sclerosis of the lunate.; Treatment includes a trial of rest and splinting for minimally symptomatic patients. Operative ulnar shortening procedures are indicated depending on severity of symptoms..",
+            "summary": "Ulnocarpal Abutment Syndrome is a common source of ulnar sided wrist pain secondary to excessive impact stress between the ulna and the carpal bones (primarily lunate). Diagnosis is made with PA wrist radiographs showing positive ulnar variance and sclerosis of the lunate.",
+            "obTopicId": "6048",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Ulnar Sided Wrist Pain",
+              "section": "Ulnocarpal Abutment Syndrome",
+              "url": "https://www.orthobullets.com/hand/6048/ulnocarpal-abutment-syndrome"
+            }
+          },
+          {
+            "shortName": "ob_hand_ulnar_sided_wrist_pain_ulnar_styloid_impaction_syndrome",
+            "title": "Ulnar Styloid Impaction Syndrome",
+            "definition": "Summary: Ulnar Styloid Impaction Syndrome is a common cause of ulnar-sided wrist pain secondary to impaction between the ulnar styloid tip and the triquetrum.; Diagnosis is made by PA wrist radiographs which reveal positive ulnar variance with subchondral sclerosis of the ulnar styloid and/or triquetrum.; Treatment is a course of rest, NSAIDs and splinting. In refractory cases, operative ulnar shortening osteotomy is indicated..",
+            "summary": "Ulnar Styloid Impaction Syndrome is a common cause of ulnar-sided wrist pain secondary to impaction between the ulnar styloid tip and the triquetrum. Diagnosis is made by PA wrist radiographs which reveal positive ulnar variance with subchondral sclerosis of the ulnar styloid and/or triquetrum.",
+            "obTopicId": "6049",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Ulnar Sided Wrist Pain",
+              "section": "Ulnar Styloid Impaction Syndrome",
+              "url": "https://www.orthobullets.com/hand/6049/ulnar-styloid-impaction-syndrome"
+            }
+          },
+          {
+            "shortName": "ob_hand_ulnar_sided_wrist_pain_kienbock_s_disease",
+            "title": "Kienbock's Disease",
+            "definition": "Summary: Kienbock's Disease is the avascular necrosis of the lunate which can lead to progressive wrist pain and abnormal carpal motion.; Diagnosis can be made with wrist radiographs in advanced cases but may require MRI for detection of early disease.; Treatment is NSAIDs and observation in minimally symptomatic patients. A variety of operative procedures are available depending on severity of disease and patient's symptoms..",
+            "summary": "Kienbock's Disease is the avascular necrosis of the lunate which can lead to progressive wrist pain and abnormal carpal motion. Diagnosis can be made with wrist radiographs in advanced cases but may require MRI for detection of early disease.",
+            "obTopicId": "6050",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Ulnar Sided Wrist Pain",
+              "section": "Kienbock's Disease",
+              "url": "https://www.orthobullets.com/hand/6050/kienbocks-disease"
+            }
+          },
+          {
+            "shortName": "ob_hand_ulnar_sided_wrist_pain_preiser_s_disease_scaphoid_avn",
+            "title": "Preiser's Disease (Scaphoid AVN)",
+            "definition": "Summary: Preiser's Disease is a condition caused by avascular necrosis of the scaphoid which can lead to progressive radial-sided wrist pain.; Diagnosis can be made with wrist radiographs showing sclerosis and fragmentation of the proximal pole of the scaphoid without evidence of fracture.; Treatment is NSAIDs and observation in minimally symptomatic patients. A variety of operative procedures are available depending on severity of disease and patient's symptoms..",
+            "summary": "Preiser's Disease is a condition caused by avascular necrosis of the scaphoid which can lead to progressive radial-sided wrist pain. Diagnosis can be made with wrist radiographs showing sclerosis and fragmentation of the proximal pole of the scaphoid without evidence of fracture.",
+            "obTopicId": "6051",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Ulnar Sided Wrist Pain",
+              "section": "Preiser's Disease (Scaphoid AVN)",
+              "url": "https://www.orthobullets.com/hand/6051/preisers-disease-scaphoid-avn"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Ulnar Sided Wrist Pain"
+        }
+      },
+      {
+        "shortName": "ob_hand_wrist_instability_and_arthritis",
+        "title": "Wrist Instability & Arthritis",
+        "field": "Degenerative Conditions",
+        "definition": "OrthoBullets chapter \"Wrist Instability & Arthritis\" (Degenerative Conditions): Summary: Scaphoid Lunate Advanced Collapse (SLAC) describes the specific pattern of degenerative arthritis seen in chronic dissociation between the scaphoid and lunate.; Diagnosis is made clinically with progressive wrist pain and wrist instability with radiographs showing advanced arthritis of the radiocarpal and midcarpal joints (radiolunate joint spared).; Treatment involves observation, NSAIDs and splinting in early stages of disease. A variety of operative procedures may be indicated depend…",
+        "summary": "Scaphoid Lunate Advanced Collapse (SLAC) describes the specific pattern of degenerative arthritis seen in chronic dissociation between the scaphoid and lunate. Diagnosis is made clinically with progressive wrist pain and wrist instability with radiographs showing advanced arthritis of the radiocarpal and midcarpal joints (radiolunate joint spared). Scaphoid Nonunion Advanced Collapse (SNAC) descri",
+        "topics": [
+          {
+            "shortName": "ob_hand_wrist_instability_and_arthritis_scaphoid_lunate_advanced_collapse_slac",
+            "title": "Scaphoid Lunate Advanced Collapse (SLAC)",
+            "definition": "Summary: Scaphoid Lunate Advanced Collapse (SLAC) describes the specific pattern of degenerative arthritis seen in chronic dissociation between the scaphoid and lunate.; Diagnosis is made clinically with progressive wrist pain and wrist instability with radiographs showing advanced arthritis of the radiocarpal and midcarpal joints (radiolunate joint spared).; Treatment involves observation, NSAIDs and splinting in early stages of disease. A variety of operative procedures may be indicated depending on severity of disease and patient's symptoms..",
+            "summary": "Scaphoid Lunate Advanced Collapse (SLAC) describes the specific pattern of degenerative arthritis seen in chronic dissociation between the scaphoid and lunate. Diagnosis is made clinically with progressive wrist pain and wrist instability with radiographs showing advanced arthritis of the radiocarpal and midcarpal joints (radiolunate joint spared).",
+            "obTopicId": "6043",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Wrist Instability & Arthritis",
+              "section": "Scaphoid Lunate Advanced Collapse (SLAC)",
+              "url": "https://www.orthobullets.com/hand/6043/scaphoid-lunate-advanced-collapse-slac"
+            }
+          },
+          {
+            "shortName": "ob_hand_wrist_instability_and_arthritis_scaphoid_nonunion_advanced_collapse_snac",
+            "title": "Scaphoid Nonunion Advanced Collapse (SNAC)",
+            "definition": "Summary: Scaphoid Nonunion Advanced Collapse (SNAC) describes the specific pattern of progressive arthritis of the wrist that results from a chronic scaphoid nonunion.; Diagnosis is made clinically with progressive wrist pain and wrist instability with radiographs showing scaphoid fracture nonunion with advanced arthritis of the radioscaphoid joint.; Treatment involves observation in early stages of disease. A variety of operative procedures may be indicated depending on severity of disease and patient's symptoms..",
+            "summary": "Scaphoid Nonunion Advanced Collapse (SNAC) describes the specific pattern of progressive arthritis of the wrist that results from a chronic scaphoid nonunion. Diagnosis is made clinically with progressive wrist pain and wrist instability with radiographs showing scaphoid fracture nonunion with advanced arthritis of the radioscaphoid joint.",
+            "obTopicId": "12119",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Wrist Instability & Arthritis",
+              "section": "Scaphoid Nonunion Advanced Collapse (SNAC)",
+              "url": "https://www.orthobullets.com/hand/12119/scaphoid-nonunion-advanced-collapse-snac"
+            }
+          },
+          {
+            "shortName": "ob_hand_wrist_instability_and_arthritis_scapholunate_ligament_injury_and_disi",
+            "title": "Scapholunate Ligament Injury & DISI",
+            "definition": "Summary: Scapholunate Ligament Injury is a source of dorsoradial wrist pain with chronic injuries leading to a form of wrist instability (DISI deformity).; Diagnosis is made with PA wrist radiographs showing widening of the SL joint. Diagnosis of DISI deformity can be made with lateral wrist radiographs showing a scapholunate angle > 70 degrees.; Treatment of acute SL ligament injuries may be immobilization versus operative repair/reconstruction depending on degree of displacement. Chronic DISI deformities may be indicated for fusion procedures depending on degree of arthritis and patient symptoms..",
+            "summary": "Scapholunate Ligament Injury is a source of dorsoradial wrist pain with chronic injuries leading to a form of wrist instability (DISI deformity). Diagnosis is made with PA wrist radiographs showing widening of the SL joint. Diagnosis of DISI deformity can be made with lateral wrist radiographs showing a scapholunate angle > 70 degrees.",
+            "obTopicId": "6041",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Wrist Instability & Arthritis",
+              "section": "Scapholunate Ligament Injury & DISI",
+              "url": "https://www.orthobullets.com/hand/6041/scapholunate-ligament-injury-and-disi"
+            }
+          },
+          {
+            "shortName": "ob_hand_wrist_instability_and_arthritis_lunotriquetral_ligament_injury_and_visi",
+            "title": "Lunotriquetral Ligament Injury & VISI",
+            "definition": "Summary: Lunotriquetral Ligament Injuries are rare traumatic injuries to the wrist that can lead to volar intercalated segment instability (VISI) which is caused by a combination of injury to the lunotriquetral ligament and the dorsal radiocarpal ligament.; Diagnosis can be made with lateral radiographs of the wrist with the presence of volar flexion of the lunate with a scapholunate angle < 30°.; Treatment is usually surgical management which may range from closed reduction with pinning and ligament repair for acute instability, and lunotriquetral fusion for chronic instability..",
+            "summary": "Lunotriquetral Ligament Injuries are rare traumatic injuries to the wrist that can lead to volar intercalated segment instability (VISI) which is caused by a combination of injury to the lunotriquetral ligament and the dorsal radiocarpal ligament. Diagnosis can be made with lateral radiographs of the wrist with the presence of volar flexion of the lunate with a scapholunate angle < 30°.",
+            "obTopicId": "6042",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Wrist Instability & Arthritis",
+              "section": "Lunotriquetral Ligament Injury & VISI",
+              "url": "https://www.orthobullets.com/hand/6042/lunotriquetral-ligament-injury-and-visi"
+            }
+          },
+          {
+            "shortName": "ob_hand_wrist_instability_and_arthritis_carpal_instability_nondissociative_cind",
+            "title": "Carpal Instability Nondissociative (CIND)",
+            "definition": "Summary. Epidemiology",
+            "summary": "Carpal instability nondissociative (CIND) is defined as instability between carpal rows (either radiocarpal or midcarpal)",
+            "obTopicId": "6044",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Wrist Instability & Arthritis",
+              "section": "Carpal Instability Nondissociative (CIND)",
+              "url": "https://www.orthobullets.com/hand/6044/carpal-instability-nondissociative-cind"
+            }
+          },
+          {
+            "shortName": "ob_hand_wrist_instability_and_arthritis_wrist_arthritis",
+            "title": "Wrist Arthritis",
+            "definition": "Summary. Etiology",
+            "summary": "Various forms of wrist arthritis based on location",
+            "obTopicId": "6056",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Wrist Instability & Arthritis",
+              "section": "Wrist Arthritis",
+              "url": "https://www.orthobullets.com/hand/6056/wrist-arthritis"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Wrist Instability & Arthritis"
+        }
+      },
+      {
+        "shortName": "ob_hand_congenital_arm",
+        "title": "Congenital Arm",
+        "field": "Pediatric Hand",
+        "definition": "OrthoBullets chapter \"Congenital Arm\" (Pediatric Hand): Summary: Radial Clubhand is a rare birth defect characterized by a deformity of hand, with perpendicular relationship between forearm and wrist, and an absent thumb.; Diagnosis is made on physical exam.; Treatment may be observation or surgical reconstruction when the child is around 6 months of age.. summary: Ulnar Club Hand is a congenital upper extremity deformity characterized by a deficiency of the ulna and/or ulnar-sided carpal structures.; Diagnosis is made clinically.; Treatment can be n…",
+        "summary": "Radial Clubhand is a rare birth defect characterized by a deformity of hand, with perpendicular relationship between forearm and wrist, and an absent thumb. Diagnosis is made on physical exam. Ulnar Club Hand is a congenital upper extremity deformity characterized by a deficiency of the ulna and/or ulnar-sided carpal structures. Diagnosis is made clinically.",
+        "topics": [
+          {
+            "shortName": "ob_hand_congenital_arm_radial_clubhand_radial_deficiency",
+            "title": "Radial Clubhand (radial deficiency)",
+            "definition": "Summary: Radial Clubhand is a rare birth defect characterized by a deformity of hand, with perpendicular relationship between forearm and wrist, and an absent thumb.; Diagnosis is made on physical exam.; Treatment may be observation or surgical reconstruction when the child is around 6 months of age..",
+            "summary": "Radial Clubhand is a rare birth defect characterized by a deformity of hand, with perpendicular relationship between forearm and wrist, and an absent thumb. Diagnosis is made on physical exam.",
+            "obTopicId": "6067",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Congenital Arm",
+              "section": "Radial Clubhand (radial deficiency)",
+              "url": "https://www.orthobullets.com/hand/6067/radial-clubhand-radial-deficiency"
+            }
+          },
+          {
+            "shortName": "ob_hand_congenital_arm_ulnar_club_hand",
+            "title": "Ulnar Club Hand",
+            "definition": "summary: Ulnar Club Hand is a congenital upper extremity deformity characterized by a deficiency of the ulna and/or ulnar-sided carpal structures.; Diagnosis is made clinically.; Treatment can be nonoperative or operative depending on hand position, thumb function, elbow stability and presence of syndactyly..",
+            "summary": "Ulnar Club Hand is a congenital upper extremity deformity characterized by a deficiency of the ulna and/or ulnar-sided carpal structures. Diagnosis is made clinically.",
+            "obTopicId": "6068",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Congenital Arm",
+              "section": "Ulnar Club Hand",
+              "url": "https://www.orthobullets.com/hand/6068/ulnar-club-hand"
+            }
+          },
+          {
+            "shortName": "ob_hand_congenital_arm_congenital_radial_head_dislocation",
+            "title": "Congenital Radial Head Dislocation",
+            "definition": "Introduction. Epidemiology",
+            "summary": "Congenital radial head dislocation",
+            "obTopicId": "6069",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Congenital Arm",
+              "section": "Congenital Radial Head Dislocation",
+              "url": "https://www.orthobullets.com/hand/6069/congenital-radial-head-dislocation"
+            }
+          },
+          {
+            "shortName": "ob_hand_congenital_arm_madelung_s_deformity",
+            "title": "Madelung's Deformity",
+            "definition": "summary: Madelung's Deformity is a congenital dyschondrosis of the distal radial physis that leads to partial deficiency of growth of the distal radial physis.; Diagnosis is made radiographically with disruption of the ulnar volar physis of the distal radius, excessive radial inclination, excessive volar tilt, and ulnar carpal impaction.; Treatment is observation in patients who are asymptomatic. Operative management is indicated for patients with wrist pain, decreased range of motion, and/or functional limitations..",
+            "summary": "Madelung's Deformity is a congenital dyschondrosis of the distal radial physis that leads to partial deficiency of growth of the distal radial physis. Diagnosis is made radiographically with disruption of the ulnar volar physis of the distal radius, excessive radial inclination, excessive volar tilt, and ulnar carpal impaction.",
+            "obTopicId": "6070",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Congenital Arm",
+              "section": "Madelung's Deformity",
+              "url": "https://www.orthobullets.com/hand/6070/madelungs-deformity"
+            }
+          },
+          {
+            "shortName": "ob_hand_congenital_arm_congenital_radial_ulnar_synostosis",
+            "title": "Congenital Radial Ulnar Synostosis",
+            "definition": "summary: Congenital Radial Ulnar Synostosis is a congenital condition caused by failure of differentiation that leads to the presence of a bony bridge between the proximal radius and ulna.; Diagnosis is made radiographically with the presence of a proximal radial ulnar bony connection.; Treatment is usually observation in patients who are asymptomatic. Operative management is indicated in patients with deformity limiting ability to participate in specific activities or perform activities of daily living..",
+            "summary": "Congenital Radial Ulnar Synostosis is a congenital condition caused by failure of differentiation that leads to the presence of a bony bridge between the proximal radius and ulna. Diagnosis is made radiographically with the presence of a proximal radial ulnar bony connection.",
+            "obTopicId": "6071",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Congenital Arm",
+              "section": "Congenital Radial Ulnar Synostosis",
+              "url": "https://www.orthobullets.com/hand/6071/congenital-radial-ulnar-synostosis"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Congenital Arm"
+        }
+      },
+      {
+        "shortName": "ob_hand_congenital_hand",
+        "title": "Congenital Hand",
+        "field": "Pediatric Hand",
+        "definition": "OrthoBullets chapter \"Congenital Hand\" (Pediatric Hand): summary: Cleft Hand is a congenital hand deformity caused by a defect in the central part of the apical ectodermal ridge during embryological development, that is characterized by the absence of 1 or more central digits of the hand or foot.; Diagnosis is made clinically with the absence or shortening of the central (third) ray with the absence of radial digits and/or syndactyly of the ulnar digits.; Treatment is observation versus reconstruction depending on the degree of functional limitation..…",
+        "summary": "Cleft Hand is a congenital hand deformity caused by a defect in the central part of the apical ectodermal ridge during embryological development, that is characterized by the absence of 1 or more central digits of the hand or foot. Diagnosis is made clinically with the absence or shortening of the central (third) ray with the absence of radial digits and/or syndactyly of the ulnar digits. Congenit",
+        "topics": [
+          {
+            "shortName": "ob_hand_congenital_hand_cleft_hand",
+            "title": "Cleft Hand",
+            "definition": "summary: Cleft Hand is a congenital hand deformity caused by a defect in the central part of the apical ectodermal ridge during embryological development, that is characterized by the absence of 1 or more central digits of the hand or foot.; Diagnosis is made clinically with the absence or shortening of the central (third) ray with the absence of radial digits and/or syndactyly of the ulnar digits.; Treatment is observation versus reconstruction depending on the degree of functional limitation..",
+            "summary": "Cleft Hand is a congenital hand deformity caused by a defect in the central part of the apical ectodermal ridge during embryological development, that is characterized by the absence of 1 or more central digits of the hand or foot. Diagnosis is made clinically with the absence or shortening of the central (third) ray with the absence of radial digits and/or syndactyly of the ulnar digits.",
+            "obTopicId": "6072",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Congenital Hand",
+              "section": "Cleft Hand",
+              "url": "https://www.orthobullets.com/hand/6072/cleft-hand"
+            }
+          },
+          {
+            "shortName": "ob_hand_congenital_hand_symphalangism",
+            "title": "Symphalangism",
+            "definition": "Introduction. Epidemiology",
+            "summary": "Congenital digital stiffness that comes in two forms",
+            "obTopicId": "6073",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Congenital Hand",
+              "section": "Symphalangism",
+              "url": "https://www.orthobullets.com/hand/6073/symphalangism"
+            }
+          },
+          {
+            "shortName": "ob_hand_congenital_hand_camptodactyly",
+            "title": "Camptodactyly",
+            "definition": "summary: Camptodactyly is a rare congenital condition of the hand that is characterized by a digital flexion deformity that usually occurs in the PIP joint of the small finger.; Diagnosis is made clinically.; Treatment is usually observation with passive stretching in the majority of cases. Surgical management is indicated in cases of progressive deformity leading to functional impairment..",
+            "summary": "Camptodactyly is a rare congenital condition of the hand that is characterized by a digital flexion deformity that usually occurs in the PIP joint of the small finger. Diagnosis is made clinically.",
+            "obTopicId": "6074",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Congenital Hand",
+              "section": "Camptodactyly",
+              "url": "https://www.orthobullets.com/hand/6074/camptodactyly"
+            }
+          },
+          {
+            "shortName": "ob_hand_congenital_hand_clinodactyly",
+            "title": "Clinodactyly",
+            "definition": "summary: Clinodactyly is a congenital condition of the hand, often associated with Down's syndrome, that is characterized by the abnormal curvature of a digit in the radioulnar plane.; Diagnosis is made clinically.; Treatment is usually observation in the majority of cases..",
+            "summary": "Clinodactyly is a congenital condition of the hand, often associated with Down's syndrome, that is characterized by the abnormal curvature of a digit in the radioulnar plane. Diagnosis is made clinically.",
+            "obTopicId": "6075",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Congenital Hand",
+              "section": "Clinodactyly",
+              "url": "https://www.orthobullets.com/hand/6075/clinodactyly"
+            }
+          },
+          {
+            "shortName": "ob_hand_congenital_hand_syndactyly",
+            "title": "Syndactyly",
+            "definition": "summary: Syndactyly is the most common congenital malformation of the limbs and is characterized by abnormal connections of digits of the hand.; Diagnosis is made clinically.; Treatment is usually digit release performed at ~ 1 year of age..",
+            "summary": "Syndactyly is the most common congenital malformation of the limbs and is characterized by abnormal connections of digits of the hand. Diagnosis is made clinically.",
+            "obTopicId": "6076",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Congenital Hand",
+              "section": "Syndactyly",
+              "url": "https://www.orthobullets.com/hand/6076/syndactyly"
+            }
+          },
+          {
+            "shortName": "ob_hand_congenital_hand_poland_syndrome",
+            "title": "Poland Syndrome",
+            "definition": "Introduction. Epidemiology",
+            "summary": "A congenital disorder characterized by",
+            "obTopicId": "6077",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Congenital Hand",
+              "section": "Poland Syndrome",
+              "url": "https://www.orthobullets.com/hand/6077/poland-syndrome"
+            }
+          },
+          {
+            "shortName": "ob_hand_congenital_hand_apert_syndrome",
+            "title": "Apert Syndrome",
+            "definition": "Introduction. Epidemiology",
+            "summary": "Syndrome characterized by",
+            "obTopicId": "6078",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Congenital Hand",
+              "section": "Apert Syndrome",
+              "url": "https://www.orthobullets.com/hand/6078/apert-syndrome"
+            }
+          },
+          {
+            "shortName": "ob_hand_congenital_hand_polydactyly_of_hand",
+            "title": "Polydactyly of Hand",
+            "definition": "summary: Polydactyly of Hand is a congenital malformation of the hand that presents with an extra digit in the hand.; Diagnosis is made clinically.; Treatment is usually a form of surgical reconstruction depending on the level of duplication and the specific digit involved..",
+            "summary": "Polydactyly of Hand is a congenital malformation of the hand that presents with an extra digit in the hand. Diagnosis is made clinically.",
+            "obTopicId": "6079",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Congenital Hand",
+              "section": "Polydactyly of Hand",
+              "url": "https://www.orthobullets.com/hand/6079/polydactyly-of-hand"
+            }
+          },
+          {
+            "shortName": "ob_hand_congenital_hand_macrodactyly_local_gigantism",
+            "title": "Macrodactyly (local gigantism)",
+            "definition": "Introduction. Epidemiology",
+            "summary": "Macrodactyly is nonhereditary congenital digit enlargement.",
+            "obTopicId": "6080",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Congenital Hand",
+              "section": "Macrodactyly (local gigantism)",
+              "url": "https://www.orthobullets.com/hand/6080/macrodactyly-local-gigantism"
+            }
+          },
+          {
+            "shortName": "ob_hand_congenital_hand_constrictive_ring_syndrome_streeter_s_dysplasia",
+            "title": "Constrictive Ring Syndrome (Streeter's Dysplasia)",
+            "definition": "summary: Constriction Ring Syndrome, also known as Streeter's Dysplasia or Amniotic band syndrome, is a congenital condition that occurs when loose fibrous bands of ruptured amnion adhere to and entangle the normal developing structures of the fetus.; Diagnosis is made clinically at birth with the presence of bands perpendicular to the longitudinal axis of the digit or limb with normal anatomy proximal to the constriction ring.; Treatment is usually the release of the bands or digital reconstruction depending on the severity of digital compromise..",
+            "summary": "Constriction Ring Syndrome, also known as Streeter's Dysplasia or Amniotic band syndrome, is a congenital condition that occurs when loose fibrous bands of ruptured amnion adhere to and entangle the normal developing structures of the fetus. Diagnosis is made clinically at birth with the presence of bands perpendicular to the longitudinal axis of the digit or limb with normal anatomy proximal to…",
+            "obTopicId": "6082",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Congenital Hand",
+              "section": "Constrictive Ring Syndrome (Streeter's Dysplasia)",
+              "url": "https://www.orthobullets.com/hand/6082/constrictive-ring-syndrome-streeters-dysplasia"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Congenital Hand"
+        }
+      },
+      {
+        "shortName": "ob_hand_congenital_thumb",
+        "title": "Congenital Thumb",
+        "field": "Pediatric Hand",
+        "definition": "OrthoBullets chapter \"Congenital Thumb\" (Pediatric Hand): summary: Thumb hypoplasia is the congenital underdevelopment of the thumb frequently associated with partial or complete absence of the radius.; Diagnosis is made clinically with hypoplasia of the thumb and thenar musculature. Radiographs help determine musculotendinous versus osseous deficiencies.; Treatment may be observation, soft tissue reconstruction, pollicization, or amputation depending on the level of the deficit and presence of carpometacarpal joint instability.. summary: Congenital Tr…",
+        "summary": "Thumb hypoplasia is the congenital underdevelopment of the thumb frequently associated with partial or complete absence of the radius. Diagnosis is made clinically with hypoplasia of the thumb and thenar musculature. Radiographs help determine musculotendinous versus osseous deficiencies. Congenital Trigger Thumb is a congenital pediatric condition of the thumb that results in abnormal flexion at ",
+        "topics": [
+          {
+            "shortName": "ob_hand_congenital_thumb_thumb_hypoplasia",
+            "title": "Thumb Hypoplasia",
+            "definition": "summary: Thumb hypoplasia is the congenital underdevelopment of the thumb frequently associated with partial or complete absence of the radius.; Diagnosis is made clinically with hypoplasia of the thumb and thenar musculature. Radiographs help determine musculotendinous versus osseous deficiencies.; Treatment may be observation, soft tissue reconstruction, pollicization, or amputation depending on the level of the deficit and presence of carpometacarpal joint instability..",
+            "summary": "Thumb hypoplasia is the congenital underdevelopment of the thumb frequently associated with partial or complete absence of the radius. Diagnosis is made clinically with hypoplasia of the thumb and thenar musculature. Radiographs help determine musculotendinous versus osseous deficiencies.",
+            "obTopicId": "6083",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Congenital Thumb",
+              "section": "Thumb Hypoplasia",
+              "url": "https://www.orthobullets.com/hand/6083/thumb-hypoplasia"
+            }
+          },
+          {
+            "shortName": "ob_hand_congenital_thumb_congenital_trigger_thumb",
+            "title": "Congenital Trigger Thumb",
+            "definition": "summary: Congenital Trigger Thumb is a congenital pediatric condition of the thumb that results in abnormal flexion at the interphalangeal joint.; Diagnosis is made clinically with the presence of a flexion deformity at the thumb IP joint.; Treatment is nonoperative management with splinting for flexible deformities. Surgical A1 pulley release is indicated in fixed deformities beyond the age of 12 months..",
+            "summary": "Congenital Trigger Thumb is a congenital pediatric condition of the thumb that results in abnormal flexion at the interphalangeal joint. Diagnosis is made clinically with the presence of a flexion deformity at the thumb IP joint.",
+            "obTopicId": "6084",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Congenital Thumb",
+              "section": "Congenital Trigger Thumb",
+              "url": "https://www.orthobullets.com/hand/6084/congenital-trigger-thumb"
+            }
+          },
+          {
+            "shortName": "ob_hand_congenital_thumb_congenital_clasped_thumb",
+            "title": "Congenital Clasped Thumb",
+            "definition": "Summary: Congenital Clasped Thumb is a congenital pediatric condition that results in a flexion-adduction deformity of the thumb that persists beyond the 3rd or 4th month of life.; Diagnosis is made clinically with the presence of a flexion-adduction deformity of the thumb, that is often bilateral.; Treatment is usually a trial of nonoperative management with serial splinting and stretching for 3-6 months. Surgical management is indicated for persistent deformity, significant soft tissue defects or, MCP contractures..",
+            "summary": "Congenital Clasped Thumb is a congenital pediatric condition that results in a flexion-adduction deformity of the thumb that persists beyond the 3rd or 4th month of life. Diagnosis is made clinically with the presence of a flexion-adduction deformity of the thumb, that is often bilateral.",
+            "obTopicId": "6085",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Congenital Thumb",
+              "section": "Congenital Clasped Thumb",
+              "url": "https://www.orthobullets.com/hand/6085/congenital-clasped-thumb"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Congenital Thumb"
+        }
+      },
+      {
+        "shortName": "ob_hand_tumors_of_the_hand",
+        "title": "Tumors of the hand",
+        "field": "Hand Tumors & Lesions",
+        "definition": "OrthoBullets chapter \"Tumors of the hand\" (Hand Tumors & Lesions): summary: Ganglion Cysts are mucin-filled synovial cysts and are the most common masses found in the wrist and hand.; Diagnosis can be made clinically with a firm and well circumscribed mass that transilluminates.; Treatment can be observation for majority of ganglions. Surgical excision is indicated for ganglion cysts associated with severe symptoms or neurovascular manifestations.. Introduction. Epidemiology Introduction. Epidemiology",
+        "summary": "Ganglion Cysts are mucin-filled synovial cysts and are the most common masses found in the wrist and hand. Diagnosis can be made clinically with a firm and well circumscribed mass that transilluminates. A painless, benign, slow-growing soft tissue tumor that often occurs in the hand",
+        "topics": [
+          {
+            "shortName": "ob_hand_tumors_of_the_hand_ganglion_cysts",
+            "title": "Ganglion Cysts",
+            "definition": "summary: Ganglion Cysts are mucin-filled synovial cysts and are the most common masses found in the wrist and hand.; Diagnosis can be made clinically with a firm and well circumscribed mass that transilluminates.; Treatment can be observation for majority of ganglions. Surgical excision is indicated for ganglion cysts associated with severe symptoms or neurovascular manifestations..",
+            "summary": "Ganglion Cysts are mucin-filled synovial cysts and are the most common masses found in the wrist and hand. Diagnosis can be made clinically with a firm and well circumscribed mass that transilluminates.",
+            "obTopicId": "6086",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Tumors of the hand",
+              "section": "Ganglion Cysts",
+              "url": "https://www.orthobullets.com/hand/6086/ganglion-cysts"
+            }
+          },
+          {
+            "shortName": "ob_hand_tumors_of_the_hand_epidermal_inclusion_cyst",
+            "title": "Epidermal Inclusion Cyst",
+            "definition": "Introduction. Epidemiology",
+            "summary": "A painless, benign, slow-growing soft tissue tumor that often occurs in the hand",
+            "obTopicId": "6087",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Tumors of the hand",
+              "section": "Epidermal Inclusion Cyst",
+              "url": "https://www.orthobullets.com/hand/6087/epidermal-inclusion-cyst"
+            }
+          },
+          {
+            "shortName": "ob_hand_tumors_of_the_hand_anomalous_extensor_tendon",
+            "title": "Anomalous Extensor Tendon",
+            "definition": "Introduction. Epidemiology",
+            "summary": "Definition",
+            "obTopicId": "6089",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Tumors of the hand",
+              "section": "Anomalous Extensor Tendon",
+              "url": "https://www.orthobullets.com/hand/6089/anomalous-extensor-tendon"
+            }
+          },
+          {
+            "shortName": "ob_hand_tumors_of_the_hand_giant_cell_tumor_of_tendon_sheath",
+            "title": "Giant Cell Tumor of Tendon Sheath",
+            "definition": "summary: Giant Cell Tumor of Tendon Sheath, also known as pigmented villonodular tumor of the tendon sheath, is a benign nodular tumor that is found on the tendon sheath of the hands and feet; Diagnosis is made clinically with a firm, nodular mass that does not transilluminate with MRI studies showing decreased signal intensity on both T1-and T2-weighted MR imaging.; Treatment is usually marginal excision of the mass..",
+            "summary": "Giant Cell Tumor of Tendon Sheath, also known as pigmented villonodular tumor of the tendon sheath, is a benign nodular tumor that is found on the tendon sheath of the hands and feet Diagnosis is made clinically with a firm, nodular mass that does not transilluminate with MRI studies showing decreased signal intensity on both T1-and T2-weighted MR imaging.",
+            "obTopicId": "6092",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Tumors of the hand",
+              "section": "Giant Cell Tumor of Tendon Sheath",
+              "url": "https://www.orthobullets.com/hand/6092/giant-cell-tumor-of-tendon-sheath"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Tumors of the hand"
+        }
+      },
+      {
+        "shortName": "ob_hand_vascular_conditions",
+        "title": "Vascular Conditions",
+        "field": "Hand Tumors & Lesions",
+        "definition": "OrthoBullets chapter \"Vascular Conditions\" (Hand Tumors & Lesions): Introduction. Epidemiology summary: Hypothenar Hammer Syndrome is post-traumatic digital ischemia from thrombosis of the ulnar artery at Guyon's canal.; Diagnosis is made with vascular studies including Doppler ultrasound and CT angiography.; Treatment can be observation, fibrinolysis, vessel ligation or reconstruction depending on the chronicity of symptoms, the digital brachial index, and the presence of an aneurysm.. Introduction. Etiology",
+        "summary": "Acute upper extremity ischemia caused by a proximal occlusion at the level of the subclavian artery Hypothenar Hammer Syndrome is post-traumatic digital ischemia from thrombosis of the ulnar artery at Guyon's canal. Diagnosis is made with vascular studies including Doppler ultrasound and CT angiography.",
+        "topics": [
+          {
+            "shortName": "ob_hand_vascular_conditions_acute_subclavian_artery_thrombosis",
+            "title": "Acute Subclavian Artery Thrombosis",
+            "definition": "Introduction. Epidemiology",
+            "summary": "Acute upper extremity ischemia caused by a proximal occlusion at the level of the subclavian artery",
+            "obTopicId": "12302",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Vascular Conditions",
+              "section": "Acute Subclavian Artery Thrombosis",
+              "url": "https://www.orthobullets.com/hand/12302/acute-subclavian-artery-thrombosis"
+            }
+          },
+          {
+            "shortName": "ob_hand_vascular_conditions_hypothenar_hammer_syndrome",
+            "title": "Hypothenar Hammer Syndrome",
+            "definition": "summary: Hypothenar Hammer Syndrome is post-traumatic digital ischemia from thrombosis of the ulnar artery at Guyon's canal.; Diagnosis is made with vascular studies including Doppler ultrasound and CT angiography.; Treatment can be observation, fibrinolysis, vessel ligation or reconstruction depending on the chronicity of symptoms, the digital brachial index, and the presence of an aneurysm..",
+            "summary": "Hypothenar Hammer Syndrome is post-traumatic digital ischemia from thrombosis of the ulnar artery at Guyon's canal. Diagnosis is made with vascular studies including Doppler ultrasound and CT angiography.",
+            "obTopicId": "6097",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Vascular Conditions",
+              "section": "Hypothenar Hammer Syndrome",
+              "url": "https://www.orthobullets.com/hand/6097/hypothenar-hammer-syndrome"
+            }
+          },
+          {
+            "shortName": "ob_hand_vascular_conditions_raynaud_s_syndrome",
+            "title": "Raynaud's Syndrome",
+            "definition": "Introduction. Etiology",
+            "summary": "Raynaud's is an exaggerated vasocontriction of the digital arteries in response to a variety of stimuli. It takes two forms",
+            "obTopicId": "6098",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Vascular Conditions",
+              "section": "Raynaud's Syndrome",
+              "url": "https://www.orthobullets.com/hand/6098/raynauds-syndrome"
+            }
+          },
+          {
+            "shortName": "ob_hand_vascular_conditions_thromboangiitis_obliterans_buerger_s_disease",
+            "title": "Thromboangiitis Obliterans (Buerger's disease)",
+            "definition": "Introduction. Epidemiology",
+            "summary": "A nonatherosclerotic, segmental, inflammatory disease in the small and medium-sized vessels of the hands and feet",
+            "obTopicId": "6099",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Vascular Conditions",
+              "section": "Thromboangiitis Obliterans (Buerger's disease)",
+              "url": "https://www.orthobullets.com/hand/6099/thromboangiitis-obliterans-buergers-disease"
+            }
+          },
+          {
+            "shortName": "ob_hand_vascular_conditions_digital_artery_aneurysm",
+            "title": "Digital Artery Aneurysm",
+            "definition": "Introduction. Epidemiology",
+            "summary": "Aneurysm is defined as a permanent dilation of an artery with a 50% increase in its normal diameter",
+            "obTopicId": "12282",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Vascular Conditions",
+              "section": "Digital Artery Aneurysm",
+              "url": "https://www.orthobullets.com/hand/12282/digital-artery-aneurysm"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Vascular Conditions"
+        }
+      },
+      {
+        "shortName": "ob_hand_nail_bed",
+        "title": "Nail Bed",
+        "field": "Hand Tumors & Lesions",
+        "definition": "OrthoBullets chapter \"Nail Bed\" (Hand Tumors & Lesions): Introduction. Etiology Introduction. Etiology",
+        "summary": "Clinical definition Clinical definition",
+        "topics": [
+          {
+            "shortName": "ob_hand_nail_bed_split_nail_deformity",
+            "title": "Split Nail Deformity",
+            "definition": "Introduction. Etiology",
+            "summary": "Clinical definition",
+            "obTopicId": "6110",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Nail Bed",
+              "section": "Split Nail Deformity",
+              "url": "https://www.orthobullets.com/hand/6110/split-nail-deformity"
+            }
+          },
+          {
+            "shortName": "ob_hand_nail_bed_hook_nail_deformity",
+            "title": "Hook Nail Deformity",
+            "definition": "Introduction. Etiology",
+            "summary": "Clinical definition",
+            "obTopicId": "6111",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Nail Bed",
+              "section": "Hook Nail Deformity",
+              "url": "https://www.orthobullets.com/hand/6111/hook-nail-deformity"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Nail Bed"
+        }
+      },
+      {
+        "shortName": "ob_hand_tested_procedures",
+        "title": "Tested Procedures",
+        "field": "Hand Tumors & Lesions",
+        "definition": "OrthoBullets chapter \"Tested Procedures\" (Hand Tumors & Lesions): Introduction: Plays an important therapeutic and diagnostic role; Indications.",
+        "summary": "Plays an important therapeutic and diagnostic role Indications",
+        "topics": [
+          {
+            "shortName": "ob_hand_tested_procedures_wrist_arthroscopy",
+            "title": "Wrist Arthroscopy",
+            "definition": "Introduction: Plays an important therapeutic and diagnostic role; Indications.",
+            "summary": "Plays an important therapeutic and diagnostic role Indications",
+            "obTopicId": "6009",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Tested Procedures",
+              "section": "Wrist Arthroscopy",
+              "url": "https://www.orthobullets.com/hand/6009/wrist-arthroscopy"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Tested Procedures"
+        }
+      }
+    ]
+  }
+}

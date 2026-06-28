@@ -1,0 +1,1087 @@
+{
+  "_meta": {
+    "source": "https://www.orthobullets.com/user/dashboard?id=all&specialty=225&menu=topic",
+    "generated_by": "scripts/scrape-orthobullets-taxonomy.ts",
+    "scraped_at": "2026-06-27T22:21:14.950Z",
+    "section": "knee_sports",
+    "field_count": 3,
+    "chapter_count": 14,
+    "topic_count": 68,
+    "backfilled_at": "2026-06-28T19:07:59.899Z",
+    "backfilled_by": "scripts/backfill-orthobullets-topic-content.ts"
+  },
+  "taxonomy": {
+    "section": "knee_sports",
+    "provenance": "orthobullets_site",
+    "obDataPending": false,
+    "notes": "Scraped from the OrthoBullets specialty dashboard (Field → Chapter → Topic). Fields collapsed into the section; chapters → L4, topics → L5.",
+    "chapters": [
+      {
+        "shortName": "ob_knee_sports_knee_evaluation_in_the_athlete",
+        "title": "Knee Evaluation in the Athlete",
+        "field": "Knee",
+        "definition": "OrthoBullets chapter \"Knee Evaluation in the Athlete\" (Knee): Overview. Inspection High yield findings. Radiographic",
+        "summary": "Overview High yield findings",
+        "topics": [
+          {
+            "shortName": "ob_knee_sports_knee_evaluation_in_the_athlete_history_and_physical_exam_of_the_knee",
+            "title": "History and Physical Exam of the Knee",
+            "definition": "Overview. Inspection",
+            "summary": "Overview",
+            "obTopicId": "3003",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Knee Evaluation in the Athlete",
+              "section": "History and Physical Exam of the Knee",
+              "url": "https://www.orthobullets.com/knee-and-sports/3003/history-and-physical-exam-of-the-knee"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_knee_evaluation_in_the_athlete_knee_imaging",
+            "title": "Knee Imaging",
+            "definition": "High yield findings. Radiographic",
+            "summary": "High yield findings",
+            "obTopicId": "3004",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Knee Evaluation in the Athlete",
+              "section": "Knee Imaging",
+              "url": "https://www.orthobullets.com/knee-and-sports/3004/knee-imaging"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Knee Evaluation in the Athlete"
+        }
+      },
+      {
+        "shortName": "ob_knee_sports_meniscal_injuries",
+        "title": "Meniscal injuries",
+        "field": "Knee",
+        "definition": "OrthoBullets chapter \"Meniscal injuries\" (Knee): Function: Force transmission; Stability. summary: Meniscal tears are common sports-related injuries in young athletes and can also present as a degenerative condition in older patients.; Diagnosis can be suspected clinically with joint line tenderness and a positive McMurray's test, and can be confirmed with MRI studies.; Treatment can be nonoperative versus operative (partial meniscectomy versus repair) depending on the morphology of the meniscus tear, root involvement, patient symptoms, and pa…",
+        "summary": "Force transmission Stability Meniscal tears are common sports-related injuries in young athletes and can also present as a degenerative condition in older patients. Diagnosis can be suspected clinically with joint line tenderness and a positive McMurray's test, and can be confirmed with MRI studies.",
+        "topics": [
+          {
+            "shortName": "ob_knee_sports_meniscal_injuries_meniscus",
+            "title": "Meniscus",
+            "definition": "Function: Force transmission; Stability.",
+            "summary": "Force transmission Stability",
+            "obTopicId": "9019",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Meniscal injuries",
+              "section": "Meniscus",
+              "url": "https://www.orthobullets.com/knee-and-sports/9019/meniscus"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_meniscal_injuries_meniscal_tears",
+            "title": "Meniscal Tears",
+            "definition": "summary: Meniscal tears are common sports-related injuries in young athletes and can also present as a degenerative condition in older patients.; Diagnosis can be suspected clinically with joint line tenderness and a positive McMurray's test, and can be confirmed with MRI studies.; Treatment can be nonoperative versus operative (partial meniscectomy versus repair) depending on the morphology of the meniscus tear, root involvement, patient symptoms, and patient activity demands..",
+            "summary": "Meniscal tears are common sports-related injuries in young athletes and can also present as a degenerative condition in older patients. Diagnosis can be suspected clinically with joint line tenderness and a positive McMurray's test, and can be confirmed with MRI studies.",
+            "obTopicId": "3005",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Meniscal injuries",
+              "section": "Meniscal Tears",
+              "url": "https://www.orthobullets.com/knee-and-sports/3005/meniscal-tears"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_meniscal_injuries_meniscal_cysts",
+            "title": "Meniscal Cysts",
+            "definition": "summary: Meniscal cysts are a condition characterized by a local collection of synovial fluid within or adjacent to the meniscus most commonly as result of a meniscal tear.; Diagnosis is confirmed with MRI studies of the knee.; Treatment is generally nonoperative with physical therapy and NSAIDs. Surgical decompression with partial meniscectomy versus meniscus repair may be indicated for persistently symptomatic patients who fail conservative management..",
+            "summary": "Meniscal cysts are a condition characterized by a local collection of synovial fluid within or adjacent to the meniscus most commonly as result of a meniscal tear. Diagnosis is confirmed with MRI studies of the knee.",
+            "obTopicId": "3006",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Meniscal injuries",
+              "section": "Meniscal Cysts",
+              "url": "https://www.orthobullets.com/knee-and-sports/3006/meniscal-cysts"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_meniscal_injuries_discoid_meniscus",
+            "title": "Discoid Meniscus",
+            "definition": "Summary: A discoid meniscus is the abnormal development of the meniscus leading to a hypertrophic and discoid shaped meniscus.; Diagnosis can be suspected on radiographs with (squaring of lateral condyle with cupping of lateral tibial plateau) but require MRI for confirmation (3 or more 5mm sagittal images with meniscal continuity).; Treatment is generally observation for patients who are asymptomatic. Arthroscopic meniscectomy and saucerization may be indicated for patients with continued pain and mechanical symptoms..",
+            "summary": "A discoid meniscus is the abnormal development of the meniscus leading to a hypertrophic and discoid shaped meniscus. Diagnosis can be suspected on radiographs with (squaring of lateral condyle with cupping of lateral tibial plateau) but require MRI for confirmation (3 or more 5mm sagittal images with meniscal continuity).",
+            "obTopicId": "3007",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Meniscal injuries",
+              "section": "Discoid Meniscus",
+              "url": "https://www.orthobullets.com/knee-and-sports/3007/discoid-meniscus"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Meniscal injuries"
+        }
+      },
+      {
+        "shortName": "ob_knee_sports_ligament_injury",
+        "title": "Ligament injury",
+        "field": "Knee",
+        "definition": "OrthoBullets chapter \"Ligament injury\" (Knee): Summary: ACL tears are common athletic injuries leading to anterior and lateral rotatory instability of the knee.; Diagnosis can be suspected clinically with presence of a traumatic knee effusion with increased laxity on Lachman's test but requires MRI studies to confirm diagnosis.; Treatment involves ligamentous reconstruction utilizing a variety of techniques and graft choices depending patient age and activity levels.. Summary: PCL injuries are traumatic knee injuries that may lead to posteri…",
+        "summary": "ACL tears are common athletic injuries leading to anterior and lateral rotatory instability of the knee. Diagnosis can be suspected clinically with presence of a traumatic knee effusion with increased laxity on Lachman's test but requires MRI studies to confirm diagnosis. PCL injuries are traumatic knee injuries that may lead to posterior knee instability and often present in combination with othe",
+        "topics": [
+          {
+            "shortName": "ob_knee_sports_ligament_injury_acl_tear",
+            "title": "ACL Tear",
+            "definition": "Summary: ACL tears are common athletic injuries leading to anterior and lateral rotatory instability of the knee.; Diagnosis can be suspected clinically with presence of a traumatic knee effusion with increased laxity on Lachman's test but requires MRI studies to confirm diagnosis.; Treatment involves ligamentous reconstruction utilizing a variety of techniques and graft choices depending patient age and activity levels..",
+            "summary": "ACL tears are common athletic injuries leading to anterior and lateral rotatory instability of the knee. Diagnosis can be suspected clinically with presence of a traumatic knee effusion with increased laxity on Lachman's test but requires MRI studies to confirm diagnosis.",
+            "obTopicId": "3008",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Ligament injury",
+              "section": "ACL Tear",
+              "url": "https://www.orthobullets.com/knee-and-sports/3008/acl-tear"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_ligament_injury_pcl_injury",
+            "title": "PCL Injury",
+            "definition": "Summary: PCL injuries are traumatic knee injuries that may lead to posterior knee instability and often present in combination with other ipsilateral ligamentous knee injuries (i.e PLC, ACL).; Diagnosis can be suspected clinically with a traumatic knee effusion and increased laxity on a posterior drawer test but requires an MRI for confirmation.; Treatment can be nonoperative or operative depending on the severity of injury to the PCL, as well concomitant injuries to surrounding structures and ligaments in the knee..",
+            "summary": "PCL injuries are traumatic knee injuries that may lead to posterior knee instability and often present in combination with other ipsilateral ligamentous knee injuries (i.e PLC, ACL). Diagnosis can be suspected clinically with a traumatic knee effusion and increased laxity on a posterior drawer test but requires an MRI for confirmation.",
+            "obTopicId": "3009",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Ligament injury",
+              "section": "PCL Injury",
+              "url": "https://www.orthobullets.com/knee-and-sports/3009/pcl-injury"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_ligament_injury_mcl_knee_injuries",
+            "title": "MCL Knee Injuries",
+            "definition": "summary: A medial collateral ligament (MCL) knee injury is a traumatic knee injury that typically occurs as a result of a sudden valgus force to the lateral aspect of the knee.; Diagnosis can be suspected with increased valgus laxity on physical exam but requires MRI for confirmation.; Treatment is generally nonoperative with bracing. Surgical management may be indicated for high grade injuries in the setting of persistent valgus instability..",
+            "summary": "A medial collateral ligament (MCL) knee injury is a traumatic knee injury that typically occurs as a result of a sudden valgus force to the lateral aspect of the knee. Diagnosis can be suspected with increased valgus laxity on physical exam but requires MRI for confirmation.",
+            "obTopicId": "3010",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Ligament injury",
+              "section": "MCL Knee Injuries",
+              "url": "https://www.orthobullets.com/knee-and-sports/3010/mcl-knee-injuries"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_ligament_injury_lcl_injury_of_the_knee",
+            "title": "LCL Injury of the Knee",
+            "definition": "Summary: Lateral Collateral Ligament (LCL) injuries of the knee typically occur due to a sudden varus force to the knee and often present in combination with other ipsilateral ligamentous knee injuries (ie. PLC, ACL).; Diagnosis can be suspected with increased varus laxity on physical exam but require MRI for confirmation.; Treatment can be nonoperative or operative depending on the severity of injury to the LCL as well concomitant injuries to surrounding structures and ligaments in the knee..",
+            "summary": "Lateral Collateral Ligament (LCL) injuries of the knee typically occur due to a sudden varus force to the knee and often present in combination with other ipsilateral ligamentous knee injuries (ie. PLC, ACL). Diagnosis can be suspected with increased varus laxity on physical exam but require MRI for confirmation.",
+            "obTopicId": "3011",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Ligament injury",
+              "section": "LCL Injury of the Knee",
+              "url": "https://www.orthobullets.com/knee-and-sports/3011/lcl-injury-of-the-knee"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_ligament_injury_posterolateral_corner_injury",
+            "title": "Posterolateral Corner Injury",
+            "definition": "Summary: Posterolateral corner (PLC) injuries are traumatic knee injuries that are associated with lateral knee instability and usually present with a concomitant cruciate ligament injury (PCL > ACL).; Diagnosis can be suspected with a knee effusion and a positive dial test but MRI studies are required for confirmation.; Treatment is generally operative reconstruction of the PLC complex and the associated ligamentous injuries when present..",
+            "summary": "Posterolateral corner (PLC) injuries are traumatic knee injuries that are associated with lateral knee instability and usually present with a concomitant cruciate ligament injury (PCL > ACL). Diagnosis can be suspected with a knee effusion and a positive dial test but MRI studies are required for confirmation.",
+            "obTopicId": "3012",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Ligament injury",
+              "section": "Posterolateral Corner Injury",
+              "url": "https://www.orthobullets.com/knee-and-sports/3012/posterolateral-corner-injury"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_ligament_injury_posteromedial_corner_injury",
+            "title": "Posteromedial Corner Injury",
+            "definition": "summary: A posteromedial corner (PMC) injury is a traumatic knee injury that usually presents as a component of a multi-ligamentous knee injury and can can lead to chronic valgus knee instability.; Physical exam will demonstrate rotational instability and diagnosis is confirmed with MRI.; Treatment may be nonoperative for isolated PMC injuries. Operative management is indicated for PMC injuries that are associated with multi-ligamentous knee injury..",
+            "summary": "A posteromedial corner (PMC) injury is a traumatic knee injury that usually presents as a component of a multi-ligamentous knee injury and can can lead to chronic valgus knee instability. Physical exam will demonstrate rotational instability and diagnosis is confirmed with MRI.",
+            "obTopicId": "12736",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Ligament injury",
+              "section": "Posteromedial Corner Injury",
+              "url": "https://www.orthobullets.com/knee-and-sports/12736/posteromedial-corner-injury"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_ligament_injury_proximal_tib_fib_dislocation",
+            "title": "Proximal Tib-Fib Dislocation",
+            "definition": "Summary: A proximal tib-fib dislocation is a disruption of the proximal tibia-fibula joint associated with high energy open fractures of the tibia and peroneal nerve injury.; Diagnosis requires careful assessment of radiographs of the knee and tibia (often missed injury).; Treatment is prompt closed reduction with unstable injuries requiring surgical pinning versus soft tissue reconstruction..",
+            "summary": "A proximal tib-fib dislocation is a disruption of the proximal tibia-fibula joint associated with high energy open fractures of the tibia and peroneal nerve injury. Diagnosis requires careful assessment of radiographs of the knee and tibia (often missed injury).",
+            "obTopicId": "3014",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Ligament injury",
+              "section": "Proximal Tib-Fib Dislocation",
+              "url": "https://www.orthobullets.com/knee-and-sports/3014/proximal-tib-fib-dislocation"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Ligament injury"
+        }
+      },
+      {
+        "shortName": "ob_knee_sports_knee_overuse_injuries",
+        "title": "Knee Overuse injuries",
+        "field": "Knee",
+        "definition": "OrthoBullets chapter \"Knee Overuse injuries\" (Knee): Summary: Patellar tendinitis is tendinopathy of the patellar tendon associated with activity-related anterior knee pain.; Diagnosis is primarily made clinically with tenderness to palpation at the distal pole of patella in full extension.; Treatment is generally nonoperative with resting, ice, activity modifications and physical therapy to focus on hamstring, quadriceps and core strengthening.. Summary: Quadriceps tendonitis is inflammation of the suprapatellar tendon of the quadriceps muscle as…",
+        "summary": "Patellar tendinitis is tendinopathy of the patellar tendon associated with activity-related anterior knee pain. Diagnosis is primarily made clinically with tenderness to palpation at the distal pole of patella in full extension. Quadriceps tendonitis is inflammation of the suprapatellar tendon of the quadriceps muscle associated with activity-related anterior knee pain. Diagnosis is made clinicall",
+        "topics": [
+          {
+            "shortName": "ob_knee_sports_knee_overuse_injuries_patellar_tendinitis",
+            "title": "Patellar Tendinitis",
+            "definition": "Summary: Patellar tendinitis is tendinopathy of the patellar tendon associated with activity-related anterior knee pain.; Diagnosis is primarily made clinically with tenderness to palpation at the distal pole of patella in full extension.; Treatment is generally nonoperative with resting, ice, activity modifications and physical therapy to focus on hamstring, quadriceps and core strengthening..",
+            "summary": "Patellar tendinitis is tendinopathy of the patellar tendon associated with activity-related anterior knee pain. Diagnosis is primarily made clinically with tenderness to palpation at the distal pole of patella in full extension.",
+            "obTopicId": "3015",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Knee Overuse injuries",
+              "section": "Patellar Tendinitis",
+              "url": "https://www.orthobullets.com/knee-and-sports/3015/patellar-tendinitis"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_knee_overuse_injuries_quadriceps_tendonitis",
+            "title": "Quadriceps Tendonitis",
+            "definition": "Summary: Quadriceps tendonitis is inflammation of the suprapatellar tendon of the quadriceps muscle associated with activity-related anterior knee pain.; Diagnosis is made clinically with tenderness to palpation at the quadriceps tendon insertion at the superior pole of the patella.; Treatment is generally nonoperative with resting, ice, activity modifications and physical therapy to focus on hamstring, quadriceps and core strengthening..",
+            "summary": "Quadriceps tendonitis is inflammation of the suprapatellar tendon of the quadriceps muscle associated with activity-related anterior knee pain. Diagnosis is made clinically with tenderness to palpation at the quadriceps tendon insertion at the superior pole of the patella.",
+            "obTopicId": "3016",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Knee Overuse injuries",
+              "section": "Quadriceps Tendonitis",
+              "url": "https://www.orthobullets.com/knee-and-sports/3016/quadriceps-tendonitis"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_knee_overuse_injuries_semimembranosus_tendinitis",
+            "title": "Semimembranosus Tendinitis",
+            "definition": "summary: Semimembranosus tendinitis is the inflammation of the insertion of the semimembranosus tendon leading to activity related posteromedial knee pain.; Diagnosis is made clinically with tenderness to palpation at the insertion of the semimembranosus tendon made worse with passive deep flexion of the knee or internal rotation of the tibia at 90 degrees of knee flexion.; Treatment is nonoperative with rest, stretching and physical therapy to focus on hamstring and quadriceps strengthening..",
+            "summary": "Semimembranosus tendinitis is the inflammation of the insertion of the semimembranosus tendon leading to activity related posteromedial knee pain. Diagnosis is made clinically with tenderness to palpation at the insertion of the semimembranosus tendon made worse with passive deep flexion of the knee or internal rotation of the tibia at 90 degrees of knee flexion.",
+            "obTopicId": "3017",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Knee Overuse injuries",
+              "section": "Semimembranosus Tendinitis",
+              "url": "https://www.orthobullets.com/knee-and-sports/3017/semimembranosus-tendinitis"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_knee_overuse_injuries_prepatellar_bursitis_housemaid_s_knee",
+            "title": "Prepatellar Bursitis (Housemaid's Knee)",
+            "definition": "Summary: Prepatellar bursitis is the swelling and inflammation of the anterior knee bursa associated with pain with kneeling.; Diagnosis is made clinically with mild swelling and tenderness over the anterior knee overlying the patella.; Treatment is nonoperative with compressive wraps and NSAIDs. Occasionally, in the setting of septic bursitis, antibiotics may be indicated..",
+            "summary": "Prepatellar bursitis is the swelling and inflammation of the anterior knee bursa associated with pain with kneeling. Diagnosis is made clinically with mild swelling and tenderness over the anterior knee overlying the patella.",
+            "obTopicId": "3018",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Knee Overuse injuries",
+              "section": "Prepatellar Bursitis (Housemaid's Knee)",
+              "url": "https://www.orthobullets.com/knee-and-sports/3018/prepatellar-bursitis-housemaids-knee"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_knee_overuse_injuries_iliotibial_band_friction_syndrome",
+            "title": "Iliotibial Band Friction Syndrome",
+            "definition": "summary: Iliotibial band friction syndrome is a condition characterized by excessive friction between the iliotibial band and the lateral femoral condyle and presents with activity related lateral knee pain.; Diagnosis is made clinically with tightness of the IT band (Ober's test) with tenderness over the lateral femoral condyle made worse with a single leg squat.; Treatment is nonoperative with rest, NSAIDs and stretching of the iliotibial band, quadriceps and gluteal muscles. Rarely, surgical release of the IT band is indicated in chronic and refractory cases..",
+            "summary": "Iliotibial band friction syndrome is a condition characterized by excessive friction between the iliotibial band and the lateral femoral condyle and presents with activity related lateral knee pain. Diagnosis is made clinically with tightness of the IT band (Ober's test) with tenderness over the lateral femoral condyle made worse with a single leg squat.",
+            "obTopicId": "3019",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Knee Overuse injuries",
+              "section": "Iliotibial Band Friction Syndrome",
+              "url": "https://www.orthobullets.com/knee-and-sports/3019/iliotibial-band-friction-syndrome"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Knee Overuse injuries"
+        }
+      },
+      {
+        "shortName": "ob_knee_sports_knee_extensor_mechanism",
+        "title": "Knee Extensor Mechanism",
+        "field": "Knee",
+        "definition": "OrthoBullets chapter \"Knee Extensor Mechanism\" (Knee): Overview: Biomechanically complex articulation between the patella and distal femoral condyles; Associated clinical conditions. Summary: Patellar instability defines a spectrum from subluxation to dislocation that results from injury, ligamentous laxity, or increased Q angle of the knee.; Diagnosis is made clinically in the acute setting of a patellar dislocation with a traumatic knee effusion and in the chronic setting with passive patellar translation and a positive J sign.; Treatment is nonop…",
+        "summary": "Biomechanically complex articulation between the patella and distal femoral condyles Associated clinical conditions Patellar instability defines a spectrum from subluxation to dislocation that results from injury, ligamentous laxity, or increased Q angle of the knee. Diagnosis is made clinically in the acute setting of a patellar dislocation with a traumatic knee effusion and in the chronic settin",
+        "topics": [
+          {
+            "shortName": "ob_knee_sports_knee_extensor_mechanism_patellofemoral_joint",
+            "title": "Patellofemoral Joint",
+            "definition": "Overview: Biomechanically complex articulation between the patella and distal femoral condyles; Associated clinical conditions.",
+            "summary": "Biomechanically complex articulation between the patella and distal femoral condyles Associated clinical conditions",
+            "obTopicId": "3002",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Knee Extensor Mechanism",
+              "section": "Patellofemoral Joint",
+              "url": "https://www.orthobullets.com/knee-and-sports/3002/patellofemoral-joint"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_knee_extensor_mechanism_patellar_instability",
+            "title": "Patellar Instability",
+            "definition": "Summary: Patellar instability defines a spectrum from subluxation to dislocation that results from injury, ligamentous laxity, or increased Q angle of the knee.; Diagnosis is made clinically in the acute setting of a patellar dislocation with a traumatic knee effusion and in the chronic setting with passive patellar translation and a positive J sign.; Treatment is nonoperative with bracing for first time dislocation without bony avulsion or presence of articular loose bodies. Operative management is indicated for chronic and recurrent patellar instability..",
+            "summary": "Patellar instability defines a spectrum from subluxation to dislocation that results from injury, ligamentous laxity, or increased Q angle of the knee. Diagnosis is made clinically in the acute setting of a patellar dislocation with a traumatic knee effusion and in the chronic setting with passive patellar translation and a positive J sign.",
+            "obTopicId": "3020",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Knee Extensor Mechanism",
+              "section": "Patellar Instability",
+              "url": "https://www.orthobullets.com/knee-and-sports/3020/patellar-instability"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_knee_extensor_mechanism_lateral_patellar_compression_syndrome",
+            "title": "Lateral Patellar Compression Syndrome",
+            "definition": "Summary: Lateral patellar compression syndrome is the improper tracking of the patella in the trochlear groove generally caused by a tight lateral retinaculum.; Diagnosis is made clinically with pain with compression of the patella and moderate lateral facet tenderness and sunrise knee radiographs will often show patellar tilt in the lateral direction.; Treatment is nonoperative with physical therapy focusing on quadriceps stretching and strengthening. Operative lateral retinaculum release is indicated in refractory cases..",
+            "summary": "Lateral patellar compression syndrome is the improper tracking of the patella in the trochlear groove generally caused by a tight lateral retinaculum. Diagnosis is made clinically with pain with compression of the patella and moderate lateral facet tenderness and sunrise knee radiographs will often show patellar tilt in the lateral direction.",
+            "obTopicId": "3021",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Knee Extensor Mechanism",
+              "section": "Lateral Patellar Compression Syndrome",
+              "url": "https://www.orthobullets.com/knee-and-sports/3021/lateral-patellar-compression-syndrome"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_knee_extensor_mechanism_idiopathic_chondromalacia_patellae",
+            "title": "Idiopathic Chondromalacia Patellae",
+            "definition": "summary: Idiopathic chondromalacia patellae is a condition characterized by idiopathic articular changes of the patella leading to anterior knee pain.; Diagnosis is clinical with a history of anterior knee pain made worse with squatting, prolonged sitting or ascending stairs and pain on patellar compression in knee extension.; Treatment is generally nonoperative with resting, ice, activity modifications and physical therapy to focus on hamstring, quadriceps and core strengthening..",
+            "summary": "Idiopathic chondromalacia patellae is a condition characterized by idiopathic articular changes of the patella leading to anterior knee pain. Diagnosis is clinical with a history of anterior knee pain made worse with squatting, prolonged sitting or ascending stairs and pain on patellar compression in knee extension.",
+            "obTopicId": "3022",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Knee Extensor Mechanism",
+              "section": "Idiopathic Chondromalacia Patellae",
+              "url": "https://www.orthobullets.com/knee-and-sports/3022/idiopathic-chondromalacia-patellae"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_knee_extensor_mechanism_quadriceps_tendon_rupture",
+            "title": "Quadriceps Tendon Rupture",
+            "definition": "summary: A quadriceps tendon rupture is a traumatic injury of the quadriceps insertion on the patella leading to a disruption in the knee extensor mechanism.; Diagnosis is made clinically with a palpable defect 2 cm proximal to the superior pole of the patella with inability to perform a straight leg raise and presence of patella baja on knee radiographs.; Treatment may be nonoperative in patients with partial tears and intact extensor mechanism. Operative repair is indicated if there is disruption of the extensor mechanism..",
+            "summary": "A quadriceps tendon rupture is a traumatic injury of the quadriceps insertion on the patella leading to a disruption in the knee extensor mechanism. Diagnosis is made clinically with a palpable defect 2 cm proximal to the superior pole of the patella with inability to perform a straight leg raise and presence of patella baja on knee radiographs.",
+            "obTopicId": "3023",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Knee Extensor Mechanism",
+              "section": "Quadriceps Tendon Rupture",
+              "url": "https://www.orthobullets.com/knee-and-sports/3023/quadriceps-tendon-rupture"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_knee_extensor_mechanism_patellar_tendon_rupture",
+            "title": "Patellar Tendon Rupture",
+            "definition": "Summary: A traumatic rupture of the patellar tendon caused by a tension overload during activity in a patient at risk.; Diagnosis can be confirmed by physical exam and radiographs for complete tears. Partial tears may need an MRI to confirm the diagnosis.; Treatment for complete tears is timely surgical repair to optimize the chance of healing. Partial tears with an intact extensor mechanism may be treated with immobilization..",
+            "summary": "A traumatic rupture of the patellar tendon caused by a tension overload during activity in a patient at risk. Diagnosis can be confirmed by physical exam and radiographs for complete tears. Partial tears may need an MRI to confirm the diagnosis.",
+            "obTopicId": "3024",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Knee Extensor Mechanism",
+              "section": "Patellar Tendon Rupture",
+              "url": "https://www.orthobullets.com/knee-and-sports/3024/patellar-tendon-rupture"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Knee Extensor Mechanism"
+        }
+      },
+      {
+        "shortName": "ob_knee_sports_knee_cartilage_lesions",
+        "title": "Knee Cartilage Lesions",
+        "field": "Knee",
+        "definition": "OrthoBullets chapter \"Knee Cartilage Lesions\" (Knee): summary: Articular cartilage defects of the knee comprise of a spectrum of disease entities from single, focal defects to advanced degenerative disease of articular (hyaline) cartilage.; Diagnosis generally requires an MRI to accurately assess the location of specific defects.; Treatment can be nonoperative or operative depending on patient age, degree of symptoms and the size of the lesion.. summary: Osteonecrosis of the knee represents a condition caused by reduced blood flow to bone secondary…",
+        "summary": "Articular cartilage defects of the knee comprise of a spectrum of disease entities from single, focal defects to advanced degenerative disease of articular (hyaline) cartilage. Diagnosis generally requires an MRI to accurately assess the location of specific defects. Osteonecrosis of the knee represents a condition caused by reduced blood flow to bone secondary to a variety of risk factors such as",
+        "topics": [
+          {
+            "shortName": "ob_knee_sports_knee_cartilage_lesions_articular_cartilage_defects_of_knee",
+            "title": "Articular Cartilage Defects of Knee",
+            "definition": "summary: Articular cartilage defects of the knee comprise of a spectrum of disease entities from single, focal defects to advanced degenerative disease of articular (hyaline) cartilage.; Diagnosis generally requires an MRI to accurately assess the location of specific defects.; Treatment can be nonoperative or operative depending on patient age, degree of symptoms and the size of the lesion..",
+            "summary": "Articular cartilage defects of the knee comprise of a spectrum of disease entities from single, focal defects to advanced degenerative disease of articular (hyaline) cartilage. Diagnosis generally requires an MRI to accurately assess the location of specific defects.",
+            "obTopicId": "3133",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Knee Cartilage Lesions",
+              "section": "Articular Cartilage Defects of Knee",
+              "url": "https://www.orthobullets.com/knee-and-sports/3133/articular-cartilage-defects-of-knee"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_knee_cartilage_lesions_osteonecrosis_of_the_knee",
+            "title": "Osteonecrosis of the Knee",
+            "definition": "summary: Osteonecrosis of the knee represents a condition caused by reduced blood flow to bone secondary to a variety of risk factors such as sickle cell disease, steroid use, alcoholism, autoimmune disorders, and hypercoagulable states.; Diagnosis is radiographic for advanced disease but requires MRI for detection of early or subclinical disease.; Treatment is generally observation with management of the underlying systemic condition. Operative management is indicated for advanced disease with presence of severe subchondral collapse..",
+            "summary": "Osteonecrosis of the knee represents a condition caused by reduced blood flow to bone secondary to a variety of risk factors such as sickle cell disease, steroid use, alcoholism, autoimmune disorders, and hypercoagulable states. Diagnosis is radiographic for advanced disease but requires MRI for detection of early or subclinical disease.",
+            "obTopicId": "3025",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Knee Cartilage Lesions",
+              "section": "Osteonecrosis of the Knee",
+              "url": "https://www.orthobullets.com/knee-and-sports/3025/osteonecrosis-of-the-knee"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_knee_cartilage_lesions_spontaneous_osteonecrosis_of_the_knee_sonk",
+            "title": "Spontaneous Osteonecrosis of the Knee (SONK)",
+            "definition": "summary: Spontaneous osteonecrosis of the knee (SONK) is an idiopathic condition that leads to the development of a crescent shaped osteonecrosis lesion, mostly commonly in the epiphysis of the medial femoral condyle.; Diagnosis can be radiographic for advanced disease but may require MRI in determining the extent of disease.; Treatment is generally nonoperative as most cases are self-limiting. Surgical management is indicated for progressive cases that fail conservative management..",
+            "summary": "Spontaneous osteonecrosis of the knee (SONK) is an idiopathic condition that leads to the development of a crescent shaped osteonecrosis lesion, mostly commonly in the epiphysis of the medial femoral condyle. Diagnosis can be radiographic for advanced disease but may require MRI in determining the extent of disease.",
+            "obTopicId": "3026",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Knee Cartilage Lesions",
+              "section": "Spontaneous Osteonecrosis of the Knee (SONK)",
+              "url": "https://www.orthobullets.com/knee-and-sports/3026/spontaneous-osteonecrosis-of-the-knee-sonk"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_knee_cartilage_lesions_plicae",
+            "title": "Plicae",
+            "definition": "Summary: Plica syndrome is defined as a painful impairment of knee function resulting from the thickened and inflamed synovial folds (usually medial).; Diagnosis is made clinically with pain over the medial parapatellar region with possible palpation of a thickened cord.; Treatment is mainly nonoperative with NSAIDs and physical therapy to focus on hamstring strengthening. Arthroscopic plica excision is indicated in refractory cases that fail nonoperative treatment..",
+            "summary": "Plica syndrome is defined as a painful impairment of knee function resulting from the thickened and inflamed synovial folds (usually medial). Diagnosis is made clinically with pain over the medial parapatellar region with possible palpation of a thickened cord.",
+            "obTopicId": "3027",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Knee Cartilage Lesions",
+              "section": "Plicae",
+              "url": "https://www.orthobullets.com/knee-and-sports/3027/plicae"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Knee Cartilage Lesions"
+        }
+      },
+      {
+        "shortName": "ob_knee_sports_pediatric_knee",
+        "title": "Pediatric Knee",
+        "field": "Knee",
+        "definition": "OrthoBullets chapter \"Pediatric Knee\" (Knee): Summary: Osteochondritis Dissecans is a pathologic lesion affecting articular cartilage and subchondral bone with variable clinical patterns.; Diagnosis may be made radiographically (notch view) but MRI usually required to determine size and stability of lesion, and to document the degree of cartilage injury.; Treatment may be nonoperative with restricted weight bearing in children with open physis. Surgical treatment may be indicated in older patients (closed physis), lesions that are unstable …",
+        "summary": "Osteochondritis Dissecans is a pathologic lesion affecting articular cartilage and subchondral bone with variable clinical patterns. Diagnosis may be made radiographically (notch view) but MRI usually required to determine size and stability of lesion, and to document the degree of cartilage injury. Osgood-Schlatter disease is osteochondrosis or traction apophysitis of the tibial tubercle, commonl",
+        "topics": [
+          {
+            "shortName": "ob_knee_sports_pediatric_knee_osteochondritis_dissecans",
+            "title": "Osteochondritis Dissecans",
+            "definition": "Summary: Osteochondritis Dissecans is a pathologic lesion affecting articular cartilage and subchondral bone with variable clinical patterns.; Diagnosis may be made radiographically (notch view) but MRI usually required to determine size and stability of lesion, and to document the degree of cartilage injury.; Treatment may be nonoperative with restricted weight bearing in children with open physis. Surgical treatment may be indicated in older patients (closed physis), lesions that are unstable and patients who have failed conservative management..",
+            "summary": "Osteochondritis Dissecans is a pathologic lesion affecting articular cartilage and subchondral bone with variable clinical patterns. Diagnosis may be made radiographically (notch view) but MRI usually required to determine size and stability of lesion, and to document the degree of cartilage injury.",
+            "obTopicId": "3028",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Pediatric Knee",
+              "section": "Osteochondritis Dissecans",
+              "url": "https://www.orthobullets.com/knee-and-sports/3028/osteochondritis-dissecans"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_pediatric_knee_osgood_schlatter_s_disease_tibial_tubercle_apophysitis",
+            "title": "Osgood Schlatter's Disease (Tibial Tubercle Apophysitis)",
+            "definition": "Summary: Osgood-Schlatter disease is osteochondrosis or traction apophysitis of the tibial tubercle, commonly presenting as anterior knee pain in the pediatric population.; Diagnosis is made clinically with an enlarged tibial tubercle and supplemented with radiographs of the knee that reveal irregularity and fragmentation of the tibial tubercle.; Treatment is nonoperative with NSAIDs, activity modification with quadriceps stretching and typically resolves with physeal closure..",
+            "summary": "Osgood-Schlatter disease is osteochondrosis or traction apophysitis of the tibial tubercle, commonly presenting as anterior knee pain in the pediatric population. Diagnosis is made clinically with an enlarged tibial tubercle and supplemented with radiographs of the knee that reveal irregularity and fragmentation of the tibial tubercle.",
+            "obTopicId": "3029",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Pediatric Knee",
+              "section": "Osgood Schlatter's Disease (Tibial Tubercle Apophysitis)",
+              "url": "https://www.orthobullets.com/knee-and-sports/3029/osgood-schlatters-disease-tibial-tubercle-apophysitis"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_pediatric_knee_sinding_larsen_johansson_syndrome",
+            "title": "Sinding-Larsen-Johansson Syndrome",
+            "definition": "Summary: Sinding-Larson-Johansson (SLJ) syndrome is an overuse injury seen in adolescents leading to anterior knee pain at the inferior pole of patella at the proximal patella tendon attachment.; Diagnosis is made clinically with tenderness over the inferior pole of the patella and radiographs of the knee may show a spur at the inferior pole of the patella.; Treatment is nonoperative with NSAIDs, activity modifications and physical therapy with most cases resolving over time..",
+            "summary": "Sinding-Larson-Johansson (SLJ) syndrome is an overuse injury seen in adolescents leading to anterior knee pain at the inferior pole of patella at the proximal patella tendon attachment. Diagnosis is made clinically with tenderness over the inferior pole of the patella and radiographs of the knee may show a spur at the inferior pole of the patella.",
+            "obTopicId": "3030",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Pediatric Knee",
+              "section": "Sinding-Larsen-Johansson Syndrome",
+              "url": "https://www.orthobullets.com/knee-and-sports/3030/sinding-larsen-johansson-syndrome"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Pediatric Knee"
+        }
+      },
+      {
+        "shortName": "ob_knee_sports_pelvis_sports_conditions",
+        "title": "Pelvis Sports Conditions",
+        "field": "Lower Extremity",
+        "definition": "OrthoBullets chapter \"Pelvis Sports Conditions\" (Lower Extremity): Summary: An illiac crest contusion (hip pointer) is a traumatic hematoma overlying the iliac wing that occurs due to direct trauma or crushing injury, most commonly during contact sports.; Diagnosis is made clinically with tenderness over the iliac crest with extensive contusion and hematoma near iliac crest.; Treatment is nonoperative with NSAIDs, rest and stretching.. summary: An anterior superior iliac spine (ASIS) avulsion is a traumatic avulsion of the ASIS due to a sudden and forceful cont…",
+        "summary": "An illiac crest contusion (hip pointer) is a traumatic hematoma overlying the iliac wing that occurs due to direct trauma or crushing injury, most commonly during contact sports. Diagnosis is made clinically with tenderness over the iliac crest with extensive contusion and hematoma near iliac crest. An anterior superior iliac spine (ASIS) avulsion is a traumatic avulsion of the ASIS due to a sudde",
+        "topics": [
+          {
+            "shortName": "ob_knee_sports_pelvis_sports_conditions_iliac_crest_contusion_hip_pointer",
+            "title": "Iliac Crest Contusion (Hip Pointer)",
+            "definition": "Summary: An illiac crest contusion (hip pointer) is a traumatic hematoma overlying the iliac wing that occurs due to direct trauma or crushing injury, most commonly during contact sports.; Diagnosis is made clinically with tenderness over the iliac crest with extensive contusion and hematoma near iliac crest.; Treatment is nonoperative with NSAIDs, rest and stretching..",
+            "summary": "An illiac crest contusion (hip pointer) is a traumatic hematoma overlying the iliac wing that occurs due to direct trauma or crushing injury, most commonly during contact sports. Diagnosis is made clinically with tenderness over the iliac crest with extensive contusion and hematoma near iliac crest.",
+            "obTopicId": "3090",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Pelvis Sports Conditions",
+              "section": "Iliac Crest Contusion (Hip Pointer)",
+              "url": "https://www.orthobullets.com/knee-and-sports/3090/iliac-crest-contusion-hip-pointer"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_pelvis_sports_conditions_anterior_superior_iliac_spine_asis_avulsion",
+            "title": "Anterior Superior Iliac Spine (ASIS) Avulsion",
+            "definition": "summary: An anterior superior iliac spine (ASIS) avulsion is a traumatic avulsion of the ASIS due to a sudden and forceful contraction of the sartorius and tensor fascia lata that occurs in young athletes.; Diagnosis is made radiographically with displaced injuries but CT/MRI may be required to diagnosis nondisplaced fractures.; Treatment is nonoperative for fractures < 3 cm displacement with rest and protected weight bearing. Surgical treatment is indicated for fractures > 3 cm displaced..",
+            "summary": "An anterior superior iliac spine (ASIS) avulsion is a traumatic avulsion of the ASIS due to a sudden and forceful contraction of the sartorius and tensor fascia lata that occurs in young athletes. Diagnosis is made radiographically with displaced injuries but CT/MRI may be required to diagnosis nondisplaced fractures.",
+            "obTopicId": "3091",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Pelvis Sports Conditions",
+              "section": "Anterior Superior Iliac Spine (ASIS) Avulsion",
+              "url": "https://www.orthobullets.com/knee-and-sports/3091/anterior-superior-iliac-spine-asis-avulsion"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_pelvis_sports_conditions_anterior_inferior_iliac_spine_avulsion_aiis",
+            "title": "Anterior Inferior Iliac Spine Avulsion (AIIS)",
+            "definition": "summary: An anterior inferior iliac spine (AIIS) avulsion is an apophyseal avulsion injury seen in adolescent athletes as a result of eccentric contraction of the rectus femoris.; Diagnosis is made with pelvis radiographs that shows an avulsion off the AIIS.; Treatment is nonoperative with rest, icing, NSAIDs and activity modification..",
+            "summary": "An anterior inferior iliac spine (AIIS) avulsion is an apophyseal avulsion injury seen in adolescent athletes as a result of eccentric contraction of the rectus femoris. Diagnosis is made with pelvis radiographs that shows an avulsion off the AIIS.",
+            "obTopicId": "3131",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Pelvis Sports Conditions",
+              "section": "Anterior Inferior Iliac Spine Avulsion (AIIS)",
+              "url": "https://www.orthobullets.com/knee-and-sports/3131/anterior-inferior-iliac-spine-avulsion-aiis"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_pelvis_sports_conditions_athletic_pubalgia_and_adductor_strain",
+            "title": "Athletic Pubalgia & Adductor strain",
+            "definition": "summary: Athletic Pubalgia is a clinical entity characterized by anterior pelvic/groin pain, commonly referred to as \"sports hernia,\" thought to occur as a result of an adductor muscle strain due to direct trauma or overuse microtrauma.; Diagnosis is made clinically by tenderness over the adductor longus and groin pain that worsens with sitting up or valsalva maneuvers.; Treatment is nonoperative with rest and physical therapy..",
+            "summary": "Athletic Pubalgia is a clinical entity characterized by anterior pelvic/groin pain, commonly referred to as \"sports hernia,\" thought to occur as a result of an adductor muscle strain due to direct trauma or overuse microtrauma. Diagnosis is made clinically by tenderness over the adductor longus and groin pain that worsens with sitting up or valsalva maneuvers.",
+            "obTopicId": "3092",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Pelvis Sports Conditions",
+              "section": "Athletic Pubalgia & Adductor strain",
+              "url": "https://www.orthobullets.com/knee-and-sports/3092/athletic-pubalgia-and-adductor-strain"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_pelvis_sports_conditions_osteitis_pubis",
+            "title": "Osteitis Pubis",
+            "definition": "summary: Osteitis pubis is the inflammation of the pubic symphysis caused by repetitive trauma that most commonly occurs during sports involving repetitive kicking or hip abduction/adduction.; Diagnosis is made clinically with localized pain over the pubic symphysis with radiographs showing osteolytic pubis with bony erosions and often times diastasis of the symphysis.; Treatment is nonoperative with rest, NSAIDs and activity modification..",
+            "summary": "Osteitis pubis is the inflammation of the pubic symphysis caused by repetitive trauma that most commonly occurs during sports involving repetitive kicking or hip abduction/adduction. Diagnosis is made clinically with localized pain over the pubic symphysis with radiographs showing osteolytic pubis with bony erosions and often times diastasis of the symphysis.",
+            "obTopicId": "3093",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Pelvis Sports Conditions",
+              "section": "Osteitis Pubis",
+              "url": "https://www.orthobullets.com/knee-and-sports/3093/osteitis-pubis"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_pelvis_sports_conditions_thigh_nerve_entrapment_syndromes",
+            "title": "Thigh Nerve Entrapment Syndromes",
+            "definition": "Ilioinguinal Nerve Entrapment: Compressive neuropathy caused by hypertrophied abdominal muscle; Physical exam; Treatment.",
+            "summary": "Compressive neuropathy caused by hypertrophied abdominal muscle Physical exam",
+            "obTopicId": "3094",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Pelvis Sports Conditions",
+              "section": "Thigh Nerve Entrapment Syndromes",
+              "url": "https://www.orthobullets.com/knee-and-sports/3094/thigh-nerve-entrapment-syndromes"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_pelvis_sports_conditions_piriformis_muscles_syndrome",
+            "title": "Piriformis Muscles Syndrome",
+            "definition": "summary: Piriformis syndrome is a condition characterized by sciatic symptoms (leg pain) due to extrapelvic sciatic nerve compression at the hip.; Diagnosis is made clinically with pain in the posterior gluteal region and migrating down the back of the leg which is made worse with flexion, adduction, and internal rotation of hip.; Treatment is rest, NSAIDs, and physical therapy focused on stretching the piriformis muscle and short external rotators..",
+            "summary": "Piriformis syndrome is a condition characterized by sciatic symptoms (leg pain) due to extrapelvic sciatic nerve compression at the hip. Diagnosis is made clinically with pain in the posterior gluteal region and migrating down the back of the leg which is made worse with flexion, adduction, and internal rotation of hip.",
+            "obTopicId": "3095",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Pelvis Sports Conditions",
+              "section": "Piriformis Muscles Syndrome",
+              "url": "https://www.orthobullets.com/knee-and-sports/3095/piriformis-muscles-syndrome"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Pelvis Sports Conditions"
+        }
+      },
+      {
+        "shortName": "ob_knee_sports_hip_sports_conditions",
+        "title": "Hip Sports Conditions",
+        "field": "Lower Extremity",
+        "definition": "OrthoBullets chapter \"Hip Sports Conditions\" (Lower Extremity): Summary: Snapping Hip is a condition characterized by a snapping sensation in the hip that comprises of 3 entities: external snapping hip, internal snapping hip, and intra-articular snapping hip.; Diagnosis of external and internal snapping hip is generally made clinically with specific physical examination maneuvers. Advanced imaging is generally required to diagnose intra-articular snapping hip.; Treatment can be nonoperative or operative depending on the specific cause of the snapping and dur…",
+        "summary": "Snapping Hip is a condition characterized by a snapping sensation in the hip that comprises of 3 entities: external snapping hip, internal snapping hip, and intra-articular snapping hip. Diagnosis of external and internal snapping hip is generally made clinically with specific physical examination maneuvers. Advanced imaging is generally required to diagnose intra-articular snapping hip. A hip lab",
+        "topics": [
+          {
+            "shortName": "ob_knee_sports_hip_sports_conditions_snapping_hip_coxa_saltans",
+            "title": "Snapping Hip (Coxa Saltans)",
+            "definition": "Summary: Snapping Hip is a condition characterized by a snapping sensation in the hip that comprises of 3 entities: external snapping hip, internal snapping hip, and intra-articular snapping hip.; Diagnosis of external and internal snapping hip is generally made clinically with specific physical examination maneuvers. Advanced imaging is generally required to diagnose intra-articular snapping hip.; Treatment can be nonoperative or operative depending on the specific cause of the snapping and duration of symptoms..",
+            "summary": "Snapping Hip is a condition characterized by a snapping sensation in the hip that comprises of 3 entities: external snapping hip, internal snapping hip, and intra-articular snapping hip. Diagnosis of external and internal snapping hip is generally made clinically with specific physical examination maneuvers. Advanced imaging is generally required to diagnose intra-articular snapping hip.",
+            "obTopicId": "3096",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Hip Sports Conditions",
+              "section": "Snapping Hip (Coxa Saltans)",
+              "url": "https://www.orthobullets.com/knee-and-sports/3096/snapping-hip-coxa-saltans"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_hip_sports_conditions_hip_labral_tear",
+            "title": "Hip Labral Tear",
+            "definition": "Summary: A hip labral tear is a traumatic tear of the acetabular labrum, mostly common seen in acetabular dysplasia, that may lead to symptoms of internal snapping hip as well hip locking with hip range of motion.; Diagnosis generally requires an MR arthrogram of the hip joint in question.; Treatment is a nonoperative trial to include NSAIDs, rest and physical therapy. Arthroscopic labral debridement versus repair is indicated for patients with progressive symptoms who failed nonoperative management..",
+            "summary": "A hip labral tear is a traumatic tear of the acetabular labrum, mostly common seen in acetabular dysplasia, that may lead to symptoms of internal snapping hip as well hip locking with hip range of motion. Diagnosis generally requires an MR arthrogram of the hip joint in question.",
+            "obTopicId": "3097",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Hip Sports Conditions",
+              "section": "Hip Labral Tear",
+              "url": "https://www.orthobullets.com/knee-and-sports/3097/hip-labral-tear"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_hip_sports_conditions_femoroacetabular_impingement_fai",
+            "title": "Femoroacetabular Impingement (FAI)",
+            "definition": "summary: Femoroacetabular impingement (FAI) is the abnormal contact between the femur and acetabulum which may lead to labral damage, various degrees of chondral injury and progressive hip pain.; Diagnosis is made radiographically with hip radiographs showing an aspherical femoral (Cam impingement) or anterosuperior acetabular overhang (Pincer impingement), or a combination of both.; Treatment may be nonoperative or operative depending on the chronicity of symptoms, patient age, patient activity demands, and development of secondary insult to the hip joint (i.e. labral tear, secondary osteoarthritis)..",
+            "summary": "Femoroacetabular impingement (FAI) is the abnormal contact between the femur and acetabulum which may lead to labral damage, various degrees of chondral injury and progressive hip pain. Diagnosis is made radiographically with hip radiographs showing an aspherical femoral (Cam impingement) or anterosuperior acetabular overhang (Pincer impingement), or a combination of both.",
+            "obTopicId": "3130",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Hip Sports Conditions",
+              "section": "Femoroacetabular Impingement (FAI)",
+              "url": "https://www.orthobullets.com/knee-and-sports/3130/femoroacetabular-impingement-fai"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_hip_sports_conditions_trochanteric_bursitis",
+            "title": "Trochanteric Bursitis",
+            "definition": "summary: Trochanteric bursitis is a very common source of lateral hip pain caused by repetitive trauma secondary to iliotibial band tracking over the trochanteric bursa.; Diagnosis is made clinically with point tenderness over the greater trochanter.; Treatment is conservative with NSAIDs, stretching, physical therapy and corticosteroid injections..",
+            "summary": "Trochanteric bursitis is a very common source of lateral hip pain caused by repetitive trauma secondary to iliotibial band tracking over the trochanteric bursa. Diagnosis is made clinically with point tenderness over the greater trochanter.",
+            "obTopicId": "3098",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Hip Sports Conditions",
+              "section": "Trochanteric Bursitis",
+              "url": "https://www.orthobullets.com/knee-and-sports/3098/trochanteric-bursitis"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_hip_sports_conditions_hip_arthroscopy",
+            "title": "Hip Arthroscopy",
+            "definition": "Introduction: Overview; Epidemiology; Indications; Contraindications; Prognosis.",
+            "summary": "Overview Epidemiology",
+            "obTopicId": "3100",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Hip Sports Conditions",
+              "section": "Hip Arthroscopy",
+              "url": "https://www.orthobullets.com/knee-and-sports/3100/hip-arthroscopy"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Hip Sports Conditions"
+        }
+      },
+      {
+        "shortName": "ob_knee_sports_thigh_sports_conditions",
+        "title": "Thigh Sports Conditions",
+        "field": "Lower Extremity",
+        "definition": "OrthoBullets chapter \"Thigh Sports Conditions\" (Lower Extremity): summary: An adductor strain is a common injury to the adductor muscle group that occurs as a result of forceful hip extension & external rotation of an abducted leg.; Diagnosis is made clinically with groin pain with tenderness over the inferior pubic rami and decreased strength with resisted leg adduction compared to the other leg.; Treatment is nonoperative with rest, NSAIDs and protected weight bearing.. SUMMARY: Hamstring injuries most commonly occur at the myotendinous junction in running a…",
+        "summary": "An adductor strain is a common injury to the adductor muscle group that occurs as a result of forceful hip extension & external rotation of an abducted leg. Diagnosis is made clinically with groin pain with tenderness over the inferior pubic rami and decreased strength with resisted leg adduction compared to the other leg. Hamstring injuries most commonly occur at the myotendinous junction in runn",
+        "topics": [
+          {
+            "shortName": "ob_knee_sports_thigh_sports_conditions_adductor_strain",
+            "title": "Adductor Strain",
+            "definition": "summary: An adductor strain is a common injury to the adductor muscle group that occurs as a result of forceful hip extension & external rotation of an abducted leg.; Diagnosis is made clinically with groin pain with tenderness over the inferior pubic rami and decreased strength with resisted leg adduction compared to the other leg.; Treatment is nonoperative with rest, NSAIDs and protected weight bearing..",
+            "summary": "An adductor strain is a common injury to the adductor muscle group that occurs as a result of forceful hip extension & external rotation of an abducted leg. Diagnosis is made clinically with groin pain with tenderness over the inferior pubic rami and decreased strength with resisted leg adduction compared to the other leg.",
+            "obTopicId": "3101",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Thigh Sports Conditions",
+              "section": "Adductor Strain",
+              "url": "https://www.orthobullets.com/knee-and-sports/3101/adductor-strain"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_thigh_sports_conditions_hamstring_injuries",
+            "title": "Hamstring Injuries",
+            "definition": "SUMMARY: Hamstring injuries most commonly occur at the myotendinous junction in running athletes as a result of sudden hip flexion and knee extension.; Diagnosis can be made clinically with ecchymosis in the posterior thigh, tenderness over the hamstring muscles and avoidance of knee extension. Diagnosis can be confirmed with MRI.; Treatment is generally conservative with rest, ice, and protected weightbearing. Multiple tendon involvement or bony avulsion may require operative management..",
+            "summary": "Hamstring injuries most commonly occur at the myotendinous junction in running athletes as a result of sudden hip flexion and knee extension. Diagnosis can be made clinically with ecchymosis in the posterior thigh, tenderness over the hamstring muscles and avoidance of knee extension. Diagnosis can be confirmed with MRI.",
+            "obTopicId": "3102",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Thigh Sports Conditions",
+              "section": "Hamstring Injuries",
+              "url": "https://www.orthobullets.com/knee-and-sports/3102/hamstring-injuries"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_thigh_sports_conditions_quadriceps_contusion",
+            "title": "Quadriceps Contusion",
+            "definition": "summary: A quadriceps contusion is a muscle injury to the quadriceps caused by a direct blow to the anterior thigh.; Diagnosis is made clinically with tenderness and ecchymosis over the anterior thigh.; Treatment is conservative with NSAIDs, rest and immobilization in 120 degrees of flexion using an ace wrap or hinged knee brace immediately after injury for 24-48 hours..",
+            "summary": "A quadriceps contusion is a muscle injury to the quadriceps caused by a direct blow to the anterior thigh. Diagnosis is made clinically with tenderness and ecchymosis over the anterior thigh.",
+            "obTopicId": "3103",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Thigh Sports Conditions",
+              "section": "Quadriceps Contusion",
+              "url": "https://www.orthobullets.com/knee-and-sports/3103/quadriceps-contusion"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_thigh_sports_conditions_rectus_femoris_strain",
+            "title": "Rectus Femoris Strain",
+            "definition": "summary: A rectus femoris strain is a traumatic injury caused by overstretching of the muscle which results in tearing of the muscle fibers of the rectus femoris.; Diagnosis is made clinically with tenderness over the rectus femoris made worse with resisted hip flexion or extension.; Treatment is conservative with NSAIDs, rest and stretching..",
+            "summary": "A rectus femoris strain is a traumatic injury caused by overstretching of the muscle which results in tearing of the muscle fibers of the rectus femoris. Diagnosis is made clinically with tenderness over the rectus femoris made worse with resisted hip flexion or extension.",
+            "obTopicId": "3104",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Thigh Sports Conditions",
+              "section": "Rectus Femoris Strain",
+              "url": "https://www.orthobullets.com/knee-and-sports/3104/rectus-femoris-strain"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Thigh Sports Conditions"
+        }
+      },
+      {
+        "shortName": "ob_knee_sports_leg_sports_conditions",
+        "title": "Leg Sports Conditions",
+        "field": "Lower Extremity",
+        "definition": "OrthoBullets chapter \"Leg Sports Conditions\" (Lower Extremity): summary: Exertional compartment syndrome is an exercise-induced condition of the extremity characterized by reversible ischemia to muscles within a muscular compartment.; Diagnosis is made by obtaining compartment pressures at rest, during exercise and post-exercise.; Treatment generally involves surgical fasciotomies of the compartments involved.. Summary: Proximal tibiofibular joint ganglion cyst is a rare, mucin-filled synovial cyst. They typically are seen in adults and present with lateral …",
+        "summary": "Exertional compartment syndrome is an exercise-induced condition of the extremity characterized by reversible ischemia to muscles within a muscular compartment. Diagnosis is made by obtaining compartment pressures at rest, during exercise and post-exercise. Proximal tibiofibular joint ganglion cyst is a rare, mucin-filled synovial cyst. They typically are seen in adults and present with lateral kn",
+        "topics": [
+          {
+            "shortName": "ob_knee_sports_leg_sports_conditions_exertional_compartment_syndrome",
+            "title": "Exertional Compartment Syndrome",
+            "definition": "summary: Exertional compartment syndrome is an exercise-induced condition of the extremity characterized by reversible ischemia to muscles within a muscular compartment.; Diagnosis is made by obtaining compartment pressures at rest, during exercise and post-exercise.; Treatment generally involves surgical fasciotomies of the compartments involved..",
+            "summary": "Exertional compartment syndrome is an exercise-induced condition of the extremity characterized by reversible ischemia to muscles within a muscular compartment. Diagnosis is made by obtaining compartment pressures at rest, during exercise and post-exercise.",
+            "obTopicId": "3106",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Leg Sports Conditions",
+              "section": "Exertional Compartment Syndrome",
+              "url": "https://www.orthobullets.com/knee-and-sports/3106/exertional-compartment-syndrome"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_leg_sports_conditions_proximal_tibiofibular_joint_ganglion_cysts",
+            "title": "Proximal Tibiofibular Joint Ganglion Cysts",
+            "definition": "Summary: Proximal tibiofibular joint ganglion cyst is a rare, mucin-filled synovial cyst. They typically are seen in adults and present with lateral knee pain, fullness, and neurological symptoms due to compression of the common peroneal nerve.; Diagnosis is often initially made based on typical MRI findings and is confirmed histologically.; Nonoperative treatment is indicated for asymptomatic lesions. Operative treatment is indicated for persistent symptoms or associated neurological deficits..",
+            "summary": "Proximal tibiofibular joint ganglion cyst is a rare, mucin-filled synovial cyst. They typically are seen in adults and present with lateral knee pain, fullness, and neurological symptoms due to compression of the common peroneal nerve. Diagnosis is often initially made based on typical MRI findings and is confirmed histologically.",
+            "obTopicId": "423108",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Leg Sports Conditions",
+              "section": "Proximal Tibiofibular Joint Ganglion Cysts",
+              "url": "https://www.orthobullets.com/knee-and-sports/423108/proximal-tibiofibular-joint-ganglion-cysts"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_leg_sports_conditions_popliteal_artery_entrapment_syndrome",
+            "title": "Popliteal Artery Entrapment Syndrome",
+            "definition": "summary: Popliteal artery entrapment syndrome is a condition characterized by constriction of the popliteal artery by adjacent muscles, tendons or fibrous tissue.; Diagnosis can be suspected clinically with diminished pulses with active foot plantar flexion or passive foot dorsiflexion and confirmed with a lower extremity arteriogram.; Treatment is generally conservative for mild symptoms with vascular surgery indicated for patients with refractory symptoms..",
+            "summary": "Popliteal artery entrapment syndrome is a condition characterized by constriction of the popliteal artery by adjacent muscles, tendons or fibrous tissue. Diagnosis can be suspected clinically with diminished pulses with active foot plantar flexion or passive foot dorsiflexion and confirmed with a lower extremity arteriogram.",
+            "obTopicId": "3107",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Leg Sports Conditions",
+              "section": "Popliteal Artery Entrapment Syndrome",
+              "url": "https://www.orthobullets.com/knee-and-sports/3107/popliteal-artery-entrapment-syndrome"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_leg_sports_conditions_tibial_stress_syndrome_shin_splints",
+            "title": "Tibial Stress Syndrome (Shin Splints)",
+            "definition": "summary: Tibial stress syndrome (also known as shin splints) is an overuse injury or repetitive-load injury of the shin area that leads to persistent dull anterior leg pain.; Diagnosis is made clinically with tenderness along the posteromedial distal tibia made worse with plantarflexion. Radiographs or bone scans may be obtained to rule out stress fractures.; Treatment is generally nonoperative with NSAIDs, rest and activity modifications..",
+            "summary": "Tibial stress syndrome (also known as shin splints) is an overuse injury or repetitive-load injury of the shin area that leads to persistent dull anterior leg pain. Diagnosis is made clinically with tenderness along the posteromedial distal tibia made worse with plantarflexion. Radiographs or bone scans may be obtained to rule out stress fractures.",
+            "obTopicId": "3108",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Leg Sports Conditions",
+              "section": "Tibial Stress Syndrome (Shin Splints)",
+              "url": "https://www.orthobullets.com/knee-and-sports/3108/tibial-stress-syndrome-shin-splints"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Leg Sports Conditions"
+        }
+      },
+      {
+        "shortName": "ob_knee_sports_stress_fractures",
+        "title": "Stress Fractures",
+        "field": "Lower Extremity",
+        "definition": "OrthoBullets chapter \"Stress Fractures\" (Lower Extremity): summary: A Femoral Neck Stress Fracture (FNSF) is caused by repetitive loading of the femoral neck that leads to either compression side (inferior-medial neck) or tension side (superior-lateral neck) stress fractures.; Diagnosis can be be made with radiographs but findings often lag behind often resulting in negative radiographs early on. MRI is the diagnostic study of choice in the presence of normal radiographs.; Nonoperative treatment is indicated for compression sided fractures with < 50% fe…",
+        "summary": "A Femoral Neck Stress Fracture (FNSF) is caused by repetitive loading of the femoral neck that leads to either compression side (inferior-medial neck) or tension side (superior-lateral neck) stress fractures. Diagnosis can be be made with radiographs but findings often lag behind often resulting in negative radiographs early on. MRI is the diagnostic study of choice in the presence of normal… Femo",
+        "topics": [
+          {
+            "shortName": "ob_knee_sports_stress_fractures_femoral_neck_stress_fx",
+            "title": "Femoral Neck Stress FX",
+            "definition": "summary: A Femoral Neck Stress Fracture (FNSF) is caused by repetitive loading of the femoral neck that leads to either compression side (inferior-medial neck) or tension side (superior-lateral neck) stress fractures.; Diagnosis can be be made with radiographs but findings often lag behind often resulting in negative radiographs early on. MRI is the diagnostic study of choice in the presence of normal radiographs.; Nonoperative treatment is indicated for compression sided fractures with < 50% femoral neck width. Cannulated screw fixation is indicated for tension sided stress fractures or compression sided fractures with > 50% width or hip effusion..",
+            "summary": "A Femoral Neck Stress Fracture (FNSF) is caused by repetitive loading of the femoral neck that leads to either compression side (inferior-medial neck) or tension side (superior-lateral neck) stress fractures. Diagnosis can be be made with radiographs but findings often lag behind often resulting in negative radiographs early on. MRI is the diagnostic study of choice in the presence of normal…",
+            "obTopicId": "3110",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Stress Fractures",
+              "section": "Femoral Neck Stress FX",
+              "url": "https://www.orthobullets.com/knee-and-sports/3110/femoral-neck-stress-fractures"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_stress_fractures_femoral_shaft_stress_fx",
+            "title": "Femoral Shaft Stress FX",
+            "definition": "summary: Femoral shaft stress fractures are overuse injuries in which abnormal stresses are placed on trabecular bone of the femoral shaft resulting in microfractures.; Diagnosis can often be made on radiographs alone but MRI studies should be obtained in patients with normal radiographs with a high degree of suspicion for stress fracture.; Treatment is nonoperative with protected weightbearing in young patients with good bone quality. Prophylactic intramedullary nailing is recommended in patients > 60 or those with osteopenia..",
+            "summary": "Femoral shaft stress fractures are overuse injuries in which abnormal stresses are placed on trabecular bone of the femoral shaft resulting in microfractures. Diagnosis can often be made on radiographs alone but MRI studies should be obtained in patients with normal radiographs with a high degree of suspicion for stress fracture.",
+            "obTopicId": "3111",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Stress Fractures",
+              "section": "Femoral Shaft Stress FX",
+              "url": "https://www.orthobullets.com/knee-and-sports/3111/femoral-shaft-stress-fractures"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_stress_fractures_tibial_shaft_stress_fx",
+            "title": "Tibial Shaft Stress FX",
+            "definition": "Summary: A tibial shaft stress fracture is an overuse injury where normal or abnormal bone is subjected to repetitive stress, resulting in microfractures.; Diagnosis can often be made on radiographs alone but MRI studies should be obtained in patients with normal radiographs with a high degree of suspicion for stress fracture.; Treatment is activity restriction with protected weight-bearing in most cases. Surgical intramedullary nailing is recommended in the presence of an anterior tibia tension-sided stress fracture (\"dreaded black line\")..",
+            "summary": "A tibial shaft stress fracture is an overuse injury where normal or abnormal bone is subjected to repetitive stress, resulting in microfractures. Diagnosis can often be made on radiographs alone but MRI studies should be obtained in patients with normal radiographs with a high degree of suspicion for stress fracture.",
+            "obTopicId": "3112",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Stress Fractures",
+              "section": "Tibial Shaft Stress FX",
+              "url": "https://www.orthobullets.com/knee-and-sports/3112/tibial-shaft-stress-fractures"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_stress_fractures_rib_stress_fracture",
+            "title": "Rib Stress Fracture",
+            "definition": "summary: A rib stress fracture in an uncommon site of stress fracture that typically occurs due to repetitive contraction of the chest wall muscles.; Diagnosis can be made with radiographs but often require CT or MRI for accurate diagnosis.; Treatment consists of rest, analgesia and cessation of inciting activity for ~4-6 weeks..",
+            "summary": "A rib stress fracture in an uncommon site of stress fracture that typically occurs due to repetitive contraction of the chest wall muscles. Diagnosis can be made with radiographs but often require CT or MRI for accurate diagnosis.",
+            "obTopicId": "12108",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Stress Fractures",
+              "section": "Rib Stress Fracture",
+              "url": "https://www.orthobullets.com/knee-and-sports/12108/rib-stress-fracture"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Stress Fractures"
+        }
+      },
+      {
+        "shortName": "ob_knee_sports_team_physician",
+        "title": "Team physician",
+        "field": "Team Physician",
+        "definition": "OrthoBullets chapter \"Team physician\" (Team Physician): Types of Contractions/Movements. Anaerobic vs. Aerobic Introduction: AAOS, AOSSM, AFP, and AAP have collaborated to form the \"Preparticipation Physical Examination Task Force\"; Goal is to identify conditions that may predispose an athlete to injury or illness.; Should be performed in all athletes; Legal necessity for high school and collegiate participation; Orthopaedic history and questionnaire most useful tool for identifying musculoskeletal problems; Physical examination. Ear and: Auricular h…",
+        "summary": "Types of Contractions/Movements AAOS, AOSSM, AFP, and AAP have collaborated to form the \"Preparticipation Physical Examination Task Force\" Goal is to identify conditions that may predispose an athlete to injury or illness.",
+        "topics": [
+          {
+            "shortName": "ob_knee_sports_team_physician_exercise_science",
+            "title": "Exercise Science",
+            "definition": "Types of Contractions/Movements. Anaerobic vs. Aerobic",
+            "summary": "Types of Contractions/Movements",
+            "obTopicId": "3118",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Team physician",
+              "section": "Exercise Science",
+              "url": "https://www.orthobullets.com/knee-and-sports/3118/exercise-science"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_team_physician_pre_participation_physical_exam_in_athlete",
+            "title": "Pre-Participation Physical Exam in Athlete",
+            "definition": "Introduction: AAOS, AOSSM, AFP, and AAP have collaborated to form the \"Preparticipation Physical Examination Task Force\"; Goal is to identify conditions that may predispose an athlete to injury or illness.; Should be performed in all athletes; Legal necessity for high school and collegiate participation; Orthopaedic history and questionnaire most useful tool for identifying musculoskeletal problems; Physical examination.",
+            "summary": "AAOS, AOSSM, AFP, and AAP have collaborated to form the \"Preparticipation Physical Examination Task Force\" Goal is to identify conditions that may predispose an athlete to injury or illness.",
+            "obTopicId": "3119",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Team physician",
+              "section": "Pre-Participation Physical Exam in Athlete",
+              "url": "https://www.orthobullets.com/knee-and-sports/3119/pre-participation-physical-exam-in-athlete"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_team_physician_ear_eye_mouth_injuries",
+            "title": "Ear, Eye, Mouth Injuries",
+            "definition": "Ear and: Auricular hematoma; Septal hematoma.",
+            "summary": "Auricular hematoma Septal hematoma",
+            "obTopicId": "3120",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Team physician",
+              "section": "Ear, Eye, Mouth Injuries",
+              "url": "https://www.orthobullets.com/knee-and-sports/3120/ear-eye-mouth-injuries"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_team_physician_cardiac_conditions",
+            "title": "Cardiac Conditions",
+            "definition": "Summary: Cardiac conditions are the most common cause of sudden death in young athletic patients and comprise of hypertrophic cardiomyopathy (most common), coronary artery disease, and commotio cordis.; Diagnosis requires a thorough history and physical exam to identify a history of chest pain, palpitations, syncope during exercise, and evaluation for murmurs. An EKG or echocardiogram should be performed when there is a high suspicion of hypertrophic cardiomyopathy.; Treatment is focused on prevention with avoidance of vigorous exercise when hypertrophic cardiomyopathy is diagnosed. If commotio cordis develops, prompt treatment with cardiac defibrillation is required for survival..",
+            "summary": "Cardiac conditions are the most common cause of sudden death in young athletic patients and comprise of hypertrophic cardiomyopathy (most common), coronary artery disease, and commotio cordis. Diagnosis requires a thorough history and physical exam to identify a history of chest pain, palpitations, syncope during exercise, and evaluation for murmurs. An EKG or echocardiogram should be performed…",
+            "obTopicId": "3121",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Team physician",
+              "section": "Cardiac Conditions",
+              "url": "https://www.orthobullets.com/knee-and-sports/3121/cardiac-conditions"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_team_physician_pulmonary_conditions_in_athletes",
+            "title": "Pulmonary Conditions in Athletes",
+            "definition": "Overview. Asthma",
+            "summary": "This topic covers pulmonary conditions seen in the athlete and covers",
+            "obTopicId": "3122",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Team physician",
+              "section": "Pulmonary Conditions in Athletes",
+              "url": "https://www.orthobullets.com/knee-and-sports/3122/pulmonary-conditions-in-athletes"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_team_physician_visceral_blunt_trauma",
+            "title": "Visceral Blunt Trauma",
+            "definition": "Introduction: Injuries include (specifics below); Risk factors.",
+            "summary": "Injuries include (specifics below) Risk factors",
+            "obTopicId": "3123",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Team physician",
+              "section": "Visceral Blunt Trauma",
+              "url": "https://www.orthobullets.com/knee-and-sports/3123/visceral-blunt-trauma"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_team_physician_infectious_diseases_in_athletes",
+            "title": "Infectious Diseases in Athletes",
+            "definition": "Methicillin-Resistant Staph Aureus (MRSA): MRSA is a bacterium which causes infection in humans; Epidemiology; Pathophysiology; Presentation; Treatment.",
+            "summary": "MRSA is a bacterium which causes infection in humans Epidemiology",
+            "obTopicId": "3124",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Team physician",
+              "section": "Infectious Diseases in Athletes",
+              "url": "https://www.orthobullets.com/knee-and-sports/3124/infectious-diseases-in-athletes"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_team_physician_the_female_athlete",
+            "title": "The Female Athlete",
+            "definition": "Introduction: Physiologic differences exist between men and women; Women have; Athletic injuries.",
+            "summary": "Physiologic differences exist between men and women Women have",
+            "obTopicId": "3125",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Team physician",
+              "section": "The Female Athlete",
+              "url": "https://www.orthobullets.com/knee-and-sports/3125/the-female-athlete"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_team_physician_steroids_and_stimulants",
+            "title": "Steroids & Stimulants",
+            "definition": "Anabolic steroids: Introduction; Intake; Evaluation; Physical exam; Type of steroids.",
+            "summary": "Introduction Intake",
+            "obTopicId": "3126",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Team physician",
+              "section": "Steroids & Stimulants",
+              "url": "https://www.orthobullets.com/knee-and-sports/3126/steroids-and-stimulants"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Team physician"
+        }
+      },
+      {
+        "shortName": "ob_knee_sports_head_and_neck_sports_injuries",
+        "title": "Head & Neck Sports Injuries",
+        "field": "Team Physician",
+        "definition": "OrthoBullets chapter \"Head & Neck Sports Injuries\" (Team Physician): Summary: Concussions are a subset of mild traumatic brain injury (mTBI) characterized by acute transient impairment of neurologic function secondary to an impulsive force transmitted to the head.; Diagnosis is made by careful neurological evaluation of an athlete following head trauma with a focus on cognitive function.; Treatment is immediate removal from play followed by cognitive and physical rest for 24-48 hours, and subsequent completion of a graduated return to play protocol.. Introduction…",
+        "summary": "Concussions are a subset of mild traumatic brain injury (mTBI) characterized by acute transient impairment of neurologic function secondary to an impulsive force transmitted to the head. Diagnosis is made by careful neurological evaluation of an athlete following head trauma with a focus on cognitive function. Injuries to the cervical spine can occur in all sports and range from soft tissue injuri",
+        "topics": [
+          {
+            "shortName": "ob_knee_sports_head_and_neck_sports_injuries_concussions_mild_traumatic_brain_injury",
+            "title": "Concussions (Mild Traumatic Brain Injury)",
+            "definition": "Summary: Concussions are a subset of mild traumatic brain injury (mTBI) characterized by acute transient impairment of neurologic function secondary to an impulsive force transmitted to the head.; Diagnosis is made by careful neurological evaluation of an athlete following head trauma with a focus on cognitive function.; Treatment is immediate removal from play followed by cognitive and physical rest for 24-48 hours, and subsequent completion of a graduated return to play protocol..",
+            "summary": "Concussions are a subset of mild traumatic brain injury (mTBI) characterized by acute transient impairment of neurologic function secondary to an impulsive force transmitted to the head. Diagnosis is made by careful neurological evaluation of an athlete following head trauma with a focus on cognitive function.",
+            "obTopicId": "3113",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Head & Neck Sports Injuries",
+              "section": "Concussions (Mild Traumatic Brain Injury)",
+              "url": "https://www.orthobullets.com/knee-and-sports/3113/concussions-mild-traumatic-brain-injury"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_head_and_neck_sports_injuries_neck_injuries_in_athletes",
+            "title": "Neck Injuries in Athletes",
+            "definition": "Introduction. Epidemiology",
+            "summary": "Injuries to the cervical spine can occur in all sports and range from soft tissue injuries to quadriplegia",
+            "obTopicId": "3114",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Head & Neck Sports Injuries",
+              "section": "Neck Injuries in Athletes",
+              "url": "https://www.orthobullets.com/knee-and-sports/3114/neck-injuries-in-athletes"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_head_and_neck_sports_injuries_burners_and_stingers",
+            "title": "Burners & Stingers",
+            "definition": "summary: Burners and stingers (also known as \"dead arm syndrome\") refer to a transient brachial plexus neuropraxia that most commonly occur due to a direct traumatic or tractional injury in contact sports.; Diagnosis is made clinically with a neurological examination most commonly consistent of unilateral tingling in the arm with transient weakness in C5, C6 muscles (deltoid, biceps).; Treatment is typically observation and return to play if symptoms completely resolve. Players are not allowed to return to play in the setting of persistent or bilateral symptoms..",
+            "summary": "Burners and stingers (also known as \"dead arm syndrome\") refer to a transient brachial plexus neuropraxia that most commonly occur due to a direct traumatic or tractional injury in contact sports. Diagnosis is made clinically with a neurological examination most commonly consistent of unilateral tingling in the arm with transient weakness in C5, C6 muscles (deltoid, biceps).",
+            "obTopicId": "3115",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Head & Neck Sports Injuries",
+              "section": "Burners & Stingers",
+              "url": "https://www.orthobullets.com/knee-and-sports/3115/burners-and-stingers"
+            }
+          },
+          {
+            "shortName": "ob_knee_sports_head_and_neck_sports_injuries_exertional_heat_illnesses",
+            "title": "Exertional Heat Illnesses",
+            "definition": "Summary: Exertional heat illness is a broad category of injuries related to heat gains exceeding heat losses; Any athlete or laborer who collapses or has a mental status change should undergo prompt medical evaluation; Exertional heat stroke is a life-threatening condition that requires immediate whole-body cooling, IV rehydration, and EMS activation.",
+            "summary": "Exertional heat illness is a broad category of injuries related to heat gains exceeding heat losses Any athlete or laborer who collapses or has a mental status change should undergo prompt medical evaluation",
+            "obTopicId": "3117",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Head & Neck Sports Injuries",
+              "section": "Exertional Heat Illnesses",
+              "url": "https://www.orthobullets.com/knee-and-sports/3117/exertional-heat-illnesses"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Head & Neck Sports Injuries"
+        }
+      }
+    ]
+  }
+}

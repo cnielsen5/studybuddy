@@ -1,0 +1,1425 @@
+{
+  "_meta": {
+    "source": "https://www.orthobullets.com/user/dashboard?id=all&specialty=9&menu=topic",
+    "generated_by": "scripts/scrape-orthobullets-taxonomy.ts",
+    "scraped_at": "2026-06-27T22:21:21.043Z",
+    "section": "basic_science",
+    "field_count": 4,
+    "chapter_count": 18,
+    "topic_count": 90,
+    "backfilled_at": "2026-06-28T19:04:32.428Z",
+    "backfilled_by": "scripts/backfill-orthobullets-topic-content.ts"
+  },
+  "taxonomy": {
+    "section": "basic_science",
+    "provenance": "orthobullets_site",
+    "obDataPending": false,
+    "notes": "Scraped from the OrthoBullets specialty dashboard (Field → Chapter → Topic). Fields collapsed into the section; chapters → L4, topics → L5.",
+    "chapters": [
+      {
+        "shortName": "ob_basic_science_bone_basic_science",
+        "title": "Bone Basic Science",
+        "field": "MSK Science",
+        "definition": "OrthoBullets chapter \"Bone Basic Science\" (MSK Science): Introduction. Anatomic classification Osteoblasts: Origin; Structure; Function; Signaling; Location. composition of bone. Organic component",
+        "summary": "Bone can be classified based on both anatomy and structure Origin Structure",
+        "topics": [
+          {
+            "shortName": "ob_basic_science_bone_basic_science_types_of_bone",
+            "title": "Types of Bone",
+            "definition": "Introduction. Anatomic classification",
+            "summary": "Bone can be classified based on both anatomy and structure",
+            "obTopicId": "9001",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Bone Basic Science",
+              "section": "Types of Bone",
+              "url": "https://www.orthobullets.com/basic-science/9001/types-of-bone"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_bone_basic_science_bone_cells",
+            "title": "Bone Cells",
+            "definition": "Osteoblasts: Origin; Structure; Function; Signaling; Location.",
+            "summary": "Origin Structure",
+            "obTopicId": "9002",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Bone Basic Science",
+              "section": "Bone Cells",
+              "url": "https://www.orthobullets.com/basic-science/9002/bone-cells"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_bone_basic_science_bone_matrix",
+            "title": "Bone Matrix",
+            "definition": "composition of bone. Organic component",
+            "summary": "Bone is made up of",
+            "obTopicId": "9003",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Bone Basic Science",
+              "section": "Bone Matrix",
+              "url": "https://www.orthobullets.com/basic-science/9003/bone-matrix"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_bone_basic_science_bone_marrow",
+            "title": "Bone Marrow",
+            "definition": "Types of bone marrow: Gelatinous tissue found in the inner spaces of bone that contains progenitor cells and stromal cells; Types of bone marrow; Function.",
+            "summary": "Gelatinous tissue found in the inner spaces of bone that contains progenitor cells and stromal cells Types of bone marrow",
+            "obTopicId": "9004",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Bone Basic Science",
+              "section": "Bone Marrow",
+              "url": "https://www.orthobullets.com/basic-science/9004/bone-marrow"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_bone_basic_science_bone_circulation",
+            "title": "Bone Circulation",
+            "definition": "Introduction: Bone receives 5-10% of cardiac output; Bones that receive tenuous blood supply; Blood supply to long bone comes from three sources.",
+            "summary": "Bone receives 5-10% of cardiac output Bones that receive tenuous blood supply",
+            "obTopicId": "9005",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Bone Basic Science",
+              "section": "Bone Circulation",
+              "url": "https://www.orthobullets.com/basic-science/9005/bone-circulation"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_bone_basic_science_embryology",
+            "title": "Embryology",
+            "definition": "Limb Development: Overview; Steps of limb development; Limb patterning; Key Genes; Mutations.",
+            "summary": "Overview Steps of limb development",
+            "obTopicId": "9078",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Bone Basic Science",
+              "section": "Embryology",
+              "url": "https://www.orthobullets.com/basic-science/9078/embryology"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_bone_basic_science_endochondral_bone_formation",
+            "title": "Endochondral Bone Formation",
+            "definition": "Introduction: Endochondral bone formation occurs in; Cell biology; Molecular biology; Biomechanics.",
+            "summary": "Endochondral bone formation occurs in Cell biology",
+            "obTopicId": "9006",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Bone Basic Science",
+              "section": "Endochondral Bone Formation",
+              "url": "https://www.orthobullets.com/basic-science/9006/endochondral-bone-formation"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_bone_basic_science_intramembranous_bone_formation",
+            "title": "Intramembranous Bone Formation",
+            "definition": "Introduction: One of the two essential processes during; Physiology; Examples of intramembranous ossification; Associated conditions.",
+            "summary": "One of the two essential processes during Physiology",
+            "obTopicId": "9007",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Bone Basic Science",
+              "section": "Intramembranous Bone Formation",
+              "url": "https://www.orthobullets.com/basic-science/9007/intramembranous-bone-formation"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_bone_basic_science_bone_signaling_and_rankl",
+            "title": "Bone Signaling & RANKL",
+            "definition": "Introduction. Osteoblast Signaling in RANKL pathway",
+            "summary": "Bone metabolism is a dynamic process that balances bone formation and bone resorption",
+            "obTopicId": "9010",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Bone Basic Science",
+              "section": "Bone Signaling & RANKL",
+              "url": "https://www.orthobullets.com/basic-science/9010/bone-signaling-and-rankl"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_bone_basic_science_normal_bone_metabolism",
+            "title": "Normal Bone Metabolism",
+            "definition": "Introduction. Calcium",
+            "summary": "Normal bone metabolism is the complex sequence of bone turnover (osteoclastogenesis) and bone formation (osteoblastogenesis)",
+            "obTopicId": "9012",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Bone Basic Science",
+              "section": "Normal Bone Metabolism",
+              "url": "https://www.orthobullets.com/basic-science/9012/normal-bone-metabolism"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_bone_basic_science_pth_and_vit_d_physiology",
+            "title": "PTH & Vit D Physiology",
+            "definition": "Introduction. Vitamin D Physiology",
+            "summary": "Vitamin D and PTH play an important role in calcium homeostasis",
+            "obTopicId": "9091",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Bone Basic Science",
+              "section": "PTH & Vit D Physiology",
+              "url": "https://www.orthobullets.com/basic-science/9091/pth-and-vit-d-physiology"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Bone Basic Science"
+        }
+      },
+      {
+        "shortName": "ob_basic_science_fracture_healing_and_nonunion",
+        "title": "Fracture Healing & Nonunion",
+        "field": "MSK Science",
+        "definition": "OrthoBullets chapter \"Fracture Healing & Nonunion\" (MSK Science): Introduction: Wolff's Law; Piezoelectric charges; Hueter-Volkmann Law. Introduction: Fracture healing involves a complex and sequential set of events to restore injured bone to pre-fracture condition; Fracture stability dictates the type of healing that will occur; Modes of bone healing. Introduction: A nonunion is an arrest in the fracture repair process; Pathophysiology.",
+        "summary": "Wolff's Law Piezoelectric charges Fracture healing involves a complex and sequential set of events to restore injured bone to pre-fracture condition Fracture stability dictates the type of healing that will occur",
+        "topics": [
+          {
+            "shortName": "ob_basic_science_fracture_healing_and_nonunion_bone_remodeling",
+            "title": "Bone Remodeling",
+            "definition": "Introduction: Wolff's Law; Piezoelectric charges; Hueter-Volkmann Law.",
+            "summary": "Wolff's Law Piezoelectric charges",
+            "obTopicId": "9008",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Fracture Healing & Nonunion",
+              "section": "Bone Remodeling",
+              "url": "https://www.orthobullets.com/basic-science/9008/bone-remodeling"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_fracture_healing_and_nonunion_fracture_healing",
+            "title": "Fracture Healing",
+            "definition": "Introduction: Fracture healing involves a complex and sequential set of events to restore injured bone to pre-fracture condition; Fracture stability dictates the type of healing that will occur; Modes of bone healing.",
+            "summary": "Fracture healing involves a complex and sequential set of events to restore injured bone to pre-fracture condition Fracture stability dictates the type of healing that will occur",
+            "obTopicId": "9009",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Fracture Healing & Nonunion",
+              "section": "Fracture Healing",
+              "url": "https://www.orthobullets.com/basic-science/9009/fracture-healing"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_fracture_healing_and_nonunion_nonunion_and_bone_defects",
+            "title": "Nonunion and Bone Defects",
+            "definition": "Introduction: A nonunion is an arrest in the fracture repair process; Pathophysiology.",
+            "summary": "A nonunion is an arrest in the fracture repair process Pathophysiology",
+            "obTopicId": "9069",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Fracture Healing & Nonunion",
+              "section": "Nonunion and Bone Defects",
+              "url": "https://www.orthobullets.com/basic-science/9069/nonunion-and-bone-defects"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_fracture_healing_and_nonunion_bone_growth_factors",
+            "title": "Bone Growth Factors",
+            "definition": "SUMMARY. Bone Morphogenetic Protein (BMP) & SMADs",
+            "summary": "SUMMARY",
+            "obTopicId": "9086",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Fracture Healing & Nonunion",
+              "section": "Bone Growth Factors",
+              "url": "https://www.orthobullets.com/basic-science/9086/bone-growth-factors"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_fracture_healing_and_nonunion_bone_grafting",
+            "title": "Bone Grafting",
+            "definition": "Introduction: A material with either osteoconductive, osteoinductive, and/or osteogenic properties; Epidemiology; Indications; Resorption rates; Outcomes.",
+            "summary": "A material with either osteoconductive, osteoinductive, and/or osteogenic properties Epidemiology",
+            "obTopicId": "9011",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Fracture Healing & Nonunion",
+              "section": "Bone Grafting",
+              "url": "https://www.orthobullets.com/basic-science/9011/bone-grafting"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Fracture Healing & Nonunion"
+        }
+      },
+      {
+        "shortName": "ob_basic_science_biologic_tissues",
+        "title": "Biologic Tissues",
+        "field": "MSK Science",
+        "definition": "OrthoBullets chapter \"Biologic Tissues\" (MSK Science): Overview. Gross Anatomy function. Composition Function: Transfer forces from muscle to bone to produce joint motion; Tendons orient themselves along stress.",
+        "summary": "Key topics of this chapter include Ligaments function to",
+        "topics": [
+          {
+            "shortName": "ob_basic_science_biologic_tissues_muscle_biology_and_physiology",
+            "title": "Muscle Biology & Physiology",
+            "definition": "Overview. Gross Anatomy",
+            "summary": "Key topics of this chapter include",
+            "obTopicId": "9021",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Biologic Tissues",
+              "section": "Muscle Biology & Physiology",
+              "url": "https://www.orthobullets.com/basic-science/9021/muscle-biology-and-physiology"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_biologic_tissues_ligaments",
+            "title": "Ligaments",
+            "definition": "function. Composition",
+            "summary": "Ligaments function to",
+            "obTopicId": "9016",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Biologic Tissues",
+              "section": "Ligaments",
+              "url": "https://www.orthobullets.com/basic-science/9016/ligaments"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_biologic_tissues_tendons",
+            "title": "Tendons",
+            "definition": "Function: Transfer forces from muscle to bone to produce joint motion; Tendons orient themselves along stress.",
+            "summary": "Transfer forces from muscle to bone to produce joint motion Tendons orient themselves along stress",
+            "obTopicId": "9015",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Biologic Tissues",
+              "section": "Tendons",
+              "url": "https://www.orthobullets.com/basic-science/9015/tendons"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_biologic_tissues_articular_cartilage",
+            "title": "Articular Cartilage",
+            "definition": "forms of cartilage. Articular (hyaline) Cartilage Components",
+            "summary": "Articular cartilage is one of five forms of cartilage",
+            "obTopicId": "9017",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Biologic Tissues",
+              "section": "Articular Cartilage",
+              "url": "https://www.orthobullets.com/basic-science/9017/articular-cartilage"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_biologic_tissues_cartilage",
+            "title": "Cartilage",
+            "definition": "Types of cartilage. Cartilage biology",
+            "summary": "Main types of cartilage include",
+            "obTopicId": "9014",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Biologic Tissues",
+              "section": "Cartilage",
+              "url": "https://www.orthobullets.com/basic-science/9014/cartilage"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_biologic_tissues_synovium_and_synovial_fluid",
+            "title": "Synovium & Synovial Fluid",
+            "definition": "Synovium: Function; Composition.",
+            "summary": "Function Composition",
+            "obTopicId": "9018",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Biologic Tissues",
+              "section": "Synovium & Synovial Fluid",
+              "url": "https://www.orthobullets.com/basic-science/9018/synovium-and-synovial-fluid"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_biologic_tissues_collagen",
+            "title": "Collagen",
+            "definition": "Overview: Collagen is a naturally occurring family of proteins; Makes up the most abundant type of protein found in humans; Collagen is made of elongated fibrils formed by fibroblast cells.",
+            "summary": "Collagen is a naturally occurring family of proteins Makes up the most abundant type of protein found in humans",
+            "obTopicId": "9013",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Biologic Tissues",
+              "section": "Collagen",
+              "url": "https://www.orthobullets.com/basic-science/9013/collagen"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Biologic Tissues"
+        }
+      },
+      {
+        "shortName": "ob_basic_science_molecular_biology",
+        "title": "Molecular Biology",
+        "field": "MSK Science",
+        "definition": "OrthoBullets chapter \"Molecular Biology\" (MSK Science): Nuclear structures: Chromosomes; Deoxyribonucleic acid (DNA); Gene; Ribonucleic acid (RNA). Types of Immune Responses. Types of Immunological Reactions Different inheritance patterns: Allows for specific patterns of inheritance controlled by a single gene pair (“monogenic”); In general.",
+        "summary": "Chromosomes Deoxyribonucleic acid (DNA) Types of Immune Responses",
+        "topics": [
+          {
+            "shortName": "ob_basic_science_molecular_biology_molecular_biology_basics",
+            "title": "Molecular Biology Basics",
+            "definition": "Nuclear structures: Chromosomes; Deoxyribonucleic acid (DNA); Gene; Ribonucleic acid (RNA).",
+            "summary": "Chromosomes Deoxyribonucleic acid (DNA)",
+            "obTopicId": "9084",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Molecular Biology",
+              "section": "Molecular Biology Basics",
+              "url": "https://www.orthobullets.com/basic-science/9084/molecular-biology-basics"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_molecular_biology_immunology",
+            "title": "Immunology",
+            "definition": "Types of Immune Responses. Types of Immunological Reactions",
+            "summary": "Types of Immune Responses",
+            "obTopicId": "9077",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Molecular Biology",
+              "section": "Immunology",
+              "url": "https://www.orthobullets.com/basic-science/9077/immunology"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_molecular_biology_inheritance_patterns_of_orthopaedic_syndromes",
+            "title": "Inheritance Patterns of Orthopaedic Syndromes",
+            "definition": "Different inheritance patterns: Allows for specific patterns of inheritance controlled by a single gene pair (“monogenic”); In general.",
+            "summary": "Allows for specific patterns of inheritance controlled by a single gene pair (“monogenic”) In general",
+            "obTopicId": "9024",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Molecular Biology",
+              "section": "Inheritance Patterns of Orthopaedic Syndromes",
+              "url": "https://www.orthobullets.com/basic-science/9024/inheritance-patterns-of-orthopaedic-syndromes"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_molecular_biology_genetic_pearls",
+            "title": "Genetic Pearls",
+            "definition": "Genetic conditions. Epigenetics",
+            "summary": "Genetic conditions",
+            "obTopicId": "9025",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Molecular Biology",
+              "section": "Genetic Pearls",
+              "url": "https://www.orthobullets.com/basic-science/9025/genetic-pearls"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Molecular Biology"
+        }
+      },
+      {
+        "shortName": "ob_basic_science_material_science",
+        "title": "Material Science",
+        "field": "MSK Science",
+        "definition": "OrthoBullets chapter \"Material Science\" (MSK Science): Definitions: Biomaterials encompasses all synthetic and natural materials used during orthopaedic procedures; Basic definitions; Mechanical property definitions. Introduction: Charateristics of orthopaedic implants depend; Structural characteristic differs from strength characteristic. Introduction. Screws",
+        "summary": "Biomaterials encompasses all synthetic and natural materials used during orthopaedic procedures Basic definitions Charateristics of orthopaedic implants depend Structural characteristic differs from strength characteristic",
+        "topics": [
+          {
+            "shortName": "ob_basic_science_material_science_material_properties",
+            "title": "Material Properties",
+            "definition": "Definitions: Biomaterials encompasses all synthetic and natural materials used during orthopaedic procedures; Basic definitions; Mechanical property definitions.",
+            "summary": "Biomaterials encompasses all synthetic and natural materials used during orthopaedic procedures Basic definitions",
+            "obTopicId": "9062",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Material Science",
+              "section": "Material Properties",
+              "url": "https://www.orthobullets.com/basic-science/9062/material-properties"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_material_science_structural_properties",
+            "title": "Structural Properties",
+            "definition": "Introduction: Charateristics of orthopaedic implants depend; Structural characteristic differs from strength characteristic.",
+            "summary": "Charateristics of orthopaedic implants depend Structural characteristic differs from strength characteristic",
+            "obTopicId": "9061",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Material Science",
+              "section": "Structural Properties",
+              "url": "https://www.orthobullets.com/basic-science/9061/structural-properties"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_material_science_orthopaedic_implants",
+            "title": "Orthopaedic Implants",
+            "definition": "Introduction. Screws",
+            "summary": "Characteristics of orthopaedic implants depends on",
+            "obTopicId": "9063",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Material Science",
+              "section": "Orthopaedic Implants",
+              "url": "https://www.orthobullets.com/basic-science/9063/orthopaedic-implants"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_material_science_bioabsorbable_materials",
+            "title": "Bioabsorbable Materials",
+            "definition": "Introduction: Bioabsorbable materials were invented to address issues with synthetic implants including; Indications include but are not limited to.",
+            "summary": "Bioabsorbable materials were invented to address issues with synthetic implants including Indications include but are not limited to",
+            "obTopicId": "9071",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Material Science",
+              "section": "Bioabsorbable Materials",
+              "url": "https://www.orthobullets.com/basic-science/9071/bioabsorbable-materials"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_material_science_rehab_and_prosthetics",
+            "title": "Rehab & Prosthetics",
+            "definition": "Introduction: The goal of prosthetics are to restore limb function to as close to original function; Requires a multidisciplinary team approach for coorindation of efforts to achieve the best outcome; Prosthetics.",
+            "summary": "The goal of prosthetics are to restore limb function to as close to original function Requires a multidisciplinary team approach for coorindation of efforts to achieve the best outcome",
+            "obTopicId": "9072",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Material Science",
+              "section": "Rehab & Prosthetics",
+              "url": "https://www.orthobullets.com/basic-science/9072/rehab-and-prosthetics"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Material Science"
+        }
+      },
+      {
+        "shortName": "ob_basic_science_metabolic_bone_disease",
+        "title": "Metabolic Bone Disease",
+        "field": "Systemic Disease",
+        "definition": "OrthoBullets chapter \"Metabolic Bone Disease\" (Systemic Disease): Summary: Osteopenia & Osteoporosis represent a continuum of conditions that present with a decrease in bone mass and disrupted bone microarchitecture most commonly as a result of increased age, menopause, and metabolic abnormalities.; Diagnosis is made with a lumbar-based DEXA scan with osteopenia having a T-score of 1 to 2.5 standard deviations below the peak bone mass of a 25-year-old individual, and osteoporosis having a T-score >2.5 standard of deviations below the peak bone mass of a 25-yea…",
+        "summary": "Osteopenia & Osteoporosis represent a continuum of conditions that present with a decrease in bone mass and disrupted bone microarchitecture most commonly as a result of increased age, menopause, and metabolic abnormalities. Diagnosis is made with a lumbar-based DEXA scan with osteopenia having a T-score of 1 to 2.5 standard deviations below the peak bone mass of a 25-year-old individual, and… Ren",
+        "topics": [
+          {
+            "shortName": "ob_basic_science_metabolic_bone_disease_osteopenia_and_osteoporosis",
+            "title": "Osteopenia & Osteoporosis",
+            "definition": "Summary: Osteopenia & Osteoporosis represent a continuum of conditions that present with a decrease in bone mass and disrupted bone microarchitecture most commonly as a result of increased age, menopause, and metabolic abnormalities.; Diagnosis is made with a lumbar-based DEXA scan with osteopenia having a T-score of 1 to 2.5 standard deviations below the peak bone mass of a 25-year-old individual, and osteoporosis having a T-score >2.5 standard of deviations below the peak bone mass of a 25-year-old individual.; Treatment involves a multidisciplinary approach with medical management and physical activity to increase bone mineral density and to help prevent fractures..",
+            "summary": "Osteopenia & Osteoporosis represent a continuum of conditions that present with a decrease in bone mass and disrupted bone microarchitecture most commonly as a result of increased age, menopause, and metabolic abnormalities. Diagnosis is made with a lumbar-based DEXA scan with osteopenia having a T-score of 1 to 2.5 standard deviations below the peak bone mass of a 25-year-old individual, and…",
+            "obTopicId": "9032",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Metabolic Bone Disease",
+              "section": "Osteopenia & Osteoporosis",
+              "url": "https://www.orthobullets.com/basic-science/9032/osteopenia-and-osteoporosis"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_metabolic_bone_disease_renal_osteodystrophy",
+            "title": "Renal Osteodystrophy",
+            "definition": "summary: Renal Osteodystrophy is a form of metabolic bone disease seen in patients with chronic renal insufficiency characterized by bone mineralization deficiency due to electrolyte and endocrine abnormalities. Patients present with osteomalacia, osteonecrosis and pathologic fractures.; Diagnosis is made based on a thorough evaluation of serum labs, clinical features, and radiographic findings.; Treatment involves medical management to resolve the etiology of the underlying renal condition..",
+            "summary": "Renal Osteodystrophy is a form of metabolic bone disease seen in patients with chronic renal insufficiency characterized by bone mineralization deficiency due to electrolyte and endocrine abnormalities. Patients present with osteomalacia, osteonecrosis and pathologic fractures. Diagnosis is made based on a thorough evaluation of serum labs, clinical features, and radiographic findings.",
+            "obTopicId": "9030",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Metabolic Bone Disease",
+              "section": "Renal Osteodystrophy",
+              "url": "https://www.orthobullets.com/basic-science/9030/renal-osteodystrophy"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_metabolic_bone_disease_rickets",
+            "title": "Rickets",
+            "definition": "Summary: Rickets is a metabolic bone disease caused by a defect in mineralization of osteoid matrix caused by inadequate calcium and phosphate that occurs prior to closure of the physes. Patients present with characteristic features such as bowing of long bones, ligamentous laxity, brittle bones and enlargement of costal cartilage.; Diagnosis is made based on a thorough evaluation of serum labs, clinical features, and radiographic findings.; Treatment involves medical management to resolve the underlying etiology of rickets..",
+            "summary": "Rickets is a metabolic bone disease caused by a defect in mineralization of osteoid matrix caused by inadequate calcium and phosphate that occurs prior to closure of the physes. Patients present with characteristic features such as bowing of long bones, ligamentous laxity, brittle bones and enlargement of costal cartilage. Diagnosis is made based on a thorough evaluation of serum labs, clinical…",
+            "obTopicId": "9031",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Metabolic Bone Disease",
+              "section": "Rickets",
+              "url": "https://www.orthobullets.com/basic-science/9031/rickets"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_metabolic_bone_disease_osteomalacia",
+            "title": "Osteomalacia",
+            "definition": "summary: Osteomalacia is a metabolic bone disease where defective mineralization results in a large amount or unmineralized osteoid.; Diagnosis is made based on a thorough evaluation of serum labs, clinical features, and radiographic findings.; Treatment involves medical management with Vitamin D supplementation and resolving the underlying etiology..",
+            "summary": "Osteomalacia is a metabolic bone disease where defective mineralization results in a large amount or unmineralized osteoid. Diagnosis is made based on a thorough evaluation of serum labs, clinical features, and radiographic findings.",
+            "obTopicId": "9033",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Metabolic Bone Disease",
+              "section": "Osteomalacia",
+              "url": "https://www.orthobullets.com/basic-science/9033/osteomalacia"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_metabolic_bone_disease_oncogenic_osteomalacia",
+            "title": "Oncogenic Osteomalacia",
+            "definition": "summary: Oncogenic Osteomalacia is a paraneoplastic syndrome of renal phosphate wasting caused by a bone or soft tissue tumor. Patients may present with osteopenia and pathologic fractures.; Diagnosis is made with PET/SPECT scans to identify the location of the tumor.; Treatment involves identifying and resecting the tumor..",
+            "summary": "Oncogenic Osteomalacia is a paraneoplastic syndrome of renal phosphate wasting caused by a bone or soft tissue tumor. Patients may present with osteopenia and pathologic fractures. Diagnosis is made with PET/SPECT scans to identify the location of the tumor.",
+            "obTopicId": "9092",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Metabolic Bone Disease",
+              "section": "Oncogenic Osteomalacia",
+              "url": "https://www.orthobullets.com/basic-science/9092/oncogenic-osteomalacia"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Metabolic Bone Disease"
+        }
+      },
+      {
+        "shortName": "ob_basic_science_systemic_arthropathies",
+        "title": "Systemic Arthropathies",
+        "field": "Systemic Disease",
+        "definition": "OrthoBullets chapter \"Systemic Arthropathies\" (Systemic Disease): summary: Rheumatoid Arthritis is a chronic systemic autoimmune disease caused by IgM cell-mediated immune response against soft tissues, cartilage, and bone. Patients present with insidious onset of morning joint stiffness, polyarthropathy, subcutaneous nodules, with progressive hand and wrist deformity.; Diagnosis is made with a combination of physical examination, characteristic radiographs, and labs to evaluate for presence of RF and anti-CCP antibodies.; Treatment is primarily medical manage…",
+        "summary": "Rheumatoid Arthritis is a chronic systemic autoimmune disease caused by IgM cell-mediated immune response against soft tissues, cartilage, and bone. Patients present with insidious onset of morning joint stiffness, polyarthropathy, subcutaneous nodules, with progressive hand and wrist deformity. Diagnosis is made with a combination of physical examination, characteristic radiographs, and labs to… ",
+        "topics": [
+          {
+            "shortName": "ob_basic_science_systemic_arthropathies_rheumatoid_arthritis",
+            "title": "Rheumatoid Arthritis",
+            "definition": "summary: Rheumatoid Arthritis is a chronic systemic autoimmune disease caused by IgM cell-mediated immune response against soft tissues, cartilage, and bone. Patients present with insidious onset of morning joint stiffness, polyarthropathy, subcutaneous nodules, with progressive hand and wrist deformity.; Diagnosis is made with a combination of physical examination, characteristic radiographs, and labs to evaluate for presence of RF and anti-CCP antibodies.; Treatment is primarily medical management with NSAIDS, DMARDS, biologics, antimalarials, and steroids..",
+            "summary": "Rheumatoid Arthritis is a chronic systemic autoimmune disease caused by IgM cell-mediated immune response against soft tissues, cartilage, and bone. Patients present with insidious onset of morning joint stiffness, polyarthropathy, subcutaneous nodules, with progressive hand and wrist deformity. Diagnosis is made with a combination of physical examination, characteristic radiographs, and labs to…",
+            "obTopicId": "9085",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Systemic Arthropathies",
+              "section": "Rheumatoid Arthritis",
+              "url": "https://www.orthobullets.com/basic-science/9085/rheumatoid-arthritis"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_systemic_arthropathies_psoriatic_arthritis",
+            "title": "Psoriatic Arthritis",
+            "definition": "Summary: Psoriatic Arthritis is a seronegative spondyloarthropathy that presents with DIP predominant arthritis of the hands, rash with silvery plaques, uveitis, and dysmorphic nails.; Diagnosis is made based on a thorough evaluation of serum labs, clinical features, and radiographic findings.; Treatment is usually medical management with a variety of options including corticosteroids, disease modifying anti-rheumatic drugs, and biological drugs..",
+            "summary": "Psoriatic Arthritis is a seronegative spondyloarthropathy that presents with DIP predominant arthritis of the hands, rash with silvery plaques, uveitis, and dysmorphic nails. Diagnosis is made based on a thorough evaluation of serum labs, clinical features, and radiographic findings.",
+            "obTopicId": "9050",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Systemic Arthropathies",
+              "section": "Psoriatic Arthritis",
+              "url": "https://www.orthobullets.com/basic-science/9050/psoriatic-arthritis"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_systemic_arthropathies_juvenile_idiopathic_arthritis",
+            "title": "Juvenile Idiopathic Arthritis",
+            "definition": "summary: Juvenile Idiopathic Arthritis is a chronic autoimmune inflammatory arthritis lasting greater than 6 weeks in a patient younger than 16 years of age that typically presents with morning joint stiffness and ocular infections.; Diagnosis is one of exclusion and presence of infection must be ruled out. One of the following must be present to confirm the diagnosis: rash, iridocyclitis, pericarditis, tenosynovitis, intermittent fever, presence of RF, C-spine involvement, morning stiffness.; Treatment is usually immunomodulating drugs and frequent ophthalmologic exams..",
+            "summary": "Juvenile Idiopathic Arthritis is a chronic autoimmune inflammatory arthritis lasting greater than 6 weeks in a patient younger than 16 years of age that typically presents with morning joint stiffness and ocular infections. Diagnosis is one of exclusion and presence of infection must be ruled out. One of the following must be present to confirm the diagnosis: rash, iridocyclitis, pericarditis,…",
+            "obTopicId": "4108",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Systemic Arthropathies",
+              "section": "Juvenile Idiopathic Arthritis",
+              "url": "https://www.orthobullets.com/basic-science/4108/juvenile-idiopathic-arthritis"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_systemic_arthropathies_gout",
+            "title": "Gout",
+            "definition": "summary: Gout is a form of inflammatory arthritis caused by intraarticular monosodium urate crystal deposition that typically presents with recurrent acute exacerbation of joint swelling and severe pain.; Diagnosis is made by joint aspiration and crystal analysis showing strongly negatively birefringent needle-shaped intracellular crystals.; Treatment for acute gout attacks is NSAIDs with chronic gout being treated with allopurinol and medical management to reduce uric acid..",
+            "summary": "Gout is a form of inflammatory arthritis caused by intraarticular monosodium urate crystal deposition that typically presents with recurrent acute exacerbation of joint swelling and severe pain. Diagnosis is made by joint aspiration and crystal analysis showing strongly negatively birefringent needle-shaped intracellular crystals.",
+            "obTopicId": "9041",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Systemic Arthropathies",
+              "section": "Gout",
+              "url": "https://www.orthobullets.com/basic-science/9041/gout"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_systemic_arthropathies_pseudogout_cppd",
+            "title": "Pseudogout (CPPD)",
+            "definition": "summary: Pseudogout is a common form of inflammatory arthritis caused by intra-articular calcium pyrophosphate dihydrate crystal deposition and presents with attacks of joint pain, joint stiffness and swelling.; Diagnosis is made by joint aspiration and crystal analysis showing weakly positively birefringent rhomboid-shaped crystals; Treatment is usually medical management with NSAIDs..",
+            "summary": "Pseudogout is a common form of inflammatory arthritis caused by intra-articular calcium pyrophosphate dihydrate crystal deposition and presents with attacks of joint pain, joint stiffness and swelling. Diagnosis is made by joint aspiration and crystal analysis showing weakly positively birefringent rhomboid-shaped crystals",
+            "obTopicId": "7040",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Systemic Arthropathies",
+              "section": "Pseudogout (CPPD)",
+              "url": "https://www.orthobullets.com/basic-science/7040/pseudogout-cppd"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_systemic_arthropathies_hemochromatosis",
+            "title": "Hemochromatosis",
+            "definition": "summary: Hemochromatosis is a common metabolic disorder caused by deposition of excess levels of iron in the blood and tissue. Patients present with arthritis, chondrocalcinosis, diabetes, and skin hyperpigmentation.; Diagnosis is made with liver biopsy showing hemosiderin in parenchymal cells.; Treatment is identifying and treating the underlying etiology, decreasing iron intake, and a phlebotomy regimen..",
+            "summary": "Hemochromatosis is a common metabolic disorder caused by deposition of excess levels of iron in the blood and tissue. Patients present with arthritis, chondrocalcinosis, diabetes, and skin hyperpigmentation. Diagnosis is made with liver biopsy showing hemosiderin in parenchymal cells.",
+            "obTopicId": "9043",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Systemic Arthropathies",
+              "section": "Hemochromatosis",
+              "url": "https://www.orthobullets.com/basic-science/9043/hemochromatosis"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_systemic_arthropathies_ochronosis",
+            "title": "Ochronosis",
+            "definition": "summary: Ochronosis is a metabolic arthropathy caused by alkaptonuria with excess homogentistic acid deposited in the joints. Patients present with early degenerative joint disease, spondylitis, and black urine.; Diagnosis is made with detection of homogentisic acid in urine.; Treatment is similar to that of osteoarthritis with observation, NSAIDs, tramadol and corticosteroids for mild to moderate symptoms. Arthroplasty is indicated for severe symptoms..",
+            "summary": "Ochronosis is a metabolic arthropathy caused by alkaptonuria with excess homogentistic acid deposited in the joints. Patients present with early degenerative joint disease, spondylitis, and black urine. Diagnosis is made with detection of homogentisic acid in urine.",
+            "obTopicId": "9046",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Systemic Arthropathies",
+              "section": "Ochronosis",
+              "url": "https://www.orthobullets.com/basic-science/9046/ochronosis"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_systemic_arthropathies_reiter_s_syndrome",
+            "title": "Reiter's Syndrome",
+            "definition": "summary: Reiter's Syndrome is a seronegative spondyloarthropathy, often caused by an underlying infection, that typically presents with urethritis, ocular conjunctivitis, uveitis, and/or arthritis.; Diagnosis is made clinically based on history, symptoms, and ophthalmologic exam.; Treatment is usually antibiotics, symptomatic treatment, and observation..",
+            "summary": "Reiter's Syndrome is a seronegative spondyloarthropathy, often caused by an underlying infection, that typically presents with urethritis, ocular conjunctivitis, uveitis, and/or arthritis. Diagnosis is made clinically based on history, symptoms, and ophthalmologic exam.",
+            "obTopicId": "9049",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Systemic Arthropathies",
+              "section": "Reiter's Syndrome",
+              "url": "https://www.orthobullets.com/basic-science/9049/reiters-syndrome"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_systemic_arthropathies_hemophilic_arthropathy",
+            "title": "Hemophilic Arthropathy",
+            "definition": "summary: Hemophilic Arthropathy is a systemic arthropathy most commonly caused by hemophilia, and characterized by repetitive hemarthroses and progressive joint disease.; Diagnosis is made with with recurrent atraumatic hemarthroses in a patient with a bleeding disorder such as hemophilia A, hemophilia B or von Willibrand's disease.; Treatment is usually compressive dressings, analgesics, and bleeding factor administration. Joint arthroplasty is indicated in cases of severe end-stage degenerative joint disease..",
+            "summary": "Hemophilic Arthropathy is a systemic arthropathy most commonly caused by hemophilia, and characterized by repetitive hemarthroses and progressive joint disease. Diagnosis is made with with recurrent atraumatic hemarthroses in a patient with a bleeding disorder such as hemophilia A, hemophilia B or von Willibrand's disease.",
+            "obTopicId": "9051",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Systemic Arthropathies",
+              "section": "Hemophilic Arthropathy",
+              "url": "https://www.orthobullets.com/basic-science/9051/hemophilic-arthropathy"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Systemic Arthropathies"
+        }
+      },
+      {
+        "shortName": "ob_basic_science_thromboembolism",
+        "title": "Thromboembolism",
+        "field": "Systemic Disease",
+        "definition": "OrthoBullets chapter \"Thromboembolism\" (Systemic Disease): Summary: Venous thromboembolism (VTE) includes both pulmonary embolism (PE) and deep venous thrombosis (DVT); Diagnosis is generally made with clinical exam and imaging to include ultrasound for extremity DVT and CT chest for pulmonary embolism; Treatment is pharmacologic blood thinners. Summary: Deep vein thrombosis (DVT) is a common complication that is caused by a blood clot originating in deep veins and propagating proximally. This condition most commonly presents in middle-aged and elderly …",
+        "summary": "Venous thromboembolism (VTE) includes both pulmonary embolism (PE) and deep venous thrombosis (DVT) Diagnosis is generally made with clinical exam and imaging to include ultrasound for extremity DVT and CT chest for pulmonary embolism Deep vein thrombosis (DVT) is a common complication that is caused by a blood clot originating in deep veins and propagating proximally. This condition most commonly",
+        "topics": [
+          {
+            "shortName": "ob_basic_science_thromboembolism_thromboembolism_pe_and_dvt_prophylaxis",
+            "title": "Thromboembolism (PE & DVT) Prophylaxis",
+            "definition": "Summary: Venous thromboembolism (VTE) includes both pulmonary embolism (PE) and deep venous thrombosis (DVT); Diagnosis is generally made with clinical exam and imaging to include ultrasound for extremity DVT and CT chest for pulmonary embolism; Treatment is pharmacologic blood thinners.",
+            "summary": "Venous thromboembolism (VTE) includes both pulmonary embolism (PE) and deep venous thrombosis (DVT) Diagnosis is generally made with clinical exam and imaging to include ultrasound for extremity DVT and CT chest for pulmonary embolism",
+            "obTopicId": "9056",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Thromboembolism",
+              "section": "Thromboembolism (PE & DVT) Prophylaxis",
+              "url": "https://www.orthobullets.com/basic-science/9056/thromboembolism-pe-and-dvt-prophylaxis"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_thromboembolism_deep_vein_thrombosis",
+            "title": "Deep Vein Thrombosis",
+            "definition": "Summary: Deep vein thrombosis (DVT) is a common complication that is caused by a blood clot originating in deep veins and propagating proximally. This condition most commonly presents in middle-aged and elderly adults with swelling and pain in the calf.; Diagnosis is made in combination with a clinical examination that demonstrates calf pain and swelling, as well as advanced imaging (e.g., duplex ultrasound).; Treatment of DVT is primarily anticoagulation to prevent further morbidity, and in some instances, thrombolytic therapy and/or surgical intervention is indicated..",
+            "summary": "Deep vein thrombosis (DVT) is a common complication that is caused by a blood clot originating in deep veins and propagating proximally. This condition most commonly presents in middle-aged and elderly adults with swelling and pain in the calf. Diagnosis is made in combination with a clinical examination that demonstrates calf pain and swelling, as well as advanced imaging (e.g., duplex…",
+            "obTopicId": "422816",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Thromboembolism",
+              "section": "Deep Vein Thrombosis",
+              "url": "https://www.orthobullets.com/basic-science/422816/deep-vein-thrombosis"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_thromboembolism_pulmonary_embolism",
+            "title": "Pulmonary Embolism",
+            "definition": "Introduction. Presentation",
+            "summary": "Introduction",
+            "obTopicId": "422815",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Thromboembolism",
+              "section": "Pulmonary Embolism",
+              "url": "https://www.orthobullets.com/basic-science/422815/pulmonary-embolism"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_thromboembolism_anticoagulation_medications",
+            "title": "Anticoagulation Medications",
+            "definition": "Introduction: The coagulation cascade comprises a series of reactions that lead to formation of fibrin, which leads to platelet activiation and clot formation; Virchow's triad describes risk factors for thromboembolism and DVT and includes; Orthopaedic surgery predisposes high risk of thromboembolism and certain procedures may require anticoagulation.",
+            "summary": "The coagulation cascade comprises a series of reactions that lead to formation of fibrin, which leads to platelet activiation and clot formation Virchow's triad describes risk factors for thromboembolism and DVT and includes",
+            "obTopicId": "9054",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Thromboembolism",
+              "section": "Anticoagulation Medications",
+              "url": "https://www.orthobullets.com/basic-science/9054/anticoagulation-medications"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_thromboembolism_fat_embolism_syndrome",
+            "title": "Fat Embolism Syndrome",
+            "definition": "summary: Fat Embolism Syndrome is an acute respiratory disorder caused by an inflammatory response to embolized fat globules that may enter the bloodstream as a result of acute long bone fractures or intramedullary instrumentation. Patients present with hypoxia, changes in mental status, and petechial rash.; Diagnosis is made clinically with presence of hypoxemia (PaO2 < 60), CNS depression, petechial rash, and pulmonary edema.; Treatment is focused on prevention with early stabilization of long bone fractures. Mechanical ventilation with high levels of PEEP is the recommended treatment for acute presentation..",
+            "summary": "Fat Embolism Syndrome is an acute respiratory disorder caused by an inflammatory response to embolized fat globules that may enter the bloodstream as a result of acute long bone fractures or intramedullary instrumentation. Patients present with hypoxia, changes in mental status, and petechial rash. Diagnosis is made clinically with presence of hypoxemia (PaO2 < 60), CNS depression, petechial…",
+            "obTopicId": "9055",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Thromboembolism",
+              "section": "Fat Embolism Syndrome",
+              "url": "https://www.orthobullets.com/basic-science/9055/fat-embolism-syndrome"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Thromboembolism"
+        }
+      },
+      {
+        "shortName": "ob_basic_science_hematologic_disease",
+        "title": "Hematologic Disease",
+        "field": "Systemic Disease",
+        "definition": "OrthoBullets chapter \"Hematologic Disease\" (Systemic Disease): summary: Sickle cell disease is a common genetic disorder of abnormal hemoglobin synthesis that causes affected blood cells to become \"sickle shaped\" with an inability to pass through blood vessels efficiently. Patients present with severe bone pain, acute hand swelling, and osteonecrosis.; Diagnosis is made with hemoglobin electrophoresis.; Treatment is medical management with hydroxyurea for sickle cell crises and monitoring for developing of osteonecrosis and osteomyelitis.. summary: Hemophil…",
+        "summary": "Sickle cell disease is a common genetic disorder of abnormal hemoglobin synthesis that causes affected blood cells to become \"sickle shaped\" with an inability to pass through blood vessels efficiently. Patients present with severe bone pain, acute hand swelling, and osteonecrosis. Diagnosis is made with hemoglobin electrophoresis. Hemophilia is a congenital bleeding disorder that results from an X",
+        "topics": [
+          {
+            "shortName": "ob_basic_science_hematologic_disease_sickle_cell_anemia",
+            "title": "Sickle Cell Anemia",
+            "definition": "summary: Sickle cell disease is a common genetic disorder of abnormal hemoglobin synthesis that causes affected blood cells to become \"sickle shaped\" with an inability to pass through blood vessels efficiently. Patients present with severe bone pain, acute hand swelling, and osteonecrosis.; Diagnosis is made with hemoglobin electrophoresis.; Treatment is medical management with hydroxyurea for sickle cell crises and monitoring for developing of osteonecrosis and osteomyelitis..",
+            "summary": "Sickle cell disease is a common genetic disorder of abnormal hemoglobin synthesis that causes affected blood cells to become \"sickle shaped\" with an inability to pass through blood vessels efficiently. Patients present with severe bone pain, acute hand swelling, and osteonecrosis. Diagnosis is made with hemoglobin electrophoresis.",
+            "obTopicId": "4114",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Hematologic Disease",
+              "section": "Sickle Cell Anemia",
+              "url": "https://www.orthobullets.com/basic-science/4114/sickle-cell-anemia"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_hematologic_disease_hemophilia",
+            "title": "Hemophilia",
+            "definition": "summary: Hemophilia is a congenital bleeding disorder that results from an X-linked recessive mutation leading to a decrease in clotting factor VIII or factor IX. Patients present withe excessive bleeding into joints, most commonly the knee.; Diagnosis is made with a plasma factor VIII or IX inhibitor assay.; Treatment is medical management with pain management and clotting factor administration..",
+            "summary": "Hemophilia is a congenital bleeding disorder that results from an X-linked recessive mutation leading to a decrease in clotting factor VIII or factor IX. Patients present withe excessive bleeding into joints, most commonly the knee. Diagnosis is made with a plasma factor VIII or IX inhibitor assay.",
+            "obTopicId": "4113",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Hematologic Disease",
+              "section": "Hemophilia",
+              "url": "https://www.orthobullets.com/basic-science/4113/hemophilia"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_hematologic_disease_operative_blood_loss_and_transfusion",
+            "title": "Operative Blood Loss & Transfusion",
+            "definition": "Preoperative Management: Aimed at optimizing patient hemoglobin levels to allow for better patient stress tolerance at the time of surgery; Preoperative labs.",
+            "summary": "Aimed at optimizing patient hemoglobin levels to allow for better patient stress tolerance at the time of surgery Preoperative labs",
+            "obTopicId": "422806",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Hematologic Disease",
+              "section": "Operative Blood Loss & Transfusion",
+              "url": "https://www.orthobullets.com/basic-science/422806/operative-blood-loss-and-transfusion"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Hematologic Disease"
+        }
+      },
+      {
+        "shortName": "ob_basic_science_neurologic_diseases",
+        "title": "Neurologic Diseases",
+        "field": "Systemic Disease",
+        "definition": "OrthoBullets chapter \"Neurologic Diseases\" (Systemic Disease): summary: Stroke is an acute onset of focal neurologic deficits resulting from diminished blood flow or hemorrhage in the brain.; Diagnosis is made clinically with specific and thorough neurological examination.; Treatment is emergent medical management and possible surgical management depending on underlying cause.. summary: Multiple Sclerosis is a chronic inflammatory disease caused by demyelination and widespread axonal injury in the central nervous system, leading to progressive motor and sen…",
+        "summary": "Stroke is an acute onset of focal neurologic deficits resulting from diminished blood flow or hemorrhage in the brain. Diagnosis is made clinically with specific and thorough neurological examination. Multiple Sclerosis is a chronic inflammatory disease caused by demyelination and widespread axonal injury in the central nervous system, leading to progressive motor and sensory dysfunction. Diagnosi",
+        "topics": [
+          {
+            "shortName": "ob_basic_science_neurologic_diseases_stroke",
+            "title": "Stroke",
+            "definition": "summary: Stroke is an acute onset of focal neurologic deficits resulting from diminished blood flow or hemorrhage in the brain.; Diagnosis is made clinically with specific and thorough neurological examination.; Treatment is emergent medical management and possible surgical management depending on underlying cause..",
+            "summary": "Stroke is an acute onset of focal neurologic deficits resulting from diminished blood flow or hemorrhage in the brain. Diagnosis is made clinically with specific and thorough neurological examination.",
+            "obTopicId": "12288",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Neurologic Diseases",
+              "section": "Stroke",
+              "url": "https://www.orthobullets.com/basic-science/12288/stroke"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_neurologic_diseases_multiple_sclerosis",
+            "title": "Multiple Sclerosis",
+            "definition": "summary: Multiple Sclerosis is a chronic inflammatory disease caused by demyelination and widespread axonal injury in the central nervous system, leading to progressive motor and sensory dysfunction.; Diagnosis is made with MRI with gadolinium of brain and spinal cord.; Treatment is medical management with immunomodulators, antispasticity agents and physical therapy. Currently, there is no cure for the condition..",
+            "summary": "Multiple Sclerosis is a chronic inflammatory disease caused by demyelination and widespread axonal injury in the central nervous system, leading to progressive motor and sensory dysfunction. Diagnosis is made with MRI with gadolinium of brain and spinal cord.",
+            "obTopicId": "9079",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Neurologic Diseases",
+              "section": "Multiple Sclerosis",
+              "url": "https://www.orthobullets.com/basic-science/9079/multiple-sclerosis"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_neurologic_diseases_amyotrophic_lateral_sclerosis_als",
+            "title": "Amyotrophic Lateral Sclerosis (ALS)",
+            "definition": "summary: Amyotrophic Lateral Sclerosis, also referred to as Lou Gehrig's disease, is a progressive motor neuron disorder caused by degeneration of the anterior horn cells of the spinal cord. Patients present with progressive weakness and spasticity leading to impaired breathing, swallowing, and ambulation.; Diagnosis is dependent on demonstration of both upper and lower motor neuron involvement in the same extremity in the absence of pain or sensory symptoms. Nerve conduction studies will show widespread denervation and reinnervation. There are currently no laboratory tests that confirm the diagnosis.; Treatment is currently focused on maintenance of function and comfort. Currently, there is no cure for the condition..",
+            "summary": "Amyotrophic Lateral Sclerosis, also referred to as Lou Gehrig's disease, is a progressive motor neuron disorder caused by degeneration of the anterior horn cells of the spinal cord. Patients present with progressive weakness and spasticity leading to impaired breathing, swallowing, and ambulation. Diagnosis is dependent on demonstration of both upper and lower motor neuron involvement in the…",
+            "obTopicId": "9057",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Neurologic Diseases",
+              "section": "Amyotrophic Lateral Sclerosis (ALS)",
+              "url": "https://www.orthobullets.com/basic-science/9057/amyotrophic-lateral-sclerosis-als"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_neurologic_diseases_complex_regional_pain_syndrome_crps",
+            "title": "Complex Regional Pain Syndrome (CRPS)",
+            "definition": "summary: Complex Regional Pain Syndrome, also known as reflex sympathetic dystrophy, is an idiopathic condition caused by an aberrant inflammatory response that leads to sustained sympathetic activity in a perpetuated reflex arc. Patients present with extremity pain out of proportion to physical exam findings; Diagnosis is made clinically with the Budapest diagnostic criteria and can be confirmed by pain relief with sympathetic block.; Treatment is usually physical therapy, pain medication, nerve stimulation or nerve blockade. Surgical sympathectomy is indicated in cases of progressive pain that fails nonoperative management..",
+            "summary": "Complex Regional Pain Syndrome, also known as reflex sympathetic dystrophy, is an idiopathic condition caused by an aberrant inflammatory response that leads to sustained sympathetic activity in a perpetuated reflex arc. Patients present with extremity pain out of proportion to physical exam findings Diagnosis is made clinically with the Budapest diagnostic criteria and can be confirmed by pain…",
+            "obTopicId": "6095",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Neurologic Diseases",
+              "section": "Complex Regional Pain Syndrome (CRPS)",
+              "url": "https://www.orthobullets.com/basic-science/6095/complex-regional-pain-syndrome-crps"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_neurologic_diseases_myasthenia_gravis",
+            "title": "Myasthenia Gravis",
+            "definition": "summary: Myasthenia Gravis is a common autoimmune disorder caused by autoantibodies directed against the acetlycholine receptor of the neuromuscular junction. Patients present with fluctuating proximal muscle weakness, ocular symptoms, and dysphagia.; Diagnosis is made with serologic testing for anti-AChR autoantibodies.; Treatment is medical management with acetylcholinesterase inhibitors..",
+            "summary": "Myasthenia Gravis is a common autoimmune disorder caused by autoantibodies directed against the acetlycholine receptor of the neuromuscular junction. Patients present with fluctuating proximal muscle weakness, ocular symptoms, and dysphagia. Diagnosis is made with serologic testing for anti-AChR autoantibodies.",
+            "obTopicId": "9070",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Neurologic Diseases",
+              "section": "Myasthenia Gravis",
+              "url": "https://www.orthobullets.com/basic-science/9070/myasthenia-gravis"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Neurologic Diseases"
+        }
+      },
+      {
+        "shortName": "ob_basic_science_systemic_diseases",
+        "title": "Systemic Diseases",
+        "field": "Systemic Disease",
+        "definition": "OrthoBullets chapter \"Systemic Diseases\" (Systemic Disease): summary: Systemic Lupus Erythematosus is a chronic autoimmune disorder of unknown etiology that leads to accumulation of autoimmune complexes in joints, skin, kidneys, lungs, heart, blood vessels, and nervous system. Patients presents with polyarthralgia, butterfly malar rash, renal abnormalities, and cardiac disease.; Diagnosis is made based on a constellation of clinical and physical examination findings along with laboratory studies such ANA and anti-dsDNA antibodies.; Treatment is medical ma…",
+        "summary": "Systemic Lupus Erythematosus is a chronic autoimmune disorder of unknown etiology that leads to accumulation of autoimmune complexes in joints, skin, kidneys, lungs, heart, blood vessels, and nervous system. Patients presents with polyarthralgia, butterfly malar rash, renal abnormalities, and cardiac disease. Diagnosis is made based on a constellation of clinical and physical examination… Pustulos",
+        "topics": [
+          {
+            "shortName": "ob_basic_science_systemic_diseases_systemic_lupus_erythematosus_sle",
+            "title": "Systemic Lupus Erythematosus (SLE)",
+            "definition": "summary: Systemic Lupus Erythematosus is a chronic autoimmune disorder of unknown etiology that leads to accumulation of autoimmune complexes in joints, skin, kidneys, lungs, heart, blood vessels, and nervous system. Patients presents with polyarthralgia, butterfly malar rash, renal abnormalities, and cardiac disease.; Diagnosis is made based on a constellation of clinical and physical examination findings along with laboratory studies such ANA and anti-dsDNA antibodies.; Treatment is medical management with NSAIDS, methotrexate, sulfasalazine, cyclosporine, antimalarials and DMARDs..",
+            "summary": "Systemic Lupus Erythematosus is a chronic autoimmune disorder of unknown etiology that leads to accumulation of autoimmune complexes in joints, skin, kidneys, lungs, heart, blood vessels, and nervous system. Patients presents with polyarthralgia, butterfly malar rash, renal abnormalities, and cardiac disease. Diagnosis is made based on a constellation of clinical and physical examination…",
+            "obTopicId": "9047",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Systemic Diseases",
+              "section": "Systemic Lupus Erythematosus (SLE)",
+              "url": "https://www.orthobullets.com/basic-science/9047/systemic-lupus-erythematosus-sle"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_systemic_diseases_pustulosis_palmoplantaris",
+            "title": "Pustulosis Palmoplantaris",
+            "definition": "summary: Pustulosis Palmoplantaris, also known as pustular psoriasis, is an idiopathic skin condition commonly seen in smokers, that presents with crops of sterile pustules that occur on one or both hands and feet.; Diagnosis is one of exclusion and is made with the presence of 1 to 10 mm sterile pustules on palms or feet with surrounding erythema and fissures. No serological tests are specific for disease.; Treatment is usually general measures such as smoking cessation, avoiding skin irritants, and medical management with topical corticosteroids..",
+            "summary": "Pustulosis Palmoplantaris, also known as pustular psoriasis, is an idiopathic skin condition commonly seen in smokers, that presents with crops of sterile pustules that occur on one or both hands and feet. Diagnosis is one of exclusion and is made with the presence of 1 to 10 mm sterile pustules on palms or feet with surrounding erythema and fissures. No serological tests are specific for disease.",
+            "obTopicId": "4037",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Systemic Diseases",
+              "section": "Pustulosis Palmoplantaris",
+              "url": "https://www.orthobullets.com/basic-science/4037/pustulosis-palmoplantaris"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_systemic_diseases_acute_rheumatic_fever",
+            "title": "Acute Rheumatic Fever",
+            "definition": "summary: Acute Rheumatic Fever is a systemic reaction following Streptococcal pharyngitis which causes a characteristic rash and migratory arthritis that involves multiple large joints.; Diagnosis is based on the Revised Jones criteria.; Treatment is usually oral antibiotics and anti-inflammatories..",
+            "summary": "Acute Rheumatic Fever is a systemic reaction following Streptococcal pharyngitis which causes a characteristic rash and migratory arthritis that involves multiple large joints. Diagnosis is based on the Revised Jones criteria.",
+            "obTopicId": "9045",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Systemic Diseases",
+              "section": "Acute Rheumatic Fever",
+              "url": "https://www.orthobullets.com/basic-science/9045/acute-rheumatic-fever"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_systemic_diseases_scleroderma",
+            "title": "Scleroderma",
+            "definition": "summary: Scleroderma is an autoimmune skin disease caused by collagen deposition with fibrosis in soft tissue, that presents with progressive hardening and induration of the skin, subcutaneous tissues, muscles, and internal organs.; Diagnosis is made based on a constellation of clinical and physical examination findings along with laboratory studies such ANA, anti-centromere antibodies, and anti-Scl-70 antibodies.; Treatment is medical management with NSAIDS, immunosuppressive therapies, and calcium channel blockers in the presence of Raynaud's disease..",
+            "summary": "Scleroderma is an autoimmune skin disease caused by collagen deposition with fibrosis in soft tissue, that presents with progressive hardening and induration of the skin, subcutaneous tissues, muscles, and internal organs. Diagnosis is made based on a constellation of clinical and physical examination findings along with laboratory studies such ANA, anti-centromere antibodies, and anti-Scl-70…",
+            "obTopicId": "322121",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Systemic Diseases",
+              "section": "Scleroderma",
+              "url": "https://www.orthobullets.com/basic-science/322121/scleroderma"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Systemic Diseases"
+        }
+      },
+      {
+        "shortName": "ob_basic_science_metabolic_disease",
+        "title": "Metabolic Disease",
+        "field": "Systemic Disease",
+        "definition": "OrthoBullets chapter \"Metabolic Disease\" (Systemic Disease): causes of hypercalcemia. Presentation causes of hypocalcemia. Presentation Summary: Hypoparathyroidism is the decreased production of parathyroid hormone by chief cells of the parathyroid gland most commonly caused by a thyroidectomy that results in decreased plasma calcium levels, increased plasma phosphate levels, and decreased active Vitamin D levels.; Diagnosis is made by obtaining serum calcium, phosphate, PTH, and 1,25(OH)2 Vitamin D levels.; Treatment is aimed at supplementing vitamin D a…",
+        "summary": "Causes of hypercalcemia include Causes of hypocalcemia include",
+        "topics": [
+          {
+            "shortName": "ob_basic_science_metabolic_disease_hypercalcemia",
+            "title": "Hypercalcemia",
+            "definition": "causes of hypercalcemia. Presentation",
+            "summary": "Causes of hypercalcemia include",
+            "obTopicId": "9026",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Metabolic Disease",
+              "section": "Hypercalcemia",
+              "url": "https://www.orthobullets.com/basic-science/9026/hypercalcemia"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_metabolic_disease_hypocalcemia",
+            "title": "Hypocalcemia",
+            "definition": "causes of hypocalcemia. Presentation",
+            "summary": "Causes of hypocalcemia include",
+            "obTopicId": "9027",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Metabolic Disease",
+              "section": "Hypocalcemia",
+              "url": "https://www.orthobullets.com/basic-science/9027/hypocalcemia"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_metabolic_disease_hypoparathyroidism",
+            "title": "Hypoparathyroidism",
+            "definition": "Summary: Hypoparathyroidism is the decreased production of parathyroid hormone by chief cells of the parathyroid gland most commonly caused by a thyroidectomy that results in decreased plasma calcium levels, increased plasma phosphate levels, and decreased active Vitamin D levels.; Diagnosis is made by obtaining serum calcium, phosphate, PTH, and 1,25(OH)2 Vitamin D levels.; Treatment is aimed at supplementing vitamin D and calcium levels. There is no current hormone replacement therapy available..",
+            "summary": "Hypoparathyroidism is the decreased production of parathyroid hormone by chief cells of the parathyroid gland most commonly caused by a thyroidectomy that results in decreased plasma calcium levels, increased plasma phosphate levels, and decreased active Vitamin D levels. Diagnosis is made by obtaining serum calcium, phosphate, PTH, and 1,25(OH)2 Vitamin D levels.",
+            "obTopicId": "9028",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Metabolic Disease",
+              "section": "Hypoparathyroidism",
+              "url": "https://www.orthobullets.com/basic-science/9028/hypoparathyroidism"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_metabolic_disease_hyperparathyroidism",
+            "title": "Hyperparathyroidism",
+            "definition": "summary: Hyperparathyroidism is the increase in serum parathyroid hormone (PTH) production that may be of primary, secondary or tertiary causes.; Diagnosis is made based on evaluation of serum labs and clinical evaluation.; Treatment can be medical management or tumor resection depending on underlying cause of disease..",
+            "summary": "Hyperparathyroidism is the increase in serum parathyroid hormone (PTH) production that may be of primary, secondary or tertiary causes. Diagnosis is made based on evaluation of serum labs and clinical evaluation.",
+            "obTopicId": "9089",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Metabolic Disease",
+              "section": "Hyperparathyroidism",
+              "url": "https://www.orthobullets.com/basic-science/9089/hyperparathyroidism"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_metabolic_disease_hypophosphatasia",
+            "title": "Hypophosphatasia",
+            "definition": "summary: Hypophosphatasia is a metabolic bone disease caused by a mutation in the isoenzyme of alkaline phosphatase that leads to low levels of alkaline phosphate and generalized impairment of bone mineralization. Patients present with clinical manifestations similar to rickets with bow legs, short stature, abnormal teeth, and increased susceptibility to fractures.; Diagnosis is made with the presence of phosphoethanolamine in the urine.; Treatment modalities include enzyme replacement therapy, anti-inflammatories, and multidisciplinary care.",
+            "summary": "Hypophosphatasia is a metabolic bone disease caused by a mutation in the isoenzyme of alkaline phosphatase that leads to low levels of alkaline phosphate and generalized impairment of bone mineralization. Patients present with clinical manifestations similar to rickets with bow legs, short stature, abnormal teeth, and increased susceptibility to fractures. Diagnosis is made with the presence of…",
+            "obTopicId": "9083",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Metabolic Disease",
+              "section": "Hypophosphatasia",
+              "url": "https://www.orthobullets.com/basic-science/9083/hypophosphatasia"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_metabolic_disease_pseudohypoparathyroidism",
+            "title": "Pseudohypoparathyroidism",
+            "definition": "summary: Pseudohypoparathyroidism is a rare genetic metabolic bone disease caused by a defect in the GNAS1 protein that leads to a decreased response to PTH. Patients present with characteristic findings of short 4th and 5th metacarpals, round facies, short stature, and symptoms of hypocalcemia.; Diagnosis is made based on physical examination findings, serum labs, and results of the Ellsworth-Howard test.; Treatment is medical management with oral calcium and 1alpha-hydroxylated vitamin D metabolites..",
+            "summary": "Pseudohypoparathyroidism is a rare genetic metabolic bone disease caused by a defect in the GNAS1 protein that leads to a decreased response to PTH. Patients present with characteristic findings of short 4th and 5th metacarpals, round facies, short stature, and symptoms of hypocalcemia. Diagnosis is made based on physical examination findings, serum labs, and results of the Ellsworth-Howard test.",
+            "obTopicId": "9029",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Metabolic Disease",
+              "section": "Pseudohypoparathyroidism",
+              "url": "https://www.orthobullets.com/basic-science/9029/pseudohypoparathyroidism"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_metabolic_disease_scurvy",
+            "title": "Scurvy",
+            "definition": "summary: Scurvy is disease caused by severe Vitamin C deficiency which presents with joint effusions, swelling over long bones, bleeding gums, loosening of teeth, hematuria, and susceptibility to hemorrhage.; Diagnosis is made based on history, clinical and radiological picture, and resolution of symptoms following vitamin C administration. Lab tests are usually not helpful.; Treatment is prompt administration of Vitamin C..",
+            "summary": "Scurvy is disease caused by severe Vitamin C deficiency which presents with joint effusions, swelling over long bones, bleeding gums, loosening of teeth, hematuria, and susceptibility to hemorrhage. Diagnosis is made based on history, clinical and radiological picture, and resolution of symptoms following vitamin C administration. Lab tests are usually not helpful.",
+            "obTopicId": "9034",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Metabolic Disease",
+              "section": "Scurvy",
+              "url": "https://www.orthobullets.com/basic-science/9034/scurvy"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Metabolic Disease"
+        }
+      },
+      {
+        "shortName": "ob_basic_science_medications",
+        "title": "Medications",
+        "field": "Medications & Toxicity",
+        "definition": "OrthoBullets chapter \"Medications\" (Medications & Toxicity): Overview. Indications Perioperative Abx Overview: Includes preoperative and postoperative antibiotics; Indications; Most likely pathogens to cause infection in orthopaedic procedures includes. Overview of By Mechanism: PENICILLINSCEPHALOSPORINSFLUOROQUINOLONESAMINOGLYCOSIDESMONOBACTAMSCARBAPENEMSMACROLIDESOTHERNaturalFirst generationCiprofloxacin (Cipro)Levofloxacin (Levaguin)Moxifloxacin (Avelox)Norfloxacin AmikacinGentamicinKanamycinNeomycinTobramycin AztreonamErtapenemImienemMeropenemAzithrom…",
+        "summary": "Overview Includes preoperative and postoperative antibiotics Indications",
+        "topics": [
+          {
+            "shortName": "ob_basic_science_medications_bisphosphonates",
+            "title": "Bisphosphonates",
+            "definition": "Overview. Indications",
+            "summary": "Overview",
+            "obTopicId": "9058",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Medications",
+              "section": "Bisphosphonates",
+              "url": "https://www.orthobullets.com/basic-science/9058/bisphosphonates"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_medications_prophylactic_antibiotics",
+            "title": "Prophylactic Antibiotics",
+            "definition": "Perioperative Abx Overview: Includes preoperative and postoperative antibiotics; Indications; Most likely pathogens to cause infection in orthopaedic procedures includes.",
+            "summary": "Includes preoperative and postoperative antibiotics Indications",
+            "obTopicId": "9088",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Medications",
+              "section": "Prophylactic Antibiotics",
+              "url": "https://www.orthobullets.com/basic-science/9088/prophylactic-antibiotics"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_medications_antibiotic_classification_and_mechanism",
+            "title": "Antibiotic Classification & Mechanism",
+            "definition": "Overview of By Mechanism: PENICILLINSCEPHALOSPORINSFLUOROQUINOLONESAMINOGLYCOSIDESMONOBACTAMSCARBAPENEMSMACROLIDESOTHERNaturalFirst generationCiprofloxacin (Cipro)Levofloxacin (Levaguin)Moxifloxacin (Avelox)Norfloxacin AmikacinGentamicinKanamycinNeomycinTobramycin AztreonamErtapenemImienemMeropenemAzithromycinClarithromycinDirithromycinErythromycinClindamycinVancomycinRifampinDoxycyclineLinezolidTetracyclineTrimethoprim/ sulfamethoxacolePenicillin GPenicillinCephalothinCefazolin (Ancef, Kefzol)CephapririnCephalexin (Keflex)Penicillinase ResistantSecond GenerationMethicillinNafcillinOxacillinotherCefacorCefotetan (Cefotan)otherAminopenicillinsThird GenerationAmpicillinCeftriaxone (Rocephin)otherFourth GenerationCefpiromeCefepime; Antibiotic Grouping By MechanismCell Wall SynthesisPenicillinsCephalosporinsVancomycinBeta-lactamase InhibitorsCarbapenemsAztreonamPolymycinBacitracinProtein Synthesis InhibitorsInhibit 30s SubunitAminoglycosides (gentamicin)TetracyclinesInhibit 50s SubunitMacrolidesChloramphenicolClindamycinLinezolidStreptograminsDNA Synthesis InhibitorsFluoroquinolonesMetronidazoleRNA synthesis InhibitorsRifampinMycolic Acid synthesis inhibitorsIsoniazidFolic Acid…",
+            "summary": "PENICILLINSCEPHALOSPORINSFLUOROQUINOLONESAMINOGLYCOSIDESMONOBACTAMSCARBAPENEMSMACROLIDESOTHERNaturalFirst generationCiprofloxacin (Cipro)Levofloxacin (Levaguin)Moxifloxacin (Avelox)Norfloxacin AmikacinGentamicinKanamycinNeomycinTobramycin AztreonamErtapenemImienemMeropenemAzithromycinClarithromycinDirithromycinErythromycinClindamycinVancomycinRifampinDoxycyclineLinezolidTetracyclineTrimethoprim/…",
+            "obTopicId": "9059",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Medications",
+              "section": "Antibiotic Classification & Mechanism",
+              "url": "https://www.orthobullets.com/basic-science/9059/antibiotic-classification-and-mechanism"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_medications_platelet_rich_plasma",
+            "title": "Platelet-Rich Plasma",
+            "definition": "Introduction: Platelet rich plasma (PRP) consists of plasma sample from one's own blood enriched with autologous platelets; Platelet function; Proposed function of PRP.",
+            "summary": "Platelet rich plasma (PRP) consists of plasma sample from one's own blood enriched with autologous platelets Platelet function",
+            "obTopicId": "9090",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Medications",
+              "section": "Platelet-Rich Plasma",
+              "url": "https://www.orthobullets.com/basic-science/9090/platelet-rich-plasma"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Medications"
+        }
+      },
+      {
+        "shortName": "ob_basic_science_pain_management",
+        "title": "Pain Management",
+        "field": "Medications & Toxicity",
+        "definition": "OrthoBullets chapter \"Pain Management\" (Medications & Toxicity): Introduction: Non-steroidal anti-inflammatory drugs (NSAIDS) have the following effects; Mechanism; Indications; Contraindications. Introduction: Definitions; Pathophysiology; Agents (details below). Anesthesia. General Anesthesia",
+        "summary": "Non-steroidal anti-inflammatory drugs (NSAIDS) have the following effects Mechanism Definitions Pathophysiology",
+        "topics": [
+          {
+            "shortName": "ob_basic_science_pain_management_anti_inflammatory_medications",
+            "title": "Anti-inflammatory Medications",
+            "definition": "Introduction: Non-steroidal anti-inflammatory drugs (NSAIDS) have the following effects; Mechanism; Indications; Contraindications.",
+            "summary": "Non-steroidal anti-inflammatory drugs (NSAIDS) have the following effects Mechanism",
+            "obTopicId": "9060",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Pain Management",
+              "section": "Anti-inflammatory Medications",
+              "url": "https://www.orthobullets.com/basic-science/9060/anti-inflammatory-medications"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_pain_management_opiates_and_analgesic_medications",
+            "title": "Opiates & Analgesic Medications",
+            "definition": "Introduction: Definitions; Pathophysiology; Agents (details below).",
+            "summary": "Definitions Pathophysiology",
+            "obTopicId": "9076",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Pain Management",
+              "section": "Opiates & Analgesic Medications",
+              "url": "https://www.orthobullets.com/basic-science/9076/opiates-and-analgesic-medications"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_pain_management_general_and_regional_anesthesia_in_orthopaedics",
+            "title": "General and Regional Anesthesia in Orthopaedics",
+            "definition": "Anesthesia. General Anesthesia",
+            "summary": "Components of anesthesia",
+            "obTopicId": "9075",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Pain Management",
+              "section": "General and Regional Anesthesia in Orthopaedics",
+              "url": "https://www.orthobullets.com/basic-science/9075/general-and-regional-anesthesia-in-orthopaedics"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Pain Management"
+        }
+      },
+      {
+        "shortName": "ob_basic_science_toxicology",
+        "title": "Toxicology",
+        "field": "Medications & Toxicity",
+        "definition": "OrthoBullets chapter \"Toxicology\" (Medications & Toxicity): Lead Toxicity. Lead Toxicity Lead toxicity inhibits parathyroid hormone-related peptide (PTHrP) and may affect bone mineral density Imaging radiographs can reveal radiodense metaphyseal bands",
+        "summary": "Lead Toxicity Lead toxicity inhibits parathyroid hormone-related peptide (PTHrP) and may affect bone mineral density Imaging radiographs can reveal radiodense metaphyseal bands",
+        "topics": [
+          {
+            "shortName": "ob_basic_science_toxicology_lead_toxicity",
+            "title": "Lead Toxicity",
+            "definition": "Lead Toxicity. Lead Toxicity Lead toxicity inhibits parathyroid hormone-related peptide (PTHrP) and may affect bone mineral density Imaging radiographs can reveal radiodense metaphyseal bands",
+            "summary": "Lead Toxicity Lead toxicity inhibits parathyroid hormone-related peptide (PTHrP) and may affect bone mineral density Imaging radiographs can reveal radiodense metaphyseal bands",
+            "obTopicId": "9000",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Toxicology",
+              "section": "Lead Toxicity",
+              "url": "https://www.orthobullets.com/basic-science/9000/lead-toxicity"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Toxicology"
+        }
+      },
+      {
+        "shortName": "ob_basic_science_clinical_studies",
+        "title": "Clinical Studies",
+        "field": "Clinical Science",
+        "definition": "OrthoBullets chapter \"Clinical Studies\" (Clinical Science): Introduction. Measure of Central Tendency Introduction: A method utilized in the 3rd step of evidence based medicine (EBM) to determine the clinical value of a study; See details of Clinical Design Trials. Introduction: Clinical trial design impacts Level of Evidence; Clinical trials may be either observational or experimental; Conflict of interest statement.",
+        "summary": "This topic covers a variety of statistical principles used in research and study design A method utilized in the 3rd step of evidence based medicine (EBM) to determine the clinical value of a study See details of Clinical Design Trials",
+        "topics": [
+          {
+            "shortName": "ob_basic_science_clinical_studies_statistic_definitions",
+            "title": "Statistic Definitions",
+            "definition": "Introduction. Measure of Central Tendency",
+            "summary": "This topic covers a variety of statistical principles used in research and study design",
+            "obTopicId": "9073",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Clinical Studies",
+              "section": "Statistic Definitions",
+              "url": "https://www.orthobullets.com/basic-science/9073/statistic-definitions"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_clinical_studies_level_of_evidence",
+            "title": "Level of Evidence",
+            "definition": "Introduction: A method utilized in the 3rd step of evidence based medicine (EBM) to determine the clinical value of a study; See details of Clinical Design Trials.",
+            "summary": "A method utilized in the 3rd step of evidence based medicine (EBM) to determine the clinical value of a study See details of Clinical Design Trials",
+            "obTopicId": "9081",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Clinical Studies",
+              "section": "Level of Evidence",
+              "url": "https://www.orthobullets.com/basic-science/9081/level-of-evidence"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_clinical_studies_clinical_trial_design",
+            "title": "Clinical Trial Design",
+            "definition": "Introduction: Clinical trial design impacts Level of Evidence; Clinical trials may be either observational or experimental; Conflict of interest statement.",
+            "summary": "Clinical trial design impacts Level of Evidence Clinical trials may be either observational or experimental",
+            "obTopicId": "9080",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Clinical Studies",
+              "section": "Clinical Trial Design",
+              "url": "https://www.orthobullets.com/basic-science/9080/clinical-trial-design"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_clinical_studies_burnout_in_orthopaedics",
+            "title": "Burnout in Orthopaedics",
+            "definition": "Summary: Burnout (Exhaustion syndrome and professional burnout) is a condition characterized by emotional exhaustion, depersonalization, and a sense of loss of personal accomplishment.; Diagnosis is made using validated questionnaires such as the Maslach Burnout Inventory and Professional Fulfillment Index.; Treatment involves a combination of leave of absence, medications, therapy, and workplace modifications..",
+            "summary": "Burnout (Exhaustion syndrome and professional burnout) is a condition characterized by emotional exhaustion, depersonalization, and a sense of loss of personal accomplishment. Diagnosis is made using validated questionnaires such as the Maslach Burnout Inventory and Professional Fulfillment Index.",
+            "obTopicId": "423099",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Clinical Studies",
+              "section": "Burnout in Orthopaedics",
+              "url": "https://www.orthobullets.com/basic-science/423099/burnout-in-orthopaedics"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_clinical_studies_outcome_measure_tools",
+            "title": "Outcome Measure Tools",
+            "definition": "MULTI-SUBSPECIALTY: SF-36; Veterans Rand 12-Item Health Survey (VR-12); Patient-Reported Outcomes Measurement Information System (PROMIS); EuroQol-5D (EQ-5D).",
+            "summary": "SF-36 Veterans Rand 12-Item Health Survey (VR-12)",
+            "obTopicId": "9087",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Clinical Studies",
+              "section": "Outcome Measure Tools",
+              "url": "https://www.orthobullets.com/basic-science/9087/outcome-measure-tools"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Clinical Studies"
+        }
+      },
+      {
+        "shortName": "ob_basic_science_healthcare_worplace",
+        "title": "Healthcare Worplace",
+        "field": "Clinical Science",
+        "definition": "OrthoBullets chapter \"Healthcare Worplace\" (Clinical Science): Elective Procedures Informed Consent: Informed consent for an elective surgical procedure is best obtained by the physician in the office/clinic setting a few days before the scheduled procedure; Surgeon must provide to the patient all information that is needed for the patient to make an informed decision; Important to understand the important risks and benefits as well as the indications for and alternatives to a procedure; Adolescent dissent or withdrawal of consent provides a number of ethic…",
+        "summary": "Informed consent for an elective surgical procedure is best obtained by the physician in the office/clinic setting a few days before the scheduled procedure Surgeon must provide to the patient all information that is needed for the patient to make an informed decision Factors which increase radiation exposure levels during use of fluoroscopy Factors to decrease radiation exposure to patient and su",
+        "topics": [
+          {
+            "shortName": "ob_basic_science_healthcare_worplace_informed_consent_and_time_out",
+            "title": "Informed Consent & Time Out",
+            "definition": "Elective Procedures Informed Consent: Informed consent for an elective surgical procedure is best obtained by the physician in the office/clinic setting a few days before the scheduled procedure; Surgeon must provide to the patient all information that is needed for the patient to make an informed decision; Important to understand the important risks and benefits as well as the indications for and alternatives to a procedure; Adolescent dissent or withdrawal of consent provides a number of ethical considerations and dilemmas; Origin of surgical implants should be discussed with patients.",
+            "summary": "Informed consent for an elective surgical procedure is best obtained by the physician in the office/clinic setting a few days before the scheduled procedure Surgeon must provide to the patient all information that is needed for the patient to make an informed decision",
+            "obTopicId": "422975",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Healthcare Worplace",
+              "section": "Informed Consent & Time Out",
+              "url": "https://www.orthobullets.com/basic-science/422975/informed-consent-and-time-out"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_healthcare_worplace_occupational_health",
+            "title": "Occupational Health",
+            "definition": "Radiation: Factors which increase radiation exposure levels during use of fluoroscopy; Factors to decrease radiation exposure to patient and surgeon; Orthopaedic surgeons are at elevated risk of breast cancer; Orthopaedic surgeons are at increased risk for cataract formation.",
+            "summary": "Factors which increase radiation exposure levels during use of fluoroscopy Factors to decrease radiation exposure to patient and surgeon",
+            "obTopicId": "9082",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Healthcare Worplace",
+              "section": "Occupational Health",
+              "url": "https://www.orthobullets.com/basic-science/9082/occupational-health"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_healthcare_worplace_fluoroscopy_and_radiation_safety",
+            "title": "Fluoroscopy & Radiation Safety",
+            "definition": "Fluoroscopy & Radiation Safety — OrthoBullets topic in Healthcare Worplace (Basic Science).",
+            "summary": "OrthoBullets topic \"Fluoroscopy & Radiation Safety\" under chapter \"Healthcare Worplace\".",
+            "obTopicId": "9022",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Healthcare Worplace",
+              "section": "Fluoroscopy & Radiation Safety",
+              "url": "https://www.orthobullets.com/basic-science/9022/fluoroscopy-and-radiation-safety"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Healthcare Worplace"
+        }
+      },
+      {
+        "shortName": "ob_basic_science_practice_management",
+        "title": "Practice Management",
+        "field": "Clinical Science",
+        "definition": "OrthoBullets chapter \"Practice Management\" (Clinical Science): Informed Consent: Components; Special situations; Patient-physician relationship. Relations with Industry and Hospitals. Patient Satisfaction & Complaints definitions: Overview; Definitions.",
+        "summary": "Components Special situations Acceptable standards of professionalism",
+        "topics": [
+          {
+            "shortName": "ob_basic_science_practice_management_legal_considerations_in_orthopaedic_practice",
+            "title": "Legal Considerations in Orthopaedic Practice",
+            "definition": "Informed Consent: Components; Special situations; Patient-physician relationship.",
+            "summary": "Components Special situations",
+            "obTopicId": "9074",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Practice Management",
+              "section": "Legal Considerations in Orthopaedic Practice",
+              "url": "https://www.orthobullets.com/basic-science/9074/legal-considerations-in-orthopaedic-practice"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_practice_management_ethics_in_orthopaedic_practice",
+            "title": "Ethics in Orthopaedic Practice",
+            "definition": "Relations with Industry and Hospitals. Patient Satisfaction & Complaints",
+            "summary": "Acceptable standards of professionalism",
+            "obTopicId": "422972",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Practice Management",
+              "section": "Ethics in Orthopaedic Practice",
+              "url": "https://www.orthobullets.com/basic-science/422972/ethics-in-orthopaedic-practice"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_practice_management_clinical_billing",
+            "title": "Clinical Billing",
+            "definition": "definitions: Overview; Definitions.",
+            "summary": "Overview Definitions",
+            "obTopicId": "322148",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Practice Management",
+              "section": "Clinical Billing",
+              "url": "https://www.orthobullets.com/basic-science/322148/clinical-billing"
+            }
+          },
+          {
+            "shortName": "ob_basic_science_practice_management_career_development",
+            "title": "Career Development",
+            "definition": "Career Development — OrthoBullets topic in Practice Management (Basic Science).",
+            "summary": "OrthoBullets topic \"Career Development\" under chapter \"Practice Management\".",
+            "obTopicId": "422813",
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Practice Management",
+              "section": "Career Development",
+              "url": "https://www.orthobullets.com/basic-science/422813/career-development"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Practice Management"
+        }
+      }
+    ]
+  }
+}

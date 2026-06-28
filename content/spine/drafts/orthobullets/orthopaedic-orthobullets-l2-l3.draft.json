@@ -1,0 +1,768 @@
+{
+  "_meta": {
+    "domain": "orthopaedic_surgery",
+    "parent_domain": "medicine_clinical",
+    "spine_root": "spine_medicine_clinical_l2_orthopaedic_surgery",
+    "scheme": "orthobullets: L3 section -> L4 chapter -> L5 topic",
+    "generation_date": "2026-06-27",
+    "status": "draft-for-review",
+    "section_count": 11
+  },
+  "l2_root": {
+    "id": "spine_medicine_clinical_l2_orthopaedic_surgery",
+    "resolution_level": 2,
+    "content": {
+      "title": "Orthopaedic Surgery",
+      "definition": "The surgical and non-surgical diagnosis, treatment, and rehabilitation of disorders affecting the musculoskeletal system including bones, joints, ligaments, tendons, muscles, and nerves.",
+      "summary": "Orthopaedic surgery is organised here to mirror the OrthoBullets topic taxonomy: eleven subspecialty sections, each with chapters and topics."
+    },
+    "knowledge_graph": {
+      "knowledge_area": "Clinical Sciences",
+      "knowledge_cluster": "Surgical Subspecialties",
+      "primary_domain": "medicine_clinical"
+    },
+    "dependency_graph": {
+      "parent_concept_id": "spine_medicine_clinical",
+      "prerequisites": [],
+      "unlocks": [
+        "spine_medicine_clinical_l3_orthopaedic_trauma",
+        "spine_medicine_clinical_l3_orthopaedic_spine",
+        "spine_medicine_clinical_l3_orthopaedic_shoulder_and_elbow",
+        "spine_medicine_clinical_l3_orthopaedic_knee_and_sports",
+        "spine_medicine_clinical_l3_orthopaedic_pediatrics",
+        "spine_medicine_clinical_l3_orthopaedic_recon",
+        "spine_medicine_clinical_l3_orthopaedic_hand",
+        "spine_medicine_clinical_l3_orthopaedic_foot_and_ankle",
+        "spine_medicine_clinical_l3_orthopaedic_pathology",
+        "spine_medicine_clinical_l3_orthopaedic_basic_science",
+        "spine_medicine_clinical_l3_orthopaedic_anatomy"
+      ]
+    },
+    "domain_contexts": [
+      {
+        "domain_id": "medicine_clinical",
+        "framing": {
+          "title_in_context": "Orthopaedic Surgery",
+          "relevance": "Subspecialty clinical medicine domain covering musculoskeletal surgical and non-surgical management.",
+          "applications": [
+            "ABOS board certification",
+            "Orthopaedic residency training",
+            "Musculoskeletal clinical decision-making"
+          ],
+          "max_resolution_in_context": 5
+        },
+        "hierarchy_location": {
+          "category": "Medicine (Clinical)",
+          "subcategory": "Orthopaedic Surgery",
+          "topic": "Orthopaedic Surgery",
+          "subtopic": null
+        },
+        "dependency_graph": {
+          "prerequisites_in_context": [],
+          "unlocks_in_context": [
+            "spine_medicine_clinical_l3_orthopaedic_trauma",
+            "spine_medicine_clinical_l3_orthopaedic_spine",
+            "spine_medicine_clinical_l3_orthopaedic_shoulder_and_elbow",
+            "spine_medicine_clinical_l3_orthopaedic_knee_and_sports",
+            "spine_medicine_clinical_l3_orthopaedic_pediatrics",
+            "spine_medicine_clinical_l3_orthopaedic_recon",
+            "spine_medicine_clinical_l3_orthopaedic_hand",
+            "spine_medicine_clinical_l3_orthopaedic_foot_and_ankle",
+            "spine_medicine_clinical_l3_orthopaedic_pathology",
+            "spine_medicine_clinical_l3_orthopaedic_basic_science",
+            "spine_medicine_clinical_l3_orthopaedic_anatomy"
+          ]
+        },
+        "linked_content": {
+          "by_library": {}
+        }
+      }
+    ],
+    "metadata": {
+      "created_at": "2026-06-27T00:00:00Z",
+      "updated_at": "2026-06-27T00:00:00Z",
+      "created_by": "ai_draft",
+      "version": "0.3-orthobullets",
+      "status": "draft",
+      "source_references": [
+        {
+          "source": "OrthoBullets topic taxonomy",
+          "chapter": "Sections",
+          "section": "Topics"
+        }
+      ]
+    }
+  },
+  "sections": [
+    {
+      "id": "spine_medicine_clinical_l3_orthopaedic_trauma",
+      "resolution_level": 3,
+      "content": {
+        "title": "Trauma",
+        "definition": "Acute musculoskeletal injuries including fractures, dislocations, polytrauma, and complications of traumatic injury.",
+        "summary": "Fracture principles, regional trauma by extremity, pelvis and acetabulum, and damage-control orthopaedics."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Trauma",
+        "primary_domain": "medicine_clinical"
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l2_orthopaedic_surgery",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Trauma",
+            "relevance": "OrthoBullets Trauma section; ABOS Adult Trauma.",
+            "applications": [
+              "Fracture management",
+              "Polytrauma staging",
+              "Open fracture care"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Trauma",
+            "topic": "Trauma",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.3-orthobullets",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OrthoBullets topic taxonomy",
+            "chapter": "Trauma",
+            "section": "Section"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l3_orthopaedic_spine",
+      "resolution_level": 3,
+      "content": {
+        "title": "Spine",
+        "definition": "Degenerative, deformity, infectious, neoplastic, and traumatic disorders of the vertebral column and spinal cord.",
+        "summary": "Cervical, thoracic, and lumbar pathology, spinal deformity, trauma, tumors, and fusion principles."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Spine",
+        "primary_domain": "medicine_clinical"
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l2_orthopaedic_surgery",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Spine",
+            "relevance": "OrthoBullets Spine section; ABOS Adult Spine.",
+            "applications": [
+              "Radiculopathy and myelopathy",
+              "Spinal deformity",
+              "Spine trauma"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Spine",
+            "topic": "Spine",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.3-orthobullets",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OrthoBullets topic taxonomy",
+            "chapter": "Spine",
+            "section": "Section"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l3_orthopaedic_shoulder_and_elbow",
+      "resolution_level": 3,
+      "content": {
+        "title": "Shoulder & Elbow",
+        "definition": "Non-traumatic and post-traumatic disorders of the shoulder and elbow including instability, cuff pathology, arthritis, and arthroplasty.",
+        "summary": "Shoulder instability, rotator cuff, arthroplasty, elbow arthritis, and throwing-athlete pathology."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Shoulder & Elbow",
+        "primary_domain": "medicine_clinical"
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l2_orthopaedic_surgery",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Shoulder & Elbow",
+            "relevance": "OrthoBullets Shoulder & Elbow section; ABOS Shoulder and Elbow.",
+            "applications": [
+              "Shoulder arthroplasty",
+              "Instability surgery",
+              "Elbow reconstruction"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Shoulder & Elbow",
+            "topic": "Shoulder & Elbow",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.3-orthobullets",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OrthoBullets topic taxonomy",
+            "chapter": "Shoulder & Elbow",
+            "section": "Section"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l3_orthopaedic_knee_and_sports",
+      "resolution_level": 3,
+      "content": {
+        "title": "Knee & Sports",
+        "definition": "Athletic and degenerative knee injuries and broader sports medicine including ligament, meniscal, cartilage, and patellofemoral disorders.",
+        "summary": "Knee ligament and meniscal injury, patellofemoral disorders, cartilage restoration, and medical sports medicine."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Knee & Sports",
+        "primary_domain": "medicine_clinical"
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l2_orthopaedic_surgery",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Knee & Sports",
+            "relevance": "OrthoBullets Knee & Sports section; ABOS Sports Medicine.",
+            "applications": [
+              "Return to play",
+              "Knee ligament reconstruction",
+              "Cartilage restoration"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Knee & Sports",
+            "topic": "Knee & Sports",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.3-orthobullets",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OrthoBullets topic taxonomy",
+            "chapter": "Knee & Sports",
+            "section": "Section"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l3_orthopaedic_pediatrics",
+      "resolution_level": 3,
+      "content": {
+        "title": "Pediatrics",
+        "definition": "Musculoskeletal disorders in children including developmental hip conditions, physeal trauma, spine deformity, and neuromuscular disease.",
+        "summary": "DDH, SCFE, Perthes, clubfoot, physeal fractures, paediatric spine, CP, and skeletal dysplasias."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Pediatrics",
+        "primary_domain": "medicine_clinical"
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l2_orthopaedic_surgery",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Pediatrics",
+            "relevance": "OrthoBullets Pediatrics section; ABOS Pediatrics.",
+            "applications": [
+              "Growth-aware treatment",
+              "Pavlik harness",
+              "Guided growth"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Pediatrics",
+            "topic": "Pediatrics",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.3-orthobullets",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OrthoBullets topic taxonomy",
+            "chapter": "Pediatrics",
+            "section": "Section"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l3_orthopaedic_recon",
+      "resolution_level": 3,
+      "content": {
+        "title": "Recon",
+        "definition": "Elective joint replacement and revision surgery for end-stage arthropathy of the hip and knee, plus reconstruction basic science.",
+        "summary": "Hip and knee arthropathy, arthroplasty, bearing surfaces, wear and osteolysis, PJI, and periprosthetic fracture."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Recon",
+        "primary_domain": "medicine_clinical"
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l2_orthopaedic_surgery",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Recon",
+            "relevance": "OrthoBullets Recon section; ABOS Adult Reconstruction.",
+            "applications": [
+              "Arthroplasty",
+              "Revision surgery",
+              "Joint preservation decisions"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Recon",
+            "topic": "Recon",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.3-orthobullets",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OrthoBullets topic taxonomy",
+            "chapter": "Recon",
+            "section": "Section"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l3_orthopaedic_hand",
+      "resolution_level": 3,
+      "content": {
+        "title": "Hand",
+        "definition": "Disorders of the hand and wrist including fracture, arthritis, tendon, nerve compression, and infection.",
+        "summary": "Distal radius and carpal injuries, tendon repairs, nerve compression, Dupuytren, and hand infections."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Hand",
+        "primary_domain": "medicine_clinical"
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l2_orthopaedic_surgery",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Hand",
+            "relevance": "OrthoBullets Hand section; ABOS Hand.",
+            "applications": [
+              "Microsurgical repair",
+              "Carpal instability",
+              "Hand trauma"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Hand",
+            "topic": "Hand",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.3-orthobullets",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OrthoBullets topic taxonomy",
+            "chapter": "Hand",
+            "section": "Section"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l3_orthopaedic_foot_and_ankle",
+      "resolution_level": 3,
+      "content": {
+        "title": "Foot & Ankle",
+        "definition": "Disorders of the foot and ankle including fracture, instability, deformity, arthritis, and diabetic foot disease.",
+        "summary": "Ankle fracture, Achilles pathology, hindfoot and forefoot deformity, and Charcot arthropathy."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Foot & Ankle",
+        "primary_domain": "medicine_clinical"
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l2_orthopaedic_surgery",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Foot & Ankle",
+            "relevance": "OrthoBullets Foot & Ankle section; ABOS Foot and Ankle.",
+            "applications": [
+              "Ankle arthroplasty",
+              "Flatfoot reconstruction",
+              "Diabetic limb salvage"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Foot & Ankle",
+            "topic": "Foot & Ankle",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.3-orthobullets",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OrthoBullets topic taxonomy",
+            "chapter": "Foot & Ankle",
+            "section": "Section"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l3_orthopaedic_pathology",
+      "resolution_level": 3,
+      "content": {
+        "title": "Pathology",
+        "definition": "Benign and malignant tumors of bone and soft tissue plus metabolic and infectious musculoskeletal pathology, including staging, biopsy, and limb salvage.",
+        "summary": "Tumor evaluation, primary bone malignancy, soft-tissue sarcoma, metastatic disease, metabolic bone disease, and musculoskeletal infection."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Pathology",
+        "primary_domain": "medicine_clinical"
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l2_orthopaedic_surgery",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Pathology",
+            "relevance": "OrthoBullets Pathology section; ABOS Oncology and pathology.",
+            "applications": [
+              "Biopsy principles",
+              "Limb salvage",
+              "Pathologic fracture"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Pathology",
+            "topic": "Pathology",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.3-orthobullets",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OrthoBullets topic taxonomy",
+            "chapter": "Pathology",
+            "section": "Section"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l3_orthopaedic_basic_science",
+      "resolution_level": 3,
+      "content": {
+        "title": "Basic Science",
+        "definition": "Applied basic sciences supporting musculoskeletal diagnosis and treatment including biomechanics, imaging, implant science, and perioperative principles.",
+        "summary": "Biomechanics, gait, musculoskeletal imaging, implant tribology, soft-tissue biology, fracture healing, and perioperative principles."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Basic Science",
+        "primary_domain": "medicine_clinical"
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l2_orthopaedic_surgery",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Basic Science",
+            "relevance": "OrthoBullets Basic Science section; ABOS General Principles.",
+            "applications": [
+              "Board examination foundation",
+              "Cross-subspecialty principles"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Basic Science",
+            "topic": "Basic Science",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.3-orthobullets",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OrthoBullets topic taxonomy",
+            "chapter": "Basic Science",
+            "section": "Section"
+          }
+        ]
+      }
+    },
+    {
+      "id": "spine_medicine_clinical_l3_orthopaedic_anatomy",
+      "resolution_level": 3,
+      "content": {
+        "title": "Anatomy",
+        "definition": "Regional musculoskeletal anatomy and surgical approaches relevant to orthopaedic diagnosis and operative exposure.",
+        "summary": "Bony, ligamentous, neurovascular, and muscular anatomy by region, plus standard surgical approaches."
+      },
+      "knowledge_graph": {
+        "knowledge_area": "Clinical Sciences",
+        "knowledge_cluster": "Anatomy",
+        "primary_domain": "medicine_clinical"
+      },
+      "dependency_graph": {
+        "parent_concept_id": "spine_medicine_clinical_l2_orthopaedic_surgery",
+        "prerequisites": [],
+        "unlocks": []
+      },
+      "domain_contexts": [
+        {
+          "domain_id": "medicine_clinical",
+          "framing": {
+            "title_in_context": "Anatomy",
+            "relevance": "OrthoBullets Anatomy section; ABOS anatomy and approaches.",
+            "applications": [
+              "Surgical exposure planning",
+              "Neurovascular safe zones",
+              "Regional anatomy review"
+            ],
+            "max_resolution_in_context": 5
+          },
+          "hierarchy_location": {
+            "category": "Orthopaedic Surgery",
+            "subcategory": "Anatomy",
+            "topic": "Anatomy",
+            "subtopic": null
+          },
+          "dependency_graph": {
+            "prerequisites_in_context": [],
+            "unlocks_in_context": []
+          },
+          "linked_content": {
+            "by_library": {}
+          }
+        }
+      ],
+      "metadata": {
+        "created_at": "2026-06-27T00:00:00Z",
+        "updated_at": "2026-06-27T00:00:00Z",
+        "created_by": "ai_draft",
+        "version": "0.3-orthobullets",
+        "status": "draft",
+        "source_references": [
+          {
+            "source": "OrthoBullets topic taxonomy",
+            "chapter": "Anatomy",
+            "section": "Section"
+          }
+        ]
+      }
+    }
+  ]
+}

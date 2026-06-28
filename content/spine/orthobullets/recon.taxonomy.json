@@ -1,0 +1,1156 @@
+{
+  "_meta": {
+    "source": "library-creator/.jobs/orthobullets-sheet.csv",
+    "generated_by": "scripts/extract-orthobullets-recon-taxonomy.ts",
+    "section": "recon",
+    "chapter_count": 22,
+    "topic_count": 71,
+    "source_card_rows": 468
+  },
+  "taxonomy": {
+    "section": "recon",
+    "provenance": "orthobullets_sheet",
+    "obDataPending": false,
+    "notes": "Extracted from orthobullets-sheet.csv. OrthoBullets 'Fields' (Hip/Knee Reconstruction, Recon Science) collapsed into the Recon section; preserved on each chapter via `field`.",
+    "chapters": [
+      {
+        "shortName": "ob_recon_adult_hip_conditions",
+        "title": "Adult Hip Conditions",
+        "field": "Hip Reconstruction",
+        "definition": "OrthoBullets Recon chapter covering 4 topics: Hip Osteoarthritis, Hip Osteonecrosis, Adult Hip Dysplasia, Idiopathic Transient Osteoporosis of the Hip.",
+        "summary": "Reconstruction chapter \"Adult Hip Conditions\" (Hip Reconstruction) with 4 OrthoBullets topics.",
+        "topics": [
+          {
+            "shortName": "ob_recon_adult_hip_conditions_hip_osteoarthritis",
+            "title": "Hip Osteoarthritis",
+            "definition": "Hip Osteoarthritis (OA) is a progressive, degenerative disease causing articular cartilage loss in the hip joint, which is diagnosed via plain radiographs and is initially managed with observation, NSAIDs, and corticosteroid injections, with total hip arthroplasty (THA) reserved for severe, progressive symptoms.",
+            "summary": "Hip Osteoarthritis (OA) is a degenerative disease characterized by the progressive loss of articular cartilage in the femoral head and acetabulum. Diagnosis relies on plain radiographs, and management includes nonoperative measures like NSAIDs for mild symptoms, progressing to hip arthroplasty for severe, debilitating disease.",
+            "cardCount": 8,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Adult Hip Conditions",
+              "section": "Hip Osteoarthritis"
+            }
+          },
+          {
+            "shortName": "ob_recon_adult_hip_conditions_hip_osteonecrosis",
+            "title": "Hip Osteonecrosis",
+            "definition": "Nonoperative treatment for precollapse AVN (Stages 0-II) is primarily bisphosphonates, although studies on their efficacy in preventing collapse are mixed. Operative options are utilized for more advanced disease and include core decompression (for early, pre-collapse AVN to relieve intraosseous hypertension), rotational osteotomy (for small lesions to move them off the weight-bearing surface), curettage and bone grafting, vascularized free-fibula transfer (for pre-collapse and collapsed AVN in young patients), and total hip replacement (THR) (the most reliable option for advanced disease, especially in older patients or irreversible etiologies).",
+            "summary": "Management of hip osteonecrosis is stage-dependent, involving observation and treatment of the underlying systemic condition for early, pre-collapse disease. Advanced stages, marked by subchondral collapse or degenerative joint disease, necessitate operative procedures such as core decompression, vascularized free-fibula transfer, or total hip replacement to restore function and relieve pain.",
+            "cardCount": 8,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Adult Hip Conditions",
+              "section": "Hip Osteonecrosis"
+            }
+          },
+          {
+            "shortName": "ob_recon_adult_hip_conditions_adult_hip_dysplasia",
+            "title": "Adult Hip Dysplasia",
+            "definition": "Surgical techniques for PAO involve osteotomies of the pubis, ilium, and ischium to allow for large three-dimensional correction while preserving the posterior column integrity, whereas THA requires aiming for the true acetabulum (often needing component medialization or augments and potentially femoral shortening to manage significant limb lengthening, especially in Crowe Type III or IV).",
+            "summary": "Techniques describe the detailed procedures used in the management of adult hip dysplasia, ranging from supportive nonoperative care (NSAIDs, injections) to complex surgical methods. These surgical techniques include specific approaches and osteotomies necessary for Periacetabular Osteotomy (PAO), salvage procedures, hip resurfacing, and Total Hip Arthroplasty (THA) designed to restore hip biomechanics.",
+            "cardCount": 12,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Adult Hip Conditions",
+              "section": "Adult Hip Dysplasia"
+            }
+          },
+          {
+            "shortName": "ob_recon_adult_hip_conditions_idiopathic_transient_osteoporosis_of_the_hip",
+            "title": "Idiopathic Transient Osteoporosis of the Hip",
+            "definition": "Radiographic findings, which lag behind clinical signs by 4–8 weeks, include diffuse osteopenia of the femoral head and neck and a joint effusion, with the joint space always being preserved. MRI is the imaging modality of choice, showing diffuse bone marrow edema characterized by decreased signal (loss of fatty marrow) on T1-weighted images and high signal on T2-weighted images, which must be differentiated from Avascular Necrosis (AVN). A bone scan can be used to detect the condition early as it shows increased, homogeneous uptake in the femoral head and neck, preceding X-ray changes.",
+            "summary": "Imaging is essential for diagnosing this condition, with radiographs demonstrating diffuse osteopenia and preserved joint space. Magnetic Resonance Imaging (MRI) is the modality of choice, revealing diffuse marrow edema characterized by decreased T1 and increased T2 signal in the femoral head and neck.",
+            "cardCount": 9,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Adult Hip Conditions",
+              "section": "Idiopathic Transient Osteoporosis of the Hip"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Adult Hip Conditions"
+        }
+      },
+      {
+        "shortName": "ob_recon_adult_hip_evaluation",
+        "title": "Adult Hip Evaluation",
+        "field": "Hip Reconstruction",
+        "definition": "OrthoBullets Recon chapter covering 2 topics: Hip - Physical Exam Adult, Hip - Magnetic Resonance Imaging.",
+        "summary": "Reconstruction chapter \"Adult Hip Evaluation\" (Hip Reconstruction) with 2 OrthoBullets topics.",
+        "topics": [
+          {
+            "shortName": "ob_recon_adult_hip_evaluation_hip_physical_exam_adult",
+            "title": "Hip - Physical Exam Adult",
+            "definition": "Special Tests include the FADIR (Flexion, Adduction, Internal Rotation) and FABER (Flexion, Abduction, External Rotation) tests for intra-articular pathology (like labral tears or FAI) or sacroiliac pain, the Log roll test for labral tears or capsular laxity, the Thomas test for fixed flexion deformity, the Ober's test for ITB tightness, and the Stinchfield test for intra-articular hip pathology via resisted flexion.",
+            "summary": "Special tests are specific, targeted physical examination maneuvers, involving precise positioning and movement, designed to provoke symptoms or reveal limitations not obvious during general range of motion assessment. These clinical tools help localize and identify specific underlying musculoskeletal pathologies, such as labral tears, fixed deformities, or soft tissue contractures.",
+            "cardCount": 5,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Adult Hip Evaluation",
+              "section": "Hip - Physical Exam Adult"
+            }
+          },
+          {
+            "shortName": "ob_recon_adult_hip_evaluation_hip_magnetic_resonance_imaging",
+            "title": "Hip - Magnetic Resonance Imaging",
+            "definition": "Magnetic Resonance Imaging (MRI) works by detecting the energy released by protons after they have been stimulated by radiofrequency pulses in a magnetic field, with relaxation times T1 and T2 determining tissue brightness, and Gadolinium contrast used to enhance T1 images.",
+            "summary": "Magnetic Resonance Imaging (MRI) generates images by aligning body protons in a strong magnetic field, stimulating them with radiofrequency pulses, and detecting the released energy as they relax (T1 and T2 relaxation). This fundamental process allows for detailed visualization of internal soft tissues, differentiated based on properties like water and fat content.",
+            "cardCount": 4,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Adult Hip Evaluation",
+              "section": "Hip - Magnetic Resonance Imaging"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Adult Hip Evaluation"
+        }
+      },
+      {
+        "shortName": "ob_recon_hip_anatomy_and_biomechanics",
+        "title": "Hip Anatomy & Biomechanics",
+        "field": "Hip Reconstruction",
+        "definition": "OrthoBullets Recon chapter covering 3 topics: Pelvis Anatomy, Hip Anatomy, Hip Biomechanics.",
+        "summary": "Reconstruction chapter \"Hip Anatomy & Biomechanics\" (Hip Reconstruction) with 3 OrthoBullets topics.",
+        "topics": [
+          {
+            "shortName": "ob_recon_hip_anatomy_and_biomechanics_pelvis_anatomy",
+            "title": "Pelvis Anatomy",
+            "definition": "The pelvic ring is formed by the two innominate bones (each a fusion of the ilium, ischium, and pubis) that articulate with the sacrum posteriorly and the pubis symphysis anteriorly. The pelvis lacks inherent articular stability, relying entirely on strong ligament complexes, specifically the posterior sacroiliac/iliolumbar ligaments and the sacrotuberous/sacrospinous ligaments of the pelvic floor, to resist translation and rotation.",
+            "summary": "Osteology, regarding the pelvis, describes the structural arrangement of the pelvic ring formed by the two innominate bones. These innominate bones are composed of the fused ilium, ischium, and pubis, articulating posteriorly with the sacrum and anteriorly via the pubis symphysis.",
+            "cardCount": 3,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Hip Anatomy & Biomechanics",
+              "section": "Pelvis Anatomy"
+            }
+          },
+          {
+            "shortName": "ob_recon_hip_anatomy_and_biomechanics_hip_anatomy",
+            "title": "Hip Anatomy",
+            "definition": "The hip is a ball-and-socket diarthrodial joint whose stability is conferred by its bony architecture and is augmented by the acetabular labrum and the hip capsule",
+            "summary": "The hip is a ball-and-socket diarthrodial joint articulating the proximal femur with the acetabulum, whose stability is provided by the bony architecture, the acetabular labrum, and powerful capsular ligaments.",
+            "cardCount": 7,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Hip Anatomy & Biomechanics",
+              "section": "Hip Anatomy"
+            }
+          },
+          {
+            "shortName": "ob_recon_hip_anatomy_and_biomechanics_hip_biomechanics",
+            "title": "Hip Biomechanics",
+            "definition": "To decrease the Joint Reaction Force on the hip, surgeons can medialize the center of rotation (moving the acetabular component medial, inferior, or anterior) or increase the femoral offset (via greater offset components or lateralizing the greater trochanter), while patients can also shift body weight over the affected hip (resulting in a Trendelenburg gait) or use a cane in the contralateral hand to reduce the required abductor muscle force.",
+            "summary": "Clinical implications refer to the practical applications derived from biomechanical analysis, focusing on actions that modify the calculated joint reaction forces. These implications guide surgical decisions, such as component placement and prosthesis selection, and inform patient management strategies like gait modification or the use of assistive devices.",
+            "cardCount": 4,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Hip Anatomy & Biomechanics",
+              "section": "Hip Biomechanics"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Hip Anatomy & Biomechanics"
+        }
+      },
+      {
+        "shortName": "ob_recon_non_tha_treatment_options",
+        "title": "Non-THA Treatment Options",
+        "field": "Hip Reconstruction",
+        "definition": "OrthoBullets Recon chapter covering 2 topics: Hip Resurfacing, Hip Arthrodesis.",
+        "summary": "Reconstruction chapter \"Non-THA Treatment Options\" (Hip Reconstruction) with 2 OrthoBullets topics.",
+        "topics": [
+          {
+            "shortName": "ob_recon_non_tha_treatment_options_hip_resurfacing",
+            "title": "Hip Resurfacing",
+            "definition": "Prior hip resurfacing techniques failed due to high osteolysis rates caused by larger femoral heads on polyethylene, but modern techniques (FDA approved 2006) utilize metal-on-metal components and larger femoral heads to conserve bone and were initially popular, especially among younger patients.",
+            "summary": "Modern hip resurfacing is an arthroplasty technique, approved in 2006, that utilizes metal-on-metal components and a large femoral head, offering the primary advantage of preserving femoral bone stock compared to conventional total hip arthroplasty.",
+            "cardCount": 5,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Non-THA Treatment Options",
+              "section": "Hip Resurfacing"
+            }
+          },
+          {
+            "shortName": "ob_recon_non_tha_treatment_options_hip_arthrodesis",
+            "title": "Hip Arthrodesis",
+            "definition": "Primary hip arthrodesis is indicated as the most common salvage procedure for a failed THA or for young laborers with unilateral hip disease, but is contraindicated in patients with active infection, a limb-length discrepancy greater than 2.0 cm, severe adjacent joint degenerative changes, or severe osteoporosis. Conversion of a hip fusion to a total hip arthroplasty (THA) is primarily indicated for severely debilitating pain in the lumbar spine, ipsilateral knee, or contralateral hip, and the clinical outcome largely depends on the patient's abductor complex function, often requiring a constrained acetabular component if the abductors are nonfunctional.",
+            "summary": "Treatment primarily involves hip arthrodesis, the surgical fusion of the hip joint often used as a salvage procedure for advanced arthritis or failed total hip arthroplasty. If patients develop debilitating adjacent joint pain or complications, this fusion may subsequently be converted to a total hip arthroplasty.",
+            "cardCount": 6,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Non-THA Treatment Options",
+              "section": "Hip Arthrodesis"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Non-THA Treatment Options"
+        }
+      },
+      {
+        "shortName": "ob_recon_tha_acute_complications",
+        "title": "THA Acute Complications",
+        "field": "Hip Reconstruction",
+        "definition": "OrthoBullets Recon chapter covering 7 topics: THA Periprosthetic Fracture, Hip Hemiarthroplasty Periprosthetic Fracture, THA Dislocation, THA Sciatic Nerve Palsy, THA Leg Length Discrepancy, THA Vascular Injury & Bleeding, ….",
+        "summary": "Reconstruction chapter \"THA Acute Complications\" (Hip Reconstruction) with 7 OrthoBullets topics.",
+        "topics": [
+          {
+            "shortName": "ob_recon_tha_acute_complications_tha_periprosthetic_fracture",
+            "title": "THA Periprosthetic Fracture",
+            "definition": "Postoperative femur fractures are classified using the Vancouver classification (Types AG (greater trochanter), AL (lesser trochanter), B1 (well-fixed stem), B2 (loose stem/good bone), B3 (loose stem/poor bone), and C (far distal)), which guides treatment based on stem stability, fracture location, and bone quality.",
+            "summary": "A postoperative femur fracture is a periprosthetic complication occurring after total hip arthroplasty, often triggered by low-energy trauma. These fractures are classified using the Vancouver system, which assesses the location relative to the femoral stem, the stability of the implant, and the quality of the surrounding bone to determine the appropriate operative or nonoperative treatment.",
+            "cardCount": 6,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "THA Acute Complications",
+              "section": "THA Periprosthetic Fracture"
+            }
+          },
+          {
+            "shortName": "ob_recon_tha_acute_complications_hip_hemiarthroplasty_periprosthetic_fracture",
+            "title": "Hip Hemiarthroplasty Periprosthetic Fracture",
+            "definition": "Treatment is nonoperative for nondisplaced trochanteric fractures (Vancouver AG less than $2\\text{ cm}$ and AL fractures) using protected weightbearing, and operative for displaced and unstable fractures, involving open reduction and internal fixation (for B1 and C fractures), revision arthroplasty with a long stem (for B2 fractures), or proximal femoral replacement (for B3 fractures with poor bone stock).",
+            "summary": "Treatment protocols for periprosthetic fractures following hip hemiarthroplasty are primarily guided by the Vancouver Classification, which assesses fracture location and implant stability. Options range from nonoperative management for minimally displaced, stable fractures to surgical interventions, including open reduction and internal fixation (ORIF) for stable stems, or revision arthroplasty for loose components.",
+            "cardCount": 9,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "THA Acute Complications",
+              "section": "Hip Hemiarthroplasty Periprosthetic Fracture"
+            }
+          },
+          {
+            "shortName": "ob_recon_tha_acute_complications_tha_dislocation",
+            "title": "THA Dislocation",
+            "definition": "Dislocation occurs through mechanisms like posterior (flexion, internal rotation, adduction) or anterior (extension, external rotation) and is strongly influenced by risk factors such as prior hip surgery, posterior approach (if short external rotators are not repaired), component malposition (e.g., excessive retroversion causing posterior dislocation), and polyethylene wear (a common cause of late instability).",
+            "summary": "The etiology of total hip arthroplasty (THA) dislocation involves specific mechanical movements that provoke displacement (e.g., flexion, adduction, and internal rotation for posterior dislocation) combined with numerous predisposing risk factors. These risk factors include prior hip surgery, component malpositioning (such as excessive anteversion or retroversion), patient comorbidities, and late causes like polyethylene wear.",
+            "cardCount": 7,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "THA Acute Complications",
+              "section": "THA Dislocation"
+            }
+          },
+          {
+            "shortName": "ob_recon_tha_acute_complications_tha_sciatic_nerve_palsy",
+            "title": "THA Sciatic Nerve Palsy",
+            "definition": "The incidence of sciatic nerve palsy is uncommon (0-3%), but it is the most common cause of medical malpractice litigation following THA, with the peroneal division of the sciatic nerve being the most frequently affected (80% of cases) as the nerve travels closest to the acetabulum at the level of the ischium.",
+            "summary": "Epidemiology describes the incidence and anatomical distribution of sciatic nerve palsy following total hip arthroplasty (THA). It is an uncommon complication, occurring in 0-3% of cases, and the peroneal division of the sciatic nerve is affected most frequently.",
+            "cardCount": 8,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "THA Acute Complications",
+              "section": "THA Sciatic Nerve Palsy"
+            }
+          },
+          {
+            "shortName": "ob_recon_tha_acute_complications_tha_leg_length_discrepancy",
+            "title": "THA Leg Length Discrepancy",
+            "definition": "The primary treatment is nonoperative, involving observation for six months as perceived LLD often resolves with muscle relaxation, after which a shoe lift is the typical intervention, with revision THA being a rare option reserved for significant, persistent LLD that affects quality of life, recognizing the associated increased risk of dislocation, especially when shortening the limb.",
+            "summary": "Treatment for leg length discrepancy following total hip arthroplasty typically begins with observation, as most cases resolve spontaneously with muscle relaxation within six months. If a significant discrepancy persists, management includes shoe-lifts, reserving surgical revision only for rare, severe, chronic cases that significantly affect quality of life.",
+            "cardCount": 6,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "THA Acute Complications",
+              "section": "THA Leg Length Discrepancy"
+            }
+          },
+          {
+            "shortName": "ob_recon_tha_acute_complications_tha_vascular_injury_and_bleeding",
+            "title": "THA Vascular Injury & Bleeding",
+            "definition": "Postoperative anemia management aims to prevent the need for transfusion (a complication associated with increased prosthetic joint infection risk) by using tranexamic acid and managing low preoperative hemoglobin (the best predictor), with transfusion indicated only for specific, symptomatic hemoglobin thresholds. Even with treatment, the prognosis for vascular injury is poor, with an associated mortality rate of 9%, an amputation rate of 12%, and a permanent disability rate of 17%.",
+            "summary": "Postoperative anemia is defined as a reduction in hemoglobin concentration following a surgical procedure, frequently manifesting as symptoms like dyspnea, syncope, and tachycardia, and often requiring blood transfusion for treatment.",
+            "cardCount": 7,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "THA Acute Complications",
+              "section": "THA Vascular Injury & Bleeding"
+            }
+          },
+          {
+            "shortName": "ob_recon_tha_acute_complications_tha_postoperative_abductor_deficiency",
+            "title": "THA Postoperative Abductor Deficiency",
+            "definition": "The Basic Classification System for Unstable THA identifies abductor deficiency as Type III, while the Advanced System includes Abductor-Trochanteric Complex defects (Type III) and the Goutallier Classification grades the severity of fatty degeneration in the gluteal muscles.",
+            "summary": "Classification systems for THA postoperative abductor deficiency categorize the various etiologies of instability and assess the integrity of the abductor musculature. These systems, including the Basic and Advanced classifications for Unstable THA and the Goutallier grading for fatty atrophy, help identify component issues, impingement, or abductor status to guide treatment.",
+            "cardCount": 11,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "THA Acute Complications",
+              "section": "THA Postoperative Abductor Deficiency"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "THA Acute Complications"
+        }
+      },
+      {
+        "shortName": "ob_recon_tha_chronic_complications",
+        "title": "THA Chronic Complications",
+        "field": "Hip Reconstruction",
+        "definition": "OrthoBullets Recon chapter covering 5 topics: THA Aseptic Loosening, THA Iliopsoas Impingement, THA Trunnionosis, THA Pseudotumor (Metal on Metal Reactions), THA Other Complications.",
+        "summary": "Reconstruction chapter \"THA Chronic Complications\" (Hip Reconstruction) with 5 OrthoBullets topics.",
+        "topics": [
+          {
+            "shortName": "ob_recon_tha_chronic_complications_tha_aseptic_loosening",
+            "title": "THA Aseptic Loosening",
+            "definition": "Radiographs are the primary imaging modality, though they underestimate bone loss, showing findings like lucency > 2 mm at the implant-bone interface, component migration, or polyethylene liner wear. Serum labs for aseptic loosening are typically normal, with both the ESR and CRP being within normal limits, thus helping to rule out prosthetic joint infection.",
+            "summary": "In the workup for suspected THA aseptic loosening, serum laboratory studies, such as ESR and CRP, are utilized primarily to rule out septic loosening (infection). The findings are typically characterized by normal levels of both ESR and CRP in the absence of infection.",
+            "cardCount": 5,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "THA Chronic Complications",
+              "section": "THA Aseptic Loosening"
+            }
+          },
+          {
+            "shortName": "ob_recon_tha_chronic_complications_tha_iliopsoas_impingement",
+            "title": "THA Iliopsoas Impingement",
+            "definition": "THA Iliopsoas Impingement is an under-recognized cause of recurrent groin pain, typically caused by a malpositioned acetabular component, diagnosed clinically with specific provocative tests and imaging (CT/diagnostic injection), and treated with either arthroscopic tenotomy or acetabular component revision.",
+            "summary": "THA Iliopsoas Impingement is an under-recognized etiology of recurrent groin pain after total hip replacement, typically resulting from a malpositioned acetabular component or excessive hardware. Diagnosis is based on clinical suspicion, often confirmed by CT identifying anterior cup overhang and a positive response to diagnostic injection, with treatment ranging from arthroscopic tenotomy to acetabular component revision.",
+            "cardCount": 7,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "THA Chronic Complications",
+              "section": "THA Iliopsoas Impingement"
+            }
+          },
+          {
+            "shortName": "ob_recon_tha_chronic_complications_tha_trunnionosis",
+            "title": "THA Trunnionosis",
+            "definition": "The pathophysiology of trunnionosis involves fretting corrosion (micromotion between the morse taper) and galvanic corrosion (between dissimilar metals), with the resulting metal debris potentially causing an Adverse Local Tissue Reaction (ALTR), such as an aseptic lymphocyte-dominant vasculitis association lesion (ALVAL/pseudotumor).",
+            "summary": "The etiology of trunnionosis, also known as mechanically assisted crevice corrosion (MACC), encompasses different forms of corrosion occurring at the femoral head-neck taper, including galvanic, fretting, and crevice corrosion. These corrosive processes cause the release of metal ions, leading to adverse local tissue reactions.",
+            "cardCount": 7,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "THA Chronic Complications",
+              "section": "THA Trunnionosis"
+            }
+          },
+          {
+            "shortName": "ob_recon_tha_chronic_complications_tha_pseudotumor_metal_on_metal_reactions",
+            "title": "THA Pseudotumor (Metal on Metal Reactions)",
+            "definition": "Treatment is observation for asymptomatic patients with low metal ion levels, but revision THA to ceramic-on-polyethylene components is the definitive operative treatment for a painful pseudotumor with elevated metal ions, though the complexity of the revision depends on the extent of bone loss and soft tissue destruction.",
+            "summary": "Treatment for MoM THA pseudotumors depends on the patient's symptoms and serum metal ion levels; asymptomatic individuals with low ions are managed with observation. Definitive treatment for painful pseudotumors, elevated metal ions, and corresponding MRI findings is typically surgical revision using ceramic-on-polyethylene components.",
+            "cardCount": 9,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "THA Chronic Complications",
+              "section": "THA Pseudotumor (Metal on Metal Reactions)"
+            }
+          },
+          {
+            "shortName": "ob_recon_tha_chronic_complications_tha_other_complications",
+            "title": "THA Other Complications",
+            "definition": "This topic covers several common but distinct postoperative complications of total hip arthroplasty (THA), including heterotopic ossification, squeaking, and the management of postoperative anemia.",
+            "summary": "This introductory section outlines various complications associated with Total Hip Arthroplasty (THA), serving as an index to the subsequent detailed discussions. Topics listed include heterotopic ossification, squeaking of prostheses, periprosthetic fractures, and management of postoperative anemia.",
+            "cardCount": 4,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "THA Chronic Complications",
+              "section": "THA Other Complications"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "THA Chronic Complications"
+        }
+      },
+      {
+        "shortName": "ob_recon_tha_postoperative_care",
+        "title": "THA Postoperative Care",
+        "field": "Hip Reconstruction",
+        "definition": "OrthoBullets Recon chapter covering 2 topics: THA Postoperative Inpatient Management, THA Rehabilitation.",
+        "summary": "Reconstruction chapter \"THA Postoperative Care\" (Hip Reconstruction) with 2 OrthoBullets topics.",
+        "topics": [
+          {
+            "shortName": "ob_recon_tha_postoperative_care_tha_postoperative_inpatient_management",
+            "title": "THA Postoperative Inpatient Management",
+            "definition": "Postoperative inpatient management is a coordinated effort involving the orthopedic team, hospitalist, therapists, case manager, nursing staff, and the patient/family, and is divided into preoperative teaching, inpatient acute care (hospital), inpatient extended care (rehab/SNF), and outpatient home care.",
+            "summary": "Postoperative inpatient management is a coordinated effort involving a multidisciplinary team (e.g., physicians, nurses, therapists, case managers) spanning phases from preoperative teaching through acute inpatient hospitalization to extended care. This overview specifically details the key components of acute hospital care, including multimodal pain control, medical management of complications, and initiation of physical and occupational therapy.",
+            "cardCount": 3,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "THA Postoperative Care",
+              "section": "THA Postoperative Inpatient Management"
+            }
+          },
+          {
+            "shortName": "ob_recon_tha_postoperative_care_tha_rehabilitation",
+            "title": "THA Rehabilitation",
+            "definition": "Rehabilitation for joint replacement is a coordinated process involving the orthopaedic surgeon, therapists (physical and occupational), case manager, nursing staff, and the patient/family, broken down into phases: preoperative teaching, inpatient acute care, inpatient extended care, and outpatient home care.",
+            "summary": "Rehabilitation involves a coordinated effort among a multidisciplinary team, including the orthopaedic surgeon, therapists, and nursing staff, as well as the patient and family. This comprehensive care process is structured into sequential phases, beginning with preoperative teaching and progressing through inpatient acute care, extended care, and subsequent outpatient services.",
+            "cardCount": 5,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "THA Postoperative Care",
+              "section": "THA Rehabilitation"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "THA Postoperative Care"
+        }
+      },
+      {
+        "shortName": "ob_recon_tha_preoperative_planning",
+        "title": "THA Preoperative Planning",
+        "field": "Hip Reconstruction",
+        "definition": "OrthoBullets Recon chapter covering 3 topics: THA Prosthesis Design, THA Templating, THA Implant Fixation.",
+        "summary": "Reconstruction chapter \"THA Preoperative Planning\" (Hip Reconstruction) with 3 OrthoBullets topics.",
+        "topics": [
+          {
+            "shortName": "ob_recon_tha_preoperative_planning_tha_prosthesis_design",
+            "title": "THA Prosthesis Design",
+            "definition": "The biomechanics of total hip arthroplasty depend on the prosthesis design (cemented, press-fit, or modular stems and cups), the bearing surface (polyethylene, metal, or ceramic) and its lubrication characteristics, and the fixation method.",
+            "summary": "This section provides an essential overview of total hip arthroplasty (THA), detailing how prosthesis biomechanics are influenced by design, fixation method, and bearing surface characteristics. It explores the history of THA while differentiating between cemented and press-fit fixation techniques and comparing materials like metal, ceramic, and polyethylene used in articulation.",
+            "cardCount": 5,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "THA Preoperative Planning",
+              "section": "THA Prosthesis Design"
+            }
+          },
+          {
+            "shortName": "ob_recon_tha_preoperative_planning_tha_templating",
+            "title": "THA Templating",
+            "definition": "Templating is the preoperative process of anticipating implant size and position to reproduce hip biomechanics, minimize limb length inequality, and anticipate difficulties, with an accuracy ranging from 52% to 98% (plus or minus one size) depending on surgeon experience.",
+            "summary": "Templating is the essential preoperative planning process that utilizes standardized radiographs and specialized templates to accurately anticipate the optimal size and position of prosthetic components. This process guides the surgeon in restoring proper hip biomechanics, correcting offset, and minimizing limb length inequality during total hip arthroplasty.",
+            "cardCount": 6,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "THA Preoperative Planning",
+              "section": "THA Templating"
+            }
+          },
+          {
+            "shortName": "ob_recon_tha_preoperative_planning_tha_implant_fixation",
+            "title": "THA Implant Fixation",
+            "definition": "The introduction to implant fixation highlights two main methods, cement fixation (using PMMA) and biologic (cementless) fixation (relying on bone in/on-growth), which are fundamental to total hip arthroplasty (THA). The history shows cemented fixation, popularized by Charnley in the 1950s, faced failures (\"cement disease\") that drove the shift toward cementless techniques, with the AML implant (1983) being the first FDA-approved microporous surface for bone ingrowth, leading to the current trend where 93% of THA in the US were cementless by 2012.",
+            "summary": "This introductory section describes the two primary methods of implant fixation used in total hip arthroplasty (THA): cemented fixation, which uses polymethylmethacrylate (PMMA) as grout, and biologic (cementless) fixation, which relies on bone ingrowth or ongrowth. It provides an overview of the history, mechanisms, indications, techniques, and associated complications for both fixation types.",
+            "cardCount": 5,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "THA Preoperative Planning",
+              "section": "THA Implant Fixation"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "THA Preoperative Planning"
+        }
+      },
+      {
+        "shortName": "ob_recon_tha_primary_techniques",
+        "title": "THA Primary Techniques",
+        "field": "Hip Reconstruction",
+        "definition": "OrthoBullets Recon chapter covering 3 topics: THA Approaches, THA Stability Techniques, THA Acetabular Screw Fixation.",
+        "summary": "Reconstruction chapter \"THA Primary Techniques\" (Hip Reconstruction) with 3 OrthoBullets topics.",
+        "topics": [
+          {
+            "shortName": "ob_recon_tha_primary_techniques_tha_approaches",
+            "title": "THA Approaches",
+            "definition": "The Direct Anterior Approach is an increasingly popular approach that uses the interval between the tensor fascia lata and sartorius, offers a decreased dislocation rate and avoids abductor violation (compared to anterolateral/direct lateral), but has a steep learning curve, challenging femoral exposure, increased infection risk in obese patients, and risks lateral femoral cutaneous nerve (LFCN) paresthesias.",
+            "summary": "The Direct Anterior Approach is an increasingly popular surgical technique for hip arthroplasty that accesses the joint through the internervous plane between the tensor fascia lata and the sartorius muscle. This approach avoids violation of the abductor mechanism and is associated with a decreased postoperative dislocation rate compared to the posterior approach.",
+            "cardCount": 5,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "THA Primary Techniques",
+              "section": "THA Approaches"
+            }
+          },
+          {
+            "shortName": "ob_recon_tha_primary_techniques_tha_stability_techniques",
+            "title": "THA Stability Techniques",
+            "definition": "Component position recommendations for the acetabulum are 5 to 25 degrees of anteversion and 30 to 50 degrees of abduction, though the approach matters (posterior should err toward more anteversion, anterior toward less), and the femoral stem should have 10 to 15 degrees of anteversion, with a combined version of the cup and stem recommended to be around 37 degrees.",
+            "summary": "Component position in total hip arthroplasty refers to the specific surgical orientation of the prosthetic components, including the acetabular cup (anteversion and abduction) and the femoral stem (anteversion). Achieving optimal component position is critical for maximizing joint stability, preventing impingement, and minimizing the risk of postoperative dislocation.",
+            "cardCount": 5,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "THA Primary Techniques",
+              "section": "THA Stability Techniques"
+            }
+          },
+          {
+            "shortName": "ob_recon_tha_primary_techniques_tha_acetabular_screw_fixation",
+            "title": "THA Acetabular Screw Fixation",
+            "definition": "Prosthesis impingement can occur when the anterior acetabular rim is left proud (potentially causing iliopsoas tendon impingement) or from component mismatch, where medializing the cup increases bone-on-bone impingement by decreasing offset, and factors like a small femoral head or skirts (a low head-to-neck ratio) increase the overall risk of metal-on-metal impingement by limiting the range of motion.",
+            "summary": "Avoiding prosthesis impingement requires meticulous component placement and selection to prevent unintended mechanical contact between prosthetic parts, bone, or adjacent soft tissues like the iliopsoas tendon. This is achieved by optimizing cup position (avoiding excessive medialization or lateralization) and ensuring favorable femoral head-to-neck ratios.",
+            "cardCount": 2,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "THA Primary Techniques",
+              "section": "THA Acetabular Screw Fixation"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "THA Primary Techniques"
+        }
+      },
+      {
+        "shortName": "ob_recon_tha_revision",
+        "title": "THA Revision",
+        "field": "Hip Reconstruction",
+        "definition": "OrthoBullets Recon chapter covering 1 topics: THA Revision Techniques.",
+        "summary": "Reconstruction chapter \"THA Revision\" (Hip Reconstruction) with 1 OrthoBullets topics.",
+        "topics": [
+          {
+            "shortName": "ob_recon_tha_revision_tha_revision_techniques",
+            "title": "THA Revision Techniques",
+            "definition": "Treatment for bone loss involves a spectrum of operative options: femoral revision utilizes extensively coated stems, impaction bone grafting, or proximal femoral allografts for severe defects, while acetabular revision employs porous-coated cups, metallic augments, or reconstruction cages depending on the degree of bone loss and stability.",
+            "summary": "Treatment for failed total hip arthroplasty (THA) is dictated by the etiology of failure, previous surgery, and patient activity demands. Management includes nonoperative strategies for pain of non-arthroplasty origin, and complex operative revisions (femoral, acetabular, or combined) categorized by the severity and location of bone loss.",
+            "cardCount": 10,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "THA Revision",
+              "section": "THA Revision Techniques"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "THA Revision"
+        }
+      },
+      {
+        "shortName": "ob_recon_adult_knee_conditions",
+        "title": "Adult Knee Conditions",
+        "field": "Knee Reconstruction",
+        "definition": "OrthoBullets Recon chapter covering 2 topics: Knee Osteoarthritis, Adult Limb Deformity & Correction.",
+        "summary": "Reconstruction chapter \"Adult Knee Conditions\" (Knee Reconstruction) with 2 OrthoBullets topics.",
+        "topics": [
+          {
+            "shortName": "ob_recon_adult_knee_conditions_knee_osteoarthritis",
+            "title": "Knee Osteoarthritis",
+            "definition": "Treatment is primarily nonoperative, with strong evidence supporting the use of oral and topical NSAIDs, tramadol, rehabilitation/exercise, and weight loss (for BMI > 25), while operative treatment includes total knee arthroplasty (TKA) for end-stage OA, unicompartmental arthroplasty (UKA) for isolated disease, or high-tibial osteotomy (HTO) for younger patients with medial unicompartmental OA.",
+            "summary": "Treatment for knee osteoarthritis begins with nonoperative measures such as NSAIDs, physical rehabilitation, and weight loss for symptomatic patients. If symptoms progress despite these efforts and the disease becomes severe, operative interventions like total knee arthroplasty are indicated.",
+            "cardCount": 8,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Adult Knee Conditions",
+              "section": "Knee Osteoarthritis"
+            }
+          },
+          {
+            "shortName": "ob_recon_adult_knee_conditions_adult_limb_deformity_and_correction",
+            "title": "Adult Limb Deformity & Correction",
+            "definition": "Surgical techniques involve osteotomies (e.g., medial opening wedge tibial, lateral closing wedge femoral) performed at the CORA to correct alignment, gradual limb lengthening using external fixators or intramedullary nails for LLD greater than 2 cm, and TKA to restore neutral mechanical alignment, sometimes requiring additional corrective extra-articular osteotomy for severe malalignment.",
+            "summary": "In the context of adult limb deformity correction, techniques refer to the detailed surgical approaches and procedural methods, such as various osteotomies, internal fixation, and gradual distraction osteogenesis, used to restore neutral mechanical alignment and correct rotational or length discrepancies.",
+            "cardCount": 11,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Adult Knee Conditions",
+              "section": "Adult Limb Deformity & Correction"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Adult Knee Conditions"
+        }
+      },
+      {
+        "shortName": "ob_recon_adult_knee_evaluation",
+        "title": "Adult Knee Evaluation",
+        "field": "Knee Reconstruction",
+        "definition": "OrthoBullets Recon chapter covering 2 topics: Knee Physical Exam - Adult, Adult Knee Radiographic Evaluation.",
+        "summary": "Reconstruction chapter \"Adult Knee Evaluation\" (Knee Reconstruction) with 2 OrthoBullets topics.",
+        "topics": [
+          {
+            "shortName": "ob_recon_adult_knee_evaluation_knee_physical_exam_adult",
+            "title": "Knee Physical Exam - Adult",
+            "definition": "Special Tests are used to assess the ACL (Lachman's, most sensitive, Anterior Drawer, Pivot Shift), PCL (Posterior Drawer, Posterior Sag, Quadriceps Active), Collateral Ligaments (Valgus/Varus Stress at 0° and 30° flexion), Meniscus (Joint Line Tenderness, most sensitive, McMurray's, Apley's Compression), Patellofemoral Joint (Patella Apprehension, J-sign, Patella Grind), and the Extensor Mechanism (Straight Leg Raise).",
+            "summary": "In orthopedic examination, special tests are specific, targeted maneuvers designed to assess the integrity, stability, and function of particular joint structures, such as ligaments and menisci. These standardized procedures help identify underlying pathology by reproducing signs of instability or pain specific to the structure being evaluated.",
+            "cardCount": 5,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Adult Knee Evaluation",
+              "section": "Knee Physical Exam - Adult"
+            }
+          },
+          {
+            "shortName": "ob_recon_adult_knee_evaluation_adult_knee_radiographic_evaluation",
+            "title": "Adult Knee Radiographic Evaluation",
+            "definition": "This section outlines the two main articulations of the knee (tibiofemoral and patellofemoral), the key bone structures and ligament/muscle attachments, the various standard and specialized radiographic views, and the normal and pathological findings used for evaluation, especially in the context of total knee arthroplasty (TKA).",
+            "summary": "This introductory section establishes the foundational knowledge for the knee joint, reviewing its essential anatomy, including osteology and soft tissue attachments, and detailing various standard and specialized radiographic views used for imaging the joint. It sets the stage for subsequent clinical discussions on topics such as osteoarthritis, surgical templating, and total knee arthroplasty complications.",
+            "cardCount": 19,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Adult Knee Evaluation",
+              "section": "Adult Knee Radiographic Evaluation"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Adult Knee Evaluation"
+        }
+      },
+      {
+        "shortName": "ob_recon_knee_anatomy_and_biomechanics",
+        "title": "Knee Anatomy & Biomechanics",
+        "field": "Knee Reconstruction",
+        "definition": "OrthoBullets Recon chapter covering 2 topics: Knee Biomechanics, Ligaments of the Knee.",
+        "summary": "Reconstruction chapter \"Knee Anatomy & Biomechanics\" (Knee Reconstruction) with 2 OrthoBullets topics.",
+        "topics": [
+          {
+            "shortName": "ob_recon_knee_anatomy_and_biomechanics_knee_biomechanics",
+            "title": "Knee Biomechanics",
+            "definition": "The knee joint is comprised of two distinct articulations: the tibiofemoral joint and the patellofemoral joint.",
+            "summary": "The knee is a complex joint comprised of two primary articulations: the tibiofemoral joint and the patellofemoral joint. These joints work together to transmit body weight, increase the lever arm of the extensor mechanism, and provide dynamic and static stability throughout a wide range of motion.",
+            "cardCount": 3,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Knee Anatomy & Biomechanics",
+              "section": "Knee Biomechanics"
+            }
+          },
+          {
+            "shortName": "ob_recon_knee_anatomy_and_biomechanics_ligaments_of_the_knee",
+            "title": "Ligaments of the Knee",
+            "definition": "The knee is a diarthrodial joint allowing simultaneous rotation and translation, with its ligaments providing stability and acting as primary and secondary restraints to movement.",
+            "summary": "The knee is a complex diarthrodial joint characterized by simultaneous rotation and translation. This introduction establishes the foundational anatomy, detailing the layered soft tissue structures and the specific biomechanical functions of the major stabilizing ligaments, including the ACL, PCL, and collateral ligaments.",
+            "cardCount": 9,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Knee Anatomy & Biomechanics",
+              "section": "Ligaments of the Knee"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Knee Anatomy & Biomechanics"
+        }
+      },
+      {
+        "shortName": "ob_recon_non_tka_treatment_options",
+        "title": "Non-TKA Treatment Options",
+        "field": "Knee Reconstruction",
+        "definition": "OrthoBullets Recon chapter covering 3 topics: High Tibial Osteotomy, Unicompartmental Knee Arthroplasty, Knee Arthrodesis.",
+        "summary": "Reconstruction chapter \"Non-TKA Treatment Options\" (Knee Reconstruction) with 3 OrthoBullets topics.",
+        "topics": [
+          {
+            "shortName": "ob_recon_non_tka_treatment_options_high_tibial_osteotomy",
+            "title": "High Tibial Osteotomy",
+            "definition": "The valgus-producing tibial osteotomy (most common) aims to unload the medial compartment and is typically overcorrected to 8 to 10 degrees of valgus, while the less common varus-producing tibial osteotomy is used for valgus knees with lateral compartment degeneration, with a deformity of greater than 12 degrees being a contraindication due to joint line obliquity.",
+            "summary": "High Tibial Osteotomy (HTO) is the principal surgical treatment used in younger, active patients with unicompartmental osteoarthritis caused by angular knee deformities, primarily varus. The goal of HTO is to surgically correct tibial malalignment, thereby shifting the mechanical axis to unload the degenerating compartment and slow the progression of disease.",
+            "cardCount": 12,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Non-TKA Treatment Options",
+              "section": "High Tibial Osteotomy"
+            }
+          },
+          {
+            "shortName": "ob_recon_non_tka_treatment_options_unicompartmental_knee_arthroplasty",
+            "title": "Unicompartmental Knee Arthroplasty",
+            "definition": "UKA is indicated as an alternative to TKA or osteotomy for unicompartmental disease, traditionally reserved for older, low-demand, thin patients but with a growing trend to expand indications, while absolute contraindications include inflammatory arthritis, ACL deficiency (for lateral UKA), fixed deformities (>10 degrees varus or >5 degrees valgus), and severely restricted motion.",
+            "summary": "Unicompartmental Knee Arthroplasty is indicated as an alternative to total knee arthroplasty or osteotomy for patients presenting with isolated unicompartmental disease. Although traditionally reserved for older, lower-demand patients, indications are currently expanding to include younger patients and those with more moderate arthrosis.",
+            "cardCount": 8,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Non-TKA Treatment Options",
+              "section": "Unicompartmental Knee Arthroplasty"
+            }
+          },
+          {
+            "shortName": "ob_recon_non_tka_treatment_options_knee_arthrodesis",
+            "title": "Knee Arthrodesis",
+            "definition": "Knee Arthrodesis is the fusion of the tibiofemoral joint, most commonly performed as a salvage procedure for failed total knee arthroplasty (TKA) or complete loss of the extensor mechanism, with the goal of achieving an optimal position of 5 degrees valgus and 0 degrees to 15 degrees of flexion.",
+            "summary": "Knee arthrodesis is the surgical fusion of the tibiofemoral joint, most commonly performed as a salvage procedure for failed total knee arthroplasty (TKA) or complete loss of the extensor mechanism. The procedure aims to achieve a stable, ankylosed joint, ideally positioned in 5-8 degrees of valgus and 0-15 degrees of flexion.",
+            "cardCount": 5,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Non-TKA Treatment Options",
+              "section": "Knee Arthrodesis"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Non-TKA Treatment Options"
+        }
+      },
+      {
+        "shortName": "ob_recon_tka_acute_complications",
+        "title": "TKA Acute Complications",
+        "field": "Knee Reconstruction",
+        "definition": "OrthoBullets Recon chapter covering 7 topics: TKA Periprosthetic Fracture, TKA Extensor Mechanism Rupture, TKA Stiffness, TKA Vascular Injury & Bleeding, TKA Peroneal Nerve Palsy, TKA Wound Complications, ….",
+        "summary": "Reconstruction chapter \"TKA Acute Complications\" (Knee Reconstruction) with 7 OrthoBullets topics.",
+        "topics": [
+          {
+            "shortName": "ob_recon_tka_acute_complications_tka_periprosthetic_fracture",
+            "title": "TKA Periprosthetic Fracture",
+            "definition": "Patellar Periprosthetic Fractures have a high incidence in resurfaced patellae (0.2% - 21%) but are rare in unresurfaced patellae (0.05%), are classified by Goldberg or Ortiguera and Berry based on extensor mechanism involvement and component stability, and are treated nonoperatively for non-displaced fractures with an intact extensor mechanism or operatively (ORIF, partial patellectomy, or total patellectomy) for loose components or extensor mechanism disruption.",
+            "summary": "Patellar periprosthetic fractures are a complication following total knee arthroplasty (TKA) that specifically involves the patella, with incidence significantly higher in resurfaced knees. These fractures are frequently associated with risk factors such as patellar osteonecrosis, asymmetric patellar resection, or specific implant design characteristics.",
+            "cardCount": 6,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "TKA Acute Complications",
+              "section": "TKA Periprosthetic Fracture"
+            }
+          },
+          {
+            "shortName": "ob_recon_tka_acute_complications_tka_extensor_mechanism_rupture",
+            "title": "TKA Extensor Mechanism Rupture",
+            "definition": "Treatment is typically surgical repair (direct suture/augmentation for complete lacerations with adequate bone stock) or reconstruction (using allograft or synthetic mesh for chronic injuries or deficient soft tissues), with nonoperative management (immobilizer) reserved for partial quadriceps tendon ruptures or patellar fractures where the extensor mechanism remains intact.",
+            "summary": "Management for TKA extensor mechanism ruptures is typically surgical, ranging from direct repair to complex reconstruction, tailored to the chronicity of the injury and the adequacy of available patellar bone stock. Nonoperative care with knee immobilization is reserved strictly for partial tendon ruptures or patellar fractures where the extensor mechanism remains functionally intact.",
+            "cardCount": 6,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "TKA Acute Complications",
+              "section": "TKA Extensor Mechanism Rupture"
+            }
+          },
+          {
+            "shortName": "ob_recon_tka_acute_complications_tka_stiffness",
+            "title": "TKA Stiffness",
+            "definition": "With an incidence of 1.3%-12%, the most important risk factor for TKA stiffness is poor preoperative range of motion, along with factors like younger age, smoking, and technical errors such as malrotation or tight gaps. TKA stiffness is multifactorial, caused by preoperative patient factors (poor ROM, low pain tolerance, smoking), technical errors (overstuffing the patellofemoral joint, malrotation, tight flexion/extension gaps), and postoperative factors (delayed rehabilitation, infection, HO, or hamstring spasms).",
+            "summary": "The incidence of TKA Stiffness ranges from 1.3% to 12% following total knee arthroplasty. Risk factors for this complication are diverse, including preoperative issues like poor range of motion, technical errors such as malrotation, and postoperative complications like infection or delayed rehabilitation.",
+            "cardCount": 6,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "TKA Acute Complications",
+              "section": "TKA Stiffness"
+            }
+          },
+          {
+            "shortName": "ob_recon_tka_acute_complications_tka_vascular_injury_and_bleeding",
+            "title": "TKA Vascular Injury & Bleeding",
+            "definition": "Intraoperative imaging (including angiogram) is performed under the guidance of an immediate vascular surgery consultation when brisk intraoperative bleeding or loss of distal pulses occurs. Postoperative imaging relies on a CT angiogram when signs of ischemia, loss of pulses, skin mottling, or sensory changes suggest a vascular injury.",
+            "summary": "Imaging studies are essential for diagnosing vascular injury following TKA, utilizing intraoperative angiography to confirm active bleeding or pulse loss, and postoperative CT angiography to evaluate signs of distal ischemia or absent pulses.",
+            "cardCount": 8,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "TKA Acute Complications",
+              "section": "TKA Vascular Injury & Bleeding"
+            }
+          },
+          {
+            "shortName": "ob_recon_tka_acute_complications_tka_peroneal_nerve_palsy",
+            "title": "TKA Peroneal Nerve Palsy",
+            "definition": "TKA Peroneal Nerve Palsy is a rare (0.3%-2%) but potentially devastating complication most commonly seen after correcting valgus and/or flexion deformities, diagnosed clinically by decreased sensation and weakness in ankle dorsiflexion, with treatment consisting of immediate knee flexion, observation, and an AFO for persistent foot drop.",
+            "summary": "Peroneal nerve injury is an uncommon (0.3%-2%) complication of total knee arthroplasty (TKA), frequently associated with the surgical correction of pre-existing valgus or flexion deformities. It is diagnosed clinically by decreased sensation in the peroneal distribution accompanied by weakness of ankle dorsiflexion (foot drop).",
+            "cardCount": 1,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "TKA Acute Complications",
+              "section": "TKA Peroneal Nerve Palsy"
+            }
+          },
+          {
+            "shortName": "ob_recon_tka_acute_complications_tka_wound_complications",
+            "title": "TKA Wound Complications",
+            "definition": "TKA Wound Complications result from systemic factors (like diabetes, obesity, smoking, and poor nutrition), local issues (prior incisions, knee deformity, poor blood supply), or technical/postoperative factors (large flaps, long tourniquet time, hematoma), and are diagnosed clinically by the presence of incisional breakdown or dehiscence.",
+            "summary": "Total Knee Arthroplasty (TKA) wound complications are characterized by incisional breakdown or dehiscence following surgery, often resulting from underlying patient systemic factors (such as diabetes or vascular disease), local knee characteristics, or technical issues. Diagnosis is clinical, and treatment depends primarily on the size and thickness of the wound and the limb's vascular status.",
+            "cardCount": 5,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "TKA Acute Complications",
+              "section": "TKA Wound Complications"
+            }
+          },
+          {
+            "shortName": "ob_recon_tka_acute_complications_tka_heterotopic_ossification",
+            "title": "TKA Heterotopic Ossification",
+            "definition": "Treatment is observation for the majority of cases since HO rarely impacts the clinical outcome, but surgical excision is indicated when the ossification causes functional issues like quadriceps muscle snapping, patellofemoral tracking difficulties, or patellofemoral instability.",
+            "summary": "Treatment for TKA Heterotopic Ossification (HO) is typically nonoperative observation, as the condition rarely impacts the clinical outcome or function of the knee. Surgical excision of the HO is indicated only in symptomatic cases exhibiting functional difficulties, such as quadriceps muscle snapping, patellofemoral tracking difficulties, or instability.",
+            "cardCount": 8,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "TKA Acute Complications",
+              "section": "TKA Heterotopic Ossification"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "TKA Acute Complications"
+        }
+      },
+      {
+        "shortName": "ob_recon_tka_chronic_complications",
+        "title": "TKA Chronic Complications",
+        "field": "Knee Reconstruction",
+        "definition": "OrthoBullets Recon chapter covering 7 topics: TKA Instability, TKA Aseptic Loosening, TKA Patellar Maltracking, TKA Patellar Prosthesis Loosening, Patellar Clunk Syndrome, TKA Metal Hypersensitivity, ….",
+        "summary": "Reconstruction chapter \"TKA Chronic Complications\" (Knee Reconstruction) with 7 OrthoBullets topics.",
+        "topics": [
+          {
+            "shortName": "ob_recon_tka_chronic_complications_tka_instability",
+            "title": "TKA Instability",
+            "definition": "This occurs when the flexion gap exceeds the extension gap, caused by over-resection of the posterior femoral condyles, undersizing the femoral component, or excessive tibial slope, requiring treatment with posterior augments, component upsizing, or conversion to a Posterior Stabilized (PS) prosthesis.",
+            "summary": "Flexion (anteroposterior) instability is a complication of total knee arthroplasty characterized by a flexion gap that exceeds the extension gap. This mismatch leads to excessive anteroposterior laxity, which can result in knee dislocation, often termed \"jumping the post\" in posterior-stabilized implants.",
+            "cardCount": 11,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "TKA Chronic Complications",
+              "section": "TKA Instability"
+            }
+          },
+          {
+            "shortName": "ob_recon_tka_chronic_complications_tka_aseptic_loosening",
+            "title": "TKA Aseptic Loosening",
+            "definition": "Treatment is nonoperative observation for stable, minimally symptomatic implants, but requires revision TKA when the patient experiences pain, evidence of osteolysis, or extensive osteolysis that compromises future surgery, using either bone graft or metal augments or wedges for defects greater than ten millimeters.",
+            "summary": "Management of TKA aseptic loosening depends on severity, ranging from observation for stable implants with minimal symptoms to operative intervention. Definitive treatment, indicated for pain, osteolysis, or progressive instability, is surgical revision total knee arthroplasty, often utilizing bone grafts or metal augments to address associated bone defects.",
+            "cardCount": 6,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "TKA Chronic Complications",
+              "section": "TKA Aseptic Loosening"
+            }
+          },
+          {
+            "shortName": "ob_recon_tka_chronic_complications_tka_patellar_maltracking",
+            "title": "TKA Patellar Maltracking",
+            "definition": "Causes of maltracking are multifactorial, including prosthetic design issues, extensor mechanism imbalance, asymmetric patellar resection, malpositioning, and most critically, malrotation (especially internal rotation of the femoral component, which increases the Q angle).",
+            "summary": "Etiology refers to the underlying causes of TKA Patellar Maltracking, which encompasses technical factors related to prosthetic design and implant placement. Specific etiologies include component malrotation, extensor mechanism imbalance, asymmetric patellar resection, and patellar malpositioning.",
+            "cardCount": 6,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "TKA Chronic Complications",
+              "section": "TKA Patellar Maltracking"
+            }
+          },
+          {
+            "shortName": "ob_recon_tka_chronic_complications_tka_patellar_prosthesis_loosening",
+            "title": "TKA Patellar Prosthesis Loosening",
+            "definition": "The etiology involves factors that induce high shear stress, such as maltracking, overstuffing, high flexion (>100°), obesity, poor bone stock, and disruption of patellar perfusion from surgical releases, leading to secondary osteonecrosis and osteolysis.",
+            "summary": "The etiology of TKA Patellar Prosthesis Loosening involves the primary causes and predisposing risk factors leading to component failure. Causes include mechanical issues like maltracking generating high shear forces and biological factors such as subclinical infection, while risks include obesity, poor bone stock, and inadequate implant fixation.",
+            "cardCount": 6,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "TKA Chronic Complications",
+              "section": "TKA Patellar Prosthesis Loosening"
+            }
+          },
+          {
+            "shortName": "ob_recon_tka_chronic_complications_patellar_clunk_syndrome",
+            "title": "Patellar Clunk Syndrome",
+            "definition": "The mechanism involves a fibrous nodule of scar tissue (whose cause is unknown) at the distal quadriceps tendon/superior patellar pole becoming entrapped within the femoral intercondylar box during flexion and being forced out of the notch during active knee extension, creating a painful snap typically felt between 30 degrees and 45 degrees.",
+            "summary": "The etiology of Patellar Clunk Syndrome is the formation of a fibrous nodule of scar tissue at the posterior surface of the distal quadriceps tendon or superior patellar pole in a posterior stabilized total knee arthroplasty. This scarring is potentially initiated by direct trauma during patellar resection or impingement from an undersized patellar component, causing the nodule to catch on the femoral component box during extension.",
+            "cardCount": 6,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "TKA Chronic Complications",
+              "section": "Patellar Clunk Syndrome"
+            }
+          },
+          {
+            "shortName": "ob_recon_tka_chronic_complications_tka_metal_hypersensitivity",
+            "title": "TKA Metal Hypersensitivity",
+            "definition": "Studies for diagnosis are controversial but may include patch testing, lymphocyte transformation tests (LST), and T-lymphocyte-rich immunohistopathology, though the definitive diagnosis is often one of exclusion after ruling out infection and aseptic loosening.",
+            "summary": "Studies used to evaluate TKA metal hypersensitivity include patch testing, the lymphocyte transformation test (LST), and T-lymphocyte rich immunohistopathology. A negative work-up for acute or chronic infection must also be completed as part of the evaluation to rule out other causes of persistent symptoms.",
+            "cardCount": 6,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "TKA Chronic Complications",
+              "section": "TKA Metal Hypersensitivity"
+            }
+          },
+          {
+            "shortName": "ob_recon_tka_chronic_complications_tka_other_complications",
+            "title": "TKA Other Complications",
+            "definition": "The topic of other TKA complications is categorized into separate topics covering neurovascular injuries (peroneal nerve palsy, vascular injury), extensor mechanism issues (patellar loosening, clunk, maltracking, rupture), and general complications (infection, fracture, metal hypersensitivity, wound complications, instability, and stiffness).",
+            "summary": "This introductory section provides a navigational overview and index, listing the specific complications of Total Knee Arthroplasty (TKA)—including neurovascular injuries, extensor mechanism failures, infection, and instability—that are discussed in detail in separate subsequent topics.",
+            "cardCount": 1,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "TKA Chronic Complications",
+              "section": "TKA Other Complications"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "TKA Chronic Complications"
+        }
+      },
+      {
+        "shortName": "ob_recon_tka_postoperative_care",
+        "title": "TKA Postoperative Care",
+        "field": "Knee Reconstruction",
+        "definition": "OrthoBullets Recon chapter covering 2 topics: TKA Postoperative Inpatient Management, TKA Postoperative Rehabilitation and Outpatient Management.",
+        "summary": "Reconstruction chapter \"TKA Postoperative Care\" (Knee Reconstruction) with 2 OrthoBullets topics.",
+        "topics": [
+          {
+            "shortName": "ob_recon_tka_postoperative_care_tka_postoperative_inpatient_management",
+            "title": "TKA Postoperative Inpatient Management",
+            "definition": "Post-operative rehabilitation is a coordinated, multi-disciplinary effort involving the orthopedic team and therapists, broken down into distinct phases including inpatient management and addressing postoperative anemia.",
+            "summary": "The Introduction outlines the coordinated, multidisciplinary framework required for patient rehabilitation, emphasizing systematic pain management (multimodal therapy), early physical therapy, and achieving specific functional and mobility goals necessary for safe discharge.",
+            "cardCount": 3,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "TKA Postoperative Care",
+              "section": "TKA Postoperative Inpatient Management"
+            }
+          },
+          {
+            "shortName": "ob_recon_tka_postoperative_care_tka_postoperative_rehabilitation_and_outpatient_management",
+            "title": "TKA Postoperative Rehabilitation and Outpatient Management",
+            "definition": "Rehabilitation is a coordinated, multidisciplinary effort encompassing multiple phases of care, including inpatient extended care and outpatient care.",
+            "summary": "Rehabilitation following orthopedic surgery is a structured, multidisciplinary process requiring coordination between the orthopedic surgeon, physical therapists, and nursing staff. Care is generally divided into inpatient extended care and outpatient phases, utilizing various modalities to restore function and guide the patient's safe return to daily and recreational activities.",
+            "cardCount": 3,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "TKA Postoperative Care",
+              "section": "TKA Postoperative Rehabilitation and Outpatient Management"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "TKA Postoperative Care"
+        }
+      },
+      {
+        "shortName": "ob_recon_tka_preoperative_planning",
+        "title": "TKA Preoperative Planning",
+        "field": "Knee Reconstruction",
+        "definition": "OrthoBullets Recon chapter covering 2 topics: TKA Prosthesis Design, TKA Templating.",
+        "summary": "Reconstruction chapter \"TKA Preoperative Planning\" (Knee Reconstruction) with 2 OrthoBullets topics.",
+        "topics": [
+          {
+            "shortName": "ob_recon_tka_preoperative_planning_tka_prosthesis_design",
+            "title": "TKA Prosthesis Design",
+            "definition": "The Constrained Nonhinged Design provides varus-valgus and rotational stability without an axle by using a large tibial post and deep femoral box, and is indicated for moderate bone loss or ligamentous deficiencies (LCL/MCL attenuation) where standard implants would be unstable, but it requires more femoral bone resection and increases the risk of aseptic loosening due to greater constraint.",
+            "summary": "The constrained nonhinged design is a total knee prosthesis that achieves substantial varus/valgus and rotational stability without a fixed mechanical axle linking the femoral and tibial components. This stability is accomplished through the articulation of a large tibial post within a deep femoral box.",
+            "cardCount": 10,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "TKA Preoperative Planning",
+              "section": "TKA Prosthesis Design"
+            }
+          },
+          {
+            "shortName": "ob_recon_tka_preoperative_planning_tka_templating",
+            "title": "TKA Templating",
+            "definition": "TKA templating is the preoperative process of anticipating implant size and position, allowing the surgeon to predict necessary component inventory and provide a reliable starting point, with accuracy reaching up to 92%-100% (± one size).",
+            "summary": "Templating is the crucial preoperative process of analyzing radiographs to accurately anticipate the necessary size and optimal position of prosthetic implants before surgery. This planning step is important for predicting the resources needed in the operating room and ensuring a reliable starting point for surgical placement.",
+            "cardCount": 5,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "TKA Preoperative Planning",
+              "section": "TKA Templating"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "TKA Preoperative Planning"
+        }
+      },
+      {
+        "shortName": "ob_recon_tka_primary_techniques",
+        "title": "TKA Primary Techniques",
+        "field": "Knee Reconstruction",
+        "definition": "OrthoBullets Recon chapter covering 7 topics: TKA Approaches, TKA Axial Alignment, TKA Coronal Plane Balancing, TKA Sagittal Plane Balancing, TKA Patellofemoral Alignment, TKA Kinematic Alignment, ….",
+        "summary": "Reconstruction chapter \"TKA Primary Techniques\" (Knee Reconstruction) with 7 OrthoBullets topics.",
+        "topics": [
+          {
+            "shortName": "ob_recon_tka_primary_techniques_tka_approaches",
+            "title": "TKA Approaches",
+            "definition": "The surgical approach for total knee arthroplasty (TKA) is determined by factors like surgeon preference, prior incisions, patient anatomy (obesity, patella baja, deformity), and requires careful incision planning to ensure adequate skin bridge and preserve blood supply.",
+            "summary": "The Introduction to total knee arthroplasty focuses on the critical initial steps, including the planning of incisions based on patient factors and the selection of the appropriate surgical approach to achieve adequate joint exposure. This process is dictated by factors such as surgeon preference, prior incisions, and the complexity of the deformity, utilizing methods ranging from standard medial approaches to extensile exposures.",
+            "cardCount": 8,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "TKA Primary Techniques",
+              "section": "TKA Approaches"
+            }
+          },
+          {
+            "shortName": "ob_recon_tka_primary_techniques_tka_axial_alignment",
+            "title": "TKA Axial Alignment",
+            "definition": "TKA Alignment is a crucial aspect of total knee arthroplasty (TKA), focused on technical goals such as restoring the zero degrees mechanical alignment, restoring the joint line, balancing ligaments, and preserving the normal Q angle to ensure optimal function and patellar tracking.",
+            "summary": "This section details the necessary anatomical landmarks, technical goals, and preoperative considerations required for successful Total Knee Arthroplasty (TKA). The primary objectives include restoring neutral mechanical alignment, achieving proper ligament balance, and ensuring joint line preservation for optimal prosthetic function.",
+            "cardCount": 6,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "TKA Primary Techniques",
+              "section": "TKA Axial Alignment"
+            }
+          },
+          {
+            "shortName": "ob_recon_tka_primary_techniques_tka_coronal_plane_balancing",
+            "title": "TKA Coronal Plane Balancing",
+            "definition": "Ligament balancing is essential in total knee arthroplasty to obtain an optimum outcome, requiring the release of tight ligaments on the concave side and potential tightening of stretched ligaments on the convex side in both flexion and extension, though kinematic alignment allows placing implants in mild varus or valgus based on native anatomy.",
+            "summary": "The introduction defines the fundamental necessity in knee arthroplasty of balancing both medial and lateral ligaments, which may be stretched or contracted over time, across the coronal and sagittal planes for an optimum outcome. This process requires releasing the tight ligaments on the concave side of the deformity and tightening the stretched ligaments on the convex side, ensuring stability in both flexion and extension.",
+            "cardCount": 5,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "TKA Primary Techniques",
+              "section": "TKA Coronal Plane Balancing"
+            }
+          },
+          {
+            "shortName": "ob_recon_tka_primary_techniques_tka_sagittal_plane_balancing",
+            "title": "TKA Sagittal Plane Balancing",
+            "definition": "The goal of TKA balancing is to obtain a flexion and extension gap that is equal through a complex process involving soft tissue release and bony resection, following the general rule to adjust the femur for asymmetric problems (distal cut affects extension gap, posterior cut affects flexion gap) and adjust the tibia for symmetric problems (tibia cut affects both gaps).",
+            "summary": "The introduction outlines the fundamental objective of total knee arthroplasty balancing, which is to achieve a stable, symmetric tibiofemoral gap that is equal in both flexion and extension. Achieving this essential stability throughout the arc of motion typically requires precise adjustments to bony resection depths and appropriate soft tissue releases.",
+            "cardCount": 2,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "TKA Primary Techniques",
+              "section": "TKA Sagittal Plane Balancing"
+            }
+          },
+          {
+            "shortName": "ob_recon_tka_primary_techniques_tka_patellofemoral_alignment",
+            "title": "TKA Patellofemoral Alignment",
+            "definition": "Abnormal patellar tracking is the most common complication of total knee arthroplasty (TKA), making the preservation of a normal Q angle the most important factor in surgical technique.",
+            "summary": "Abnormal patellar tracking is the most common complication following Total Knee Arthroplasty (TKA), fundamentally caused by an increase in the Q angle. This increase often results from surgical errors in component placement or rotation, leading to increased lateral subluxation forces, pain, accelerated wear, and potential dislocation.",
+            "cardCount": 6,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "TKA Primary Techniques",
+              "section": "TKA Patellofemoral Alignment"
+            }
+          },
+          {
+            "shortName": "ob_recon_tka_primary_techniques_tka_kinematic_alignment",
+            "title": "TKA Kinematic Alignment",
+            "definition": "Kinematic Alignment versus Mechanical Alignment differs significantly in that KA accepts a patient's residual varus or valgus alignment as representative of their native pre-arthritic state, which is not associated with hardware failure, and relies on internal rotation of the femoral component and a medial-pivot implant to optimize patellar tracking, rather than the 0° neutral alignment and 3° external rotation favored by MA.",
+            "summary": "Kinematic Alignment (KA) is a total knee arthroplasty technique that aims to restore the patient's unique, pre-arthritic limb alignment and joint line obliquity based on the native kinematic axes of the femur. This differs fundamentally from traditional Mechanical Alignment (MA), which standardizes the knee to a neutral 180-degree Hip-Knee-Ankle axis, thereby altering the natural anatomy in the majority of patients.",
+            "cardCount": 8,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "TKA Primary Techniques",
+              "section": "TKA Kinematic Alignment"
+            }
+          },
+          {
+            "shortName": "ob_recon_tka_primary_techniques_tka_in_patella_baja_prior_hto",
+            "title": "TKA in Patella Baja (Prior HTO)",
+            "definition": "Techniques to address patella baja during TKA include: placing the patellar component superiorly (for mild cases), lowering the joint line (via distal femoral augmentation or lowering the tibial cut) for moderate cases, or performing a cephalad tibial tubercle transfer (for moderate cases, though healing is unpredictable), with patellectomy being reserved for severe cases.",
+            "summary": "Techniques are the specialized surgical methods employed during total knee arthroplasty to manage patella baja, aiming to restore proper biomechanics and prevent anterior impingement. These specific strategies include placing the patellar component superiorly, lowering the joint line, or performing a tibial tubercle transfer.",
+            "cardCount": 6,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "TKA Primary Techniques",
+              "section": "TKA in Patella Baja (Prior HTO)"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "TKA Primary Techniques"
+        }
+      },
+      {
+        "shortName": "ob_recon_tka_revision",
+        "title": "TKA Revision",
+        "field": "Knee Reconstruction",
+        "definition": "OrthoBullets Recon chapter covering 1 topics: TKA Revision Techniques.",
+        "summary": "Reconstruction chapter \"TKA Revision\" (Knee Reconstruction) with 1 OrthoBullets topics.",
+        "topics": [
+          {
+            "shortName": "ob_recon_tka_revision_tka_revision_techniques",
+            "title": "TKA Revision Techniques",
+            "definition": "The general steps for TKA revision involve surgical exposure (often extensile or with a tibial tubercle osteotomy), tibial side removal first to establish the joint line (1.5 - 2 cm above the fibula head), followed by the femoral side to match the tibia, balancing the flexion/extension and medial/lateral gaps, and addressing patellofemoral tracking.",
+            "summary": "The general steps for total knee arthroplasty revision involve achieving extensile surgical exposure and meticulously removing the failed implants while preserving bone stock. Reconstruction then proceeds by establishing the correct joint line, balancing the flexion-extension gaps and medial/lateral gaps, and addressing patellofemoral tracking to ensure a stable outcome.",
+            "cardCount": 9,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "TKA Revision",
+              "section": "TKA Revision Techniques"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "TKA Revision"
+        }
+      },
+      {
+        "shortName": "ob_recon_adult_recon_medical_optimization",
+        "title": "Adult Recon Medical Optimization",
+        "field": "Recon Science",
+        "definition": "OrthoBullets Recon chapter covering 1 topics: Arthroplasty Preoperative Medical Optimization.",
+        "summary": "Reconstruction chapter \"Adult Recon Medical Optimization\" (Recon Science) with 1 OrthoBullets topics.",
+        "topics": [
+          {
+            "shortName": "ob_recon_adult_recon_medical_optimization_arthroplasty_preoperative_medical_optimization",
+            "title": "Arthroplasty Preoperative Medical Optimization",
+            "definition": "Preoperative optimization of patients for THA or TKA is crucial for improving outcomes and is categorized into medical optimization, preoperative counseling, VTE prophylaxis, and the anesthesia and pain management plans.",
+            "summary": "Preoperative optimization is a critical, multi-faceted process required for patients planned for total hip or knee arthroplasty (THA/TKA) to improve surgical outcomes. Key components include managing medical risk factors, comprehensive counseling, VTE prophylaxis planning, and defining strategies for anesthesia and postoperative pain control.",
+            "cardCount": 6,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Adult Recon Medical Optimization",
+              "section": "Arthroplasty Preoperative Medical Optimization"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Adult Recon Medical Optimization"
+        }
+      },
+      {
+        "shortName": "ob_recon_arthroplasty_wear_and_failure",
+        "title": "Arthroplasty Wear and Failure",
+        "field": "Recon Science",
+        "definition": "OrthoBullets Recon chapter covering 3 topics: Wear and Osteolysis Basic Science, TKA Polyethylene Wear & Manufacturing, Prosthetic Joint Infection.",
+        "summary": "Reconstruction chapter \"Arthroplasty Wear and Failure\" (Recon Science) with 3 OrthoBullets topics.",
+        "topics": [
+          {
+            "shortName": "ob_recon_arthroplasty_wear_and_failure_wear_and_osteolysis_basic_science",
+            "title": "Wear and Osteolysis Basic Science",
+            "definition": "Osteolysis is a histiocytic response to wear debris, initiated by particulate debris formation and dissemination, leading to macrophage-activated osteoclastogenesis and bone loss.",
+            "summary": "Osteolysis is a progressive histiocytic response triggered by particulate wear debris shed from prosthetic joints, which primarily affects bone surrounding the implant. This debris activates macrophages, leading to cytokine release and subsequent osteoclastogenesis, ultimately resulting in bone resorption and potential prosthesis loosening.",
+            "cardCount": 5,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Arthroplasty Wear and Failure",
+              "section": "Wear and Osteolysis Basic Science"
+            }
+          },
+          {
+            "shortName": "ob_recon_arthroplasty_wear_and_failure_tka_polyethylene_wear_and_manufacturing",
+            "title": "TKA Polyethylene Wear & Manufacturing",
+            "definition": "TKA polyethylene wear is the macroscopic premature failure of the polyethylene liner due to excessive loading, leading to mechanical loosening, which is typically diagnosed by plain radiographs showing tibiofemoral implant interface narrowing and is treated either by isolated polyethylene exchange or revision total knee arthroplasty (TKA), depending on the stability of the implants.",
+            "summary": "TKA polyethylene wear is defined as the macroscopic, premature failure of the polyethylene insert in total knee arthroplasty, often resulting from excessive mechanical loading, sliding wear, and mechanical loosening. This failure is critically influenced by factors including insufficient PE thickness, flat articular surface designs, and adverse sterilization or manufacturing methods.",
+            "cardCount": 8,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Arthroplasty Wear and Failure",
+              "section": "TKA Polyethylene Wear & Manufacturing"
+            }
+          },
+          {
+            "shortName": "ob_recon_arthroplasty_wear_and_failure_prosthetic_joint_infection",
+            "title": "Prosthetic Joint Infection",
+            "definition": "The treatment of PJI ranges from chronic suppressive antibiotic therapy for nonoperative candidates to operative strategies, with Debridement, Antibiotics, and Implant Retention (DAIR) used for acute infections (less than 3-4 weeks), a one-stage replacement used selectively for low-virulence organisms, and the two-stage replacement arthroplasty being the gold standard for chronic infections, while resection arthroplasty, arthrodesis, or amputation are reserved for cases with poor bone or soft tissue or recurrent, resistant infection.",
+            "summary": "Treatment for prosthetic joint infections is multifaceted, generally requiring prolonged intravenous antibiotic therapy combined with surgical management. The approach depends on the timing and characteristics of the infection, ranging from debridement and implant retention (DAIR) for acute cases to two-stage revision arthroplasty, which is the gold standard for chronic infections.",
+            "cardCount": 13,
+            "source": {
+              "source": "OrthoBullets",
+              "chapter": "Arthroplasty Wear and Failure",
+              "section": "Prosthetic Joint Infection"
+            }
+          }
+        ],
+        "source": {
+          "source": "OrthoBullets",
+          "chapter": "Arthroplasty Wear and Failure"
+        }
+      }
+    ]
+  }
+}

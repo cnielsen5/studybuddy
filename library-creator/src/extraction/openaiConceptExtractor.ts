@@ -29,11 +29,15 @@ interface OpenAIConceptResponse {
     definition: string;
     summary: string;
     category?: string;
+    subcategory?: string;
+    topic?: string;
     subtopic?: string;
     difficulty?: "basic" | "intermediate" | "advanced";
     high_yield_score?: number;
     prerequisites?: string[];
     spine_concept_id?: string;
+    /** Title of the parent concept in this list (mirrors provided content hierarchy). */
+    parent_title?: string;
     parent_concept_id?: string;
   }>;
 }
@@ -64,8 +68,10 @@ export async function extractConceptGraphOpenAI(
         {
           role: "system",
           content:
-            "You extract atomic learnable concepts for a spaced-repetition library. " +
-            "One concept = one learnable idea, not a chapter heading. Return JSON only.",
+            "You extract concepts for a spaced-repetition library and organise them into a " +
+            "hierarchy. When the source has structure, identify its layers and mirror them: " +
+            "broad sections become parent concepts, nested headings become children. " +
+            "Leaf concepts are single learnable ideas. Return JSON only.",
         },
         { role: "user", content: prompt },
       ],
@@ -105,13 +111,14 @@ function buildPrompt(
   maxConcepts: number
 ): string {
   const sectionSummaries = parsedSource.sections
-    .map(
-      (s, i) =>
-        `[${i + 1}] (${"#".repeat(s.level)}) ${s.title}\n${s.body.slice(0, 400)}`
-    )
+    .map((s, i) => {
+      const trail = s.structuralHeadingTrail?.filter(Boolean) ?? [];
+      const trailStr = trail.length ? `  [under: ${trail.join(" › ")}]` : "";
+      return `[${i + 1}] (${"#".repeat(Math.max(1, s.level))}) ${s.title}${trailStr}\n${s.body.slice(0, 400)}`;
+    })
     .join("\n\n");
 
-  return `Extract up to ${maxConcepts} atomic concepts for a Socrates content library.
+  return `Extract up to ${maxConcepts} concepts for a Socrates content library.
 
 Domain: ${intent.domain}
 Audience: ${intent.audience.level}, depth ${intent.audience.targetDepth}
@@ -119,11 +126,21 @@ Purpose: ${intent.purpose}
 Out of scope: ${intent.scopeBoundaries.join(", ") || "none"}
 Domain archetype: ${domainProfile.archetypeId}
 
+The source below includes heading levels (#, ##, ###) and a "[under: …]" trail showing
+each block's place in the document hierarchy.
+
 Rules:
-- One concept = one learnable idea (not a whole chapter)
-- Skip intro/overview/reference sections
-- Respect scope boundaries
-- prerequisites refer to other concept titles from your list
+- IDENTIFY THE HIERARCHICAL LAYERS in the provided content and REFLECT that structure
+  in your output. Broad sections become higher-level concepts; nested headings become
+  their children. Decide what each layer most logically represents (category →
+  subcategory → topic → subtopic), shallow→broad and deep→specific.
+- Set "parent_title" to the title of the concept that directly contains this one
+  (omit for top-level concepts), so the concept map mirrors the source nesting.
+- Fill category / subcategory / topic / subtopic to place each concept in the hierarchy.
+- One leaf concept = one learnable idea; keep meaningful parent/section concepts too so
+  the map's structure is preserved.
+- Respect scope boundaries; skip pure intro/reference/table-of-contents sections.
+- "prerequisites" refer to other concept titles from your list.
 
 Return JSON:
 {
@@ -132,8 +149,11 @@ Return JSON:
       "title": "...",
       "definition": "one sentence",
       "summary": "2-3 sentences",
-      "category": "...",
-      "subtopic": "...",
+      "category": "broadest layer",
+      "subcategory": "next layer",
+      "topic": "this concept's topic",
+      "subtopic": "finest layer (optional)",
+      "parent_title": "title of the containing concept (optional)",
       "difficulty": "basic|intermediate|advanced",
       "high_yield_score": 1-10,
       "prerequisites": ["prior concept title"]
@@ -165,8 +185,8 @@ function normalizeOpenAIResponse(
 
     const hierarchyPlacement = {
       category: item.category ?? intent.domain,
-      subcategory: intent.purpose.replace(/_/g, " "),
-      topic: item.title,
+      subcategory: item.subcategory ?? item.category ?? intent.purpose.replace(/_/g, " "),
+      topic: item.topic ?? item.title,
       subtopic: item.subtopic,
     };
     const resolutionLevel = inferResolutionFromHierarchy({
@@ -184,13 +204,6 @@ function normalizeOpenAIResponse(
       hierarchy: hierarchyPlacement,
       resolutionLevel,
     });
-    if (item.parent_concept_id) {
-      domain_context.dependency_graph = {
-        prerequisites_in_context: [],
-        unlocks_in_context: [],
-      };
-    }
-
     const concept = {
       id,
       type: "concept" as const,
@@ -223,11 +236,11 @@ function normalizeOpenAIResponse(
         summary: item.summary,
       },
       dependency_graph: {
-        parent_concept_id: item.parent_concept_id,
+        parent_concept_id: undefined as string | undefined,
         prerequisites: [],
         unlocks: [],
-        related_concepts: [],
-        child_concepts: [],
+        related_concepts: [] as string[],
+        child_concepts: [] as string[],
         semantic_relations: [],
       },
       mastery_config: {
@@ -255,6 +268,29 @@ function normalizeOpenAIResponse(
   }
 
   const suggestedPrerequisites: ConceptGraphDraft["suggestedPrerequisites"] = [];
+
+  // Resolve parent links (parent_title → id) so the concept map mirrors the
+  // provided content hierarchy.
+  for (const concept of concepts) {
+    const source = response.concepts.find(
+      (c) => c.title.toLowerCase() === concept.content.title.toLowerCase()
+    );
+    const parentTitle = source?.parent_title ?? source?.parent_concept_id;
+    if (!parentTitle) continue;
+    const parentId = titleToId.get(parentTitle.toLowerCase());
+    if (!parentId || parentId === concept.id) continue;
+    concept.dependency_graph.parent_concept_id = parentId;
+    const parent = concepts.find((c) => c.id === parentId);
+    if (parent && !parent.dependency_graph.child_concepts.includes(concept.id)) {
+      parent.dependency_graph.child_concepts.push(concept.id);
+    }
+    if (!concept.dependency_graph.prerequisites.includes(parentId)) {
+      concept.dependency_graph.prerequisites.push(parentId);
+    }
+    if (parent && !parent.dependency_graph.unlocks.includes(concept.id)) {
+      parent.dependency_graph.unlocks.push(concept.id);
+    }
+  }
 
   for (const concept of concepts) {
     const source = response.concepts.find(

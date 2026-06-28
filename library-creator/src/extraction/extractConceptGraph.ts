@@ -4,10 +4,19 @@ import type { ParsedSource } from "../types/parsedSource.js";
 import type { ConceptGraphDraft } from "../types/draftConcept.js";
 import { extractConceptGraphHeuristic } from "./heuristicConceptExtractor.js";
 import { extractConceptGraphOpenAI } from "./openaiConceptExtractor.js";
+import {
+  detectSourceStructure,
+  extractConceptGraphStructured,
+} from "./structuredConceptExtractor.js";
 
 export interface ExtractConceptGraphOptions {
   useAi?: boolean;
   maxConcepts?: number;
+  /**
+   * When the provided content carries an explicit hierarchy, mirror it into the
+   * concept map (layered) instead of flattening. Defaults to true.
+   */
+  preserveStructure?: boolean;
 }
 
 export async function extractConceptGraph(
@@ -33,6 +42,16 @@ export async function extractConceptGraph(
     }
   } else if (options.useAi && !apiKey) {
     console.warn("OPENAI_API_KEY not set — using heuristic extraction.");
+  }
+
+  // Reflect provided content structure into the concept map when present.
+  if (options.preserveStructure !== false) {
+    const structure = detectSourceStructure(parsedSource);
+    if (structure.hasStructure) {
+      return extractConceptGraphStructured(parsedSource, intent, domainProfile, {
+        maxConcepts: options.maxConcepts,
+      });
+    }
   }
 
   return extractConceptGraphHeuristic(parsedSource, intent, domainProfile, {
